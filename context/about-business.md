@@ -1,0 +1,3 @@
+# About the Business
+
+ZORIXEL is a creator-led educational brand that finds, evaluates, organizes, and explains web design resources, UI libraries, AI tools, skills, automation guides, and workflows. It primarily serves UI and web designers, freelancers, beginner frontend developers, and vibe coders. The current focus is building skills, systems, content, audiences, and brand infrastructure, with plans to sell digital products, AI agents, automations, and selected services in the near future. There is currently no active revenue or tracking, but a dedicated Google Sheet tracking income, platform fees, expenses, and net revenue will be established once earnings begin via bank account/UPI.
