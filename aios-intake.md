@@ -18,7 +18,7 @@ Identity, offer, ICP. One paragraph each is fine.
 
 ## Q2 — Paste 1-2 things you've written recently. Don't edit them.
 
-An email, a LinkedIn post, a DM, a doc — anything that sounds like you when you're not trying. **Paste verbatim.** Do not type these mid-conversation with Claude — chat-shaped samples are worse than no samples (voice contamination).
+An email, a LinkedIn post, a DM, a doc — anything that sounds like you when you're not trying. **Paste verbatim.** Do not type these mid-conversation with Gemini — chat-shaped samples are worse than no samples (voice contamination).
 
 ```
 [Sample 1 — paste raw]
@@ -82,4 +82,4 @@ The single biggest time-suck or recurring drudgery. Plus where tasks/projects li
 
 ---
 
-When this file is filled, run `/onboard` (or re-run it) and the wizard will scaffold your Day-1 file set: `context/`, `references/voice.md`, populated `connections.md`, and a filled `CLAUDE.md`.
+When this file is filled, run `/onboard` (or re-run it) and the wizard will scaffold your Day-1 file set: `context/`, `references/voice.md`, populated `connections.md`, and a filled `GEMINI.md`.

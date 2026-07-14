@@ -3,9 +3,6 @@ name: level-up
 description: Use weekly to find and ship one new automation. Walks the 3Ms interview — Mindset (find the candidate) → Method (scope one) → Machine (build it). Trigger on "let's level up", "what should I automate next", "find me leverage this week", or as a Friday ritual. One run = one shipped artifact.
 ---
 
-> *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.*
-> *The Three Ms of AI™ is a trademark of Nate Herk.*
-
 ## What this skill does
 
 Walks the user through the 3Ms each week to surface and ship one new automation. **One interview = one artifact.** It also installs the 3Ms framework into the user's head over time — after 4-6 runs, the user starts spotting opportunities mid-week without prompting because the questions have become internal defaults.
@@ -31,7 +28,7 @@ This is the brain-rewire mechanism. The kit doesn't need cron jobs to anchor beh
 - `connections.md` — what's reachable, by what mechanism
 - `references/3ms-framework.md` — the framework (used to quote principles back)
 - `decisions/log.md` — recent decisions (what's already shipped or considered)
-- `.claude/skills/*/SKILL.md` frontmatter — what capabilities exist
+- `.agents/skills/*/SKILL.md` frontmatter — what capabilities exist
 - Recent `audits/audit-{date}.md` if present
 
 ## Execution — three phases
@@ -157,4 +154,4 @@ Every `/level-up` run produces:
 
 ---
 
-> *The Three Ms of AI™ is a trademark of Nate Herk. © 2026 Nate Herk. All rights reserved.*
+
