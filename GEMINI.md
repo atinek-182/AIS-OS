@@ -14,13 +14,20 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
 - `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
 - `/agent-adapt` — Scan and tweak files/skills to migrate them from Claude Code to Antigravity.
+- `/plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
+- `/review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
+- `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
+- `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
+- `/file-search` — Keyword search across general AIOS and Zorixel vaults.
+
 
 ## Where things live
 
 - `context/` — about you, your business, your priorities (filled by `/onboard`)
-- `references/` — frameworks, voice samples, API guides as you connect tools
+- `references/` — frameworks, voice samples, API guides, user manuals, and skills documentation (documented in `references/antigravity-skills-guide.md`, `references/aios-user-manual.md`)
 - `connections.md` — registry of every system your AIOS can reach
 - `decisions/log.md` — append-only record of decisions and why
+- `scripts/` — utility and migration scripts (documented in `references/utility-scripts.md`)
 - `archives/` — old stuff. Don't delete. Move here.
 
 See `EXPANSIONS.md` for what to add as you grow.
@@ -52,4 +59,51 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - When I ask a question, answer it. Don't pad with restating the question.
 - When I make a decision, suggest logging it via the decisions log.
 - When you spot a manual task I'm doing 3+ times, surface it next time `/level-up` runs.
-- Default Shift: when I bring a new task, ask "to what extent could AI be leveraged here?" before assuming I'll do it the old way.
+- **Default Shift**: When I bring a new task, stubbornly refuse to do it manually. Ask: *"To what extent could AI be leveraged here to automate 30% to 75% of it?"* Break the role or process down into modular, repeatable automation chunks.
+- **Curiosity Rule**: Act as a thought partner and mentor, not a vending machine. Never just dump code or outputs; explain the structural logic, call out edge cases, detail how to handle empty states, and prevent "dark code" (running unverified or black-box code).
+- **Ecosystem Focus**: Never execute checks, verification commands, or demo tests using the Claude CLI. Always test and verify strictly under the Antigravity environment.
+- **Search-First Adaptation**: If links, guides, or documentation mention Claude Code plugins/skills, search the web first for native Antigravity equivalents. Only download or copy Claude-specific configurations as a last resort, and *always* request explicit confirmation first. Once copied, clean up duplicate Claude CLI plugins and skills folders to prevent conflicts.
+- **Token Optimization**: Structure, summarize, and organize workspace files and logs concisely to keep the codebase clean, reduce redundancy, and optimize model limits/token footprint.
+
+
+
+## Google Workspace CLI Account Management
+
+You have two Google Workspace accounts configured via `gws`:
+- **Personal Account**: `C:\Users\HP\.config\gws\credentials_personal.json`
+- **Brand Account (ZORIXEL)**: `C:\Users\HP\.config\gws\credentials_brand.json`
+
+**Operational Guidelines:**
+Whenever running any `gws` command in the terminal, check the context (ZORIXEL brand vs. personal) and set the `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` environment variable in the same execution line:
+- **Brand/ZORIXEL context**:
+  `$env:GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE="C:\Users\HP\.config\gws\credentials_brand.json"; gws [command]`
+- **Personal context**:
+  `$env:GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE="C:\Users\HP\.config\gws\credentials_personal.json"; gws [command]`
+
+## Dual-Vault Obsidian Architecture
+
+You operate two separate local Obsidian vaults mapped into the workspace:
+
+### 1. Brain for AIOS (`brain-aios/`)
+- **Purpose**: General AI OS hub, personal task tracking, system workflows, and operational logs.
+- **Core Areas**:
+  - `wiki/checklists/master-task-list.md`: The canonical task list.
+  - `wiki/sops/`: Operational workflows and guide sheets.
+- **Read/Write Rule**: Read when checking tasks or logging general AI OS upgrades. Write when updating task completions or logging system decisions.
+
+### 2. Second Brain for Zorixel (`second-brain-zorixel/`)
+- **Purpose**: ZORIXEL brand-specific research, content production drafts, scripts, and target audience insights.
+- **Core Areas**:
+  - `wiki/brand/`: Core voice, guidelines, and positioning.
+  - `wiki/strategy/`: Content pillars and marketing directions.
+  - `wiki/content/`: Caption drafts, outlines, briefs, and carousel layouts.
+  - `wiki/research/`: Scraped competitor posts and raw web clips.
+- **Read/Write Rule**: Read when writing brand copy, looking up content templates, or fetching research files. Write when saving content briefs, captions, or competitor insights.
+
+---
+
+## Log Alignment
+Keep vault index and logs isolated:
+- Modifications within `brain-aios/` must be logged in `brain-aios/wiki/log.md` and indexed in `brain-aios/wiki/index.md`.
+- Modifications within `second-brain-zorixel/` must be logged in `second-brain-zorixel/wiki/log.md` and indexed in `second-brain-zorixel/wiki/index.md`.
+- General AIOS repository changes go to the root workspace `decisions/log.md`.

@@ -1,39 +1,59 @@
 ---
 name: agent-adapt
-description: Use when you want to scan and tweak skills, prompts, or files in the project workspace to migrate them from Claude Code to Antigravity.
+description: Use when someone asks to migrate, install, adapt, or copy skills, plugins, prompts, or files from Claude Code standards to Antigravity standards.
 disable-model-invocation: true
-bike-method-phase: 1  # Phase 1 — Training wheels. Run manually first.
-three-ms-attribution: |
-  Adapted from The Three Ms of AI™ © 2026 Nate Herk.
 ---
 
 ## What This Skill Does
 
-Scans skills, references, or other project files and migrates Claude-specific terms and path references to Antigravity standards.
+This skill coordinates the migration and adaptation of coding plugins, custom skills, and configuration files from Claude Code conventions to native Antigravity standards. It prioritizes searching for native ports, handles file copying/replacements as a last resort, cleans up Claude CLI traces, and enforces verification testing exclusively under the Antigravity platform.
 
 ---
 
 ## Steps
 
-1. Check if a specific file or directory is passed as `$ARGUMENTS`. 
-   - If not specified, default to scanning the entire project workspace root recursively.
-2. Find all text-based files (specifically `.md`, `.json`, `.txt`, `.py`, `.js`, `.ts`) in the target path.
-3. For each file found, scan for and replace the following patterns:
-   - `Claude Code` -> `Antigravity`
-   - `Claude` -> `Antigravity`
-   - `CLAUDE.md` -> `GEMINI.md`
-   - `.claude` -> `.agents`
-   - `CLAUDE_SESSION_ID` -> `ANTIGRAVITY_SESSION_ID`
-4. Apply the replacements in-place without altering the structural instructions, logic, or workflows of the skill.
-5. Print a report listing:
-   - All scanned files
-   - Any files modified
-   - A summary of replacements made per file
+### Step 1: Research Native Antigravity Equivalents First
+- Before downloading any Claude Code plugin, search the web (GitHub, documentation) to check if a native Antigravity port or equivalent exists.
+- **CRITICAL RULE:** If the guide or links refer to Claude Code, you MUST prioritize finding a native Antigravity installation path rather than downloading for Claude and copy-pasting.
+- **Last Resort Confirmation:** Only copy-paste Claude configurations to Antigravity if no native port exists, and *only* after showing the plan and receiving explicit user confirmation.
+
+### Step 2: Install Native Ports or Copy Files
+- If a native Antigravity plugin/package is found, install it in your Antigravity environment.
+- If copying local Claude skill files (from `C:\Users\HP\.claude\skills/` or marketplace clones) is confirmed:
+  - Copy the target skill folders recursively to the Antigravity global customization directory (`C:\Users\HP\.gemini\config\skills/`) or workspace customizations directory (`.agents/skills/`).
+
+### Step 3: Run Adapt Replacements in Copied Files
+- Recursively scan all copied text-based files (`.md`, `.json`, `.txt`, `.py`, `.js`, `.ts`) and perform the following exact string replacements:
+  - `Claude Code` -> `Antigravity`
+  - `Claude` -> `Antigravity`
+  - `CLAUDE.md` -> `GEMINI.md`
+  - `.claude` -> `.agents`
+  - `CLAUDE_SESSION_ID` -> `ANTIGRAVITY_SESSION_ID`
+  - `claude` -> `antigravity`
+  - `claude-code` -> `antigravity`
+- Preserve structural instructions, attributions, and authors unchanged.
+
+### Step 4: Clean Up Claude CLI Traces
+- Run `claude plugin uninstall <plugin>` for any duplicate plugins in the Claude CLI so that its internal registry remains clean.
+- Delete the local Claude Code skills/plugins directories (like `C:\Users\HP\.claude\skills/` and conflicting marketplace folders) to prevent configuration clutter and duplicate memory writes.
+
+### Step 5: Demo Test Under Antigravity Only
+- **CRITICAL RULE:** Never execute verification commands or demo tests in the Claude CLI. Always run checks, syntax verification, and simulation scripts under the Antigravity CLI and environment.
+- Verify that:
+  - The copied skills load without frontmatter errors.
+  - The slash commands trigger correctly in Antigravity.
+  - Dynamic arguments substitute correctly.
+
+### Step 6: Log Decisions & Indexes
+- Append a detailed entry to the root Decisions Log ([log.md](file:///d:/AI-OS/decisions/log.md)).
+- Update and index the references inside the Obsidian vaults:
+  - [brain-aios index](file:///d:/AI-OS/brain-aios/wiki/index.md)
+  - [second-brain-zorixel index](file:///d:/AI-OS/second-brain-zorixel/wiki/index.md)
 
 ---
 
 ## Guardrails & Notes
 
-- **Read-Only Safeties**: Do not touch files in `.git/`, `.obsidian/`, `node_modules/`, or any binary assets (images, PDFs).
-- **Exact Replacement Only**: Do not rewrite sentences or change workflow descriptions. Maintain identical instructions and formatting.
-- **Attribution**: Do not delete any trademark or author attribution notices in the files.
+- **No Claude Testing:** Do not attempt to run `claude plugin list` or similar checks to verify Antigravity functionality. Test exclusively against Antigravity files/commands.
+- **Attribution Guard:** Maintain Nate Herk's Three Ms of AI™ copyright and other source trademarks intact in all adapted documents.
+- **Confirm Before Direct Copying:** Always report search results first and request approval before moving Claude directories.

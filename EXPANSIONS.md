@@ -30,7 +30,7 @@ The AIOS structure should look like a small, well-run business. Not a hoarder's 
 | `brand-assets/` | You generate visual content (carousels, slides, thumbnails, images) | Centralizes logos, palettes, fonts, voice/tone — the AIOS reaches in instead of guessing |
 | `references/sops/` | You document how recurring processes run | Standard operating procedures the AIOS reads to run things consistently |
 | `references/{tool}-api.md` | You connect a new API or MCP and figure out how it works | Researched-once-saved-forever. `/audit` rewards this; future skills don't re-research. |
-| `scripts/` | You write Python or Bash to hit APIs not covered by MCPs | Most people's second connection is a script, not an MCP |
+| `scripts/` | Contains python utility scripts for migrations and parser verifications | Houses `agent_adapt.py`, `rename_and_link_update.py`, and `verify_skills.py` (documented in [utility-scripts.md](file:///d:/AI-OS/references/utility-scripts.md)) |
 | `.agents/agents/` | You need a sub-assistant for repeatable, multi-step research/writing | Agents run on cheaper models in their own context — keep your main session lean |
 | Sub-OS folders (e.g. `youtube-os/`) | You have a vertical with its own data, sheets, transcripts, scripts | Isolation pattern — vertical workflows get their own scoped operating manual + skills |
 

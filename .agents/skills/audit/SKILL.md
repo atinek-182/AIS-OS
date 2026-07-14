@@ -122,7 +122,7 @@ For each criterion that lost points: leverage = (points lost) × (impact multipl
 Sort gaps by leverage descending. Take top 3. For each, write a one-line concrete next step:
 - **Need a new skill?** Recommend `skill-creator` (Anthropic) or `skill-builder` (if local), or "write SKILL.md at `.agents/skills/<name>/SKILL.md` with YAML frontmatter."
 - **Need to log a decision?** "Append to `decisions/log.md`."
-- **Need to reach a tier-1 domain?** Prefer API+script (write `scripts/{tool}_api.py` + save `references/{tool}-api.md`). Recommend `claude mcp add` only if no API path exists.
+- **Need to reach a tier-1 domain?** Prefer API+script (write `scripts/{tool}_api.py` + save `references/{tool}-api.md`). Recommend `antigravity mcp add` only if no API path exists.
 - **Connected tool missing a reference guide?** "Research the API once, save endpoints + auth + common queries to `references/{tool}-api.md`."
 - **Need a recurring trigger?** "Add a hook to `.agents/settings.json`, or write a skill named `daily-*` you run each morning."
 
