@@ -102,8 +102,97 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
 
+## 2026-07-15 — Integrate Roast & Session Handoff Skills & Ingest Monetization Upgrades
 
+**Decision:** Integrated `/roast` and `/session-handoff` skills into the AIOS. Registered the slash-commands in `GEMINI.md`, added them to `references/aios-user-manual.md` with operational guides, created `brain-aios/wiki/research/aios-monetization-upgrades.md` containing the YouTube clip digest of Nate Herk's 4 core monetization upgrades, updated the wiki index (`brain-aios/wiki/index.md`), and recorded the ingest event in `brain-aios/wiki/log.md`.
 
+**Why:** The `/roast` and `/session-handoff` skills represent critical upgrades for business validation and context management respectively. Recording their details in the user manual and documenting the YouTube clip in the LLM Wiki ensures a complete knowledge record of the AIOS capabilities, keeping the repository aligned with Atinek Maurya's target workflow.
 
+**Alternatives considered:** Manual copying of skill instructions or maintaining the monetization video takeaways as raw files without wiki integration.
 
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Integrate Superpowers Skill & Set Up Global Rule File
+
+**Decision:** Integrated `/using-superpowers` skill into the AIOS. Copied the skill config to `.agents/skills/using-superpowers/SKILL.md`, registered the command in `GEMINI.md`, added usage guidelines to `references/aios-user-manual.md`, updated `verify_skills.py` test suite, and created the global rule file `C:\Users\HP\.gemini\config\AGENTS.md` containing global instructions to enforce superpowers checks, planning, TDD, and verification across all project workspaces. Also documented the framework in `brain-aios/wiki/research/superpowers-framework.md`, updated the wiki index, and executed `agy plugin install https://github.com/obra/superpowers` to fully set up the superpowers plugin and hooks globally.
+
+**Why:** The `using-superpowers` skill, plugin, and ruleset are essential for maintaining engineering discipline and preventing context rot/hallucinations by forcing structured planning, TDD, and verification cycles before code modification.
+
+**Alternatives considered:** Using the global skill without local workspace registration, or writing rules to project-scoped `AGENTS.md` files (which requires duplication for every new repository).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Integrate and Configure Context7 Globally
+
+**Decision:** Registered the Upstash Context7 MCP server in the global `mcp_config.json` configuration, created a global skill `/context7` under `C:\Users\HP\.gemini\config\skills\context7\SKILL.md` to trigger live document retrieval, created `references/context7-api.md` API guide, and updated `GEMINI.md`, `connections.md`, `references/antigravity-skills-guide.md`, and `references/aios-user-manual.md` manuals.
+
+**Why:** Adding Context7 globally gives the personal AIOS instant access to up-to-date, version-specific external library API documentation and code examples natively via MCP tools. This avoids model hallucination and reduces manual research overhead.
+
+**Alternatives considered:** Running setup interactively via CLI `npx ctx7 setup` (unstable inside the sandboxed environment due to OAuth handling) or registering Context7 solely at the workspace level (fails the user's global usage requirement).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Integrate 6 New Global MCP Servers & notion-sync Skill
+
+**Decision:** Integrated 6 new global MCP servers (context7 with auth headers, codegraph, playwright, github with auth token, magic with API key, chrome-devtools-mcp, and notion-mcp-server with authorization header) into `mcp_config.json`. Created a custom workspace skill `/notion-sync` under `.agents/skills/notion-sync/SKILL.md` to handle sync, created 6 individual API reference guides in `references/`, and updated all AIOS user manuals, connection tables, and skills guide.
+
+**Why:** Expanding global MCP integration allows the personal AIOS to orchestrate browser control, visual checks, code exploration, issue tracking, and Notion databases. Creating modular API guides keeps documentation clean and ensures that API keys and Notion tokens remain dynamic.
+
+**Alternatives considered:** Using a single consolidated reference guide (unnecessarily cluttered and violates connections.md design guidelines) or hardcoding specific repository/database IDs in the skill code (fragile and insecure).
+
+**Owner:** Antigravity AIOS
+
+## 2026-07-15 — Refactor agent-adapt to Smart LLM-Driven Skill Transpilation
+
+**Decision:** Refactored the `agent-adapt` skill under `d:\AI-OS\.agents\skills\agent-adapt\SKILL.md` from a blind regex find-and-replace Python script to an interactive, LLM-driven adaptation engine. Deleted the deprecated script `scripts/agent_adapt.py` and simplified `scripts/copy_skills_to_antigravity.py` to recursively copy skills raw without performing search-and-replace substitutions.
+
+**Why:** Static find-and-replace of "Claude" with "Antigravity" causes critical bugs by breaking CLI executable commands, npm package scopes, GitHub repository URLs, and documentation links. Moving this logic to a smart, native, LLM-driven skill allows the agent to search the web for correct tool equivalents, deduct duplicates, flag Claude-specific items with markdown warnings, and present git-style diffs for user approval before writing files.
+
+**Alternatives considered:** Maintaining the Python script but using the Gemini API (adds credential and dependency overhead) or manual adaptation on every import (slow and doesn't scale for the user's growing custom skills repository).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Centralize Workspace Directory Map & Log Boundaries
+
+**Decision:** Created [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) at the workspace root to act as the centralized files and configurations directory index. Linked it in [GEMINI.md](file:///d:/AI-OS/GEMINI.md) and both Obsidian wiki indexes. Created a workspace-scoped rules file [AGENTS.md](file:///d:/AI-OS/.agents/AGENTS.md) to enforce map updates, and updated the [/review-day](file:///d:/AI-OS/.agents/skills/review-day/SKILL.md) skill to verify map alignment during evening reflections.
+
+**Why:** Documentation, configs, connection guides, and logs were scattered across multiple folders. Enforcing log alignment policies prevents context fragmentation and directory rot. Automating wrap-up checks in `/review-day` and codifying rules in `.agents/AGENTS.md` prevents layout drift.
+
+**Alternatives considered:** Using global config rules (blocked due to directory permissions) or keeping indices decentralized (leads to agent context dilution).
+
+**Owner:** Antigravity AIOS
+
+---
+## 2026-07-15 — Implement Git Pre-Commit Workspace Map Validation Hook
+
+**Decision:** Designed and implemented a Git pre-commit hook to automate the verification of [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) alignment. Created a Python validation script `scripts/validate_workspace_map.py` to check root files/folders, custom skill directories in `.agents/skills/`, and reference manuals in `references/`. Deployed the active Git hook to `.git/hooks/pre-commit` and committed a tracked backup to `scripts/hooks/pre-commit`.
+
+**Why:** Relying on conversational memory (like the `/review-day` loop checklist) or rules file compliance alone leaves the configuration map vulnerable to decay. Enforcing validation programmatically in a Git hook prevents any unmapped folders or files from being committed, maintaining the integrity of the workspace.
+
+**Alternatives considered:** Using a post-commit hook (too late to block commits) or manual audits (unreliable and easily bypassed).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Implement Improve-System Custom Skill & Experiences Vault
+
+**Decision:** Created the `/improve-system` custom skill (`.agents/skills/improve-system/SKILL.md`) to analyze current session transcripts, automatically update iterated skills, and capture personal lessons/experiences in `brain-aios/wiki/experiences/`. Configured the chronological index file `context/experiences/README.md`, registered the new paths in `WORKSPACE_MAP.md` and `brain-aios/wiki/index.md`, and updated `GEMINI.md` and `.agents/AGENTS.md` rules to prompt self-improvement suggestions after major milestones.
+
+**Why:** To establish a smart, closed-loop self-improvement mechanism that allows the AIOS to learn and grow over time from user feedback, skill output iterations, and shared lessons. Offloading transcript parsing to a subagent prevents context bloat in the main conversation window, maintaining token optimization.
+
+**Alternatives considered:** Direct main-thread analysis (would cause high token usage and context window exhaustion) or manual copy-pasting of lessons and skill updates (adds operational friction and is prone to neglect).
+
+**Owner:** Antigravity AIOS
+
+---

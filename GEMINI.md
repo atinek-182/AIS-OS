@@ -20,11 +20,16 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.
 - `/grill-me` — Stress-test a plan, get grilled on a design, or extract ideas to brainstorm files.
-
-
+- `/roast` — Stress-test an idea, validate a business model, or get a brutal second opinion via an adversarial council.
+- `/session-handoff` — Generate a clean end-of-session summary so you can clear context and resume work without losing state.
+- `/using-superpowers` — Establishes how to find and use skills, requiring skill invocation before any response.
+- `/context7` — Query up-to-date documentation and code examples via Context7.
+- `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
+- `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
 
 ## Where things live
 
+- [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) — central index and write policies of the workspace.
 - `context/` — about you, your business, your priorities (filled by `/onboard`)
 - `references/` — frameworks, voice samples, API guides, user manuals, and skills documentation (documented in `references/antigravity-skills-guide.md`, `references/aios-user-manual.md`)
 - `connections.md` — registry of every system your AIOS can reach
@@ -67,6 +72,7 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Ecosystem Focus**: Never execute checks, verification commands, or demo tests using the Claude CLI. Always test and verify strictly under the Antigravity environment.
 - **Search-First Adaptation**: If links, guides, or documentation mention Claude Code plugins/skills, search the web first for native Antigravity equivalents. Only download or copy Claude-specific configurations as a last resort, and *always* request explicit confirmation first. Once copied, clean up duplicate Claude CLI plugins and skills folders to prevent conflicts.
 - **Token Optimization**: Structure, summarize, and organize workspace files and logs concisely to keep the codebase clean, reduce redundancy, and optimize model limits/token footprint.
+- **Self-Improvement Suggestion**: When we finish a major milestone, significantly refine a skill, or discuss a critical life/business lesson, suggest calling `/improve-system` to persist these learnings.
 
 
 
