@@ -90,6 +90,19 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-15 — Integrate & Configure Grill-Me Skill
+
+**Decision:** Installed the `/grill-me` skill both locally in `.agents/skills/grill-me/SKILL.md` and globally in `C:\Users\HP\.gemini\config\skills\grill-me\SKILL.md` based on the downloaded configuration. Registered the slash-command in `GEMINI.md`, added it to `verify_skills.py` verification suite, updated `references/aios-user-manual.md` with instructions, and successfully verified the skill parser.
+
+**Why:** The `/grill-me` skill provides a critical structured mechanism to brainstorm and capture your ideas immediately to file disk storage during detailed Q&A loops, preventing context window decay and keeping track of decisions.
+
+**Alternatives considered:** Keeping the skill local to the Downloads folder or manually copy-pasting the skill contents whenever starting a brainstorm session.
+
+**Owner:** Antigravity AIOS
+
+
 
 
 

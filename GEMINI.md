@@ -19,6 +19,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
 - `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.
+- `/grill-me` — Stress-test a plan, get grilled on a design, or extract ideas to brainstorm files.
+
 
 
 ## Where things live
@@ -27,6 +29,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `references/` — frameworks, voice samples, API guides, user manuals, and skills documentation (documented in `references/antigravity-skills-guide.md`, `references/aios-user-manual.md`)
 - `connections.md` — registry of every system your AIOS can reach
 - `decisions/log.md` — append-only record of decisions and why
+- `MEMORY.md` — persistent memory logging cross-session learnings and preferences
 - `scripts/` — utility and migration scripts (documented in `references/utility-scripts.md`)
 - `archives/` — old stuff. Don't delete. Move here.
 

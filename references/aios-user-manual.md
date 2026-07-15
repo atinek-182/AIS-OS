@@ -48,7 +48,14 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/agent-adapt`.
   - The AIOS searches for Antigravity native equivalents of requested plugins, replaces Claude patterns, cleans up local configuration traces, and runs verification tests under the Antigravity developer environment.
 
+### 7. `/grill-me` (Brainstorm & Discovery Interviewer)
+- **Purpose:** Stress-tests plans, interviews you relentlessly on designs/concepts, and checkpoints every answer to a brainstorm file so no context is lost.
+- **How to Use:**
+  - Type `/grill-me` or say "grill me".
+  - The AIOS creates a capture file in `brainstorms/` and asks targeted, single questions, providing recommended answers and updating the file on disk after every response.
+
 ---
+
 
 
 ## ⚙️ Part 2: Global Plugins

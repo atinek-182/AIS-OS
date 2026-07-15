@@ -1,7 +1,7 @@
 import os
 
 skills_dir = r"d:\AI-OS\.agents\skills"
-new_skills = ["plan-day", "review-day", "scrape-competitor", "draft-message", "file-search", "agent-adapt"]
+new_skills = ["plan-day", "review-day", "scrape-competitor", "draft-message", "file-search", "agent-adapt", "grill-me"]
 
 print("=== VERIFYING NEW SKILLS ===")
 for skill in new_skills:
