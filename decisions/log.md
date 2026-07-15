@@ -266,3 +266,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Manually editing all 70+ reference files in the library (extremely time-consuming, prone to syntax errors, and loses sync with upstream updates).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Implement Canvas Design Custom Skill and Library
+
+**Decision:** Created the static reference library for Canvas Design at `d:\AI-OS\brain-aios\wiki\research\skills-library\canvas-design/` (styles, specs, HTML template base) and registered the active router skill `.agents/skills/canvas-design/SKILL.md` (slash command `/canvas-design`). Integrated the user's `Temporary brand design.md` style guidelines and registered paths in `WORKSPACE_MAP.md`.
+
+**Why:** The user wants programmatically generated social media graphics, posters, and brand banners matching their specific visual aesthetic (cream canvas, coral highlights, Garamond display type).Decoupling the templates and rendering logic keeps `.agents/skills` lightweight, while using the native `browser_subagent` Playwright screenshot mechanism ensures pixel-perfect PNG renders at exact preset aspect ratios without heavy local packages.
+
+**Alternatives considered:** Using text-to-image diffusion models via `generate_image` (generates misspelled text and lacks structural layout precision), or installing local Node canvas dependencies (adds significant installation footprint and complexity).
+
+**Owner:** Antigravity AIOS
