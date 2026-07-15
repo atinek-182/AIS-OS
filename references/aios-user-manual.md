@@ -87,7 +87,21 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/notion-sync` or say "sync my decision log to Notion".
   - The AIOS formats properties (e.g. Title, Date, Content) and updates the remote Notion workspace via MCP.
 
+### 13. `/project-agent` (Scoped Project Developer Agent)
+- **Purpose:** Spawns a background developer subagent scoped to a specific project directory under `projects/` (fuzzy-matched from the path name) to build features, run tests, and write code autonomously while keeping the main context clean.
+- **How to Use:**
+  - Type `/project-agent [project-name] "[task description]"` (e.g., `/project-agent my-site "Create contact page and link it"`).
+  - The AIOS resolves the target project folder, sets up credentials, and dispatches an autonomous background developer agent.
+  - Upon completion, the subagent writes a `walkthrough.md` to the project folder, and the main session outputs a summary of changes and test results.
+
+### 14. `/karpathy-guidelines` (Coding Guidelines Enforcer)
+- **Purpose:** Enforces Karpathy-inspired coding behavioral guidelines (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) to eliminate LLM coding mistakes, overengineering, and bloated or off-target edits.
+- **How to Use:**
+  - Type `/karpathy-guidelines` or ask the AIOS to apply the Karpathy guidelines to your programming tasks.
+  - The AIOS will load rules to state assumptions explicitly, push back on overcomplication, ensure changes are strictly focused and surgical, and define verifiable, testable success criteria before modifying code.
+
 ---
+
 
 
 

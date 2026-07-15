@@ -196,3 +196,49 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Owner:** Antigravity AIOS
 
 ---
+
+## 2026-07-15 — Configure Scoped External Projects Junction Workspace
+
+**Decision:** Created a master `D:\projects\` directory with seven specialized subfolders (`Websites`, `Zorixel brand`, `For AIOS`, `My advisors`, `Products`, `Learning`, `Sandbox`). Created matching directory junctions under `d:\AI-OS\projects\` pointing to these external folders, updated `.gitignore` to exclude the local `projects/` directory from Git tracking, and registered the new directory structure in `WORKSPACE_MAP.md`.
+
+**Why:** Centralizing client websites, brand content, products, and AIOS projects inside the AIOS folder is desired for full context accessibility, but directly nesting Git repositories causes Git tracking corruption, nested submodule conflicts, and token search bloat (e.g. from `node_modules` or media assets). Using the junction pattern with `.gitignore` exclusion allows the AI to seamlessly read and write files across projects while keeping Git operations clean and avoiding context pollution.
+
+**Alternatives considered:** Nesting raw project folders directly inside the AIOS Git repository (rejected due to Git pollution and token bloat), or keeping projects external with no local path references (rejected due to high path reference friction and manual command setup).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Implement project-agent Slash Command and Custom Workspace Skill
+
+**Decision:** Created the `/project-agent` custom workspace skill at `.agents/skills/project-agent/SKILL.md` to delegate complex tasks to autonomous background developer subagents. Registered the slash command in `GEMINI.md` and `references/aios-user-manual.md`, added it to `WORKSPACE_MAP.md`, and completed the brainstorm capture file in `brainstorms/`.
+
+**Why:** The user wants to build and test features inside project subdirectories without clogging the main session's context window. Spawning a background subagent (using `agy --print`) scoped to the specific project path keeps the main chat clean, enforces global superpowers and TDD workflows, auto-generates documentation (`walkthrough.md`), and fuzzy-matches project folder names to minimize typing overhead.
+
+**Alternatives considered:** Using the main session for all tasks (clogs context window on large tasks), or running separate terminals manually (loses access to the user's AIOS skills and Obsidian memory context).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Implement developer Subagent Configuration for project-agent
+
+**Decision:** Created a workspace-scoped subagent configuration file at `.agents/agents/developer.md` defining the specialized background developer agent behavior. Registered the `.agents/agents/` directory and `developer.md` in `WORKSPACE_MAP.md`, and checkpointed the brainstorm process in `brainstorms/2026-07-15-subagent-configuration.md`.
+
+**Why:** The `/project-agent` skill delegates directory-scoped coding/content tasks to a background subagent by calling `agy --agent developer ...`. Defining this agent's metadata (Model: inherit, Color: blue, full tool access) and its system prompt (enforcing the Superpowers TDD loop and walkthrough logging) guarantees that the background subprocess behaves strictly in accordance with workspace standards.
+
+**Alternatives considered:** Using the default `developer` agent without a workspace-scoped prompt configuration (would lack enforcement of project-specific `walkthrough.md` generation or direct alignment with the custom AIOS rules).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-15 — Integrate Karpathy Coding Guidelines Globally
+
+**Decision:** Adapted and integrated the Karpathy-inspired coding behavioral guidelines from `andrej-karpathy-skills` repository into our local `GEMINI.md` file, registered the `/karpathy-guidelines` command, and installed the guidelines as a global custom skill at the user level in `C:\Users\HP\.gemini\config\skills\karpathy-guidelines\SKILL.md`. Documented the command in `references/aios-user-manual.md`, added it to `verify_skills.py` verifier, and updated `WORKSPACE_MAP.md`.
+
+**Why:** Enforcing the four coding principles (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) globally across all workspaces keeps the codebase clean, minimizes overcomplication, enforces testing verification loops, and aligns with the Antigravity developer environment.
+
+**Alternatives considered:** Installing at the project level in `.agents/skills/` (rejected since these are generic, cross-project coding behavior rules that the user wants to apply everywhere), or leaving them unmodified (would retain legacy Claude Code/Cursor specific terminology).
+
+**Owner:** Antigravity AIOS

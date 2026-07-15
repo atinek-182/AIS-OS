@@ -21,6 +21,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
+| [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 
 ### Reference Manuals (`references/`)
 | Directory / File | Type | Purpose | Owner / Writer |
@@ -63,15 +64,23 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/notion-sync](file:///d:/AI-OS/.agents/skills/notion-sync) | Folder | Syncing database logs. | AIOS |
 | [.agents/skills/onboard](file:///d:/AI-OS/.agents/skills/onboard) | Folder | Day-1 workspace wizard. | AIOS |
 | [.agents/skills/plan-day](file:///d:/AI-OS/.agents/skills/plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
+| [.agents/skills/project-agent](file:///d:/AI-OS/.agents/skills/project-agent) | Folder | Scoped background developer agent runner. | AIOS |
 | [.agents/skills/review-day](file:///d:/AI-OS/.agents/skills/review-day) | Folder | Daily evening reflections log script. | AIOS |
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/skill-builder](file:///d:/AI-OS/.agents/skills/skill-builder) | Folder | Workspace custom skill optimization. | AIOS |
 | [.agents/skills/using-superpowers](file:///d:/AI-OS/.agents/skills/using-superpowers) | Folder | Enforcing superpowers checkpoint gates. | AIOS |
 
+### Workspace-Scoped Agents (`.agents/agents/`)
+| Directory / File | Type | Purpose | Owner / Writer |
+| :--- | :--- | :--- | :--- |
+| [.agents/agents/](file:///d:/AI-OS/.agents/agents/) | Folder | Workspace-scoped custom background subagent configurations. | AIOS |
+| [.agents/agents/developer.md](file:///d:/AI-OS/.agents/agents/developer.md) | File | Scoped background developer agent configuration defining lead developer behaviors. | AIOS |
+
 ### Global Systems & Vaults (External/Local)
 | Directory / File | Type | Purpose | Owner / Writer |
 | :--- | :--- | :--- | :--- |
 | `C:\Users\HP\.gemini\config\skills\` | Folder | Global slash command skills available across all workspace projects. | AIOS |
+| `C:\Users\HP\.gemini\config\skills\karpathy-guidelines\` | Folder | Global skill enforcing Karpathy-inspired coding behavioral guidelines. | AIOS |
 | `C:\Users\HP\.gemini\config\AGENTS.md` | File | Global rules pre-hook executed before tool calls. | Operator / AIOS |
 | [brain-aios/](file:///d:/AI-OS/brain-aios/) | Junction | General AIOS Obsidian vault hub (junction to local vault). | AIOS / Obsidian |
 | [brain-aios/wiki/experiences/](file:///d:/AI-OS/brain-aios/wiki/experiences/) | Folder | Personal lessons, stories, and insights captured in Obsidian. | AIOS |

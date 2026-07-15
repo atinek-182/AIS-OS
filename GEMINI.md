@@ -26,6 +26,9 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/context7` — Query up-to-date documentation and code examples via Context7.
 - `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
 - `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
+- `/project-agent` — Scoped background developer agent runner inside project subdirectories.
+- `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
+
 
 ## Where things live
 
@@ -116,3 +119,38 @@ Keep vault index and logs isolated:
 - Modifications within `brain-aios/` must be logged in `brain-aios/wiki/log.md` and indexed in `brain-aios/wiki/index.md`.
 - Modifications within `second-brain-zorixel/` must be logged in `second-brain-zorixel/wiki/log.md` and indexed in `second-brain-zorixel/wiki/index.md`.
 - General AIOS repository changes go to the root workspace `decisions/log.md`.
+
+## Coding Behavior Guidelines (Karpathy-Inspired)
+
+Behavioral guidelines to reduce common LLM coding mistakes, derived from Andrej Karpathy's observations. These guidelines bias toward caution over speed. For trivial tasks, use judgment.
+
+### 1. Think Before Coding
+- **Don't assume. Don't hide confusion. Surface tradeoffs.**
+- Before implementing: State assumptions explicitly. If uncertain, run `/grill-me` or ask the user.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, suggest it. Push back when warranted.
+- If something is unclear, stop. Name what's confusing and ask.
+
+### 2. Simplicity First
+- **Minimum code that solves the problem. Nothing speculative.**
+- No features beyond what was asked. No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+- *Test:* Would a senior engineer say this is overcomplicated? If yes, simplify.
+
+### 3. Surgical Changes
+- **Touch only what you must. Clean up only your own mess.**
+- *Editing existing code:* Don't "improve" adjacent code, comments, or formatting. Don't refactor things that aren't broken. Match existing style, even if you'd do it differently. If you notice unrelated dead code, mention it — don't delete it.
+- *Orphans:* Remove imports/variables/functions that YOUR changes made unused. Don't remove pre-existing dead code unless asked.
+- *Test:* Every changed line should trace directly to the user's request.
+
+### 4. Goal-Driven Execution
+- **Define success criteria. Loop until verified.**
+- Transform tasks into verifiable goals.
+- *Validation:* Write tests for invalid inputs, then make them pass.
+- *Bugs:* Write a test that reproduces it, then make it pass.
+- *Refactoring:* Ensure tests pass before and after.
+- For multi-step tasks, state a brief plan with verification check for each step.
+- Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
