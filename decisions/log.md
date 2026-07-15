@@ -278,3 +278,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Using text-to-image diffusion models via `generate_image` (generates misspelled text and lacks structural layout precision), or installing local Node canvas dependencies (adds significant installation footprint and complexity).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — System Self-Improvement: Document Localhost Serving Rule & Capture Programmatic Canvas Experience
+
+**Decision:** Updated `.agents/skills/canvas-design/SKILL.md` to document the localhost HTTP serving rule for browser subagents (to bypass local file scheme blocks). Created a new experience document at `brain-aios/wiki/experiences/2026-07-16-programmatic-canvas-browser-rendering.md` and registered it in indexes/logs.
+
+**Why:** Spawning headless browsers to view local files natively results in sandboxing access violations. Establishing a background HTTP server serving pipeline guarantees robust renders across all user systems. Capturing this experience preserves the solution for future workspaces.
+
+**Alternatives considered:** Standardizing on local file paths (rejected as it is blocked by browser security guidelines).
+
+**Owner:** Antigravity AIOS
