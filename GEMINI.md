@@ -18,6 +18,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
 - `/review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
 - `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
+- `/scrape-carousel` — Scrapes and extracts visual slide references and copy outlines from Instagram carousels.
 - `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
 - `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.

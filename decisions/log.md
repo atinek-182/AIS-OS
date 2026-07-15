@@ -303,3 +303,14 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-16 — Overhaul Slide Visual Aesthetics and Create Scrape-Carousel Skill
+
+**Decision:** Completely overhauled the styling system in `styles.css` to introduce premium visual guidelines (radial grid backdrops, glassmorphic cards with inset shadows/borders, tightened letter-spacing and line-heights, and 3D rotated preview layouts) replacing the basic default formats. Created the active workspace skill `.agents/skills/scrape-carousel/SKILL.md` (slash command `/scrape-carousel`) to automatically crawl Instagram posts, bypass login overlays, locate active slides, and save cropped screenshot assets.
+
+**Why:** The initial slide generation resulted in plain layouts that looked cheap and resembled "AI slop". Introducing professional web design techniques like grid arrays and backdrop blurs creates visually striking slides fitting the ZORIXEL brand identity. Automating the crawling process prevents manual page screenshotting and cropping overhead when indexing competitor ideas.
+
+**Alternatives considered:** Using global css framework packages (adds bloat and fails to compile cleanly under static rendering), or relying on manual screenshotting for references (highly repetitive and slow).
+
+**Owner:** Antigravity AIOS
