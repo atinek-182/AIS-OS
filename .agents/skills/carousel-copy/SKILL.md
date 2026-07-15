@@ -24,7 +24,13 @@ When this skill is invoked via `/carousel-copy <topic>` or triggered by design d
    - `bento-features`: Grid layout for multiple features/benefits.
    - `full-bleed-callout`: Bold primary-colored slide with button callout.
    - `cta`: Slide last, featuring a single, clear button overlay.
-4. **Write the copy plan** as a structured markdown document and save it to `d:\AI-OS\brainstorms\temp_carousel\copy.md`.
+4. **Follow the Zorixel Visual Contract Guidelines**:
+    - **Editorial Magazine Identity**: Target `Style: light` by default (warm linen off-white paper canvas background `#fbfaf7` with charcoal `#141413` text and brand coral `#ff6b4a` accents under 10% screen space).
+    - **Large Typography Scale**: All font sizes must be styled to be very large (Hooks at `68px`, headings at `46px`, body text inside panels at `22px` - `32px`, captions at `18px`). Ensure words wrap cleanly without orphans (`text-wrap: balance`).
+    - **Elevated Paper Cards**: Avoid raw flat columns or border-heavy grids. Style comparison columns on slides 3-5 as pure white floating cards with a highly diffused, soft shadow offset to feel like physical print sheets.
+    - **CTA Contrast**: Button text must be styled as solid white on a solid black/charcoal button background (no low-contrast grey or primary color texts inside buttons).
+    - **No AI Slop Elements**: Ban standard SaaS-cream colors, thick border card grids, repetitive uppercase kickers/eyebrows, and numbered section marking prefixes (01 / 02) unless representing a sequential process.
+5. **Write the copy plan** as a structured markdown document and save it to `d:\AI-OS\brainstorms\temp_carousel\copy.md`.
 
 ## Target Markdown File Schema (`copy.md`)
 
