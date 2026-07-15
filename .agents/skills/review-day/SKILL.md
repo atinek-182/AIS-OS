@@ -16,5 +16,7 @@ Automates the evening reflection routine. It gathers completed tasks, audits man
 2. Once the user responds:
    - Update task completions in [master-task-list.md](file:///d:/AI-OS/brain-aios/wiki/checklists/master-task-list.md) by marking completed items as `[x]`.
    - Append a summary of today's activities to [log.md](file:///d:/AI-OS/brain-aios/wiki/log.md).
+   - Audit the workspace files and git status. If any new folders, junctions, or configurations were created today, ensure they are registered in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md).
    - If manual repetitive tasks were identified, write them as candidates in [hot.md](file:///d:/AI-OS/hot.md) or suggest planning them in the next `/level-up` run.
+
 3. Report the daily summary back to the user with a confirmation of task updates.

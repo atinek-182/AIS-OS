@@ -52,3 +52,48 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 ## 🎨 6. Front-End Design (`frontend-design`)
 *   **Purpose:** Injects styling guidelines and assets so that generated user interfaces use premium visual rules (harmonious HSL colors, outfit typography, hover transitions) instead of default layouts.
 *   **Installation Command:** Utilizes local design SOP instructions or Antigravity Design native configurations.
+
+---
+
+## 📚 7. Context7 (`context7`)
+*   **Purpose:** Fetches up-to-date, version-specific documentation and code examples directly from source to eliminate hallucinations.
+*   **Repository:** [upstash/context7](https://github.com/upstash/context7)
+*   **Installation Command:** Registers the remote MCP server URL `https://mcp.context7.com/mcp` globally in `mcp_config.json` and installs the global skill `context7`.
+
+---
+
+## 📊 8. Codegraph (`codegraph`)
+*   **Purpose:** Indexes codebase structure and exposes AST relations to the agent.
+*   **Installation Command:** Registers the `codegraph` command globally in `mcp_config.json`.
+
+---
+
+## 🌐 9. Playwright (`playwright`)
+*   **Purpose:** Exposes headless browser driving and visual screenshot capability for audits.
+*   **Installation Command:** Registers `@playwright/mcp` server globally in `mcp_config.json`.
+
+---
+
+## 🐙 10. GitHub (`github`)
+*   **Purpose:** Exposes repo, issue, and pull request management natively.
+*   **Installation Command:** Registers `@modelcontextprotocol/server-github` globally in `mcp_config.json`.
+
+---
+
+## 🪄 11. Magic (`magic`)
+*   **Purpose:** Sourcing Tailwind components, templates, and brand logos.
+*   **Installation Command:** Registers `@21st-dev/magic` globally in `mcp_config.json`.
+
+---
+
+## 🛠️ 12. Chrome DevTools (`chrome-devtools-mcp`)
+*   **Purpose:** Exposes viewport audits, console logs, and performance metrics.
+*   **Installation Command:** Registers `chrome-devtools-mcp` globally in `mcp_config.json`.
+
+---
+
+## 📒 13. Notion (`notion-mcp-server`)
+*   **Purpose:** Access and modify remote database boards, checklists, and logs.
+*   **Installation Command:** Registers `@notionhq/notion-mcp-server` globally in `mcp_config.json`.
+
+

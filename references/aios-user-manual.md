@@ -54,6 +54,39 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/grill-me` or say "grill me".
   - The AIOS creates a capture file in `brainstorms/` and asks targeted, single questions, providing recommended answers and updating the file on disk after every response.
 
+### 8. `/roast` (Adversarial Idea Council)
+- **Purpose:** Stress-tests business ideas or operational plans through five independent adversarial personas and a Judge, outputting a GO / RESHAPE / KILL decision and the cheapest 48-hour validation test.
+- **How to Use:**
+  - Type `/roast` or `/roast [your business idea]`.
+  - Answer 3-4 simple questions from the AIOS regarding the concept, target audience, edge, and runway constraints.
+  - The council (Contrarian, Expansionist, Logician, Researcher, Buyer) will evaluate the idea in parallel. The Judge will deliver a finalized recommendation and a 48-hour test guide.
+
+### 9. `/session-handoff` (Zero-Loss Context Preservation)
+- **Purpose:** Generates a structured, chat-only context summary of decisions, modifications, and running state, enabling you to `/clear` the context window and resume with a fresh session without starting from scratch.
+- **How to Use:**
+  - Type `/session-handoff` or say "session handoff" before clearing the session context.
+  - Copy the generated summary.
+  - Run the `/clear` command to purge the context window.
+  - Paste the summary in the fresh session to restore context.
+
+### 10. `/using-superpowers` (Superpowers Workflow Enforcer)
+- **Purpose:** Establishes the rule requiring the AIOS to scan the workspace and invoke applicable skills before responding or acting, preventing ad-hoc edits, buggy code, and context rot.
+- **How to Use:**
+  - Type `/using-superpowers` when starting a conversation or task.
+  - The AIOS is required to check for active/relevant skills (like `brainstorming`, `make-plan`, `systematic-debugging`) and invoke them first, stating "Using [skill] to [purpose]".
+
+### 11. `/context7` (Live Documentation Fetcher)
+- **Purpose:** Pulls version-specific, live API documentation and code examples from official sources into your workspace prompt to eliminate hallucinations.
+- **How to Use:**
+  - Type `/context7 [library/query]` or say "use context7 to look up [library]".
+  - The AIOS resolves the library ID and retrieves the latest relevant documentation snippet using the Context7 MCP server.
+
+### 12. `/notion-sync` (Notion Database Sync)
+- **Purpose:** Synchronizes workspace decisions, checklists, logs, or competitor research details directly to remote Notion pages or databases.
+- **How to Use:**
+  - Type `/notion-sync` or say "sync my decision log to Notion".
+  - The AIOS formats properties (e.g. Title, Date, Content) and updates the remote Notion workspace via MCP.
+
 ---
 
 
@@ -85,4 +118,30 @@ These plugins are installed globally inside your Antigravity environment and run
 
 ### 5. Front-End Design (`frontend-design`)
 - **Enforced Rule:** Automatically applies styling rules (harmony color palettes, Outfit/Inter fonts, micro-interactions, responsive sizing) so that HTML mockups look premium and custom-coded.
+
+### 6. Context7 Documentation (`context7`)
+- **Enforced Rule:** Connects your agent dynamically to Upstash's live documentation database to verify APIs and avoid writing hallucinated/outdated code.
+- **Commands:**
+  - Automatically queries docs via `resolve-library-id` and `query-docs` MCP tools during coding workflows.
+  - Fallback command: `npx ctx7 query <library-id> "<query>"`
+
+### 7. Codegraph (`codegraph`)
+- **Enforced Rule:** Automatically queries and maps codebase relations to expose AST context to the agent during code exploration.
+
+### 8. Playwright Browser Driver (`playwright`)
+- **Enforced Rule:** Drives a headless Chromium browser instance for visual checks and responsive layout validations.
+
+### 9. GitHub API Access (`github`)
+- **Enforced Rule:** Coordinates issue creations, PR submissions, and repository tracking natively via model context.
+
+### 10. Magic Sourcing (`magic`)
+- **Enforced Rule:** Instantly queries Tailwind CSS component inspirations and brand logos.
+
+### 11. Chrome DevTools (`chrome-devtools-mcp`)
+- **Enforced Rule:** Inspects active browser console logs, executes Lighthouse audits, and captures viewport screenshots.
+
+### 12. Notion Workspace (`notion-mcp-server`)
+- **Enforced Rule:** Reads and writes to your remote Notion database boards, calendars, and spreadsheets.
+
+
 

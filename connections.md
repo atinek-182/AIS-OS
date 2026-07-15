@@ -11,6 +11,14 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 | 5 | Project / task tracking | Obsidian Master Task List | local_path (Junction: brain-aios/) | — | 2026-07-14 |
 | 6 | Meeting intelligence | None (no meetings/calls recorded) | not yet connected | — | — |
 | 7 | Knowledge / files | Obsidian (Second Brain) / Google Drive / GitHub / Local | local_path (Junctions: brain-aios/, second-brain-zorixel/) | — | 2026-07-14 |
+| 8 | External Documentation | Upstash Context7 | mcp | — | 2026-07-15 |
+| 9 | Code Structure Mapping | Codegraph | mcp | — | 2026-07-15 |
+| 10 | Headless Browser Driver | Playwright | mcp | — | 2026-07-15 |
+| 11 | Repository Management | GitHub | mcp | GITHUB_PERSONAL_ACCESS_TOKEN | 2026-07-15 |
+| 12 | UI Component Sourcing | Magic | mcp | API_KEY | 2026-07-15 |
+| 13 | Browser Diagnostics | Chrome DevTools | mcp | — | 2026-07-15 |
+| 14 | Document Database | Notion | mcp | OPENAPI_MCP_HEADERS | 2026-07-15 |
+
 
 **Mechanism options:** `mcp` (MCP server), `script` (Python/Bash hitting an API, in `scripts/`), `export` (CSV/JSON dump pipeline), `key+ref` (`.env` key + `references/{tool}-api.md` guide), `not yet connected`.
 

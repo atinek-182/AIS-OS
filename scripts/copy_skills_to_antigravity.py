@@ -1,71 +1,46 @@
 import os
 import shutil
-import re
 
-source_dirs = [
-    r"C:\Users\HP\.claude\skills",
-    r"C:\Users\HP\.claude\plugins\marketplaces\context-mode\skills",
-    r"C:\Users\HP\.claude\plugins\marketplaces\thedotmack\plugin\skills"
-]
+claude_root = r"C:\Users\HP\.claude"
 target_dir = r"C:\Users\HP\.gemini\config\skills"
-
-replacements = [
-    ("Claude Code", "Antigravity"),
-    ("Claude", "Antigravity"),
-    ("CLAUDE.md", "GEMINI.md"),
-    (".claude", ".agents"),
-    ("CLAUDE_SESSION_ID", "ANTIGRAVITY_SESSION_ID"),
-    # General lower-case occurrences
-    ("claude-code", "antigravity"),
-    ("claude", "antigravity")
-]
 
 os.makedirs(target_dir, exist_ok=True)
 
-copied_count = 0
-modified_count = 0
+copied_skills = {}
 
-for source_root in source_dirs:
-    if not os.path.exists(source_root):
-        print(f"Skipping non-existent source root: {source_root}")
-        continue
-    
-    # List immediate children sub-directories (each folder represents a skill)
-    for skill_name in os.listdir(source_root):
-        skill_src_path = os.path.join(source_root, skill_name)
-        if os.path.isdir(skill_src_path):
-            skill_target_path = os.path.join(target_dir, skill_name)
-            
-            # Copy directory recursively
-            if os.path.exists(skill_target_path):
-                shutil.rmtree(skill_target_path)
-            shutil.copytree(skill_src_path, skill_target_path)
-            copied_count += 1
-            
-            # Run agent-adapt replacements on copied files recursively
-            for root, dirs, files in os.walk(skill_target_path):
-                for file in files:
-                    filepath = os.path.join(root, file)
-                    _, ext = os.path.splitext(file)
-                    if ext.lower() in {".md", ".json", ".txt", ".py", ".js", ".ts"}:
-                        try:
-                            with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                                content = f.read()
-                        except Exception as e:
-                            continue
-                        
-                        original_content = content
-                        for old, new in replacements:
-                            content = content.replace(old, new)
-                        
-                        if content != original_content:
-                            try:
-                                with open(filepath, 'w', encoding='utf-8') as f:
-                                    f.write(content)
-                                modified_count += 1
-                            except Exception as e:
-                                print(f"Failed to write replacements in {filepath}: {e}")
+# Walk C:\Users\HP\.claude to find all folders named 'skills'
+for root, dirs, files in os.walk(claude_root):
+    if os.path.basename(root).lower() == 'skills':
+        # Check that this is a valid leaf skills folder (not inside .git or node_modules)
+        parts = root.split(os.sep)
+        if any(p in {'.git', 'node_modules'} for p in parts):
+            continue
+        
+        # Each folder inside this 'skills' directory is a separate skill
+        for skill_name in os.listdir(root):
+            skill_src_path = os.path.join(root, skill_name)
+            if os.path.isdir(skill_src_path):
+                # Ensure we only copy from the most relevant source
+                # If we've seen this skill name, skip cache folders if we have marketplace ones
+                if skill_name in copied_skills:
+                    prev_path = copied_skills[skill_name]
+                    # Prefer plugins/marketplaces over plugins/cache
+                    if 'marketplaces' in prev_path and 'cache' in root:
+                        continue
+                
+                skill_target_path = os.path.join(target_dir, skill_name)
+                try:
+                    if os.path.exists(skill_target_path):
+                        shutil.rmtree(skill_target_path)
+                    shutil.copytree(skill_src_path, skill_target_path)
+                    copied_skills[skill_name] = root
+                except Exception as e:
+                    print(f"Error copying {skill_name} from {root}: {e}")
 
-print("=== ANTIGRAVITY GLOBAL SKILLS SETUP REPORT ===")
-print(f"Total skills directories copied: {copied_count}")
-print(f"Total files adapted to Antigravity: {modified_count}")
+print("\n=== ANTIGRAVITY GLOBAL SKILLS COPY REPORT ===")
+print(f"Total unique skills copied: {len(copied_skills)}")
+for name, src in sorted(copied_skills.items()):
+    print(f"- {name} (from: ...{src[len(claude_root):]})")
+
+print("\n[NOTE] Files have been copied RAW. Run your transpiler script/command to adapt them safely.")
+
