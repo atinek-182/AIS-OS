@@ -254,3 +254,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Porting all 70+ skills directly (token-heavy, slow, and violates the 3-5 active skills limit), or discarding the python files (would reduce SEO audits to simple advisory lists rather than actual page/schema checks).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Establish Skill Adaptation Rule in AGENTS.md
+
+**Decision:** Appended a new workspace rule `## Adapting Skills to Antigravity & Gemini` in `.agents/AGENTS.md` to instruct the AI OS to check and tweak all loaded skills and guides for Antigravity/Gemini compatibility.
+
+**Why:** Most community skills are written specifically for Claude Code or Cursor. Adding a dedicated rule in `AGENTS.md` ensures that the AI OS dynamically translates platform-specific terminology, paths, and commands in the background without modifying the core meaning or losing the capabilities of the original frameworks.
+
+**Alternatives considered:** Manually editing all 70+ reference files in the library (extremely time-consuming, prone to syntax errors, and loses sync with upstream updates).
+
+**Owner:** Antigravity AIOS
