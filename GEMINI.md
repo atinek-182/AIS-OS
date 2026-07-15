@@ -13,10 +13,12 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/onboard` — already run if you're seeing this filled in. Re-run any time to refresh from an edited `aios-intake.md`.
 - `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
 - `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
+- `/marketing` — Copywriting and marketing copy dynamic router referencing Corey Haynes' library.
 - `/agent-adapt` — Scan and tweak files/skills to migrate them from Claude Code to Antigravity.
 - `/plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
 - `/review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
 - `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
+- `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
 - `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.
 - `/grill-me` — Stress-test a plan, get grilled on a design, or extract ideas to brainstorm files.

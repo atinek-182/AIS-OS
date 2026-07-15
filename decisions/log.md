@@ -242,3 +242,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Installing at the project level in `.agents/skills/` (rejected since these are generic, cross-project coding behavior rules that the user wants to apply everywhere), or leaving them unmodified (would retain legacy Claude Code/Cursor specific terminology).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Implement Static Reference Library and Active marketing/seo-audit Router Skills
+
+**Decision:** Created a static reference library at `d:\AI-OS\brain-aios\wiki\research\skills-library/` to store Corey Haynes' copywriting skills (~45 files) and Daniel Agrici's SEO skills (~25 files and 50 python scripts). Implemented two active router skills at `.agents/skills/marketing/SKILL.md` and `.agents/skills/seo-audit/SKILL.md` to load these frameworks dynamically on demand. Registered the slash commands `/marketing` and `/seo-audit` in `GEMINI.md`, and updated `WORKSPACE_MAP.md`.
+
+**Why:** Installing 70+ separate skills directly in `.agents/skills/` causes massive memory bloat, startup lag, command collisions, and context window rot. Sandboxing the raw files in a static reference directory keeps the workspace clean, while the two active router skills dynamically read the guidelines and execute python scripts on demand, boosting performance and maintaining capability.
+
+**Alternatives considered:** Porting all 70+ skills directly (token-heavy, slow, and violates the 3-5 active skills limit), or discarding the python files (would reduce SEO audits to simple advisory lists rather than actual page/schema checks).
+
+**Owner:** Antigravity AIOS
