@@ -290,3 +290,16 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Standardizing on local file paths (rejected as it is blocked by browser security guidelines).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Implement Programmatic Viral Carousel Copywriter and Render Skills
+
+**Decision:** Created the `.agents/skills/carousel-copy/SKILL.md` (for copy planning outlines) and `.agents/skills/carousel-render/SKILL.md` (for browser-captured slide rendering), registered them in `GEMINI.md` and `WORKSPACE_MAP.md`, added `scripts/compile_carousel.py` to parse markdown outlines into individual HTML slides, and extended `styles.css` with 3 carousel layout structures (Before/After split comparison, gradient headline rule, and brand header/footer slide furniture) modeled after `adarshxdesign`'s Instagram reference carousel.
+
+**Why:** Using programmatic HTML-to-Image rendering over Midjourney/DALL-E prompt generation guarantees 100% spelling accuracy, perfect visual consistency (removing styling drift), and extremely fast rendering (under 1 minute for a 7-slide deck) in one click. Splitting the copywriting (/carousel-copy) and rendering (/carousel-render) into a 2-step workflow provides Atinek with complete control to edit copy and paste code blocks before compiling.
+
+**Alternatives considered:** Using the DALL-E 3 image prompting workflow from the ingested playbook (too slow, prone to spelling errors, and requires manual copy-paste iteration and image downloads), or generating the carousel as a single multi-page scrolling HTML document (more prone to viewport scrolling inconsistencies than individual slide files).
+
+**Owner:** Antigravity AIOS
+

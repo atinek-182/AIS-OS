@@ -29,6 +29,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
 - `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
 - `/project-agent` — Scoped background developer agent runner inside project subdirectories.
+- [/carousel-copy] — Plan viral slide copy outlines, visual structures, and layouts.
+- [/carousel-render] — Compile slide HTML pages and render final social slide PNGs.
 - `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
 
 

@@ -21,6 +21,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
+| [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 
 ### Reference Manuals (`references/`)
@@ -45,6 +46,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | Directory / File | Type | Purpose | Owner / Writer |
 | :--- | :--- | :--- | :--- |
 | [scripts/](file:///d:/AI-OS/scripts/) | Folder | Centralized workspace maintenance and verification scripts. | AIOS |
+| [scripts/compile_carousel.py](file:///d:/AI-OS/scripts/compile_carousel.py) | File | Python compiler script that generates slide HTML elements from copy drafts. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
 | `.git/hooks/pre-commit` | File | Local active Git pre-commit hook (runs workspace map validation). | AIOS |
@@ -55,6 +57,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/](file:///d:/AI-OS/.agents/skills/) | Folder | Workspace-scoped custom slash commands. | AIOS |
 | [.agents/skills/agent-adapt](file:///d:/AI-OS/.agents/skills/agent-adapt) | Folder | Skill guiding the LLM to safely adapt Claude Code tools to Antigravity. | AIOS |
 | [.agents/skills/canvas-design](file:///d:/AI-OS/.agents/skills/canvas-design) | Folder | Programmatic visual assets and canvas generator dynamic router. | AIOS |
+| [.agents/skills/carousel-copy](file:///d:/AI-OS/.agents/skills/carousel-copy) | Folder | Skill for planning viral slide copy outlines and visual structures. | AIOS |
+| [.agents/skills/carousel-render](file:///d:/AI-OS/.agents/skills/carousel-render) | Folder | Rendering engine that builds HTML slide files and captures screenshots. | AIOS |
 | [.agents/skills/audit](file:///d:/AI-OS/.agents/skills/audit) | Folder | Four-Cs setup gaps check. | AIOS |
 | [.agents/skills/draft-message](file:///d:/AI-OS/.agents/skills/draft-message) | Folder | ZORIXEL brand voice copy drafting. | AIOS |
 | [.agents/skills/excalidraw-diagram](file:///d:/AI-OS/.agents/skills/excalidraw-diagram) | Folder | Visual workflow design drawing. | AIOS |
