@@ -200,17 +200,16 @@ def build_slide_html(slide, style, total_slides, base_template_path):
               <div class="comparison-column">
                 <div class="column-label before">Before</div>
                 <div class="comparison-card">
-                  <div style="font-family: var(--font-code); font-size:11px; color:var(--color-body-light); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Too Small & Muted</div>
-                  <div style="font-family: var(--font-body); font-size:18px; font-weight:400; color:var(--color-body-light); line-height:1.4; max-width:90%;">{before_text}</div>
+                  <div style="font-family: var(--font-code); font-size:12px; color:var(--color-body-light); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Too Small & Muted</div>
+                  <div style="font-family: var(--font-body); font-size:22px; font-weight:400; color:var(--color-body-light); line-height:1.4; max-width:90%;">{before_text}</div>
                 </div>
                 <div class="comparison-caption">{before_caption}</div>
               </div>
-              <div class="comparison-divider"></div>
               <div class="comparison-column">
                 <div class="column-label after">After</div>
-                <div class="comparison-card">
-                  <div style="font-family: var(--font-code); font-size:11px; color:var(--color-primary); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">✻ Big & Bold</div>
-                  <div style="font-family: var(--font-display); font-size:26px; font-weight:500; color:var(--color-ink); line-height:1.25; max-width:90%;">{after_text}</div>
+                <div class="comparison-card after-card">
+                  <div style="font-family: var(--font-code); font-size:12px; color:var(--color-primary); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">✻ Big & Bold</div>
+                  <div style="font-family: var(--font-display); font-size:32px; font-weight:500; color:var(--color-ink); line-height:1.25; max-width:90%;">{after_text}</div>
                 </div>
                 <div class="comparison-caption">{after_caption}</div>
               </div>
