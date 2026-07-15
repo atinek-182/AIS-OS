@@ -200,16 +200,17 @@ def build_slide_html(slide, style, total_slides, base_template_path):
               <div class="comparison-column">
                 <div class="column-label before">Before</div>
                 <div class="comparison-card">
-                  <div style="font-size:13px;color:#a0a0a0;margin-bottom:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Too Small / Boring</div>
-                  <div style="font-size:20px;font-weight:500;color:var(--color-ink);line-height:1.3;max-width:85%;">{before_text}</div>
+                  <div style="font-family: var(--font-code); font-size:11px; color:var(--color-body-light); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Too Small & Muted</div>
+                  <div style="font-family: var(--font-body); font-size:18px; font-weight:400; color:var(--color-body-light); line-height:1.4; max-width:90%;">{before_text}</div>
                 </div>
                 <div class="comparison-caption">{before_caption}</div>
               </div>
+              <div class="comparison-divider"></div>
               <div class="comparison-column">
                 <div class="column-label after">After</div>
-                <div class="comparison-card after-card">
-                  <div style="font-size:13px;color:var(--color-primary);margin-bottom:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">✻ Clear & Bold</div>
-                  <div style="font-size:24px;font-weight:800;color:#ffffff;line-height:1.2;max-width:85%;">{after_text}</div>
+                <div class="comparison-card">
+                  <div style="font-family: var(--font-code); font-size:11px; color:var(--color-primary); margin-bottom:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">✻ Big & Bold</div>
+                  <div style="font-family: var(--font-display); font-size:26px; font-weight:500; color:var(--color-ink); line-height:1.25; max-width:90%;">{after_text}</div>
                 </div>
                 <div class="comparison-caption">{after_caption}</div>
               </div>
@@ -343,7 +344,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
             <div class="cta-title">{title}</div>
             <div class="cta-description">{description}</div>
             <div class="cta-card">
-              <span style="font-weight:700;font-size:18px;letter-spacing:1px;color:var(--color-primary);">{button}</span>
+              <span class="cta-button-text">{button}</span>
             </div>
             <div style="font-family:var(--font-body);font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--color-muted);margin-top:50px;font-weight:600;">
               A D A R S H X D E S I G N
