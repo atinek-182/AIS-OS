@@ -5,7 +5,7 @@ import re
 workspace_root = r"d:\AI-OS"
 workspace_map_path = os.path.join(workspace_root, "WORKSPACE_MAP.md")
 
-ignored_root_items = {".git", ".obsidian", ".gitignore", ".gitattributes", ".env", "node_modules", "brainstorms"}
+ignored_root_items = {".git", ".obsidian", ".gitignore", ".gitattributes", ".env", "node_modules", "brainstorms", ".playwright-mcp"}
 
 if not os.path.exists(workspace_map_path):
     print("ERROR: WORKSPACE_MAP.md not found at root.")

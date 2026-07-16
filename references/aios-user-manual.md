@@ -8,17 +8,17 @@ Welcome to the central operational manual for your personal AI Operating System 
 
 These skills reside in `.agents/skills/` and can be triggered in conversation by typing their slash commands or requesting them in natural language.
 
-### 1. `/plan-day` (Daily Morning Loop)
+### 1. `/daily-plan-day` (Daily Morning Loop)
 - **Purpose:** Starts your morning. Pulls tasks, priorities, and Google Calendar events, fanning them into a structured hourly schedule.
 - **How to Use:**
-  - Type `/plan-day` in your terminal.
+  - Type `/daily-plan-day` in your terminal.
   - The AIOS will query [priorities.md](file:///d:/AI-OS/context/priorities.md), [master-task-list.md](file:///d:/AI-OS/brain-aios/wiki/checklists/master-task-list.md), and pull GCal events using the `gws` CLI under your Personal profile.
   - It outputs a tabular daily calendar and asks for confirmation.
 
-### 2. `/review-day` (Daily Evening Loop)
+### 2. `/daily-review-day` (Daily Evening Loop)
 - **Purpose:** Concludes your workday. Prompts you for completed tasks, audits manual repetitive overhead, and updates checklist files.
 - **How to Use:**
-  - Type `/review-day` at the end of the day.
+  - Type `/daily-review-day` at the end of the day.
   - Provide a list of completed items, manual tasks done 3+ times, and estimated time saved.
   - The AIOS will update [master-task-list.md](file:///d:/AI-OS/brain-aios/wiki/checklists/master-task-list.md) to mark items completed and append notes to the log.
 
@@ -99,6 +99,18 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
 - **How to Use:**
   - Type `/karpathy-guidelines` or ask the AIOS to apply the Karpathy guidelines to your programming tasks.
   - The AIOS will load rules to state assumptions explicitly, push back on overcomplication, ensure changes are strictly focused and surgical, and define verifiable, testable success criteria before modifying code.
+
+### 15. `/verify-design` (Visual & Technical QA Audit)
+- **Purpose:** Automatically compiles the project, starts a local server, and launches Playwright to take screenshots at 5 responsive viewports while checking the console log for errors.
+- **How to Use:**
+  - Type `/verify-design` or `/verify-design [project_dir]`.
+  - The AIOS builds the target project, hosts it, and runs the visual audit, printing console warnings and outputting links to the captured layout screenshots.
+
+### 16. `/ingest-skills` (Community Skill Ingester)
+- **Purpose:** Automatically clones a community skill or reference manual repository from GitHub, copies its modules into the Obsidian wiki skills library, registers the paths, and indexes them in logs.
+- **How to Use:**
+  - Type `/ingest-skills [repo_url]`.
+  - The AIOS clones the repository to scratch, extracts markdown guides, registers the new directories, indexes the library in `wiki/index.md`, and logs the event.
 
 ---
 

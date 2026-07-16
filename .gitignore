@@ -8,3 +8,4 @@ node_modules/
 audits/
 .agents/settings.local.json
 projects/
+.playwright-mcp/

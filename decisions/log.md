@@ -327,3 +327,62 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-16 — Establish Root Templates Junctions and Rename Daily Skills
+
+**Decision:** Created a physical `templates/` directory at the root of the workspace (`d:\AI-OS\templates`), created two directory junctions pointing to the templates subfolders inside our Obsidian vaults (`templates/aios` -> `brain-aios/wiki/templates` and `templates/zorixel` -> `second-brain-zorixel/wiki/templates`), and renamed the daily cadence skills folders (`plan-day` and `review-day`) to `daily-plan-day` and `daily-review-day`. Updated all configuration files, guides, manual entries, and validation scripts to refer to the new `/daily-plan-day` and `/daily-review-day` commands.
+
+**Why:** Having no root templates directory was flagged as a gap in our Four-Cs audit. Mapping the templates folders of both vaults under a unified root folder ensures easy access across the AIOS and prevents directory drift. Renaming the daily skills to start with `daily-` ensures compliance with canonical scheduled command patterns, resolving a second gap in our audit.
+
+**Alternatives considered:** Mapping `templates/` directly to only one of the vaults (ignores templates in the other vault), or keeping the custom skills named `/plan-day` (violates scheduled-command naming conventions).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Workspace Root Files Cleanup & Vault Brainstorm Archiving
+
+**Decision:** Moved `aios-intake.md` to `context/aios-intake.md`, moved `connections.md` to `context/connections.md`, created the archive folder `d:\AI-OS\brain-aios\archives\brainstorms\`, and relocated all completed brainstorm markdown files from the workspace root `brainstorms/` folder to the Obsidian vault's archive folder. Also purged all raw Playwright cache files (PNG/YML/LOG) inside `d:\AI-OS\.playwright-mcp/` and updated all config, guide, manual, and skill files to align with the new paths.
+
+**Why:** Cleaning up root-level clutter optimizes system navigation, reduces folder noise, and keeps the active workspace clean. Archiving completed brainstorms into the Obsidian vault's archives folder ensures they remain searchable inside the user's Second Brain while removing them from the active coding repository. Purging the Playwright cache directory removes transient cache slop and saves disk space.
+
+**Alternatives considered:** Keeping files at the root level (creates workspace clutter), or summarizing raw Playwright DOM trees (unnecessary prompt/token bloat).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Automate Playwright Cache Purging and Ignore Cache Bloat
+
+**Decision:** Integrated an automatic `.playwright-mcp/` cache purging step into the `/daily-review-day` evening routine, appended `.playwright-mcp/` to the root `.gitignore`, added `.playwright-mcp` to the `ignored_root_items` inside `scripts/validate_workspace_map.py`, and recorded the system improvement lessons in a new experiences log `brain-aios/wiki/experiences/2026-07-16-aios-directory-hygiene-and-playwright-cache-automation.md`.
+
+**Why:** The Playwright MCP server generates temporary HTML/YAML page state trees and screenshots during execution. These transient caches clutter Git status and trigger path-alignment errors in our pre-commit checks. Automating their removal at daily wrap-up and ignoring the directory in both Git and our custom map validator ensures that the user never has to manually clear these cache files and prevents directory checks from breaking.
+
+**Alternatives considered:** Continuing manual cache deletions (annoying and error-prone), or logging cache files in `WORKSPACE_MAP.md` (causes path misalignment checks on every run).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Map and Integrate Premium Frontend Experience System
+
+**Decision:** Created a directory junction at `premium-frontend-experience-system/` pointing to `C:\Users\HP\Documents\Premium-Frontend-Experience_System`. Registered the junction in `WORKSPACE_MAP.md`, integrated its guidelines as a default frontend design instruction in `GEMINI.md`, removed references to the deleted `vercel-composition-patterns` skill, and added a **Fast-Track Bypass Rule** in `ANTIGRAVITY_PROMPTING.md` for edits under 30 lines.
+
+**Why:** The user mapped their premium frontend design system Obsidian vault into the workspace to serve as a visual "design brain". Enforcing visual restraint, viewport audits, and Playwright verification ensures that client and brand UI projects match professional creative engineering standards. Cleaning up dead references to deleted skills prevents tool execution errors, and the Fast-Track Bypass Rule resolves visual iteration lag on minor bug fixes and simple changes.
+
+**Alternatives considered:** Duplicating the design system files directly inside the workspace (causes document fragmentation and updates wouldn't sync back to their active Obsidian design vault) or forcing full project briefs and Q&As on every minor layout fix (creates excessive procedural friction).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Restructure Premium Frontend Experience System & Configure Global Integrations
+
+**Decision:** Consolidated the 10 root-level markdown files of the Premium Frontend Experience System into 4 clean, highly-structured files: `AGENTS.md` (Identity, default tech stack, and prompting), `POLICIES.md` (Component sourcing, motion guidelines, WebGL shader policies, and Design Token specifications), `WORKFLOWS_AND_QA.md` (Milestones and QA checklists), and `INTAKE_AND_REFERENCES.md` (Project Q&A and Reference auditing). Deleted the 9 duplicate root files, updated `WORKSPACE_MAP.md`, registered the `shadcn` and `flowbite-mcp` servers globally in `mcp_config.json`, created a custom global skill `threejs-webgl` under `C:\Users\HP\.gemini\config\skills\threejs-webgl\`, created the visual QA automation script `scripts/verify_design_milestone.py` in the workspace, cloned the full 10-module `threejs-skills` and 8-module `gsap-skills` libraries into the static research library `brain-aios/wiki/research/skills-library/`, created the active workspace skills `/verify-design` (milestone verification wrapper) and `/ingest-skills` (automated repository cloning & indexing engine), and updated the final step of `/grill-me` to execute `/roast` automatically.
+
+**Why:** Having 10 separate markdown files repeating the tech stack, general rules, and QA checklists led to heavy documentation duplication, increased token consumption, and context fragmentation for the AIOS. Consolidating into 4 files keeps instructions lightweight and optimized for the LLM prompt context window. Registering the official shadcn and flowbite MCPs globally gives the AIOS direct access to Tailwind and shadcn tools across all projects. Creating the global `threejs-webgl` skill fills the gap for Three.js, shaders, and React Three Fiber best practices. Copying the full Three.js and GSAP repositories statically to `brain-aios` provides the AIOS with a progressive-disclosure-based granular reference database for complex scenarios. Creating the `/verify-design` and `/ingest-skills` active skills automates visual QA audits and repository ingestion into one-click commands, and connecting `/grill-me` to `/roast` ensures every discovery plan is automatically pressure-tested by the adversarial council. The python automation script `verify_design_milestone.py` replaces manual responsive and console audits with a one-click build and Playwright capture cycle.
+
+**Alternatives considered:** Keeping the 10 root files separate (rejected due to prompt bloat), or manual verification (rejected as it is repetitive and prone to error).
+
+**Owner:** Antigravity AIOS

@@ -51,7 +51,7 @@ This document describes the utility scripts stored under the [scripts/](file:///
 
 ## 5. `demo_test_skills.py`
 - **Location:** `scripts/demo_test_skills.py`
-- **Purpose:** Simulates the workflow execution logic of the workspace skills (`plan-day`, `review-day`, `scrape-competitor`, `draft-message`, `file-search`) to verify their behaviors and specs compliance.
+- **Purpose:** Simulates the workflow execution logic of the workspace skills (`daily-plan-day`, `daily-review-day`, `scrape-competitor`, `draft-message`, `file-search`) to verify their behaviors and specs compliance.
 - **How to Run:**
   ```powershell
   python scripts/demo_test_skills.py

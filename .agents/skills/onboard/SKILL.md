@@ -1,6 +1,6 @@
 ---
 name: onboard
-description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard me", "let's get started", "fill in my AIOS", or has just cloned the kit. Combined wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the end. Idempotent — re-run any time after editing aios-intake.md.
+description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard me", "let's get started", "fill in my AIOS", or has just cloned the kit. Combined wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the end. Idempotent — re-run any time after editing context/aios-intake.md.
 ---
 
 ## What this skill does
@@ -12,13 +12,13 @@ Single combined wizard. Reads or writes `aios-intake.md` (the canonical intake),
 ## When NOT to run this
 
 - If the user has already onboarded and wants to refresh: still run, but skip questions already answered (idempotent).
-- If the user wants to add a new connection: that's not onboarding — point them at `connections.md` to edit directly, or schedule a `/level-up` Phase 2 walk.
+- If the user wants to add a new connection: that's not onboarding — point them at `context/connections.md` to edit directly, or schedule a `/level-up` Phase 2 walk.
 
 ## Execution
 
 ### Step 1: Read the intake
 
-Read `aios-intake.md`. Check which Q1-Q7 sections have content vs. `[Your answer here]` placeholders.
+Read `context/aios-intake.md`. Check which Q1-Q7 sections have content vs. `[Your answer here]` placeholders.
 
 - **All filled** → skip Step 2, jump to Step 3 (scaffold).
 - **Some filled** → ask the user: "I see Q1, Q3, Q4 are answered. Want to fill the rest now, or scaffold from what's there?" Their call.
@@ -26,7 +26,7 @@ Read `aios-intake.md`. Check which Q1-Q7 sections have content vs. `[Your answer
 
 ### Step 2: The interview (7 questions, hard cap)
 
-Ask one at a time. Write each answer into `aios-intake.md` as you go (so the user can resume if interrupted).
+Ask one at a time. Write each answer into `context/aios-intake.md` as you go (so the user can resume if interrupted).
 
 **Q1 — Who are you, what do you sell, who do you sell it to?**
 Identity, offer, ICP. One paragraph each is fine.
@@ -63,7 +63,7 @@ Once the intake is complete, generate these files (or update if re-running). Bac
 2. **`context/about-business.md`** — from Q1 (offer, ICP) + Q4 (revenue model). One paragraph.
 3. **`context/priorities.md`** — from Q3. Numbered list, one line per priority.
 4. **`references/voice.md`** — from Q2. Paste samples verbatim with a short header explaining their use ("Match this register when drafting; don't fake voice on external content without showing me first").
-5. **`connections.md`** — populate the 7-row table from Q4-Q7 answers. Each row gets `mechanism: not yet connected`, `auth: —`, `last checked: —`. The user wires connections on Day 2.
+5. **`context/connections.md`** — populate the 7-row table from Q4-Q7 answers. Each row gets `mechanism: not yet connected`, `auth: —`, `last checked: —`. The user wires connections on Day 2.
 6. **`GEMINI.md`** — fill all `{{...}}` placeholders. Substitute the user's name, stated priority, voice register summary, and a brief connections summary.
 
 ### Step 4: The closing screen
@@ -74,7 +74,7 @@ Print one screen. Three lines max:
 ✓ Day 1 done. Your AIOS knows who you are, what you sell, what matters this quarter, and how you sound.
 
 Today: ask me — "what should I focus on this week?"
-Tomorrow: pick one tool from connections.md and wire it up (manual MCP install or write a small API script + save references/{tool}-api.md).
+Tomorrow: pick one tool from context/connections.md and wire it up (manual MCP install or write a small API script + save references/{tool}-api.md).
 Day 7: run /audit to see your score.
 ```
 
@@ -89,7 +89,7 @@ The Default Shift question seeds the Mindset framework before `/level-up` formal
 
 1. **The 7-question cap is non-negotiable.** Don't add Q8 in conversation.
 2. **Voice paste cannot be skipped.** If the user types samples mid-chat, refuse and tell them to paste from real writing.
-3. **One-shot scaffold.** After Step 2 ends, write Step 3 files in a single batch. No multi-turn confirmation. The user iterates by editing `aios-intake.md` and re-running.
+3. **One-shot scaffold.** After Step 2 ends, write Step 3 files in a single batch. No multi-turn confirmation. The user iterates by editing `context/aios-intake.md` and re-running.
 4. **Idempotent.** Re-running with an edited intake refreshes context files; backs up originals to `archives/intake-{ts}/`. Skips questions already answered unless the user wants to revise.
 5. **Closing screen is three lines.** Not a menu.
 6. **No extra skills generated.** Don't scaffold `/today`, `/draft`, `/connect`, etc. The kit ships 3 skills; the user authors more via `/level-up`.

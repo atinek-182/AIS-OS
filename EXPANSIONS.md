@@ -14,9 +14,9 @@ The AIOS structure should look like a small, well-run business. Not a hoarder's 
 | `references/` | Frameworks, voice samples, API guides, SOPs as you build them. |
 | `decisions/log.md` | Append-only record of what was decided and why. |
 | `archives/` | Old files. Don't delete — move here. |
-| `connections.md` | Registry of every system your AIOS can reach. |
+| `context/connections.md` | Registry of every system your AIOS can reach. |
 | `.agents/skills/` | Your skills: `/onboard`, `/audit`, `/level-up`. Add more via `/level-up`. |
-| `aios-intake.md` | Source-of-truth for `/onboard`. Edit and re-run any time. |
+| `context/aios-intake.md` | Source-of-truth for `/onboard`. Edit and re-run any time. |
 | `GEMINI.md` | Root operating manual. Filled by `/onboard`. Edit when your role/voice changes. |
 
 ---
@@ -43,8 +43,8 @@ When each surface gets routinely touched:
 - `decisions/log.md` — every meaningful decision (`/level-up` Phase 2 captures these automatically)
 - `archives/` — quarterly cleanup; move stale projects, deprecated skills, old intake versions
 - `references/sops/` — when a process gets re-run by someone new, write the SOP
-- `connections.md` — every time a new tool gets wired in, add a row
-- `references/{tool}-api.md` — same time as `connections.md` update; capture the API once
+- `context/connections.md` — every time a new tool gets wired in, add a row
+- `references/{tool}-api.md` — same time as `context/connections.md` update; capture the API once
 - `GEMINI.md` — quarterly review; rewrite the persona/priorities section after `/level-up` Q90
 
 ---

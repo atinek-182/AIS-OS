@@ -10,13 +10,13 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 
 ## Your skills
 
-- `/onboard` — already run if you're seeing this filled in. Re-run any time to refresh from an edited `aios-intake.md`.
+- `/onboard` — already run if you're seeing this filled in. Re-run any time to refresh from an edited `context/aios-intake.md`.
 - `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
 - `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
 - `/marketing` — Copywriting and marketing copy dynamic router referencing Corey Haynes' library.
 - `/agent-adapt` — Scan and tweak files/skills to migrate them from Claude Code to Antigravity.
-- `/plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
-- `/review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
+- `/daily-plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
+- `/daily-review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
 - `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
 - `/scrape-carousel` — Scrapes and extracts visual slide references and copy outlines from Instagram carousels.
 - `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
@@ -33,6 +33,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - [/carousel-copy] — Plan viral slide copy outlines, visual structures, and layouts.
 - [/carousel-render] — Compile slide HTML pages and render final social slide PNGs.
 - `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
+- `/verify-design` — Run automated visual QA and Playwright console audits.
+- `/ingest-skills` — Ingest community skills and reference manuals from GitHub repositories.
 
 
 ## Where things live
@@ -40,7 +42,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) — central index and write policies of the workspace.
 - `context/` — about you, your business, your priorities (filled by `/onboard`)
 - `references/` — frameworks, voice samples, API guides, user manuals, and skills documentation (documented in `references/antigravity-skills-guide.md`, `references/aios-user-manual.md`)
-- `connections.md` — registry of every system your AIOS can reach
+- `context/connections.md` — registry of every system your AIOS can reach
 - `decisions/log.md` — append-only record of decisions and why
 - `MEMORY.md` — persistent memory logging cross-session learnings and preferences
 - `scripts/` — utility and migration scripts (documented in `references/utility-scripts.md`)
@@ -81,6 +83,7 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Search-First Adaptation**: If links, guides, or documentation mention Claude Code plugins/skills, search the web first for native Antigravity equivalents. Only download or copy Claude-specific configurations as a last resort, and *always* request explicit confirmation first. Once copied, clean up duplicate Claude CLI plugins and skills folders to prevent conflicts.
 - **Token Optimization**: Structure, summarize, and organize workspace files and logs concisely to keep the codebase clean, reduce redundancy, and optimize model limits/token footprint.
 - **Self-Improvement Suggestion**: When we finish a major milestone, significantly refine a skill, or discuss a critical life/business lesson, suggest calling `/improve-system` to persist these learnings.
+- **Premium Frontend Experience System**: When designing or building any UI, component, or website, strictly adhere to the guidelines, workflows, and policies mapped under [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/). Use this as a core design brain to prevent templated layouts, overbuilt animations, or accessibility regressions. Check references, define visual concepts, establish viewports, and verify using Playwright browser testing.
 
 
 

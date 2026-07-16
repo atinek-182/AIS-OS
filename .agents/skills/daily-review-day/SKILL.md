@@ -1,5 +1,5 @@
 ---
-name: review-day
+name: daily-review-day
 description: Use when the user wants to review their day, complete an evening reflection, or run the daily wrap-up routine.
 ---
 
@@ -18,5 +18,6 @@ Automates the evening reflection routine. It gathers completed tasks, audits man
    - Append a summary of today's activities to [log.md](file:///d:/AI-OS/brain-aios/wiki/log.md).
    - Audit the workspace files and git status. If any new folders, junctions, or configurations were created today, ensure they are registered in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md).
    - If manual repetitive tasks were identified, write them as candidates in [hot.md](file:///d:/AI-OS/hot.md) or suggest planning them in the next `/level-up` run.
+   - Automatically clear all temporary browser files inside the Playwright cache folder (`d:\AI-OS\.playwright-mcp\`) to prevent directory map errors and save disk space.
 
 3. Report the daily summary back to the user with a confirmation of task updates.

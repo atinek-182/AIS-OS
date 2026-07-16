@@ -25,7 +25,7 @@ This is the brain-rewire mechanism. The kit doesn't need cron jobs to anchor beh
 
 - `context/priorities.md` — what the user said matters
 - `context/about-me.md` — top_pain, role
-- `connections.md` — what's reachable, by what mechanism
+- `context/connections.md` — what's reachable, by what mechanism
 - `references/3ms-framework.md` — the framework (used to quote principles back)
 - `decisions/log.md` — recent decisions (what's already shipped or considered)
 - `.agents/skills/*/SKILL.md` frontmatter — what capabilities exist

@@ -3,7 +3,7 @@ import os
 skills_dir = r"d:\AI-OS\.agents\skills"
 global_skills_dir = r"C:\Users\HP\.gemini\config\skills"
 
-new_skills = ["plan-day", "review-day", "scrape-competitor", "draft-message", "file-search", "agent-adapt", "grill-me", "using-superpowers", "notion-sync"]
+new_skills = ["daily-plan-day", "daily-review-day", "scrape-competitor", "draft-message", "file-search", "agent-adapt", "grill-me", "using-superpowers", "notion-sync"]
 global_skills = ["roast", "session-handoff", "context7", "karpathy-guidelines"]
 
 print("=== VERIFYING NEW SKILLS ===")

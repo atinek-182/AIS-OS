@@ -1,5 +1,5 @@
 ---
-name: plan-day
+name: daily-plan-day
 description: Use when the user wants to plan their day, start a morning routine, or generate a daily schedule.
 ---
 

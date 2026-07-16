@@ -59,8 +59,8 @@ for idx, var in enumerate(variations):
     print(f"  {var}")
 print()
 
-# 3. Test /plan-day logic
-print("--- TEST 3: /plan-day ---")
+# 3. Test /daily-plan-day logic
+print("--- TEST 3: /daily-plan-day ---")
 priorities = "Launching ZORIXEL (Instagram publishing & website), AI OS workflows"
 tasks = [
     "- [x] Configure core Antigravity/Claude plugins",
@@ -80,11 +80,11 @@ print("| 10:00 - 12:30 | Draft first week's content (5 reels) | Zorixel Launch |
 print("| 12:30 - 13:30 | Lunch Break | - |")
 print("| 13:30 - 16:00 | Build competitor scraper skill | AIOS Workflows |")
 print("| 16:00 - 17:00 | Review/test custom skills | Verification |")
-print("| 17:00 - 18:00 | Evening loop (/review-day) & plan tomorrow | Cadence |")
+print("| 17:00 - 18:00 | Evening loop (/daily-review-day) & plan tomorrow | Cadence |")
 print()
 
-# 4. Test /review-day logic
-print("--- TEST 4: /review-day ---")
+# 4. Test /daily-review-day logic
+print("--- TEST 4: /daily-review-day ---")
 completed_tasks = ["Configure core Antigravity/Claude plugins", "Verify custom skills"]
 manual_tasks = "Manually logging hours in excel and messaging team about task status"
 time_saved = "45 minutes"

@@ -59,3 +59,4 @@ Date: {date} · Goal: {one line}
 ## At the end
 - Do a final read of the capture file for contradictions or gaps and reconcile them.
 - Give the user a short recap: what's captured, what's still flagged, and the suggested next step.
+- **Run the `/roast` skill**: Convene the adversarial roast council on the captured decisions/plan to pressure-test the underlying logic, identify fatal risks, and outline a cheapest 48-hour validation test before final approval.

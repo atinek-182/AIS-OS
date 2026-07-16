@@ -41,7 +41,7 @@ The audit looks for **patterns and intent**, not exact paths. File names vary. U
 - Export pipelines: `data/`, `imports/`, `exports/` with refresh script + last-run timestamp
 - API keys + reference guide: `.env` entries + corresponding `references/{tool}-api.md`
 
-**Connections registry:** `connections.md` (anywhere).
+**Connections registry:** `context/connections.md` (anywhere).
 **Reference guides:** `references/{tool}-api.md`, `references/*-reference.md`, or equivalent.
 **Decisions:** `decisions/log.md`, `decisions.md`, or any append-only decisions file.
 **References / SOPs:** `references/`, `docs/`, `sops/` folders.
@@ -85,7 +85,7 @@ A "reachable" connection counts via ANY mechanism: MCP, script, export pipeline,
 | Tier-1 domain coverage | 10 | 1.4 pts per tier-1 domain reachable. Round to nearest 0.5. Cap 10. |
 | Reference guide presence | 5 | -1 per connected tool with no `references/{tool}-api.md`. Floor 0. |
 | Auth / pipeline freshness | 5 | -1 per connection in `needs-auth`/`expired` state, or script with no run within 30 days. Floor 0. |
-| Documentation in `connections.md` | 3 | 0 if missing; 1 sparse; 2 most; 3 covers all reachable. |
+| Documentation in `context/connections.md` | 3 | 0 if missing; 1 sparse; 2 most; 3 covers all reachable. |
 | Read-AND-write balance | 2 | At least one connection can WRITE (send email, post update, etc.). 0 if all read-only — the AIOS is a viewer not an OS. |
 
 #### Capabilities (25 pts)

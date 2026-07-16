@@ -11,11 +11,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [GEMINI.md](file:///d:/AI-OS/GEMINI.md) | File | Primary system prompt, voice instructions, and operator guidelines. | Operator / AIOS |
 | [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) | File | This map. Centralized index of configurations, scripts, and logs. | AIOS (Immediate updates) |
-| [connections.md](file:///d:/AI-OS/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
+| [context/connections.md](file:///d:/AI-OS/context/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
 | [decisions/log.md](file:///d:/AI-OS/decisions/log.md) | File | Append-only log recording architectural modifications to the root workspace. | AIOS |
 | [MEMORY.md](file:///d:/AI-OS/MEMORY.md) | File | Persistent memory documenting cross-session learnings and preferences. | AIOS (Auto-update) |
 | [EXPANSIONS.md](file:///d:/AI-OS/EXPANSIONS.md) | File | AIOS expansion roadmap outlining future workflows and system targets. | AIOS |
-| [aios-intake.md](file:///d:/AI-OS/aios-intake.md) | File | Setup Intake Form answers detailing the user's business objectives and stack. | Operator |
+| [context/aios-intake.md](file:///d:/AI-OS/context/aios-intake.md) | File | Setup Intake Form answers detailing the user's business objectives and stack. | Operator |
 | [hot.md](file:///d:/AI-OS/hot.md) | File | High-priority current issues cache and automation candidates queue. | AIOS / Operator |
 | [context/](file:///d:/AI-OS/context/) | Folder | Business context, guidelines, and onboarded preferences. | Operator / AIOS |
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
@@ -23,6 +23,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
+| [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/) | Junction | Premium frontend experience design system vault mapped from external documents. | Operator / AIOS |
+| [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
+| [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
+| [templates/zorixel](file:///d:/AI-OS/templates/zorixel) | Junction | Directory junction pointing to the Zorixel wiki templates (`second-brain-zorixel/wiki/templates`). | AIOS |
+
 
 ### Reference Manuals (`references/`)
 | Directory / File | Type | Purpose | Owner / Writer |
@@ -48,6 +53,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/](file:///d:/AI-OS/scripts/) | Folder | Centralized workspace maintenance and verification scripts. | AIOS |
 | [scripts/compile_carousel.py](file:///d:/AI-OS/scripts/compile_carousel.py) | File | Python compiler script that generates slide HTML elements from copy drafts. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
+| [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
 | `.git/hooks/pre-commit` | File | Local active Git pre-commit hook (runs workspace map validation). | AIOS |
 
@@ -65,18 +71,20 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/file-search](file:///d:/AI-OS/.agents/skills/file-search) | Folder | Obsidian vault document retrieval. | AIOS |
 | [.agents/skills/grill-me](file:///d:/AI-OS/.agents/skills/grill-me) | Folder | Interactive discovery sessions capture. | AIOS |
 | [.agents/skills/improve-system](file:///d:/AI-OS/.agents/skills/improve-system) | Folder | Analyzing session transcript to improve skills, save experiences, and prune configs. | AIOS |
+| [.agents/skills/ingest-skills](file:///d:/AI-OS/.agents/skills/ingest-skills) | Folder | Ingesting and copying community skill repositories. | AIOS |
 | [.agents/skills/level-up](file:///d:/AI-OS/.agents/skills/level-up) | Folder | Scoping automation features. | AIOS |
 | [.agents/skills/marketing](file:///d:/AI-OS/.agents/skills/marketing) | Folder | Copywriting and marketing copy dynamic router. | AIOS |
 | [.agents/skills/notion-sync](file:///d:/AI-OS/.agents/skills/notion-sync) | Folder | Syncing database logs. | AIOS |
 | [.agents/skills/onboard](file:///d:/AI-OS/.agents/skills/onboard) | Folder | Day-1 workspace wizard. | AIOS |
-| [.agents/skills/plan-day](file:///d:/AI-OS/.agents/skills/plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
+| [.agents/skills/daily-plan-day](file:///d:/AI-OS/.agents/skills/daily-plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
 | [.agents/skills/project-agent](file:///d:/AI-OS/.agents/skills/project-agent) | Folder | Scoped background developer agent runner. | AIOS |
-| [.agents/skills/review-day](file:///d:/AI-OS/.agents/skills/review-day) | Folder | Daily evening reflections log script. | AIOS |
+| [.agents/skills/daily-review-day](file:///d:/AI-OS/.agents/skills/daily-review-day) | Folder | Daily evening reflections log script. | AIOS |
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/scrape-carousel](file:///d:/AI-OS/.agents/skills/scrape-carousel) | Folder | Scrapes competitor reels/posts and takes screenshots of carousel slides. | AIOS |
 | [.agents/skills/seo-audit](file:///d:/AI-OS/.agents/skills/seo-audit) | Folder | Technical SEO and GEO analysis dynamic router. | AIOS |
 | [.agents/skills/skill-builder](file:///d:/AI-OS/.agents/skills/skill-builder) | Folder | Workspace custom skill optimization. | AIOS |
 | [.agents/skills/using-superpowers](file:///d:/AI-OS/.agents/skills/using-superpowers) | Folder | Enforcing superpowers checkpoint gates. | AIOS |
+| [.agents/skills/verify-design](file:///d:/AI-OS/.agents/skills/verify-design) | Folder | Visual and console audits of front-end milestones. | AIOS |
 
 ### Workspace-Scoped Agents (`.agents/agents/`)
 | Directory / File | Type | Purpose | Owner / Writer |
@@ -94,6 +102,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/experiences/](file:///d:/AI-OS/brain-aios/wiki/experiences/) | Folder | Personal lessons, stories, and insights captured in Obsidian. | AIOS |
 | [brain-aios/wiki/research/skills-library/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/) | Folder | Static reference library of marketing and SEO skills. | AIOS |
 | [brain-aios/wiki/research/skills-library/canvas-design/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/canvas-design/) | Folder | Static reference library for Canvas Design styles and templates. | AIOS |
+| [brain-aios/wiki/research/skills-library/threejs-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/threejs-skills/) | Folder | Static reference library for Three.js, shaders, and R3F. | AIOS |
+| [brain-aios/wiki/research/skills-library/gsap-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/gsap-skills/) | Folder | Static reference library for GSAP, ScrollTrigger, and timelines. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
 
 ---
@@ -114,4 +124,4 @@ To keep vaults isolated and logging consistent, any modifications made within th
 ## 3. Maintenance and Drift Prevention
 
 1. **Immediate Updates:** Whenever a new folder, junction, or config file (like adding an MCP server, API guide, or custom script) is created, the agent **MUST** immediately update this map to register the path.
-2. **Daily Wrap-up Verification:** During the `/review-day` evening routine, the agent must check the git status and directory additions to ensure any workspace layout alterations are reflected in this map.
+2. **Daily Wrap-up Verification:** During the `/daily-review-day` evening routine, the agent must check the git status and directory additions to ensure any workspace layout alterations are reflected in this map.
