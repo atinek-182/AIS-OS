@@ -35,6 +35,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
 - `/verify-design` — Run automated visual QA and Playwright console audits.
 - `/ingest-skills` — Ingest community skills and reference manuals from GitHub repositories.
+- `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
+- `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
 
 
 ## Where things live

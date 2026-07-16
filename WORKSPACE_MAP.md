@@ -52,6 +52,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [scripts/](file:///d:/AI-OS/scripts/) | Folder | Centralized workspace maintenance and verification scripts. | AIOS |
 | [scripts/compile_carousel.py](file:///d:/AI-OS/scripts/compile_carousel.py) | File | Python compiler script that generates slide HTML elements from copy drafts. | AIOS |
+| [scripts/mirror-jordan-watkins.js](file:///d:/AI-OS/scripts/mirror-jordan-watkins.js) | File | Node script that mirrors HTML, CSS, JS, fonts, and images from jordanwatkins.xyz. | AIOS |
+| [scripts/serve.js](file:///d:/AI-OS/scripts/serve.js) | File | Local static server to host mirrored reference assets for Playwright. | AIOS |
+| [scripts/generate-brand-candidates.js](file:///d:/AI-OS/scripts/generate-brand-candidates.js) | File | Playwright script to query local tools for brand color and font ideas. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
@@ -81,6 +84,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/daily-review-day](file:///d:/AI-OS/.agents/skills/daily-review-day) | Folder | Daily evening reflections log script. | AIOS |
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/scrape-carousel](file:///d:/AI-OS/.agents/skills/scrape-carousel) | Folder | Scrapes competitor reels/posts and takes screenshots of carousel slides. | AIOS |
+| [.agents/skills/scrape-component](file:///d:/AI-OS/.agents/skills/scrape-component) | Folder | Extracts a specific UI component, animation, or style from a website URL. | AIOS |
+| [.agents/skills/scrape-reference](file:///d:/AI-OS/.agents/skills/scrape-reference) | Folder | Scrapes, mirrors, and audits website references visually and code-wise. | AIOS |
 | [.agents/skills/seo-audit](file:///d:/AI-OS/.agents/skills/seo-audit) | Folder | Technical SEO and GEO analysis dynamic router. | AIOS |
 | [.agents/skills/skill-builder](file:///d:/AI-OS/.agents/skills/skill-builder) | Folder | Workspace custom skill optimization. | AIOS |
 | [.agents/skills/using-superpowers](file:///d:/AI-OS/.agents/skills/using-superpowers) | Folder | Enforcing superpowers checkpoint gates. | AIOS |
@@ -105,6 +110,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/threejs-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/threejs-skills/) | Folder | Static reference library for Three.js, shaders, and R3F. | AIOS |
 | [brain-aios/wiki/research/skills-library/gsap-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/gsap-skills/) | Folder | Static reference library for GSAP, ScrollTrigger, and timelines. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
+| [second-brain-zorixel/wiki/research/jordan-watkins-reference/](file:///d:/AI-OS/second-brain-zorixel/wiki/research/jordan-watkins-reference/) | Folder | Mirrored assets, design scripts, and visual analysis of jordanwatkins.xyz. | AIOS |
 
 ---
 

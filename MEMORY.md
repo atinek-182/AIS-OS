@@ -26,6 +26,7 @@ This file logs cross-session learnings, operational preferences, and recurring c
 3. **Search-First Adaptation:** When links or guides mention Claude Code, search the web first for native Antigravity ports. Only copy-paste Claude folders as a last resort, and *always* ask for user confirmation first.
 4. **Token Optimization:** Proactively clean up folders, keep file logs concise, and organize guides to reduce context overhead.
 5. **No Placeholders:** Generate real working assets and layouts. Never use placeholder images.
+6. **Local Reference Mirroring & Server Bypasses:** Mirror design references locally. Spin up background Node static servers (e.g. port 3000) to render local HTML files for visual Playwright tests to bypass browser permission blocks.
 
 ---
 

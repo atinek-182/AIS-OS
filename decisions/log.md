@@ -386,3 +386,27 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Keeping the 10 root files separate (rejected due to prompt bloat), or manual verification (rejected as it is repetitive and prone to error).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Scrape Jordan Watkins Brand Reference & Automate Design Tools
+
+**Decision:** Mirrored the entire asset and code tree of jordanwatkins.xyz locally to `second-brain-zorixel/wiki/research/jordan-watkins-reference/` using a Node scraper script (`scripts/mirror-jordan-watkins.js`). Created a visual and technical audit doc (`second-brain-zorixel/wiki/research/jordan-watkins-reference/analysis.md`), set up a background static web server (`scripts/serve.js`) hosting the mirrored website on port 3000, programmatically ran the local Typeface Picker and Palette Generator in Playwright to extract brand candidacies, and outputted the results to `second-brain-zorixel/wiki/brand/candidates.md` with visual preview blocks.
+
+**Why:** Having a complete offline-available mirror of the website allows us to audit Jordan Watkins' design, typography, spacing tokens, and custom JS interaction mechanics (draggable physics, canvas paper background, spring custom cursor). Setting up a localhost server on port 3000 circumvents the `file:` protocol restriction in the Playwright MCP server, enabling automated visual testing and programmatic querying of his design tools to fetch brand candidates for Zorixel.
+
+**Alternatives considered:** Scraping only textual summaries (rejected as it loses visual and script-level details) or querying the live website continuously (rejected because it depends on network availability and raises potential traffic throttling or TOS flags).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-16 — Create Scrape Component Skill for Targeted Design Reference Isolation
+
+**Decision:** Created a workspace custom skill `/scrape-component` located at `.agents/skills/scrape-component/SKILL.md` to extract isolated UI elements, motion styles, and asset dependencies from websites. Integrated the new workflow into the design system vault files `premium-frontend-experience-system/INTAKE_AND_REFERENCES.md` (Section 5) and `premium-frontend-experience-system/AGENTS.md` (Prompt Pattern 11), registered it in `GEMINI.md` and `WORKSPACE_MAP.md`, and ran the pre-commit map validation to ensure workspace alignment.
+
+**Why:** Mirrored reference websites can be massive and introduce substantial folder and codebase bloat. Providing a target-extraction skill allows us to scrape only the precise element (e.g. custom cursor, button animation, or bento layout) that the user likes. Asking targeted clarifying questions via `/grill-me` helps narrow down selectors and dependencies, producing standalone HTML/CSS/JS prototypes that can be hosted locally on localhost port 3000 for Playwright visual verifications.
+
+**Alternatives considered:** Manual copying of source code (rejected due to speed and risk of missing dependencies) or only scraping full websites (rejected to prevent directory clutter).
+
+**Owner:** Antigravity AIOS
