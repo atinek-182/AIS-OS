@@ -16,7 +16,8 @@ This file logs cross-session learnings, operational preferences, and recurring c
 ## 🛠️ Global Environment & Integrations
 - **Credentials Config:** Google Workspace CLI (`gws`) uses dual profiles. Personal context matches Personal json credentials; Brand context matches Brand json credentials.
 - **Ecosystem Focus:** The coding execution environment is strictly **Antigravity**. Verification, tests, and mockups must never be run or checked in the Claude CLI.
-- **Marketplaces Configured:** All global coding plugins (`superpowers`, `skill-creator`, `frontend-design`, `context-mode`, `antigravity-mem`) are uninstalled from the Claude CLI database and cloned/configured exclusively under the Antigravity global customization path (`C:\Users\HP\.gemini\config\skills/`).
+- **Marketplaces Configured:** All global coding plugins (`superpowers`, `skill-creator`, `frontend-design`, `context-mode`) are uninstalled from the Claude CLI database and configured under the Antigravity customization path. Persistent memory (`claude-mem`) is installed natively for the Antigravity CLI (`agy`) with its worker daemon running at port 37777 and MCP tools (`search`, `timeline`, `get_observations`) registered.
+- **Bun Runtime Path:** Standard Bun executable is located at `C:\Users\HP\.bun\bin\bun.exe` and must be used as the runtime for memory worker tasks.
 
 ---
 
@@ -27,6 +28,7 @@ This file logs cross-session learnings, operational preferences, and recurring c
 4. **Token Optimization:** Proactively clean up folders, keep file logs concise, and organize guides to reduce context overhead.
 5. **No Placeholders:** Generate real working assets and layouts. Never use placeholder images.
 6. **Local Reference Mirroring & Server Bypasses:** Mirror design references locally. Spin up background Node static servers (e.g. port 3000) to render local HTML files for visual Playwright tests to bypass browser permission blocks.
+7. **Diagram Storage Policy:** Always create and save Excalidraw diagrams inside the dedicated `diagrams/` folder at the workspace root instead of cluttering the root workspace directory.
 
 ---
 

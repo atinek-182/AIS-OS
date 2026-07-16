@@ -1,2 +1,3 @@
 #!/bin/sh
 python scripts/validate_workspace_map.py
+python scripts/validate_links.py

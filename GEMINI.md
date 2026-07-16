@@ -37,6 +37,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/ingest-skills` — Ingest community skills and reference manuals from GitHub repositories.
 - `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
 - `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
+- `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
 
 
 ## Where things live

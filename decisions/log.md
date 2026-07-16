@@ -410,3 +410,75 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Manual copying of source code (rejected due to speed and risk of missing dependencies) or only scraping full websites (rejected to prevent directory clutter).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Restructure Premium Frontend Experience System and Add Link-Rot Verification Hook
+
+**Decision:** Restructured the `premium-frontend-experience-system/` directory junctions. Removed duplicate project contexts, status definitions, and lists from design briefs and asset briefs templates, replacing them with bracket references to the central `[[PROJECT_BRIEF]]` and `[[README]]`. Updated all 13 workflow guides to point to the new unified files `[[POLICIES]]` and `[[AGENTS]]`. Created `scripts/validate_links.py` to validate markdown relative and Obsidian `[[WikiLink]]` structures, and integrated it into the git pre-commit hook. Created custom slash commands `/new-project` and `/design-direction` and registered them in `WORKSPACE_MAP.md`.
+
+**Why:** Consolidating templates and files keeps the codebase clean, reduces LLM context window consumption, and prevents token bloat during development. Adding an automated link validation checker to the pre-commit hook ensures absolute links integrity across directory renames and prevents broken wiki cross-references. Decoupling web layouts from social graphics prevents design contamination and keeps the business workflows clean.
+
+**Alternatives considered:** Collapsing the entire experience system into a single file (rejected because it would lose detailed research, site database registries, and modular workflows).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Create AIOS Workflow Diagram & User Guide
+
+**Decision:** Created `aios-workflow.excalidraw` in the workspace root and generated a simple, non-technical markdown user guide (`aios_workflow_guide.md`) in the artifacts directory. Registered the diagram in `WORKSPACE_MAP.md`.
+
+**Why:** To provide Atinek Maurya with a clear, non-technical, visual and textual explanation of how the whole AIOS operates and how they can trigger commands, manage context, and automate content research and coding tasks.
+
+**Alternatives considered:** Creating only a text guide without a visual Excalidraw diagram (less intuitive for visual design creators) or hardcoding visual assets inside the Obsidian vaults directly (harder to edit natively in Excalidraw).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Create Detailed AIOS Skills Reference Excalidraw Diagram
+
+**Decision:** Created detailed skills reference Excalidraw diagram (`aios-skills-reference.excalidraw`) in the workspace root detailing 30 local & global skills, their purpose, when to use them, and real examples. Registered the file in `WORKSPACE_MAP.md`.
+
+**Why:** To provide Atinek Maurya with a comprehensive, visual cheat-sheet of every tool, skill, and automation command in the AIOS, grouped by operational role (Ops, Marketing, Frontend, Code, Strategy, Admin).
+
+**Alternatives considered:** Maintaining a long markdown list (hard to scan at a glance) or listing only custom slash commands (omits critical global rules and layout audits).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Organize Excalidraw Diagrams Into Dedicated Diagrams Directory
+
+**Decision:** Created `diagrams/` folder in workspace root, moved existing `.excalidraw` files into it, updated build paths in `build_excalidraw.py`, and registered the directory and files in `WORKSPACE_MAP.md`.
+
+**Why:** To avoid root-level workspace clutter and maintain strict directory hygiene by centralizing all visual design and workflow schemas in one structured location.
+
+**Alternatives considered:** Keeping them at root (creates clutter) or moving to Obsidian vault folders (harder to edit natively in local workspace).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Integrate VibeSec Secure Coding Skill
+
+**Decision:** Cloned VibeSec-Skill repository from GitHub, tweaked it to make it native to Antigravity, and installed it under `.agents/skills/vibesec/SKILL.md`. Registered the slash command in `GEMINI.md`, `references/aios-user-manual.md`, and `WORKSPACE_MAP.md`.
+
+**Why:** To provide the AIOS with a structured secure-coding framework and checklists (covering IDOR, XSS, CSRF, secrets leakage, SSRF, SQLi, and JWT issues) when building, scanning, or auditing client web applications.
+
+**Alternatives considered:** Leaving it as a static reference file (rejected because the user explicitly wants to trigger security audit checks in active coding sessions).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Resolve Bun Probe Hangs & Setup Claude-Mem Persistent Memory
+
+**Decision:** Resolved local Bun probe hangs in sandboxed terminal environments by running the official Bun installer script to set up a standard working Bun binary at `C:\Users\HP\.bun\bin\bun.exe`. Installed the `claude-mem` persistent memory plugin for the Antigravity CLI, registering 7 lifecycle hooks, MCP configurations, and starting the memory worker daemon on port 37777.
+
+**Why:** To ensure Bun child-processes do not block sandboxed PowerShell runs, and to establish persistent semantic memory that automatically captures context, observations, and decisions across sessions for the Antigravity CLI environment.
+
+**Alternatives considered:** Using the pre-installed custom wrapper at `C:\Users\HP\AppData\Local\Kiro-Cli\bun` (rejected because it hangs indefinitely on console pipes under PowerShell jobs).
+
+**Owner:** Antigravity AIOS

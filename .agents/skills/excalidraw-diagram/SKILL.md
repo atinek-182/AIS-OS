@@ -40,7 +40,7 @@ Build elements in order:
 4. Arrows and arrow labels last
 
 ### Step 5: Save and deliver
-1. Save to `[concept-slug].excalidraw` in the current directory
+1. Save to `diagrams/[concept-slug].excalidraw` (placing the file inside the dedicated diagrams folder at the workspace root)
 2. Show the full JSON in a code block so the user can copy it directly
 3. Briefly describe what the diagram shows and what each color zone represents
 4. Tell the user how to use the file:

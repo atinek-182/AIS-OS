@@ -1,46 +1,69 @@
 ---
 name: improve-system
-description: Use when the user wants to analyze the current session to update skill instructions, save lessons/experiences, or flag stale configurations.
-argument-hint: [optional focus or specific skill/file]
-disable-model-invocation: true
+description: Analyze the current session transcript to update skill instructions, save lessons, update memory, and prune stale configurations.
+argument-hint: "[optional focus or specific file]"
 ---
 
-## What This Skill Does
+# System Self-Improvement Workflow
 
-Analyzes the current session transcript to identify:
-1. Iterated skill outputs or user corrections to update existing skills.
-2. Shared lessons or stories to capture in `brain-aios/wiki/experiences/` and index in `context/experiences/README.md`.
-3. Stale or duplicated workspace configurations, rules, or files.
+Use this skill when you finish a major milestone, significantly refine a custom skill, or want to log a critical life/business lesson learned during the session.
 
-Proposes a structured update summary for user confirmation before applying changes.
+## Triggering Rules
+- Proactively recommend invoking `/improve-system` at the end of a session where significant architectural iterations, bug workarounds, or custom skill updates occurred.
+- Triggered when the user runs `/improve-system` or asks to "improve the system", "save lessons", "update memory", or "log this experience".
 
-## Steps
+## Execution Workflow
 
-1. **Identify Session Context:**
-   - Locate the active conversation's `transcript.jsonl` under `C:/Users/HP/.gemini/antigravity-ide/brain/<conversation-id>/.system_generated/logs/transcript.jsonl` (substituting the active `Conversation ID` from your session metadata).
-   - Read the optional focus argument from `$ARGUMENTS` if provided.
+### Step 1: Ingest Session Logs
+1. Locate the active conversation's `transcript.jsonl` under:
+   `C:/Users/HP/.gemini/antigravity-ide/brain/<conversation-id>/.system_generated/logs/transcript.jsonl`
+   (Substituting the active `Conversation ID` from your session metadata).
+2. Scan the transcript backward to identify key user prompts, corrections, and tool failure workarounds (e.g. Playwright permission errors, Git pre-commit hook alerts, custom script bugs).
 
-2. **Analyze Session via Subagent:**
-   - Spawn a token-isolated subagent to read the tail of `transcript.jsonl` (e.g. the last 100 steps or the whole session if small).
-   - Task the subagent with identifying:
-     - Any user corrections or refinements of skill outputs (e.g. "change skill X so it does Y").
-     - Any lessons, experiences, or personal stories shared during the session.
-     - Any stale or duplicated rules/files.
-   - Have the subagent output a structured Markdown proposal with:
-     - **Skill Changes:** exact diffs/edits proposed for `.agents/skills/[skill-name]/SKILL.md`.
-     - **New Experiences:** filename, title, summary, and content for a new file in `brain-aios/wiki/experiences/`.
-     - **Stale Configuration Flags:** list of files or rules to prune or flag.
+### Step 2: Extract & Categorize Insights
+Identify and parse three distinct categories of improvements:
+1. **Developer Lessons / Stories**: High-leverage developer insights (e.g., node static server bypasses, selective component extraction, design taste boundaries).
+2. **Skill / System Refinements**: Corrections made to `.agents/skills/` configurations, templates, or instructions.
+3. **Implicit User Preferences**: Repeated user feedback regarding formatting, communication style, coding simplicity, or layout taste.
+4. **Stale Configurations**: Orphaned workspace files, obsolete rules in `AGENTS.md`, or broken links in Obsidian indexes.
 
-3. **Present & Confirm:**
-   - Present the subagent's structured proposal to the user.
-   - Prompt: *"Would you like me to apply these updates to your system?"*
+### Step 3: Compile System Update Proposal
+Create a structured Markdown proposal for the user containing:
+- **Learnings & Experiences**: Title, date, detailed story, and system guidelines to be written.
+- **Skill Updates**: Proposed diffs for target `.agents/skills/[skill-name]/SKILL.md` files.
+- **Memory & Rules Updates**: Diffs or additions for `MEMORY.md` (user preferences) or `AGENTS.md` (coding rules).
+- **Pruning & Cleanup Plan**: List of files to delete, move to `archives/`, or register in `WORKSPACE_MAP.md`.
 
-4. **Execute (On User Approval):**
-   - Write the new experiences file(s) to `brain-aios/wiki/experiences/YYYY-MM-DD-<slug>.md`.
-   - Update the index table in `context/experiences/README.md`.
-   - Apply modifications to target skill `SKILL.md` files.
-   - Register new experience files in `brain-aios/wiki/index.md`.
-   - Append change summaries to:
-     - `decisions/log.md` (for skill changes, workspace map updates).
-     - `brain-aios/wiki/log.md` (for new experience files).
-   - Update `WORKSPACE_MAP.md` if new directories or files were created.
+Wait for the user's explicit confirmation: *"Would you like me to apply these updates to your system?"*
+
+### Step 4: Execute approved changes
+Upon approval, perform the following edits:
+1. **Write Experience Document**:
+   - Create a new markdown file in `brain-aios/wiki/experiences/YYYY-MM-DD-[slug].md`.
+   - Update the table of contents index in `context/experiences/README.md`.
+2. **Modify Skills**:
+   - Apply edits to the designated `.agents/skills/[name]/SKILL.md` files.
+3. **Update Memory & Rules**:
+   - Update user preferences in `MEMORY.md`.
+   - Update coding rules in `AGENTS.md`.
+4. **Clean & Log**:
+   - Remove any temporary scratch files or unused scripts.
+   - Log decisions in `decisions/log.md` (workspace changes) and `brain-aios/wiki/log.md` (Obsidian index changes).
+   - Ensure the Git pre-commit validators (`validate_links.py` and `validate_workspace_map.py`) are run to confirm the system's structural integrity.
+
+---
+
+## Experience Document Template
+
+Files created in `brain-aios/wiki/experiences/` must follow this structure:
+
+```markdown
+# [Title of the Experience]
+
+## Lesson / Story
+[A narrative paragraph explaining what happened, the problem encountered, and how it was solved.]
+
+## System Guidelines Established
+- **[Constraint/Rule Name]:** [The concrete guideline to prevent this issue in the future.]
+- **[Constraint/Rule Name]:** [Another concrete guideline.]
+```

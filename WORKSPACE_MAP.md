@@ -11,6 +11,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [GEMINI.md](file:///d:/AI-OS/GEMINI.md) | File | Primary system prompt, voice instructions, and operator guidelines. | Operator / AIOS |
 | [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) | File | This map. Centralized index of configurations, scripts, and logs. | AIOS (Immediate updates) |
+| [diagrams/](file:///d:/AI-OS/diagrams/) | Folder | Dedicated directory organizing all Excalidraw design and workflow diagrams. | AIOS |
+| [diagrams/aios-workflow.excalidraw](file:///d:/AI-OS/diagrams/aios-workflow.excalidraw) | File | Excalidraw workflow diagram showing vaults, engines, processing and outputs. | AIOS |
+| [diagrams/aios-skills-reference.excalidraw](file:///d:/AI-OS/diagrams/aios-skills-reference.excalidraw) | File | Detailed Excalidraw reference diagram mapping all 30 local & global skills. | AIOS |
 | [context/connections.md](file:///d:/AI-OS/context/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
 | [decisions/log.md](file:///d:/AI-OS/decisions/log.md) | File | Append-only log recording architectural modifications to the root workspace. | AIOS |
 | [MEMORY.md](file:///d:/AI-OS/MEMORY.md) | File | Persistent memory documenting cross-session learnings and preferences. | AIOS (Auto-update) |
@@ -56,9 +59,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/serve.js](file:///d:/AI-OS/scripts/serve.js) | File | Local static server to host mirrored reference assets for Playwright. | AIOS |
 | [scripts/generate-brand-candidates.js](file:///d:/AI-OS/scripts/generate-brand-candidates.js) | File | Playwright script to query local tools for brand color and font ideas. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
+| [scripts/validate_links.py](file:///d:/AI-OS/scripts/validate_links.py) | File | Python link validator script checking for relative/Obsidian link rot. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
 | `.git/hooks/pre-commit` | File | Local active Git pre-commit hook (runs workspace map validation). | AIOS |
+
 
 ### Workspace-Scoped Skills (`.agents/skills/`)
 | Directory / File | Type | Purpose | Owner / Writer |
@@ -66,6 +71,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/](file:///d:/AI-OS/.agents/skills/) | Folder | Workspace-scoped custom slash commands. | AIOS |
 | [.agents/skills/agent-adapt](file:///d:/AI-OS/.agents/skills/agent-adapt) | Folder | Skill guiding the LLM to safely adapt Claude Code tools to Antigravity. | AIOS |
 | [.agents/skills/canvas-design](file:///d:/AI-OS/.agents/skills/canvas-design) | Folder | Programmatic visual assets and canvas generator dynamic router. | AIOS |
+| [.agents/skills/design-direction](file:///d:/AI-OS/.agents/skills/design-direction) | Folder | Visual design direction and roast council generator. | AIOS |
 | [.agents/skills/carousel-copy](file:///d:/AI-OS/.agents/skills/carousel-copy) | Folder | Skill for planning viral slide copy outlines and visual structures. | AIOS |
 | [.agents/skills/carousel-render](file:///d:/AI-OS/.agents/skills/carousel-render) | Folder | Rendering engine that builds HTML slide files and captures screenshots. | AIOS |
 | [.agents/skills/audit](file:///d:/AI-OS/.agents/skills/audit) | Folder | Four-Cs setup gaps check. | AIOS |
@@ -77,6 +83,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/ingest-skills](file:///d:/AI-OS/.agents/skills/ingest-skills) | Folder | Ingesting and copying community skill repositories. | AIOS |
 | [.agents/skills/level-up](file:///d:/AI-OS/.agents/skills/level-up) | Folder | Scoping automation features. | AIOS |
 | [.agents/skills/marketing](file:///d:/AI-OS/.agents/skills/marketing) | Folder | Copywriting and marketing copy dynamic router. | AIOS |
+| [.agents/skills/new-project](file:///d:/AI-OS/.agents/skills/new-project) | Folder | Initializes project directory, briefs, templates, and launches discovery Q&A. | AIOS |
 | [.agents/skills/notion-sync](file:///d:/AI-OS/.agents/skills/notion-sync) | Folder | Syncing database logs. | AIOS |
 | [.agents/skills/onboard](file:///d:/AI-OS/.agents/skills/onboard) | Folder | Day-1 workspace wizard. | AIOS |
 | [.agents/skills/daily-plan-day](file:///d:/AI-OS/.agents/skills/daily-plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
@@ -88,6 +95,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/scrape-reference](file:///d:/AI-OS/.agents/skills/scrape-reference) | Folder | Scrapes, mirrors, and audits website references visually and code-wise. | AIOS |
 | [.agents/skills/seo-audit](file:///d:/AI-OS/.agents/skills/seo-audit) | Folder | Technical SEO and GEO analysis dynamic router. | AIOS |
 | [.agents/skills/skill-builder](file:///d:/AI-OS/.agents/skills/skill-builder) | Folder | Workspace custom skill optimization. | AIOS |
+| [.agents/skills/vibesec](file:///d:/AI-OS/.agents/skills/vibesec) | Folder | Security scanning and audit rules tweaked for Antigravity. | AIOS |
 | [.agents/skills/using-superpowers](file:///d:/AI-OS/.agents/skills/using-superpowers) | Folder | Enforcing superpowers checkpoint gates. | AIOS |
 | [.agents/skills/verify-design](file:///d:/AI-OS/.agents/skills/verify-design) | Folder | Visual and console audits of front-end milestones. | AIOS |
 

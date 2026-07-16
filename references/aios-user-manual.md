@@ -112,6 +112,12 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/ingest-skills [repo_url]`.
   - The AIOS clones the repository to scratch, extracts markdown guides, registers the new directories, indexes the library in `wiki/index.md`, and logs the event.
 
+### 17. `/vibesec` (Secure Coding Guide & Vulnerability Scan Audit)
+- **Purpose:** Checks web application codebase against OWASP security standards, validating access controls (IDOR/Mass Assignment), client-side vulnerabilities (XSS/CSRF/Secrets leakage), and server-side request issues (SSRF/XXE/SQLi).
+- **How to Use:**
+  - Type `/vibesec` when working on web application backends or reviewing code security.
+  - The AIOS will audit the active routes, database interactions, and headers against the security checklist and recommend mitigations.
+
 ---
 
 
