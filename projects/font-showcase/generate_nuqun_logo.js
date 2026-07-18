@@ -143,33 +143,51 @@ const fs = require('fs');
 
     const font = opentype.parse(arrayBuffer);
     
-    // Calculate path for text "zorixel"
+    // Calculate path for text "zorixel" with custom letter-spacing (0.05em)
     const text = 'zorixel';
     const fontSize = 180;
+    const letterSpacing = 0.05; // 0.05em
     
     // Get glyphs and spacing
     const glyphs = font.stringToGlyphs(text);
-    let textWidth = 0;
+    const scale = 1 / font.unitsPerEm * fontSize;
+    
+    // Compute total width in pixels (including custom letter-spacing)
+    let totalWidth = 0;
     for (let i = 0; i < glyphs.length; i++) {
       const glyph = glyphs[i];
       if (glyph.advanceWidth) {
-        textWidth += glyph.advanceWidth;
+        totalWidth += glyph.advanceWidth * scale;
       }
       if (i < glyphs.length - 1) {
-        textWidth += font.getKerningValue(glyph, glyphs[i + 1]);
+        totalWidth += font.getKerningValue(glyph, glyphs[i + 1]) * scale;
+        totalWidth += letterSpacing * fontSize;
       }
     }
     
-    // Scale textWidth
-    const scale = 1 / font.unitsPerEm * fontSize;
-    const width = textWidth * scale;
-    
     // Center it in a 1000x1000 viewport
-    const x = (1000 - width) / 2;
+    const startX = (1000 - totalWidth) / 2;
     const y = 500 + (fontSize * 0.35); // offset baseline to center
 
-    const path = font.getPath(text, x, y, fontSize);
-    return path.toPathData();
+    // Construct the combined path by offset rendering of individual glyphs
+    const combinedPath = new opentype.Path();
+    let currentX = startX;
+    
+    for (let i = 0; i < glyphs.length; i++) {
+      const glyph = glyphs[i];
+      const glyphPath = glyph.getPath(currentX, y, fontSize);
+      combinedPath.commands.push(...glyphPath.commands);
+      
+      if (glyph.advanceWidth) {
+        currentX += glyph.advanceWidth * scale;
+      }
+      if (i < glyphs.length - 1) {
+        currentX += font.getKerningValue(glyph, glyphs[i + 1]) * scale;
+        currentX += letterSpacing * fontSize;
+      }
+    }
+    
+    return combinedPath.toPathData();
   }, fontBase64);
 
   // Write SVGs with stroke expansion to match synthetic bolding
