@@ -15,20 +15,27 @@ When this skill is invoked via `/carousel-render --file <path>` or triggered:
 3. **Start Background server**: Run a background local HTTP task to serve templates:
    `python -m http.server 8000 --directory d:/AI-OS/brainstorms/temp_carousel/`
 4. **Screenshot Loop**:
+   - Read `d:\AI-OS\brainstorms\temp_carousel\render_config.json` to obtain the aspect ratio dimensions (defaults to width `1080` x height `1350` if missing).
    - For each slide HTML file generated in `d:\AI-OS\brainstorms\temp_carousel/` (e.g., `slide_01.html`, `slide_02.html`, etc.):
      - Navigate the browser to the localhost URL:
        `http://localhost:8000/slide_01.html`
-     - Set the browser viewport size to `1080` x `1350` (Instagram Portrait).
+     - Set the browser viewport size to the width and height specified in the config.
      - Wait 1000ms for layout and typography rendering.
      - Take a screenshot of the viewport and save it as `d:\AI-OS\brainstorms\output_carousel\slide_01.png`, etc.
 5. **Clean Up & Terminate**:
    - Kill the background Python server task via `manage_task`.
-   - Remove the temporary `.html` and `styles.css` files from `d:\AI-OS\brainstorms\temp_carousel/` to keep the workspace clean.
+   - Remove the temporary `.html`, `styles.css`, and `render_config.json` files from `d:\AI-OS\brainstorms\temp_carousel/` to keep the workspace clean.
 6. **Present Output**: Output the file paths of all generated PNG slides.
 
 ## Playwright Execution Protocol
 
 Do NOT spawn a subagent. Call the `playwright` MCP tools directly in a loop:
 1. `browser_navigate` with `url: "http://localhost:8000/slide_XX.html"`
-2. `browser_resize` with `width: 1080, height: 1350`
+2. `browser_resize` with `width: <WIDTH>, height: <HEIGHT>` (dynamically read from `render_config.json`)
 3. `browser_take_screenshot` with `path: "d:\AI-OS\brainstorms\output_carousel\slide_XX.png"`
+
+---
+
+## Local Font & Asset Rendering Rules
+- **Base64 Data URIs:** Always base64-encode local font files and inject them directly as Data URIs in the `@font-face` URL block. This bypasses browser sandboxing restrictions that block local files from loading in Playwright screenshots.
+- **SVG Outline Alignment:** When generating text vector paths via scripts, manually calculate individual glyph coordinates using target offsets (e.g. `letterSpacing * fontSize`) and stroke parameters to match the CSS synthetic bolding/spacing of PNG outputs.

@@ -34,9 +34,15 @@ This file logs cross-session learnings, operational preferences, and recurring c
 
 ## 🎨 Zorixel Design Taste & Visual Guidelines
 - **Visual Identity (Light Editorial)**: The brand uses a premium print Editorial Magazine theme: warm linen off-white paper canvas background (`#fbfaf7`), dark charcoal text (`#141413`), and very sparse brand coral highlights (`#ff6b4a` - under 10% screen space).
-- **Typography Scale (Mobile-Large)**: Headings and main contents must be styled very large to guarantee mobile legibility. Hook cover title at `68px`, sub-headlines at `20px` - `24px`, card text at `22px` - `32px`, and captions at `18px`.
+- **Typography Scale & Finalized Font System**:
+  - **Core Brand Logo**: lowercase `"zorixel"` in `Nuqun` regular, bold weight, with wide letter-spacing (`0.05em`) and cyan/red chromatic aberration (RGB split) effect.
+  - **Editorial & Section Headings**: `Rosehot` (Title Case or Sentence Case, never all-caps or all-lowercase).
+  - **Poster & Creative Headings**: `Vixa` (Title Case, 2-5 words max, massive size `90px`+ only, no small text).
+  - **Long-form & Body Copy**: `Outfit` (Sentence Case, size `16px`-`19px`, `line-height: 1.6` for clean reading legibility).
+  - **Monospace Metrics & Dashboard Cards**: `Space Mono` (monospace typeface to prevent clumped layout numbers).
 - **Card Panels (Diffused Paper Sheets)**: Comparison blocks and modules must be styled as pure white card panels (`#ffffff`) floating with highly diffused, soft shadows (`box-shadow: 0 20px 48px rgba(20, 20, 19, 0.04)`) and rounded corners (`12px`). Avoid thick borders or raw borderless flat text panels.
 - **Top Safe Zones**: Standard safe-offset of at least `120px` to clear top absolute header overlays.
 - **CTA Contrast**: Buttons must use high-contrast solid backgrounds with white text.
 - **AI Slop Bans**: Never use standard SaaS-cream colors, default card outlines, emoji icons, uppercase tracked eyebrows, or generic sequential numbering prefixes (01 / 02) unless representing an actual ordered process.
+- **Headless Font Loading & SVG Outlines (Rule 8)**: When rendering local fonts in headless tests/renders, always encode font files to base64 Data URIs to prevent browser sandbox fallback. To emulate synthetic bolding and custom letter-spacing in vector SVGs, manually compile outline paths using custom glyph offsets and stroke properties.
 

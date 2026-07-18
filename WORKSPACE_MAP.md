@@ -81,6 +81,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/](file:///d:/AI-OS/.agents/skills/) | Folder | Workspace-scoped custom slash commands. | AIOS |
 | [.agents/skills/agent-adapt](file:///d:/AI-OS/.agents/skills/agent-adapt) | Folder | Skill guiding the LLM to safely adapt Claude Code tools to Antigravity. | AIOS |
 | [.agents/skills/canvas-design](file:///d:/AI-OS/.agents/skills/canvas-design) | Folder | Programmatic visual assets and canvas generator dynamic router. | AIOS |
+| [.agents/skills/brand-colors](file:///d:/AI-OS/.agents/skills/brand-colors) | Folder | Custom skill to automate brand color palette selection, interactive swatch creation, and WCAG contrast audits. | AIOS |
 | [.agents/skills/design-direction](file:///d:/AI-OS/.agents/skills/design-direction) | Folder | Visual design direction and roast council generator. | AIOS |
 | [.agents/skills/carousel-copy](file:///d:/AI-OS/.agents/skills/carousel-copy) | Folder | Skill for planning viral slide copy outlines and visual structures. | AIOS |
 | [.agents/skills/carousel-render](file:///d:/AI-OS/.agents/skills/carousel-render) | Folder | Rendering engine that builds HTML slide files and captures screenshots. | AIOS |

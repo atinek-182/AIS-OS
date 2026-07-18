@@ -15,3 +15,7 @@
   1. Scan the contents for platform-specific references (e.g., `Claude`, `Claude Code`, `Cursor`, `.claude/skills/`) and dynamically adapt them to `Antigravity` or `Gemini` equivalents.
   2. Preserve all core execution logic, design frameworks, and copywriting/audit guidelines without changing their meaning or losing their original capabilities.
   3. Run all tests, verifications, and directory-level checks strictly under the Antigravity environment.
+
+## Sandboxed Font Rendering & SVG Outline Layouts
+- Never assume local asset files load via `file:///` inside headless browser screenshots (Playwright); always prefer base64 Data URIs for local fonts in temporary HTML pages.
+- Double-check that user-finalized fonts (e.g. `Nuqun` logo, `Rosehot` headings, `Outfit` body) are strictly preserved, and avoid switching brand typefaces.
