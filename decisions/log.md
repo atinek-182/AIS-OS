@@ -554,3 +554,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Designing 20 individual HTML files (inflexible and difficult to browse synchronously).
 
 **Owner:** Atinek Maurya
+
+---
+
+## 2026-07-18 — Finalize Zorixel Brand Typography & Generate 2K High-Res Logos
+
+**Decision:** Finalized Zorixel's typography design: brand logo is lowercase `"zorixel"` in `Nuqun` font; display serifs are `Rosehot` (Title Case); display creative headings are `Vixa` (Title Case, 2-5 words only); paragraph body copy is `Outfit`; statistics numbers are `Space Mono`. Created and ran Playwright script `projects/font-showcase/generate_logo.js` to output 2000x2000 transparent logo files (`zorixel_logo_white.png`, `zorixel_logo_dark.png`). Created canonical guide at `second-brain-zorixel/wiki/brand/typography.md` and registered files in `WORKSPACE_MAP.md`.
+
+**Why:** The user approved the final configurations of Rosehot and Vixa, and requested a 2000x2000 transparent canvas output of their finalized lowercase logo. Recording the guidelines prevents future style drifts across social feeds and web designs.
+
+**Alternatives considered:** Drawing the logo in external vector tools (takes longer and doesn't verify local font file integrity).
+
+**Owner:** Atinek Maurya
