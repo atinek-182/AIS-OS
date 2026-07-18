@@ -11,9 +11,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [GEMINI.md](file:///d:/AI-OS/GEMINI.md) | File | Primary system prompt, voice instructions, and operator guidelines. | Operator / AIOS |
 | [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) | File | This map. Centralized index of configurations, scripts, and logs. | AIOS (Immediate updates) |
+| [.vscode/settings.json](file:///d:/AI-OS/.vscode/settings.json) | File | VS Code workspace configuration, setting default Python interpreter to trials/.venv. | AIOS |
 | [diagrams/](file:///d:/AI-OS/diagrams/) | Folder | Dedicated directory organizing all Excalidraw design and workflow diagrams. | AIOS |
 | [diagrams/aios-workflow.excalidraw](file:///d:/AI-OS/diagrams/aios-workflow.excalidraw) | File | Excalidraw workflow diagram showing vaults, engines, processing and outputs. | AIOS |
 | [diagrams/aios-skills-reference.excalidraw](file:///d:/AI-OS/diagrams/aios-skills-reference.excalidraw) | File | Detailed Excalidraw reference diagram mapping all 30 local & global skills. | AIOS |
+| [diagrams/apps-security.excalidraw](file:///d:/AI-OS/diagrams/apps-security.excalidraw) | File | Excalidraw diagram showing application security zones, defense layers, and perimeters. | AIOS |
 | [context/connections.md](file:///d:/AI-OS/context/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
 | [decisions/log.md](file:///d:/AI-OS/decisions/log.md) | File | Append-only log recording architectural modifications to the root workspace. | AIOS |
 | [MEMORY.md](file:///d:/AI-OS/MEMORY.md) | File | Persistent memory documenting cross-session learnings and preferences. | AIOS (Auto-update) |
@@ -26,10 +28,15 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
+| [projects/font-showcase/](file:///d:/AI-OS/projects/font-showcase/) | Folder | Typographic brand exploration slides showcase project. | AIOS |
 | [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/) | Junction | Premium frontend experience design system vault mapped from external documents. | Operator / AIOS |
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
 | [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
 | [templates/zorixel](file:///d:/AI-OS/templates/zorixel) | Junction | Directory junction pointing to the Zorixel wiki templates (`second-brain-zorixel/wiki/templates`). | AIOS |
+| [trials/](file:///d:/AI-OS/trials/) | Folder | Sandbox trial folders for prompt tuning, vision-in-the-loop design, and web speed loops. | AIOS / Operator |
+| [trials/runner.py](file:///d:/AI-OS/trials/runner.py) | File | Host-side runner script orchestrating sandboxed mutation runs and Git controls. | AIOS |
+| [audits/](file:///d:/AI-OS/audits/) | Folder | AIOS scorecard and Four Cs audit reports. | AIOS |
+| [tests/](file:///d:/AI-OS/tests/) | Folder | System verification and demo test suites. | AIOS |
 
 
 ### Reference Manuals (`references/`)
@@ -55,6 +62,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [scripts/](file:///d:/AI-OS/scripts/) | Folder | Centralized workspace maintenance and verification scripts. | AIOS |
 | [scripts/compile_carousel.py](file:///d:/AI-OS/scripts/compile_carousel.py) | File | Python compiler script that generates slide HTML elements from copy drafts. | AIOS |
+| [scripts/generate_security_diagram.py](file:///d:/AI-OS/scripts/generate_security_diagram.py) | File | Python generator script that programmatically compiles the app security Excalidraw diagram. | AIOS |
 | [scripts/mirror-jordan-watkins.js](file:///d:/AI-OS/scripts/mirror-jordan-watkins.js) | File | Node script that mirrors HTML, CSS, JS, fonts, and images from jordanwatkins.xyz. | AIOS |
 | [scripts/serve.js](file:///d:/AI-OS/scripts/serve.js) | File | Local static server to host mirrored reference assets for Playwright. | AIOS |
 | [scripts/generate-brand-candidates.js](file:///d:/AI-OS/scripts/generate-brand-candidates.js) | File | Playwright script to query local tools for brand color and font ideas. | AIOS |
@@ -98,6 +106,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/vibesec](file:///d:/AI-OS/.agents/skills/vibesec) | Folder | Security scanning and audit rules tweaked for Antigravity. | AIOS |
 | [.agents/skills/using-superpowers](file:///d:/AI-OS/.agents/skills/using-superpowers) | Folder | Enforcing superpowers checkpoint gates. | AIOS |
 | [.agents/skills/verify-design](file:///d:/AI-OS/.agents/skills/verify-design) | Folder | Visual and console audits of front-end milestones. | AIOS |
+| [.agents/skills/autoresearch-manage](file:///d:/AI-OS/.agents/skills/autoresearch-manage) | Folder | Manage Autoresearch loop target directories and registries. | AIOS |
+| [.agents/skills/frontend-slides](file:///d:/AI-OS/.agents/skills/frontend-slides) | Folder | Programs 16:9 responsive HTML presentation deck layouts. | AIOS |
+| [.agents/skills/slide-component](file:///d:/AI-OS/.agents/skills/slide-component) | Folder | Injects custom components and animations into slide layouts. | AIOS |
 
 ### Workspace-Scoped Agents (`.agents/agents/`)
 | Directory / File | Type | Purpose | Owner / Writer |
