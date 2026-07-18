@@ -70,7 +70,11 @@ const fs = require('fs');
     26: '27_refined_logo_b.png',
     27: '28_refined_logo_d.png',
     28: '29_refined_poster_b.png',
-    29: '30_refined_poster_d.png'
+    29: '30_refined_poster_d.png',
+    30: '31_newmix_footer.png',
+    31: '32_editorial_analysis.png',
+    32: '33_editorial_cover.png',
+    33: '34_newsletter_stats.png'
   };
 
   // Traverse through each slide and capture screenshot
