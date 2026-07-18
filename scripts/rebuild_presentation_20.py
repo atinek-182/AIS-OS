@@ -141,11 +141,11 @@ new_deck_html = """<body>
         <main class="deck-stage" id="deckStage">
 
             <!-- ===========================================
-               OPTION A: FUTURISTIC TECH (BEZMIAR)
+               OPTION A: ROSEHOT (DARK EDITORIAL)
                =========================================== -->
 
             <!-- Slide 1: Option A - Hero Section -->
-            <section class="slide theme-a active" style="--bg-primary: #08080c; --text-primary: #f0f4f8; --accent: #00f5c4; padding: 80px 100px; justify-content: space-between;">
+            <section class="slide theme-b active" style="--bg-primary: #0f0f12; --text-primary: #f5f5f7; --accent: #df5d4b; padding: 80px 100px; justify-content: space-between;">
                 <!-- Header nav -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
                     <span style="font-family: 'Nuqun'; font-size: 32px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
@@ -159,48 +159,47 @@ new_deck_html = """<body>
 
                 <!-- Hero Content -->
                 <div style="z-index: 2; text-align: left; max-width: 1200px; margin-top: 40px;">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">[ SEC_01 // TECH ]</span>
-                    <h1 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 90px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; letter-spacing: -0.03em; text-transform: lowercase; color: #ffffff;">
-                        we build next-gen interfaces
+                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 95px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; letter-spacing: 0.01em; color: #ffffff;">
+                        Web Design Showcase
                     </h1>
-                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(240,244,248,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
-                        A typography framework engineered for high-performance frontend interfaces, blending organic curve parameters with technical layout grids.
+                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(245,245,247,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
+                        A classic serif typeface paired with geometric layouts. Designed for storytelling, premium publications, and high-end agency portfolios.
                     </p>
                     <div style="display: flex; gap: 16px;">
-                        <button style="background: var(--accent); color: #08080c; border: none; padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Launch Console</button>
-                        <button style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.2); padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Read Docs</button>
+                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">View Gallery</button>
+                        <button style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.2); padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Learn More</button>
                     </div>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option A (Tech) — Hero Section</span>
+                    <span>Option A (Rosehot Dark) — Hero Section</span>
                     <span>Slide 1 of 20</span>
                 </div>
             </section>
 
             <!-- Slide 2: Option A - About & Contact -->
-            <section class="slide theme-a" style="--bg-primary: #08080c; --text-primary: #f0f4f8; --accent: #00f5c4; padding: 80px 100px; justify-content: flex-start;">
+            <section class="slide theme-b" style="--bg-primary: #0f0f12; --text-primary: #f5f5f7; --accent: #df5d4b; padding: 80px 100px; justify-content: flex-start;">
                 <!-- Header nav -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 16px; margin-bottom: 40px;">
                     <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">[ SEC_01 // IDENTITY ]</span>
+                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">Brand Showcase</span>
                 </div>
 
                 <div class="split-grid">
                     <!-- Left: About text -->
                     <div style="display: flex; flex-direction: column; gap: 24px; text-align: left;">
-                        <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; text-transform: lowercase; color: #ffffff;">
-                            the character of form.
+                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; color: #ffffff; letter-spacing: 0.01em;">
+                            The Character of Form
                         </h2>
-                        <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(240,244,248,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
-                            We believe typography is the core behavior of a user interface. Every letter shape should balance high-impact presentation and seamless utility. By integrating modern sans-serifs with experimental display faces, we construct layouts that stand out without sacrificing reading speed.
+                        <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(245,245,247,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
+                            We believe typography is the core behavior of a user interface. Every letter shape should balance high-impact presentation and seamless utility. Pairing this styling with modern geometric text systems ensures maximum readability across screens of all sizes.
                         </p>
                     </div>
 
                     <!-- Right: Contact form -->
-                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
-                        <h3 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 32px; font-weight: normal; margin: 0; text-transform: lowercase; color: #ffffff;">
-                            get in touch.
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
+                        <h3 contenteditable="true" style="font-family: 'Rosehot'; font-size: 32px; font-weight: normal; margin: 0; color: #ffffff;">
+                            Get in Touch
                         </h3>
                         <div class="form-field">
                             <label>Your Name</label>
@@ -210,27 +209,27 @@ new_deck_html = """<body>
                             <label>Email Address</label>
                             <input type="email" placeholder="e.g. hello@zorixel.design" readonly>
                         </div>
-                        <button style="background: var(--accent); color: #08080c; border: none; padding: 14px; border-radius: 8px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; text-transform: uppercase; margin-top: 10px;">Send Message</button>
+                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px; border-radius: 8px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; text-transform: uppercase; margin-top: 10px;">Send Message</button>
                     </div>
                 </div>
 
                 <div class="slide-footer" style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; margin-top: auto; width: 100%;">
-                    <span>Option A (Tech) — About &amp; Contact</span>
+                    <span>Option A (Rosehot Dark) — About &amp; Contact</span>
                     <span>Slide 2 of 20</span>
                 </div>
             </section>
 
             <!-- Slide 3: Option A - Dashboard Page -->
-            <section class="slide theme-a" style="--bg-primary: #08080c; --text-primary: #f0f4f8; --accent: #00f5c4; padding: 60px 80px; justify-content: space-between;">
+            <section class="slide theme-b" style="--bg-primary: #0f0f12; --text-primary: #f5f5f7; --accent: #df5d4b; padding: 60px 80px; justify-content: space-between;">
                 <!-- Grid Dashboard wrapper -->
-                <div class="grid-dashboard">
+                <div class="grid-dashboard" style="background: rgba(255,255,255,0.01); border-color: rgba(255,255,255,0.06);">
                     <!-- Sidebar -->
-                    <div class="db-sidebar">
+                    <div class="db-sidebar" style="border-color: rgba(255,255,255,0.04);">
                         <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
                         <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px;">
-                            <div class="db-menu-item active-item">Console</div>
-                            <div class="db-menu-item">Analytics</div>
-                            <div class="db-menu-item">Deployments</div>
+                            <div class="db-menu-item active-item">Overview</div>
+                            <div class="db-menu-item">Subscribers</div>
+                            <div class="db-menu-item">Campaigns</div>
                             <div class="db-menu-item">Settings</div>
                         </div>
                     </div>
@@ -240,47 +239,42 @@ new_deck_html = """<body>
                         <!-- Stats Row -->
                         <div class="db-stats-row">
                             <div class="db-card">
-                                <span class="db-card-label">active nodes</span>
-                                <span class="db-card-value" contenteditable="true">1,048,576</span>
+                                <span class="db-card-label">monthly readers</span>
+                                <span class="db-card-value" contenteditable="true">384,120</span>
                             </div>
                             <div class="db-card">
-                                <span class="db-card-label">avg latency</span>
-                                <span class="db-card-value" contenteditable="true">12.4 ms</span>
+                                <span class="db-card-label">session duration</span>
+                                <span class="db-card-value" contenteditable="true">4m 12s</span>
                             </div>
                             <div class="db-card">
-                                <span class="db-card-label">uptime index</span>
-                                <span class="db-card-value" contenteditable="true">99.98%</span>
+                                <span class="db-card-label">conversion rate</span>
+                                <span class="db-card-value" contenteditable="true">8.45%</span>
                             </div>
                         </div>
 
                         <!-- Panel with chart SVG -->
-                        <div style="flex-grow: 1; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; background: rgba(0,0,0,0.1);">
+                        <div style="flex-grow: 1; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; background: rgba(0,0,0,0.15);">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase;">Node Load Metrics</span>
-                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent);">Live Rendering</span>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase;">Story Engagement Chart</span>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent);">Editorial Stats</span>
                             </div>
                             
                             <!-- SVG Chart -->
                             <div style="width: 100%; height: 260px;">
                                 <svg viewBox="0 0 1400 260" style="width: 100%; height: 100%; overflow: visible;">
                                     <defs>
-                                        <linearGradient id="gradient-a" x1="0" y1="0" x2="0" y2="1">
+                                        <linearGradient id="gradient-rosehot-dark" x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25"/>
                                             <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.00"/>
                                         </linearGradient>
                                     </defs>
-                                    <!-- Area under path -->
-                                    <path d="M 0,260 L 0,180 Q 200,120 400,210 T 800,110 T 1200,50 L 1400,30 L 1400,260 Z" fill="url(#gradient-a)"/>
-                                    <!-- Grid lines -->
+                                    <path d="M 0,260 L 0,210 Q 300,100 600,190 T 1000,90 T 1400,60 L 1400,260 Z" fill="url(#gradient-rosehot-dark)"/>
                                     <line x1="0" y1="65" x2="1400" y2="65" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="130" x2="1400" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="195" x2="1400" y2="195" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <!-- Line path -->
-                                    <path d="M 0,180 Q 200,120 400,210 T 800,110 T 1200,50 L 1400,30" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                                    <!-- Data dots -->
-                                    <circle cx="400" cy="210" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
-                                    <circle cx="800" cy="110" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
-                                    <circle cx="1200" cy="50" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                                    <path d="M 0,210 Q 300,100 600,190 T 1000,90 T 1400,60" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                                    <circle cx="600" cy="190" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                                    <circle cx="1000" cy="90" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
                                 </svg>
                             </div>
                         </div>
@@ -288,40 +282,38 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="width: 100%;">
-                    <span>Option A (Tech) — Live Dashboard Interface</span>
+                    <span>Option A (Rosehot Dark) — Live Dashboard Interface</span>
                     <span>Slide 3 of 20</span>
                 </div>
             </section>
 
             <!-- Slide 4: Option A - Poster Section -->
-            <section class="slide theme-a" style="--bg-primary: #08080c; --text-primary: #f0f4f8; --accent: #00f5c4; padding: 80px 100px; justify-content: center; align-items: center;">
-                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920'); opacity: 0.12;"></div>
+            <section class="slide theme-b" style="--bg-primary: #0f0f12; --text-primary: #f5f5f7; --accent: #df5d4b; padding: 80px 100px; justify-content: center; align-items: center;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920'); opacity: 0.15;"></div>
                 <div class="bg-overlay"></div>
                 
-                <div style="background: rgba(8, 8, 12, 0.7); backdrop-filter: blur(24px); border: 1px solid rgba(0,245,196,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.2em; display: inline-block; margin-bottom: 24px;">System Architecture</span>
-                    <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; text-transform: lowercase; color: #ffffff;">
-                        system architecture
+                <div style="background: rgba(15, 15, 18, 0.75); backdrop-filter: blur(24px); border: 1px solid rgba(223,93,75,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
+                    <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; color: #ffffff; letter-spacing: 0.01em;">
+                        System Architecture
                     </h2>
-                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(240,244,248,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
-                        Download the markdown specs and API templates, optimized for direct integration into developer second brains.
+                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(245,245,247,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
+                        Download the case studies and visual layouts, designed for storytellers who seek to balance elegance and technical structure.
                     </p>
                     
-                    <!-- Signup form inside poster -->
                     <div style="display: flex; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; width: 100%; max-width: 500px; padding: 4px; margin: 0 auto;">
                         <input type="email" placeholder="Your email" style="flex: 1; border: none; outline: none; background: transparent; padding: 14px 20px; font-family: 'Outfit'; font-size: 16px; color: #ffffff;" readonly>
-                        <button style="background: var(--accent); color: #08080c; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
+                        <button style="background: var(--accent); color: #ffffff; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
                     </div>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option A (Tech) — Creative Poster Layout</span>
+                    <span>Option A (Rosehot Dark) — Creative Poster Layout</span>
                     <span>Slide 4 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 5: Option A - Footer Layout (newmix style) -->
-            <section class="slide theme-a" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #00f5c4; padding: 60px 80px; justify-content: space-between;">
+            <!-- Slide 5: Option A - Footer Layout -->
+            <section class="slide theme-b" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #df5d4b; padding: 60px 80px; justify-content: space-between;">
                 <!-- Header navigation -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
                     <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em;">zorixel</span>
@@ -334,10 +326,10 @@ new_deck_html = """<body>
                     </div>
                 </div>
 
-                <!-- Central Massive Logo (Bezmiar) -->
+                <!-- Central Massive Logo (Rosehot) -->
                 <div style="text-align: center; width: 100%; z-index: 2; margin: 40px 0;">
-                    <h1 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 260px; font-weight: normal; text-transform: lowercase; letter-spacing: -0.03em; margin: 0; line-height: 0.85;">
-                        webdicam
+                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 260px; font-weight: normal; letter-spacing: -0.01em; margin: 0; line-height: 0.85;">
+                        Zorixel
                     </h1>
                     <!-- Dot emblem -->
                     <div style="width: 28px; height: 28px; background: #ffffff; border-radius: 50%; margin: 30px auto 0 auto; box-shadow: 0 0 20px rgba(255,255,255,0.5);"></div>
@@ -345,7 +337,6 @@ new_deck_html = """<body>
 
                 <!-- Footer details grid -->
                 <div style="display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 40px; width: 100%; z-index: 2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
-                    <!-- Column 1: Contact & Socials -->
                     <div style="display: flex; flex-direction: column; justify-content: space-between; height: 120px;">
                         <a href="mailto:hello@zorixel.design" style="color: #ffffff; text-decoration: none; font-family: 'Outfit'; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px;">hello@zorixel.design</a>
                         <div style="display: flex; gap: 12px; margin-top: 12px;">
@@ -358,7 +349,6 @@ new_deck_html = """<body>
                         </div>
                     </div>
 
-                    <!-- Column 2: Sitemap Links -->
                     <div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Outfit'; font-size: 15px; color: rgba(255,255,255,0.8);">
                         <span>Home</span>
                         <span>Products</span>
@@ -367,7 +357,6 @@ new_deck_html = """<body>
                         <span>Contact</span>
                     </div>
 
-                    <!-- Column 3: Address / Office Details -->
                     <div style="font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start;">
                         <span style="font-weight: 600; color: #ffffff; margin-bottom: 4px;">zorixel office</span>
                         <span>40, Changdeokgung 1-gil,</span>
@@ -376,14 +365,14 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option A (Tech) — Brand Footer Layout (Bezmiar)</span>
+                    <span>Option A (Rosehot Dark) — Brand Footer Layout</span>
                     <span>Slide 5 of 20</span>
                 </div>
             </section>
 
 
             <!-- ===========================================
-               OPTION B: ELEGANT EDITORIAL (ROSEHOT)
+               OPTION B: ROSEHOT (LIGHT EDITORIAL)
                =========================================== -->
 
             <!-- Slide 6: Option B - Hero Section -->
@@ -401,9 +390,8 @@ new_deck_html = """<body>
 
                 <!-- Hero Content -->
                 <div style="z-index: 2; text-align: left; max-width: 1200px; margin-top: 40px;">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">[ VOL_02 // EDITORIAL ]</span>
-                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 90px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; letter-spacing: 0.02em; color: #111111;">
-                        web design showcase
+                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 95px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; letter-spacing: 0.01em; color: #111111;">
+                        Crafting Editorial Digital Design
                     </h1>
                     <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(17,17,17,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
                         A classic serif typeface paired with geometric layouts. Designed for storytelling, premium publications, and high-end agency portfolios.
@@ -415,7 +403,7 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option B (Editorial) — Hero Section</span>
+                    <span>Option B (Rosehot Light) — Hero Section</span>
                     <span>Slide 6 of 20</span>
                 </div>
             </section>
@@ -425,14 +413,14 @@ new_deck_html = """<body>
                 <!-- Header nav -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid rgba(17,17,17,0.08); padding-bottom: 16px; margin-bottom: 40px;">
                     <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #111111;">zorixel</span>
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(17,17,17,0.4);">[ SEC_02 // LAYOUT ]</span>
+                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(17,17,17,0.4);">Brand Showcase</span>
                 </div>
 
                 <div class="split-grid">
                     <!-- Left: About text -->
                     <div style="display: flex; flex-direction: column; gap: 24px; text-align: left;">
-                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; color: #111111; letter-spacing: 0.02em;">
-                            elegant proportions.
+                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; color: #111111; letter-spacing: 0.01em;">
+                            Elegant Proportions
                         </h2>
                         <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(17,17,17,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
                             Editorial serif curves offer organic contrast to rigid digital viewports, bringing human touch and narrative flow back to technical interfaces. Pairing this styling with modern geometric text systems ensures maximum readability across screens of all sizes.
@@ -442,7 +430,7 @@ new_deck_html = """<body>
                     <!-- Right: Contact form -->
                     <div style="background: rgba(0,0,0,0.02); border: 1px solid rgba(17,17,17,0.08); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
                         <h3 contenteditable="true" style="font-family: 'Rosehot'; font-size: 32px; font-weight: normal; margin: 0; color: #111111;">
-                            write to us.
+                            Write to Us
                         </h3>
                         <div class="form-field" style="--accent: #111111;">
                             <label style="color: rgba(17,17,17,0.5);">Your Name</label>
@@ -457,7 +445,7 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="border-top: 1px solid rgba(17,17,17,0.08); padding-top: 16px; margin-top: auto; width: 100%;">
-                    <span>Option B (Editorial) — About &amp; Contact</span>
+                    <span>Option B (Rosehot Light) — About &amp; Contact</span>
                     <span>Slide 7 of 20</span>
                 </div>
             </section>
@@ -506,20 +494,16 @@ new_deck_html = """<body>
                             <div style="width: 100%; height: 260px;">
                                 <svg viewBox="0 0 1400 260" style="width: 100%; height: 100%; overflow: visible;">
                                     <defs>
-                                        <linearGradient id="gradient-b" x1="0" y1="0" x2="0" y2="1">
+                                        <linearGradient id="gradient-rosehot-light" x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25"/>
                                             <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.00"/>
                                         </linearGradient>
                                     </defs>
-                                    <!-- Area under path -->
-                                    <path d="M 0,260 L 0,210 Q 300,100 600,190 T 1000,90 T 1400,60 L 1400,260 Z" fill="url(#gradient-b)"/>
-                                    <!-- Grid lines -->
+                                    <path d="M 0,260 L 0,210 Q 300,100 600,190 T 1000,90 T 1400,60 L 1400,260 Z" fill="url(#gradient-rosehot-light)"/>
                                     <line x1="0" y1="65" x2="1400" y2="65" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="130" x2="1400" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="195" x2="1400" y2="195" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <!-- Line path -->
                                     <path d="M 0,210 Q 300,100 600,190 T 1000,90 T 1400,60" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                                    <!-- Data dots -->
                                     <circle cx="600" cy="190" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
                                     <circle cx="1000" cy="90" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
                                 </svg>
@@ -529,7 +513,7 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="width: 100%;">
-                    <span>Option B (Editorial) — Live Dashboard Interface</span>
+                    <span>Option B (Rosehot Light) — Live Dashboard Interface</span>
                     <span>Slide 8 of 20</span>
                 </div>
             </section>
@@ -540,15 +524,13 @@ new_deck_html = """<body>
                 <div class="bg-overlay"></div>
                 
                 <div style="background: rgba(17, 17, 17, 0.75); backdrop-filter: blur(24px); border: 1px solid rgba(223,93,75,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.2em; display: inline-block; margin-bottom: 24px;">Editorial Journal</span>
-                    <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; color: #ffffff; letter-spacing: 0.02em;">
-                        pure narrative.
+                    <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; color: #ffffff; letter-spacing: 0.01em;">
+                        Pure Narrative
                     </h2>
                     <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(245,245,247,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
                         Download the case studies and visual layouts, designed for storytellers who seek to balance elegance and technical structure.
                     </p>
                     
-                    <!-- Signup form inside poster -->
                     <div style="display: flex; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; width: 100%; max-width: 500px; padding: 4px; margin: 0 auto;">
                         <input type="email" placeholder="Your email" style="flex: 1; border: none; outline: none; background: transparent; padding: 14px 20px; font-family: 'Outfit'; font-size: 16px; color: #ffffff;" readonly>
                         <button style="background: var(--accent); color: #ffffff; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
@@ -556,12 +538,12 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option B (Editorial) — Creative Poster Layout</span>
+                    <span>Option B (Rosehot Light) — Creative Poster Layout</span>
                     <span>Slide 9 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 10: Option B - Footer Layout (newmix style) -->
+            <!-- Slide 10: Option B - Footer Layout -->
             <section class="slide theme-b" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #df5d4b; padding: 60px 80px; justify-content: space-between;">
                 <!-- Header navigation -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
@@ -577,7 +559,7 @@ new_deck_html = """<body>
 
                 <!-- Central Massive Logo (Rosehot) -->
                 <div style="text-align: center; width: 100%; z-index: 2; margin: 40px 0;">
-                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 260px; font-weight: normal; letter-spacing: -0.02em; margin: 0; line-height: 0.85;">
+                    <h1 contenteditable="true" style="font-family: 'Rosehot'; font-size: 260px; font-weight: normal; letter-spacing: -0.01em; margin: 0; line-height: 0.85;">
                         Zorixel
                     </h1>
                     <!-- Dot emblem -->
@@ -586,7 +568,6 @@ new_deck_html = """<body>
 
                 <!-- Footer details grid -->
                 <div style="display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 40px; width: 100%; z-index: 2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
-                    <!-- Column 1: Contact & Socials -->
                     <div style="display: flex; flex-direction: column; justify-content: space-between; height: 120px;">
                         <a href="mailto:hello@zorixel.design" style="color: #ffffff; text-decoration: none; font-family: 'Outfit'; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px;">hello@zorixel.design</a>
                         <div style="display: flex; gap: 12px; margin-top: 12px;">
@@ -599,7 +580,6 @@ new_deck_html = """<body>
                         </div>
                     </div>
 
-                    <!-- Column 2: Sitemap Links -->
                     <div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Outfit'; font-size: 15px; color: rgba(255,255,255,0.8);">
                         <span>Home</span>
                         <span>Products</span>
@@ -608,7 +588,6 @@ new_deck_html = """<body>
                         <span>Contact</span>
                     </div>
 
-                    <!-- Column 3: Address / Office Details -->
                     <div style="font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start;">
                         <span style="font-weight: 600; color: #ffffff; margin-bottom: 4px;">zorixel office</span>
                         <span>40, Changdeokgung 1-gil,</span>
@@ -617,259 +596,17 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option B (Editorial) — Brand Footer Layout (Rosehot)</span>
+                    <span>Option B (Rosehot Light) — Brand Footer Layout</span>
                     <span>Slide 10 of 20</span>
                 </div>
             </section>
 
 
             <!-- ===========================================
-               OPTION C: BOLD SOCIAL-FIRST (GRITH)
+               OPTION C: VIXA (ORGANIC CREATIVE)
                =========================================== -->
 
             <!-- Slide 11: Option C - Hero Section -->
-            <section class="slide theme-c" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: space-between;">
-                <!-- Header nav -->
-                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
-                    <span style="font-family: 'Nuqun'; font-size: 32px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
-                    <div style="display: flex; gap: 32px; font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.6);">
-                        <span>Products</span>
-                        <span>Solutions</span>
-                        <span>Showcase</span>
-                        <span>Contact</span>
-                    </div>
-                </div>
-
-                <!-- Hero Content -->
-                <div style="z-index: 2; text-align: left; max-width: 1200px; margin-top: 40px;">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">[ VER_03 // IMPACT ]</span>
-                    <h1 class="reveal reveal-2" contenteditable="true" style="font-family: 'Grith'; font-size: 100px; font-weight: normal; line-height: 0.85; margin: 0 0 24px 0; letter-spacing: 0.03em; text-transform: uppercase; color: #ffffff;">
-                        high-impact social branding
-                    </h1>
-                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(255,255,255,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
-                        An aggressive, high-contrast condensed sans-serif engineered for social media feeds, vertical content structures, and modern social brands.
-                    </p>
-                    <div style="display: flex; gap: 16px;">
-                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Get Showcase</button>
-                        <button style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.2); padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Read Specs</button>
-                    </div>
-                </div>
-
-                <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option C (Impact) — Hero Section</span>
-                    <span>Slide 11 of 20</span>
-                </div>
-            </section>
-
-            <!-- Slide 12: Option C - About & Contact -->
-            <section class="slide theme-c" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: flex-start;">
-                <!-- Header nav -->
-                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 16px; margin-bottom: 40px;">
-                    <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">[ SEC_03 // SOCIAL ]</span>
-                </div>
-
-                <div class="split-grid">
-                    <!-- Left: About text -->
-                    <div style="display: flex; flex-direction: column; gap: 24px; text-align: left;">
-                        <h2 contenteditable="true" style="font-family: 'Grith'; font-size: 58px; font-weight: normal; margin: 0; line-height: 0.85; text-transform: uppercase; color: #ffffff; letter-spacing: 0.03em;">
-                            social velocity.
-                        </h2>
-                        <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(255,255,255,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
-                            In a fast-scroll economy, attention is won in milliseconds. Condensed block capitals create high-velocity typographic impact across feeds, allowing creators to stamp their message clearly on vertical assets.
-                        </p>
-                    </div>
-
-                    <!-- Right: Contact form -->
-                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
-                        <h3 contenteditable="true" style="font-family: 'Grith'; font-size: 32px; font-weight: normal; margin: 0; text-transform: uppercase; color: #ffffff; letter-spacing: 0.03em;">
-                            join the network.
-                        </h3>
-                        <div class="form-field">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="e.g. Atinek Maurya" readonly>
-                        </div>
-                        <div class="form-field">
-                            <label>Email Address</label>
-                            <input type="email" placeholder="e.g. hello@zorixel.design" readonly>
-                        </div>
-                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px; border-radius: 8px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; text-transform: uppercase; margin-top: 10px;">Send Message</button>
-                    </div>
-                </div>
-
-                <div class="slide-footer" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px; margin-top: auto; width: 100%;">
-                    <span>Option C (Impact) — About &amp; Contact</span>
-                    <span>Slide 12 of 20</span>
-                </div>
-            </section>
-
-            <!-- Slide 13: Option C - Dashboard Page -->
-            <section class="slide theme-c" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 60px 80px; justify-content: space-between;">
-                <!-- Grid Dashboard wrapper -->
-                <div class="grid-dashboard" style="background: rgba(255,255,255,0.01); border-color: rgba(255,255,255,0.08);">
-                    <!-- Sidebar -->
-                    <div class="db-sidebar" style="border-color: rgba(255,255,255,0.05);">
-                        <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
-                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px;">
-                            <div class="db-menu-item active-item">Feeds</div>
-                            <div class="db-menu-item">Analytics</div>
-                            <div class="db-menu-item">Campaigns</div>
-                            <div class="db-menu-item">Settings</div>
-                        </div>
-                    </div>
-
-                    <!-- Content -->
-                    <div class="db-content">
-                        <!-- Stats Row -->
-                        <div class="db-stats-row">
-                            <div class="db-card">
-                                <span class="db-card-label">impressions</span>
-                                <span class="db-card-value" contenteditable="true">2.84 M</span>
-                            </div>
-                            <div class="db-card">
-                                <span class="db-card-label">engagement</span>
-                                <span class="db-card-value" contenteditable="true">14.82%</span>
-                            </div>
-                            <div class="db-card">
-                                <span class="db-card-label">subscriber index</span>
-                                <span class="db-card-value" contenteditable="true">98.6</span>
-                            </div>
-                        </div>
-
-                        <!-- Panel with chart SVG -->
-                        <div style="flex-grow: 1; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; background: rgba(0,0,0,0.2);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase;">Reach Growth Chart</span>
-                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent);">Social Metrics</span>
-                            </div>
-                            
-                            <!-- SVG Chart -->
-                            <div style="width: 100%; height: 260px;">
-                                <svg viewBox="0 0 1400 260" style="width: 100%; height: 100%; overflow: visible;">
-                                    <defs>
-                                        <linearGradient id="gradient-c" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25"/>
-                                            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.00"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Area under path -->
-                                    <path d="M 0,260 L 0,230 Q 300,180 600,100 T 1000,120 T 1400,20 L 1400,260 Z" fill="url(#gradient-c)"/>
-                                    <!-- Grid lines -->
-                                    <line x1="0" y1="65" x2="1400" y2="65" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <line x1="0" y1="130" x2="1400" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <line x1="0" y1="195" x2="1400" y2="195" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <!-- Line path -->
-                                    <path d="M 0,230 Q 300,180 600,100 T 1000,120 T 1400,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                                    <!-- Data dots -->
-                                    <circle cx="600" cy="100" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
-                                    <circle cx="1000" cy="120" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
-                                    <circle cx="1400" cy="20" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide-footer" style="width: 100%;">
-                    <span>Option C (Impact) — Live Dashboard Interface</span>
-                    <span>Slide 13 of 20</span>
-                </div>
-            </section>
-
-            <!-- Slide 14: Option C - Poster Section -->
-            <section class="slide theme-c" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: center; align-items: center;">
-                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=1920'); opacity: 0.15;"></div>
-                <div class="bg-overlay"></div>
-                
-                <div style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(24px); border: 1px solid rgba(255,85,0,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.2em; display: inline-block; margin-bottom: 24px;">Social Strategy</span>
-                    <h2 contenteditable="true" style="font-family: 'Grith'; font-size: 80px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.85; text-transform: uppercase; color: #ffffff; letter-spacing: 0.02em;">
-                        break rules.
-                    </h2>
-                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
-                        Unlock the viral carousels pack and Figma content blocks, optimized to maximize feed engagement.
-                    </p>
-                    
-                    <!-- Signup form inside poster -->
-                    <div style="display: flex; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; width: 100%; max-width: 500px; padding: 4px; margin: 0 auto;">
-                        <input type="email" placeholder="Your email" style="flex: 1; border: none; outline: none; background: transparent; padding: 14px 20px; font-family: 'Outfit'; font-size: 16px; color: #ffffff;" readonly>
-                        <button style="background: var(--accent); color: #ffffff; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
-                    </div>
-                </div>
-
-                <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option C (Impact) — Creative Poster Layout</span>
-                    <span>Slide 14 of 20</span>
-                </div>
-            </section>
-
-            <!-- Slide 15: Option C - Footer Layout (newmix style) -->
-            <section class="slide theme-c" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 60px 80px; justify-content: space-between;">
-                <!-- Header navigation -->
-                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
-                    <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em;">zorixel</span>
-                    <div style="display: flex; gap: 32px; font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.7);">
-                        <span>Products</span>
-                        <span>Projects</span>
-                        <span>Stores</span>
-                        <span>Contact</span>
-                        <span style="color: #ffffff; font-weight: bold;">ENG ∨</span>
-                    </div>
-                </div>
-
-                <!-- Central Massive Logo (Grith) -->
-                <div style="text-align: center; width: 100%; z-index: 2; margin: 40px 0;">
-                    <h1 contenteditable="true" style="font-family: 'Grith'; font-size: 280px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.03em; margin: 0; line-height: 0.85;">
-                        ZORIXEL
-                    </h1>
-                    <!-- Dot emblem -->
-                    <div style="width: 28px; height: 28px; background: #ffffff; border-radius: 50%; margin: 30px auto 0 auto; box-shadow: 0 0 20px rgba(255,255,255,0.5);"></div>
-                </div>
-
-                <!-- Footer details grid -->
-                <div style="display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 40px; width: 100%; z-index: 2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
-                    <!-- Column 1: Contact & Socials -->
-                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 120px;">
-                        <a href="mailto:hello@zorixel.design" style="color: #ffffff; text-decoration: none; font-family: 'Outfit'; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px;">hello@zorixel.design</a>
-                        <div style="display: flex; gap: 12px; margin-top: 12px;">
-                            <span style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 14px;">IG</span>
-                            <span style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 14px;">GH</span>
-                        </div>
-                        <div style="font-family: 'Outfit'; font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 16px;">
-                            2026 zorixel All rights reserved.<br>
-                            Terms of Service | Privacy Policy
-                        </div>
-                    </div>
-
-                    <!-- Column 2: Sitemap Links -->
-                    <div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Outfit'; font-size: 15px; color: rgba(255,255,255,0.8);">
-                        <span>Home</span>
-                        <span>Products</span>
-                        <span>Projects</span>
-                        <span>Store</span>
-                        <span>Contact</span>
-                    </div>
-
-                    <!-- Column 3: Address / Office Details -->
-                    <div style="font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start;">
-                        <span style="font-weight: 600; color: #ffffff; margin-bottom: 4px;">zorixel office</span>
-                        <span>40, Changdeokgung 1-gil,</span>
-                        <span>Seoul, Korea</span>
-                    </div>
-                </div>
-
-                <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option C (Impact) — Brand Footer Layout (Grith)</span>
-                    <span>Slide 15 of 20</span>
-                </div>
-            </section>
-
-
-            <!-- ===========================================
-               OPTION D: ORGANIC CREATIVE (VIXA)
-               =========================================== -->
-
-            <!-- Slide 16: Option D - Hero Section -->
             <section class="slide theme-d" style="--bg-primary: #06120e; --text-primary: #ecf4f0; --accent: #7df9be; padding: 80px 100px; justify-content: space-between;">
                 <!-- Header nav -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
@@ -884,9 +621,8 @@ new_deck_html = """<body>
 
                 <!-- Hero Content -->
                 <div style="z-index: 2; text-align: left; max-width: 1200px; margin-top: 40px;">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 20px;">[ CRE_04 // NATURE ]</span>
-                    <h1 contenteditable="true" style="font-family: 'Vixa'; font-size: 86px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; color: #ffffff;">
-                        Human-centric creative systems.
+                    <h1 contenteditable="true" style="font-family: 'Vixa'; font-size: 90px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; color: #ffffff; letter-spacing: -0.01em;">
+                        Human Creative Systems
                     </h1>
                     <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(236,244,240,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
                         A quirky, organic display typeface inspired by Art Nouveau shapes. Designed for indie creators, vibe coders, and organic brands.
@@ -898,24 +634,24 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option D (Creative) — Hero Section</span>
-                    <span>Slide 16 of 20</span>
+                    <span>Option C (Vixa Organic) — Hero Section</span>
+                    <span>Slide 11 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 17: Option D - About & Contact -->
+            <!-- Slide 12: Option C - About & Contact -->
             <section class="slide theme-d" style="--bg-primary: #06120e; --text-primary: #ecf4f0; --accent: #7df9be; padding: 80px 100px; justify-content: flex-start;">
                 <!-- Header nav -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 16px; margin-bottom: 40px;">
                     <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
-                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">[ SEC_04 // NATURE ]</span>
+                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">Brand Showcase</span>
                 </div>
 
                 <div class="split-grid">
                     <!-- Left: About text -->
                     <div style="display: flex; flex-direction: column; gap: 24px; text-align: left;">
                         <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; color: #ffffff;">
-                            creative intuition.
+                            Creative Intuition
                         </h2>
                         <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(236,244,240,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
                             Unusual terminal shapes and organic character strokes express design intuition, avoiding standard corporate layouts. Pairing these Display forms with extremely clean body copy lets details shine while keeping copy readable.
@@ -925,7 +661,7 @@ new_deck_html = """<body>
                     <!-- Right: Contact form -->
                     <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
                         <h3 contenteditable="true" style="font-family: 'Vixa'; font-size: 32px; font-weight: normal; margin: 0; color: #ffffff;">
-                            say hello.
+                            Say Hello
                         </h3>
                         <div class="form-field">
                             <label>Your Name</label>
@@ -940,12 +676,12 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; margin-top: auto; width: 100%;">
-                    <span>Option D (Creative) — About &amp; Contact</span>
-                    <span>Slide 17 of 20</span>
+                    <span>Option C (Vixa Organic) — About &amp; Contact</span>
+                    <span>Slide 12 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 18: Option D - Dashboard Page -->
+            <!-- Slide 13: Option C - Dashboard Page -->
             <section class="slide theme-d" style="--bg-primary: #06120e; --text-primary: #ecf4f0; --accent: #7df9be; padding: 60px 80px; justify-content: space-between;">
                 <!-- Grid Dashboard wrapper -->
                 <div class="grid-dashboard" style="background: rgba(255,255,255,0.01); border-color: rgba(255,255,255,0.06);">
@@ -989,20 +725,16 @@ new_deck_html = """<body>
                             <div style="width: 100%; height: 260px;">
                                 <svg viewBox="0 0 1400 260" style="width: 100%; height: 100%; overflow: visible;">
                                     <defs>
-                                        <linearGradient id="gradient-d" x1="0" y1="0" x2="0" y2="1">
+                                        <linearGradient id="gradient-vixa-organic" x1="0" y1="0" x2="0" y2="1">
                                             <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25"/>
                                             <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.00"/>
                                         </linearGradient>
                                     </defs>
-                                    <!-- Area under path -->
-                                    <path d="M 0,260 L 0,200 Q 300,220 600,140 T 1000,70 T 1400,40 L 1400,260 Z" fill="url(#gradient-d)"/>
-                                    <!-- Grid lines -->
+                                    <path d="M 0,260 L 0,200 Q 300,220 600,140 T 1000,70 T 1400,40 L 1400,260 Z" fill="url(#gradient-vixa-organic)"/>
                                     <line x1="0" y1="65" x2="1400" y2="65" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="130" x2="1400" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
                                     <line x1="0" y1="195" x2="1400" y2="195" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
-                                    <!-- Line path -->
                                     <path d="M 0,200 Q 300,220 600,140 T 1000,70 T 1400,40" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                                    <!-- Data dots -->
                                     <circle cx="600" cy="140" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
                                     <circle cx="1000" cy="70" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
                                 </svg>
@@ -1012,26 +744,24 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="width: 100%;">
-                    <span>Option D (Creative) — Live Dashboard Interface</span>
-                    <span>Slide 18 of 20</span>
+                    <span>Option C (Vixa Organic) — Live Dashboard Interface</span>
+                    <span>Slide 13 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 19: Option D - Poster Section -->
+            <!-- Slide 14: Option C - Poster Section -->
             <section class="slide theme-d" style="--bg-primary: #06120e; --text-primary: #ecf4f0; --accent: #7df9be; padding: 80px 100px; justify-content: center; align-items: center;">
                 <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1920'); opacity: 0.22;"></div>
                 <div class="bg-overlay"></div>
                 
                 <div style="background: rgba(6, 18, 14, 0.75); backdrop-filter: blur(24px); border: 1px solid rgba(125,249,190,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
-                    <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.2em; display: inline-block; margin-bottom: 24px;">Creative Publication</span>
                     <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; color: #ffffff;">
-                        organic flow.
+                        Organic Flow
                     </h2>
                     <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(236,244,240,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
                         Download the case studies and visual layouts, designed for storytellers who seek to balance elegance and technical structure.
                     </p>
                     
-                    <!-- Signup form inside poster -->
                     <div style="display: flex; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; width: 100%; max-width: 500px; padding: 4px; margin: 0 auto;">
                         <input type="email" placeholder="Your email" style="flex: 1; border: none; outline: none; background: transparent; padding: 14px 20px; font-family: 'Outfit'; font-size: 16px; color: #ffffff;" readonly>
                         <button style="background: var(--accent); color: #06120e; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
@@ -1039,12 +769,12 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option D (Creative) — Creative Poster Layout</span>
-                    <span>Slide 19 of 20</span>
+                    <span>Option C (Vixa Organic) — Creative Poster Layout</span>
+                    <span>Slide 14 of 20</span>
                 </div>
             </section>
 
-            <!-- Slide 20: Option D - Footer Layout (newmix style) -->
+            <!-- Slide 15: Option C - Footer Layout -->
             <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #7df9be; padding: 60px 80px; justify-content: space-between;">
                 <!-- Header navigation -->
                 <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
@@ -1069,7 +799,6 @@ new_deck_html = """<body>
 
                 <!-- Footer details grid -->
                 <div style="display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 40px; width: 100%; z-index: 2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
-                    <!-- Column 1: Contact & Socials -->
                     <div style="display: flex; flex-direction: column; justify-content: space-between; height: 120px;">
                         <a href="mailto:hello@zorixel.design" style="color: #ffffff; text-decoration: none; font-family: 'Outfit'; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px;">hello@zorixel.design</a>
                         <div style="display: flex; gap: 12px; margin-top: 12px;">
@@ -1082,7 +811,6 @@ new_deck_html = """<body>
                         </div>
                     </div>
 
-                    <!-- Column 2: Sitemap Links -->
                     <div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Outfit'; font-size: 15px; color: rgba(255,255,255,0.8);">
                         <span>Home</span>
                         <span>Products</span>
@@ -1091,7 +819,6 @@ new_deck_html = """<body>
                         <span>Contact</span>
                     </div>
 
-                    <!-- Column 3: Address / Office Details -->
                     <div style="font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start;">
                         <span style="font-weight: 600; color: #ffffff; margin-bottom: 4px;">zorixel office</span>
                         <span>40, Changdeokgung 1-gil,</span>
@@ -1100,7 +827,238 @@ new_deck_html = """<body>
                 </div>
 
                 <div class="slide-footer" style="z-index: 2; width: 100%;">
-                    <span>Option D (Creative) — Brand Footer Layout (Vixa)</span>
+                    <span>Option C (Vixa Organic) — Brand Footer Layout</span>
+                    <span>Slide 15 of 20</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               OPTION D: VIXA (MIDNIGHT CREATIVE)
+               =========================================== -->
+
+            <!-- Slide 16: Option D - Hero Section -->
+            <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: space-between;">
+                <!-- Header nav -->
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
+                    <span style="font-family: 'Nuqun'; font-size: 32px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
+                    <div style="display: flex; gap: 32px; font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.6);">
+                        <span>Products</span>
+                        <span>Solutions</span>
+                        <span>Showcase</span>
+                        <span>Contact</span>
+                    </div>
+                </div>
+
+                <!-- Hero Content -->
+                <div style="z-index: 2; text-align: left; max-width: 1200px; margin-top: 40px;">
+                    <h1 contenteditable="true" style="font-family: 'Vixa'; font-size: 90px; font-weight: normal; line-height: 0.95; margin: 0 0 24px 0; color: #ffffff; letter-spacing: -0.01em;">
+                        Organic Flow Systems
+                    </h1>
+                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 19px; color: rgba(255,255,255,0.7); margin-bottom: 40px; max-width: 800px; line-height: 1.6; letter-spacing: 0.03em;">
+                        Unusual terminal shapes and organic character strokes express design intuition, avoiding standard corporate layouts to stand out.
+                    </p>
+                    <div style="display: flex; gap: 16px;">
+                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Open Library</button>
+                        <button style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.2); padding: 14px 32px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Read Story</button>
+                    </div>
+                </div>
+
+                <div class="slide-footer" style="z-index: 2; width: 100%;">
+                    <span>Option D (Vixa Midnight) — Hero Section</span>
+                    <span>Slide 16 of 20</span>
+                </div>
+            </section>
+
+            <!-- Slide 17: Option D - About & Contact -->
+            <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: flex-start;">
+                <!-- Header nav -->
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 16px; margin-bottom: 40px;">
+                    <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
+                    <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">Brand Showcase</span>
+                </div>
+
+                <div class="split-grid">
+                    <!-- Left: About text -->
+                    <div style="display: flex; flex-direction: column; gap: 24px; text-align: left;">
+                        <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 54px; font-weight: normal; margin: 0; line-height: 1.0; color: #ffffff;">
+                            Design Experience
+                        </h2>
+                        <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(255,255,255,0.75); margin: 0; line-height: 1.7; letter-spacing: 0.03em;">
+                            Unusual terminal shapes and organic character strokes express design intuition, avoiding standard corporate layouts. Pairing these Display forms with extremely clean body copy lets details shine while keeping copy readable.
+                        </p>
+                    </div>
+
+                    <!-- Right: Contact form -->
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 40px; display: flex; flex-direction: column; gap: 20px; text-align: left;">
+                        <h3 contenteditable="true" style="font-family: 'Vixa'; font-size: 32px; font-weight: normal; margin: 0; color: #ffffff;">
+                            Join the Network
+                        </h3>
+                        <div class="form-field">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="e.g. Atinek Maurya" readonly>
+                        </div>
+                        <div class="form-field">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="e.g. hello@zorixel.design" readonly>
+                        </div>
+                        <button style="background: var(--accent); color: #ffffff; border: none; padding: 14px; border-radius: 8px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; text-transform: uppercase; margin-top: 10px;">Send Message</button>
+                    </div>
+                </div>
+
+                <div class="slide-footer" style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; margin-top: auto; width: 100%;">
+                    <span>Option D (Vixa Midnight) — About &amp; Contact</span>
+                    <span>Slide 17 of 20</span>
+                </div>
+            </section>
+
+            <!-- Slide 18: Option D - Dashboard Page -->
+            <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 60px 80px; justify-content: space-between;">
+                <!-- Grid Dashboard wrapper -->
+                <div class="grid-dashboard" style="background: rgba(255,255,255,0.01); border-color: rgba(255,255,255,0.06);">
+                    <!-- Sidebar -->
+                    <div class="db-sidebar" style="border-color: rgba(255,255,255,0.04);">
+                        <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em; color: #ffffff;">zorixel</span>
+                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px;">
+                            <div class="db-menu-item active-item">Library</div>
+                            <div class="db-menu-item">Analytics</div>
+                            <div class="db-menu-item">Submissions</div>
+                            <div class="db-menu-item">Settings</div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="db-content">
+                        <!-- Stats Row -->
+                        <div class="db-stats-row">
+                            <div class="db-card">
+                                <span class="db-card-label">active creators</span>
+                                <span class="db-card-value" contenteditable="true">45,902</span>
+                            </div>
+                            <div class="db-card">
+                                <span class="db-card-label">curated items</span>
+                                <span class="db-card-value" contenteditable="true">1,284</span>
+                            </div>
+                            <div class="db-card">
+                                <span class="db-card-label">brand score</span>
+                                <span class="db-card-value" contenteditable="true">9.8 / 10</span>
+                            </div>
+                        </div>
+
+                        <!-- Panel with chart SVG -->
+                        <div style="flex-grow: 1; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; background: rgba(0,0,0,0.15);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase;">Creator Volume Growth</span>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent);">Creative Analytics</span>
+                            </div>
+                            
+                            <!-- SVG Chart -->
+                            <div style="width: 100%; height: 260px;">
+                                <svg viewBox="0 0 1400 260" style="width: 100%; height: 100%; overflow: visible;">
+                                    <defs>
+                                        <linearGradient id="gradient-vixa-midnight" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.25"/>
+                                            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.00"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M 0,260 L 0,200 Q 300,220 600,140 T 1000,70 T 1400,40 L 1400,260 Z" fill="url(#gradient-vixa-midnight)"/>
+                                    <line x1="0" y1="65" x2="1400" y2="65" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                                    <line x1="0" y1="130" x2="1400" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                                    <line x1="0" y1="195" x2="1400" y2="195" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                                    <path d="M 0,200 Q 300,220 600,140 T 1000,70 T 1400,40" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                                    <circle cx="600" cy="140" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                                    <circle cx="1000" cy="70" r="6" fill="#ffffff" stroke="var(--accent)" stroke-width="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-footer" style="width: 100%;">
+                    <span>Option D (Vixa Midnight) — Live Dashboard Interface</span>
+                    <span>Slide 18 of 20</span>
+                </div>
+            </section>
+
+            <!-- Slide 19: Option D - Poster Section -->
+            <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 80px 100px; justify-content: center; align-items: center;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=1920'); opacity: 0.15;"></div>
+                <div class="bg-overlay"></div>
+                
+                <div style="background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(24px); border: 1px solid rgba(255,85,0,0.15); border-radius: 32px; padding: 60px 80px; max-width: 900px; text-align: center; z-index: 2; box-shadow: 0 40px 100px rgba(0,0,0,0.6);">
+                    <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.95; color: #ffffff;">
+                        Break Rules
+                    </h2>
+                    <p contenteditable="true" style="font-family: 'Outfit'; font-size: 18px; color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: 1.6; letter-spacing: 0.03em;">
+                        Unlock the viral carousels pack and Figma content blocks, optimized to maximize feed engagement.
+                    </p>
+                    
+                    <div style="display: flex; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; overflow: hidden; width: 100%; max-width: 500px; padding: 4px; margin: 0 auto;">
+                        <input type="email" placeholder="Your email" style="flex: 1; border: none; outline: none; background: transparent; padding: 14px 20px; font-family: 'Outfit'; font-size: 16px; color: #ffffff;" readonly>
+                        <button style="background: var(--accent); color: #ffffff; border: none; outline: none; padding: 12px 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; cursor: pointer; text-transform: uppercase;">Submit</button>
+                    </div>
+                </div>
+
+                <div class="slide-footer" style="z-index: 2; width: 100%;">
+                    <span>Option D (Vixa Midnight) — Creative Poster Layout</span>
+                    <span>Slide 19 of 20</span>
+                </div>
+            </section>
+
+            <!-- Slide 20: Option D - Footer Layout -->
+            <section class="slide theme-d" style="--bg-primary: #000000; --text-primary: #ffffff; --accent: #ff5500; padding: 60px 80px; justify-content: space-between;">
+                <!-- Header navigation -->
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; z-index: 2;">
+                    <span style="font-family: 'Nuqun'; font-size: 24px; font-weight: bold; text-transform: lowercase; letter-spacing: 0.05em;">zorixel</span>
+                    <div style="display: flex; gap: 32px; font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.7);">
+                        <span>Products</span>
+                        <span>Projects</span>
+                        <span>Stores</span>
+                        <span>Contact</span>
+                        <span style="color: #ffffff; font-weight: bold;">ENG ∨</span>
+                    </div>
+                </div>
+
+                <!-- Central Massive Logo (Vixa) -->
+                <div style="text-align: center; width: 100%; z-index: 2; margin: 40px 0;">
+                    <h1 contenteditable="true" style="font-family: 'Vixa'; font-size: 240px; font-weight: normal; letter-spacing: -0.01em; margin: 0; line-height: 0.85;">
+                        Zorixel
+                    </h1>
+                    <!-- Dot emblem -->
+                    <div style="width: 28px; height: 28px; background: #ffffff; border-radius: 50%; margin: 30px auto 0 auto; box-shadow: 0 0 20px rgba(255,255,255,0.5);"></div>
+                </div>
+
+                <!-- Footer details grid -->
+                <div style="display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 40px; width: 100%; z-index: 2; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; text-align: left;">
+                    <div style="display: flex; flex-direction: column; justify-content: space-between; height: 120px;">
+                        <a href="mailto:hello@zorixel.design" style="color: #ffffff; text-decoration: none; font-family: 'Outfit'; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.2); width: fit-content; padding-bottom: 2px;">hello@zorixel.design</a>
+                        <div style="display: flex; gap: 12px; margin-top: 12px;">
+                            <span style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 14px;">IG</span>
+                            <span style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 14px;">GH</span>
+                        </div>
+                        <div style="font-family: 'Outfit'; font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 16px;">
+                            2026 zorixel All rights reserved.<br>
+                            Terms of Service | Privacy Policy
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Outfit'; font-size: 15px; color: rgba(255,255,255,0.8);">
+                        <span>Home</span>
+                        <span>Products</span>
+                        <span>Projects</span>
+                        <span>Store</span>
+                        <span>Contact</span>
+                    </div>
+
+                    <div style="font-family: 'Outfit'; font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; display: flex; flex-direction: column; justify-content: flex-start;">
+                        <span style="font-weight: 600; color: #ffffff; margin-bottom: 4px;">zorixel office</span>
+                        <span>40, Changdeokgung 1-gil,</span>
+                        <span>Seoul, Korea</span>
+                    </div>
+                </div>
+
+                <div class="slide-footer" style="z-index: 2; width: 100%;">
+                    <span>Option D (Vixa Midnight) — Brand Footer Layout</span>
                     <span>Slide 20 of 20</span>
                 </div>
             </section>
@@ -1124,10 +1082,10 @@ new_deck_html = """<body>
         <!-- Row 1: Font Options -->
         <div style="display: flex; gap: 8px; width: 100%; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
             <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; line-height: 28px; width: 80px;">FONTS:</span>
-            <button class="btn-jump active-route" id="jump-opt-0" onclick="presentation.setOption(0)" style="font-size: 11px;">A: Bezmiar</button>
-            <button class="btn-jump" id="jump-opt-1" onclick="presentation.setOption(1)" style="font-size: 11px;">B: Rosehot</button>
-            <button class="btn-jump" id="jump-opt-2" onclick="presentation.setOption(2)" style="font-size: 11px;">C: Grith</button>
-            <button class="btn-jump" id="jump-opt-3" onclick="presentation.setOption(3)" style="font-size: 11px;">D: Vixa</button>
+            <button class="btn-jump active-route" id="jump-opt-0" onclick="presentation.setOption(0)" style="font-size: 11px;">A: Rosehot (Dark)</button>
+            <button class="btn-jump" id="jump-opt-1" onclick="presentation.setOption(1)" style="font-size: 11px;">B: Rosehot (Light)</button>
+            <button class="btn-jump" id="jump-opt-2" onclick="presentation.setOption(2)" style="font-size: 11px;">C: Vixa (Organic)</button>
+            <button class="btn-jump" id="jump-opt-3" onclick="presentation.setOption(3)" style="font-size: 11px;">D: Vixa (Midnight)</button>
         </div>
         <!-- Row 2: Page Sections -->
         <div style="display: flex; gap: 8px; width: 100%;">
@@ -1364,4 +1322,4 @@ full_html = head_html + custom_styles + "</style>\\n</head>\\n" + new_deck_html 
 with open(fpath, "w", encoding="utf-8") as f:
     f.write(full_html)
 
-print("Rebuilt presentation.html with 20 slides (4 options x 5 page designs) and full matrix controls!")
+print("Rebuilt presentation.html with 20 slides featuring Rosehot and Vixa in multiple themes!")
