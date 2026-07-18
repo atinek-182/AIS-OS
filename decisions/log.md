@@ -482,3 +482,63 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Using the pre-installed custom wrapper at `C:\Users\HP\AppData\Local\Kiro-Cli\bun` (rejected because it hangs indefinitely on console pipes under PowerShell jobs).
 
 **Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Centralize MCP Auth Parameters in `.env`
+
+**Decision:** Added placeholder keys and documentation for `GITHUB_PERSONAL_ACCESS_TOKEN`, `API_KEY` (Magic MCP), `OPENAPI_MCP_HEADERS` (Notion MCP), and `CONTEXT7_API_KEY` (Context7 MCP) directly to the workspace `.env` file.
+
+**Why:** To address the security and documentation gap identified during the AIOS structural audit, ensuring that all third-party API credentials used by the AIOS and its MCP servers are centralized in a single gitignored configuration file rather than dispersed across global environments or hardcoded variables.
+
+**Alternatives considered:** Keeping them as system environment variables (rejected because it reduces workspace portability and visibility).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Create Application Security & Perimeters Diagram
+
+**Decision:** Created the Excalidraw diagram `apps-security.excalidraw` in the `diagrams/` folder showing how application security perimeters and defense-in-depth layers function. Created the Python generator script `scripts/generate_security_diagram.py` to programmatically build the elements, and registered both the diagram and script in `WORKSPACE_MAP.md`.
+
+**Why:** To address the user's request for a clear visual flowchart showing app security perimeters and logic layers using clean cards, logical color coding, and data flow arrows. Programmatic generation ensures pixel-perfect coordinates and maintains directory hygiene.
+
+**Alternatives considered:** Drawing the diagram manually on excalidraw.com and uploading it (slower and doesn't persist the layout source code in the workspace repository).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-17 — Implement Autoresearch Targets Manager & Secure API Quota Fallbacks
+
+**Decision:** Created a custom `/autoresearch-manage` active workspace skill at `.agents/skills/autoresearch-manage/SKILL.md` backed by the automation script `scripts/manage_autoresearch.py`. Configured the three Autoresearch trial scripts (`train.py` and `prepare.py`) to target the `gemini-3.1-flash-lite` model (avoiding 404/503 Free Tier API limits) and wrapped API executions in robust retry-backoff blocks. Created and ran a security audit script `scripts/security_check.py` to verify path traversals and secrets exclusion parameters.
+
+**Why:** Spawning and maintaining custom trial configurations manually introduces folder structure errors and registry misalignment. The automation script programmatically registers new trial folders in the runner list and Workspace Map. Switching target models to `gemini-3.1-flash-lite` and incorporating API retries ensures 100% stable executions under free tier quotas without hitting spikes or model-deprecation errors.
+
+**Alternatives considered:** Maintaining static target lists (inflexible and prone to manual error) or querying the deprecated `gemini-2.5-flash` model (crashes with 404 errors).
+
+**Owner:** Atinek Maurya
+
+---
+
+## 2026-07-18 — Resolve Python IDE Import Errors for `google-genai` and `playwright`
+
+**Decision:** Created workspace settings `.vscode/settings.json` configuring the Python default interpreter to the virtual environment `trials/.venv/Scripts/python.exe`. Additionally, installed `google-genai` and `playwright` (with `playwright install chromium`) inside the system-wide Python environment. Updated the workspace map (`WORKSPACE_MAP.md`) to register the new configuration.
+
+**Why:** The user was experiencing red import errors in their IDE because the IDE fell back to the system Python interpreter which did not have these packages installed. Setting the default interpreter path ensures VS Code/Cursor automatically uses the correct sandboxed virtual environment, and installing the packages system-wide serves as a fallback.
+
+**Alternatives considered:** Creating a duplicate `.venv` at the workspace root (creates redundant virtual environments and package clutter) or only using global installation (does not guarantee IDE interpreter alignment).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-18 — Rebuild Brand Font Presentation into 12 Targeted Slides
+
+**Decision:** Rebuilt the brand presentation deck down to a targeted 12-slide flow, focusing strictly on selected display candidate fonts (`Bezmiar`, `Rosehot`, `Grith`, `Vixa`) and the lowercase `Nuqun` brand logo. Modeled new slides off of Korean brand "newmix" footer structures and "AI in Design 2026" reports, implementing wide monospace letter-spacing for statistics, large cover sizes, and dedicated full-screen lowercase logo identity slides. Created python script `scripts/rebuild_presentation.py` to automate code restructuring.
+
+**Why:** The user narrowed down their favorite typography options and brand logo (favoring lowercase `Nuqun`). Deleting all the intermediate concept routes keeps the deck clean, and adding layout clones with their selected fonts allows direct evaluation of wordmark proportions and text grids on high-contrast black and clean white screens.
+
+**Alternatives considered:** Keeping the 34-slide deck with duplicate concepts (creates too much visual clutter and distracts from final font selections).
+
+**Owner:** Atinek Maurya
