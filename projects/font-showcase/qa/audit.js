@@ -41,18 +41,26 @@ const fs = require('fs');
 
   // Map slide indices to target filenames
   const targets = {
-    0: '01_cover.png',
-    1: '02_font_directory.png',
-    2: '03_primary_logo_focus.png',
-    3: '04_footer_bezmiar.png',
-    4: '05_footer_rosehot.png',
-    5: '06_footer_grith.png',
-    6: '07_footer_vixa.png',
-    7: '08_report_rosehot.png',
-    8: '09_report_vixa.png',
-    9: '10_report_cover.png',
-    10: '11_stats_newsletter.png',
-    11: '12_voting_dashboard.png'
+    0: '01_opt_a_hero.png',
+    1: '02_opt_a_about.png',
+    2: '03_opt_a_dashboard.png',
+    3: '04_opt_a_poster.png',
+    4: '05_opt_a_footer.png',
+    5: '06_opt_b_hero.png',
+    6: '07_opt_b_about.png',
+    7: '08_opt_b_dashboard.png',
+    8: '09_opt_b_poster.png',
+    9: '10_opt_b_footer.png',
+    10: '11_opt_c_hero.png',
+    11: '12_opt_c_about.png',
+    12: '13_opt_c_dashboard.png',
+    13: '14_opt_c_poster.png',
+    14: '15_opt_c_footer.png',
+    15: '16_opt_d_hero.png',
+    16: '17_opt_d_about.png',
+    17: '18_opt_d_dashboard.png',
+    18: '19_opt_d_poster.png',
+    19: '20_opt_d_footer.png'
   };
 
   // Traverse through each slide and capture screenshot
