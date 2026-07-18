@@ -25,6 +25,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/](file:///d:/AI-OS/context/) | Folder | Business context, guidelines, and onboarded preferences. | Operator / AIOS |
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
+| [Finding Fonts/](file:///d:/AI-OS/Finding%20Fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
