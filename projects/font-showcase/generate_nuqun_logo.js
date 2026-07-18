@@ -9,6 +9,11 @@ const fs = require('fs');
 
   console.log('Generating high-resolution 2000x2000 PNG & vector SVG logos in Nuqun font...');
 
+  // Read Nuqun font buffer for base64 embedding
+  const fontPath = path.join(fontsDir, 'Nuqun-Regular.otf');
+  const fontBuffer = fs.readFileSync(fontPath);
+  const fontBase64 = fontBuffer.toString('base64');
+
   // 1. RENDER HTML PNG STYLES
   const htmlContent = `
 <!DOCTYPE html>
@@ -17,7 +22,7 @@ const fs = require('fs');
 <style>
     @font-face {
         font-family: 'Nuqun';
-        src: url('file:///${fontsDir.replace(/\\\\/g, '/')}/Nuqun-Regular.otf') format('opentype');
+        src: url('data:font/opentype;base64,${fontBase64}') format('opentype');
     }
     body {
         margin: 0;
@@ -66,7 +71,7 @@ const fs = require('fs');
   await page.setViewportSize({ width: 2000, height: 2000 });
 
   await page.goto(`file:///${tempHtmlPath.replace(/\\\\/g, '/')}`);
-  await page.waitForTimeout(600); // Allow font loading
+  await page.waitForTimeout(1000); // Allow extra time for font loading and rendering
 
   // PNG 1: Transparent Chromatic Aberration
   const p1 = path.join(targetDir, 'zorixel_logo_transparent.png');
@@ -125,10 +130,7 @@ const fs = require('fs');
   await page.goto('about:blank');
   await page.addScriptTag({ url: 'https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js' });
 
-  // Read Nuqun font buffer
-  const fontPath = path.join(fontsDir, 'Nuqun-Regular.otf');
-  const fontBuffer = fs.readFileSync(fontPath);
-  const fontBase64 = fontBuffer.toString('base64');
+  // Read Nuqun font buffer (reused from outer scope)
 
   const pathData = await page.evaluate(async (base64Font) => {
     const binaryString = atob(base64Font);
