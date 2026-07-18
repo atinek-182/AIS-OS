@@ -542,3 +542,15 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Keeping the 34-slide deck with duplicate concepts (creates too much visual clutter and distracts from final font selections).
 
 **Owner:** Atinek Maurya
+
+---
+
+## 2026-07-18 — Restructure Brand Presentation into 20-Slide Interactive Page Matrix
+
+**Decision:** Restructured `presentation.html` into a 20-slide grid (4 font pairings × 5 canonical pages: Hero, About & Contact, Live Dashboard, Creative Poster, Brand Footer). Implemented lowercase `Nuqun` `"zorixel"` branding across all layouts and configured a dual-axis bottom navigation dock (FONTS row + PAGES row) for side-by-side comparison. Restructured Playwright QA configuration `qa/audit.js` and regenerated screenshots. Created `scripts/rebuild_presentation_20.py` to automate code generation.
+
+**Why:** The user wanted to directly evaluate how their favorite font pairings look on actual website layouts rather than isolated sentences. Combining pages and adding a dual-axis selector enables immediate comparison of a single layout across different fonts (e.g. comparing footer layouts) or sequential options review.
+
+**Alternatives considered:** Designing 20 individual HTML files (inflexible and difficult to browse synchronously).
+
+**Owner:** Atinek Maurya
