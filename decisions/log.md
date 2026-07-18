@@ -559,10 +559,10 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ## 2026-07-18 — Finalize Zorixel Brand Typography & Generate 2K High-Res Logos
 
-**Decision:** Finalized Zorixel's typography design: brand logo is lowercase `"zorixel"` in `Orbix` regular font with a chromatic aberration (RGB split) effect; display serifs are `Rosehot` (Title Case); display creative headings are `Vixa` (Title Case, 2-5 words only); paragraph body copy is `Outfit`; statistics numbers are `Space Mono`. Created and ran Playwright script `projects/font-showcase/generate_orbix_logo.js` to output 2000x2000 transparent logo files (with/without background) and 100% vector SVG files (solid white, solid dark, and vector chromatic aberration). Created canonical guide at `second-brain-zorixel/wiki/brand/typography.md` and registered files in `WORKSPACE_MAP.md`.
+**Decision:** Finalized Zorixel's typography design: brand logo is lowercase `"zorixel"` in `Nuqun` regular font with a chromatic aberration (RGB split) effect; display serifs are `Rosehot` (Title Case); display creative headings are `Vixa` (Title Case, 2-5 words only); paragraph body copy is `Outfit`; statistics numbers are `Space Mono`. Created and ran Playwright script `projects/font-showcase/generate_nuqun_logo.js` to output 2000x2000 transparent logo files (with/without background) and 100% vector SVG files (solid white, solid dark, and vector chromatic aberration). Created canonical guide at `second-brain-zorixel/wiki/brand/typography.md` and registered files in `WORKSPACE_MAP.md`.
 
-**Why:** The user confirmed that the logo font in their selected screenshot was `Orbix` (not `Nuqun`), and requested 2000x2000 transparent/solid background PNG files along with vector SVG files for use in Canva/Figma.
+**Why:** The user confirmed that the logo font must remain `Nuqun` (exactly as designed in the slides and presentation), and requested 2000x2000 transparent/solid background PNG files along with vector SVG files for Canva/Figma editing.
 
-**Alternatives considered:** Using embedded font tags in SVGs (inflexible as Canva does not load the custom local Orbix font automatically).
+**Alternatives considered:** Using embedded font tags in SVGs (inflexible as Canva does not load the custom local Nuqun font automatically).
 
 **Owner:** Atinek Maurya

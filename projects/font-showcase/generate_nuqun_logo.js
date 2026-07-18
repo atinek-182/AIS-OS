@@ -3,11 +3,11 @@ const path = require('path');
 const fs = require('fs');
 
 (async () => {
-  const fontsDir = path.join(__dirname, 'fonts/OTF');
+  const fontsDir = path.join(__dirname, 'fonts');
   const targetDir = __dirname;
   const artifactDir = 'C:\\Users\\HP\\.gemini\\antigravity-ide\\brain\\c890bf99-ca4e-49da-9939-9c0c96b28570';
 
-  console.log('Generating high-resolution 2000x2000 PNG & vector SVG logos in Orbix font...');
+  console.log('Generating high-resolution 2000x2000 PNG & vector SVG logos in Nuqun font...');
 
   // 1. RENDER HTML PNG STYLES
   const htmlContent = `
@@ -16,8 +16,8 @@ const fs = require('fs');
 <head>
 <style>
     @font-face {
-        font-family: 'Orbix';
-        src: url('file:///${fontsDir.replace(/\\\\/g, '/')}/Orbix-Regular.otf') format('opentype');
+        font-family: 'Nuqun';
+        src: url('file:///${fontsDir.replace(/\\\\/g, '/')}/Nuqun-Regular.otf') format('opentype');
     }
     body {
         margin: 0;
@@ -30,11 +30,12 @@ const fs = require('fs');
         overflow: hidden;
     }
     .logo-container {
-        font-family: 'Orbix';
+        font-family: 'Nuqun';
         font-size: 340px;
         text-transform: lowercase;
         letter-spacing: 0.05em;
         text-align: center;
+        font-weight: bold;
     }
     .aberration {
         color: #ffffff;
@@ -55,7 +56,7 @@ const fs = require('fs');
 `;
 
   // Write temporary renderer page
-  const tempHtmlPath = path.join(__dirname, 'temp_orbix_renderer.html');
+  const tempHtmlPath = path.join(__dirname, 'temp_nuqun_renderer.html');
   fs.writeFileSync(tempHtmlPath, htmlContent, 'utf-8');
 
   const browser = await chromium.launch();
@@ -124,8 +125,8 @@ const fs = require('fs');
   await page.goto('about:blank');
   await page.addScriptTag({ url: 'https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.4/opentype.min.js' });
 
-  // Read Orbix font buffer
-  const fontPath = path.join(fontsDir, 'Orbix-Regular.otf');
+  // Read Nuqun font buffer
+  const fontPath = path.join(fontsDir, 'Nuqun-Regular.otf');
   const fontBuffer = fs.readFileSync(fontPath);
   const fontBase64 = fontBuffer.toString('base64');
 
@@ -141,7 +142,6 @@ const fs = require('fs');
     const font = opentype.parse(arrayBuffer);
     
     // Calculate path for text "zorixel"
-    // Since Orbix is lowercase, text must be lowercase
     const text = 'zorixel';
     const fontSize = 180;
     
@@ -210,5 +210,5 @@ const fs = require('fs');
   }
 
   await browser.close();
-  console.log('Successfully generated all Orbix logo assets!');
+  console.log('Successfully generated all Nuqun logo assets!');
 })();
