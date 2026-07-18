@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZORIXEL Branding Fonts Exploration</title>
+
+    <!-- Google Fonts for Body Text (Satoshi / Outfit style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===========================================
+           LOCAL FONT DECLARATIONS
+           =========================================== */
+        @font-face {
+            font-family: 'Bezmiar';
+            src: url('fonts/Bezmiar-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Grith';
+            src: url('fonts/Grith.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Havock';
+            src: url('fonts/Havock.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Headache';
+            src: url('fonts/Headache-Font-OTF.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Kalamayka';
+            src: url('fonts/KalamaykaVF.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Malvides';
+            src: url('fonts/Malvides/Malvides.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Nighthawk';
+            src: url('fonts/Nighthawk.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Nuqun';
+            src: url('fonts/Nuqun-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Rosehot';
+            src: url('fonts/Rosehot.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'SunsetHeavyNarrow';
+            src: url('fonts/SunsetHeavy-Narrow.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'SunsetHeavyText';
+            src: url('fonts/SunsetHeavy-Text.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Vixa';
+            src: url('fonts/Vixa/otf/Vixa-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Orbix';
+            src: url('fonts/OTF/Orbix-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'LunaObscura';
+            src: url('fonts/hs_lunaobscura/HS_LunaObscura.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ===========================================
+           FIXED 16:9 STAGE BASE STYLES
+           =========================================== */
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #050508;
+            font-family: 'Outfit', sans-serif;
+            color: #ffffff;
+            user-select: none;
+        }
+
+        .deck-viewport {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            background: #050508;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .deck-stage {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            transform-origin: 0 0;
+            background: #0c0d12;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 80px 100px;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: scale(0.98);
+        }
+
+        .slide.active {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+            z-index: 1;
+        }
+
+        /* Slide Transition Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .slide.active .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger delays */
+        .reveal-1 { transition-delay: 0.1s; }
+        .reveal-2 { transition-delay: 0.2s; }
+        .reveal-3 { transition-delay: 0.3s; }
+        .reveal-4 { transition-delay: 0.4s; }
+        .reveal-5 { transition-delay: 0.5s; }
+
+        /* ===========================================
+           GLOBAL presentation UI
+           =========================================== */
+        .deck-controls {
+            position: fixed;
+            bottom: 24px;
+            right: 40px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(15, 15, 25, 0.7);
+            backdrop-filter: blur(12px);
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-nav {
+            background: none;
+            border: none;
+            color: #a0a5b5;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.2s ease, transform 0.1s ease;
+            padding: 4px 8px;
+        }
+
+        .btn-nav:hover {
+            color: #ffffff;
+        }
+
+        .btn-nav:active {
+            transform: scale(0.95);
+        }
+
+        .slide-counter {
+            color: #656a7a;
+            font-size: 14px;
+            font-family: 'Space Mono', monospace;
+            border-left: 1px solid rgba(255, 255, 255, 0.15);
+            padding-left: 16px;
+        }
+
+        /* Route Navigation Bar (Quick Jumps) */
+        .route-jumps {
+            position: fixed;
+            bottom: 24px;
+            left: 40px;
+            z-index: 1000;
+            display: flex;
+            gap: 12px;
+            background: rgba(15, 15, 25, 0.7);
+            backdrop-filter: blur(12px);
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-jump {
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #808595;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-jump:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-jump.active-route {
+            color: #000000;
+            background: #ffffff;
+        }
+
+        /* Inline Editor styles */
+        .edit-hotzone {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            z-index: 10000;
+            cursor: pointer;
+        }
+
+        .edit-toggle {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            background: #ffffff;
+            color: #000000;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+            z-index: 10001;
+        }
+
+        .edit-toggle.show, .edit-toggle.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .edit-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        .edit-toggle.active {
+            background: #ff5500;
+            color: #ffffff;
+        }
+
+        [contenteditable="true"] {
+            outline: 2px dashed rgba(255, 85, 0, 0.5);
+            background: rgba(255, 85, 0, 0.05);
+            border-radius: 4px;
+            padding: 2px 8px;
+            cursor: text;
+            user-select: text;
+        }
+
+        /* ===========================================
+           ROUTE-SPECIFIC COMPONENT LAYOUTS
+           =========================================== */
+
+        /* Slide layout primitives */
+        .slide-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 24px;
+        }
+
+        .route-tag {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+        }
+
+        .slide-title-text {
+            font-size: 24px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .slide-body {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .slide-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .font-pairing-info {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+        }
+
+        /* Background photo setup */
+        .bg-photo {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.35;
+            z-index: 0;
+            filter: grayscale(20%);
+        }
+
+        .bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(5, 5, 8, 0.4) 0%, rgba(5, 5, 8, 0.9) 100%);
+            z-index: 1;
+        }
+
+        /* Visual grids */
+        .split-grid {
+            display: grid;
+            grid-cols: 1;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            height: 100%;
+            gap: 60px;
+            align-items: center;
+            z-index: 2;
+        }
+
+        /* Theme variables for routing slides */
+        .theme-a {
+            --bg-primary: #090b10;
+            --text-primary: #f0f4f8;
+            --accent: #00f5c4;
+            --accent-dim: rgba(0, 245, 196, 0.15);
+            background: var(--bg-primary);
+        }
+
+        .theme-b {
+            --bg-primary: #111111;
+            --text-primary: #f5f5f7;
+            --accent: #df5d4b;
+            --accent-dim: rgba(223, 93, 75, 0.15);
+            background: var(--bg-primary);
+        }
+
+        .theme-c {
+            --bg-primary: #000000;
+            --text-primary: #ffffff;
+            --accent: #ff5500;
+            --accent-dim: rgba(255, 85, 0, 0.15);
+            background: var(--bg-primary);
+        }
+
+        .theme-d {
+            --bg-primary: #0c2117;
+            --text-primary: #ecf4f0;
+            --accent: #7df9be;
+            --accent-dim: rgba(125, 249, 190, 0.15);
+            background: var(--bg-primary);
+        }
+
+        /* Vibe description tables */
+        .vibe-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            font-family: inherit;
+        }
+
+        .vibe-table td {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 18px;
+        }
+
+        .vibe-table td.label {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            width: 180px;
+        }
+
+        /* Interactive voting layout */
+        .compare-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .compare-card {
+            background: #111218;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .compare-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .vote-btn {
+            background: var(--accent);
+            color: #000000;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .vote-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .vote-btn:active {
+            transform: scale(0.98);
+        }
+
+        .vote-count {
+            margin-top: 16px;
+            font-family: 'Space Mono', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .vote-percent {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="deck-viewport">
+        <main class="deck-stage" id="deckStage">
+
+            <!-- SLIDE 1: DECK TITLE -->
+            <section class="slide theme-a active" style="justify-content: center; align-items: center; text-align: center;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1920'); opacity: 0.15;"></div>
+                <div class="bg-overlay"></div>
+                <div style="z-index: 2; max-width: 1200px;">
+                    <div class="route-tag reveal reveal-1" style="font-size: 16px; margin-bottom: 20px;">Typography Exploration</div>
+                    <h1 class="reveal reveal-2" style="font-family: 'Bezmiar'; font-size: 112px; font-weight: normal; line-height: 0.95; margin: 0 0 20px 0; letter-spacing: -0.02em;">ZORIXEL</h1>
+                    <p class="reveal reveal-3" style="font-family: 'Space Mono', monospace; font-size: 22px; color: rgba(255, 255, 255, 0.6); margin-bottom: 48px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        Interactive showcase mapping 13 local branding fonts across four conceptual identities.
+                    </p>
+                    <div class="reveal reveal-4" style="display: flex; justify-content: center; gap: 32px;">
+                        <span style="font-size: 15px; color: rgba(255,255,255,0.4); font-family: 'Space Mono', monospace;">Press Arrow Keys to Navigate</span>
+                        <span style="font-size: 15px; color: rgba(255,255,255,0.4); font-family: 'Space Mono', monospace;">Press E to Edit Copy</span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SLIDE 2: FONT DIRECTORY -->
+            <section class="slide theme-a">
+                <div class="slide-header">
+                    <span class="route-tag">Catalog</span>
+                    <span class="slide-title-text">Workspace Font Directory</span>
+                </div>
+                <div class="slide-body" style="align-items: stretch; margin: 30px 0;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; z-index: 2;">
+                        <div>
+                            <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">Display / Serif Fonts</h3>
+                            <div style="display: grid; gap: 16px;">
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Rosehot'; font-size: 28px;">Rosehot</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Elegant Curves (.ttf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Malvides'; font-size: 28px;">Malvides</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Clean serif (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Bezmiar'; font-size: 28px;">Bezmiar</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Futuristic display (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Vixa'; font-size: 28px;">Vixa</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Art Nouveau display (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'LunaObscura'; font-size: 24px;">Luna Obscura</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Industrial sci-fi (.otf)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">Sans / Headline / Display Fonts</h3>
+                            <div style="display: grid; gap: 16px;">
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Grith'; font-size: 28px;">Grith</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Bold condensed sans (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Nighthawk'; font-size: 28px;">Nighthawk</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Wide diner signage (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'SunsetHeavyNarrow'; font-size: 26px;">Sunset Heavy Narrow</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Rounded heavy (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Nuqun'; font-size: 26px;">Nuqun</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Geometric sans (.otf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Kalamayka'; font-size: 26px;">Kalamayka</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Bohemian variable (.ttf)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                                    <span style="font-family: 'Orbix'; font-size: 24px;">Orbix</span>
+                                    <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4)">Blocky square sans (.otf)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>ZORIXEL Brand Vault Discovery</span>
+                    <span>Slide 2 of 19</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               ROUTE A: FUTURISTIC TECH SLIDES (3-6)
+               =========================================== -->
+
+            <!-- Slide 3: Route A Vibe Sheet -->
+            <section class="slide theme-a">
+                <div class="slide-header">
+                    <span class="route-tag">Route A</span>
+                    <span class="slide-title-text">Futuristic Tech Identity Vibe</span>
+                </div>
+                <div class="slide-body">
+                    <div class="split-grid">
+                        <div class="reveal reveal-1">
+                            <h2 style="font-family: 'Bezmiar'; font-size: 56px; font-weight: normal; margin-bottom: 20px; line-height: 1;">Cyber-industrial Minimalist</h2>
+                            <p style="font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.7); margin-bottom: 30px;">
+                                Aimed at coders, tech enthusiasts, and developers building the AI-assisted future of the web. Sharp lines, electric highlights, and digital geometries.
+                            </p>
+                            <div style="display: flex; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: #090b10; border-radius: 8px; border: 1px dashed rgba(255,255,255,0.2)"></div>
+                                <div style="width: 50px; height: 50px; background: #f0f4f8; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #00f5c4; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #4a5768; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                        <div class="reveal reveal-2">
+                            <table class="vibe-table">
+                                <tr>
+                                    <td class="label">Vibe Words</td>
+                                    <td>Cyberpunk, high-tech, geometric, experimental, dark tech</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Display Type</td>
+                                    <td style="font-family: 'Bezmiar';">Bezmiar (Clean sci-fi geometry)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Subhead Type</td>
+                                    <td style="font-family: 'LunaObscura';">Luna Obscura (Dystopian structure)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Body Type</td>
+                                    <td style="font-family: 'Nuqun';">Nuqun (High-clarity sans)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span class="font-pairing-info">Bezmiar + Luna Obscura + Nuqun</span>
+                    <span>Slide 3 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 4: Route A Logo Playground -->
+            <section class="slide theme-a">
+                <div class="slide-header">
+                    <span class="route-tag">Route A</span>
+                    <span class="slide-title-text">Logo Lockup Sandbox</span>
+                </div>
+                <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 40px; z-index: 2;">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 60px 100px; border-radius: 12px; width: 80%; text-align: center;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 20px;">Primary Wordmark</span>
+                        <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 96px; font-weight: normal; margin: 0; letter-spacing: -0.01em;">ZORIXEL</h2>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; width: 80%;">
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Secondary Stack</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 40px; font-weight: normal; margin: 0;">ZORIXEL</h3>
+                                <span contenteditable="true" style="font-family: 'LunaObscura'; font-size: 18px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.1em;">AI ENGINE</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Inline Badge Logo</span>
+                            <div style="display: flex; align-items: center; gap: 16px; border: 1px solid rgba(0, 245, 196, 0.3); padding: 12px 24px; border-radius: 8px;">
+                                <span style="font-family: 'Bezmiar'; font-size: 28px; border-right: 1px solid rgba(0, 245, 196, 0.3); padding-right: 16px; color: var(--accent);">Z</span>
+                                <span contenteditable="true" style="font-family: 'Nuqun'; font-size: 16px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">ZORIXEL AIOS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Branding Logo Variants (Interactive text)</span>
+                    <span>Slide 4 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 5: Route A Card Design -->
+            <section class="slide theme-a">
+                <div class="slide-header">
+                    <span class="route-tag">Route A</span>
+                    <span class="slide-title-text">Course Card UI</span>
+                </div>
+                <div class="slide-body" style="z-index: 2;">
+                    <!-- Technical UI Card -->
+                    <div style="width: 580px; background: #0f1118; border: 1px solid rgba(0, 245, 196, 0.15); border-radius: 16px; padding: 48px; box-shadow: 0 30px 60px rgba(0,0,0,0.6); display: flex; flex-direction: column; gap: 24px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="background: rgba(0, 245, 196, 0.1); border: 1px solid rgba(0, 245, 196, 0.3); color: var(--accent); padding: 6px 12px; border-radius: 4px; font-family: 'Space Mono', monospace; font-size: 12px;">STAGE_01</span>
+                            <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4)">TELEMETRY PASS</span>
+                        </div>
+                        <div>
+                            <h3 contenteditable="true" style="font-family: 'LunaObscura'; font-size: 34px; font-weight: normal; margin: 0 0 12px 0; color: #ffffff; letter-spacing: 0.02em;">AGENTIC WEB CODE</h3>
+                            <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 16px; color: rgba(255, 255, 255, 0.6); margin: 0; line-height: 1.5;">
+                                Mastering local workflows, LLM code generation loop integration, and automated design quality tests.
+                            </p>
+                        </div>
+                        <div style="border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; flex-direction: column;">
+                                <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4);">RUN TIMES</span>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 15px; font-weight: 700; color: #ffffff;">8 MODULES</span>
+                            </div>
+                            <button style="background: #00f5c4; color: #050508; border: none; padding: 12px 24px; border-radius: 4px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: all 0.2s;">INITIALIZE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>UX Component Block: Interactive Card</span>
+                    <span>Slide 5 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 6: Route A Poster Design -->
+            <section class="slide theme-a">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1920');"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag">Route A</span>
+                    <span class="slide-title-text">Digital Poster Banner</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; align-items: flex-end; justify-content: flex-start; text-align: left;">
+                    <div style="max-width: 900px;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); display: block; margin-bottom: 20px;">[ ZORIXEL MANIFESTO ]</span>
+                        <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 1.0; letter-spacing: -0.02em;">RETHINK DESIGN IN THE AGE OF AI.</h2>
+                        <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 18px; color: rgba(255, 255, 255, 0.7); max-width: 600px; margin: 0; line-height: 1.5;">
+                            We bridge raw engineering power with distinctive visual taste. Stop template rot. Build something human.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route A Poster Layout (Full bleed background)</span>
+                    <span>Slide 6 of 19</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               ROUTE B: ELEGANT PREMIUM SLIDES (7-10)
+               =========================================== -->
+
+            <!-- Slide 7: Route B Vibe Sheet -->
+            <section class="slide theme-b">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route B</span>
+                    <span class="slide-title-text">Elegant Editorial Vibe Sheet</span>
+                </div>
+                <div class="slide-body">
+                    <div class="split-grid">
+                        <div class="reveal reveal-1">
+                            <h2 style="font-family: 'Rosehot'; font-size: 56px; font-weight: normal; margin-bottom: 20px; line-height: 1;">Luxury Editorial Studio</h2>
+                            <p style="font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.7); margin-bottom: 30px;">
+                                Inspired by premium typography, fashion houses, and design publications. Intended for elite freelancers, creative agencies, and visual designers.
+                            </p>
+                            <div style="display: flex; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: #111111; border-radius: 8px; border: 1px dashed rgba(255,255,255,0.2)"></div>
+                                <div style="width: 50px; height: 50px; background: #f5f5f7; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #df5d4b; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #2a2a2e; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                        <div class="reveal reveal-2">
+                            <table class="vibe-table">
+                                <tr>
+                                    <td class="label">Vibe Words</td>
+                                    <td>Luxury, editorial, classical design, premium, high-end, smooth curves</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Display Type</td>
+                                    <td style="font-family: 'Rosehot'; letter-spacing: -0.01em;">Rosehot (Dynamic modern serif)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Subhead Type</td>
+                                    <td style="font-family: 'Malvides';">Malvides (Elegant geometric serif)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Body Type</td>
+                                    <td style="font-family: 'Nuqun';">Nuqun (Clean geometric sans)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span class="font-pairing-info">Rosehot + Malvides + Nuqun</span>
+                    <span>Slide 7 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 8: Route B Logo Playground -->
+            <section class="slide theme-b">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route B</span>
+                    <span class="slide-title-text">Logo Lockup Sandbox</span>
+                </div>
+                <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 40px; z-index: 2;">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 60px 100px; border-radius: 16px; width: 80%; text-align: center;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 20px;">Primary Wordmark</span>
+                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 96px; font-weight: normal; margin: 0; letter-spacing: -0.03em;">Zorixel</h2>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; width: 80%;">
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Secondary Stack</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Rosehot'; font-size: 40px; font-weight: normal; margin: 0; letter-spacing: -0.02em;">Zorixel</h3>
+                                <span contenteditable="true" style="font-family: 'Malvides'; font-size: 16px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.15em;">DESIGN LAB</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 16px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Fine Editorial Lockup</span>
+                            <div style="text-align: center;">
+                                <span contenteditable="true" style="font-family: 'Nuqun'; font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; display: block; margin-bottom: 4px; color: rgba(255,255,255,0.4);">STUDIO</span>
+                                <h3 contenteditable="true" style="font-family: 'Malvides'; font-size: 32px; font-weight: normal; margin: 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); padding: 6px 30px;">ZORIXEL</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Editorial Logo Variants (Interactive text)</span>
+                    <span>Slide 8 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 9: Route B Card Design -->
+            <section class="slide theme-b">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route B</span>
+                    <span class="slide-title-text">Instagram Carousel Block</span>
+                </div>
+                <div class="slide-body" style="z-index: 2;">
+                    <!-- Editorial Social Card -->
+                    <div style="width: 580px; background: #ffffff; color: #111111; border-radius: 4px; padding: 56px; box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4); display: flex; flex-direction: column; justify-content: space-between; height: 500px;">
+                        <div>
+                            <span style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.1em; display: block; margin-bottom: 30px;">02 / TYPOGRAPHY RULES</span>
+                            <h3 contenteditable="true" style="font-family: 'Rosehot'; font-size: 40px; font-weight: normal; margin: 0 0 20px 0; color: #111111; line-height: 1.1; letter-spacing: -0.02em;">Tension builds premium feel.</h3>
+                            <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 16px; color: #444446; margin: 0; line-height: 1.6;">
+                                High-end editorial layouts rely on high typographic contrast. Tight display kerning paired with generous whitespace communicates absolute control.
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e5e5e7; padding-top: 24px;">
+                            <span style="font-family: 'Malvides'; font-size: 18px; font-weight: bold; letter-spacing: 0.05em;">ZORIXEL.</span>
+                            <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #88888b;">Swipe Left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>IG Social Component Frame</span>
+                    <span>Slide 9 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 10: Route B Poster Design -->
+            <section class="slide theme-b">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920'); opacity: 0.25;"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag" style="color: var(--accent)">Route B</span>
+                    <span class="slide-title-text">Editorial Poster Banner</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; align-items: flex-end; justify-content: flex-start; text-align: left;">
+                    <div style="max-width: 900px;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.25em; color: var(--accent); display: block; margin-bottom: 24px;">ZORIXEL CURATIONS</span>
+                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 72px; font-weight: normal; margin: 0 0 24px 0; line-height: 1.05; letter-spacing: -0.03em; max-width: 750px;">Crafting the future of the digital web.</h2>
+                        <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 18px; color: rgba(255, 255, 255, 0.7); max-width: 600px; margin: 0; line-height: 1.6;">
+                            Minimalism is not empty space; it is the absolute distillation of purpose. Let typography do the heavy lifting.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route B Poster Layout (Architectural geometry)</span>
+                    <span>Slide 10 of 19</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               ROUTE C: BOLD & SOCIAL-FIRST SLIDES (11-14)
+               =========================================== -->
+
+            <!-- Slide 11: Route C Vibe Sheet -->
+            <section class="slide theme-c">
+                <div class="slide-header">
+                    <span class="route-tag">Route C</span>
+                    <span class="slide-title-text">Bold & Social Vibe Sheet</span>
+                </div>
+                <div class="slide-body">
+                    <div class="split-grid">
+                        <div class="reveal reveal-1">
+                            <h2 style="font-family: 'Grith'; font-size: 64px; font-weight: normal; margin-bottom: 20px; line-height: 0.9; letter-spacing: 0.02em;">HIGH IMPACT SOCIAL</h2>
+                            <p style="font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.7); margin-bottom: 30px;">
+                                Engineered to grab immediate attention on Instagram feeds, YouTube thumbnails, and marketing banners. High energy, heavy contrasts, solid blocks.
+                            </p>
+                            <div style="display: flex; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: #000000; border-radius: 8px; border: 1px dashed rgba(255,255,255,0.2)"></div>
+                                <div style="width: 50px; height: 50px; background: #ffffff; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #ff5500; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #333333; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                        <div class="reveal reveal-2">
+                            <table class="vibe-table">
+                                <tr>
+                                    <td class="label">Vibe Words</td>
+                                    <td>Bold, condensed, social-first, loud, signage, energy, active</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Display Type</td>
+                                    <td style="font-family: 'Grith'; font-size: 24px; letter-spacing: 0.05em;">Grith (Heavy condensed Bebas style)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Subhead Type</td>
+                                    <td style="font-family: 'Nighthawk';">Nighthawk (Wide diner signage)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Accent Type</td>
+                                    <td style="font-family: 'SunsetHeavyNarrow';">Sunset Heavy (Rounded heavy)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span class="font-pairing-info">Grith + Nighthawk + Sunset Heavy</span>
+                    <span>Slide 11 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 12: Route C Logo Playground -->
+            <section class="slide theme-c">
+                <div class="slide-header">
+                    <span class="route-tag">Route C</span>
+                    <span class="slide-title-text">Logo Lockup Sandbox</span>
+                </div>
+                <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 40px; z-index: 2;">
+                    <div style="background: rgba(255,255,255,0.02); border: 2px solid #ffffff; padding: 50px 100px; border-radius: 0px; width: 80%; text-align: center;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 20px;">Primary Wordmark</span>
+                        <h2 contenteditable="true" style="font-family: 'Grith'; font-size: 112px; font-weight: normal; margin: 0; letter-spacing: 0.04em; line-height: 0.85;">ZORIXEL</h2>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; width: 80%;">
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Secondary Stack</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Grith'; font-size: 48px; font-weight: normal; margin: 0; letter-spacing: 0.05em; line-height: 0.9;">ZORIXEL</h3>
+                                <span contenteditable="true" style="font-family: 'Nighthawk'; font-size: 18px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.1em;">WEB AGENCY</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); padding: 30px; border-radius: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Vibe Diner Signage Lockup</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Nighthawk'; font-size: 34px; font-weight: normal; margin: 0; color: #ffffff; text-transform: uppercase;">ZORIXEL</h3>
+                                <span contenteditable="true" style="font-family: 'SunsetHeavyNarrow'; font-size: 18px; text-transform: uppercase; color: var(--accent); display: block; margin-top: 4px;">HEAVY DIVISION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Condensed Display Variants (Interactive text)</span>
+                    <span>Slide 12 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 13: Route C Card Design -->
+            <section class="slide theme-c">
+                <div class="slide-header">
+                    <span class="route-tag">Route C</span>
+                    <span class="slide-title-text">YouTube Video Card</span>
+                </div>
+                <div class="slide-body" style="z-index: 2;">
+                    <!-- Bold YouTube Card -->
+                    <div style="width: 580px; background: #111111; border: 2px solid #ff5500; border-radius: 0px; padding: 40px; box-shadow: 0 30px 60px rgba(0,0,0,0.6); display: flex; flex-direction: column; gap: 24px;">
+                        <div style="position: relative; width: 100%; height: 260px; background: #222; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.1)">
+                            <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000'); opacity: 0.6;"></div>
+                            <span style="font-family: 'Grith'; font-size: 80px; color: #ff5500; z-index: 2; letter-spacing: 0.05em; text-shadow: 0 10px 30px rgba(0,0,0,0.8)">ZORIXEL</span>
+                            <div style="position: absolute; bottom: 12px; right: 12px; background: #000; color: #fff; font-family: 'Space Mono', monospace; font-size: 11px; padding: 4px 8px; z-index: 2;">12:45</div>
+                        </div>
+                        <div>
+                            <h3 contenteditable="true" style="font-family: 'Nighthawk'; font-size: 26px; font-weight: normal; margin: 0 0 8px 0; color: #ffffff; text-transform: uppercase; letter-spacing: 0.02em;">BUILDING AN AIOS VAULT FROM SCRATCH</h3>
+                            <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 15px; color: rgba(255, 255, 255, 0.6); margin: 0; line-height: 1.4;">
+                                How we automate research, design QA, and task checklists under one local workspace.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>YouTube UI Card Mock</span>
+                    <span>Slide 13 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 14: Route C Poster Design -->
+            <section class="slide theme-c">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1920'); opacity: 0.3;"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag">Route C</span>
+                    <span class="slide-title-text">High-Energy Banner</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; align-items: center; justify-content: center; text-align: center;">
+                    <div style="max-width: 1000px;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.3em; color: var(--accent); display: block; margin-bottom: 24px;">NO COMPROMISE</span>
+                        <h2 contenteditable="true" style="font-family: 'Grith'; font-size: 120px; font-weight: normal; margin: 0 0 24px 0; line-height: 0.85; letter-spacing: 0.02em;">DESIGN WITHOUT SLOP.</h2>
+                        <p contenteditable="true" style="font-family: 'Nighthawk'; font-size: 24px; color: #ffffff; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.4; letter-spacing: 0.02em; text-transform: uppercase;">
+                            Stand out or fade away. Bold display headers engineered for active brand recall.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route C Poster Layout (Vibrant street contrast)</span>
+                    <span>Slide 14 of 19</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               ROUTE D: QUIRKY & CREATIVE SLIDES (15-18)
+               =========================================== -->
+
+            <!-- Slide 15: Route D Vibe Sheet -->
+            <section class="slide theme-d">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route D</span>
+                    <span class="slide-title-text">Quirky & Creative Vibe Sheet</span>
+                </div>
+                <div class="slide-body">
+                    <div class="split-grid">
+                        <div class="reveal reveal-1">
+                            <h2 style="font-family: 'Vixa'; font-size: 56px; font-weight: normal; margin-bottom: 20px; line-height: 0.95;">Bohemian Creative</h2>
+                            <p style="font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.7); margin-bottom: 30px;">
+                                Aimed at independent creators, artists, vibe coders, and boutique designers who value high originality and eccentric, handcrafted typography.
+                            </p>
+                            <div style="display: flex; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: #0c2117; border-radius: 8px; border: 1px dashed rgba(255,255,255,0.2)"></div>
+                                <div style="width: 50px; height: 50px; background: #ecf4f0; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #7df9be; border-radius: 8px;"></div>
+                                <div style="width: 50px; height: 50px; background: #1b3d2b; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                        <div class="reveal reveal-2">
+                            <table class="vibe-table">
+                                <tr>
+                                    <td class="label">Vibe Words</td>
+                                    <td>Quirky, Art Nouveau, fantasy, handcrafted, pixel/retro, organic</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Display Type</td>
+                                    <td style="font-family: 'Vixa';">Vixa (Organic experimental curves)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Subhead Type</td>
+                                    <td style="font-family: 'Kalamayka';">Kalamayka (Playful boho variable)</td>
+                                </tr>
+                                <tr>
+                                    <td class="label">UI Accent Type</td>
+                                    <td style="font-family: 'Orbix'; font-size: 16px;">Orbix (Rounded blocky sans)</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span class="font-pairing-info">Vixa + Kalamayka + Orbix</span>
+                    <span>Slide 15 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 16: Route D Logo Playground -->
+            <section class="slide theme-d">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route D</span>
+                    <span class="slide-title-text">Logo Lockup Sandbox</span>
+                </div>
+                <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 40px; z-index: 2;">
+                    <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.15); padding: 60px 100px; border-radius: 30px; width: 80%; text-align: center;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 20px;">Primary Wordmark</span>
+                        <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 88px; font-weight: normal; margin: 0; letter-spacing: -0.01em;">Zorixel</h2>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; width: 80%;">
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Secondary Stack</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Vixa'; font-size: 38px; font-weight: normal; margin: 0;">Zorixel</h3>
+                                <span contenteditable="true" style="font-family: 'Kalamayka'; font-size: 18px; color: var(--accent); letter-spacing: 0.05em;">Vibe Lab</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); text-transform: uppercase; margin-bottom: 12px;">Pixel/Square Lockup</span>
+                            <div style="text-align: center;">
+                                <h3 contenteditable="true" style="font-family: 'Orbix'; font-size: 28px; font-weight: normal; margin: 0; letter-spacing: 0.1em; color: var(--accent);">ZORIXEL</h3>
+                                <span contenteditable="true" style="font-family: 'Kalamayka'; font-size: 14px; color: #ffffff; display: block; margin-top: 4px;">PLAYGROUND</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Artistic Logo Variants (Interactive text)</span>
+                    <span>Slide 16 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 17: Route D Card Design -->
+            <section class="slide theme-d">
+                <div class="slide-header">
+                    <span class="route-tag" style="color: var(--accent)">Route D</span>
+                    <span class="slide-title-text">Creative Bohemian Card</span>
+                </div>
+                <div class="slide-body" style="z-index: 2;">
+                    <!-- Quirky/Boho Card -->
+                    <div style="width: 580px; background: #132a1e; border: 1px solid rgba(125, 249, 190, 0.2); border-radius: 24px; padding: 48px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); display: flex; flex-direction: column; gap: 24px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="display: flex; gap: 6px;">
+                                <span style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%;"></span>
+                                <span style="width: 8px; height: 8px; background: rgba(255,255,255,0.2); border-radius: 50%;"></span>
+                            </div>
+                            <span style="font-family: 'Orbix'; font-size: 14px; color: var(--accent); letter-spacing: 0.05em;">LVL. 99</span>
+                        </div>
+                        <div>
+                            <h3 contenteditable="true" style="font-family: 'Vixa'; font-size: 38px; font-weight: normal; margin: 0 0 12px 0; color: #ffffff; line-height: 1;">Vibe Coder Guild</h3>
+                            <p contenteditable="true" style="font-family: 'Kalamayka'; font-size: 18px; color: rgba(236, 244, 240, 0.7); margin: 0; line-height: 1.5;">
+                                A cozy sanctuary for designers who code, developers who design, and creative technologists exploring raw canvas systems.
+                            </p>
+                        </div>
+                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.4);">MEMBERS: 2,400</span>
+                            <button style="background: var(--accent); color: #0c2117; border: none; padding: 12px 24px; border-radius: 30px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 12px; cursor: pointer; transition: all 0.2s;">ENTER GUILD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Quirky UI Card Mock</span>
+                    <span>Slide 17 of 19</span>
+                </div>
+            </section>
+
+            <!-- Slide 18: Route D Poster Design -->
+            <section class="slide theme-d">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=1920'); opacity: 0.35;"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag" style="color: var(--accent)">Route D</span>
+                    <span class="slide-title-text">Creative Banner</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; align-items: flex-end; justify-content: flex-start; text-align: left;">
+                    <div style="max-width: 900px;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); display: block; margin-bottom: 24px;">EXPLORE WONDER</span>
+                        <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 68px; font-weight: normal; margin: 0 0 24px 0; line-height: 1.05; max-width: 750px;">Vibe coding as an artistic discipline.</h2>
+                        <p contenteditable="true" style="font-family: 'Kalamayka'; font-size: 20px; color: rgba(255, 255, 255, 0.8); max-width: 600px; margin: 0; line-height: 1.5;">
+                            When you combine custom browser rendering with experimental typography, web software ceases to be a tool and becomes a medium.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route D Poster Layout (Misty forest vibe)</span>
+                    <span>Slide 18 of 19</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               SLIDE 19: COMPARATIVE DASHBOARD & VOTING
+               =========================================== -->
+            <section class="slide theme-a">
+                <div class="slide-header">
+                    <span class="route-tag">Decision</span>
+                    <span class="slide-title-text">Brand Direction Dashboard</span>
+                </div>
+                <div class="slide-body" style="align-items: stretch; margin: 30px 0;">
+                    <div class="compare-grid">
+                        
+                        <!-- Route A Column -->
+                        <div class="compare-card" style="--accent: #00f5c4;">
+                            <div>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent);">Route A</span>
+                                <h3 style="font-family: 'Bezmiar'; font-size: 40px; margin: 24px 0 8px 0; letter-spacing: -0.01em;">ZORIXEL</h3>
+                                <p style="font-family: 'Nuqun'; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4;">Futuristic Tech & AI</p>
+                            </div>
+                            <div>
+                                <div class="vote-count" id="votes-a">0</div>
+                                <div class="vote-percent" id="percent-a">0%</div>
+                                <button class="vote-btn" onclick="castVote('a')">Vote A</button>
+                            </div>
+                        </div>
+
+                        <!-- Route B Column -->
+                        <div class="compare-card" style="--accent: #df5d4b;">
+                            <div>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent);">Route B</span>
+                                <h3 style="font-family: 'Rosehot'; font-size: 40px; margin: 24px 0 8px 0; letter-spacing: -0.03em;">Zorixel</h3>
+                                <p style="font-family: 'Nuqun'; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4;">Elegant Editorial Design</p>
+                            </div>
+                            <div>
+                                <div class="vote-count" id="votes-b">0</div>
+                                <div class="vote-percent" id="percent-b">0%</div>
+                                <button class="vote-btn" onclick="castVote('b')">Vote B</button>
+                            </div>
+                        </div>
+
+                        <!-- Route C Column -->
+                        <div class="compare-card" style="--accent: #ff5500;">
+                            <div>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent);">Route C</span>
+                                <h3 style="font-family: 'Grith'; font-size: 44px; margin: 20px 0 8px 0; letter-spacing: 0.05em; line-height: 0.95;">ZORIXEL</h3>
+                                <p style="font-family: 'Nuqun'; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4;">Bold Social-First Content</p>
+                            </div>
+                            <div>
+                                <div class="vote-count" id="votes-c">0</div>
+                                <div class="vote-percent" id="percent-c">0%</div>
+                                <button class="vote-btn" onclick="castVote('c')">Vote C</button>
+                            </div>
+                        </div>
+
+                        <!-- Route D Column -->
+                        <div class="compare-card" style="--accent: #7df9be;">
+                            <div>
+                                <span style="font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; color: var(--accent);">Route D</span>
+                                <h3 style="font-family: 'Vixa'; font-size: 38px; margin: 24px 0 8px 0; line-height: 1;">Zorixel</h3>
+                                <p style="font-family: 'Kalamayka'; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.4;">Quirky Creative & Indie</p>
+                            </div>
+                            <div>
+                                <div class="vote-count" id="votes-d">0</div>
+                                <div class="vote-percent" id="percent-d">0%</div>
+                                <button class="vote-btn" onclick="castVote('d')">Vote D</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Vote for ZORIXEL Brand Direction (Saves to localStorage)</span>
+                    <span>Slide 19 of 25</span>
+                </div>
+            </section>
+
+
+            <!-- ===========================================
+               MEGA TYPOGRAPHY & ROUNDED POSTERS (20-25)
+               =========================================== -->
+            
+            <!-- Slide 20: Section Intro -->
+            <section class="slide theme-c" style="justify-content: center; align-items: center; text-align: center; --bg-primary: #080614; --accent: #7df9be;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1920'); opacity: 0.15;"></div>
+                <div class="bg-overlay"></div>
+                <div style="z-index: 2;">
+                    <span class="route-tag" style="margin-bottom: 20px; display: block;">Creative Section</span>
+                    <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 80px; margin: 0 0 20px 0; line-height: 1.0;">Mega Typography & Rounded Posters</h2>
+                    <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 20px; color: rgba(255,255,255,0.6); max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+                        Testing our local fonts at massive viewport-filling sizes and showcasing creative poster layouts with high corner-radius styling.
+                    </p>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>ZORIXEL Typographic Sandbox</span>
+                    <span>Slide 20 of 25</span>
+                </div>
+            </section>
+
+            <!-- Slide 21: Mega Typography - Option A & B -->
+            <section class="slide theme-a" style="--bg-primary: #0a0c10; --accent: #00f5c4;">
+                <div class="slide-header">
+                    <span class="route-tag">Mega Type</span>
+                    <span class="slide-title-text">Scale Comparison: Option A vs Option B</span>
+                </div>
+                <div class="slide-body" style="align-items: stretch; margin: 20px 0; z-index: 2;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%;">
+                        <!-- Option A Column -->
+                        <div style="border-right: 1px solid rgba(255,255,255,0.08); padding-right: 40px; display: flex; flex-direction: column; justify-content: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: var(--accent); text-transform: uppercase; margin-bottom: 16px;">Option A: Bezmiar (150px)</span>
+                            <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 150px; font-weight: normal; margin: 0; line-height: 0.85; letter-spacing: -0.01em; color: #ffffff;">ZORIXEL</h2>
+                            <p style="font-family: 'Nuqun'; font-size: 16px; color: rgba(255,255,255,0.5); margin-top: 24px; line-height: 1.4;">
+                                Futuristic geometry retains clean curves and extreme geometric precision at massive display sizes.
+                            </p>
+                        </div>
+                        <!-- Option B Column -->
+                        <div style="padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #df5d4b; text-transform: uppercase; margin-bottom: 16px;">Option B: Rosehot (150px)</span>
+                            <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 150px; font-weight: normal; margin: 0; line-height: 0.85; letter-spacing: -0.03em; color: #f5f5f7;">Zorixel</h2>
+                            <p style="font-family: 'Nuqun'; font-size: 16px; color: rgba(255,255,255,0.5); margin-top: 24px; line-height: 1.4;">
+                                Editorial serif curves and thin hair-lines display luxurious detail and visual weight under high scale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Typography Scale Sandbox (Interactive text)</span>
+                    <span>Slide 21 of 25</span>
+                </div>
+            </section>
+
+            <!-- Slide 22: Mega Typography - Option C & D -->
+            <section class="slide theme-c" style="--bg-primary: #000000; --accent: #ff5500;">
+                <div class="slide-header">
+                    <span class="route-tag">Mega Type</span>
+                    <span class="slide-title-text">Scale Comparison: Option C vs Option D</span>
+                </div>
+                <div class="slide-body" style="align-items: stretch; margin: 20px 0; z-index: 2;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%;">
+                        <!-- Option C Column -->
+                        <div style="border-right: 1px solid rgba(255,255,255,0.1); padding-right: 40px; display: flex; flex-direction: column; justify-content: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: var(--accent); text-transform: uppercase; margin-bottom: 16px;">Option C: Grith (170px)</span>
+                            <h2 contenteditable="true" style="font-family: 'Grith'; font-size: 170px; font-weight: normal; margin: 0; line-height: 0.8; letter-spacing: 0.05em; color: #ffffff;">ZORIXEL</h2>
+                            <p style="font-family: 'Nuqun'; font-size: 16px; color: rgba(255,255,255,0.5); margin-top: 24px; line-height: 1.4;">
+                                Condensed letterforms create massive visual blocks that grab attention instantly. Best for high-contrast statements.
+                            </p>
+                        </div>
+                        <!-- Option D Column -->
+                        <div style="padding-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #7df9be; text-transform: uppercase; margin-bottom: 16px;">Option D: Vixa (140px)</span>
+                            <h2 contenteditable="true" style="font-family: 'Vixa'; font-size: 140px; font-weight: normal; margin: 0; line-height: 0.85; color: #ecf4f0;">Zorixel</h2>
+                            <p style="font-family: 'Kalamayka'; font-size: 18px; color: rgba(255,255,255,0.5); margin-top: 24px; line-height: 1.4;">
+                                Experimental organic curves and Art Nouveau proportions create an eccentric, artistic character at scale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <span>Typography Scale Sandbox (Interactive text)</span>
+                    <span>Slide 22 of 25</span>
+                </div>
+            </section>
+
+            <!-- Slide 23: Nuqun Mega Logo Slide -->
+            <section class="slide theme-a" style="--bg-primary: #0b0d17; --accent: #a8ffb2; justify-content: center; align-items: center; text-align: center;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1920'); opacity: 0.1;"></div>
+                <div class="bg-overlay"></div>
+                <div style="z-index: 2; width: 100%;">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 24px; margin-bottom: 40px;">
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent);"></span>
+                        <span style="font-family: 'Space Mono', monospace; font-size: 14px; text-transform: uppercase; color: var(--accent); letter-spacing: 0.3em;">Nuqun Geometric Identity</span>
+                        <span style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent);"></span>
+                    </div>
+                    
+                    <!-- Nuqun Mega Logo -->
+                    <h1 contenteditable="true" style="font-family: 'Nuqun'; font-size: 160px; font-weight: normal; margin: 0 0 30px 0; letter-spacing: 0.05em; line-height: 1.0; text-transform: uppercase; text-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+                        ZORIXEL
+                    </h1>
+                    
+                    <p contenteditable="true" style="font-family: 'Space Mono', monospace; font-size: 18px; color: rgba(255,255,255,0.4); max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
+                        [ TYPEFACE: NUQUN REGULAR · SIZE: 160PX ]
+                    </p>
+                </div>
+                <div class="slide-footer" style="z-index: 2; width: 100%;">
+                    <span>ZORIXEL Brand Identity Vault</span>
+                    <span>Slide 23 of 25</span>
+                </div>
+            </section>
+
+            <!-- Slide 24: Rounded Creative Poster A -->
+            <section class="slide theme-a" style="--bg-primary: #0a0b12; --accent: #00f5c4;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1920'); opacity: 0.3;"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag">Poster</span>
+                    <span class="slide-title-text">Rounded Creative Layout A</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; width: 100%; height: 100%;">
+                    <div style="background: rgba(10, 11, 18, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 40px; padding: 60px; max-width: 900px; display: flex; flex-direction: column; gap: 30px; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <span style="background: var(--accent); color: #0a0b12; padding: 8px 20px; border-radius: 50px; font-family: 'Space Mono', monospace; font-size: 12px; font-weight: 700; text-transform: uppercase;">CREATIVE EDITION</span>
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.4);">[ ISSUE 01 ]</span>
+                        </div>
+                        <h2 contenteditable="true" style="font-family: 'Bezmiar'; font-size: 64px; font-weight: normal; margin: 0; line-height: 1.0; letter-spacing: -0.02em; color: #ffffff;">BOUNDLESS VISUAL EXPERIENCES.</h2>
+                        <p contenteditable="true" style="font-family: 'Nuqun'; font-size: 18px; color: rgba(255,255,255,0.7); margin: 0; line-height: 1.5; max-width: 700px;">
+                            Leveraging agentic code bases to build high-contrast layouts. Bold typography paired with soft, rounded container geometry forms a striking tension.
+                        </p>
+                        <div style="display: flex; gap: 16px; margin-top: 10px;">
+                            <button style="background: #ffffff; color: #000000; border: none; padding: 14px 32px; border-radius: 50px; font-family: 'Nuqun'; font-weight: 700; font-size: 14px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Get Starter Kit</button>
+                            <button style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 14px 32px; border-radius: 50px; font-family: 'Nuqun'; font-weight: 600; font-size: 14px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">View Manifest</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route A Rounded Showcase Poster</span>
+                    <span>Slide 24 of 25</span>
+                </div>
+            </section>
+
+            <!-- Slide 25: Rounded Creative Poster B -->
+            <section class="slide theme-d" style="--bg-primary: #071911; --accent: #7df9be;">
+                <div class="bg-photo" style="background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1920'); opacity: 0.35;"></div>
+                <div class="bg-overlay"></div>
+                <div class="slide-header" style="z-index: 2;">
+                    <span class="route-tag">Poster</span>
+                    <span class="slide-title-text">Rounded Creative Layout B</span>
+                </div>
+                <div class="slide-body" style="z-index: 2; width: 100%; height: 100%; justify-content: flex-end; align-items: center;">
+                    <div style="background: rgba(7, 25, 17, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(125, 249, 190, 0.2); border-radius: 40px; padding: 60px; max-width: 800px; display: flex; flex-direction: column; gap: 24px; box-shadow: 0 40px 100px rgba(0,0,0,0.6); text-align: left;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="display: inline-block; width: 12px; height: 12px; background: var(--accent); border-radius: 50%;"></span>
+                            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em;">Vibe Coder Publication</span>
+                        </div>
+                        <h2 contenteditable="true" style="font-family: 'Rosehot'; font-size: 56px; font-weight: normal; margin: 0; line-height: 1.1; letter-spacing: -0.02em; color: #ffffff;">Let typography shape your organic spaces.</h2>
+                        <p contenteditable="true" style="font-family: 'Kalamayka'; font-size: 20px; color: rgba(236,244,240,0.7); margin: 0; line-height: 1.5;">
+                            Handcrafted variable serif curves bring a humanistic spirit back to digital interfaces. Let go of rigid templates and embrace visual character.
+                        </p>
+                        <div style="display: flex; gap: 16px; margin-top: 10px;">
+                            <button style="background: var(--accent); color: #071911; border: none; padding: 14px 36px; border-radius: 50px; font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Read Vol. 01</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-footer" style="z-index: 2;">
+                    <span>Route D Rounded Showcase Poster</span>
+                    <span>Slide 25 of 25</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- PRESENTATION CHROME DOCK CONTROLS -->
+    <div class="deck-controls">
+        <button class="btn-nav" onclick="presentation.prevSlide()">← Prev</button>
+        <button class="btn-nav" onclick="presentation.nextSlide()">Next →</button>
+        <span class="slide-counter" id="slideCounter">1 / 25</span>
+    </div>
+
+    <!-- QUICK ROUTE JUMP LINKS -->
+    <div class="route-jumps">
+        <button class="btn-jump active-route" id="jump-intro" onclick="presentation.showSlide(0)">Cover</button>
+        <button class="btn-jump" id="jump-a" onclick="presentation.showSlide(2)">Route A</button>
+        <button class="btn-jump" id="jump-b" onclick="presentation.showSlide(6)">Route B</button>
+        <button class="btn-jump" id="jump-c" onclick="presentation.showSlide(10)">Route C</button>
+        <button class="btn-jump" id="jump-d" onclick="presentation.showSlide(14)">Route D</button>
+        <button class="btn-jump" id="jump-compare" onclick="presentation.showSlide(18)">Compare</button>
+        <button class="btn-jump" id="jump-mega" onclick="presentation.showSlide(19)">Mega / Poster</button>
+    </div>
+
+    <!-- INLINE EDITOR HOVER REGIONS -->
+    <div class="edit-hotzone"></div>
+    <button class="edit-toggle" id="editToggle" title="Toggle edit mode (E)">✏️</button>
+
+
+    <!-- ===========================================
+       PRESENTATION & EDITOR CONTROLLER SCRIPTS
+       =========================================== -->
+    <script>
+        class SlidePresentation {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.currentSlide = 0;
+                this.stage = document.getElementById('deckStage');
+                this.counterEl = document.getElementById('slideCounter');
+                
+                this.setupStageScale();
+                this.setupKeyboardNav();
+                this.setupTouchNav();
+                this.showSlide(0);
+            }
+
+            setupStageScale() {
+                const scale = () => {
+                    const factor = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+                    const x = (window.innerWidth - 1920 * factor) / 2;
+                    const y = (window.innerHeight - 1080 * factor) / 2;
+                    this.stage.style.transform = `translate(${x}px, ${y}px) scale(${factor})`;
+                };
+                scale();
+                window.addEventListener('resize', scale);
+            }
+
+            setupKeyboardNav() {
+                document.addEventListener('keydown', (e) => {
+                    // Do not intercept keystrokes if the user is typing inside contenteditable
+                    if (e.target.getAttribute('contenteditable') === 'true') return;
+
+                    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+                        this.nextSlide();
+                    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                        this.prevSlide();
+                    }
+                });
+            }
+
+            setupTouchNav() {
+                let startX = 0;
+                document.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                }, {passive: true});
+
+                document.addEventListener('touchend', (e) => {
+                    let endX = e.changedTouches[0].clientX;
+                    let diffX = startX - endX;
+                    if (Math.abs(diffX) > 80) {
+                        if (diffX > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.prevSlide();
+                        }
+                    }
+                }, {passive: true});
+            }
+
+            showSlide(index) {
+                this.currentSlide = Math.max(0, Math.min(index, this.slides.length - 1));
+                this.slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === this.currentSlide);
+                });
+                
+                // Update presentation controls UI
+                this.counterEl.innerText = `${this.currentSlide + 1} / ${this.slides.length}`;
+                this.updateRouteNavHighlight();
+            }
+
+            nextSlide() {
+                if (this.currentSlide < this.slides.length - 1) {
+                    this.showSlide(this.currentSlide + 1);
+                }
+            }
+
+            prevSlide() {
+                if (this.currentSlide > 0) {
+                    this.showSlide(this.currentSlide - 1);
+                }
+            }
+
+            updateRouteNavHighlight() {
+                // Remove active classes
+                document.querySelectorAll('.btn-jump').forEach(btn => btn.classList.remove('active-route'));
+
+                if (this.currentSlide === 0 || this.currentSlide === 1) {
+                    document.getElementById('jump-intro').classList.add('active-route');
+                } else if (this.currentSlide >= 2 && this.currentSlide <= 5) {
+                    document.getElementById('jump-a').classList.add('active-route');
+                } else if (this.currentSlide >= 6 && this.currentSlide <= 9) {
+                    document.getElementById('jump-b').classList.add('active-route');
+                } else if (this.currentSlide >= 10 && this.currentSlide <= 13) {
+                    document.getElementById('jump-c').classList.add('active-route');
+                } else if (this.currentSlide >= 14 && this.currentSlide <= 17) {
+                    document.getElementById('jump-d').classList.add('active-route');
+                } else if (this.currentSlide === 18) {
+                    document.getElementById('jump-compare').classList.add('active-route');
+                } else if (this.currentSlide >= 19 && this.currentSlide <= 24) {
+                    document.getElementById('jump-mega').classList.add('active-route');
+                }
+            }
+        }
+
+        // Initialize presentation
+        const presentation = new SlidePresentation();
+
+        /* ===========================================
+           INLINE EDITING SYSTEM
+           =========================================== */
+        class InlineEditor {
+            constructor() {
+                this.isActive = false;
+                this.toggleBtn = document.getElementById('editToggle');
+                this.hotzone = document.querySelector('.edit-hotzone');
+                
+                this.setupHotzoneHover();
+                this.setupToggleClick();
+                this.setupKeyboardShortcut();
+                this.loadSavedContent();
+            }
+
+            toggleEditMode() {
+                this.isActive = !this.isActive;
+                this.toggleBtn.classList.toggle('active', this.isActive);
+                
+                // Toggle contenteditable attributes on all target text blocks
+                const editables = document.querySelectorAll('[contenteditable]');
+                editables.forEach(el => {
+                    el.setAttribute('contenteditable', this.isActive ? 'true' : 'false');
+                });
+
+                if (!this.isActive) {
+                    this.saveContent();
+                }
+            }
+
+            setupHotzoneHover() {
+                let hideTimeout = null;
+                this.hotzone.addEventListener('mouseenter', () => {
+                    clearTimeout(hideTimeout);
+                    this.toggleBtn.classList.add('show');
+                });
+                this.hotzone.addEventListener('mouseleave', () => {
+                    hideTimeout = setTimeout(() => {
+                        if (!this.isActive) this.toggleBtn.classList.remove('show');
+                    }, 400);
+                });
+                this.toggleBtn.addEventListener('mouseenter', () => {
+                    clearTimeout(hideTimeout);
+                });
+                this.toggleBtn.addEventListener('mouseleave', () => {
+                    hideTimeout = setTimeout(() => {
+                        if (!this.isActive) this.toggleBtn.classList.remove('show');
+                    }, 400);
+                });
+                this.hotzone.addEventListener('click', () => {
+                    this.toggleEditMode();
+                });
+            }
+
+            setupToggleClick() {
+                this.toggleBtn.addEventListener('click', () => {
+                    this.toggleEditMode();
+                });
+            }
+
+            setupKeyboardShortcut() {
+                document.addEventListener('keydown', (e) => {
+                    if ((e.key === 'e' || e.key === 'E') && e.target.getAttribute('contenteditable') !== 'true') {
+                        e.preventDefault();
+                        this.toggleEditMode();
+                    }
+                });
+            }
+
+            saveContent() {
+                const editables = document.querySelectorAll('[contenteditable]');
+                const data = {};
+                editables.forEach((el, index) => {
+                    data[index] = el.innerHTML;
+                });
+                localStorage.setItem('zorixel_slide_content', JSON.stringify(data));
+            }
+
+            loadSavedContent() {
+                const raw = localStorage.getItem('zorixel_slide_content');
+                if (raw) {
+                    try {
+                        const data = JSON.parse(raw);
+                        const editables = document.querySelectorAll('[contenteditable]');
+                        editables.forEach((el, index) => {
+                            if (data[index] !== undefined) {
+                                el.innerHTML = data[index];
+                            }
+                        });
+                    } catch(e) {
+                        console.error('Error loading local slide content', e);
+                    }
+                }
+            }
+        }
+
+        // Initialize editor
+        const editor = new InlineEditor();
+
+        /* ===========================================
+           VOTING SYSTEM MECHANICS
+           =========================================== */
+        function loadVotes() {
+            const votes = JSON.parse(localStorage.getItem('zorixel_votes') || '{"a":0,"b":0,"c":0,"d":0}');
+            let total = votes.a + votes.b + votes.c + votes.d;
+
+            ['a', 'b', 'c', 'd'].forEach(key => {
+                document.getElementById(`votes-${key}`).innerText = votes[key];
+                let percent = total > 0 ? Math.round((votes[key] / total) * 100) : 0;
+                document.getElementById(`percent-${key}`).innerText = `${percent}%`;
+            });
+        }
+
+        function castVote(routeKey) {
+            const votes = JSON.parse(localStorage.getItem('zorixel_votes') || '{"a":0,"b":0,"c":0,"d":0}');
+            votes[routeKey] += 1;
+            localStorage.setItem('zorixel_votes', JSON.stringify(votes));
+            loadVotes();
+        }
+
+        // Load votes initially
+        loadVotes();
+    </script>
+</body>
+</html>
