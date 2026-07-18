@@ -65,7 +65,12 @@ const fs = require('fs');
     21: '22_mega_c_d.png',
     22: '23_mega_nuqun_logo.png',
     23: '24_rounded_poster_a.png',
-    24: '25_rounded_poster_b.png'
+    24: '25_rounded_poster_b.png',
+    25: '26_refined_hybrid.png',
+    26: '27_refined_logo_b.png',
+    27: '28_refined_logo_d.png',
+    28: '29_refined_poster_b.png',
+    29: '30_refined_poster_d.png'
   };
 
   // Traverse through each slide and capture screenshot
