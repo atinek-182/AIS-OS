@@ -172,27 +172,27 @@ const fs = require('fs');
     return path.toPathData();
   }, fontBase64);
 
-  // Write SVGs
+  // Write SVGs with stroke expansion to match synthetic bolding
   const svgWhite = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
-  <path d="${pathData}" fill="#ffffff" />
+  <path d="${pathData}" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" />
 </svg>
   `.trim();
 
   const svgDark = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
-  <path d="${pathData}" fill="#111111" />
+  <path d="${pathData}" fill="#111111" stroke="#111111" stroke-width="5" stroke-linejoin="round" />
 </svg>
   `.trim();
 
   const svgAberration = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
   <!-- Cyan shift (left) -->
-  <path d="${pathData}" fill="#00f5ff" transform="translate(-3, 0)" opacity="0.9" />
+  <path d="${pathData}" fill="#00f5ff" stroke="#00f5ff" stroke-width="5" stroke-linejoin="round" transform="translate(-3, 0)" opacity="0.9" />
   <!-- Red shift (right) -->
-  <path d="${pathData}" fill="#ff3c00" transform="translate(3, 0)" opacity="0.9" />
+  <path d="${pathData}" fill="#ff3c00" stroke="#ff3c00" stroke-width="5" stroke-linejoin="round" transform="translate(3, 0)" opacity="0.9" />
   <!-- Center White -->
-  <path d="${pathData}" fill="#ffffff" />
+  <path d="${pathData}" fill="#ffffff" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" />
 </svg>
   `.trim();
 
