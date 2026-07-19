@@ -566,3 +566,27 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 **Alternatives considered:** Using embedded font tags in SVGs (inflexible as Canva does not load the custom local Nuqun font automatically).
 
 **Owner:** Atinek Maurya
+
+---
+
+## 2026-07-18 — Zorixel Color Presentation Symmetrical Contrast Inversion & Single-Line Parser
+
+**Decision:** Implemented a symmetrical contrast inversion engine and a single-line color palette parser inside `colors_presentation.html`. The parser uses regex to extract all hex values from any pasted text and automatically analyzes them (calculating relative luminance and colorfulness). It then automatically sorts them (Darkest to Lightest), discovers the Accent highlight, and maps them to semantic layout variables. In Dark Mode, the engine dynamically swaps/inverts the variable mappings (e.g. mapping `--color-1` to lightest and `--color-5` to darkest) and blends the darkest color with 92% black to construct a rich dark background.
+
+**Why:** The user was experiencing poor contrast and low legibility where light colors became backgrounds for light text, or dark colors became backgrounds for dark text in dark mode. Letting the engine dynamically sort and map roles by luminance mathematically guarantees high contrast (WCAG compliance) and legibility. The single-line parser enables immediate copy-pasting of palettes from color tools (such as Jordan Watkins' archives) in a single action.
+
+**Alternatives considered:** Maintaining manual/static coordinate color selectors (requires constant manual adjustment and leads to high contrast failure rates).
+
+**Owner:** Atinek Maurya
+
+---
+
+## 2026-07-19 — Integrate Figma Remote MCP Server
+
+**Decision:** Registered the official Figma Remote MCP server in the global `mcp_config.json` configuration, created a reference manual `references/figma-api.md`, updated `connections.md` and `WORKSPACE_MAP.md`.
+
+**Why:** Direct integration with Figma allows the personal AIOS to pull design metadata, tokens, and layouts natively, accelerating high-fidelity design-to-code workflows for ZORIXEL.
+
+**Alternatives considered:** Local command-line figma-developer-mcp with personal access tokens (rejected due to token-maintenance overhead and lack of official Code Connect mappings).
+
+**Owner:** Antigravity AIOS
