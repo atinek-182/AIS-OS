@@ -30,7 +30,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 | [projects/font-showcase/](file:///d:/AI-OS/projects/font-showcase/) | Folder | Typographic brand exploration slides showcase project. | AIOS |
+| [projects/font-showcase/colors_presentation.html](file:///d:/AI-OS/projects/font-showcase/colors_presentation.html) | File | Interactive color exploration slides showcase page. | AIOS |
 | [projects/font-showcase/generate_nuqun_logo.js](file:///d:/AI-OS/projects/font-showcase/generate_nuqun_logo.js) | File | Local Playwright script generating high-resolution brand logos in Nuqun. | AIOS |
+| [projects/font-showcase/qa/verify_colors.js](file:///d:/AI-OS/projects/font-showcase/qa/verify_colors.js) | File | Automated Playwright script verifying color presentation stability. | AIOS |
 | [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/) | Junction | Premium frontend experience design system vault mapped from external documents. | Operator / AIOS |
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
 | [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
@@ -51,6 +53,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [references/chrome-devtools-api.md](file:///d:/AI-OS/references/chrome-devtools-api.md) | File | Playwright and Chrome DevTools MCP servers reference manual. | AIOS |
 | [references/codegraph-api.md](file:///d:/AI-OS/references/codegraph-api.md) | File | Codegraph exploration tool manual. | AIOS |
 | [references/context7-api.md](file:///d:/AI-OS/references/context7-api.md) | File | Context7 Upstash endpoint retrieval documentation. | AIOS |
+| [references/figma-api.md](file:///d:/AI-OS/references/figma-api.md) | File | Figma remote MCP server tools and OAuth setup. | AIOS |
 | [references/github-api.md](file:///d:/AI-OS/references/github-api.md) | File | GitHub repository and pull request MCP endpoints reference guide. | AIOS |
 | [references/gws-api.md](file:///d:/AI-OS/references/gws-api.md) | File | Google Workspace CLI account switching and credential profile configuration. | AIOS |
 | [references/magic-api.md](file:///d:/AI-OS/references/magic-api.md) | File | Magic MCPS Component builder and design inspiration API guide. | AIOS |
