@@ -18,7 +18,7 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 | 12 | UI Component Sourcing | Magic | mcp | API_KEY | 2026-07-15 |
 | 13 | Browser Diagnostics | Chrome DevTools | mcp | — | 2026-07-15 |
 | 14 | Document Database | Notion | mcp | OPENAPI_MCP_HEADERS | 2026-07-15 |
-| 15 | Design Context Extraction | Figma | mcp | OAuth | 2026-07-19 |
+| 15 | Design Context Extraction | Figma | mcp | PAT | 2026-07-19 |
 
 
 **Mechanism options:** `mcp` (MCP server), `script` (Python/Bash hitting an API, in `scripts/`), `export` (CSV/JSON dump pipeline), `key+ref` (`.env` key + `references/{tool}-api.md` guide), `not yet connected`.
