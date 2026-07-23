@@ -44,6 +44,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [premium-frontend-experience-system/vault-references/](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/) | Folder | New dedicated master reference vault containing ultra-granular design, UX, and code manuals. | AIOS |
 | [premium-frontend-experience-system/vault-references/INDEX.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/INDEX.md) | File | Centralized index of all master vault reference manuals. | AIOS |
 | [premium-frontend-experience-system/vault-references/sondaven-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/sondaven-granularity-master.md) | File | Dot-to-dot ultra-granular design, UX, motion physics, and source-code reference for Sondaven. | AIOS |
+| [premium-frontend-experience-system/vault-references/oryzo-ai-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/oryzo-ai-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, 3D assets, and source code for Oryzo AI. | AIOS |
+| [premium-frontend-experience-system/vault-references/the-line-studio-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/the-line-studio-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, card page transitions, and source code for The Line Studio. | AIOS |
+| [premium-frontend-experience-system/vault-references/gehry-getty-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/gehry-getty-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, 3D GLB models, and audio stream for Gehry Getty. | AIOS |
 
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
 | [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
@@ -89,6 +92,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/agent_reach_runner.py](file:///d:/AI-OS/scripts/agent_reach_runner.py) | File | Python runner and diagnostic helper for Agent Reach multi-platform internet capability engine. | AIOS |
 | [scripts/hallmark_runner.py](file:///d:/AI-OS/scripts/hallmark_runner.py) | File | Python audit & verification engine for Hallmark anti-AI-slop design skill. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
+| [scripts/generate_visual_wireframes.py](file:///d:/AI-OS/scripts/generate_visual_wireframes.py) | File | Python engine creating hyper-detailed multi-section visual wireframe HTML pages and Playwright screenshots. | AIOS |
 
 | [scripts/validate_links.py](file:///d:/AI-OS/scripts/validate_links.py) | File | Python link validator script checking for relative/Obsidian link rot. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |

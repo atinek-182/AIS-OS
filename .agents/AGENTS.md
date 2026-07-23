@@ -73,6 +73,10 @@
 - **Unbounded Site & Asset Extraction**: Every website, repository, or project has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document EVERY SINGLE novel element, component, script, animation, shader, and interaction present on the target — even if not explicitly named in an example list.
 - **Dynamic Category Creation**: Never force-fit unique elements into rigid categories or omit them. If a target features a novel pattern (e.g., audio-reactive UI, 3D product customizer, fluid simulations, custom physics canvas), create a dedicated subfolder/section for it automatically.
 
+## Hyper-Detailed Visual UI/UX Wireframe Rule
+- **Visual Wireframe Mandate**: Never output basic placeholder shapes or basic Excalidraw JSON strings for wireframe requests. All reference ingestion wireframes MUST be hyper-detailed visual HTML pages (`wireframe.html`) and Playwright screenshots (`wireframe.png`) containing real site copy, real headlines, component spec tags (`COMPONENT: HEADER / NAV SYSTEM`), 3D stage boxes (`canvas#canvas`), 12-column grid overlays, and explicit technical annotations.
+
+
 
 
 

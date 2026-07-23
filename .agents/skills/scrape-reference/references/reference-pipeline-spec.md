@@ -30,15 +30,17 @@ premium-frontend-experience-system/reference-inputs/sites/[site-slug]/
 │   ├── css/                            # All linked CSS stylesheets
 │   ├── js/                             # All JS bundles & Web Worker scripts
 │   ├── fonts/                          # Custom font files (.woff2, .ttf, .otf)
-│   └── misc/                           # Auxiliary JSON manifests & asset maps
+│   └── misc/                           # 3D Mesh Buffers (.buf, .glb, .gltf), Rive (.riv, .wasm), Splat Sorters
 ├── assets/
+│   ├── wireframe.html                  # Hyper-Detailed Visual UI Wireframe HTML Blueprint
+│   ├── wireframe.png                   # High-Resolution Visual Wireframe Screenshot (1440x1100)
 │   ├── recording_[site-slug].webp      # Browser session interaction WebP video
 │   ├── desktop_1920.png                # Ultra-wide desktop screenshot (1920x1080)
 │   ├── laptop_1440.png                 # Laptop screenshot (1440x900)
 │   ├── tablet_1024.png                 # Tablet landscape screenshot (1024x768)
 │   ├── tablet_768.png                  # Tablet portrait screenshot (768x1024)
 │   ├── mobile_375.png                  # Mobile screenshot (375x812)
-│   ├── images/                         # Mirrored WebP, PNG, JPG, SVG raster/vector graphics
+│   ├── images/                         # PBR Material Maps (height, normal, specular, gobo, WebP/PNG)
 │   └── videos/                         # Mirrored MP4, WebM background videos
 └── code-extracts/
     ├── components/                     # Standalone React + TypeScript (.tsx) drop-in components
@@ -49,9 +51,9 @@ premium-frontend-experience-system/reference-inputs/sites/[site-slug]/
 
 ---
 
-## 2. Dynamic Unbounded Master Reference Manual (14+ Categories)
+## 2. Dynamic Unbounded Master Reference Manual (15+ Categories)
 
-For every site, generate `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` covering **all 14 baseline categories + dynamic $N+$ categories for any novel site features**:
+For every site, generate `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` covering **all 15 baseline categories + dynamic $N+$ categories for any novel site features**:
 
 1. **Meta, SEO, & Favicons:** Viewport tags, OpenGraph WebP image ratios (`1200x630`), Twitter cards, Schema.org JSON-LD structured data, favicons (`32x32`, `256x256`).
 2. **Preloader & Entrance System:** Percentage loading counter (`0%` -> `100%`), visit detection (`hasVisited`), scroll-locking physics (`--scrollbar-width = innerWidth - clientWidth`).
@@ -67,7 +69,7 @@ For every site, generate `premium-frontend-experience-system/vault-references/[s
 12. **Audio & Soundscape UI System:** Audio stream initialization, volume fade in/out (`0 -> 0.25`), Web Audio visualizer bars loop.
 13. **Modals, CTAs, & Form Mechanics:** 3D Y-axis card flip form submit animation (`rotateY: 0 -> -180`), input regex sanitization (`[^\d+\-]`).
 14. **Footer & Page Transition System:** Scroll scale zoom (`scale: 2 -> 1`), Barba.js 20x12 dither grid page transitions, WebGL/ScrollTrigger memory cleanup.
-15. **Novel Category $N+$ (Dynamic):** Automatically created for any site-specific technology (e.g. 3D physics engines, fluid simulations, audio-reactive UI, custom canvas stagers).
+15. **3D Models, Rive Runtimes & Motion Physics Inventory:** Intercepted 3D geometry buffers (`.buf`, `.glb`, `.gltf`), Gaussian Splat depth sorters (`.wasm`), Rive vector files (`.riv`), PBR texture maps, GSAP timeline code, and Lenis scroll smoothness parameters.
 
 ---
 

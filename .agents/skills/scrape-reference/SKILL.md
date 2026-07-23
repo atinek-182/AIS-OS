@@ -19,25 +19,29 @@ For complete technical specifications, network interceptor schemas, and deep arc
    - Finish site $N$ completely (mirroring, visual assets, code extraction, dot-to-dot analysis, vault indexing), present the summary and raw file links, update `INGESTION_QUEUE.md` and `brainstorms/`, and **STOP**.
    - **DO NOT start site $N+1$ until the user explicitly commands "Proceed to next site" or equivalent.**
 
-2. **Full Source & Media Mirroring (`mirror/`):**
+2. **Full Source, 3D Assets & Media Mirroring (`mirror/`):**
    - Run `python scripts/scrape_full_site_mirror.py [URL] [SITE_SLUG]` to intercept and download 100% of the target site's raw assets:
      - `index.html` (complete page DOM markup)
      - Linked CSS stylesheets (`mirror/css/`) and inline styles (`code-extracts/styles/inline-styles.css`)
      - JS bundles (`mirror/js/`) and inline scripts (`code-extracts/animations/inline-scripts.js`)
      - Custom font files (`mirror/fonts/` `.woff2`, `.ttf`, `.otf`)
+     - **3D Mesh Buffers, Splats & Models:** (`mirror/misc/` `.buf`, `.glb`, `.gltf`, `.splat`, `.ksplat`, `.ply`, `.obj`, `.sog`)
+     - **Vector Animation & Engine Runtimes:** (`mirror/misc/` `.riv`, `.wasm`, `.json`)
+     - **PBR Material Maps, Gobos & Images:** (`assets/images/` normal maps, height maps, specular maps, environmental textures, WebP/AVIF assets)
      - Images, SVGs, MP4/WebM videos (`assets/`)
-   - Capture 5 responsive viewport screenshots: `desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`.
+   - Capture 5 responsive viewport screenshots: `desktop_1920.png`, `laptop_1440.png`, `tablet_768.png`, etc.
    - Record WebP browser interaction session video (`recording_[site-slug].webp`).
+   - **Hyper-Detailed Visual UI/UX Wireframe Blueprint (`assets/wireframe.html` & `assets/wireframe.png`):** Generate a hyper-detailed, section-by-section visual wireframe HTML page and Playwright screenshot (`wireframe.png`) containing actual site headlines, copy outlines, navigation controls, 3D WebGL canvas boxes, scrollytelling card grids, interactive prompt widgets, component specification tags, and technical annotations (GSAP parameters, CSS flex/grid math, backdrop blur filters, and scroll thresholds).
 
 3. **Raw Code Extraction (`code-extracts/`):**
    - Extract raw, runnable code files:
      - `code-extracts/components/` — Standalone React + TypeScript (`.tsx`) components (e.g. `Nav.tsx`, `Hero.tsx`, `MagneticButton.tsx`, `Card.tsx`)
-     - `code-extracts/animations/` — Exact GSAP timelines, `ScrollTrigger` pin ranges, Lenis easing functions, magnetic cursor scripts (`.js`)
+     - `code-extracts/animations/` — Exact GSAP timelines, `ScrollTrigger` pin ranges, Lenis easing functions, motion smoothness math, magnetic cursor scripts (`.js`)
      - `code-extracts/shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shader files (`.glsl`)
      - `code-extracts/styles/` — OKLCH design tokens, CSS keyframe animations (`.css`)
 
-4. **Dynamic Unbounded Master Reference Manual (14+ Categories):**
-   - Create `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` analyzing **all micro & macro web decision categories (14 baseline categories + dynamic N+ categories for any novel site features)**:
+4. **Dynamic Unbounded Master Reference Manual (15+ Categories):**
+   - Create `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` analyzing **all micro & macro web decision categories (15 baseline categories + dynamic N+ categories for any novel site features)**:
      1. **Meta, SEO, & Favicons:** Viewport tags, OpenGraph image ratios (`1200x630`), Schema.org JSON-LD structured data, favicons (`32x32`, `256x256`).
      2. **Preloader & Entrance System:** Percentage counter (`0%` -> `100%`), visit detection (`hasVisited`), scroll-locking physics (`--scrollbar-width = innerWidth - clientWidth`).
      3. **Navigation & Header System:** Fixed positioning, backdrop blur, hide/reveal directional scroll delta thresholds (`>40px`), link hover underline `clip-path`.
@@ -52,13 +56,14 @@ For complete technical specifications, network interceptor schemas, and deep arc
      12. **Audio & Soundscape UI System:** Audio stream initialization, volume fade in/out (`0 -> 0.25`), Web Audio visualizer bars loop.
      13. **Modals, CTAs, & Form Mechanics:** 3D Y-axis card flip form submit animation (`rotateY: 0 -> -180`), input regex sanitization (`[^\d+\-]`).
      14. **Footer & Page Transition System:** Scroll scale zoom (`scale: 2 -> 1`), Barba.js 20x12 dither grid page transitions, WebGL/ScrollTrigger memory cleanup.
+     15. **3D Models, Rive Runtimes & Motion Physics Inventory:** Intercepted 3D geometry buffers (`.buf`, `.glb`, `.gltf`), Gaussian Splat depth sorters (`.wasm`), Rive vector files (`.riv`), PBR texture maps, GSAP timeline code, and Lenis scroll smoothness parameters.
 
 5. **Central Vault Indexing (`vault-references/INDEX.md`):**
-   - Register the site in `premium-frontend-experience-system/vault-references/INDEX.md` with links to raw mirrored HTML, raw JS bundles, inline scripts, stylesheets, `.tsx` components, `.js` animation scripts, `.glsl` shaders, and visual media assets.
+   - Register the site in `premium-frontend-experience-system/vault-references/INDEX.md` with links to raw mirrored HTML, raw JS bundles, 3D model buffers, inline scripts, stylesheets, `.tsx` components, `.js` animation scripts, `.glsl` shaders, and visual media assets.
 
 6. **Unbounded Exhaustive Discovery & Non-Exhaustive Examples Rule:**
-   - **Examples Are Non-Exhaustive Samples:** Any example list provided in instructions (e.g., "nav, hero, buttons, GSAP, Lenis, WebGL") is strictly an illustrative baseline sample, NEVER a restrictive boundary.
-   - **Proactive Site Exploration:** Every website has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document **EVERY SINGLE novel element, component, script, animation, shader, and interaction** present on that specific website — even if not explicitly named in an example list.
+   - **Examples Are Non-Exhaustive Samples:** Any example list provided in instructions (e.g., "nav, hero, buttons, GSAP, Lenis, WebGL, 3D models") is strictly an illustrative baseline sample, NEVER a restrictive boundary.
+   - **Proactive Site Exploration:** Every website has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document **EVERY SINGLE novel element, component, script, animation, shader, 3D model, Rive file, and interaction** present on that specific website — even if not explicitly named in an example list.
    - **Dynamic Custom Subfolders:** If a target features a novel technology or pattern (e.g., audio-reactive UI, 3D product customizer, fluid simulations, custom physics canvas, WebRTC, drag physics), create a dedicated subfolder/section for it automatically (`code-extracts/[novel-feature]/`).
 
 

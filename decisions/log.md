@@ -756,6 +756,77 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-23 — Reference Ingestion Completed for Oryzo AI & The Line Studio
+
+**Decision:** Executed full site mirroring, visual asset capture, code extraction, and 15-category master reference manual synthesis for **Oryzo AI** (`https://oryzo.ai/`) and **The Line Studio** (`https://thelinestudio.com/`).
+- Intercepted 37 3D binary mesh buffers (`.buf`), Rive animation runtimes (`.riv`, `.wasm`), Gaussian Splat sorters (`splat_sorter_bg-BfJrILzx.wasm`), and 96 PBR texture maps for Oryzo AI.
+- Intercepted 1.68 MB source markup, 46 JS bundles, and 34 CSS modules for The Line Studio.
+- Extracted standalone React components (`Hero3DCanvas.tsx`, `MagazineWidget.tsx`, `LineStudioNav.tsx`, `ProjectShowcaseCard.tsx`), GSAP/Lenis setups, and OKLCH design tokens.
+- Updated `premium-frontend-experience-system/vault-references/INDEX.md`, `INGESTION_QUEUE.md`, `WORKSPACE_MAP.md`, and `decisions/log.md`. Updated `/scrape-reference` skill (`SKILL.md`) to mandate 3D asset & motion physics extraction.
+
+**Why:** Enforces complete end-to-end connectivity across all system indexes, vault reference manuals, decision logs, and skill guidelines.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — Reference Ingestion Completed for Gehry Getty
+
+**Decision:** Executed full site mirroring, visual asset capture, 3D GLTF model extraction, audio stream capture, and 15-category master reference manual synthesis for **Gehry Getty** (`https://gehry.getty.edu/`).
+- Intercepted 3 3D architectural models (`getty_formStudy_hotspot_desktop.glb`, `getty_organ_hotspot_desktop.glb`, `getty_shoebox_hotspot_desktop.glb` — 12.1 MB total), Basis Universal GPU Transcoder (`basis_transcoder.wasm`), 5 guided audio streams (`chapter1.mp3`, `chapter2.mp3`, `chapter3.mp3`), and JSON transcript manifests.
+- Extracted standalone React components (`Architectural3DViewer.tsx`, `AudioNarrativePlayer.tsx`), Three vector spring physics (`three-vector-spring.js`), and OKLCH design tokens.
+- Updated `premium-frontend-experience-system/vault-references/INDEX.md`, `INGESTION_QUEUE.md`, `WORKSPACE_MAP.md`, and `decisions/log.md`.
+
+**Why:** Enforces complete end-to-end connectivity across all system indexes, vault reference manuals, and architectural 3D study logs.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — Excalidraw Wireframe Diagram Integration into `/scrape-reference` Skill
+
+**Decision:** Codified mandatory Excalidraw wireframe diagram generation (`assets/wireframe.excalidraw`) into the `/scrape-reference` skill (`.agents/skills/scrape-reference/SKILL.md`) and built automated generation engine `scripts/generate_site_wireframes.py`.
+- Retrofitted and generated editable `.excalidraw` wireframe diagrams for all 4 completed reference sites (**Sondaven**, **Oryzo AI**, **The Line Studio**, **Gehry Getty**).
+- Registered wireframe diagrams across `premium-frontend-experience-system/vault-references/INDEX.md` and individual site directories under `assets/wireframe.excalidraw`.
+
+**Why:** Ensures that every ingested reference site contains an editable visual layout blueprint detailing hero architecture, navbar mechanics, 3D stages, scrollytelling sections, and footer containers that can be opened directly on excalidraw.com.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — Detailed Visual UI/UX Wireframe Generation Engine (`wireframe.html` & `wireframe.png`)
+
+**Decision:** Built automated visual wireframe engine `scripts/generate_visual_wireframes.py` creating hyper-detailed low-fidelity visual wireframe HTML pages (`wireframe.html`) and Playwright screenshot captures (`wireframe.png`) for every site in the reference ingestion queue.
+- Replaced basic Excalidraw JSON blocks with true visual UI wireframe mockups rendering exact site layouts (navbar branding, 3D WebGL canvas boxes, scrollytelling cards, interactive prompt widgets, audio player drawers, and grid columns).
+- Codified `wireframe.html` and `wireframe.png` generation into `.agents/skills/scrape-reference/SKILL.md` and updated `premium-frontend-experience-system/vault-references/INDEX.md`.
+
+**Why:** Gives the user an immediate, visual structural blueprint of the website's UI/UX architecture directly viewable as a high-resolution PNG image or interactive HTML page in VS Code / browser without needing external tools.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — Hyper-Detailed Visual UI/UX Wireframe Upgrade (`wireframe.html` & `wireframe.png`)
+
+**Decision:** Upgraded the visual wireframe compiler `scripts/generate_visual_wireframes.py` to produce section-by-section, hyper-detailed architectural blueprints containing:
+- Actual site copy, real headlines, and sub-text outlines.
+- Exact component specification tags (`COMPONENT: HEADER / NAV SYSTEM`, `COMPONENT: HERO SECTION & 3D WEBGL STAGE`, `COMPONENT: 2-COLUMN SCROLLESTELLING`, `COMPONENT: DRAG-ALONG-PATH SVG SEASON SLIDER`, etc.).
+- Explicit technical annotations detailing CSS properties, GSAP transform parameters, WebGL canvas render specs, and scroll trigger thresholds.
+- Grid blueprint background overlays, 3D model stage boxes (`canvas#canvas`), audio player controllers, and multi-column card layouts.
+- Retrofitted and generated high-resolution screenshots (`wireframe.png`) and HTML pages (`wireframe.html`) for all 4 completed reference sites (**Sondaven**, **Oryzo AI**, **The Line Studio**, **Gehry Getty**).
+
+**Why:** Delivers a true, comprehensive visual UI/UX layout blueprint for every website in the ingestion queue.
+
+**Owner:** Antigravity AIOS
+
+
+
+
+
+
 
 
 
