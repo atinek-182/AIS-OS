@@ -1,20 +1,28 @@
 ---
 name: ingest-skills
-description: "Upgraded alias routing directly to /ingest-repo engine."
+description: "Upgraded alias & dynamic repository ingestion engine routing directly to /ingest-repo."
 argument-hint: "[repo_url] [optional focus or instructions]"
 ---
 
-# Ingest Community Skills & Repositories (Upgraded Alias)
+# Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
 
-This skill has been upgraded to route directly to the **`/ingest-repo`** 8-phase engine.
+Use `/ingest-skills` (or invoke naturally via phrases like "ingest skills", "ingest repository", "adapt community skill", "clone and ingest repo") to trigger the upgraded **`/ingest-repo`** deep cross-system integration engine.
 
-When invoked, execute the complete 8-phase workflow documented in [d:\AI-OS\.agents\skills\ingest-repo\SKILL.md](file:///d:/AI-OS/.agents/skills/ingest-repo/SKILL.md):
+---
 
-1. **Discovery Capture & Setup (`/grill-me`)**
-2. **Isolated Repository Clone (`scratch/ingest-[repo-slug]`)**
-3. **Web Research & Security Audit (Vibesec & Secret Hygiene)**
-4. **AIOS & Vault Comparative Analysis (Tier 1 Active vs Tier 2 Future Library)**
-5. **Adversarial Roast Council Gate (`/roast` 5-persona evaluation)**
-6. **Multi-Artifact Adaptation & Code Generation (Antigravity standard)**
-7. **System Indexing & Vault Alignment (`WORKSPACE_MAP.md`, `GEMINI.md`, `MEMORY.md`)**
-8. **Empirical Verification, Scratch Cleanup & Self-Improvement**
+## The Upgraded Ingestion & Dynamic Adaptation Workflow
+
+When invoked, execute the complete workflow documented in [d:\AI-OS\.agents\skills\ingest-repo\SKILL.md](file:///d:/AI-OS/.agents/skills/ingest-repo/SKILL.md):
+
+1. **Discovery Capture & Setup (`/grill-me`)**: Create capture file at `brainstorms/{date}-ingest-[repo-slug].md`.
+2. **Isolated Repository Clone (`scratch/ingest-[repo-slug]`)**: Clone shallow repo into isolated scratch folder.
+3. **Web Research & Security Audit (Vibesec & Secret Hygiene)**: Verify 100% open-source license and secret safety.
+4. **AIOS Workspace & Vault Comparative Analysis**: Compare against existing tools; flag older/inferior logic for deprecation and categorize features into Tier 1 (Active AIOS) and Tier 2 (Skills Library Vault).
+5. **Adversarial Roast Council Gate (`/roast`)**: Run 5-persona evaluation (Contrarian, Expansionist, Logician, Researcher, Buyer) for a Judge verdict.
+6. **Multi-Artifact Adaptation & Dual-Trigger Skill Generation**:
+   - Build clean Python/Node runner scripts under `scripts/`.
+   - Build skills with mandatory dual slash + natural language dynamic triggering capabilities in `.agents/skills/` and global config.
+7. **Deep Cross-System Integration & Mandatory Workspace Documentation Sweep**:
+   - Embed newly ingested capabilities across existing skills, developer subagents (`developer.md`), scripts, SOPs, and automations. Replace legacy functions with superior new engines.
+   - Update ALL handbooks: `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, `GEMINI.md`, `MEMORY.md`, `WORKSPACE_MAP.md`, `decisions/log.md`, `brain-aios/wiki/log.md`, `brain-aios/wiki/index.md`, `second-brain-zorixel/wiki/index.md`.
+8. **Empirical Verification, Scratch Cleanup & Self-Improvement**: Force-delete scratch folder, run `python scripts/validate_workspace_map.py`, and run unit/runner tests.
