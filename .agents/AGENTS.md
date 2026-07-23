@@ -60,6 +60,21 @@
   3. **Designer Lens (`/gstack design`)**: Enforce custom typography, dark mode palettes, micro-interactions, and 5-viewport responsiveness.
   4. **QA Lens (`/gstack qa`)**: Execute Playwright headless browser testing and console error checks before claiming completion.
 
+## Hallmark Anti-AI-Slop Dynamic Invocation Rules
+- **Automatic Hallmark Quality Gates & Variety Audit**: Whenever generating, refactoring, or reviewing web applications, landing pages, or HTML mockups, the AI agent MUST dynamically apply Together AI's Hallmark design rules without requiring an explicit `/hallmark` slash command:
+  1. **Structural Variety (21 Macrostructures)**: Avoid defaulting to standard hero -> 3-column feature -> CTA templates. Select an appropriate macrostructure archetype for the brief.
+  2. **OKLCH Color Math & Token Discipline**: Use locked design tokens from 20 catalog OKLCH themes or a custom OKLCH palette. Never improvise inline hex/rgb colors.
+  3. **57 Anti-Slop Quality Gates**: Eliminate generic AI purple/blue gradients, invented fake metrics ("+47% conversion", "50,000+ teams"), un-tokenized font stacks, and missing semantic HTML5 elements.
+  4. **Pre-Emit Self-Critique Header**: Score and stamp output on 6 axes (Philosophy, Hierarchy, Execution, Specificity, Restraint, Variety) via a CSS header (`/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`).
+  5. **DNA Extraction (`hallmark study`)**: When given a design URL or screenshot reference, extract design DNA (macrostructure, type-pairing, color anchor) into `design.md`.
+
+## Exhaustive Discovery & Non-Exhaustive Examples Rule
+- **Examples Are Non-Exhaustive Samples**: Whenever the user or workspace instructions provide examples (e.g. "buttons, nav, hero, GSAP, WebGL, shaders"), treat them as illustrative samples, NEVER as artificial bounds or complete lists.
+- **Unbounded Site & Asset Extraction**: Every website, repository, or project has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document EVERY SINGLE novel element, component, script, animation, shader, and interaction present on the target — even if not explicitly named in an example list.
+- **Dynamic Category Creation**: Never force-fit unique elements into rigid categories or omit them. If a target features a novel pattern (e.g., audio-reactive UI, 3D product customizer, fluid simulations, custom physics canvas), create a dedicated subfolder/section for it automatically.
+
+
+
 
 
 

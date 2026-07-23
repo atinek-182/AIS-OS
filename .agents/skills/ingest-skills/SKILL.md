@@ -22,7 +22,12 @@ When invoked, execute the complete workflow documented in [d:\AI-OS\.agents\skil
 6. **Multi-Artifact Adaptation & Dual-Trigger Skill Generation**:
    - Build clean Python/Node runner scripts under `scripts/`.
    - Build skills with mandatory dual slash + natural language dynamic triggering capabilities in `.agents/skills/` and global config.
-7. **Deep Cross-System Integration & Mandatory Workspace Documentation Sweep**:
-   - Embed newly ingested capabilities across existing skills, developer subagents (`developer.md`), scripts, SOPs, and automations. Replace legacy functions with superior new engines.
+7. **Deep Cross-System Integration & Mandatory Workspace Documentation Sweep ("Add these skills usage everywhere needed")**:
+   - Embed newly ingested features, dynamic rules, quality gates, and runner commands directly into all relevant existing workspace assets:
+     - **System Rules**: Update `.agents/AGENTS.md` with explicit Dynamic Invocation Rules for the ingested skill.
+     - **Developer Subagent**: Update `.agents/agents/developer.md` adding the new skill's engine and quality checks to the lead developer prompt.
+     - **Existing Skills**: Integrate the new skill into relevant workflow skills in `.agents/skills/` (e.g., `new-project`, `design-direction`, `verify-design`, `carousel-copy`, etc.).
+     - **SOPs & Playbooks**: Update matching operational playbooks in `brain-aios/wiki/sops/` and `second-brain-zorixel/`.
+     - **Script & Function Replacement**: Replace older, inferior functions or scripts with the newly ingested engine.
    - Update ALL handbooks: `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, `GEMINI.md`, `MEMORY.md`, `WORKSPACE_MAP.md`, `decisions/log.md`, `brain-aios/wiki/log.md`, `brain-aios/wiki/index.md`, `second-brain-zorixel/wiki/index.md`.
 8. **Empirical Verification, Scratch Cleanup & Self-Improvement**: Force-delete scratch folder, run `python scripts/validate_workspace_map.py`, and run unit/runner tests.

@@ -44,6 +44,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 - `/gstack` — Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit).
+- `/hallmark` — Together AI anti-AI-slop design engine (21 macrostructures, 20 color themes, 57 quality gates, audit/redesign/study verbs).
+
 
 
 
@@ -94,6 +96,8 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Token Optimization**: Structure, summarize, and organize workspace files and logs concisely to keep the codebase clean, reduce redundancy, and optimize model limits/token footprint.
 - **Self-Improvement Suggestion**: When we finish a major milestone, significantly refine a skill, or discuss a critical life/business lesson, suggest calling `/improve-system` to persist these learnings.
 - **Premium Frontend Experience System**: When designing or building any UI, component, or website, strictly adhere to the guidelines, workflows, and policies mapped under [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/). Use this as a core design brain to prevent templated layouts, overbuilt animations, or accessibility regressions. Check references, define visual concepts, establish viewports, and verify using Playwright browser testing.
+- **Unbounded Exhaustive Discovery Rule**: Whenever the user or instructions provide examples (e.g., "nav, hero, buttons, GSAP, WebGL, shaders"), treat them strictly as non-exhaustive sample illustrations — NEVER as limits. You MUST proactively inspect, discover, extract, and document EVERY SINGLE novel element, component, script, animation, shader, and interaction present on the target website or repository, even if not explicitly named in an example list.
+
 
 
 

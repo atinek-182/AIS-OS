@@ -99,6 +99,20 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
 - **How to Use:**
   - Type `/karpathy-guidelines` or ask the AIOS to apply the Karpathy guidelines to your programming tasks.
 
+### 15. `/hallmark` (Together AI Anti-AI-Slop Design Engine)
+- **Purpose:** Anti-slop UI design skill enforce structural variety (21 macrostructures, 20 color themes, OKLCH math, 57 quality gates) across 4 verbs: default build, `audit`, `redesign`, and `study`.
+- **How to Use:**
+  - Build: `/hallmark [brief]` or ask AIOS to design a UI refusing AI defaults.
+  - Audit: `/hallmark audit [target]` to score against 57 anti-patterns.
+  - Redesign: `/hallmark redesign [target]` to rebuild visual fingerprint while retaining copy & IA.
+  - Study: `/hallmark study [URL/screenshot]` to extract design DNA into `design.md`.
+
+### 16. `/ingest-repo` (Autonomous Repository Ingestion Engine)
+- **Purpose:** 8-phase repository ingestion engine (discovery capture, isolated clone, web security audit, vault comparative analysis, 5-persona roast council, dual-trigger adaptation, deep integration, and 0-drift map verification).
+- **How to Use:**
+  - Type `/ingest-repo [repo_url]` (e.g. `/ingest-repo https://github.com/nutlope/hallmark`).
+
+
 ### 15. `/agent-reach` (Multi-Platform Internet Capability Engine)
 - **Purpose:** Grants single-command internet search, reading, and diagnostic access across 10+ social & web platforms (YouTube subtitles, Bilibili zero-login search, V2EX tech feeds, GitHub, Reddit, RSS, Twitter/X, Exa AI Web Search).
 - **How to Use:**

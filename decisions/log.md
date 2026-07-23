@@ -732,12 +732,29 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Why:** `gstack` brings Y Combinator founder-level product strategy (`/gstack ceo`), engineering manager architecture guardrails (`/gstack eng`), UI/UX design standards (`/gstack design`), and browser QA testing (`/gstack qa`) to our AI agent. Adapting these role perspectives into a clean Antigravity slash command gives AIOS a high-leverage virtual executive review layer without adding unneeded Bun runtime bloat to the workspace root.
 
+## 2026-07-23 — Ingest nutlope/hallmark & Adapt Anti-AI-Slop Design Engine
+
+**Decision:** Ingested `nutlope/hallmark` (v1.1.0, MIT License, Together AI) via `/ingest-repo`. Created native Antigravity skill `.agents/skills/hallmark/SKILL.md` (exposed as `/hallmark`), audit runner script `scripts/hallmark_runner.py`, and stored complete skills library to `brain-aios/wiki/research/skills-library/hallmark/`. Registered in `WORKSPACE_MAP.md`, `GEMINI.md`, `MEMORY.md`, `references/aios-user-manual.md`, and `references/antigravity-skills-guide.md`. Cleaned up temporary clone (`scratch/ingest-hallmark/`).
+
+**Why:** Hallmark enforces structural layout variety (21 macrostructures), color theme selection (20 OKLCH themes + custom engine), and 57 anti-slop quality gates across build, audit, redesign, and study verbs. This ensures all UIs generated for ZORIXEL and client AI automations avoid generic AI template tropes.
+
+## 2026-07-23 — Deep Cross-System Integration of Hallmark & Ingested Skill Engines
+
+**Decision:** Integrated `/hallmark` anti-slop dynamic invocation rules, 21 macrostructure layout archetypes, OKLCH color palettes, and 57 quality gates across workspace agent rules (`.agents/AGENTS.md`), developer subagent prompt (`.agents/agents/developer.md`), project scaffolding skill (`.agents/skills/new-project/SKILL.md`), design direction generator (`.agents/skills/design-direction/SKILL.md`), and automated visual verification loop (`.agents/skills/verify-design/SKILL.md`).
+
+**Why:** Ensures that anti-AI-slop layout rules and automated slop checks (`python scripts/hallmark_runner.py audit`) are dynamically enforced across all developer subagents, project initializations, visual style guides, and milestone verification sweeps without requiring the user to type `/hallmark` explicitly every time.
+
 **Owner:** Antigravity AIOS
 
+---
 
+## 2026-07-23 — Full-Code Mirroring, Unbounded Exhaustive Discovery, & Master Vault Reference Indexing
 
+**Decision:** Built full-code site mirror script `scripts/scrape_full_site_mirror.py` using Playwright network interceptors to download 100% of target site HTML, CSS, JS bundles, custom fonts, images, and videos. Codified the **Unbounded Exhaustive Discovery & Non-Exhaustive Examples Rule** across `GEMINI.md`, `.agents/AGENTS.md`, `MEMORY.md`, `.agents/skills/scrape-reference/SKILL.md`, and `reference-pipeline-spec.md`. Created dedicated master reference vault `premium-frontend-experience-system/vault-references/` with central index (`INDEX.md`) and 14+ category dot-to-dot reference manuals (`sondaven-granularity-master.md`). Logged experience document in `brain-aios/wiki/experiences/2026-07-23-scrape-reference-full-code-mirroring-and-vault-indexing.md` and updated `context/experiences/README.md`.
 
+**Why:** To ensure that reference website ingestions capture complete runnable code, WebGL shaders, visual WebP session recordings, and 14+ category dot-to-dot design decisions without being artificially constrained by example lists or high-level textual summaries, while strictly enforcing one-by-one sequential queue execution.
 
+**Owner:** Antigravity AIOS
 
 
 

@@ -1,67 +1,82 @@
 ---
 name: scrape-reference
-description: Scrape, mirror, and analyze a website for brand or premium frontend reference. Runs local servers to bypass Playwright file restrictions, outputs detailed design audits, runs user Q&A/roasts, and updates design vaults.
+description: Ultimate site DNA ingestion, full-code mirroring, dot-to-dot web analysis, and vault reference indexing engine. Intercepts and mirrors full site source (HTML, CSS, JS bundles, fonts, videos, GLSL shaders), extracts raw GSAP/animation code (.js), synthesizes drop-in React components (.tsx), records visual WebP session videos, and creates dot-to-dot 14-category master reference manuals in vault-references/.
+argument-hint: [website URL]
 ---
 
-# Scrape Reference Skill
+# Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
 
-Use this skill whenever the user provides a website URL to extract design tokens, layouts, fonts, animations, asset hierarchies, or to run Playwright browser tests on the site's tools.
+Use this skill whenever given a website URL (or list of URLs) to execute full site source code mirroring, video/screenshot visual capture, raw GSAP/animation code extraction, drop-in React component synthesis, dot-to-dot micro/macro decision analysis, and indexing into `premium-frontend-experience-system/vault-references/`.
 
-## Phase 1: Clarification & Setup (Do FIRST)
+For complete technical specifications, network interceptor schemas, and deep architectural rules, see [reference-pipeline-spec.md](references/reference-pipeline-spec.md).
 
-1. **Reference Type Check:**
-   - If not specified by the user, ask: *"Is this website for a brand reference (Zorixel vault) or a premium frontend design reference?"*
-2. **Retention Policy Check:**
-   - Ask the user: *"Should the mirrored files stay forever in our AIOS folders, or should they be deleted after we extract the analysis, screenshots, and design tokens?"*
-3. **Storage Mapping:**
-   - For **Brand References**: Save files under `second-brain-zorixel/wiki/research/[site-slug]/`.
-   - For **Premium Design References**: Save files under `premium-frontend-experience-system/reference-inputs/[site-slug]/`.
+---
 
-## Phase 2: Mirroring & Local Server Deployment
+## 🔒 Mandatory Operational Rules
 
-1. **Mirroring Engine:**
-   - Write a Node.js scraper script in the `scripts/` directory (e.g. `scripts/mirror-[site-slug].js`) to recursively or explicitly download:
-     - HTML pages (including main landing, subpages, and utility tools).
-     - CSS stylesheets (extracting base configurations, theme variables, layout styling).
-     - JS scripts (targeting custom components, web components, GSAP/ScrollTrigger/Three.js routines).
-     - Fonts (WOFF2/WOFF formats self-hosted on the page).
-     - Image assets (PNG, JPEG, SVG, WebP) and 3D models.
-2. **Local HTTP Server:**
-   - *Constraint:* Playwright MCP blocks the `file:` protocol for security, which prevents direct rendering of local HTML pages.
-   - *Solution:* Run the workspace static server at `scripts/serve.js` in the background, passing the target reference folder path as the argument:
-     ```powershell
-     node scripts/serve.js <absolute-path-to-mirrored-folder> 3000
-     ```
-   - Use the `run_command` tool to launch the background task.
+1. **Strict Sequential Execution Guard (One-by-One Only):**
+   - When processing a list of URLs (e.g. 18-site queue), process **EXACTLY ONE SITE AT A TIME**.
+   - Finish site $N$ completely (mirroring, visual assets, code extraction, dot-to-dot analysis, vault indexing), present the summary and raw file links, update `INGESTION_QUEUE.md` and `brainstorms/`, and **STOP**.
+   - **DO NOT start site $N+1$ until the user explicitly commands "Proceed to next site" or equivalent.**
 
-## Phase 3: Visual & Code Analysis via Playwright
+2. **Full Source & Media Mirroring (`mirror/`):**
+   - Run `python scripts/scrape_full_site_mirror.py [URL] [SITE_SLUG]` to intercept and download 100% of the target site's raw assets:
+     - `index.html` (complete page DOM markup)
+     - Linked CSS stylesheets (`mirror/css/`) and inline styles (`code-extracts/styles/inline-styles.css`)
+     - JS bundles (`mirror/js/`) and inline scripts (`code-extracts/animations/inline-scripts.js`)
+     - Custom font files (`mirror/fonts/` `.woff2`, `.ttf`, `.otf`)
+     - Images, SVGs, MP4/WebM videos (`assets/`)
+   - Capture 5 responsive viewport screenshots: `desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`.
+   - Record WebP browser interaction session video (`recording_[site-slug].webp`).
 
-1. **Visual Capture:**
-   - Use Playwright MCP tools to navigate to `http://localhost:[port]/` to load the local mirror.
-   - Capture screenshots of the landing page, tools, or transitions at multiple viewports.
-2. **Technical Auditing:**
-   - Use `browser_run_code_unsafe` to inspect running states:
-     - Check console errors, console logs, and performance metrics.
-     - Extract DOM elements, inline CSS variables, GSAP timelines, and Three.js canvas bindings.
-3. **Create Analysis Document:**
-   - Save a markdown analysis file (`analysis.md`) in the reference folder containing:
-     - **Visual Style & Vibe:** Neobrutalist, editorial, minimalist, etc.
-     - **Color Tokens:** CSS custom properties/hex codes.
-     - **Typography Hierarchy:** Display, body, and mono font pairings.
-     - **Motion Language:** ScrollTriggers, page transitions, custom cursors, parallax math.
-     - **Assets:** PNGs, SVGs, and asset links.
+3. **Raw Code Extraction (`code-extracts/`):**
+   - Extract raw, runnable code files:
+     - `code-extracts/components/` — Standalone React + TypeScript (`.tsx`) components (e.g. `Nav.tsx`, `Hero.tsx`, `MagneticButton.tsx`, `Card.tsx`)
+     - `code-extracts/animations/` — Exact GSAP timelines, `ScrollTrigger` pin ranges, Lenis easing functions, magnetic cursor scripts (`.js`)
+     - `code-extracts/shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shader files (`.glsl`)
+     - `code-extracts/styles/` — OKLCH design tokens, CSS keyframe animations (`.css`)
 
-## Phase 4: AIOS System Adaptation
+4. **Dynamic Unbounded Master Reference Manual (14+ Categories):**
+   - Create `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` analyzing **all micro & macro web decision categories (14 baseline categories + dynamic N+ categories for any novel site features)**:
+     1. **Meta, SEO, & Favicons:** Viewport tags, OpenGraph image ratios (`1200x630`), Schema.org JSON-LD structured data, favicons (`32x32`, `256x256`).
+     2. **Preloader & Entrance System:** Percentage counter (`0%` -> `100%`), visit detection (`hasVisited`), scroll-locking physics (`--scrollbar-width = innerWidth - clientWidth`).
+     3. **Navigation & Header System:** Fixed positioning, backdrop blur, hide/reveal directional scroll delta thresholds (`>40px`), link hover underline `clip-path`.
+     4. **Cursor & Pointer Physics:** Mobile/touch detection, magnetic pull formulas ($\Delta X, \Delta Y$), inner vs outer target elastic spring easing (`ease: "elastic.out(1, 0.3)"`).
+     5. **Typography & Text Rendering:** Fluid `clamp()` font-size math, line-height ratios, SplitText lines/words/chars, ARIA accessibility attributes (`aria="none"` on split wrappers).
+     6. **OKLCH Color Tokens & Theme Engine:** Token formulas, contrast switching DOM triggers (`[bg="color"]`, `[bg="light"]`, `[bg="dark"]`).
+     7. **Hero Section Architecture:** Full-screen viewport hero, kinetic word reveal stagger, floating scroll indicator bounce keyframes.
+     8. **Scrollytelling & Parallax Engine:** Parallax image transform math (`yPercent: -20 -> 20`), text character highlight opacity scrub (`0.1 -> 1.0`), section snap debounce timers (`40ms`).
+     9. **Interactive UI Widgets & Cards:** Benefit cards, tab morphing, load-more array slicing, marquee ticker velocity scaling.
+     10. **Drag-along-Path SVG Slider:** `getPointAtLength()` curve tracking and progress interpolation.
+     11. **Proximity-Based Interactive Map Pins:** Euclidean distance formula calculation ($\sqrt{\Delta x^2 + \Delta y^2}$).
+     12. **Audio & Soundscape UI System:** Audio stream initialization, volume fade in/out (`0 -> 0.25`), Web Audio visualizer bars loop.
+     13. **Modals, CTAs, & Form Mechanics:** 3D Y-axis card flip form submit animation (`rotateY: 0 -> -180`), input regex sanitization (`[^\d+\-]`).
+     14. **Footer & Page Transition System:** Scroll scale zoom (`scale: 2 -> 1`), Barba.js 20x12 dither grid page transitions, WebGL/ScrollTrigger memory cleanup.
 
-1. **System Self-Improvement:**
-   - Run the `/improve-system` skill to ingest findings from the visual audit.
-   - Update `premium-frontend-experience-system/POLICIES.md` or `DESIGN_DIRECTION.md` to incorporate newly discovered UI/UX techniques (e.g. elastic cursors, granular canvas noise, or custom spring animations).
-2. **Update User Context:**
-   - Log user feedback, visual preferences, and mindset shifts to `MEMORY.md` and `brain-aios/wiki/experiences/`.
-3. **Brand Candidacy & Roast Loop:**
-   - If the site contains design tools (like palette generators or font pickers), write a Playwright extraction script to run candidates for the user's brand (e.g. Zorixel).
-   - Write candidates to `second-brain-zorixel/wiki/brand/candidates.md`.
-   - Direct the user to run `/grill-me` or `/roast` to finalize selections.
+5. **Central Vault Indexing (`vault-references/INDEX.md`):**
+   - Register the site in `premium-frontend-experience-system/vault-references/INDEX.md` with links to raw mirrored HTML, raw JS bundles, inline scripts, stylesheets, `.tsx` components, `.js` animation scripts, `.glsl` shaders, and visual media assets.
 
-## Phase 5: Cleanup (Based on Retention Choice)
-- If the user selected to delete the mirrored site after extraction, run command-line cleanup on the raw HTML/CSS/JS/asset mirror directory, leaving only the `analysis.md` and screenshots behind.
+6. **Unbounded Exhaustive Discovery & Non-Exhaustive Examples Rule:**
+   - **Examples Are Non-Exhaustive Samples:** Any example list provided in instructions (e.g., "nav, hero, buttons, GSAP, Lenis, WebGL") is strictly an illustrative baseline sample, NEVER a restrictive boundary.
+   - **Proactive Site Exploration:** Every website has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document **EVERY SINGLE novel element, component, script, animation, shader, and interaction** present on that specific website — even if not explicitly named in an example list.
+   - **Dynamic Custom Subfolders:** If a target features a novel technology or pattern (e.g., audio-reactive UI, 3D product customizer, fluid simulations, custom physics canvas, WebRTC, drag physics), create a dedicated subfolder/section for it automatically (`code-extracts/[novel-feature]/`).
+
+
+---
+
+## 📂 Output Directory Architecture
+
+For target site `[site-slug]`:
+- `premium-frontend-experience-system/reference-inputs/sites/[site-slug]/`
+  - `mirror/` — Raw mirrored source files (`index.html`, `en.html`, `css/`, `js/`, `fonts/`)
+  - `assets/` — Visual media (`recording_[site-slug].webp`, 5 viewport screenshots, site videos)
+  - `code-extracts/`
+    - `components/` — Standalone React + TypeScript (`.tsx`) drop-in components
+    - `animations/` — Raw GSAP timelines, Lenis scroll setups, physics math (`.js`)
+    - `shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shaders (`.glsl`)
+    - `styles/` — OKLCH design tokens, CSS keyframes, inline styles (`.css`)
+  - `site-dna.md` — 5-layer site DNA report with embedded code blocks and file links
+  - `DEEP_ANALYSIS.md` — Detailed analysis report
+- `premium-frontend-experience-system/vault-references/`
+  - `INDEX.md` — Central vault reference index
+  - `[site-slug]-granularity-master.md` — 14-category dot-to-dot master reference manual

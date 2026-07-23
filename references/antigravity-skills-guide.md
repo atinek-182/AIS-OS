@@ -113,5 +113,16 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 *   **Reference Manual:** `brain-aios/wiki/research/skills-library/gstack/README.md`
 *   **Dynamic Triggering:** Automatically triggers during planning, code reviews, design audits, or visual QA without needing to type `/gstack` explicitly.
 
+---
+
+## 🎨 15. Hallmark Anti-AI-Slop Engine (`hallmark`)
+*   **Purpose:** Enforces macrostructure variety (21 layout archetypes), theme palettes (20 OKLCH themes + custom engine), and 57 anti-slop quality gates across build, audit, redesign, and study verbs.
+*   **Repository:** [nutlope/hallmark](https://github.com/nutlope/hallmark)
+*   **Active Local Skill:** `.agents/skills/hallmark/SKILL.md` (`/hallmark`)
+*   **Runner Script:** `scripts/hallmark_runner.py`
+*   **Reference Manual:** `brain-aios/wiki/research/skills-library/hallmark/README.md`
+*   **Dynamic Triggering:** Automatically triggers when designing frontend UIs, performing design audits, or extracting design DNA from URLs or screenshots.
+
+
 
 

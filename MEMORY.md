@@ -40,8 +40,13 @@ This file logs cross-session learnings, operational preferences, and recurring c
 16. **Scrapling Web Scraping & Stealth Data Extraction**: Use `/scrape-web` (powered by `scripts/scrapling_runner.py`) for fast HTTP parsing, anti-bot stealth scraping, and dynamic DOM element extraction. Ensure `scrapling`, `curl_cffi`, and `browserforge` are installed together. Reserved `/scrape-reference` for full offline visual asset cloning (CSS, fonts, 3D models).
 17. **Repository Ingestion & Automatic Skills-Library Search Engine**: Use `/ingest-repo` (or `/ingest-skills`) to clone, security audit, compare, roast via 5 personas, and adapt any GitHub repo into active scripts/skills. The AI agent MUST automatically check and scan all reference manuals in `brain-aios/wiki/research/skills-library/` whenever relevant without prompting the user. Force-delete temporary scratch clones (`scratch/ingest-[repo]/`) post-ingestion.
 18. **Agent Reach Unified Internet & Multi-Platform Research**: Use `/agent-reach` (`scripts/agent_reach_runner.py`) for multi-backend internet search, YouTube transcript extraction, Bilibili video research, V2EX tech feeds, GitHub repo search, and Reddit community sentiment. Use `agent-reach doctor` to verify channel health.
+19. **Hallmark Anti-AI-Slop Design & Verification Engine**: Use `/hallmark` (`scripts/hallmark_runner.py`) when building frontend interfaces to enforce structural variety (21 macrostructures, 20 color themes, OKLCH palettes, 57 anti-slop test gates). Perform pre-emit self-critique scores before handing back design outputs.
+20. **Dot-to-Dot Technical Rigor & Unbounded Discovery**: Refuse high-level textual summaries or superficial name-dropping. Analyze, extract, and document every single micro and macro web decision (from meta tags, OpenGraph ratios, scrollbar width calculations down to GLSL fragment shaders and page transition cleanups). Example lists are non-exhaustive sample illustrations; proactively inspect and discover EVERY SINGLE novel element on the target.
+21. **Sequential One-by-One Queue Discipline**: When processing a queue of items (such as the 18 reference websites queue), process EXACTLY ONE SITE AT A TIME. Complete site $N$ fully, present all raw file links, update queue tracking, and STOP to await explicit user confirmation before touching site $N+1$.
+
 
 ---
+
 
 ## 🎨 Zorixel Design Taste & Visual Guidelines
 - **Visual Identity (Light Editorial)**: The brand uses a premium print Editorial Magazine theme: warm linen off-white paper canvas background (`#fbfaf7`), dark charcoal text (`#141413`), and very sparse brand coral highlights (`#ff6b4a` - under 10% screen space).

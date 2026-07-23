@@ -62,9 +62,13 @@ Use this skill whenever the user provides a GitHub repository link or asks to "i
 4. **Reference Library**: Copy full manuals and guides to `brain-aios/wiki/research/skills-library/{repo-slug}/`.
 
 ### Phase 7: Deep Cross-System Integration & Mandatory Workspace Documentation Update
-1. **Deep System Integration**:
-   - Embed the new features/skills into existing workspace skills (`.agents/skills/`), developer subagents (`.agents/agents/developer.md`), scripts (`scripts/`), SOPs (`brain-aios/wiki/sops/`), and automations.
-   - Replace older, inferior functions or scripts with the newly ingested engine.
+1. **Mandatory Cross-System Skill Integration ("Add these skills usage everywhere needed")**:
+   - Embed the newly ingested features, dynamic rules, quality gates, and runner commands directly into all relevant existing workspace assets:
+     - **System Rules**: Update `.agents/AGENTS.md` with explicit Dynamic Invocation Rules for the ingested skill.
+     - **Developer Subagent**: Update `.agents/agents/developer.md` adding the new skill's engine and quality checks to the lead developer prompt.
+     - **Existing Skills**: Integrate the new skill into relevant workflow skills in `.agents/skills/` (e.g., `new-project`, `design-direction`, `verify-design`, `carousel-copy`, etc.).
+     - **SOPs & Playbooks**: Update matching operational playbooks in `brain-aios/wiki/sops/` and `second-brain-zorixel/`.
+     - **Script & Function Replacement**: Replace older, inferior functions or scripts with the newly ingested engine.
 2. **Mandatory Documentation Sweep Across ALL Handbooks & Vaults**:
    - **User Manual**: Update `references/aios-user-manual.md` with full skill usage, slash command args, and dynamic natural language triggers.
    - **Skills Guide**: Update `references/antigravity-skills-guide.md` registering repo URLs, local paths, and trigger behaviors.
@@ -79,3 +83,4 @@ Use this skill whenever the user provides a GitHub repository link or asks to "i
 2. **Map Validation**: Run `python scripts/validate_workspace_map.py` to confirm 0 map drift.
 3. **Automated Unit Testing**: Execute unit tests or runner verifiers to confirm 100% pass rate.
 4. **System Self-Improvement**: Suggest running `/improve-system` to persist learnings.
+

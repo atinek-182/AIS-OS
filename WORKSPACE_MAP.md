@@ -27,6 +27,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [Finding Fonts/](file:///d:/AI-OS/Finding%20Fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
+| [brainstorms/2026-07-23-site-reference-ingestion-queue.md](file:///d:/AI-OS/brainstorms/2026-07-23-site-reference-ingestion-queue.md) | File | Brainstorm & discovery notes for 18-site reference ingestion queue. | AIOS |
 | [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
@@ -39,6 +40,10 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [projects/For AIOS/Micrographics/compare_screenshots.py](file:///d:/AI-OS/projects/For%20AIOS/Micrographics/compare_screenshots.py) | File | Pixel-by-pixel automated visual difference reporter for HTML vs Figma SVG. | AIOS |
 | [projects/font-showcase/capture_all_frames.js](file:///d:/AI-OS/projects/font-showcase/capture_all_frames.js) | File | Playwright CLI capture script rendering raw SVGs and HTMLs for QA audit. | AIOS |
 | [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/) | Junction | Premium frontend experience design system vault mapped from external documents. | Operator / AIOS |
+| [premium-frontend-experience-system/reference-inputs/INGESTION_QUEUE.md](file:///d:/AI-OS/premium-frontend-experience-system/reference-inputs/INGESTION_QUEUE.md) | File | Centralized tracking queue for the 18 reference websites ingestion pipeline. | AIOS |
+| [premium-frontend-experience-system/vault-references/](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/) | Folder | New dedicated master reference vault containing ultra-granular design, UX, and code manuals. | AIOS |
+| [premium-frontend-experience-system/vault-references/INDEX.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/INDEX.md) | File | Centralized index of all master vault reference manuals. | AIOS |
+| [premium-frontend-experience-system/vault-references/sondaven-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/sondaven-granularity-master.md) | File | Dot-to-dot ultra-granular design, UX, motion physics, and source-code reference for Sondaven. | AIOS |
 
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
 | [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
@@ -47,6 +52,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [trials/runner.py](file:///d:/AI-OS/trials/runner.py) | File | Host-side runner script orchestrating sandboxed mutation runs and Git controls. | AIOS |
 | [audits/](file:///d:/AI-OS/audits/) | Folder | AIOS scorecard and Four Cs audit reports. | AIOS |
 | [tests/](file:///d:/AI-OS/tests/) | Folder | System verification and demo test suites. | AIOS |
+| [scratch/](file:///d:/AI-OS/scratch/) | Folder | Temporary scratch folder for repository ingestion clones and sandboxed experimentation. | AIOS |
+
 
 
 ### Reference Manuals (`references/`)
@@ -80,7 +87,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/generate-brand-candidates.js](file:///d:/AI-OS/scripts/generate-brand-candidates.js) | File | Playwright script to query local tools for brand color and font ideas. | AIOS |
 | [scripts/scrapling_runner.py](file:///d:/AI-OS/scripts/scrapling_runner.py) | File | Python CLI and module wrapper engine for Scrapling adaptive and stealthy web scraping. | AIOS |
 | [scripts/agent_reach_runner.py](file:///d:/AI-OS/scripts/agent_reach_runner.py) | File | Python runner and diagnostic helper for Agent Reach multi-platform internet capability engine. | AIOS |
+| [scripts/hallmark_runner.py](file:///d:/AI-OS/scripts/hallmark_runner.py) | File | Python audit & verification engine for Hallmark anti-AI-slop design skill. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
+
 | [scripts/validate_links.py](file:///d:/AI-OS/scripts/validate_links.py) | File | Python link validator script checking for relative/Obsidian link rot. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
@@ -103,7 +112,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/excalidraw-diagram](file:///d:/AI-OS/.agents/skills/excalidraw-diagram) | Folder | Visual workflow design drawing. | AIOS |
 | [.agents/skills/file-search](file:///d:/AI-OS/.agents/skills/file-search) | Folder | Obsidian vault document retrieval. | AIOS |
 | [.agents/skills/grill-me](file:///d:/AI-OS/.agents/skills/grill-me) | Folder | Interactive discovery sessions capture. | AIOS |
+| [.agents/skills/hallmark](file:///d:/AI-OS/.agents/skills/hallmark) | Folder | Together AI anti-AI-slop design engine skill. | AIOS |
 | [.agents/skills/improve-system](file:///d:/AI-OS/.agents/skills/improve-system) | Folder | Analyzing session transcript to improve skills, save experiences, and prune configs. | AIOS |
+
 | [.agents/skills/ingest-repo](file:///d:/AI-OS/.agents/skills/ingest-repo) | Folder | Autonomous 8-phase repository ingestion, security audit, roast council, and skill adaptation engine. | AIOS |
 | [.agents/skills/ingest-skills](file:///d:/AI-OS/.agents/skills/ingest-skills) | Folder | Upgraded alias skill routing directly to /ingest-repo engine. | AIOS |
 | [.agents/skills/level-up](file:///d:/AI-OS/.agents/skills/level-up) | Folder | Scoping automation features. | AIOS |
@@ -117,7 +128,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/scrape-carousel](file:///d:/AI-OS/.agents/skills/scrape-carousel) | Folder | Scrapes competitor reels/posts and takes screenshots of carousel slides. | AIOS |
 | [.agents/skills/scrape-component](file:///d:/AI-OS/.agents/skills/scrape-component) | Folder | Extracts a specific UI component, animation, or style from a website URL. | AIOS |
-| [.agents/skills/scrape-reference](file:///d:/AI-OS/.agents/skills/scrape-reference) | Folder | Scrapes, mirrors, and audits website references visually and code-wise. | AIOS |
+| [.agents/skills/scrape-reference](file:///d:/AI-OS/.agents/skills/scrape-reference) | Folder | Site DNA reference ingestion pipeline (Scrapling stealth fetch, Playwright multi-viewport visual & animation audit, 5-layer DNA extraction, user approval checklist, cross-vault sync & React component builder). | AIOS |
 | [.agents/skills/scrape-web](file:///d:/AI-OS/.agents/skills/scrape-web) | Folder | Scraping, dynamic HTML parsing, anti-bot bypass, and adaptive element extraction via Scrapling engine. | AIOS |
 | [.agents/skills/seo-audit](file:///d:/AI-OS/.agents/skills/seo-audit) | Folder | Technical SEO and GEO analysis dynamic router. | AIOS |
 | [.agents/skills/skill-builder](file:///d:/AI-OS/.agents/skills/skill-builder) | Folder | Workspace custom skill optimization. | AIOS |
