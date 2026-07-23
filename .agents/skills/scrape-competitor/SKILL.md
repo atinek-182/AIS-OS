@@ -10,8 +10,12 @@ Automates the competitor content research pipeline. It guides the user through s
 
 ## Steps
 
-1. If a competitor URL or topic is provided in `$ARGUMENTS`, search for relevant reference files or print instructions on how to use the `rtrvr.ai` browser extension to scrape their feed.
-2. Prompt the user to paste the raw JSON or text output from their scraper clipper (e.g., fields: Profile, Topic, Transcript, Offering, Caption, Hashtags, CTA, Hook).
+1. If a competitor URL or web article is provided in `$ARGUMENTS`, attempt automated extraction using the Scrapling engine:
+   ```powershell
+   python scripts/scrapling_runner.py --url "$URL" --mode stealth --text-only
+   ```
+   If automated web fetch fails or returns anti-bot captchas, fall back to asking the user to paste the raw text/JSON or use the `rtrvr.ai` browser extension.
+2. Prompt the user to confirm or paste raw post/article details (e.g., Profile, Topic, Transcript, Offering, Caption, Hashtags, CTA, Hook).
 3. Once input is received:
    - Parse and clean the fields.
    - Categorize the competitor's post into ZORIXEL content pillars:

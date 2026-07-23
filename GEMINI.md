@@ -35,9 +35,11 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - [/carousel-render] — Compile slide HTML pages and render final social slide PNGs.
 - `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
 - `/verify-design` — Run automated visual QA and Playwright console audits.
-- `/ingest-skills` — Ingest community skills and reference manuals from GitHub repositories.
+- `/ingest-skills` — Upgraded alias routing directly to /ingest-repo engine.
+- `/ingest-repo` — Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, and skill adaptation engine.
 - `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
 - `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
+- `/scrape-web` — Scrapes web content, parses DOM elements, bypasses anti-bot blocks via Scrapling engine.
 - `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 

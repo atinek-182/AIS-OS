@@ -682,6 +682,30 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-23 — Scrapling Web Scraping Engine Integration
+
+**Decision:** Audited, integrated, and adapted the Scrapling web scraping framework (`d4vinci/Scrapling`) into AIOS. Built the Python engine CLI wrapper (`scripts/scrapling_runner.py`), created the new skill `.agents/skills/scrape-web/SKILL.md`, upgraded `/scrape-competitor` and `/seo-audit` skills to route through Scrapling, and registered the configuration across `WORKSPACE_MAP.md`, `GEMINI.md`, and `MEMORY.md`.
+
+**Why:** Web scraping for competitor research and dynamic site auditing frequently suffered from Cloudflare bot detection, anti-bot captchas, and broken CSS selectors. Scrapling provides 100% free, MIT-licensed adaptive element fingerprinting (auto-healing selectors) and stealth header emulation (`StealthyFetcher`), while running locally without external API costs.
+
+**Alternatives considered:** Using Playwright-only Node scripts for data fetching (heavy, slow for simple text/data extraction, and prone to bot detection) or paying for third-party scraping APIs (unnecessary cost). Reserved `/scrape-reference` specifically for offline visual asset cloning.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — Repository Ingestion & Skill Adaptation Engine (`/ingest-repo`)
+
+**Decision:** Created `/ingest-repo` (`.agents/skills/ingest-repo/SKILL.md`) and upgraded `/ingest-skills` to route directly into an 8-phase autonomous repository ingestion pipeline. Added the **Automatic Skills-Library Search Rule** and **Scratch Isolation & Cleanup Rule** to `.agents/AGENTS.md` and `MEMORY.md`.
+
+**Why:** Automates the complete lifecycle of evaluating, security-auditing, comparing against existing tools, roasting via 5-persona council, adapting, and indexing any external GitHub repository into native Antigravity scripts, slash commands, and Obsidian research libraries. Mandatory scratch folder cleanup resolves Contrarian concerns regarding workspace clutter and context token leaks.
+
+**Owner:** Antigravity AIOS
+
+
+
 
 
 

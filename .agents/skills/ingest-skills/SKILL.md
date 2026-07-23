@@ -1,36 +1,20 @@
 ---
 name: ingest-skills
-description: Automatically clone a community skill or reference manual repository from GitHub, copy its modules into the Obsidian wiki skills library, register the paths, and index them in logs. Use when running "/ingest-skills [repo_url]".
+description: Autonomous repository ingestion, security audit, comparative analysis, roast council validation, and multi-artifact skill adaptation engine. (Upgraded alias routing directly to /ingest-repo).
+argument-hint: [repo_url] [optional focus or instructions]
 ---
 
-# Ingest Community Skills & References
+# Ingest Community Skills & Repositories (Upgraded Alias)
 
-Automate the progressive-disclosure cloning and indexing of massive community skills databases.
+This skill has been upgraded to route directly to the **`/ingest-repo`** 8-phase engine.
 
-## Use When
-- The user provides a GitHub repository link for Claude/Cursor/Antigravity skills, rules, or reference manuals.
-- You run `/ingest-skills [repo_url]` or say "ingest this skill repository".
+When invoked, execute the complete 8-phase workflow documented in [d:\AI-OS\.agents\skills\ingest-repo\SKILL.md](file:///d:/AI-OS/.agents/skills/ingest-repo/SKILL.md):
 
-## Steps
-
-1. **Extract Repository Name**:
-   - Determine the name of the repository from the URL (e.g. `github.com/user/repo-name` -> `repo-name`).
-
-2. **Clone & Extract**:
-   - Create a temporary folder inside `scratch/` (e.g. `scratch/temp_ingest`).
-   - Run `git clone [repo_url] scratch/temp_ingest` to download the assets.
-   - Look for standard directories: `skills/`, `rules/`, `.cursorrules`, `.cursor/rules/`.
-
-3. **Copy to Research Library**:
-   - Create a target subdirectory at `brain-aios/wiki/research/skills-library/[repo-name]/`.
-   - Copy all markdown guides, configuration files, and folders from the source `skills` or `rules` directory into the target folder.
-
-4. **Register and Index**:
-   - Add the new directory path `| [brain-aios/wiki/research/skills-library/[repo-name]/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/[repo-name]/) | Folder | Static reference library for [repo-name]. | AIOS |` to [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md).
-   - Add an index link `* [[wiki/research/skills-library/[repo-name]/|[Repo Name] Reference Library]] — Cloned community guide.` to [brain-aios/wiki/index.md](file:///d:/AI-OS/brain-aios/wiki/index.md).
-   - Log the ingest event `## [YYYY-MM-DD] ingest | [repo_url] -> Created static [[wiki/research/skills-library/[repo-name]/]] reference library.` inside [brain-aios/wiki/log.md](file:///d:/AI-OS/brain-aios/wiki/log.md).
-   - Append details of the ingest in [decisions/log.md](file:///d:/AI-OS/decisions/log.md).
-
-5. **Clean up & Validate**:
-   - Force-delete the temporary `scratch/temp_ingest` folder.
-   - Run the map validator script `python scripts/validate_workspace_map.py` to ensure map compliance.
+1. **Discovery Capture & Setup (`/grill-me`)**
+2. **Isolated Repository Clone (`scratch/ingest-[repo-slug]`)**
+3. **Web Research & Security Audit (Vibesec & Secret Hygiene)**
+4. **AIOS & Vault Comparative Analysis (Tier 1 Active vs Tier 2 Future Library)**
+5. **Adversarial Roast Council Gate (`/roast` 5-persona evaluation)**
+6. **Multi-Artifact Adaptation & Code Generation (Antigravity standard)**
+7. **System Indexing & Vault Alignment (`WORKSPACE_MAP.md`, `GEMINI.md`, `MEMORY.md`)**
+8. **Empirical Verification, Scratch Cleanup & Self-Improvement**

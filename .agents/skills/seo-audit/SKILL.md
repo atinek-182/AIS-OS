@@ -26,6 +26,7 @@ Read the corresponding markdown agent or skill file using the `view_file` tool:
 
 ### 3. Run Programmatic Audit Script (If Needed)
 If a technical verification command is requested, execute the relevant python script located at `d:\AI-OS\brain-aios\wiki\research\skills-library/seo-audit-reference/scripts/` using the terminal:
+* **HTML / Meta / Schema Parsing via Scrapling**: `python scripts/scrapling_runner.py --url [URL] --mode fast --css "meta, title, h1, h2, script[type='application/ld+json']"`
 * **Schema Validation**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/schema_ecommerce_validate.py [args]`
 * **PageSpeed Check**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/pagespeed_check.py [args]`
 * **HTML Parsing**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/parse_html.py [args]`
@@ -33,7 +34,7 @@ If a technical verification command is requested, execute the relevant python sc
 * **Keywords**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/keyword_planner.py [args]`
 * **Drift Comparison**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/drift_compare.py [args]`
 
-*Note: Ensure any Python dependencies like `requests`, `beautifulsoup4`, or `jinja2` are installed using `pip install [package]` if the script errors due to missing imports.*
+*Note: Ensure Python dependencies like `scrapling`, `requests`, `lxml` are available.*
 
 ### 4. Output the SEO Report
 Present a structured report outlining:
