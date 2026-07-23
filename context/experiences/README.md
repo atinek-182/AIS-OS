@@ -23,6 +23,8 @@ This index tracks lessons, stories, and insights captured from sessions to help 
 | 2026-07-23 | Figma MCP Stdio Transport Protocol & Clean Logging Fix | Resolve JSON-RPC initialization crashes by silencing stdout log contamination and passing explicit stdio and telemetry flags. | [2026-07-23-figma-mcp-stdio-transport-and-stdout-logging-fix.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-figma-mcp-stdio-transport-and-stdout-logging-fix.md) |
 | 2026-07-23 | Adaptive Web Scraping & Stealth Data Extraction via Scrapling Engine | Integrate Scrapling Python engine and /scrape-web skill for anti-bot stealth scraping, lxml parsing, and resilient element extraction. | [2026-07-23-scrapling-aios-integration.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-scrapling-aios-integration.md) |
 | 2026-07-23 | Repository Ingestion Engine (/ingest-repo), Automatic Skills Search, & Deployment Automation | Build 8-phase /ingest-repo engine, enforce automatic skills-library search rules, address Contrarian roast warnings via scratch cleanup, and automate git push to main. | [2026-07-23-repository-ingestion-engine-and-auto-push-upgrade.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-repository-ingestion-engine-and-auto-push-upgrade.md) |
+| 2026-07-23 | Agent Reach Ingestion, GitHub Keyring Authentication, & Environment Variable Safety | Ingest Agent Reach engine, resolve gh CLI keyring token overrides, configure yt-dlp Node.js runtime, and connect Chromium/Brave extension bridge. | [2026-07-23-agent-reach-ingestion-and-github-keyring-auth.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-agent-reach-ingestion-and-github-keyring-auth.md) |
+
 
 
 

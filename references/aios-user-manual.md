@@ -98,6 +98,12 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
 - **Purpose:** Enforces Karpathy-inspired coding behavioral guidelines (Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution) to eliminate LLM coding mistakes, overengineering, and bloated or off-target edits.
 - **How to Use:**
   - Type `/karpathy-guidelines` or ask the AIOS to apply the Karpathy guidelines to your programming tasks.
+
+### 15. `/agent-reach` (Multi-Platform Internet Capability Engine)
+- **Purpose:** Grants single-command internet search, reading, and diagnostic access across 10+ social & web platforms (YouTube subtitles, Bilibili zero-login search, V2EX tech feeds, GitHub, Reddit, RSS, Twitter/X, Exa AI Web Search).
+- **How to Use:**
+  - Type `/agent-reach` or `/agent-reach doctor` to run health checks on active platform channels.
+  - Ask the AIOS to query YouTube transcripts, Bilibili tech trends, Reddit threads, V2EX discussions, or perform semantic web searches.
   - The AIOS will load rules to state assumptions explicitly, push back on overcomplication, ensure changes are strictly focused and surgical, and define verifiable, testable success criteria before modifying code.
 
 ### 15. `/verify-design` (Visual & Technical QA Audit)

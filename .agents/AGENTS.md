@@ -48,5 +48,11 @@
 - **Automatic Skills-Library Search Rule**: The AI agent MUST automatically check and scan all reference manuals, specs, and guides stored under `brain-aios/wiki/research/skills-library/` whenever relevant to a user task or coding problem, without asking for explicit user prompt permission.
 - **Repository Ingestion Scratch Isolation & Cleanup Rule**: When cloning external repositories during ingestion or skill adaptation, strictly isolate clones inside `scratch/ingest-[repo-name]/`. Force-delete the temporary scratch folder post-ingestion to prevent workspace pollution, git tracking bloat, and context token leaks.
 
+## Environment, Media, & Browser Bridge Integration Rules
+- **Env Variable Token Precedence Rule**: Never leave stale or invalid API tokens (e.g. `GITHUB_TOKEN`) in `.env` files or process environments when an authenticated CLI keyring (such as `gh` CLI) is available. Unset process environment overrides before running CLI health checks.
+- **yt-dlp JS Runtime Rule**: Always ensure `C:\Users\HP\AppData\Roaming\yt-dlp\config` contains `--js-runtimes node` to guarantee YouTube video subtitle and metadata extraction stability.
+- **Brave Browser Bridge Compatibility Rule**: When running browser-session bridge tools (`OpenCLI`, Playwright), recognize Brave as a Chromium-compatible browser utilizing `brave://extensions` for unpacked extension loading.
+
+
 
 

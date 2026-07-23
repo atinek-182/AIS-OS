@@ -1,7 +1,7 @@
 ---
 name: ingest-skills
-description: Autonomous repository ingestion, security audit, comparative analysis, roast council validation, and multi-artifact skill adaptation engine. (Upgraded alias routing directly to /ingest-repo).
-argument-hint: [repo_url] [optional focus or instructions]
+description: "Upgraded alias routing directly to /ingest-repo engine."
+argument-hint: "[repo_url] [optional focus or instructions]"
 ---
 
 # Ingest Community Skills & Repositories (Upgraded Alias)

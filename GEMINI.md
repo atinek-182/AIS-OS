@@ -40,6 +40,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
 - `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
 - `/scrape-web` — Scrapes web content, parses DOM elements, bypasses anti-bot blocks via Scrapling engine.
+- `/agent-reach` — Unified multi-platform search & reader capability engine across 10+ social/web platforms (YouTube, Bilibili, V2EX, Twitter, Reddit, RSS).
 - `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 

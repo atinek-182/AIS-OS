@@ -704,6 +704,28 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-23 — Agent Reach Ingestion & Skill Adaptation
+
+**Decision:** Ingested `Panniantong/agent-reach` (v1.5.0, MIT License) via `/ingest-repo`. Created `.agents/skills/agent-reach/SKILL.md`, `scripts/agent_reach_runner.py`, and reference manual `brain-aios/wiki/research/skills-library/agent-reach/README.md`. Registered in `WORKSPACE_MAP.md`, `GEMINI.md`, and `MEMORY.md`.
+
+**Why:** Agent Reach provides single-command multi-backend routing across 10+ web and social platforms (YouTube subtitles, Bilibili zero-login search, V2EX tech feeds, Twitter, Reddit, RSS, Xueqiu, Xiaoyuzhou podcast transcription). It automatically falls back to secondary backends if anti-scraping blocks occur, drastically expanding AIOS internet capabilities for Zorixel research.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-23 — System Self-Improvement & AIOS Wide Integration
+
+**Decision:** Executed `/improve-system` workflow. Captured lesson in `brain-aios/wiki/experiences/2026-07-23-agent-reach-ingestion-and-github-keyring-auth.md`, updated `context/experiences/README.md`, added **Env Variable Token Precedence Rule**, **yt-dlp JS Runtime Rule**, and **Brave Browser Bridge Compatibility Rule** to `.agents/AGENTS.md` and `MEMORY.md`. Updated all workspace documentation (`aios-user-manual.md`, `antigravity-skills-guide.md`, `web-research-capture-sop.md`, `scrape-competitor`, `marketing`), registered connections in `context/connections.md`, and committed/pushed all updates to `main`.
+
+**Why:** Ensures cross-session learning from GitHub CLI keyring token overrides, yt-dlp Node.js runtime setup, and Brave browser bridge integration, while making Agent Reach multi-platform research available across all content, copywriting, and SEO skills.
+
+**Owner:** Antigravity AIOS
+
+
+
 
 
 

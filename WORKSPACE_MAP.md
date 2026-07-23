@@ -27,6 +27,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [Finding Fonts/](file:///d:/AI-OS/Finding%20Fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
+| [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 | [projects/font-showcase/](file:///d:/AI-OS/projects/font-showcase/) | Folder | Typographic brand exploration slides showcase project. | AIOS |
@@ -78,6 +79,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/serve.js](file:///d:/AI-OS/scripts/serve.js) | File | Local static server to host mirrored reference assets for Playwright. | AIOS |
 | [scripts/generate-brand-candidates.js](file:///d:/AI-OS/scripts/generate-brand-candidates.js) | File | Playwright script to query local tools for brand color and font ideas. | AIOS |
 | [scripts/scrapling_runner.py](file:///d:/AI-OS/scripts/scrapling_runner.py) | File | Python CLI and module wrapper engine for Scrapling adaptive and stealthy web scraping. | AIOS |
+| [scripts/agent_reach_runner.py](file:///d:/AI-OS/scripts/agent_reach_runner.py) | File | Python runner and diagnostic helper for Agent Reach multi-platform internet capability engine. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
 | [scripts/validate_links.py](file:///d:/AI-OS/scripts/validate_links.py) | File | Python link validator script checking for relative/Obsidian link rot. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
@@ -90,6 +92,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | :--- | :--- | :--- | :--- |
 | [.agents/skills/](file:///d:/AI-OS/.agents/skills/) | Folder | Workspace-scoped custom slash commands. | AIOS |
 | [.agents/skills/agent-adapt](file:///d:/AI-OS/.agents/skills/agent-adapt) | Folder | Skill guiding the LLM to safely adapt Claude Code tools to Antigravity. | AIOS |
+| [.agents/skills/agent-reach](file:///d:/AI-OS/.agents/skills/agent-reach) | Folder | Skill for multi-platform internet searching and content reading across 10+ social/web platforms. | AIOS |
 | [.agents/skills/canvas-design](file:///d:/AI-OS/.agents/skills/canvas-design) | Folder | Programmatic visual assets and canvas generator dynamic router. | AIOS |
 | [.agents/skills/brand-colors](file:///d:/AI-OS/.agents/skills/brand-colors) | Folder | Custom skill to automate brand color palette selection, interactive swatch creation, and WCAG contrast audits. | AIOS |
 | [.agents/skills/design-direction](file:///d:/AI-OS/.agents/skills/design-direction) | Folder | Visual design direction and roast council generator. | AIOS |

@@ -9,15 +9,15 @@ When this skill is triggered, you will route the copywriting or marketing task u
 
 ## Step-by-Step Execution Workflow
 
-### 1. Identify the Task Category
+### 1. Identify the Task Category & VoC Research Integration
 Map the user's request to one of the following copywriting/marketing categories in the static library:
 * **`copywriting`**: General copywriting guidelines, PAS (Problem-Agitation-Solution) framework, homepage, landing pages.
 * **`emails`**: Email marketing sequences, newsletters, onboarding series.
 * **`pricing`**: Pricing page strategy, plans comparison, risk reversals.
 * **`cro`**: Conversion rate optimization, page flow, visual hierarchy audits.
 * **`social`**: Social media copy, Instagram Reels drafts, LinkedIn posts.
-* **`competitor-profiling`**: Researching competitor hooks and positioning.
-* **`customer-research`**: Mapping customer pain points, voice of customer (VoC).
+* **`competitor-profiling`**: Researching competitor hooks and positioning via **Agent Reach** (`/agent-reach`).
+* **`customer-research`**: Mapping customer pain points & Voice of Customer (VoC) by querying real-world community sentiment across Reddit, V2EX, Twitter, and YouTube transcripts via **Agent Reach**.
 * **`offers`**: Constructing guarantees, bonuses, value framing.
 
 ### 2. Read the Reference Skill File

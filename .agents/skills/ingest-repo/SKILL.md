@@ -1,7 +1,7 @@
 ---
 name: ingest-repo
-description: Autonomous repository ingestion, security audit, comparative analysis, roast council validation, and multi-artifact skill adaptation engine. Clones any GitHub repo, researches use cases & security on web, compares against existing AIOS features, runs 5-persona adversarial roast council to de-risk, adapts python scripts, slash skills, rules, and registers files across Obsidian vaults & workspace maps.
-argument-hint: [repo_url] [optional focus or instructions]
+description: "Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, and skill adaptation engine."
+argument-hint: "[repo_url] [optional focus or instructions]"
 ---
 
 # Repository Ingestion & Skill Adaptation Engine (`/ingest-repo`)

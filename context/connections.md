@@ -19,6 +19,9 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 | 13 | Browser Diagnostics | Chrome DevTools | mcp | — | 2026-07-15 |
 | 14 | Document Database | Notion | mcp | OPENAPI_MCP_HEADERS | 2026-07-15 |
 | 15 | Design Context Extraction | Figma | mcp | PAT | 2026-07-19 |
+| 16 | Stealth Web Data Extraction | Scrapling | script | local_python | 2026-07-23 |
+| 17 | Multi-Platform Internet Engine | Agent Reach | skill | local_cli + keyring | 2026-07-23 |
+
 
 
 **Mechanism options:** `mcp` (MCP server), `script` (Python/Bash hitting an API, in `scripts/`), `export` (CSV/JSON dump pipeline), `key+ref` (`.env` key + `references/{tool}-api.md` guide), `not yet connected`.

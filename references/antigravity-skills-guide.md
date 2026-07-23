@@ -49,6 +49,14 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 
 ---
 
+## 👁️ 6. Agent Reach (`agent-reach`)
+*   **Purpose:** Multi-backend router & diagnostic engine giving AI Agents single-command internet search, reading, and content extraction across 10+ social & web platforms (YouTube, Bilibili, V2EX, GitHub, Reddit, RSS, Twitter/X, Exa AI Search).
+*   **Repository:** [Panniantong/agent-reach](https://github.com/Panniantong/agent-reach)
+*   **Active Local Skill:** `.agents/skills/agent-reach/SKILL.md` (`/agent-reach`)
+*   **Runner Script:** `scripts/agent_reach_runner.py`
+
+---
+
 ## 🎨 6. Front-End Design (`frontend-design`)
 *   **Purpose:** Injects styling guidelines and assets so that generated user interfaces use premium visual rules (harmonious HSL colors, outfit typography, hover transitions) instead of default layouts.
 *   **Installation Command:** Utilizes local design SOP instructions or Antigravity Design native configurations.
