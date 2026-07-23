@@ -28,8 +28,11 @@ Use this skill whenever the user provides a website URL to extract design tokens
      - Image assets (PNG, JPEG, SVG, WebP) and 3D models.
 2. **Local HTTP Server:**
    - *Constraint:* Playwright MCP blocks the `file:` protocol for security, which prevents direct rendering of local HTML pages.
-   - *Solution:* Write a static server script `scripts/serve-[site-slug].js` (hosting on an available port, e.g. 3000) using Node's `http` and `fs` modules.
-   - Run the server in the background using the `run_command` tool.
+   - *Solution:* Run the workspace static server at `scripts/serve.js` in the background, passing the target reference folder path as the argument:
+     ```powershell
+     node scripts/serve.js <absolute-path-to-mirrored-folder> 3000
+     ```
+   - Use the `run_command` tool to launch the background task.
 
 ## Phase 3: Visual & Code Analysis via Playwright
 

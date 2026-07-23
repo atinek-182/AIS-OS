@@ -1,0 +1,964 @@
+/* ==========================================================================
+   ZORIXEL EDITORIAL MAGAZINE DESIGN SYSTEM
+   Aesthetics: Elevated Print Editorial, Soft Visual Shadows, Bold Typography
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #ff6b4a;            /* Zorixel Brand Coral */
+  --color-primary-glow: rgba(255, 107, 74, 0.15);
+  --color-ink: #141413;                 /* Editorial Deep Charcoal */
+  --color-canvas-light: #fbfaf7;        /* Premium Matte Linen/Paper */
+  --color-canvas-dark: #0e0f12;         /* Editorial Off-Black */
+  
+  /* Text Accents */
+  --color-body-dark: #cbd5e1;
+  --color-body-light: #4c4c47;          /* Muted Editorial Slate */
+  --color-success: #141413;             /* High-Contrast Badge BG */
+  --color-error: #ff4a5a;
+  
+  /* Typography Scale */
+  --font-display: 'Cormorant Garamond', Garamond, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+
+  /* Spacing Scale (Margins & Padding) */
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 40px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 96px;
+
+  /* Border Radii Scale */
+  --rounded-sm: 6px;
+  --rounded-md: 12px;                  /* Floating paper sheets radius */
+  --rounded-lg: 18px;
+  --rounded-pill: 9999px;
+}
+
+/* Base Configuration */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-canvas-light);
+  font-family: var(--font-body);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Central Slide Canvas Shell */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 130px var(--spacing-xl) 110px var(--spacing-xl); /* Protected top/bottom overlay zones */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+  /* Radial Grid Backdrop Matrix (Restrained for print feel) */
+  background-color: var(--color-canvas-light);
+  background-image: radial-gradient(rgba(20, 20, 19, 0.04) 1.5px, transparent 0);
+  background-size: 32px 32px;
+  color: var(--color-ink);
+  border: 1px solid rgba(20, 20, 19, 0.05);
+}
+
+/* Dark Theme Overrides */
+.canvas-container.theme-dark {
+  background-color: var(--color-canvas-dark);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1.5px, transparent 0);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.canvas-container.theme-dark .editorial-quote-text,
+.canvas-container.theme-dark .showcase-title,
+.canvas-container.theme-dark .bento-title,
+.canvas-container.theme-dark .comparison-title,
+.canvas-container.theme-dark .hook-title,
+.canvas-container.theme-dark .cta-title {
+  color: #ffffff;
+}
+.canvas-container.theme-dark .carousel-header-text {
+  color: rgba(255, 255, 255, 0.4);
+}
+.canvas-container.theme-dark .carousel-dot {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.canvas-container.theme-dark .carousel-dot.active {
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+/* ==========================================================================
+   SLIDE FURNITURE (HEADER & FOOTER OVERLAYS)
+   ========================================================================== */
+
+.carousel-header-overlay {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xl);
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.carousel-header-text {
+  font-family: var(--font-code);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-body-light);
+}
+
+.carousel-footer-overlay {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 12px;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(20, 20, 19, 0.15);
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: var(--color-ink);
+  transform: scale(1.4);
+}
+
+/* ==========================================================================
+   LAYOUTS DEFINITIONS
+   ========================================================================== */
+
+/* 1. Hook Slide (Slide 1) */
+.layout-hook {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.hook-badge {
+  font-family: var(--font-code);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hook-title {
+  font-family: var(--font-display);
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 95%;
+  margin-top: var(--spacing-sm);
+  color: var(--color-ink);
+}
+
+.hook-subtitle {
+  font-family: var(--font-code);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: var(--color-body-light);
+  margin-top: var(--spacing-xs);
+  text-transform: uppercase;
+}
+
+.hook-preview-cards {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  width: 100%;
+  justify-content: center;
+}
+
+.preview-card {
+  width: 190px;
+  height: 230px;
+  background: #ffffff;
+  border: 1px solid rgba(20, 20, 19, 0.08);
+  border-radius: var(--rounded-md);
+  box-shadow: 0 12px 36px rgba(20,20,19,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-ink);
+  transition: all 0.3s ease;
+}
+
+.preview-card.premium {
+  background: var(--color-ink);
+  color: #ffffff;
+  border-color: var(--color-ink);
+  box-shadow: 0 20px 48px rgba(20,20,19,0.18);
+  transform: translateY(-8px);
+}
+
+.hook-footnote {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-style: italic;
+  margin-top: var(--spacing-md);
+  color: var(--color-body-light);
+}
+
+.hook-footnote span {
+  color: var(--color-ink);
+  border-bottom: 2px solid var(--color-ink);
+  padding-bottom: 2px;
+}
+
+/* 2. Editorial Quote Layout */
+.layout-editorial-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.editorial-mark {
+  font-family: var(--font-display);
+  font-size: 140px;
+  color: var(--color-primary);
+  line-height: 1;
+  position: absolute;
+  top: -85px;
+  left: -45px;
+  opacity: 0.8;
+}
+
+.editorial-quote-text {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  z-index: 2;
+  margin-bottom: var(--spacing-md);
+}
+
+.editorial-author {
+  font-family: var(--font-code);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-body-light);
+  margin-left: 4px;
+}
+
+/* 3. Split Comparison Layout (Elevated Paper Cards) */
+.layout-split-comparison {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.comparison-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.comparison-badge {
+  display: inline-block;
+  font-family: var(--font-code);
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.comparison-title {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.comparison-subtitle {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--color-body-light);
+  margin-top: var(--spacing-xxs);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Pure two-column card panels layout */
+  gap: var(--spacing-lg);
+  align-items: stretch;
+  flex-grow: 1;
+  margin: var(--spacing-sm) 0;
+}
+
+.comparison-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.column-label {
+  font-family: var(--font-code);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.column-label.before {
+  color: var(--color-body-light);
+  text-decoration: line-through;
+}
+
+.column-label.after {
+  background-color: var(--color-success); /* Solid charcoal black */
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: var(--rounded-sm);
+}
+
+/* Elevated Paper Cards Styling */
+.comparison-card {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  background-color: #ffffff; /* Solid white card base */
+  border: 1px solid rgba(20, 20, 19, 0.05);
+  border-radius: var(--rounded-md); /* 12px corners */
+  padding: var(--spacing-md) var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 48px rgba(20, 20, 19, 0.04), 0 4px 12px rgba(20, 20, 19, 0.02);
+  transition: all 0.3s ease;
+}
+
+.comparison-card.after-card {
+  border-color: rgba(255, 107, 74, 0.25);
+  box-shadow: 0 24px 56px rgba(255, 107, 74, 0.08), 0 4px 12px rgba(255, 107, 74, 0.03);
+}
+
+.comparison-caption {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-body-light);
+  max-width: 90%;
+  line-height: 1.4;
+  margin-top: var(--spacing-xxs);
+}
+
+/* 4. Code Showcase Layout */
+.layout-code-showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.showcase-header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.showcase-tag {
+  font-family: var(--font-code);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.showcase-title {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.code-window {
+  background-color: #1a1b1f;
+  border-radius: var(--rounded-md);
+  border: 1px solid rgba(20, 20, 19, 0.08);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(20,20,19,0.06);
+  margin-bottom: var(--spacing-xs);
+}
+
+.code-window-header {
+  background-color: #25262c;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.window-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.code-content {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-family: var(--font-code);
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e2e8f0;
+  flex-grow: 1;
+  overflow: auto;
+  white-space: pre;
+}
+
+/* 5. Bento Features Layout */
+.layout-bento-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.bento-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.bento-title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.bento-subtitle {
+  font-family: var(--font-body);
+  font-size: 20px;
+  color: var(--color-body-light);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  flex-grow: 1;
+  margin-bottom: var(--spacing-xs);
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border-radius: var(--rounded-md);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(20, 20, 19, 0.08);
+  box-shadow: 0 10px 30px rgba(20,20,19,0.04);
+}
+
+.bento-card-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--color-ink);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.bento-card-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-body-light);
+  line-height: 1.5;
+}
+
+/* 6. CTA Slide Layout (Slide Last - High Contrast Button) */
+.layout-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: var(--spacing-xl);
+}
+
+.cta-tag {
+  font-family: var(--font-code);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-description {
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--color-body-light);
+  max-width: 85%;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Premium solid black button, white text, clear contrast */
+.cta-card {
+  background-color: var(--color-ink); /* Solid Charcoal Black */
+  border: 1px solid var(--color-ink);
+  padding: 18px 48px;
+  border-radius: var(--rounded-sm);
+  box-shadow: 0 10px 30px rgba(20,20,19,0.12);
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(20,20,19,0.18);
+}
+
+.cta-button-text {
+  font-family: var(--font-code);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff; /* HIGH CONTRAST WHITE */
+}
+
+/* ==========================================================================
+   ASPECT RATIO RESPONSIVE OVERRIDES (SQUARE & LANDSCAPE)
+   ========================================================================== */
+
+/* 1. Square Layout Overrides (1:1, 1080x1080) */
+.canvas-container.ratio-square {
+  padding: 95px var(--spacing-lg) 85px var(--spacing-lg);
+}
+
+.ratio-square .carousel-header-overlay {
+  top: 36px;
+  padding: 0 var(--spacing-lg);
+}
+
+.ratio-square .carousel-footer-overlay {
+  bottom: 36px;
+}
+
+.ratio-square .hook-title {
+  font-size: 52px;
+  margin-top: var(--spacing-xxs);
+}
+
+.ratio-square .hook-subtitle {
+  font-size: 16px;
+  margin-top: var(--spacing-xxs);
+}
+
+.ratio-square .hook-preview-cards {
+  margin-top: var(--spacing-sm);
+  gap: var(--spacing-sm);
+}
+
+.ratio-square .preview-card {
+  width: 170px;
+  height: 180px;
+  padding: var(--spacing-sm);
+  font-size: 14px;
+}
+
+.ratio-square .preview-card.premium {
+  transform: translateY(-4px);
+}
+
+.ratio-square .hook-footnote {
+  font-size: 20px;
+  margin-top: var(--spacing-sm);
+}
+
+.ratio-square .editorial-mark {
+  font-size: 100px;
+  top: -65px;
+  left: -35px;
+}
+
+.ratio-square .editorial-quote-text {
+  font-size: 38px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.ratio-square .comparison-title,
+.ratio-square .showcase-title,
+.ratio-square .bento-title {
+  font-size: 36px;
+}
+
+.ratio-square .comparison-grid {
+  gap: var(--spacing-md);
+  margin: var(--spacing-xs) 0;
+}
+
+.ratio-square .comparison-card {
+  min-height: 170px;
+  padding: var(--spacing-sm);
+}
+
+.ratio-square .comparison-card div[style*="font-size:22px"] {
+  font-size: 18px !important;
+}
+
+.ratio-square .comparison-card.after-card div[style*="font-size:32px"] {
+  font-size: 24px !important;
+}
+
+.ratio-square .comparison-caption {
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.ratio-square .code-window {
+  margin-bottom: var(--spacing-xxs);
+}
+
+.ratio-square .code-content {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 13px;
+}
+
+.ratio-square .bento-grid {
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.ratio-square .bento-card {
+  padding: var(--spacing-md);
+}
+
+.ratio-square .bento-card-title {
+  font-size: 22px;
+}
+
+.ratio-square .bento-card-body {
+  font-size: 14px;
+}
+
+.ratio-square .cta-title {
+  font-size: 52px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.ratio-square .cta-description {
+  font-size: 18px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.ratio-square .cta-card {
+  padding: 14px 36px;
+}
+
+/* 2. Landscape Layout Overrides (1.91:1, 1080x566) */
+.canvas-container.ratio-landscape {
+  padding: 55px var(--spacing-md) 45px var(--spacing-md);
+}
+
+.ratio-landscape .carousel-header-overlay {
+  top: 18px;
+  padding: 0 var(--spacing-md);
+}
+
+.ratio-landscape .carousel-header-text {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ratio-landscape .carousel-footer-overlay {
+  bottom: 18px;
+}
+
+.ratio-landscape .hook-badge {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.ratio-landscape .hook-title {
+  font-size: 34px;
+  margin-top: 4px;
+  line-height: 1.05;
+}
+
+.ratio-landscape .hook-subtitle {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.ratio-landscape .hook-preview-cards {
+  margin-top: var(--spacing-xxs);
+  gap: var(--spacing-xs);
+}
+
+.ratio-landscape .preview-card {
+  width: 140px;
+  height: 105px;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  font-size: 12px;
+  border-radius: var(--rounded-sm);
+}
+
+.ratio-landscape .preview-card.premium {
+  transform: translateY(-2px);
+}
+
+.ratio-landscape .hook-footnote {
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.ratio-landscape .editorial-mark {
+  font-size: 60px;
+  top: -40px;
+  left: -20px;
+}
+
+.ratio-landscape .editorial-quote-text {
+  font-size: 22px;
+  margin-bottom: var(--spacing-xxs);
+  line-height: 1.25;
+}
+
+.ratio-landscape .editorial-author {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ratio-landscape .comparison-header {
+  margin-bottom: 2px;
+}
+
+.ratio-landscape .comparison-badge {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.ratio-landscape .comparison-title {
+  font-size: 24px;
+}
+
+.ratio-landscape .comparison-subtitle {
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.ratio-landscape .comparison-grid {
+  gap: var(--spacing-sm);
+  margin: var(--spacing-xxs) 0;
+}
+
+.ratio-landscape .column-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.ratio-landscape .comparison-card {
+  min-height: 110px;
+  padding: var(--spacing-xs);
+  border-radius: var(--rounded-sm);
+}
+
+.ratio-landscape .comparison-card div[style*="font-size:12px"] {
+  font-size: 9px !important;
+  margin-bottom: 4px !important;
+}
+
+.ratio-landscape .comparison-card div[style*="font-size:22px"] {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+.ratio-landscape .comparison-card.after-card div[style*="font-size:32px"] {
+  font-size: 17px !important;
+  line-height: 1.15 !important;
+}
+
+.ratio-landscape .comparison-caption {
+  font-size: 12px;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.ratio-landscape .showcase-header {
+  margin-top: var(--spacing-xxs) !important;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.ratio-landscape .showcase-tag {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.ratio-landscape .showcase-title {
+  font-size: 24px;
+}
+
+.ratio-landscape .code-window {
+  margin-bottom: 4px;
+}
+
+.ratio-landscape .code-window-header {
+  height: 24px;
+}
+
+.ratio-landscape .code-content {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.ratio-landscape .bento-header {
+  margin-top: var(--spacing-xxs) !important;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.ratio-landscape .bento-title {
+  font-size: 24px;
+}
+
+.ratio-landscape .bento-subtitle {
+  font-size: 13px;
+}
+
+.ratio-landscape .bento-grid {
+  gap: var(--spacing-sm);
+  margin-bottom: 4px;
+}
+
+.ratio-landscape .bento-card {
+  padding: var(--spacing-sm);
+  border-radius: var(--rounded-sm);
+}
+
+.ratio-landscape .bento-card-title {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.ratio-landscape .bento-card-body {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.ratio-landscape .layout-cta {
+  padding: var(--spacing-md);
+}
+
+.ratio-landscape .cta-tag {
+  font-size: 11px;
+  margin-bottom: var(--spacing-xxs);
+}
+
+.ratio-landscape .cta-title {
+  font-size: 32px;
+  margin-bottom: var(--spacing-xxs);
+  line-height: 1.05;
+}
+
+.ratio-landscape .cta-description {
+  font-size: 15px;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.3;
+}
+
+.ratio-landscape .cta-card {
+  padding: 10px 30px;
+}
+
+.ratio-landscape .cta-button-text {
+  font-size: 14px;
+}
+
+.ratio-landscape .layout-cta div[style*="margin-top:50px"] {
+  margin-top: 15px !important;
+  font-size: 9px !important;
+}

@@ -10,7 +10,10 @@ You are the Zorixel AI Copywriter. Your job is to convert a user's topic or idea
 When this skill is invoked via `/carousel-copy <topic>` or triggered by design discussions:
 
 1. **Ask clarifying questions** if the topic is too vague.
-2. **Follow the 5 Rules of Viral Slides** (derived from expert analysis):
+2. **Follow the Rules of Viral Slides**:
+   - **Slide Count**: Keep it between 5 and 20 slides total. Recommend 5-10 for reader retention, unless a deep-dive tutorial requires more.
+   - **Aspect Ratio Consistency**: Select a single format for the post (`portrait`, `square`, or `landscape`) and specify it in the header. Do not mix formats to avoid forced cropping by Instagram.
+   - **Safe Zones**: Ensure all layouts keep text and core visuals away from the 10% outer boundaries (no text within 130px of top, 110px of bottom) to avoid native UI overlaps.
    - **Rule 1 (Scan-Friendly)**: Bold, big text. Word count ≤ 25 words per slide.
    - **Rule 2 (Visual Metaphors)**: Use split comparisons, bento boxes, or code windows. Avoid raw text blocks.
    - **Rule 3 (Benefit Hook)**: Hook slide must focus on results/payoffs. No agenda/agenda-style filler slides.
@@ -39,6 +42,7 @@ Always write the output to `d:\AI-OS\brainstorms\temp_carousel\copy.md` in this 
 ```markdown
 # Carousel: [Topic Title]
 Style: [dark | light | gradient]
+AspectRatio: [portrait | square | landscape]
 
 ## Slide 1: Hook
 Layout: hook

@@ -1,0 +1,1 @@
+CI/CD deployment pipeline stages showing linting, unit testing, docker build, and deploying to staging.

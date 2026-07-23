@@ -1,0 +1,1 @@
+Microservices event-driven communication using Kafka Event Bus with multiple publisher and consumer services.

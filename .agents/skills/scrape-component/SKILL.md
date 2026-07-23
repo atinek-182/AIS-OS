@@ -34,7 +34,10 @@ Use this skill when the user likes a specific component, effect, or animation on
 ## Phase 3: Visual Verification & Auditing (Playwright Bypass)
 
 1. **Local localhost Server:**
-   - Spin up a background Node static server `scripts/serve-[component-slug].js` on port 3000 to host the component folder.
+   - Run the workspace static server at `scripts/serve.js` in the background, passing the target component folder path as the argument:
+     ```powershell
+     node scripts/serve.js <absolute-path-to-component-folder> 3000
+     ```
 2. **Playwright Visual Verification:**
    - Open `http://localhost:3000` via the Playwright `browser_navigate` tool.
    - Verify that the component functions correctly, animations execute cleanly, and the browser console contains zero errors.

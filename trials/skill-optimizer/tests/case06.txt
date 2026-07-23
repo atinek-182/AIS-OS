@@ -1,0 +1,1 @@
+A distributed caching layer with an application server, Redis cache, and PostgreSQL database.

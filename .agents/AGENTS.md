@@ -19,3 +19,31 @@
 ## Sandboxed Font Rendering & SVG Outline Layouts
 - Never assume local asset files load via `file:///` inside headless browser screenshots (Playwright); always prefer base64 Data URIs for local fonts in temporary HTML pages.
 - Double-check that user-finalized fonts (e.g. `Nuqun` logo, `Rosehot` headings, `Outfit` body) are strictly preserved, and avoid switching brand typefaces.
+
+## Visual Regression QA Audits
+- **Auditing on compiler modifications**: When changing a builder script, compiler, or shared stylesheet that compiles multiple independent cards/pages, you must execute a Playwright regression visual audit sweep (`verify_micrographics_design.js` or `verify_design_milestone.py`). Inspect the screenshots of multiple layouts (not just the target card) to confirm that no other assets suffer from text-wrapping, scaling, or spacing regressions.
+
+## Variable Scoping Safety
+- **Order of Variable Declarations**: Review all Python and JavaScript modifications to ensure all referenced variables (e.g. customized styling strings, layout dimensions, or local CSS overrides) are fully declared and bound under all conditional code paths before they are accessed, preventing `UnboundLocalError` or scoping ReferenceErrors.
+
+## Playwright Execution Context Path
+- **Dependency Folder Resolution**: Node resolves script dependencies relative to the script file's path rather than the execution Cwd. When running custom Playwright node scripts, do not execute them directly in transient scratch directories unless the package `playwright` is installed there. Always write or copy the script to the nearest project folder containing the local `node_modules` where playwright is installed, and run it in that directory's context.
+
+## Operator Communication & Verification Rules
+- **Understand & Verify First**: Never blindly output changes or make assertions without running physical validation first. Run actual verification scripts, inspect visual outputs (such as Playwright screens), and check for errors. Do not just state "I have checked something"—prove it.
+- **Security, Bloat, & Duplication Analysis**: Before writing code, analyze: (1) Can this be done cleanly? (2) What are the potential security vulnerabilities? (3) Does this add unnecessary bloat or duplicate existing logic?
+- **Brainstorming via /grill-me and /roast**: For any new design, feature, or business idea, prioritize running or recommending `/grill-me` (to align on details) and `/roast` (to pressure-test and stress-test the concept) before writing implementation code.
+- **Bootup Skill Upgrades**: On starting a fresh session or chat, before executing any new feature instructions, check and upgrade custom skills (like `grill-me` or `roast`) to ensure they run with the latest improvements. Never follow user directions blindly if they conflict with safety, security, or design principles; stop and clarify first.
+
+## Figma Compiler & SVG Geometry Safeguards
+- **Figma Node Visibility Rule**: Always filter out `if not child.get("visible", True): continue` during symbol extraction and element compilation when parsing Figma API JSON nodes to prevent invisible background placeholders from rendering into production output.
+- **Pre-Rotated SVG Geometry Rule**: Never apply CSS `transform: rotate(...)` to Figma-exported graphic SVG wrappers. Scope CSS rotation transforms strictly to HTML text nodes.
+- **JSX SVG Style Object Rule**: Always convert inline SVG `style="..."` string attributes into camelCase JSX style objects (`style={{...}}`) during SVG-to-JSX conversion to prevent React runtime rendering errors.
+- **Secrets Hygiene & Security Rule**: Never leave hardcoded API tokens, OAuth keys, or credentials in workspace scripts or committed files. Use environment variables or prompt inputs for secret management.
+
+## Windows MCP Server Command Resolution Rules
+- **Explicit Binary Path Rule**: When configuring CLI-based MCP servers on Windows in `mcp_config.json`, specify explicit `.cmd` or `.exe` binary paths (e.g. `C:\Users\HP\AppData\Local\codegraph\current\bin\codegraph.cmd`) to prevent child process resolution hangs and context deadline timeouts.
+- **Pre-Caching & Validation Rule**: Verify npm package existence before adding `npx -y` commands to `mcp_config.json` to prevent HTTP 404 initialization aborts. Pre-install or cache CLI packages globally to eliminate cold-start network latency.
+- **MCP Stdio Transport & Log Suppression Rule**: When configuring CLI-based MCP servers (such as `figma-developer-mcp`), explicitly pass `--stdio` and suppress non-JSON stdout output (`--no-telemetry`, `--image-dir`, `FRAMELINK_TELEMETRY=off`, `DO_NOT_TRACK=1`) to prevent plain-text log lines from contaminating stdout and breaking JSON-RPC initialization.
+
+

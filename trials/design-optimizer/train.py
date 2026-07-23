@@ -1,0 +1,181 @@
+import os
+
+# Candidate CSS styles block. The Autoresearch agent will modify these styling tokens and CSS values.
+STYLE_CSS = """
+:root {
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --card-border: 1px solid rgba(255, 255, 255, 0.08);
+    --card-blur: 16px;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #38bdf8;
+    --font-family: 'Outfit', 'Inter', sans-serif;
+    --border-radius: 24px;
+    --card-padding: 48px;
+    --shadow-main: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-gradient);
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    width: 1080px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-container {
+    width: 900px;
+    height: 900px;
+    background: var(--card-bg);
+    border: var(--card-border);
+    backdrop-filter: blur(var(--card-blur));
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow-main);
+    position: relative;
+}
+
+/* Subtle decorative glow */
+.slide-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 250px;
+    height: 250px;
+    background: var(--accent-color);
+    filter: blur(120px);
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 24px;
+}
+
+.topic-tag {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slide-number {
+    font-size: 18px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.content-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffffff, #cbd5e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.cta-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.cta-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-color);
+}
+
+.cta-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+"""
+
+SLIDE_HTML = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Slide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <span class="topic-tag">Design System</span>
+            <span class="slide-number">03/05</span>
+        </div>
+        <div class="content-body">
+            <h1>Dynamic Glassmorphism Layouts</h1>
+            <p>Creating highly functional designs using transparent backdrop filters and radial borders to control user attention and structure readability.</p>
+        </div>
+        <div class="cta-box">
+            <div class="cta-icon"></div>
+            <span class="cta-text">Swipe left to learn how to build it</span>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+def main():
+    # Write files to local path
+    base_dir = "./design-optimizer" if os.path.exists("./design-optimizer") else "."
+    
+    with open(os.path.join(base_dir, "styles.css"), "w") as f:
+        f.write(STYLE_CSS.strip())
+        
+    with open(os.path.join(base_dir, "slide.html"), "w") as f:
+        f.write(SLIDE_HTML.strip())
+        
+    print("slide.html and styles.css written successfully.")
+
+if __name__ == "__main__":
+    main()

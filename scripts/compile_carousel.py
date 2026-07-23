@@ -101,6 +101,12 @@ def parse_markdown(filepath):
     style_match = re.search(r'^Style:\s*(.*)$', content, re.MULTILINE | re.IGNORECASE)
     style = style_match.group(1).strip() if style_match else 'dark'
 
+    # Get aspect ratio
+    ratio_match = re.search(r'^AspectRatio:\s*(.*)$', content, re.MULTILINE | re.IGNORECASE)
+    ratio = ratio_match.group(1).strip().lower() if ratio_match else 'portrait'
+    if ratio not in ['portrait', 'square', 'landscape']:
+        ratio = 'portrait'
+
     # Split into slide blocks
     slides_raw = re.split(r'^##\s+Slide\s+', content, flags=re.MULTILINE)[1:]
     slides = []
@@ -119,7 +125,7 @@ def parse_markdown(filepath):
         properties['slide_num'] = slide_num
         slides.append(properties)
 
-    return style, slides
+    return style, ratio, slides
 
 def generate_dots(total, active_idx):
     dots = []
@@ -128,7 +134,7 @@ def generate_dots(total, active_idx):
         dots.append(f'<div class="carousel-dot {active_class}"></div>')
     return '\n'.join(dots)
 
-def build_slide_html(slide, style, total_slides, base_template_path):
+def build_slide_html(slide, style, ratio, total_slides, base_template_path):
     layout = slide.get('Layout', 'editorial-quote')
     slide_num = slide.get('slide_num', 1)
     
@@ -152,7 +158,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
             
         footnote = slide.get('Footnote', '')
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="layout-hook">
             <div class="hook-badge">✻ ZORIXEL</div>
             <div class="hook-title">{title}</div>
@@ -182,7 +188,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
         after_caption = after.get('Caption', 'Optimized')
 
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="carousel-header-overlay">
             <div class="carousel-header-text">RULE {rule_num}</div>
             <div class="carousel-header-text">ADARSHXDESIGN</div>
@@ -228,7 +234,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
         title = slide.get('Title', 'Quote content goes here')
         author = slide.get('Author', 'Zorixel')
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="carousel-header-overlay">
             <div class="carousel-header-text">STEP {slide_num:02d}</div>
             <div class="carousel-header-text">ADARSHXDESIGN</div>
@@ -254,7 +260,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
         title = slide.get('Title', 'Code Showcase')
         code = slide.get('Code', '// No code snippet')
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="carousel-header-overlay">
             <div class="carousel-header-text">STEP {slide_num:02d}</div>
             <div class="carousel-header-text">ADARSHXDESIGN</div>
@@ -299,7 +305,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
         card2_body = card2.get('Body', '')
         
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="carousel-header-overlay">
             <div class="carousel-header-text">STEP {slide_num:02d}</div>
             <div class="carousel-header-text">ADARSHXDESIGN</div>
@@ -337,7 +343,7 @@ def build_slide_html(slide, style, total_slides, base_template_path):
         description = slide.get('Description', '')
         button = slide.get('Button', 'Comment')
         layout_content = f"""
-        <div class="canvas-container theme-{style}">
+        <div class="canvas-container theme-{style} ratio-{ratio}">
           <div class="layout-cta">
             <div class="cta-tag">{tag}</div>
             <div class="cta-title">{title}</div>
@@ -378,11 +384,25 @@ def main():
         with open(os.path.join(output_dir, 'styles.css'), 'w', encoding='utf-8') as df:
             df.write(sf.read())
 
-    style, slides = parse_markdown(copy_path)
+    style, ratio, slides = parse_markdown(copy_path)
     total_slides = len(slides)
 
+    # Output dynamic render_config.json for screenshot viewport sizing
+    ratio_dims = {
+        'portrait': {'width': 1080, 'height': 1350},
+        'square': {'width': 1080, 'height': 1080},
+        'landscape': {'width': 1080, 'height': 566}
+    }
+    dims = ratio_dims.get(ratio, ratio_dims['portrait'])
+    
+    import json
+    config_path = os.path.join(output_dir, 'render_config.json')
+    with open(config_path, 'w', encoding='utf-8') as cf:
+        json.dump({'width': dims['width'], 'height': dims['height'], 'ratio': ratio}, cf, indent=2)
+    print(f"Generated Render Config: {config_path}")
+
     for i, slide in enumerate(slides):
-        slide_html = build_slide_html(slide, style, total_slides, base_template_path)
+        slide_html = build_slide_html(slide, style, ratio, total_slides, base_template_path)
         out_filename = f"slide_{i+1:02d}.html"
         out_path = os.path.join(output_dir, out_filename)
         with open(out_path, 'w', encoding='utf-8') as f:

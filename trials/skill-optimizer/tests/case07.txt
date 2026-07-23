@@ -1,0 +1,1 @@
+ETL data pipeline reading from S3 bucket, processing in Apache Spark cluster, and loading into Amazon Redshift warehouse.

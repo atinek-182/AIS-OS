@@ -2,8 +2,10 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
-const PUBLIC_DIR = path.join(__dirname, '..', 'second-brain-zorixel', 'wiki', 'research', 'jordan-watkins-reference');
+const PUBLIC_DIR = process.argv[2] 
+  ? path.resolve(process.argv[2]) 
+  : path.join(__dirname, '..', 'second-brain-zorixel', 'wiki', 'research', 'seo-audit-reference'); // Fallback to renamed folder or default
+const PORT = process.argv[3] ? parseInt(process.argv[3], 10) : 3000;
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -21,13 +23,16 @@ const server = http.createServer((req, res) => {
 
   // Default to index.html
   let filePath = req.url === '/' ? '/index.html' : req.url;
-  // Strip query parameters (e.g., ?v=2)
+  // Strip query parameters
   filePath = filePath.split('?')[0];
   
-  const absolutePath = path.join(PUBLIC_DIR, filePath);
+  // Resolve path safely
+  const absolutePath = path.resolve(PUBLIC_DIR, filePath.startsWith('/') ? filePath.slice(1) : filePath);
 
   // Security check: ensure path is inside public dir
-  if (!absolutePath.startsWith(PUBLIC_DIR)) {
+  const relative = path.relative(PUBLIC_DIR, absolutePath);
+  const isSafe = !relative.startsWith('..') && !path.isAbsolute(relative);
+  if (!isSafe && absolutePath !== PUBLIC_DIR) {
     res.statusCode = 403;
     res.end('Access Denied');
     return;

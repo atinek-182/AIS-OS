@@ -1,0 +1,1 @@
+A standard Model-View-Controller (MVC) web request-response architecture.

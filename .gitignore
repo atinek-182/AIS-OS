@@ -9,3 +9,14 @@ audits/
 .agents/settings.local.json
 projects/
 .playwright-mcp/
+brain-aios/
+second-brain-zorixel/
+premium-frontend-experience-system/
+
+
+# Autoresearch Sandbox Ignores
+trials/**/results.tsv
+trials/**/renders/
+trials/.venv/
+trials/**/.venv/
+trials/**/__pycache__/

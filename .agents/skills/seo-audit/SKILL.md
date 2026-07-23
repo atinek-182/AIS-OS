@@ -21,17 +21,17 @@ Map the user's request to one of the following SEO sub-categories:
 
 ### 2. Read the Reference Guide
 Read the corresponding markdown agent or skill file using the `view_file` tool:
-* `d:\AI-OS\brain-aios\wiki\research\skills-library/claude-seo/agents/{category}.md`
-* OR `d:\AI-OS\brain-aios\wiki\research\skills-library/claude-seo/skills/{category}/SKILL.md`
+* `d:\AI-OS\brain-aios\wiki\research\skills-library/seo-audit-reference/agents/{category}.md`
+* OR `d:\AI-OS\brain-aios\wiki\research\skills-library/seo-audit-reference/skills/{category}/SKILL.md`
 
 ### 3. Run Programmatic Audit Script (If Needed)
-If a technical verification command is requested, execute the relevant python script located at `d:\AI-OS\brain-aios\wiki\research\skills-library/claude-seo/scripts/` using the terminal:
-* **Schema Validation**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/schema_ecommerce_validate.py [args]`
-* **PageSpeed Check**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/pagespeed_check.py [args]`
-* **HTML Parsing**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/parse_html.py [args]`
-* **Visual Audit**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/analyze_visual.py [args]`
-* **Keywords**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/keyword_planner.py [args]`
-* **Drift Comparison**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/claude-seo/scripts/drift_compare.py [args]`
+If a technical verification command is requested, execute the relevant python script located at `d:\AI-OS\brain-aios\wiki\research\skills-library/seo-audit-reference/scripts/` using the terminal:
+* **Schema Validation**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/schema_ecommerce_validate.py [args]`
+* **PageSpeed Check**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/pagespeed_check.py [args]`
+* **HTML Parsing**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/parse_html.py [args]`
+* **Visual Audit**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/analyze_visual.py [args]`
+* **Keywords**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/keyword_planner.py [args]`
+* **Drift Comparison**: `python d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/scripts/drift_compare.py [args]`
 
 *Note: Ensure any Python dependencies like `requests`, `beautifulsoup4`, or `jinja2` are installed using `pip install [package]` if the script errors due to missing imports.*
 

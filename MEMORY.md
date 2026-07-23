@@ -29,6 +29,14 @@ This file logs cross-session learnings, operational preferences, and recurring c
 5. **No Placeholders:** Generate real working assets and layouts. Never use placeholder images.
 6. **Local Reference Mirroring & Server Bypasses:** Mirror design references locally. Spin up background Node static servers (e.g. port 3000) to render local HTML files for visual Playwright tests to bypass browser permission blocks.
 7. **Diagram Storage Policy:** Always create and save Excalidraw diagrams inside the dedicated `diagrams/` folder at the workspace root instead of cluttering the root workspace directory.
+8. **Understand & Verify First Principle:** Never output changes or assert a task is complete without running physical verification (like Playwright browser checks or compilers) and reviewing the outputs. Always check everything before delivering.
+9. **Vulnerability, Bloat, & Duplication Auditing:** Before any code is written, conduct a check-first analysis of potential vulnerabilities, bloat code, or duplicate logic.
+10. **Grill Me & Roast Prerequisite:** For any new design, feature, or business idea, run or recommend `/grill-me` or `/roast` to define and pressure-test the concept before starting implementation.
+11. **Fresh Session Bootup upgrades**: At the start of a new chat or session, before implementing new instructions, check and upgrade custom skills (such as `grill-me` or `roast`) to keep them up to date. Avoid blindly following instructions that conflict with system safety, logic, or clean design standards; stop and clarify first.
+12. **Playwright Context & Require Resolutions**: Always execute Playwright Node scripts from the nearest directory containing the local `node_modules` where playwright is installed. Do not execute them in transient scratch folders unless the script manually references the full dependency path.
+13. **Order of Variable Declarations**: Review all compiler and scripting modifications to ensure all referenced variables (e.g. customized styling strings or CSS overrides) are fully declared and bound under all conditional code branches before they are accessed.
+14. **No Compiler Changes Without Regression QA**: When modifying a builder script, compiler, or shared stylesheet, execute a Playwright visual QA screenshot sweep of a representative set of layouts (not just the target file) across all 5 responsive viewports to verify no regressions in text-wrapping, scaling, or spacing.
+15. **Figma Compiler, SVG Geometry, & Secrets Hygiene Rules**: Always filter `visible: false` nodes when compiling Figma JSON; never apply CSS `transform: rotate(...)` to Figma-exported graphic SVGs (scope rotation to HTML text nodes only); convert inline SVG `style="..."` strings into camelCase JSX style objects (`style={{...}}`); and strip hardcoded secrets or API tokens from workspace scripts.
 
 ---
 

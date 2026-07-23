@@ -1,0 +1,107 @@
+/* 
+   Navbar Styling Section
+   This holds navigation layouts and color palettes.
+*/
+
+:root {
+    --primary-color: #2563eb;
+    --background-dark: #0f172a;
+    --text-white: #ffffff;
+    --text-gray: #64748b;
+    --font-stack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: #f8fafc;
+    color: #334155;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-dark);
+    padding: 20px 40px;
+    color: var(--text-white);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-white);
+}
+
+/* 
+   Hero Section Styling
+*/
+.hero-section {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--background-dark);
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 
+   Footer section styling rules
+*/
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--background-dark);
+    color: #94a3b8;
+    font-size: 14px;
+}

@@ -33,7 +33,12 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [projects/font-showcase/colors_presentation.html](file:///d:/AI-OS/projects/font-showcase/colors_presentation.html) | File | Interactive color exploration slides showcase page. | AIOS |
 | [projects/font-showcase/generate_nuqun_logo.js](file:///d:/AI-OS/projects/font-showcase/generate_nuqun_logo.js) | File | Local Playwright script generating high-resolution brand logos in Nuqun. | AIOS |
 | [projects/font-showcase/qa/verify_colors.js](file:///d:/AI-OS/projects/font-showcase/qa/verify_colors.js) | File | Automated Playwright script verifying color presentation stability. | AIOS |
+| [projects/For AIOS/Micrographics/](file:///d:/AI-OS/projects/For%20AIOS/Micrographics/) | Folder | Compiled micrographics library with SVG, HTML, and React components. | AIOS |
+| [projects/For AIOS/Micrographics/compile_micrographics.py](file:///d:/AI-OS/projects/For%20AIOS/Micrographics/compile_micrographics.py) | File | Automation build script parsing Figma JSON nodes and generating assets. | AIOS |
+| [projects/For AIOS/Micrographics/compare_screenshots.py](file:///d:/AI-OS/projects/For%20AIOS/Micrographics/compare_screenshots.py) | File | Pixel-by-pixel automated visual difference reporter for HTML vs Figma SVG. | AIOS |
+| [projects/font-showcase/capture_all_frames.js](file:///d:/AI-OS/projects/font-showcase/capture_all_frames.js) | File | Playwright CLI capture script rendering raw SVGs and HTMLs for QA audit. | AIOS |
 | [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/) | Junction | Premium frontend experience design system vault mapped from external documents. | Operator / AIOS |
+
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
 | [templates/aios](file:///d:/AI-OS/templates/aios) | Junction | Directory junction pointing to the AIOS wiki templates (`brain-aios/wiki/templates`). | AIOS |
 | [templates/zorixel](file:///d:/AI-OS/templates/zorixel) | Junction | Directory junction pointing to the Zorixel wiki templates (`second-brain-zorixel/wiki/templates`). | AIOS |
@@ -55,6 +60,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [references/context7-api.md](file:///d:/AI-OS/references/context7-api.md) | File | Context7 Upstash endpoint retrieval documentation. | AIOS |
 | [references/figma-api.md](file:///d:/AI-OS/references/figma-api.md) | File | Figma remote MCP server tools and OAuth setup. | AIOS |
 | [references/github-api.md](file:///d:/AI-OS/references/github-api.md) | File | GitHub repository and pull request MCP endpoints reference guide. | AIOS |
+| [references/global-rules-conflict-resolution.md](file:///d:/AI-OS/references/global-rules-conflict-resolution.md) | File | Conflict resolution guide for global design rules (impeccable vs. ui-ux-pro-max). | AIOS |
 | [references/gws-api.md](file:///d:/AI-OS/references/gws-api.md) | File | Google Workspace CLI account switching and credential profile configuration. | AIOS |
 | [references/magic-api.md](file:///d:/AI-OS/references/magic-api.md) | File | Magic MCPS Component builder and design inspiration API guide. | AIOS |
 | [references/notion-api.md](file:///d:/AI-OS/references/notion-api.md) | File | Notion MCP database and pages sync reference. | AIOS |
@@ -134,6 +140,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/canvas-design/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/canvas-design/) | Folder | Static reference library for Canvas Design styles and templates. | AIOS |
 | [brain-aios/wiki/research/skills-library/threejs-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/threejs-skills/) | Folder | Static reference library for Three.js, shaders, and R3F. | AIOS |
 | [brain-aios/wiki/research/skills-library/gsap-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/gsap-skills/) | Folder | Static reference library for GSAP, ScrollTrigger, and timelines. | AIOS |
+| [brain-aios/wiki/research/skills-library/seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/) | Folder | Static reference library containing SEO audit guidelines and validation scripts. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
 | [second-brain-zorixel/wiki/research/jordan-watkins-reference/](file:///d:/AI-OS/second-brain-zorixel/wiki/research/jordan-watkins-reference/) | Folder | Mirrored assets, design scripts, and visual analysis of jordanwatkins.xyz. | AIOS |
 
