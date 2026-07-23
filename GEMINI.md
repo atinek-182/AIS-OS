@@ -43,6 +43,8 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/agent-reach` — Unified multi-platform search & reader capability engine across 10+ social/web platforms (YouTube, Bilibili, V2EX, Twitter, Reddit, RSS).
 - `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
+- `/gstack` — Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit).
+
 
 
 ## Where things live

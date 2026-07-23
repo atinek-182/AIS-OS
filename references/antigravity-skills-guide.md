@@ -104,4 +104,14 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 *   **Purpose:** Access and modify remote database boards, checklists, and logs.
 *   **Installation Command:** Registers `@notionhq/notion-mcp-server` globally in `mcp_config.json`.
 
+---
+
+## 🏛️ 14. GStack Virtual Engineering Team (`gstack`)
+*   **Purpose:** Organizes the agent into an executive engineering team (CEO strategy, EM architecture, UI/UX design, browser QA, release audit) to evaluate features, code changes, and UI layouts before shipping.
+*   **Repository:** [garrytan/gstack](https://github.com/garrytan/gstack)
+*   **Active Local Skill:** `.agents/skills/gstack/SKILL.md` (`/gstack`)
+*   **Reference Manual:** `brain-aios/wiki/research/skills-library/gstack/README.md`
+*   **Dynamic Triggering:** Automatically triggers during planning, code reviews, design audits, or visual QA without needing to type `/gstack` explicitly.
+
+
 

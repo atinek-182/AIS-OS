@@ -101,7 +101,7 @@ const path = require('path');
     consoleErrors.forEach(err => console.log('ERROR:', err));
     process.exit(2);
   }} else {{
-    console.log('>>> Visual QA complete: 0 console errors found.');
+    console.log('>>> [GStack QA Audit] Visual QA complete: 0 console errors found across all 5 viewports.');
     process.exit(0);
   }}
 }})().catch(err => {{

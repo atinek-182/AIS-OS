@@ -53,6 +53,14 @@
 - **yt-dlp JS Runtime Rule**: Always ensure `C:\Users\HP\AppData\Roaming\yt-dlp\config` contains `--js-runtimes node` to guarantee YouTube video subtitle and metadata extraction stability.
 - **Brave Browser Bridge Compatibility Rule**: When running browser-session bridge tools (`OpenCLI`, Playwright), recognize Brave as a Chromium-compatible browser utilizing `brave://extensions` for unpacked extension loading.
 
+## GStack Virtual Engineering Team Dynamic Invocation Rules
+- **Automatic GStack Executive Review**: Whenever creating a feature plan, refactoring code, or designing a frontend interface, the AI agent MUST dynamically apply Garry Tan's GStack review rules without requiring an explicit `/gstack` slash command:
+  1. **CEO Lens (`/gstack ceo`)**: Verify user value, MVP scope discipline, and visual wow factor before writing code.
+  2. **EM Lens (`/gstack eng`)**: Enforce surgical edits, zero speculative abstractions, and type safety during implementation.
+  3. **Designer Lens (`/gstack design`)**: Enforce custom typography, dark mode palettes, micro-interactions, and 5-viewport responsiveness.
+  4. **QA Lens (`/gstack qa`)**: Execute Playwright headless browser testing and console error checks before claiming completion.
+
+
 
 
 

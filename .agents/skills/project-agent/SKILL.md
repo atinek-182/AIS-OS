@@ -36,11 +36,14 @@ This skill allows the user to delegate complex features, refactoring, or debuggi
    Your task is: [Task Description]
 
    You must run strictly under the following rules:
-   1. Follow the Superpowers workflow:
-      - Brainstorm and create a plan first (using brainstorming or plan-first workflows).
+   1. Follow the Superpowers & GStack workflow:
+      - Brainstorm and create a plan first (using brainstorming, plan-first, or /gstack ceo scope check).
+      - Apply EM Lens (/gstack eng) for surgical edits, zero speculative abstractions, and type safety.
+      - Apply Designer Lens (/gstack design) for custom typography, dark mode palettes, and responsive layouts.
       - Write failing tests first (TDD) and verify they fail before writing solution code.
-      - Implement the solution.
-      - Verify the solution programmatically (run tests, compile, run lints).
+      - Implement the solution cleanly.
+      - Verify programmatically using QA Lens (/gstack qa) — run Playwright browser tests, check console for 0 errors, compile, and run lints.
+
    2. Automatically document your work:
       - Locate or create a `walkthrough.md` file at the root of this project folder.
       - Update it with a detailed log of the changes made, tests run, and verification results.

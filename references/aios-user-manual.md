@@ -124,7 +124,19 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/vibesec` when working on web application backends or reviewing code security.
   - The AIOS will audit the active routes, database interactions, and headers against the security checklist and recommend mitigations.
 
+### 18. `/gstack` (Garry Tan's Virtual Engineering Team Workflow)
+- **Purpose:** Organizes the agent into an executive engineering team (CEO strategy, EM architecture, UI/UX design, browser QA, release audit) to evaluate features, code changes, and UI layouts before shipping.
+- **How to Use:**
+  - Type `/gstack` (or specific roles: `/gstack ceo`, `/gstack eng`, `/gstack design`, `/gstack qa`, `/gstack full`).
+  - **Dynamic Triggering**: Automatically triggers during planning, code reviews, design audits, or visual QA without needing to type `/gstack` explicitly.
+- **Role Breakdown:**
+  - `CEO`: Product vision, market viability, user delight, MVP scope discipline.
+  - `ENG`: Surgical code edits, architecture simplicity, type safety, performance.
+  - `DESIGN`: Custom typography, dark mode contrast, micro-interactions, responsive sizing.
+  - `QA`: Playwright headless browser testing, console log audits, 5-viewport screenshot checks.
+
 ---
+
 
 
 
