@@ -31,7 +31,7 @@ Use this skill to compile a premium visual style guide and design concept before
      - **First 5-Second Impression**
      - **Typography Scale** (Major Third or Golden Ratio, letter spacing, font families)
      - **Color System & OKLCH Theme** (semantic tokens, backgrounds, locked OKLCH theme variables)
-     - **Layout Grid & Spacing** (gutters, containers max-width `1440px`, screen margins)
+     - **Layout Grid & Spacing (Obys Agency Canons)** (Selected archetype: 12/10/8 Column Grid with 30px/60px/80px margins & 20px gutters, Van De Graaff Golden Canon with diagonal Power Lines, Rectangular/Modular Grid, or Horizontal Baseline Rhythm with $\text{fontSize} \times \text{lineHeight}$ unit math)
      - **Component Styling** (Tailwind v4 tokens, borders, shadow styles)
      - **Motion Language** (Transitions, curves like `cubic-bezier(0.16, 1, 0.3, 1)`)
      - **WebGL/Shader Decision** (Justification, fallback, mobile behavior)

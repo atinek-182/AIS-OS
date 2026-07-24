@@ -827,6 +827,28 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 
 
+---
 
+## 2026-07-24 — System Improvement: Obys Grid System Deep Research & System Integration
+
+**Decision:** Conducted deep visual Playwright research and text corpus extraction across all 4 chapters of **Grids by Obys Agency** (`https://grids.obys.agency/`). Integrated Obys' 4 Grid Canons (Column Grid, Van De Graaff Golden Canon, Rectangular/Modular Grid, and Horizontal Baseline Grid) into the AIOS design system.
+- Created `premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md`.
+- Logged experience in `brain-aios/wiki/experiences/2026-07-24-obys-grid-system-mastery.md` and updated `context/experiences/README.md`.
+- Updated persistent system memory (`MEMORY.md`) with Grid Calculation Rules & Baseline Vertical Rhythm formulas.
+- Updated `WORKSPACE_MAP.md` and ran pre-commit verification.
+
+**Why:** Elevates the AIOS design brain with professional grid systems math, layout formulas, and layout principles directly from Obys Agency.
+
+---
+
+## 2026-07-24 — Site Ingestion: The Shift Tokyo (`the-shift-tokyo`)
+
+**Decision:** Completed full site mirroring, visual screenshot capture (5 viewports), raw code extraction (React TSX components, Tokyo live clock widget, GSAP kinetic animations, OKLCH design tokens, WebGL GLSL liquid distortion shader), hyper-detailed visual wireframe blueprint (`wireframe.html` & `wireframe.png`), 5-layer site DNA analysis, deep technical analysis, and dot-to-dot 15-category master reference manual for **The Shift Tokyo** (`https://theshift.tokyo/en/`).
+- Updated `premium-frontend-experience-system/vault-references/INDEX.md` registering `the-shift-tokyo-granularity-master.md`.
+- Marked Site #6 as completed in `premium-frontend-experience-system/reference-inputs/INGESTION_QUEUE.md`.
+
+**Why:** Enforces strict sequential one-by-one reference ingestion, capturing avant-garde Japanese digital agency design patterns and real-time timezone mechanics.
+
+**Owner:** Antigravity AIOS
 
 

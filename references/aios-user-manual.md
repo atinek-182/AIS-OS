@@ -113,6 +113,12 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
   - Type `/ingest-repo [repo_url]` (e.g. `/ingest-repo https://github.com/nutlope/hallmark`).
 
 
+### 17. Obys Grid Engine & Layout Systems
+- **Purpose:** Standard Operating Procedure (`SOP-GRID-001`) codifying Obys Agency's 4 Grid Archetypes (12/10/8 Column Grid with 30px/60px/80px margins & 20px gutters, Van De Graaff Golden Canon with diagonal Power Lines, Rectangular/Modular Grid, and Horizontal Baseline Rhythm).
+- **How to Use:**
+  - Automatically invoked during `/design-direction` and `/hallmark` design scaffolding.
+  - See `premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md` and `brain-aios/wiki/sops/grid-systems-sop.md` for layout formulas and baseline calculations.
+
 ### 15. `/agent-reach` (Multi-Platform Internet Capability Engine)
 - **Purpose:** Grants single-command internet search, reading, and diagnostic access across 10+ social & web platforms (YouTube subtitles, Bilibili zero-login search, V2EX tech feeds, GitHub, Reddit, RSS, Twitter/X, Exa AI Web Search).
 - **How to Use:**

@@ -79,8 +79,19 @@ All site extractions are registered in the centralized vault index:
 
 📄 **[`premium-frontend-experience-system/vault-references/INDEX.md`](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/INDEX.md)**
 
-Each entry includes:
-- Direct markdown links to raw mirrored HTML, JS bundles, CSS stylesheets, custom font folders.
-- Direct markdown links to raw extracted `.tsx` components, `.js` animation scripts, `.glsl` shaders.
-- Direct markdown links to WebP browser interaction recordings and 5 viewport PNG screenshots.
-- Granular breakdown of micro & macro web decisions.
+---
+
+## 4. Ultra-Exhaustive 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`) Standard
+
+Every site MUST include `premium-frontend-experience-system/reference-inputs/sites/[site-slug]/DEEP_ANALYSIS.md` as an exhaustive 100+ line research document covering:
+1. **Executive Summary & Studio/Award Pedigree:** Web search via `search_web` for studio background, Awwwards, FWA, CSSDA awards, client context, and case study details.
+2. **Visual & Aesthetic Design Psychology:** Color contrast, OKLCH tokens, spatial density, dark/light theme switching, brand positioning.
+3. **Typography Architecture & Micro-Kerning:** Font stacks, SplitText wrappers, baseline vertical rhythm formulas ($\text{fontSize} \times \text{lineHeight}$), special glyph compressing (e.g., `YakuHanJP`).
+4. **Grid Math & Responsive Geometry:** 24 micro-column division, `--gw` ratio formulas, breakpoints, margin/gutter scales.
+5. **Full-Stack Source Code & JavaScript Engineering:** Analysis of JS bundles (`prod-desktop.js`, `SplatsWorker-DSMxtdkh.js`), animation hooks (`.js-split-l`, `.js-inview`, `.flip`, `.js-clip`), Barba.js page routing, Alpine.js reactivity.
+6. **WebGL Shader Pipeline & Canvas Math:** GLSL fragment shaders, uniforms (`uTime`, `uProgress`, `uMouse`), texture sampling, FPS optimization.
+7. **Dynamic Interactive Widgets & Timezone/Audio Mechanics:** Real-time clock widgets, JST calculations, DOM hydration, kanji typography pairing, audio streams.
+8. **UX Psychology & Micro-Interactions:** Difference blend mode cursor physics, SVG progress rings `getPointAtLength()`, slide index counters.
+9. **Media & Preloading Pipeline:** MP4/WebM video preloading, CloudFront CDN routing, responsive image scaling.
+10. **AIOS System Integration & Reusable Code Blueprints:** Direct links to runnable React components, CSS tokens, GSAP scripts, GLSL shaders.
+

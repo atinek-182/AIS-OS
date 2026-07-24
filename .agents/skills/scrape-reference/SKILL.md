@@ -66,6 +66,22 @@ For complete technical specifications, network interceptor schemas, and deep arc
    - **Proactive Site Exploration:** Every website has its own unique tech stack, custom components, novel scripts, canvas shaders, SVG physics, or interaction models. The AI agent MUST proactively inspect, discover, extract, and document **EVERY SINGLE novel element, component, script, animation, shader, 3D model, Rive file, and interaction** present on that specific website — even if not explicitly named in an example list.
    - **Dynamic Custom Subfolders:** If a target features a novel technology or pattern (e.g., audio-reactive UI, 3D product customizer, fluid simulations, custom physics canvas, WebRTC, drag physics), create a dedicated subfolder/section for it automatically (`code-extracts/[novel-feature]/`).
 
+7. **Mandatory Web Research & 10-Pillar Ultra-Exhaustive Deep Analysis (`DEEP_ANALYSIS.md`):**
+   - For EVERY ingested site, perform web research via `search_web` to retrieve studio background, Awwwards/FWA/CSSDA awards, client context, and case study details.
+   - Write `premium-frontend-experience-system/reference-inputs/sites/[site-slug]/DEEP_ANALYSIS.md` as a comprehensive 10-pillar research document (100+ lines). Short 20-30 line summaries or placeholders are STRICTLY FORBIDDEN.
+   - The 10 mandatory pillars are:
+     1. Executive Summary & Studio/Award Pedigree
+     2. Visual & Aesthetic Design Psychology
+     3. Typography Architecture & Micro-Kerning
+     4. Grid Math & Responsive Geometry
+     5. Full-Stack Source Code & JavaScript Engineering
+     6. WebGL Shader Pipeline & Canvas Math
+     7. Dynamic Interactive Widgets & Timezone/Audio Mechanics
+     8. UX Psychology & Micro-Interactions
+     9. Media & Preloading Pipeline
+     10. AIOS System Integration & Reusable Code Blueprints
+
+
 
 ---
 
@@ -80,8 +96,8 @@ For target site `[site-slug]`:
     - `animations/` — Raw GSAP timelines, Lenis scroll setups, physics math (`.js`)
     - `shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shaders (`.glsl`)
     - `styles/` — OKLCH design tokens, CSS keyframes, inline styles (`.css`)
-  - `site-dna.md` — 5-layer site DNA report with embedded code blocks and file links
-  - `DEEP_ANALYSIS.md` — Detailed analysis report
+   - `site-dna.md` — 5-layer site DNA report with embedded code blocks and file links
+   - `DEEP_ANALYSIS.md` — Ultra-exhaustive 10-pillar architectural & web research analysis (studio pedigree, awards, design psychology, typography micro-kerning, grid math, JS bundle engineering, GLSL shader math, timezone/clock mechanics, cursor physics, and reusable code blueprints). MUST NOT be a brief summary or short placeholder.
 - `premium-frontend-experience-system/vault-references/`
   - `INDEX.md` — Central vault reference index
   - `[site-slug]-granularity-master.md` — 14-category dot-to-dot master reference manual
