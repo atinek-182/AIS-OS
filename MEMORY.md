@@ -45,11 +45,9 @@ This file logs cross-session learnings, operational preferences, and recurring c
 21. **Sequential One-by-One Queue Discipline**: When processing a queue of items (such as the 18 reference websites queue), process EXACTLY ONE SITE AT A TIME. Complete site $N$ fully, present all raw file links, update queue tracking, and STOP to await explicit user confirmation before touching site $N+1$.
 22. **Hyper-Detailed Visual UI/UX Wireframes**: Never output basic placeholder shapes or raw Excalidraw JSON strings for wireframe requests. All reference site ingestion wireframes MUST be hyper-detailed, section-by-section HTML visual pages (`wireframe.html`) and Playwright screenshots (`wireframe.png`) containing real site copy, real headlines, component spec tags (`COMPONENT: HEADER / NAV SYSTEM`), 3D stage boxes (`canvas#canvas`), 12-column grid overlays, and explicit technical annotations.
 23. **Obys Grid System & Layout Principles**: Master the 4 Obys Grid Archetypes (12/10/8 Column Grid, Van De Graaff Golden Canon, Rectangular/Modular Grid, and Horizontal Baseline Grid). Apply standard screen margins (`30px` mobile, `60px` laptop, `80px` desktop) and constant `20px` gutters. Calculate vertical rhythm baseline units via $\text{fontSize} \times \text{lineHeight}$ ($14\text{px}-16\text{px} \times 1.5 = 24\text{px}$) and lock all vertical padding and element margins to integer multiples of the baseline unit. Anchor key editorial elements to diagonal 'Power Lines' before scaling.
-
-
+24. **Dual-Stack Reference Vault Architecture**: The 18-site reference vault in `premium-frontend-experience-system/` combines 100% untouched raw site mirrors (documented via 10-pillar research reports in `site-dna.md` & `DEEP_ANALYSIS.md`) with standardized React/TypeScript and CSS token extracts under `code-extracts/` for fast component reuse across the Zorixel AIOS ecosystem.
 
 ---
-
 
 ## 🎨 Zorixel Design Taste & Visual Guidelines
 - **Visual Identity (Light Editorial)**: The brand uses a premium print Editorial Magazine theme: warm linen off-white paper canvas background (`#fbfaf7`), dark charcoal text (`#141413`), and very sparse brand coral highlights (`#ff6b4a` - under 10% screen space).
