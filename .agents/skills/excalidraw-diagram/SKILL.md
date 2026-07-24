@@ -1,7 +1,20 @@
 ---
 name: excalidraw-diagram
-description: Use when someone asks to draw a diagram, make an Excalidraw diagram, or build an editable diagram. Default for all diagram requests.
+description: Use when someone asks to draw a diagram, make an Excalidraw diagram,
+  or build an editable diagram. Default for all diagram requests. Invokable directly
+  via /excalidraw-diagram.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/excalidraw-diagram [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/excalidraw-diagram` or by reading `SKILL.md` directly.
+
+
 
 ## Workflow
 

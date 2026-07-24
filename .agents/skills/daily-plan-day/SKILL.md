@@ -1,7 +1,19 @@
 ---
 name: daily-plan-day
-description: Use when the user wants to plan their day, start a morning routine, or generate a daily schedule.
+description: Use when the user wants to plan their day, start a morning routine, or
+  generate a daily schedule. Invokable directly via /daily-plan-day.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/daily-plan-day [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/daily-plan-day` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

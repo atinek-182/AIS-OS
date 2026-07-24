@@ -5,6 +5,8 @@
 - **2026-07-24**: [2026-07-24-18-site-reference-ingestion-completion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-18-site-reference-ingestion-completion.md) — 18-Site Reference Ingestion Campaign Completion & Dual-Stack Vault Architecture.
 - **2026-07-24**: [2026-07-24-curated-component-libraries-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-curated-component-libraries-ingestion.md) — Curated UI Component Libraries Ingestion, 100% URL/CLI Mapping & System Integration.
 - **2026-07-24**: [2026-07-24-os-audit-drill-and-three-batch-reconciliation.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-os-audit-drill-and-three-batch-reconciliation.md) — OS Audit 6-Check Framework, Path Routing Repair & 3-Batch System Reconciliation.
+- **2026-07-24**: [2026-07-24-unified-website-design-engine.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-unified-website-design-engine.md) — Unified Website Creation Engine, Phase-Gated Progressive Disclosure & Auto-Evolution Protocol.
+
 
 
 

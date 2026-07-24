@@ -1,9 +1,21 @@
 ---
 name: scrape-carousel
-description: Automatically scrape, screenshot, and extract design references from a public Instagram or social media carousel URL.
+description: Automatically scrape, screenshot, and extract design references from
+  a public Instagram or social media carousel URL. Invokable directly via /scrape-carousel.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Scrape Carousel
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/scrape-carousel [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/scrape-carousel` or by reading `SKILL.md` directly.
+
 
 You are the Zorixel AI Scraper. Your task is to navigate to a public Instagram carousel URL, purge any login popups, and automatically extract clean, cropped screenshots of all individual slides to serve as visual references.
 

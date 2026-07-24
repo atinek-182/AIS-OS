@@ -1,7 +1,13 @@
 ---
 name: audit
-description: Use when someone asks for an AIOS audit, asks to score their setup against the Four Cs, or says "is my AIOS working" / "audit my setup" / "find gaps in my AIOS". Produces a Four-Cs scoreboard with top-3 fixes ranked by leverage.
+description: Use when someone asks for an AIOS audit, asks to score their setup against
+  the Four Cs, or says "is my AIOS working" / "audit my setup" / "find gaps in my
+  AIOS". Produces a Four-Cs scoreboard with top-3 fixes ranked by leverage. Invokable
+  directly via /audit.
+argument-hint: '[optional parameters]'
 ---
+
+
 
 ## What this skill does
 
@@ -132,6 +138,14 @@ Print directly in chat (Markdown). Format:
 
 ```
 # AIOS Audit — {date}
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/audit [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/audit` or by reading `SKILL.md` directly.
+
 **Score: {total}/100** ({stage})
 
 Stage thresholds:

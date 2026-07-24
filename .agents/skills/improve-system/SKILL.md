@@ -1,10 +1,22 @@
 ---
 name: improve-system
-description: Analyze the current session transcript to update skill instructions, save lessons, update memory, audit web/code security, prune stale configurations, and push all changes to main branch.
-argument-hint: "[optional focus or specific file]"
+description: Analyze the current session transcript to update skill instructions,
+  save lessons, update memory, audit web/code security, prune stale configurations,
+  and push all changes to main branch. Invokable directly via /improve-system.
+argument-hint: '[optional focus or specific file]'
 ---
 
+
+
 # System Self-Improvement, Security Audit & Deployment Workflow
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/improve-system [optional focus or specific file]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/improve-system` or by reading `SKILL.md` directly.
+
 
 Use this skill when you finish a major milestone, significantly refine a custom skill, solve complex bugs, or run an end-of-session system enhancement. This skill extracts lessons, enforces empirical verification, performs security audits, updates persistent memory, maintains workspace hygiene, and commits and pushes all updates to the `main` branch.
 

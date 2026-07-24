@@ -10,49 +10,50 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 
 ## Your skills
 
-- `/onboard` — already run if you're seeing this filled in. Re-run any time to refresh from an edited `context/aios-intake.md`.
-- `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
-- `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
-- `/marketing` — Copywriting and marketing copy dynamic router referencing Corey Haynes' library.
 - `/agent-adapt` — Scan and tweak files/skills to migrate them from Claude Code to Antigravity.
+- `/agent-reach` — Unified multi-platform search & reader capability engine across 10+ social/web platforms (YouTube, Bilibili, V2EX, Twitter, Reddit, RSS).
+- `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
+- `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
+- `/brand-colors` — Automate brand color palette selection, interactive swatch creation, and WCAG contrast audits.
+- `/canvas-design` — Programmatic visual assets and canvas generator dynamic router.
+- `/carousel-copy` — Plan viral slide copy outlines, visual structures, and layouts.
+- `/carousel-render` — Compile slide HTML pages and render final social slide PNGs.
+- `/context7` — Query up-to-date documentation and code examples via Context7.
 - `/daily-plan-day` — Daily morning loop. Pulls task checklists, priorities, and Google Calendar events to schedule your day.
 - `/daily-review-day` — Daily evening loop. Reviews completed tasks, logs accomplishments, and audits manual overhead.
-- `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
-- `/scrape-carousel` — Scrapes and extracts visual slide references and copy outlines from Instagram carousels.
-- `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
+- `/design-direction` — Visual design direction and roast council generator.
 - `/draft-message` — Message drafting assistant. Generates on-brand variations for DMs, emails, and comments.
+- `/excalidraw-diagram` — Visual workflow and architecture diagram generator.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.
+- `/frontend-slides` — Programs 16:9 responsive HTML presentation deck layouts.
 - `/grill-me` — Stress-test a plan, get grilled on a design, or extract ideas to brainstorm files.
-- `/roast` — Stress-test an idea, validate a business model, or get a brutal second opinion via an adversarial council.
-- `/session-handoff` — Generate a clean end-of-session summary so you can clear context and resume work without losing state.
-- `/using-superpowers` — Establishes how to find and use skills, requiring skill invocation before any response.
-- `/context7` — Query up-to-date documentation and code examples via Context7.
-- `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
-- `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
-- `/project-agent` — Scoped background developer agent runner inside project subdirectories.
-- `/brand-colors` — Automate brand color palette selection, interactive swatch creation, and WCAG contrast audits.
-- [/carousel-copy] — Plan viral slide copy outlines, visual structures, and layouts.
-- [/carousel-render] — Compile slide HTML pages and render final social slide PNGs.
-- `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
-- `/verify-design` — Run automated visual QA and Playwright console audits.
-- `/ingest-skills` — Upgraded alias routing directly to /ingest-repo engine.
-- `/ingest-repo` — Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, and skill adaptation engine.
-- `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
-- `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
-- `/scrape-web` — Scrapes web content, parses DOM elements, bypasses anti-bot blocks via Scrapling engine.
-- `/agent-reach` — Unified multi-platform search & reader capability engine across 10+ social/web platforms (YouTube, Bilibili, V2EX, Twitter, Reddit, RSS).
-- `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
-- `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 - `/gstack` — Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit).
 - `/hallmark` — Together AI anti-AI-slop design engine (21 macrostructures, 20 color themes, 57 quality gates, audit/redesign/study verbs).
-- `/os-audit` — Read-only drift, freshness, routing integrity, index truth, bloat, and context placement audit of the AIOS.
-- `/canvas-design` — Programmatic visual assets and canvas generator dynamic router.
-- `/design-direction` — Visual design direction and roast council generator.
-- `/excalidraw-diagram` — Visual workflow and architecture diagram generator.
-- `/frontend-slides` — Programs 16:9 responsive HTML presentation deck layouts.
+- `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
+- `/ingest-repo` — Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, and skill adaptation engine.
+- `/ingest-skills` — Upgraded alias routing directly to /ingest-repo engine.
+- `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
+- `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
+- `/marketing` — Copywriting and marketing copy dynamic router referencing Corey Haynes' library.
 - `/new-project` — Scaffolds project directory, design/asset briefs, and starts discovery Q&A.
+- `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
+- `/onboard` — Re-run any time to refresh context from `context/aios-intake.md`.
+- `/os-audit` — Read-only drift, freshness, routing integrity, index truth, bloat, and context placement audit of the AIOS.
+- `/project-agent` — Scoped background developer agent runner inside project subdirectories.
+- `/roast` — Stress-test an idea, validate a business model, or get a brutal second opinion via an adversarial council.
+- `/scrape-carousel` — Scrapes and extracts visual slide references and copy outlines from Instagram carousels.
+- `/scrape-competitor` — Scrapes and analyzes competitor feeds, ingesting structured reels/posts research.
+- `/scrape-component` — Extract a specific UI component, animation, or style from a website URL.
+- `/scrape-reference` — Scrape, mirror, and analyze a website for brand reference or premium frontend design reference.
+- `/scrape-web` — Scrapes web content, parses DOM elements, bypasses anti-bot blocks via Scrapling engine.
+- `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
+- `/session-handoff` — Generate a clean end-of-session summary so you can clear context and resume work without losing state.
 - `/skill-builder` — Workspace custom skill optimization and quality audit tool.
 - `/slide-component` — Injects custom components and animations into slide layouts.
+- `/using-superpowers` — Establishes how to find and use skills, requiring skill invocation before any response.
+- `/verify-design` — Run automated visual QA and Playwright console audits.
+- `/vibesec` — Web application secure coding guide and vulnerability scanner audit.
+- `/website-design-engine` — Master website creation engine synthesizing 13 design skills, 147 UI components, Obys grid math, Hallmark anti-slop, and 5-viewport QA.
 
 
 

@@ -1,9 +1,22 @@
 ---
 name: marketing
-description: Use when copywriting, writing or improving marketing copy, headlines, CTAs, landing page copy, value propositions, taglines, email sequences, or drafting Instagram reels/captions.
+description: Use when copywriting, writing or improving marketing copy, headlines,
+  CTAs, landing page copy, value propositions, taglines, email sequences, or drafting
+  Instagram reels/captions. Invokable directly via /marketing.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Marketing & Copywriting Router Skill
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/marketing [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/marketing` or by reading `SKILL.md` directly.
+
 
 When this skill is triggered, you will route the copywriting or marketing task using the reference libraries in the static skills-library.
 

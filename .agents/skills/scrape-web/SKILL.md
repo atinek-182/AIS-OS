@@ -1,10 +1,20 @@
 ---
 name: scrape-web
-description: Scraping, dynamic HTML parsing, anti-bot bypass, and adaptive element extraction using Scrapling engine. Use when scraping web content, extracting structured text/DOM elements, or fetching dynamic/stealth web pages.
-argument-hint: [url] [--mode fast|dynamic|stealth] [--css selector]
+description: Scraping, dynamic HTML parsing, anti-bot bypass, and adaptive element
+  extraction using Scrapling engine. Invokable directly via /scrape-web.
+argument-hint: '[url] [--mode fast|dynamic|stealth] [--css selector]'
 ---
 
+
 # Scrape Web Skill (Scrapling Engine)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/scrape-web [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/scrape-web` or by reading `SKILL.md` directly.
+
 
 Use this skill whenever you need to scrape live web pages, bypass anti-bot mechanisms, extract structured DOM elements, or fetch content resiliently without manual site mirroring.
 

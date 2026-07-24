@@ -1,7 +1,21 @@
 ---
 name: level-up
-description: Use weekly to find and ship one new automation. Walks the 3Ms interview — Mindset (find the candidate) → Method (scope one) → Machine (build it). Trigger on "let's level up", "what should I automate next", "find me leverage this week", or as a Friday ritual. One run = one shipped artifact.
+description: Use weekly to find and ship one new automation. Walks the 3Ms interview
+  — Mindset (find the candidate) → Method (scope one) → Machine (build it). Trigger
+  on "let's level up", "what should I automate next", "find me leverage this week",
+  or as a Friday ritual. One run = one shipped artifact. Invokable directly via /level-up.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/level-up [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/level-up` or by reading `SKILL.md` directly.
+
+
 
 ## What this skill does
 

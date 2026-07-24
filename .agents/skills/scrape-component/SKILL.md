@@ -1,9 +1,22 @@
 ---
 name: scrape-component
-description: Extract a specific UI component, animation, or style from a website URL. Conducts a target-selection Q&A, downloads only relevant code and assets, hosts a local test server, and performs a visual audit.
+description: Extract a specific UI component, animation, or style from a website URL.
+  Conducts a target-selection Q&A, downloads only relevant code and assets, hosts
+  a local test server, and performs a visual audit. Invokable directly via /scrape-component.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Scrape Component Skill
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/scrape-component [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/scrape-component` or by reading `SKILL.md` directly.
+
 
 Use this skill when the user likes a specific component, effect, or animation on a website and wants to extract only that element (and its dependencies) instead of mirroring the entire website.
 

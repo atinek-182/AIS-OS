@@ -1,10 +1,24 @@
 ---
 name: hallmark
-description: "Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots. Use when the user asks to build a new app or landing page, wants to redesign something, invokes Hallmark by name, or uses audit/redesign/study."
+description: Anti-AI-slop design skill for greenfield pages, audits, redesigns, and
+  design extraction from URLs or screenshots. Use when the user asks to build a new
+  app or landing page, wants to redesign something, invokes Hallmark by name, or uses
+  audit/redesign/study. Invokable directly via /hallmark.
 version: 1.1.0
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Hallmark
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/hallmark [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/hallmark` or by reading `SKILL.md` directly.
+
 
 A design skill for AI coding assistants. Makes the UIs they generate look made, not generated.
 

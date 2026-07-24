@@ -1,10 +1,23 @@
 ---
 name: gstack
-description: "Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit). Automatically triggers when reviewing plans, auditing code, evaluating feature value, checking UI quality, or running executive reviews — even without explicit /gstack command."
-argument-hint: "[ceo | eng | design | qa | full] [optional target or plan]"
+description: Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture,
+  UI/UX design, browser QA, release audit). Automatically triggers when reviewing
+  plans, auditing code, evaluating feature value, checking UI quality, or running
+  executive reviews — even without explicit /gstack command.
+argument-hint: '[ceo | eng | design | qa | full] [optional target or plan]'
 ---
 
+
+
 # `gstack` — Garry Tan's AI Engineering Team Workflow
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/gstack [ceo | eng | design | qa | full] [optional target or plan]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/gstack` or by reading `SKILL.md` directly.
+
 
 Use `/gstack` (or invoke naturally via phrases like "run Garry Tan review", "GStack review", "CEO product check", "EM architecture audit", "UI/UX design review", or "QA browser audit") whenever you want to evaluate a project, plan, feature, or code change through Garry Tan's Virtual Engineering Team (CEO, Engineering Manager, UI/UX Designer, QA Officer, Security/Release Officer).
 

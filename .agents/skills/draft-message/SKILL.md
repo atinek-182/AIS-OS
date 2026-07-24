@@ -1,8 +1,21 @@
 ---
 name: draft-message
-description: Use when the user wants to draft an Instagram DM, reply to an email, or write comments/replies using the ZORIXEL brand voice.
-argument-hint: [recipient and context]
+description: Use when the user wants to draft an Instagram DM, reply to an email,
+  or write comments/replies using the ZORIXEL brand voice. Invokable directly via
+  /draft-message.
+argument-hint:
+- recipient and context
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/draft-message ['recipient and context']` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/draft-message` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

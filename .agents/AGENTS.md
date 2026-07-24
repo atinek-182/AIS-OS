@@ -78,3 +78,13 @@
 
 ## Curated UI Component Registry & Sourcing Rule
 - **Mandatory Component Sourcing Rule**: Whenever building web interfaces, landing pages, or UI components for ZORIXEL or client projects, Antigravity MUST query `premium-frontend-experience-system/source-registries/component-registry-index.json` (or run `python scripts/component_registry_cli.py search <query>`) to locate and install/adapt a matching component from the 4 curated libraries (Aceternity UI, Animate UI React, Forge UI, Vengence UI) via `npx shadcn@latest add ...` instead of building generic components from scratch. Styling, colors, and content may be customized per project, but the underlying component pattern must come from this collection.
+
+## Tri-Mode Skill Execution & Inter-Skill Calling Protocol
+- **Tri-Mode Invocation Modes**: Every skill in the workspace (`.agents/skills/`) is invokable through three distinct, fully compatible mechanisms:
+  1. **Slash Command Mode (`/skill-name [args]`)**: Direct chat execution when invoked with a leading slash.
+  2. **Dynamic Intent Mode (Natural Language)**: Automatic keyword matching based on task context, user intent, and frontmatter `description`.
+  3. **Inter-Skill & AIOS Programmatic Calling**: Any skill, subagent, or automated AIOS loop can programmatically invoke another child skill either by referencing `/<skill-name> [args]` or reading its target `SKILL.md` directly (`view_file`).
+- **Inter-Skill Context Preservation**: When a parent skill (e.g. `/website-design-engine` or `/ingest-repo`) delegates to child skills (e.g. `/hallmark`, `/verify-design`, `/brand-colors`, `/gstack`), the parent passes current parameters cleanly without losing workflow context.
+## Master Website Creation & Auto-Evolution Rule
+- **Unified Master Web Creation Engine**: Whenever asked to build a website or landing page from scratch, use `.agents/skills/website-design-engine/SKILL.md`. Enforce Phase 0 Intent Discovery Q&A, query `component_registry_cli.py` for matching components out of the 147 cataloged, load phase reference files dynamically (`references/01-06.md`), run 5-viewport Playwright visual QA via `verify_design_milestone.py`, and automatically persist new design lessons via Phase 7 Auto-Evolution.
+

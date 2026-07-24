@@ -1,10 +1,21 @@
 ---
 name: project-agent
-description: Delegate a complex coding task or feature development to an autonomous developer subagent running in the background of a specific project directory. Use this skill when you want to run a major task, implement a feature, or resolve a bug inside a specific folder in the projects/ directory (e.g. Websites, Zorixel brand, etc.) without cluttering the main conversation window. Format: /project-agent [project-name] "[task description]"
-argument-hint: "[project-name] \"[task description]\""
+description: Delegate a complex coding task or feature development to an autonomous
+  developer subagent running in the background of a specific project directory. Invokable
+  directly via /project-agent.
+argument-hint: '[project-name] "[task description]"'
 ---
 
+
 # Scoped Project Developer Agent
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/project-agent [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/project-agent` or by reading `SKILL.md` directly.
+
 
 This skill allows the user to delegate complex features, refactoring, or debugging tasks to an autonomous developer agent running in the background of a specific project directory under `d:\AI-OS\projects\`.
 

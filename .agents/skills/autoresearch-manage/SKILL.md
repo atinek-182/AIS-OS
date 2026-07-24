@@ -1,10 +1,21 @@
 ---
 name: autoresearch-manage
-description: Use when managing Autoresearch loop targets — adding new optimization trials, removing obsolete ones, or registering folders.
-argument-hint: "[add|remove] [target-name]"
+description: Use when managing Autoresearch loop targets — adding new optimization
+  trials, removing obsolete ones, or registering folders. Invokable directly via /autoresearch-manage.
+argument-hint: '[add|remove] [target-name]'
 ---
 
+
+
 # Autoresearch Loop Targets Manager
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/autoresearch-manage [add|remove] [target-name]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/autoresearch-manage` or by reading `SKILL.md` directly.
+
 
 This skill helps you easily add or remove optimization targets for the Autoresearch self-improving loops. It manages the directory structure, adds boilerplate code, updates the main execution runner, and synchronizes the Workspace Map.
 

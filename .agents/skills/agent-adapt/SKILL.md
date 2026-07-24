@@ -1,7 +1,20 @@
 ---
 name: agent-adapt
-description: Migrate, adapt, or copy custom skills, prompts, or files from Claude Code standard to native Antigravity standard, avoiding blind find-and-replaces.
+description: Migrate, adapt, or copy custom skills, prompts, or files from Claude
+  Code standard to native Antigravity standard, avoiding blind find-and-replaces.
+  Invokable directly via /agent-adapt.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/agent-adapt [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/agent-adapt` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

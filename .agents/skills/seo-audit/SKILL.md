@@ -1,9 +1,22 @@
 ---
 name: seo-audit
-description: Use when running SEO audits, technical SEO reviews, schema verification, sitemap checks, GEO/AEO analysis, page speed checks, keyword research, or backlinks verification.
+description: Use when running SEO audits, technical SEO reviews, schema verification,
+  sitemap checks, GEO/AEO analysis, page speed checks, keyword research, or backlinks
+  verification. Invokable directly via /seo-audit.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # SEO Audit & GEO Router Skill
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/seo-audit [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/seo-audit` or by reading `SKILL.md` directly.
+
 
 When this skill is triggered, you will execute or guide the SEO audit using the reference guides and Python scripts in the static skills-library.
 

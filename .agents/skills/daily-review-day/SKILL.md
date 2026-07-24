@@ -1,7 +1,19 @@
 ---
 name: daily-review-day
-description: Use when the user wants to review their day, complete an evening reflection, or run the daily wrap-up routine.
+description: Use when the user wants to review their day, complete an evening reflection,
+  or run the daily wrap-up routine. Invokable directly via /daily-review-day.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/daily-review-day [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/daily-review-day` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

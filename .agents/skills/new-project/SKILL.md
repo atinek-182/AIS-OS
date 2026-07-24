@@ -1,10 +1,22 @@
 ---
 name: new-project
-description: Initialize a new Premium Frontend website project. Scaffolds GSD project directories, copies design/asset briefs templates, and starts the discovery Q&A loop.
-argument-hint: "[project-name]"
+description: Initialize a new Premium Frontend website project. Scaffolds GSD project
+  directories, copies design/asset briefs templates, and starts the discovery Q&A
+  loop. Invokable directly via /new-project.
+argument-hint: '[project-name]'
 ---
 
+
+
 # New Project Initialization
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/new-project [project-name]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/new-project` or by reading `SKILL.md` directly.
+
 
 Use this skill when starting a new premium frontend website project under the Premium Frontend Experience System.
 

@@ -1,9 +1,22 @@
 ---
 name: verify-design
-description: Automatically build the project, run Playwright console checks, and generate responsive screenshots at all 5 viewports. Use when completing a front-end milestone, verifying layouts, or saying "/verify-design".
+description: Automatically build the project, run Playwright console checks, and generate
+  responsive screenshots at all 5 viewports. Use when completing a front-end milestone,
+  verifying layouts, or saying "/verify-design".
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Verify Design Milestone
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/verify-design [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/verify-design` or by reading `SKILL.md` directly.
+
 
 Automate the visual, responsive, and console QA checklists using Playwright.
 

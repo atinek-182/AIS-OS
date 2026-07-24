@@ -1,10 +1,21 @@
 ---
 name: ingest-skills
-description: "Upgraded alias & dynamic repository ingestion engine routing directly to /ingest-repo."
-argument-hint: "[repo_url] [optional focus or instructions]"
+description: Upgraded alias & dynamic repository ingestion engine routing directly
+  to /ingest-repo. Invokable directly via /ingest-skills.
+argument-hint: '[repo_url] [optional focus or instructions]'
 ---
 
+
+
 # Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/ingest-skills [repo_url] [optional focus or instructions]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/ingest-skills` or by reading `SKILL.md` directly.
+
 
 Use `/ingest-skills` (or invoke naturally via phrases like "ingest skills", "ingest repository", "adapt community skill", "clone and ingest repo") to trigger the upgraded **`/ingest-repo`** deep cross-system integration engine.
 

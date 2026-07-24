@@ -72,6 +72,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brainstorms/2026-07-23-ingest-repo-skill-design.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-repo-skill-design.md) | File | Ingest-repo skill architecture and security audit design. | AIOS |
 | [brainstorms/2026-07-24-raw-components-strategy.md](file:///d:/AI-OS/brainstorms/2026-07-24-raw-components-strategy.md) | File | Brainstorm capture notes for UI component library ingestion & strategy. | AIOS |
 | [brainstorms/2026-07-24-unified-design-system-engine-planning.md](file:///d:/AI-OS/brainstorms/2026-07-24-unified-design-system-engine-planning.md) | File | Planning capture notes for unified design system engine. | AIOS |
+| [.agents/skills/website-design-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/website-design-engine/SKILL.md) | File | Master orchestrator skill for unified website creation from scratch. | AIOS |
+| [.agents/skills/website-design-engine/references/](file:///d:/AI-OS/.agents/skills/website-design-engine/references/) | Folder | Modular reference guides (01-06) for macrostructures, layout math, 147 components, motion, quality gates, and visual QA. | AIOS |
 | [brainstorms/2026-07-24-ingest-os-audit.md](file:///d:/AI-OS/brainstorms/2026-07-24-ingest-os-audit.md) | File | Ingestion capture notes and VibeSec security audit for os-audit skill. | AIOS |
 | [diagrams/canvas_output.png](file:///d:/AI-OS/diagrams/canvas_output.png) | File | Output screenshot from canvas design experiments. | AIOS |
 | [brain-aios/wiki/research/skills-library/os-audit/SKILL.md](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/os-audit/SKILL.md) | File | Reference copy of os-audit skill instructions in the skills library vault. | AIOS |
@@ -125,6 +127,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/scrapling_runner.py](file:///d:/AI-OS/scripts/scrapling_runner.py) | File | Python CLI and module wrapper engine for Scrapling adaptive and stealthy web scraping. | AIOS |
 | [scripts/agent_reach_runner.py](file:///d:/AI-OS/scripts/agent_reach_runner.py) | File | Python runner and diagnostic helper for Agent Reach multi-platform internet capability engine. | AIOS |
 | [scripts/hallmark_runner.py](file:///d:/AI-OS/scripts/hallmark_runner.py) | File | Python audit & verification engine for Hallmark anti-AI-slop design skill. | AIOS |
+| [scripts/standardize_tri_mode_skills.py](file:///d:/AI-OS/scripts/standardize_tri_mode_skills.py) | File | Python script auditing and standardizing all workspace skills for Tri-Mode execution (Slash Command + Dynamic Keyword + Inter-Skill Calling). | AIOS |
+| [scripts/verify_tri_mode_skills.py](file:///d:/AI-OS/scripts/verify_tri_mode_skills.py) | File | Python verification script validating 100% schema, frontmatter, slash command, and protocol compliance across all workspace skills. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
 | [scripts/generate_visual_wireframes.py](file:///d:/AI-OS/scripts/generate_visual_wireframes.py) | File | Python engine creating hyper-detailed multi-section visual wireframe HTML pages and Playwright screenshots. | AIOS |
 | [scripts/audit_registry_fields.py](file:///d:/AI-OS/scripts/audit_registry_fields.py) | File | Python script inspecting component registry JSON fields. | AIOS |

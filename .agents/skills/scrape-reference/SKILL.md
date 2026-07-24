@@ -1,10 +1,26 @@
 ---
 name: scrape-reference
-description: Ultimate site DNA ingestion, full-code mirroring, dot-to-dot web analysis, and vault reference indexing engine. Intercepts and mirrors full site source (HTML, CSS, JS bundles, fonts, videos, GLSL shaders), extracts raw GSAP/animation code (.js), synthesizes drop-in React components (.tsx), records visual WebP session videos, and creates dot-to-dot 14-category master reference manuals in vault-references/.
-argument-hint: [website URL]
+description: Ultimate site DNA ingestion, full-code mirroring, dot-to-dot web analysis,
+  and vault reference indexing engine. Intercepts and mirrors full site source (HTML,
+  CSS, JS bundles, fonts, videos, GLSL shaders), extracts raw GSAP/animation code
+  (.js), synthesizes drop-in React components (.tsx), records visual WebP session
+  videos, and creates dot-to-dot 14-category master reference manuals in vault-references/.
+  Invokable directly via /scrape-reference.
+argument-hint:
+- website URL
 ---
 
+
+
 # Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/scrape-reference ['website URL']` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/scrape-reference` or by reading `SKILL.md` directly.
+
 
 Use this skill whenever given a website URL (or list of URLs) to execute full site source code mirroring, video/screenshot visual capture, raw GSAP/animation code extraction, drop-in React component synthesis, dot-to-dot micro/macro decision analysis, and indexing into `premium-frontend-experience-system/vault-references/`.
 

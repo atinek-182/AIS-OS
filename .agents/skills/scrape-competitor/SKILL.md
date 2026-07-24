@@ -1,8 +1,23 @@
 ---
 name: scrape-competitor
-description: Use when the user wants to scrape a competitor's profile, run competitor content research, or parse scraped reels/posts across YouTube, Bilibili, Twitter, Reddit, V2EX, or web pages.
-argument-hint: [competitor url, handle, or topic]
+description: Use when the user wants to scrape a competitor's profile, run competitor
+  content research, or parse scraped reels/posts across YouTube, Bilibili, Twitter,
+  Reddit, V2EX, or web pages. Invokable directly via /scrape-competitor.
+argument-hint:
+- competitor url
+- handle
+- or topic
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/scrape-competitor ['competitor url', 'handle', 'or topic']` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/scrape-competitor` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

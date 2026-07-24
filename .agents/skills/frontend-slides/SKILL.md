@@ -1,10 +1,24 @@
 ---
 name: frontend-slides
-description: This skill should be used when the user asks to "create HTML slides", "generate a presentation", "convert a PPT to HTML slides", "design slide deck", "make web slides", or "convert PPTX to web slides". Supports fixed-stage 16:9 layouts, custom styles, and Windows CLI scripts.
+description: This skill should be used when the user asks to "create HTML slides",
+  "generate a presentation", "convert a PPT to HTML slides", "design slide deck",
+  "make web slides", or "convert PPTX to web slides". Supports fixed-stage 16:9 layouts,
+  custom styles, and Windows CLI scripts. Invokable directly via /frontend-slides.
 version: 1.0.0
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Frontend Slides Generator
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/frontend-slides [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/frontend-slides` or by reading `SKILL.md` directly.
+
 
 Create zero-dependency, animation-rich HTML presentations that run entirely in the browser.
 

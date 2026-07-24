@@ -1,10 +1,26 @@
 ---
 name: os-audit
-description: Use when someone asks to run an OS audit, check their AIOS for stale or outdated data, verify routing points at things that actually exist, find duplicate or bloated folders, clean up or organize their project, check for context failure modes (poisoning, bloat, confusion, clash), or says "os audit", "is my setup stale", "run a data audit", "my project root is a mess", or "my agent keeps missing things that are there". Read-only drift, freshness, and organization audit of the current project.
-argument-hint: "[optional: a subfolder to scope the audit to]"
+description: Use when someone asks to run an OS audit, check their AIOS for stale
+  or outdated data, verify routing points at things that actually exist, find duplicate
+  or bloated folders, clean up or organize their project, check for context failure
+  modes (poisoning, bloat, confusion, clash), or says "os audit", "is my setup stale",
+  "run a data audit", "my project root is a mess", or "my agent keeps missing things
+  that are there". Read-only drift, freshness, and organization audit of the current
+  project. Invokable directly via /os-audit.
+argument-hint: '[optional: a subfolder to scope the audit to]'
 ---
 
+
+
 # OS Audit — is your AIOS still true?
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/os-audit [optional: a subfolder to scope the audit to]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/os-audit` or by reading `SKILL.md` directly.
+
 
 Your operating manual, indexes, and wikis are claims about what exists and what's current. This audit checks every claim against reality. Structure problems are loud; freshness problems are silent. When people say "my agent keeps forgetting things," it's usually the agent faithfully reading a frozen index.
 

@@ -1,10 +1,22 @@
 ---
 name: ingest-repo
-description: "Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, deep cross-system integration, and dual slash/dynamic skill adaptation engine."
-argument-hint: "[repo_url] [optional focus or instructions]"
+description: Autonomous 8-phase repository ingestion, security audit, comparative
+  analysis, roast council, deep cross-system integration, and dual slash/dynamic skill
+  adaptation engine. Invokable directly via /ingest-repo.
+argument-hint: '[repo_url] [optional focus or instructions]'
 ---
 
+
+
 # Repository Ingestion & Deep Skill Adaptation Engine (`/ingest-repo`)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/ingest-repo [repo_url] [optional focus or instructions]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/ingest-repo` or by reading `SKILL.md` directly.
+
 
 Use this skill whenever the user provides a GitHub repository link or asks to "ingest this repo", "adapt this repository", "analyze repo for AIOS", or runs `/ingest-repo [repo_url]` (or `/ingest-skills [repo_url]`).
 

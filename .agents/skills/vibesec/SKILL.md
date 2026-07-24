@@ -1,9 +1,22 @@
 ---
 name: vibesec
-description: This skill helps Antigravity write secure web applications. Use this when working on any web application or when a user requests a scan or audit to ensure security best practices are followed.
+description: This skill helps Antigravity write secure web applications. Use this
+  when working on any web application or when a user requests a scan or audit to ensure
+  security best practices are followed. Invokable directly via /vibesec.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Secure Coding Guide for Web Applications
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/vibesec [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/vibesec` or by reading `SKILL.md` directly.
+
 
 ## Overview
 

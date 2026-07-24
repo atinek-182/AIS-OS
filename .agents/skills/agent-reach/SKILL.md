@@ -1,10 +1,22 @@
 ---
 name: agent-reach
-description: "Give your AI Agent eyes to see the entire internet. Search + read 10+ social & web platforms (YouTube, Bilibili, V2EX, GitHub, Twitter, Reddit, RSS, Xueqiu)."
-argument-hint: "[command|doctor|url|platform query]"
+description: Give your AI Agent eyes to see the entire internet. Search + read 10+
+  social & web platforms (YouTube, Bilibili, V2EX, GitHub, Twitter, Reddit, RSS, Xueqiu).
+  Invokable directly via /agent-reach.
+argument-hint: '[command|doctor|url|platform query]'
 ---
 
+
+
 # Agent Reach Skill (`/agent-reach`)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/agent-reach [command|doctor|url|platform query]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/agent-reach` or by reading `SKILL.md` directly.
+
 
 Use this skill to access, query, search, or diagnose connectivity across 10+ social and web platforms without manual browser setup.
 

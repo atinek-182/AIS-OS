@@ -1,8 +1,20 @@
 ---
 name: file-search
-description: Use when the user wants to search for a file, find information across vaults, or retrieve documents by keyword.
-argument-hint: [search query]
+description: Use when the user wants to search for a file, find information across
+  vaults, or retrieve documents by keyword. Invokable directly via /file-search.
+argument-hint:
+- search query
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/file-search ['search query']` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/file-search` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

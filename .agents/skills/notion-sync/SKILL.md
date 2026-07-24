@@ -1,7 +1,19 @@
 ---
 name: notion-sync
-description: Use when you need to sync local decisions, content calendars, or task lists to Notion databases or pages.
+description: Use when you need to sync local decisions, content calendars, or task
+  lists to Notion databases or pages. Invokable directly via /notion-sync.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/notion-sync [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/notion-sync` or by reading `SKILL.md` directly.
+
+
 
 ## What This Skill Does
 

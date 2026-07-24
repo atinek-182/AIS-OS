@@ -1,7 +1,12 @@
 ---
 name: skill-builder
-description: Use when creating new skills, optimizing existing skills, or auditing skill quality. Guides skill development following Antigravity official best practices.
+description: Use when creating new skills, optimizing existing skills, or auditing
+  skill quality. Guides skill development following Antigravity official best practices.
+  Invokable directly via /skill-builder.
+argument-hint: '[optional parameters]'
 ---
+
+
 
 ## What This Skill Does
 
@@ -200,6 +205,14 @@ Takes raw meeting notes and produces a structured summary with action items.
 ## Output Template
 
 # Meeting: [title]
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/skill-builder [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/skill-builder` or by reading `SKILL.md` directly.
+
 **Date:** [date if mentioned, otherwise "Not specified"]
 **Attendees:** [comma-separated list]
 

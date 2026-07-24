@@ -1,10 +1,21 @@
 ---
 name: design-direction
-description: Generate a premium visual design direction file and run the adversarial roast council on the concept.
-argument-hint: "[project-name]"
+description: Generate a premium visual design direction file and run the adversarial
+  roast council on the concept. Invokable directly via /design-direction.
+argument-hint: '[project-name]'
 ---
 
+
+
 # Design Direction Generator
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/design-direction [project-name]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/design-direction` or by reading `SKILL.md` directly.
+
 
 Use this skill to compile a premium visual style guide and design concept before writing layout or animation code.
 

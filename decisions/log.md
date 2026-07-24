@@ -20,6 +20,18 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ---
 
+## 2026-07-24 — Create Unified Master Website Creation Skill (`website-design-engine`)
+
+**Decision:** Created `website-design-engine` at `.agents/skills/website-design-engine/SKILL.md` with 6 modular reference files (`references/01-06.md`). Consolidated 13 global & local web design skills (`frontend-design`, `taste`, `design-is`, `design-loop-controlled`, `ui-ux-pro-max`, `gsap-animation`, `threejs-webgl`, `tailwind-patterns`, `browser-testing`, `vercel-web-design-guidelines`, `react-performance`, `remotion`, `impeccable`), 147 cataloged components (`component_registry_cli.py`), Obys 4 grid canons, Hallmark anti-slop gates, and 5-viewport Playwright visual QA without touching or breaking underlying individual skills.
+
+**Why:** Design skills and components were previously scattered across 4 directory layers. The unified engine provides a single, zero-breakage 7-phase pipeline for creating websites from scratch. It solves instruction fatigue via Phase-Gated Progressive Disclosure (loading reference guides dynamically per phase) and offloads heavy audits to deterministic Python runner scripts (`hallmark_runner.py` and `verify_design_milestone.py`).
+
+**Alternatives considered:** Direct prompt merging into a single monolithic skill (rejected due to prompt bloat and instruction collision) or relying solely on manual skill selection (causes high operational friction).
+
+**Owner:** Antigravity AIOS
+
+---
+
 ## 2026-07-24 — Ingest `os-audit` as Standalone Antigravity Skill
 
 **Decision:** Ingested and installed `os-audit` from `c:\Users\HP\Downloads\os-audit-SKILL.md` into `.agents/skills/os-audit/SKILL.md` and `brain-aios/wiki/research/skills-library/os-audit/SKILL.md`. Tweaked platform paths for Antigravity compatibility while preserving 100% of its original 6 audit checks (Routing integrity, Index truth, Freshness, Bloat, Hygiene, Context placement) and 4 context failure modes (Poisoning, Bloat, Confusion, Clash) as a standalone skill. Registered `/os-audit` in `GEMINI.md`, `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, and `WORKSPACE_MAP.md`.

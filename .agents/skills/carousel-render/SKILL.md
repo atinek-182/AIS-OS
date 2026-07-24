@@ -1,9 +1,21 @@
 ---
 name: carousel-render
-description: Programmatically render slide HTML files into final PNG images using Playwright browser capture.
+description: Programmatically render slide HTML files into final PNG images using
+  Playwright browser capture. Invokable directly via /carousel-render.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Carousel Render Engine
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/carousel-render [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/carousel-render` or by reading `SKILL.md` directly.
+
 
 You are the Zorixel AI Renderer. Your task is to compile a carousel markdown copy plan into individual HTML slides and screenshot them using the Playwright browser interface.
 

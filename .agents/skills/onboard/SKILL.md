@@ -1,7 +1,22 @@
 ---
 name: onboard
-description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard me", "let's get started", "fill in my AIOS", or has just cloned the kit. Combined wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the end. Idempotent — re-run any time after editing context/aios-intake.md.
+description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard
+  me", "let's get started", "fill in my AIOS", or has just cloned the kit. Combined
+  wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the end.
+  Idempotent — re-run any time after editing context/aios-intake.md. Invokable directly
+  via /onboard.
+argument-hint: '[optional parameters]'
 ---
+
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/onboard [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/onboard` or by reading `SKILL.md` directly.
+
+
 
 ## What this skill does
 

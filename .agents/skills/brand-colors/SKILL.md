@@ -1,10 +1,21 @@
 ---
 name: brand-colors
-description: Automate brand color palette exploration, WCAG contrast audits, and swatch prototype page creation.
-argument-hint: "[optional action or theme context]"
+description: Automate brand color palette exploration, WCAG contrast audits, and swatch
+  prototype page creation. Invokable directly via /brand-colors.
+argument-hint: '[optional action or theme context]'
 ---
 
+
+
 # Brand Colors & Contrast Audit Skill
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/brand-colors [optional action or theme context]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/brand-colors` or by reading `SKILL.md` directly.
+
 
 This skill automates the exploration, generation, and verification of color palettes for the Zorixel brand to ensure high legibility and compliance with visual design guidelines.
 

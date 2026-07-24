@@ -1,10 +1,24 @@
 ---
 name: slide-component
-description: This skill should be used when the user asks to "generate slide component", "inject animated block", "create slide element", or "add custom component to library". Handles block-injection, compounding libraries, and Playwright verification.
+description: This skill should be used when the user asks to "generate slide component",
+  "inject animated block", "create slide element", or "add custom component to library".
+  Handles block-injection, compounding libraries, and Playwright verification. Invokable
+  directly via /slide-component.
 version: 1.0.0
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Slide Component Generator
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/slide-component [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/slide-component` or by reading `SKILL.md` directly.
+
 
 Generate standalone, highly-animated HTML/CSS/JS components and inject them into slide decks, while maintaining a self-optimizing, compounded personal component library.
 

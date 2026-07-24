@@ -1,9 +1,22 @@
 ---
 name: canvas-design
-description: Use when generating original visual art, posters, social media graphics, Instagram carousel slides, YouTube banners, thumbnails, or logo/brand asset compositions.
+description: Use when generating original visual art, posters, social media graphics,
+  Instagram carousel slides, YouTube banners, thumbnails, or logo/brand asset compositions.
+  Invokable directly via /canvas-design.
+argument-hint: '[optional parameters]'
 ---
 
+
+
 # Canvas Design Router Skill
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/canvas-design [optional parameters]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/canvas-design` or by reading `SKILL.md` directly.
+
 
 When this skill is triggered, you will compile an HTML layout using the brand design tokens and then use the `browser_subagent` to capture a pixel-perfect PNG image.
 
