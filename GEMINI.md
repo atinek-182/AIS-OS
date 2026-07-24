@@ -45,6 +45,16 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 - `/gstack` — Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit).
 - `/hallmark` — Together AI anti-AI-slop design engine (21 macrostructures, 20 color themes, 57 quality gates, audit/redesign/study verbs).
+- `/os-audit` — Read-only drift, freshness, routing integrity, index truth, bloat, and context placement audit of the AIOS.
+- `/canvas-design` — Programmatic visual assets and canvas generator dynamic router.
+- `/design-direction` — Visual design direction and roast council generator.
+- `/excalidraw-diagram` — Visual workflow and architecture diagram generator.
+- `/frontend-slides` — Programs 16:9 responsive HTML presentation deck layouts.
+- `/new-project` — Scaffolds project directory, design/asset briefs, and starts discovery Q&A.
+- `/skill-builder` — Workspace custom skill optimization and quality audit tool.
+- `/slide-component` — Injects custom components and animations into slide layouts.
+
+
 
 
 
@@ -92,6 +102,7 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Default Shift**: When I bring a new task, stubbornly refuse to do it manually. Ask: *"To what extent could AI be leveraged here to automate 30% to 75% of it?"* Break the role or process down into modular, repeatable automation chunks.
 - **Curiosity Rule**: Act as a thought partner and mentor, not a vending machine. Never just dump code or outputs; explain the structural logic, call out edge cases, detail how to handle empty states, and prevent "dark code" (running unverified or black-box code).
 - **Ecosystem Focus**: Never execute checks, verification commands, or demo tests using the Claude CLI. Always test and verify strictly under the Antigravity environment.
+- **Precedence & Source of Truth**: When task completions, system decisions, or current priorities conflict across files, [brain-aios/wiki/checklists/master-task-list.md](file:///d:/AI-OS/brain-aios/wiki/checklists/master-task-list.md) is the sole canonical source of truth for task status, [decisions/log.md](file:///d:/AI-OS/decisions/log.md) is the source of truth for system decisions, and [hot.md](file:///d:/AI-OS/hot.md) is the transient session cache for active focus.
 - **Search-First Adaptation**: If links, guides, or documentation mention Claude Code plugins/skills, search the web first for native Antigravity equivalents. Only download or copy Claude-specific configurations as a last resort, and *always* request explicit confirmation first. Once copied, clean up duplicate Claude CLI plugins and skills folders to prevent conflicts.
 - **Token Optimization**: Structure, summarize, and organize workspace files and logs concisely to keep the codebase clean, reduce redundancy, and optimize model limits/token footprint.
 - **Self-Improvement Suggestion**: When we finish a major milestone, significantly refine a skill, or discuss a critical life/business lesson, suggest calling `/improve-system` to persist these learnings.
@@ -121,17 +132,17 @@ You operate two separate local Obsidian vaults mapped into the workspace:
 ### 1. Brain for AIOS (`brain-aios/`)
 - **Purpose**: General AI OS hub, personal task tracking, system workflows, and operational logs.
 - **Core Areas**:
-  - `wiki/checklists/master-task-list.md`: The canonical task list.
-  - `wiki/sops/`: Operational workflows and guide sheets.
+  - `brain-aios/wiki/checklists/master-task-list.md`: The canonical task list.
+  - `brain-aios/wiki/sops/`: Operational workflows and guide sheets.
 - **Read/Write Rule**: Read when checking tasks or logging general AI OS upgrades. Write when updating task completions or logging system decisions.
 
 ### 2. Second Brain for Zorixel (`second-brain-zorixel/`)
 - **Purpose**: ZORIXEL brand-specific research, content production drafts, scripts, and target audience insights.
 - **Core Areas**:
-  - `wiki/brand/`: Core voice, guidelines, and positioning.
-  - `wiki/strategy/`: Content pillars and marketing directions.
-  - `wiki/content/`: Caption drafts, outlines, briefs, and carousel layouts.
-  - `wiki/research/`: Scraped competitor posts and raw web clips.
+  - `second-brain-zorixel/wiki/brand/`: Core voice, guidelines, and positioning.
+  - `second-brain-zorixel/wiki/strategy/`: Content pillars and marketing directions.
+  - `second-brain-zorixel/wiki/content/`: Caption drafts, outlines, briefs, and carousel layouts.
+  - `second-brain-zorixel/wiki/research/`: Scraped competitor posts and raw web clips.
 - **Read/Write Rule**: Read when writing brand copy, looking up content templates, or fetching research files. Write when saving content briefs, captions, or competitor insights.
 
 ---

@@ -25,7 +25,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/](file:///d:/AI-OS/context/) | Folder | Business context, guidelines, and onboarded preferences. | Operator / AIOS |
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
-| [Finding Fonts/](file:///d:/AI-OS/Finding%20Fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
+| [archives/fonts/](file:///d:/AI-OS/archives/fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
 | [brainstorms/2026-07-23-site-reference-ingestion-queue.md](file:///d:/AI-OS/brainstorms/2026-07-23-site-reference-ingestion-queue.md) | File | Brainstorm & discovery notes for 18-site reference ingestion queue. | AIOS |
 | [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
@@ -57,8 +57,26 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [premium-frontend-experience-system/source-registries/MASTER_COMPONENT_CATALOG.md](file:///d:/AI-OS/premium-frontend-experience-system/source-registries/MASTER_COMPONENT_CATALOG.md) | File | Human-readable catalog table of 147 components with CLI commands and favorite markers. | AIOS |
 | [scripts/build_component_registry.py](file:///d:/AI-OS/scripts/build_component_registry.py) | File | Parser script building JSON registry and Markdown catalog from raw component specs. | AIOS |
 | [scripts/component_registry_cli.py](file:///d:/AI-OS/scripts/component_registry_cli.py) | File | CLI helper script for searching, filtering favorites, and fetching component commands. | AIOS |
+| [brainstorms/2026-07-16-jordan-watkins-brand-reference.md](file:///d:/AI-OS/brainstorms/2026-07-16-jordan-watkins-brand-reference.md) | File | Brainstorm capture for Jordan Watkins brand reference. | AIOS |
+| [brainstorms/2026-07-16-premium-frontend-design-system.md](file:///d:/AI-OS/brainstorms/2026-07-16-premium-frontend-design-system.md) | File | Strategy for premium frontend design system. | AIOS |
+| [brainstorms/2026-07-16-premium-frontend-system-restructuring.md](file:///d:/AI-OS/brainstorms/2026-07-16-premium-frontend-system-restructuring.md) | File | Architecture notes for design system vault restructuring. | AIOS |
+| [brainstorms/2026-07-17-autoresearch-optimization-loops.md](file:///d:/AI-OS/brainstorms/2026-07-17-autoresearch-optimization-loops.md) | File | Brainstorm notes for Autoresearch optimization loops. | AIOS |
+| [brainstorms/2026-07-17-restructure-premium-frontend-system.md](file:///d:/AI-OS/brainstorms/2026-07-17-restructure-premium-frontend-system.md) | File | Planning notes for restructuring premium frontend system. | AIOS |
+| [brainstorms/2026-07-18-branding-fonts-discovery.md](file:///d:/AI-OS/brainstorms/2026-07-18-branding-fonts-discovery.md) | File | Font discovery notes for brand typography. | AIOS |
+| [brainstorms/2026-07-18-branding-fonts-showcase-design.md](file:///d:/AI-OS/brainstorms/2026-07-18-branding-fonts-showcase-design.md) | File | Layout design notes for brand font showcase. | AIOS |
+| [brainstorms/2026-07-19-aios-self-improvement.md](file:///d:/AI-OS/brainstorms/2026-07-19-aios-self-improvement.md) | File | System self-improvement workflow design notes. | AIOS |
+| [brainstorms/2026-07-19-figma-micrographics-assets.md](file:///d:/AI-OS/brainstorms/2026-07-19-figma-micrographics-assets.md) | File | Figma asset extraction and micrographics compiler notes. | AIOS |
+| [brainstorms/2026-07-23-ingest-agent-reach.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-agent-reach.md) | File | Agent Reach ingestion capture and test notes. | AIOS |
+| [brainstorms/2026-07-23-ingest-gstack.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-gstack.md) | File | GStack ingestion capture and virtual engineering team notes. | AIOS |
+| [brainstorms/2026-07-23-ingest-hallmark.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-hallmark.md) | File | Hallmark ingestion capture and anti-slop design notes. | AIOS |
+| [brainstorms/2026-07-23-ingest-repo-skill-design.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-repo-skill-design.md) | File | Ingest-repo skill architecture and security audit design. | AIOS |
 | [brainstorms/2026-07-24-raw-components-strategy.md](file:///d:/AI-OS/brainstorms/2026-07-24-raw-components-strategy.md) | File | Brainstorm capture notes for UI component library ingestion & strategy. | AIOS |
+| [brainstorms/2026-07-24-unified-design-system-engine-planning.md](file:///d:/AI-OS/brainstorms/2026-07-24-unified-design-system-engine-planning.md) | File | Planning capture notes for unified design system engine. | AIOS |
+| [brainstorms/2026-07-24-ingest-os-audit.md](file:///d:/AI-OS/brainstorms/2026-07-24-ingest-os-audit.md) | File | Ingestion capture notes and VibeSec security audit for os-audit skill. | AIOS |
+| [diagrams/canvas_output.png](file:///d:/AI-OS/diagrams/canvas_output.png) | File | Output screenshot from canvas design experiments. | AIOS |
+| [brain-aios/wiki/research/skills-library/os-audit/SKILL.md](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/os-audit/SKILL.md) | File | Reference copy of os-audit skill instructions in the skills library vault. | AIOS |
 | [brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md) | File | Experience log codifying the 10-pillar ultra-exhaustive deep research ingestion pipeline and Obys grid engine. | AIOS |
+
 
 
 | [templates/](file:///d:/AI-OS/templates/) | Folder | Unified templates folder containing junctions to Obsidian template directories. | AIOS |
@@ -67,6 +85,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [trials/](file:///d:/AI-OS/trials/) | Folder | Sandbox trial folders for prompt tuning, vision-in-the-loop design, and web speed loops. | AIOS / Operator |
 | [trials/runner.py](file:///d:/AI-OS/trials/runner.py) | File | Host-side runner script orchestrating sandboxed mutation runs and Git controls. | AIOS |
 | [audits/](file:///d:/AI-OS/audits/) | Folder | AIOS scorecard and Four Cs audit reports. | AIOS |
+| [audits/audit-2026-07-17.md](file:///d:/AI-OS/audits/audit-2026-07-17.md) | File | Four Cs audit report score for AIOS. | AIOS |
+| [audits/2026-07-24-design-system-and-skills-inventory.md](file:///d:/AI-OS/audits/2026-07-24-design-system-and-skills-inventory.md) | File | Complete structured inventory and visual map of all design skills, components, scripts, workflows, and junctions. | AIOS |
+| [audits/os-audit-2026-07-24.md](file:///d:/AI-OS/audits/os-audit-2026-07-24.md) | File | Read-only drift, freshness, routing, index truth, bloat, hygiene, and placement audit report. | AIOS |
 | [tests/](file:///d:/AI-OS/tests/) | Folder | System verification and demo test suites. | AIOS |
 | [scratch/](file:///d:/AI-OS/scratch/) | Folder | Temporary scratch folder for repository ingestion clones and sandboxed experimentation. | AIOS |
 
@@ -106,7 +127,19 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/hallmark_runner.py](file:///d:/AI-OS/scripts/hallmark_runner.py) | File | Python audit & verification engine for Hallmark anti-AI-slop design skill. | AIOS |
 | [scripts/validate_workspace_map.py](file:///d:/AI-OS/scripts/validate_workspace_map.py) | File | Python validator script executed during git commits to verify map alignment. | AIOS |
 | [scripts/generate_visual_wireframes.py](file:///d:/AI-OS/scripts/generate_visual_wireframes.py) | File | Python engine creating hyper-detailed multi-section visual wireframe HTML pages and Playwright screenshots. | AIOS |
-
+| [scripts/audit_registry_fields.py](file:///d:/AI-OS/scripts/audit_registry_fields.py) | File | Python script inspecting component registry JSON fields. | AIOS |
+| [scripts/copy_skills_to_antigravity.py](file:///d:/AI-OS/scripts/copy_skills_to_antigravity.py) | File | Python script copying skills to Antigravity global customs folder. | AIOS |
+| [scripts/demo_test_skills.py](file:///d:/AI-OS/scripts/demo_test_skills.py) | File | Script testing skill execution and tool calls. | AIOS |
+| [scripts/enrich_component_registry.py](file:///d:/AI-OS/scripts/enrich_component_registry.py) | File | Script enriching component registry with missing documentation URLs and CLI commands. | AIOS |
+| [scripts/fetch_component_details.py](file:///d:/AI-OS/scripts/fetch_component_details.py) | File | Helper script fetching component metadata from registry APIs. | AIOS |
+| [scripts/generate_site_wireframes.py](file:///d:/AI-OS/scripts/generate_site_wireframes.py) | File | Wireframe generator script for ingested sites. | AIOS |
+| [scripts/manage_autoresearch.py](file:///d:/AI-OS/scripts/manage_autoresearch.py) | File | CLI helper managing Autoresearch loop targets and registries. | AIOS |
+| [scripts/rebuild_presentation.py](file:///d:/AI-OS/scripts/rebuild_presentation.py) | File | Script compiling slide HTML presentation files. | AIOS |
+| [scripts/rebuild_presentation_20.py](file:///d:/AI-OS/scripts/rebuild_presentation_20.py) | File | Script compiling 20-slide carousel presentation layouts. | AIOS |
+| [scripts/rename_and_link_update.py](file:///d:/AI-OS/scripts/rename_and_link_update.py) | File | Script automating file renaming and updating markdown relative links. | AIOS |
+| [scripts/scrape_full_site_mirror.py](file:///d:/AI-OS/scripts/scrape_full_site_mirror.py) | File | Script cloning complete offline HTML/CSS/JS reference mirrors. | AIOS |
+| [scripts/security_check.py](file:///d:/AI-OS/scripts/security_check.py) | File | VibeSec security audit runner script. | AIOS |
+| [scripts/verify_skills.py](file:///d:/AI-OS/scripts/verify_skills.py) | File | Skill frontmatter and execution validator script. | AIOS |
 | [scripts/validate_links.py](file:///d:/AI-OS/scripts/validate_links.py) | File | Python link validator script checking for relative/Obsidian link rot. | AIOS |
 | [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Python script to automate milestone visual verification and console checks. | AIOS |
 | [scripts/hooks/pre-commit](file:///d:/AI-OS/scripts/hooks/pre-commit) | File | Tracked backup copy of the Git pre-commit hook script. | AIOS |
@@ -137,6 +170,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/level-up](file:///d:/AI-OS/.agents/skills/level-up) | Folder | Scoping automation features. | AIOS |
 | [.agents/skills/marketing](file:///d:/AI-OS/.agents/skills/marketing) | Folder | Copywriting and marketing copy dynamic router. | AIOS |
 | [.agents/skills/new-project](file:///d:/AI-OS/.agents/skills/new-project) | Folder | Initializes project directory, briefs, templates, and launches discovery Q&A. | AIOS |
+| [.agents/skills/os-audit](file:///d:/AI-OS/.agents/skills/os-audit) | Folder | Read-only drift, freshness, routing, index truth, bloat, hygiene, and placement audit skill. | AIOS |
+
 | [.agents/skills/notion-sync](file:///d:/AI-OS/.agents/skills/notion-sync) | Folder | Syncing database logs. | AIOS |
 | [.agents/skills/onboard](file:///d:/AI-OS/.agents/skills/onboard) | Folder | Day-1 workspace wizard. | AIOS |
 | [.agents/skills/daily-plan-day](file:///d:/AI-OS/.agents/skills/daily-plan-day) | Folder | Daily morning checklists scheduler. | AIOS |

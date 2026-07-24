@@ -122,7 +122,11 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 *   **Runner Script:** `scripts/hallmark_runner.py`
 *   **Reference Manual:** `brain-aios/wiki/research/skills-library/hallmark/README.md`
 *   **Dynamic Triggering:** Automatically triggers when designing frontend UIs, performing design audits, or extracting design DNA from URLs or screenshots.
+---
 
-
-
+## 🔍 16. OS Audit (`os-audit`)
+*   **Purpose:** Conducts a read-only audit of operating context drift, freshness, routing integrity, index truth, bloat, hygiene, and context placement across the AIOS workspace.
+*   **Active Local Skill:** `.agents/skills/os-audit/SKILL.md` (`/os-audit`)
+*   **Reference Manual:** `brain-aios/wiki/research/skills-library/os-audit/SKILL.md`
+*   **Dynamic Triggering:** Automatically triggers when verifying context freshness, auditing project structure, checking stale indexes, or organizing project files.
 

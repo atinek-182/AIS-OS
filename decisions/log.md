@@ -20,7 +20,20 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ---
 
+## 2026-07-24 — Ingest `os-audit` as Standalone Antigravity Skill
+
+**Decision:** Ingested and installed `os-audit` from `c:\Users\HP\Downloads\os-audit-SKILL.md` into `.agents/skills/os-audit/SKILL.md` and `brain-aios/wiki/research/skills-library/os-audit/SKILL.md`. Tweaked platform paths for Antigravity compatibility while preserving 100% of its original 6 audit checks (Routing integrity, Index truth, Freshness, Bloat, Hygiene, Context placement) and 4 context failure modes (Poisoning, Bloat, Confusion, Clash) as a standalone skill. Registered `/os-audit` in `GEMINI.md`, `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, and `WORKSPACE_MAP.md`.
+
+**Why:** `os-audit` provides a dedicated read-only drift, freshness, and organization audit. Keeping it standalone per explicit user directive ensures its internal logic remains unaltered while giving the AIOS a dedicated tool to check if its operating context is still true.
+
+**Alternatives considered:** Blending or cross-interpreting `os-audit` with `/audit` (rejected per explicit user request to keep `os-audit` separate and un-altered).
+
+**Owner:** Antigravity AIOS
+
+---
+
 ## 2026-07-14 — Connect Obsidian Vaults & Establish Master Task List
+
 
 **Decision:** Created directory junctions at `brain-aios` and `second-brain-zorixel` pointing to the user's local Obsidian vaults (`D:\Brain For my AIOS` and `C:\Users\HP\Documents\Second Brain for Zorixel` respectively), updated `connections.md` to register them under the `local_path` mechanism, and initialized a prioritized master task list (`wiki/checklists/master-task-list.md`) inside the general AIOS vault.
 
@@ -871,6 +884,48 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 - Updated `WORKSPACE_MAP.md` and validated alignment via `scripts/validate_workspace_map.py`.
 
 **Why:** Establishes a component-first architecture preventing generic component re-invention, ensuring all future web projects automatically leverage curated, high-quality component patterns.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-24 — Execute OS Audit Batch A (Routing Integrity & Index Reconciliation)
+
+**Decision:** Executed Batch A of the OS Audit report ([audits/os-audit-2026-07-24.md](file:///d:/AI-OS/audits/os-audit-2026-07-24.md)):
+- Updated `GEMINI.md` relative routing paths to include `brain-aios/` and `second-brain-zorixel/` vault prefixes.
+- Registered 7 missing active workspace skills (`canvas-design`, `design-direction`, `excalidraw-diagram`, `frontend-slides`, `new-project`, `skill-builder`, `slide-component`) in `GEMINI.md`.
+- Registered 13 maintenance scripts, 15 brainstorm documents/assets, and audit reports in `WORKSPACE_MAP.md`.
+- Reconciled `brain-aios/wiki/index.md` by indexing 13 unlisted experience notes and replacing phantom links with valid links.
+- Indexed `grids-obys-agency-deep-research.md` in `premium-frontend-experience-system/vault-references/INDEX.md`.
+
+**Why:** Resolves high-risk routing misroutes, eliminates phantom index links, and ensures full discoverability of custom skills, scripts, and research manuals across the workspace without deleting any historical context.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-24 — Execute OS Audit Batch B (Hot Cache & Context Placement Refresh)
+
+**Decision:** Executed Batch B of the OS Audit report ([audits/os-audit-2026-07-24.md](file:///d:/AI-OS/audits/os-audit-2026-07-24.md)):
+- Refreshed preloaded hot cache ([hot.md](file:///d:/AI-OS/hot.md)) with current July 24 active context (18-site ingestion, Component Registry CLI, Obys grid engine, os-audit, ZORIXEL content prep).
+- Updated [brain-aios/wiki/checklists/master-task-list.md](file:///d:/AI-OS/brain-aios/wiki/checklists/master-task-list.md) with July 24 task completions & date stamps.
+- Added explicit **Precedence & Source of Truth Rule** in `GEMINI.md` declaring `master-task-list.md` as sole task status truth, `decisions/log.md` as decision truth, and `hot.md` as active session cache.
+
+**Why:** Eliminates 10-day-old prompt poisoning & bloat in the preloaded context layer and resolves potential task list clashes across workspace stores.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-24 — Execute OS Audit Batch C (Root Hygiene & Bloat Cleanup)
+
+**Decision:** Executed Batch C of the OS Audit report ([audits/os-audit-2026-07-24.md](file:///d:/AI-OS/audits/os-audit-2026-07-24.md)):
+- Re-homed loose `Finding Fonts/` root directory (13 zip archives) to `archives/fonts/`.
+- Moved loose `brainstorms/canvas_output.png` to `diagrams/canvas_output.png`.
+- Purged temporary audit python scripts from `scratch/`.
+- Updated `WORKSPACE_MAP.md` entries and verified map alignment via `scripts/validate_workspace_map.py`.
+
+**Why:** Enforces clean root table-of-contents hygiene, prevents scratch script clutter, and organizes brand assets into proper archive and diagram locations.
 
 **Owner:** Antigravity AIOS
 

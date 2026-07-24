@@ -157,6 +157,11 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
 
 ---
 
+### 19. `/os-audit` (OS Audit — Context Drift & Freshness Audit)
+- **Purpose:** Read-only audit of operating context drift, freshness, routing integrity, index truth, bloat, hygiene, and context placement across the AIOS workspace.
+- **How to Use:**
+  - Type `/os-audit` or `/os-audit [optional subfolder]`.
+  - The AIOS evaluates the 6 audit checks (Routing integrity, Index truth, Freshness, Bloat/duplication, Hygiene, Context placement) against the 4 failure modes (Poisoning, Bloat, Confusion, Clash) and saves a report to `audits/os-audit-YYYY-MM-DD.md`.
 
 
 
