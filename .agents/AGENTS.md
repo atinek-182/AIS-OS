@@ -76,10 +76,5 @@
 ## Hyper-Detailed Visual UI/UX Wireframe Rule
 - **Visual Wireframe Mandate**: Never output basic placeholder shapes or basic Excalidraw JSON strings for wireframe requests. All reference ingestion wireframes MUST be hyper-detailed visual HTML pages (`wireframe.html`) and Playwright screenshots (`wireframe.png`) containing real site copy, real headlines, component spec tags (`COMPONENT: HEADER / NAV SYSTEM`), 3D stage boxes (`canvas#canvas`), 12-column grid overlays, and explicit technical annotations.
 
-
-
-
-
-
-
-
+## Curated UI Component Registry & Sourcing Rule
+- **Mandatory Component Sourcing Rule**: Whenever building web interfaces, landing pages, or UI components for ZORIXEL or client projects, Antigravity MUST query `premium-frontend-experience-system/source-registries/component-registry-index.json` (or run `python scripts/component_registry_cli.py search <query>`) to locate and install/adapt a matching component from the 4 curated libraries (Aceternity UI, Animate UI React, Forge UI, Vengence UI) via `npx shadcn@latest add ...` instead of building generic components from scratch. Styling, colors, and content may be customized per project, but the underlying component pattern must come from this collection.

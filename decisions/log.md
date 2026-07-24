@@ -859,6 +859,19 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Why:** Equips the Premium Frontend Experience System with a comprehensive, production-tested reference vault of Site of the Day award winners to power Zorixel brand content, UI components, and design systems.
 
+---
+
+## 2026-07-24 — System Improvement: Curated Component Libraries Ingestion & 100% URL/CLI Completeness
+
+**Decision:** Synthesized and enriched 147 UI components across Aceternity UI, Animate UI React, Forge UI, and Vengence UI into the Premium Frontend Experience System.
+- Created `component-registry-index.json` and `MASTER_COMPONENT_CATALOG.md` in `premium-frontend-experience-system/source-registries/` with 100% complete URLs and CLI commands.
+- Hardcoded mandatory component-first sourcing rules in `.agents/AGENTS.md`, `premium-frontend-experience-system/AGENTS.md`, and `MEMORY.md`.
+- Created interactive search CLI `scripts/component_registry_cli.py` with UTF-8 Windows terminal support.
+- Logged experience in `brain-aios/wiki/experiences/2026-07-24-curated-component-libraries-ingestion.md` and updated `context/experiences/README.md`.
+- Updated `WORKSPACE_MAP.md` and validated alignment via `scripts/validate_workspace_map.py`.
+
+**Why:** Establishes a component-first architecture preventing generic component re-invention, ensuring all future web projects automatically leverage curated, high-quality component patterns.
+
 **Owner:** Antigravity AIOS
 
 
