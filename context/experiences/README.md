@@ -6,6 +6,10 @@
 - **2026-07-24**: [2026-07-24-curated-component-libraries-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-curated-component-libraries-ingestion.md) — Curated UI Component Libraries Ingestion, 100% URL/CLI Mapping & System Integration.
 - **2026-07-24**: [2026-07-24-os-audit-drill-and-three-batch-reconciliation.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-os-audit-drill-and-three-batch-reconciliation.md) — OS Audit 6-Check Framework, Path Routing Repair & 3-Batch System Reconciliation.
 - **2026-07-24**: [2026-07-24-unified-website-design-engine.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-unified-website-design-engine.md) — Unified Website Creation Engine, Phase-Gated Progressive Disclosure & Auto-Evolution Protocol.
+- **2026-07-25**: [2026-07-25-anti-slop-design-engine-evolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md) — Anti-Slop Web Design Engine Evolution & User Quality Directives.
+- **2026-07-25**: [2026-07-25-mandatory-deep-planning-multi-page-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-25-mandatory-deep-planning-multi-page-architecture.md) — Mandatory Deep Architectural Planning & Multi-Page Flagship Mandate.
+
+
 
 
 

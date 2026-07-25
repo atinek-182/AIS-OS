@@ -941,5 +941,35 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 **Owner:** Antigravity AIOS
 
+---
+
+## 2026-07-25 — System Improvement & Anti-Slop Quality Gates Enforced
+
+**Decision:** Executed `/improve-system` protocol following client-showcase iterations:
+- Updated `MEMORY.md` with Rule 28 enforcing Light Theme defaults (`#f8f6f0`), solid color math (zero text gradients), `Nuqun` logo vector mark (`zorixel`), `Lenis` smooth inertia scroll, `GSAP ScrollTrigger` scrollytelling timelines, magnetic elastic cursor physics, and Motion/React `AnimatePresence` height-expanding accordions.
+- Updated `.agents/skills/website-design-engine/references/05-anti-slop-quality-gates.md` with Gates #58-#62.
+- Logged experience in `brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md` and indexed in `context/experiences/README.md`.
+- Registered experience document in `WORKSPACE_MAP.md`.
+
+**Why:** Captures explicit user design directives, prevents recurring template slop or boxy container defaults in future design sessions, and maintains zero drift across AIOS memory and skill guides.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-25 — Codify Mandatory 30-Minute Deep Planning & Multi-Page Mandate
+
+**Decision:** Enforced mandatory 30-minute deep planning protocol and multi-page web application architecture:
+- Updated `MEMORY.md` with Rule 29 requiring mandatory deep architectural planning (30 mins to 1 hr depth) and full multi-page React routing (`/`, `/work`, `/about`, `/pricing`, `/contact`). Banned single-page landing placeholders.
+- Updated `.agents/skills/website-design-engine/SKILL.md` to require Phase 0 Intent Discovery & Phase 1 Multi-Page Architecture mapping with explicit user review checkpoints before code generation.
+- Saved experience log `brain-aios/wiki/experiences/2026-07-25-mandatory-deep-planning-multi-page-architecture.md` and indexed in `context/experiences/README.md` and `brain-aios/wiki/index.md`.
+- Registered experience document in `WORKSPACE_MAP.md`.
+
+**Why:** Rushing code generation in 2 minutes creates shallow landing layouts. A real Awwwards-grade client conversion flagship requires comprehensive architectural planning, conversion psychology, and a full multi-page application structure.
+
+**Owner:** Antigravity AIOS
+
+
+
 
 

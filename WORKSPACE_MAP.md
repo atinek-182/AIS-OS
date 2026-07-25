@@ -32,6 +32,10 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 | [projects/font-showcase/](file:///d:/AI-OS/projects/font-showcase/) | Folder | Typographic brand exploration slides showcase project. | AIOS |
+| [docs/](file:///d:/AI-OS/docs/) | Folder | Workspace documentation folder. | AIOS |
+| [New Fonts/](file:///d:/AI-OS/New Fonts/) | Folder | Display font archives folder containing Queensides, Pavot, Kosmolet, Van Arkel, and Aicon fonts. | Operator / AIOS |
+| [projects/Websites/client-showcase/](file:///d:/AI-OS/projects/Websites/client-showcase/) | Standalone Repo | ZORIXEL Client-Conversion Showcase Web Application (Vite + React + Tailwind v4 + OKLCH). | AIOS |
+
 | [projects/font-showcase/colors_presentation.html](file:///d:/AI-OS/projects/font-showcase/colors_presentation.html) | File | Interactive color exploration slides showcase page. | AIOS |
 | [projects/font-showcase/generate_nuqun_logo.js](file:///d:/AI-OS/projects/font-showcase/generate_nuqun_logo.js) | File | Local Playwright script generating high-resolution brand logos in Nuqun. | AIOS |
 | [projects/font-showcase/qa/verify_colors.js](file:///d:/AI-OS/projects/font-showcase/qa/verify_colors.js) | File | Automated Playwright script verifying color presentation stability. | AIOS |
@@ -57,6 +61,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [premium-frontend-experience-system/source-registries/MASTER_COMPONENT_CATALOG.md](file:///d:/AI-OS/premium-frontend-experience-system/source-registries/MASTER_COMPONENT_CATALOG.md) | File | Human-readable catalog table of 147 components with CLI commands and favorite markers. | AIOS |
 | [scripts/build_component_registry.py](file:///d:/AI-OS/scripts/build_component_registry.py) | File | Parser script building JSON registry and Markdown catalog from raw component specs. | AIOS |
 | [scripts/component_registry_cli.py](file:///d:/AI-OS/scripts/component_registry_cli.py) | File | CLI helper script for searching, filtering favorites, and fetching component commands. | AIOS |
+| [scripts/design_asset_engine.py](file:///d:/AI-OS/scripts/design_asset_engine.py) | File | Design asset engine helper script for automated asset processing. | AIOS |
+
 | [brainstorms/2026-07-16-jordan-watkins-brand-reference.md](file:///d:/AI-OS/brainstorms/2026-07-16-jordan-watkins-brand-reference.md) | File | Brainstorm capture for Jordan Watkins brand reference. | AIOS |
 | [brainstorms/2026-07-16-premium-frontend-design-system.md](file:///d:/AI-OS/brainstorms/2026-07-16-premium-frontend-design-system.md) | File | Strategy for premium frontend design system. | AIOS |
 | [brainstorms/2026-07-16-premium-frontend-system-restructuring.md](file:///d:/AI-OS/brainstorms/2026-07-16-premium-frontend-system-restructuring.md) | File | Architecture notes for design system vault restructuring. | AIOS |
@@ -78,6 +84,10 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [diagrams/canvas_output.png](file:///d:/AI-OS/diagrams/canvas_output.png) | File | Output screenshot from canvas design experiments. | AIOS |
 | [brain-aios/wiki/research/skills-library/os-audit/SKILL.md](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/os-audit/SKILL.md) | File | Reference copy of os-audit skill instructions in the skills library vault. | AIOS |
 | [brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md) | File | Experience log codifying the 10-pillar ultra-exhaustive deep research ingestion pipeline and Obys grid engine. | AIOS |
+| [brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md) | File | Experience log codifying user-enforced anti-slop quality gates #58-#62, light editorial standards, and Nuqun typography. | AIOS |
+| [brain-aios/wiki/experiences/2026-07-25-mandatory-deep-planning-multi-page-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-25-mandatory-deep-planning-multi-page-architecture.md) | File | Experience log codifying mandatory 30-minute deep planning protocol and multi-page web application architecture. | AIOS |
+
+
 
 
 

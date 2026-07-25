@@ -47,3 +47,13 @@ Before finalizing any frontend output, score the generated page across 6 design 
 1. **XSS Prevention**: Never use `dangerouslySetInnerHTML` with un-sanitized user input. Use DOMPurify if HTML rendering is required.
 2. **External Link Safety**: All external links (`target="_blank"`) MUST include `rel="noopener noreferrer"`.
 3. **API Key Hygiene**: Never hardcode API keys or secret tokens in client-side code. Use server-side env variables (`process.env`).
+
+---
+
+## 5. User-Enforced Anti-Slop Quality Gates (#58-#62)
+
+- **Gate #58 (Boxy Grid Container Ban):** Never default to sharp 90-degree 1px square grid containers (`rounded-none`). Always use organic rounded cards (`rounded-3xl` / `rounded-2xl`) or fluid full-bleed tracks with generous whitespace.
+- **Gate #59 (Gradient Text Ban):** Strictly ban multi-color gradient text masks (`bg-gradient-to-r text-transparent`). Use solid, high-contrast OKLCH/HSL colors.
+- **Gate #60 (Nuqun Logo Rule):** Always render the official `Nuqun` font vector logo mark (`zorixel`) in navigation headers and footers.
+- **Gate #61 (Lenis + GSAP Requirement):** Web applications MUST integrate `Lenis` smooth inertia scroll + `GSAP ScrollTrigger` for pinned narratives and kinetic text reveals.
+- **Gate #62 (Animated Accordion Rule):** FAQ accordions MUST use Motion/React `AnimatePresence` for smooth height expansion (`height: "auto"`) instead of static toggle blocks.
