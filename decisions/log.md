@@ -18,6 +18,50 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 Keep it terse. Future-you will thank present-you for capturing the *why*, not just the *what*.
 
+## 2026-07-27 — Executed Phase 2 Site #23: Merci Michel Ingestion & Phase 2 Queue Completion
+
+**Decision:** Completed 10-stage reference ingestion pipeline for **Site #23: Merci Michel** (`https://mercimichel.com/`), marking the official completion of Phase 2 Awwwards & Agency Winners Queue:
+1. Mirrored full site source (143.7 KB HTML).
+2. Extracted **35 standalone React `.tsx` components** (`footers`: 11, `nav`: 8, `misc`: 8, `interactive`: 7, `3d`: 1).
+3. Generated **5 responsive viewport screenshots** (`desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`).
+4. Built **Hyper-Detailed Visual UX Blueprint** (`assets/wireframe.html` & `assets/wireframe.png`).
+5. Authored 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`), 5-Layer Site DNA (`site-dna.md`), 15-Category Master Reference (`merci-michel-granularity-master.md`), and registered in central vault index (`vault-references/INDEX.md`).
+
+**Why:** Merci-Michel is a legendary French digital studio with 2 SOTY, 6 SOTM, and 41 SOTD awards. Ingesting their gamified WebGL 3D physics, Three.js particle bloom, and Howler.js spatial sound architecture completes the 23-site reference vault for the Premium Frontend Experience System.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-27 — Executed Phase 2 Site #22: Locomotive Agency Ingestion
+
+**Decision:** Completed 10-stage reference ingestion pipeline for **Site #22: Locomotive Agency** (`https://locomotive.ca/en`):
+1. Mirrored full site source and captured **20 WebGL GLSL runtime shaders**.
+2. Extracted **109 standalone React `.tsx` components** (`nav`: 59, `cards`: 14, `modals`: 13, `misc`: 9, `hero`: 5, `footers`: 4, `sections`: 3, `3d`: 2).
+3. Generated **5 responsive viewport screenshots** (`desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`).
+4. Built **Hyper-Detailed Visual UX Blueprint** (`assets/wireframe.html` & `assets/wireframe.png`).
+5. Authored 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`), 5-Layer Site DNA (`site-dna.md`), 15-Category Master Reference (`locomotive-agency-granularity-master.md`), and registered in central vault index (`vault-references/INDEX.md`).
+
+**Why:** Locomotive is the creator of Locomotive Scroll and a multi-time Awwwards Agency of the Year winner. Ingesting their smooth inertia scroll physics, GSAP kinetic typography, image wave displacement shaders, and editorial dark mode layout math provides core motion design standards for the Zorixel Experience System.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-27 — Executed Phase 2 Site #21: Active Theory Ingestion
+
+**Decision:** Completed 10-stage reference ingestion pipeline for **Site #21: Active Theory** (`https://activetheory.net/`):
+1. Mirrored site source and captured WebGL GLSL runtime shader assets.
+2. Generated **5 responsive viewport screenshots** (`desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`).
+3. Built **Hyper-Detailed Visual UX Blueprint** (`assets/wireframe.html` & `assets/wireframe.png`).
+4. Authored 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`), 5-Layer Site DNA (`site-dna.md`), 15-Category Master Reference (`active-theory-granularity-master.md`), and registered in central vault index (`vault-references/INDEX.md`).
+
+**Why:** Active Theory is a globally preeminent creative technology agency and multiple Awwwards Agency & Developer of the Year winner. Ingesting their proprietary Hydra WebGL framework, 3D particle repulsion math, and spatial WebXR architecture provides invaluable engineering patterns for the Zorixel Experience System.
+
+**Owner:** Antigravity AIOS
+
+---
+
 ## 2026-07-27 — Executed Phase 2 Site #20: Resn (Corn Revolution) Ingestion
 
 **Decision:** Completed 10-stage reference ingestion pipeline for **Site #20: Resn (Corn Revolution)** (`https://cornrevolution.resn.global/#`):
