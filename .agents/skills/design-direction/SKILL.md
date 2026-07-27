@@ -58,3 +58,9 @@ Use this skill to compile a premium visual style guide and design concept before
    - Run the `/roast` adversarial council on the brief to stress-test the concept, identify fatal visual or technical flaws, and output a GO / RESHAPE verdict.
    - Append the council's scores, Hallmark audit results, and recommendations to `DESIGN_DIRECTION.md` and log them in `decisions/log.md`.
 
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Socratic Discovery**: Driven by Phase 0 **/grill-me** visual requirement questions.
+- **Adversarial Critique**: Passes visual concepts through the **/roast** 5-persona council gate.
+- **Web Build Handoff**: Feeds locked tokens and layout directions directly into **/website-design-engine** and **/new-project**.

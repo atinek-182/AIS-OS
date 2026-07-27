@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Hallmark Anti-Slop Audit & Verification Engine for AIOS.
-Powered by Together AI & Antigravity AIOS Framework.
+Integrated into: /website-design-engine, /verify-design, /jsmastery-audit, /roast, and /new-project.
+Purpose: Audits 57 anti-slop quality gates, macrostructure variety (21 archetypes), OKLCH color math, and pre-emit self-critique headers.
 
 Usage:
   python scripts/hallmark_runner.py audit <path_to_html_or_css>

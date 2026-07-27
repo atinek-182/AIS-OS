@@ -218,5 +218,27 @@ These plugins are installed globally inside your Antigravity environment and run
 ### 12. Notion Workspace (`notion-mcp-server`)
 - **Enforced Rule:** Reads and writes to your remote Notion database boards, calendars, and spreadsheets.
 
+### 13. JS Mastery Engineering Skills (`jsmastery-skills`)
+- **Enforced Rule:** Enforces fullstack Next.js and JavaScript development discipline, build specs, code audits, and feature scoping.
+- **Commands:**
+  - `/jsmastery-architect`: Fullstack JS & Next.js architecture design engine (`docs/specs/`).
+  - `/jsmastery-audit`: Fullstack JS & Next.js App Router code auditor (Server Actions, security, performance).
+  - `/jsmastery-scope`: Feature scoping, MVP milestone breakdown, and tracer bullet vertical slices.
+
+### 14. Matt Pocock Engineering Skills (`mattpocock-skills`)
+- **Enforced Rule:** Enforces TypeScript domain modeling, multi-session wayfinding, spec-to-tickets deconstruction, and Socratic teaching.
+- **Commands:**
+  - `/mattpocock-domain-modeling`: TypeScript domain modeling, discriminated unions, branded types, and ADRs.
+  - `/mattpocock-wayfinder`: Multi-session macro planning and issue map manager.
+  - `/mattpocock-to-spec`: Technical SPEC compiler turning loose user prompts into structured architecture contracts.
+  - `/mattpocock-to-tickets`: Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD.
+  - `/mattpocock-teach`: Socratic teaching and mental model builder for TypeScript & web engineering.
+  - `/mattpocock-setup-ts-deep-modules`: Deep module boundary enforcement and package structure setup.
+
+### 15. Automatic Skill Evolution & Vault Promotion Mandate
+- **Enforced Rule:** The AIOS automatically scans `brain-aios/wiki/research/skills-library/` and vault references whenever encountering a new task or workflow requirement. It automatically adapts, promotes, and installs required reference guides from Tier 2 into active Tier 1 skills (`.agents/skills/`), formatted with dual-trigger frontmatter, No-Op test quality discipline, and explicit `## 🔗 Inter-Skill Connections`.
+
+
+
 
 

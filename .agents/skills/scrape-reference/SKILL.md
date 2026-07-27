@@ -117,3 +117,9 @@ For target site `[site-slug]`:
 - `premium-frontend-experience-system/vault-references/`
   - `INDEX.md` — Central vault reference index
   - `[site-slug]-granularity-master.md` — 14-category dot-to-dot master reference manual
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Site DNA Ingestion**: Full 10-stage reference ingestion pipeline (Scrapling fetch, Playwright multi-viewport audit, 5-layer DNA extraction).
+- **Vault Archival**: Saves manuals into premium-frontend-experience-system/vault-references/ and code into code-extracts/.

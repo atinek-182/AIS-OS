@@ -32,3 +32,10 @@ Automates the morning planning routine by pulling calendar events, checking prio
    - Fixed calendar appointments.
 4. Format the daily plan output as a clean table or timeline.
 5. Prompt the user for adjustments or confirmation.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Morning Ritual**: Pulls active priorities from rain-aios/wiki/checklists/master-task-list.md and hot.md.
+- **Evening Reflection**: Hands off day's progress tracking to **/daily-review-day**.
+- **Calendar & Task Sync**: Integrates with Google Workspace CLI (gws) and **/notion-sync**.

@@ -43,3 +43,9 @@ When this skill is invoked via `/brand-colors` or triggered:
 - Theme Background Canvas: Light Warm Linen (`#fbfaf7`), Dark Charcoal (`#0c0d12`).
 - Contrast Checkpoints: Check heading text, body copy, and CTA buttons.
 - Design Rules: Avoid generic saturation (plain primary red/blue). Prefer curated, harmonious tones matching the Zorixel print editorial aesthetic.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Design System Integration**: Supplies OKLCH and HSL color token swatches to **/website-design-engine**, **/new-project**, and **/design-direction**.
+- **Visual Verification**: Hands off generated prototype swatch HTML pages to **/verify-design** for Playwright visual contrast audits.

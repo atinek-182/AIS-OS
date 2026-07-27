@@ -63,3 +63,9 @@ When this skill is invoked via `/scrape-carousel --url <url>`:
      - **Wait**: Wait 1500ms for slide transition animations to finish.
      - **Break Condition**: If no next button is found, or the page URL remains unchanged after transition, terminate the loop.
 5. **Output**: List the file paths of all scraped screenshots.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Social Media Scraping**: Scrapes design references and copy from Instagram carousel URLs.
+- **Copy & Render Handoff**: Feeds reference layouts into **/carousel-copy** and **/carousel-render**.

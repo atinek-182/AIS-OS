@@ -92,4 +92,26 @@
 ## Master Website Creation & Auto-Evolution Rule
 - **Unified Master Web Creation Engine**: Whenever asked to build a website or landing page from scratch, use `.agents/skills/website-design-engine/SKILL.md`. Enforce Phase 0 Intent Discovery Q&A, query `component_registry_cli.py` for matching components out of the 300+ cataloged, query `references/component-vault/` and `references/shader-canvas-vault/`, load phase reference files dynamically (`references/01-06.md`), run 5-viewport Playwright visual QA via `verify_design_milestone.py`, and automatically persist new design lessons via Phase 7 Auto-Evolution.
 
+## JS Mastery & Matt Pocock Engineering Discipline Rules
+- **Fullstack Next.js & TypeScript Engineering Discipline**: Whenever designing, building, or auditing fullstack JavaScript/TypeScript features or Next.js applications, dynamically apply the ingested JS Mastery and Matt Pocock quality gates:
+  1. **Fullstack Architecture & Scoping (`/jsmastery-architect`, `/jsmastery-scope`)**: Require explicit build specs (`docs/specs/`) and tracer-bullet vertical slices (`docs/scope/`) before implementing complex fullstack apps.
+  2. **Fullstack Code Audits (`/jsmastery-audit`)**: Audit Server Actions, `'use client'` boundaries, input validation (Zod), and type-safety before shipping.
+  3. **TypeScript Domain Modeling & Zero-Any (`/mattpocock-domain-modeling`)**: Use discriminated unions, branded types, and strict type guards. Challenge ambiguous domain terms against `CONTEXT.md`.
+  4. **Multi-Session Wayfinding (`/mattpocock-wayfinder`)**: Chart large multi-session refactors as index maps with unblocked frontier decision tickets.
+  5. **Spec & Ticket Deconstructors (`/mattpocock-to-spec`, `/mattpocock-to-tickets`)**: Compile loose user prompts into sharp technical specs and verifiable, atomic engineering tickets with testable DoD.
+  6. **Socratic Teaching & Deep Modules (`/mattpocock-teach`, `/mattpocock-setup-ts-deep-modules`)**: Use before-and-after type mental models for explanations and enforce strict module boundaries.
+
+## Universal `/grill-me` and `/roast` Integration Mandate
+- **Mandatory Discovery & Roast Gates**: Every new project initialization (`/new-project`), web creation workflow (`/website-design-engine`), repository ingestion (`/ingest-repo`), design direction (`/design-direction`), and viral carousel creation (`/carousel-copy`) MUST execute:
+  1. **`/grill-me` Gate**: Socratic discovery with concept explanations BEFORE questions, categorized option evaluation (INFER/ASK/RECOMMEND), and immediate disk checkpointing to `brainstorms/`.
+  2. **`/roast` Gate**: Adversarial 5-persona council audit (Contrarian, Expansionist, Logician, Researcher, Buyer) delivering a GO / RESHAPE / KILL verdict with a 48-hour validation test before generating final specs or implementation code.
+
+## Automatic Skill Evolution, Vault Promotion, & Continuous Upgrade Mandate
+- **Automatic Vault Scanning**: Whenever the AIOS encounters a new task, workflow requirement, or technical domain, it MUST automatically scan `brain-aios/wiki/research/skills-library/` and vault references for matching skills, guides, or manuals.
+- **On-Demand Tier 2 to Tier 1 Promotion**: Whenever a skill, guide, or workflow stored in `skills-library/` is needed for active work, the AIOS MUST automatically adapt, promote, format (with dual-trigger YAML frontmatter, No-Op test quality discipline, and explicit `## 🔗 Inter-Skill Connections`), and install it directly into `.agents/skills/` without requiring explicit user prompt permission.
+- **Continuous Skill Upgrading**: During milestone completions, `/improve-system` calls, or system reviews, the AIOS MUST automatically audit and upgrade existing active skills in `.agents/skills/` to integrate superior patterns, CLI parameters, and security safeguards as the workspace evolves.
+
+
+
+
 

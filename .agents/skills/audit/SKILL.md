@@ -192,3 +192,11 @@ After printing, ask: "Save this audit to `audits/audit-{date}.md` so you can tra
 - **Don't suggest skills that don't exist.** Point at what's actually available.
 - **Speed matters.** Report in under 60 seconds wall-clock. Read targeted files, count skill folders without reading each fully (frontmatter only).
 - **Cadence detection is fuzzy.** Infer from skill names if hooks/cron data isn't cleanly available.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Structural Audit**: Complements **`/os-audit`** (read-only drift & freshness check) and **`/level-up`** (capability & automation roadmap).
+- **System Improvement**: Hands off top-leverage structural fixes to **`/improve-system`** and **`/skill-builder`**.
+- **Codebase Audits**: Pairs with **`/jsmastery-audit`** (fullstack code quality) and **`/vibesec`** (security vulnerability scanning).
+

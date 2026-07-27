@@ -55,3 +55,9 @@ Present a structured report outlining:
 2. **Key Metrics/Status**: Output from python scripts or checklists.
 3. **Critical Issues**: High-priority issues that harm search ranking or GEO compatibility.
 4. **Actionable Recommendations**: Clear, bulleted steps to resolve the issues.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Technical SEO Router**: References Daniel Agrici's SEO library for schema, sitemaps, GEO/AEO, and page speed checks.
+- **Web Verification**: Integrated into Phase 5 of **/website-design-engine** and **/verify-design**.

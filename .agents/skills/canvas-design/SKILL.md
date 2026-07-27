@@ -72,3 +72,9 @@ Invoke the `browser_subagent` tool with the following steps:
 
 ### 5. Deliver
 Return the path to the final image: `d:/AI-OS/brainstorms/canvas_output.png`. Show a short bulleted outline of the design rationale and annotations.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Social Media & Carousel Graphics**: Pairs with **/carousel-copy** and **/carousel-render** to generate visual slide layouts.
+- **Brand Identity**: Integrates with **/brand-colors** for locked OKLCH color palettes and custom typography.

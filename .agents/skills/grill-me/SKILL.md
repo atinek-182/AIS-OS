@@ -1,86 +1,94 @@
 ---
 name: grill-me
-description: Interview the user relentlessly about a plan, design, or topic, checkpointing
-  every answer to a brainstorm file so nothing is lost. Use when the user wants to
-  stress-test a plan, get grilled on a design, run a brainstorm or discovery session,
-  extract what's in their head into a doc, or says "grill me". Invokable directly
-  via /grill-me.
-argument-hint: '[optional parameters]'
+description: Deep Socratic discovery and grilling engine tailored for Atinek Maurya. Relentlessly interviews the user about a plan, feature design, business idea, content carousel, or tech stack, explaining concepts before asking questions, presenting structured options, and logging answers to brainstorm capture files. Invokable via /grill-me or naturally when starting any discovery session.
+argument-hint: '[topic_or_idea] [optional focus]'
 ---
 
-# Grill Me (`/grill-me`)
+# ZORIXEL AIOS Discovery & Socratic Grilling Engine (`/grill-me`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## ⚡ Overview & Tri-Mode Execution
 
-This skill supports **Tri-Mode Flexible Execution**:
-- **Slash Command**: Explicitly run `/grill-me [optional parameters]` in chat.
-- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
-- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/grill-me` or by reading `SKILL.md` directly.
+This skill is the primary discovery gate for Atinek Maurya's AIOS (`AI-OS`). It combines Matt Pocock's Socratic grilling (`grilling`, `grill-with-docs`), domain modeling (`domain-modeling`), and JS Mastery's option evaluation (`architect`) into a relentless, structured discovery workflow.
+
+Invokable via:
+- **Slash Command**: `/grill-me [topic_or_idea]`
+- **Dynamic Intent**: Triggered automatically when starting new features, designing web apps, planning content carousels, or extracting ideas.
+- **Programmatic Inter-Skill Calling**: Called by parent skills (`new-project`, `website-design-engine`, `design-direction`, `carousel-copy`, `ingest-repo`, `mattpocock-wayfinder`, `jsmastery-architect`).
+
+---
+
+## 🎯 When & Why to Use `/grill-me`
+
+| Scenario / Goal | Specific Use Case | Key Output |
+|---|---|---|
+| **New Web App / Feature** | Uncover user requirements, DB models, tech stack choices, and UX conversion paths | `brainstorms/{date}-{slug}.md` + `docs/specs/SPEC-[slug].md` |
+| **Zorixel Content / Carousel** | Define slide hooks, visual contrast themes, audience pain points, and CTAs | `brainstorms/{date}-carousel-{slug}.md` |
+| **AI SaaS / Automation Idea** | Stress-test business model, price points, and time-to-first-dollar before coding | `brainstorms/{date}-saas-{slug}.md` -> feed into `/roast` |
+| **System Refactor / Architecture** | Resolve domain vocabulary (`CONTEXT.md`) and state machine edge cases | `brainstorms/{date}-architecture-{slug}.md` + ADRs |
 
 ---
 
 ## 📌 Non-Negotiable Core Execution Rules
 
-1. **Global Zero-Hurry & Rigor Mandate**:  
-   Never rush the discovery session. Complex systems take time (weeks or months). Deep exploration, option-based Q&A, and architectural rigor take absolute precedence over speed.
+### 1. Global Zero-Hurry & Rigor Mandate
+Never rush discovery. Quality, deep option-based Q&A, web research, and architectural rigor take absolute precedence over speed.
 
-2. **Concept Explanation BEFORE Every Question**:  
-   If the user has not watched a video, read source documentation, or touched a specific topic, **ALWAYS explain the underlying concept in clear, plain language FIRST** before asking any question or making a suggestion.
+### 2. Concept Explanation BEFORE Every Question
+If the operator hasn't watched a video, read documentation, or touched a specific topic, **ALWAYS explain the underlying concept in clear, plain language FIRST** before asking any question or offering options.
 
-3. **Proactive Web Search Research**:  
-   Before asking a question or offering options, search the web to discover industry-leading best practices, modern tools, or trending features in the target domain.
+### 3. Proactive Web Research & Documentation Sourcing
+Before asking a question, use `search_web` or `context7` to fetch industry best practices, current library APIs (e.g. Next.js 15 App Router, Supabase, Tailwind v4, Motion), and competitive benchmarks.
 
-4. **Exhaustive Option-Based Inquiries**:  
-   Present detailed, structured multiple-choice options for every question (with your recommended answer highlighted) so the user can easily confirm, correct, or redirect. Never artificially limit questions to 2-3 vague queries — ask as many detailed questions as needed until every decision branch is resolved.
+### 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND)
+Sort every discovery item into:
+- **INFER**: Framework details, dependencies, and file layout derived from codebase (never ask what code reveals).
+- **ASK**: Only what Atinek Maurya alone knows (business targets, revenue model, personal preferences).
+- **RECOMMEND**: Expert recommendations with a clear 1-line rationale and runner-up alternative (highlight recommended option as `[RECOMMENDED]`).
 
-5. **Pre-Write Feature Confirmation Check**:  
-   Before generating any document content, spec file, or code, explicitly ask the user:  
-   *"Would you like to add any additional features, suggestions, or modifications before I finalize this document/code?"*
+### 5. Checkpoint to Disk After Every Single Response
+Append to `brainstorms/{YYYY-MM-DD}-{topic-slug}.md` immediately after every response before moving to the next question. The capture file is the immutable record of truth.
 
-6. **Checkpoint to Disk After Every Single Answer**:  
-   Immediately append to `brainstorms/{YYYY-MM-DD}-{topic-slug}.md` after every user response BEFORE asking the next question. The capture file is the single source of truth.
+### 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`)
+When ambiguous or overloaded terms are used (e.g., "User" vs "Customer", "Workspace" vs "Project"), challenge them immediately and record resolved terms into `CONTEXT.md`.
 
-7. **Mandatory Pre-Write `/roast` Council Audit**:  
-   Run the `/roast` skill (5 persona council: Contrarian, Expansionist, Logician, Researcher, Buyer) to pressure-test every document concept before emitting final content.
+### 7. Mandatory Pre-Write `/roast` Council Gate
+Convene the 5-persona `/roast` council (Contrarian, Expansionist, Logician, Researcher, Buyer) to audit captured decisions before generating specs, layouts, or code.
 
-8. **Pre-Coding Backstop**:  
-   Before concluding the interview or moving to implementation, ask:  
-   *"Is there anything else remaining before we touch the code?"*
-
----
-
-## Setup (do this BEFORE the first question)
-
-1. Create the capture file at `brainstorms/{YYYY-MM-DD}-{topic-slug}.md`.
-2. Notify the user of the file path in one line.
-3. Explain **Concept 1** in clear language, then ask **Question 1** with structured options and your recommended answer highlighted.
+### 8. Pre-Coding Backstop Check
+Before concluding the interview or proceeding to implementation, ask:
+> *"Is there anything else remaining before we touch the code or generate artifacts?"*
 
 ---
 
-## Capture File Structure
+## 📝 Capture File Structure (`brainstorms/{date}-{slug}.md`)
 
 ```markdown
-# {Topic}: Brainstorm / Discovery Notes
-Date: {date} · Goal: {one line}
+# {Topic}: Discovery & Brainstorm Notes
+Date: {date} · Goal: {one-line summary} · Operator: Atinek Maurya
 
-## Summary / key decisions
-(running synthesis, updated as you go)
+## Executive Summary & Key Decisions
+(Running synthesis updated as questions resolve)
 
-## Q&A log
-### Q1 — {topic}
-- Asked: {question}
-- Captured: {facts, decisions, in their words where it matters}
-- Flags: {open item -> owner}
+## Domain Vocabulary & Glossary (CONTEXT.md updates)
+- **[Term]**: Canonical definition resolved during discovery.
 
-## Open flags (pending input)
-- {item} -> {who can answer}
+## Q&A Log
+### Q1 — {Topic}
+- **Concept Explained**: {short concept summary}
+- **Asked**: {question}
+- **Options Provided**: 1. Option A | 2. Option B [RECOMMENDED] | 3. Option C
+- **Captured Decision**: {user's answer}
+- **Rationale & Trade-offs**: {why this pick works}
+
+## Open Flags & Deferred Decisions
+- [ ] {Item} -> {Who/When to resolve}
 ```
 
 ---
 
-## At the End of Session
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Phase 0 Discovery Engine**: Called as Gate 1 discovery by **`/new-project`**, **`/website-design-engine`**, **`/ingest-repo`**, **`/carousel-copy`**, and **`/design-direction`**.
+- **Adversarial Audit**: Hands off captured decisions to **`/roast`** (Gate 2 5-persona council audit).
+- **Domain Modeling**: Updates **`CONTEXT.md`** vocabulary via **`/mattpocock-domain-modeling`**.
+- **Spec Compilation**: Feeds discovery notes into **`/mattpocock-to-spec`** and **`/jsmastery-architect`**.
 
-1. Do a final read of the capture file for contradictions or gaps and reconcile them.
-2. Convene the 5-persona `/roast` council to audit the captured decisions.
-3. Give the user a short recap: what's captured, what's flagged, and the suggested next steps.
-4. Execute the Pre-Coding Backstop check (*"Is there anything else remaining before we touch the code?"*).

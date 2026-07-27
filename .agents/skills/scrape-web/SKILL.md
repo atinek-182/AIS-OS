@@ -65,3 +65,9 @@ python scripts/scrapling_runner.py --url "https://protected-site.com" --mode ste
 3. **Comparison with `/scrape-reference`**:
    - Use **`/scrape-web`** when you need **fast data, text, or DOM element extraction**.
    - Use **`/scrape-reference`** when you need **full offline visual asset cloning (CSS files, local fonts, 3D models, images)**.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Stealth Scraping Engine**: Powered by scripts/scrapling_runner.py for anti-bot DOM extraction.
+- **Internet Eyes**: Serves as the web fetch backend for **/agent-reach** and **/ingest-repo**.

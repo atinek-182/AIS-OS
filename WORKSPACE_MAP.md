@@ -26,8 +26,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/experiences/README.md](file:///d:/AI-OS/context/experiences/README.md) | File | Chronological index tracking personal experiences and lessons. | AIOS |
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [archives/fonts/](file:///d:/AI-OS/archives/fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
-| [brainstorms/](file:///d:/AI-OS/brainstorms/) | Folder | Spec and design documentation files for AIOS improvements. | AIOS |
-| [brainstorms/2026-07-23-site-reference-ingestion-queue.md](file:///d:/AI-OS/brainstorms/2026-07-23-site-reference-ingestion-queue.md) | File | Brainstorm & discovery notes for 18-site reference ingestion queue. | AIOS |
+| [brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md](file:///d:/AI-OS/brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md) | File | Ingestion discovery capture file for JS Mastery Pro and Matt Pocock skills. | AIOS |
+| [brain-aios/wiki/research/skills-library/jsmastery-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/jsmastery-skills/) | Folder | Ingested reference vault for JS Mastery Pro skills repo. | AIOS |
+| [brain-aios/wiki/research/skills-library/mattpocock-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/mattpocock-skills/) | Folder | Ingested reference vault for Matt Pocock skills repo. | AIOS |
 | [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
@@ -54,6 +55,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [premium-frontend-experience-system/vault-references/grids-obys-agency-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/grids-obys-agency-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, interactive grid visualizer, and runnable code for Grids by Obys Agency. | AIOS |
 | [premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md) | File | Comprehensive deep research document, word-for-word text corpus analysis, and Obys Grid System rules. | AIOS |
 | [brain-aios/wiki/sops/grid-systems-sop.md](file:///d:/AI-OS/brain-aios/wiki/sops/grid-systems-sop.md) | File | Standard operating procedure codifying Obys 4 Grid Canons and Vertical Rhythm math. | AIOS |
+| [brain-aios/wiki/sops/grill-me-and-roast-integration-sop.md](file:///d:/AI-OS/brain-aios/wiki/sops/grill-me-and-roast-integration-sop.md) | File | Standard operating procedure codifying universal /grill-me and /roast dual-gate integration across all AIOS workflows. | AIOS |
 | [premium-frontend-experience-system/vault-references/the-shift-tokyo-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/the-shift-tokyo-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Tokyo live clock widget, and runnable code for The Shift Tokyo. | AIOS |
 | [premium-frontend-experience-system/vault-references/good-fella-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/good-fella-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Annnimate components, and Next.js Turbopack code for Good Fella. | AIOS |
 | [premium-frontend-experience-system/vault-references/follow-art-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/follow-art-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Vide Infra 3D WebGL engine, and Vite React code for Follow Art. | AIOS |
@@ -201,6 +203,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/onboard](file:///d:/AI-OS/.agents/skills/onboard) | Folder | Day-1 workspace wizard. | AIOS |
 | [.agents/skills/daily-plan-day](file:///d:/AI-OS/.agents/skills/daily-plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
 | [.agents/skills/project-agent](file:///d:/AI-OS/.agents/skills/project-agent) | Folder | Scoped background developer agent runner. | AIOS |
+| [.agents/skills/roast](file:///d:/AI-OS/.agents/skills/roast) | Folder | Adversarial 5-persona council audit engine. | AIOS |
 | [.agents/skills/daily-review-day](file:///d:/AI-OS/.agents/skills/daily-review-day) | Folder | Daily evening reflections log script. | AIOS |
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/scrape-carousel](file:///d:/AI-OS/.agents/skills/scrape-carousel) | Folder | Scrapes competitor reels/posts and takes screenshots of carousel slides. | AIOS |
@@ -216,6 +219,15 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/autoresearch-manage](file:///d:/AI-OS/.agents/skills/autoresearch-manage) | Folder | Manage Autoresearch loop target directories and registries. | AIOS |
 | [.agents/skills/frontend-slides](file:///d:/AI-OS/.agents/skills/frontend-slides) | Folder | Programs 16:9 responsive HTML presentation deck layouts. | AIOS |
 | [.agents/skills/slide-component](file:///d:/AI-OS/.agents/skills/slide-component) | Folder | Injects custom components and animations into slide layouts. | AIOS |
+| [.agents/skills/jsmastery-architect](file:///d:/AI-OS/.agents/skills/jsmastery-architect) | Folder | Fullstack JS & Next.js architecture design build-spec engine. | AIOS |
+| [.agents/skills/jsmastery-audit](file:///d:/AI-OS/.agents/skills/jsmastery-audit) | Folder | Fullstack JS & Next.js App Router code auditor. | AIOS |
+| [.agents/skills/jsmastery-scope](file:///d:/AI-OS/.agents/skills/jsmastery-scope) | Folder | Feature scoping, MVP milestone breakdown, and tracer-bullet vertical slices. | AIOS |
+| [.agents/skills/mattpocock-domain-modeling](file:///d:/AI-OS/.agents/skills/mattpocock-domain-modeling) | Folder | TypeScript domain modeling, discriminated unions, branded types, and ADRs. | AIOS |
+| [.agents/skills/mattpocock-wayfinder](file:///d:/AI-OS/.agents/skills/mattpocock-wayfinder) | Folder | Multi-session macro planning and issue map manager. | AIOS |
+| [.agents/skills/mattpocock-to-spec](file:///d:/AI-OS/.agents/skills/mattpocock-to-spec) | Folder | Technical SPEC compiler turning loose user prompts into structured architecture contracts. | AIOS |
+| [.agents/skills/mattpocock-to-tickets](file:///d:/AI-OS/.agents/skills/mattpocock-to-tickets) | Folder | Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD. | AIOS |
+| [.agents/skills/mattpocock-teach](file:///d:/AI-OS/.agents/skills/mattpocock-teach) | Folder | Socratic teaching and mental model builder for TypeScript & web engineering. | AIOS |
+| [.agents/skills/mattpocock-setup-ts-deep-modules](file:///d:/AI-OS/.agents/skills/mattpocock-setup-ts-deep-modules) | Folder | TS deep module boundaries and package isolation engine. | AIOS |
 
 ### Workspace-Scoped Agents (`.agents/agents/`)
 | Directory / File | Type | Purpose | Owner / Writer |

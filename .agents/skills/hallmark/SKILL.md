@@ -570,3 +570,9 @@ If `references/study.md` cannot be loaded for any reason, refuse the verb polite
 ## Output contract & scope
 
 Load [`references/contract.md`](references/contract.md) once, at handoff time, for the full output contract and scope-of-skill rules.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Anti-Slop Quality Engine**: Audits 57 quality gates and 21 macrostructure archetypes via scripts/hallmark_runner.py.
+- **Workflow Integration**: Integrated into Phase 5 of **/website-design-engine**, **/new-project**, **/verify-design**, and **/jsmastery-audit**.

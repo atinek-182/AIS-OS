@@ -32,9 +32,18 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/improve-system` — Analyze the current session to update skill instructions, save lessons, or flag stale configurations.
 - `/ingest-repo` — Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, and skill adaptation engine.
 - `/ingest-skills` — Upgraded alias routing directly to /ingest-repo engine.
+- `/jsmastery-architect` — Fullstack JavaScript & Next.js architecture design engine.
+- `/jsmastery-audit` — Fullstack JavaScript and Next.js App Router code auditor.
+- `/jsmastery-scope` — Project scoping, tracer bullet vertical slices, and feature breakdown engine.
 - `/karpathy-guidelines` — Behavioral guidelines to reduce common coding mistakes, enforce simplicity, and ensure surgical code edits.
 - `/level-up` — Weekly 3Ms interview. Find one automation, scope it, ship it. One per week.
 - `/marketing` — Copywriting and marketing copy dynamic router referencing Corey Haynes' library.
+- `/mattpocock-domain-modeling` — TypeScript domain modeling, discriminated unions, branded types, and ubiquitous language engine.
+- `/mattpocock-setup-ts-deep-modules` — TS deep module boundaries and package isolation engine.
+- `/mattpocock-teach` — Socratic teaching and mental model builder for TypeScript & web engineering.
+- `/mattpocock-to-spec` — Technical SPEC compiler turning loose user prompts into structured architecture contracts.
+- `/mattpocock-to-tickets` — Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD.
+- `/mattpocock-wayfinder` — Multi-session macro planning and issue map manager.
 - `/new-project` — Scaffolds project directory, design/asset briefs, and starts discovery Q&A.
 - `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
 - `/onboard` — Re-run any time to refresh context from `context/aios-intake.md`.

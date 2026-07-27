@@ -38,3 +38,9 @@ Automates the drafting of emails, DMs, and community replies. It loads the brand
    # Set context (personal or brand) and invoke GWS Gmail drafts create
    $env:GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE="C:\Users\HP\.config\gws\credentials_brand.json"; gws gmail users drafts create --params '{"userId": "me"}' --json '{"message": {"raw": "BASE64_ENCODED_MESSAGE"}}'
    ```
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Brand Voice & Copywriting**: Leverages **/marketing** copywriting patterns and ZORIXEL brand voice guidelines.
+- **Client & Audience Outreach**: Formats messages for Instagram DMs, emails, and YouTube comments.

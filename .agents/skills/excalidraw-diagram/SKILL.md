@@ -261,3 +261,9 @@ Every diagram uses this shell:
   "files": {}
 }
 ```
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Visual Architecture**: Generates system architecture diagrams for **/jsmastery-architect**, **/mattpocock-to-spec**, and **/mattpocock-wayfinder**.
+- **Diagram Vault Storage**: Saves diagrams into diagrams/ directory.

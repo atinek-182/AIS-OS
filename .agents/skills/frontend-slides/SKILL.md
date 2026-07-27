@@ -118,3 +118,9 @@ To generate decks specifically branded for **Zorixel**, override standard templa
 * **Highlight Accent**: Zorixel brand coral (`#ff6b4a`), used sparingly (under 10% screen space).
 * **Typography**: Elegant display serif (e.g. Garamond, Fraunces) paired with clean monospace/sans-serif.
 * **Layout Structure**: Comparison columns should float as crisp white panels (`#ffffff`) with highly diffused, soft shadows (`box-shadow: 0 20px 48px rgba(20, 20, 19, 0.04)`).
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Presentation Decks**: Programs 16:9 responsive HTML decks using **/slide-component** assets.
+- **Visual QA**: Verifies deck layouts via **/verify-design**.

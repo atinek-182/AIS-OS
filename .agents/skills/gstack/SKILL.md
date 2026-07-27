@@ -73,3 +73,8 @@ When `/gstack` is triggered:
    - **Green Lights (What to Keep)**
    - **Red Flags (Critical Fixes)**
    - **Recommended Actions**
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Virtual Executive Team**: Integrates Garry Tan's 5 lenses (CEO strategy, EM architecture, UI/UX design, browser QA, release audit) across **/website-design-engine**, **/jsmastery-architect**, and **/verify-design**.

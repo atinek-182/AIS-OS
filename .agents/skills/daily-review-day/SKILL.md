@@ -33,3 +33,10 @@ Automates the evening reflection routine. It gathers completed tasks, audits man
    - Automatically clear all temporary browser files inside the Playwright cache folder (`d:\AI-OS\.playwright-mcp\`) to prevent directory map errors and save disk space.
 
 3. Report the daily summary back to the user with a confirmation of task updates.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Evening Ritual**: Reviews completed items from **/daily-plan-day** and logs accomplishments.
+- **Manual Overhead Auditing**: Identifies repetitive tasks done 3+ times and flags them for **/level-up** automation scoping.
+- **Vault Sync**: Updates rain-aios/wiki/log.md and decisions/log.md.

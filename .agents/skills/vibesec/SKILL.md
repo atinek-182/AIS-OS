@@ -764,3 +764,9 @@ When generating code, always:
 8. **Keep dependencies updated** — Use tools to track vulnerable dependencies
 
 When unsure, choose the more restrictive/secure option and document the security consideration in comments.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Security Guide & Scanner**: Enforces web application security rules (IDOR, tenant isolation, JWT httpOnly cookies, Zod validation, SSRF blocking).
+- **Code Audit**: Integrated into Phase 5 of **/website-design-engine** and **/jsmastery-audit**.

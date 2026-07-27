@@ -115,3 +115,9 @@ Files created in `brain-aios/wiki/experiences/` must follow this format:
 - **[Rule Name]:** [Concrete guideline to prevent this issue.]
 - **[Security Rule Name]:** [Secrets hygiene or application security rule.]
 ```
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Self-Improvement Loop**: Triggered after major milestones, skill updates, or user corrections.
+- **System Maintenance**: Updates skill files, persists lessons into MEMORY.md, and optimizes workspace instructions.

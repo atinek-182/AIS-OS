@@ -54,3 +54,9 @@ This automatically:
 1. Deletes the folder from `trials/`.
 2. Removes the target from the `TARGETS` list inside `trials/runner.py`.
 3. Unregisters the path from `WORKSPACE_MAP.md`.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Optimization Pipeline**: Integrates with Karpathy's closed-loop Autoresearch runner scripts in scripts/.
+- **System Quality**: Hands off prompt & skill optimizations to **/skill-builder** and **/improve-system**.

@@ -66,3 +66,11 @@ This skill coordinates the migration and adaptation of legacy coding plugins, cu
   - The skills load without syntax or formatting issues.
   - Any associated custom scripts have execution permissions.
 
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Repository Ingestion**: Invoked by **`/ingest-repo`** during Phase 6 to adapt Claude Code skill references into Antigravity standards.
+- **Skill Quality Audit**: Hands off newly adapted skills to **`/skill-builder`** to run the No-Op test and dual-trigger frontmatter validation.
+- **System Rules Update**: Updates registered skill paths in **`GEMINI.md`** and **`WORKSPACE_MAP.md`**.
+
+

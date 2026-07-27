@@ -26,3 +26,8 @@ Enables the AIOS to sync decision logs, checklists, or competitor research detai
 3. Formulate the database property JSON structure matching the database's schema (e.g. Title, Date, Text content).
 4. Use the `notion-mcp-server:API-post-page` tool to push the new page, or `API-patch-page` to update properties.
 5. Confirm successful sync with the user.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Remote Vault Sync**: Syncs local decisions, content calendars, and task lists from rain-aios/ and second-brain-zorixel/ to Notion.

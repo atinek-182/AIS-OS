@@ -70,3 +70,11 @@ agent-reach doctor
 
 1. **Ordered Backend Fallback**: If a backend suffers anti-scraping blocks (e.g. 412 rate limits), the router dynamically cascades to the secondary fallback backend.
 2. **Local Credential Privacy**: Cookies and tokens reside strictly in `~/.agent-reach/config.yaml` (`0600` POSIX permissions). No remote leakage.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Research & Discovery**: Feeds live web research into **`/grill-me`**, **`/roast`** (Researcher persona), and **`/ingest-repo`**.
+- **SEO & Marketing**: Connects with **`/seo-audit`** and **`/marketing`**.
+- **Web Scraping**: Cascades to **`/scrape-web`** (Scrapling engine) and **`/scrape-reference`** for full offline visual cloning.
+

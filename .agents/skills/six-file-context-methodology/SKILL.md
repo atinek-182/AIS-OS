@@ -91,3 +91,9 @@ Audits context state synchronization against git commit history to detect and fi
 - **Full Video Transcript**: [FULL_TRANSCRIPT.md](file:///d:/AI-OS/references/six-file-context-methodology/FULL_TRANSCRIPT.md)
 - **29 Ghost AI Specs Library**: [feature-specs-library/](file:///d:/AI-OS/references/six-file-context-methodology/feature-specs-library/)
 - **SEO Skills Library Vault**: [seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/)
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **6-File Architecture**: Senior AI engineering 6-file context scaffolding (PROJECT.md, REQUIREMENTS.md, ARCHITECTURE.md, DATA_FLOW.md, DECISIONS.md, PROGRESS.md).
+- **Spec & Ticket Integration**: Connects with **/mattpocock-to-spec**, **/jsmastery-scope**, and **/mattpocock-to-tickets**.

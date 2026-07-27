@@ -42,3 +42,8 @@ When invoked, execute the complete workflow documented in [d:\AI-OS\.agents\skil
      - **Script & Function Replacement**: Replace older, inferior functions or scripts with the newly ingested engine.
    - Update ALL handbooks: `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, `GEMINI.md`, `MEMORY.md`, `WORKSPACE_MAP.md`, `decisions/log.md`, `brain-aios/wiki/log.md`, `brain-aios/wiki/index.md`, `second-brain-zorixel/wiki/index.md`.
 8. **Empirical Verification, Scratch Cleanup & Self-Improvement**: Force-delete scratch folder, run `python scripts/validate_workspace_map.py`, and run unit/runner tests.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Alias Routing**: Direct alias routing to **/ingest-repo** for 8-phase repository ingestion and skill adaptation.

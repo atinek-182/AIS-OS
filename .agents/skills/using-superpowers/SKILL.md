@@ -65,3 +65,8 @@ These thoughts mean STOP—you're rationalizing:
 ## User Instructions
 
 User instructions (GEMINI.md, AGENTS.md, direct requests) take precedence over skills, which in turn override default behavior. Only skip skill workflows or instructions when your human partner has explicitly told you to.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Workflow Enforcer**: Mandates scanning workspace skills and invoking appropriate skills BEFORE writing code or taking action.

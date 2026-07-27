@@ -168,4 +168,9 @@ Every `/level-up` run produces:
 
 ---
 
+---
 
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Weekly 3Ms Interview**: Scopes one high-leverage AI automation per week (Mindset, Method, Machine framework).
+- **Task Scraping**: Evaluates manual overhead logged during **/daily-review-day**.
+- **Decision Logging**: Appends automation specs to decisions/log.md.

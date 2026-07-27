@@ -49,3 +49,8 @@ Apply the rules, style constraints (clear > clever, specific > vague, active voi
 * The drafted copy (structured by page section).
 * Design/strategy annotations explaining why choices were made.
 * 2-3 headline/CTA alternatives.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Copywriting Router**: Connects Corey Haynes' copywriting library with **/carousel-copy**, **/draft-message**, and **/website-design-engine**.

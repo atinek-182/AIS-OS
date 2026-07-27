@@ -1,0 +1,69 @@
+---
+name: mattpocock-wayfinder
+description: Multi-session macro planning and issue map manager. Chart large complex projects as a shared decision map on issue trackers/markdown, working through frontier decision tickets step-by-step. Triggered via /mattpocock-wayfinder or naturally when handling large ambiguous epics.
+argument-hint: '[destination_or_map_link]'
+---
+
+# Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
+
+## ⚡ Overview & Tri-Mode Routing
+
+Wayfinder is Matt Pocock's macro-planning skill for large, wrapped-in-fog efforts spanning multiple agent sessions. It charts the journey as a **shared map** of **decision tickets**, resolving decisions one at a time until the path to the destination is clear.
+
+Invokable via:
+- **Slash Command**: `/mattpocock-wayfinder [destination_or_map]`
+- **Dynamic Intent**: Triggered automatically when facing a massive architectural refactor, migration, or multi-week epic.
+- **Inter-Skill Calling**: Invoked by `/new-project`, `/ingest-repo`, `/jsmastery-architect`, and `/jsmastery-scope`.
+
+---
+
+## 🗺️ The Map & Ticket System
+
+### 1. Map Structure (`docs/wayfinder/map.md` or tracker issue)
+
+```markdown
+## Destination
+Clear, 1-2 sentence description of what success looks like when the fog clears.
+
+## Notes
+Domain context, rules, standing preferences, required skills.
+
+## Decisions So Far
+- [Ticket Name](link) — One-line gist of the decided answer.
+
+## Not Yet Specified (Fog of War)
+Work in scope that is coming up but not yet sharp enough to ticket.
+
+## Out of Scope
+Work consciously ruled out of this effort.
+```
+
+### 2. Ticket Types
+- **Research** (AFK): Fact-finding, API documentation checks, benchmarks.
+- **Prototype** (HITL): Building low-fidelity prototypes or UI stubs to react to.
+- **Grilling** (HITL): Socratic Q&A to resolve high-stakes design questions.
+- **Task** (AFK/HITL): Manual unblocking step (provisioning, schema dump).
+
+---
+
+## 🔄 Execution Workflow
+
+### Mode 1: Charting the Map
+1. **Name the Destination**: Lock in what "done" looks like using **`/grill-me`** and **`/mattpocock-domain-modeling`**.
+2. **Map the Frontier**: Surface open decisions breadth-first.
+3. **Fill the Fog**: Log un-ticketed areas in *Not Yet Specified*.
+4. **Create Frontier Tickets**: Generate sharp decision tickets for immediate unblocked decisions.
+
+### Mode 2: Working Through the Map
+1. Load the low-resolution map index.
+2. Choose the ticket. If the user named one, use it. Otherwise take the first frontier ticket in order. Claim it.
+3. Resolve it — zoom as needed: invoke **`/grill-me`**, **`/roast`**, or **`/mattpocock-to-spec`**.
+4. Record the resolution comment, move decision to *Decisions So Far*, and graduate next patch of fog into fresh tickets.
+5. **Rule of 1**: Never resolve more than ONE ticket per agent session (except research tickets).
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Destination & Vocabulary**: Uses **`/grill-me`** and **`/mattpocock-domain-modeling`**.
+- **Ticket Audit & Risk**: Uses **`/roast`**.
+- **Spec & Slice Breakdown**: Hands off resolved tickets to **`/mattpocock-to-spec`**, **`/jsmastery-scope`**, and **`/mattpocock-to-tickets`**.

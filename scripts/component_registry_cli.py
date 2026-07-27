@@ -4,6 +4,12 @@ import os
 import subprocess
 import re
 
+"""
+ZORIXEL AIOS Component Registry CLI Script
+Integrated into: /website-design-engine, /new-project, /jsmastery-architect, /grill-me, and /roast.
+Purpose: Queries 300+ cataloged UI components across 11 libraries (Aceternity UI, Animate UI React, Magic UI, 21st.dev, Motion Primitives, React Bits, Origin UI, Kokonut UI, Uiverse, Forge UI, Vengence UI) for instant installation or adaptation.
+"""
+
 # Ensure UTF-8 output encoding for Windows terminal
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding='utf-8')

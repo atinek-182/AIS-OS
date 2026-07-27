@@ -31,3 +31,9 @@ Enables high-performance keyword search across both local Obsidian vaults (the A
    - Format the filename as a clickable link: `[basename](file:///d:/AI-OS/...)`.
    - Include the line number and a snippet of the matching content.
 4. Output the search results grouped by vault.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Vault Knowledge Retrieval**: Searches across rain-aios/, second-brain-zorixel/, and premium-frontend-experience-system/.
+- **Reference Library Search**: Integrates with rain-aios/wiki/research/skills-library/ for progressive disclosure lookup.

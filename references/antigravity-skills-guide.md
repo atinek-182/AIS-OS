@@ -130,3 +130,31 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 *   **Reference Manual:** `brain-aios/wiki/research/skills-library/os-audit/SKILL.md`
 *   **Dynamic Triggering:** Automatically triggers when verifying context freshness, auditing project structure, checking stale indexes, or organizing project files.
 
+---
+
+## 💻 17. JS Mastery Skills (`jsmastery-skills`)
+*   **Purpose:** Fullstack JavaScript & Next.js development skills covering architecture, scoping, testing, code audits, and documentation.
+*   **Repository:** [jsmastery-pro/skills](https://github.com/jsmastery-pro/skills)
+*   **Active Local Skills:**
+    - `.agents/skills/jsmastery-architect/SKILL.md` (`/jsmastery-architect`)
+    - `.agents/skills/jsmastery-audit/SKILL.md` (`/jsmastery-audit`)
+    - `.agents/skills/jsmastery-scope/SKILL.md` (`/jsmastery-scope`)
+*   **Reference Vault Archival:** `brain-aios/wiki/research/skills-library/jsmastery-skills/`
+*   **Dynamic Triggering:** Automatically triggers when designing Next.js App Router features, building fullstack JS apps, scoping milestones, or running code audits.
+
+---
+
+## ⚡ 18. Matt Pocock Engineering Skills (`mattpocock-skills`)
+*   **Purpose:** High-rigor engineering discipline, TypeScript domain modeling, multi-session wayfinding, spec-to-tickets deconstruction, and Socratic teaching.
+*   **Repository:** [mattpocock/skills](https://github.com/mattpocock/skills)
+*   **Active Local Skills:**
+    - `.agents/skills/mattpocock-domain-modeling/SKILL.md` (`/mattpocock-domain-modeling`)
+    - `.agents/skills/mattpocock-wayfinder/SKILL.md` (`/mattpocock-wayfinder`)
+    - `.agents/skills/mattpocock-to-spec/SKILL.md` (`/mattpocock-to-spec`)
+    - `.agents/skills/mattpocock-to-tickets/SKILL.md` (`/mattpocock-to-tickets`)
+    - `.agents/skills/mattpocock-teach/SKILL.md` (`/mattpocock-teach`)
+    - `.agents/skills/mattpocock-setup-ts-deep-modules/SKILL.md` (`/mattpocock-setup-ts-deep-modules`)
+*   **Reference Vault Archival:** `brain-aios/wiki/research/skills-library/mattpocock-skills/`
+*   **Dynamic Triggering:** Automatically triggers when modeling TS types, managing multi-session epics, compiling specs, decomposing tickets, or explaining complex engineering concepts.
+
+

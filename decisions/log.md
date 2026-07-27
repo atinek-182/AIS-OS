@@ -14,9 +14,58 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 **Alternatives considered:** what else was on the table.
 
 **Owner:** who's accountable.
+
 ```
 
-Keep it terse. Future-you will thank present-you for capturing the *why*, not just the *what*.
+## 2026-07-27 — Codified Automatic Skill Evolution & On-Demand Vault Promotion Mandate
+
+**Decision:** Codified the permanent AIOS Mandate for Automatic Skill Evolution & On-Demand Vault Promotion:
+1. **Automatic Vault Scanning**: Whenever the AIOS encounters a new task, workflow requirement, or technical domain, it MUST automatically scan `brain-aios/wiki/research/skills-library/` and vault references for matching skills, guides, or manuals.
+2. **On-Demand Tier 2 to Tier 1 Promotion**: Whenever a skill, guide, or workflow stored in `skills-library/` is needed for active work, the AIOS MUST automatically adapt, promote, format (with dual-trigger YAML frontmatter, No-Op test quality discipline, and explicit `## 🔗 Inter-Skill Connections`), and install it directly into `.agents/skills/` without requiring explicit user prompt permission.
+3. **Continuous Skill Upgrading**: During milestone completions, `/improve-system` calls, or system reviews, the AIOS MUST automatically audit and upgrade existing active skills in `.agents/skills/` to integrate superior patterns, CLI parameters, and security safeguards as the workspace evolves.
+
+**Why:** Ensures the AIOS autonomously expands and upgrades its capabilities as needs arise without requiring manual user prompt management or intervention.
+
+**Owner:** Antigravity AIOS & Atinek Maurya
+
+---
+
+## 2026-07-27 — Universal `/grill-me` & `/roast` Cross-System Integration Across All Workflows
+
+
+**Decision:** Codified and integrated `/grill-me` (Socratic Discovery Engine) and `/roast` (Adversarial 5-Persona Council Gate) along with JS Mastery and Matt Pocock skills across all AIOS workflows, skills, scripts, and vaults:
+1. **Core Skills Overhauled**: Upgraded `.agents/skills/grill-me/SKILL.md` (concept explanations BEFORE questions, categorized INFER/ASK/RECOMMEND options, disk checkpointing) and created/upgraded `.agents/skills/roast/SKILL.md` (5-persona council: Contrarian, Expansionist, Logician, Researcher, Buyer + economics lens + 48-hr cheapest validation test).
+2. **Cross-Skill Wiring**: Embedded `/grill-me` and `/roast` gates into `/new-project`, `/website-design-engine`, `/ingest-repo`, `/carousel-copy`, `/design-direction`, `/jsmastery-architect`, `/mattpocock-to-spec`, `/verify-design`, and `/skill-builder`.
+3. **Script & SOP Integration**: Updated `scripts/component_registry_cli.py`, `scripts/hallmark_runner.py`, `scripts/scrapling_runner.py`, and created `brain-aios/wiki/sops/grill-me-and-roast-integration-sop.md`.
+4. **Quality Discipline**: Enforced Matt Pocock's `writing-great-skills` guidelines (No-Op test, pruning discipline, leading words, explicit use-case specification) across all skills.
+
+**Why:** Ensures Atinek Maurya never writes un-tested code, un-vetted business ideas, or generic AI slop. Forces every idea through Socratic discovery and adversarial roast before touching code.
+
+**Owner:** Antigravity AIOS & Atinek Maurya
+
+---
+
+## 2026-07-27 — Integrated `jsmastery-pro/skills` & `mattpocock/skills` into AIOS
+
+**Decision:** Completed 8-phase autonomous repository ingestion and skill adaptation for `jsmastery-pro/skills` and `mattpocock/skills`:
+1. **Tier 2 Vault Archival**: Cloned and archived full raw source repositories into `brain-aios/wiki/research/skills-library/jsmastery-skills/` and `brain-aios/wiki/research/skills-library/mattpocock-skills/`.
+2. **Tier 1 Native Adaptation**: Created 9 specialized skills in `.agents/skills/`:
+   - `jsmastery-architect`: Fullstack JS & Next.js App Router architecture build-spec engine.
+   - `jsmastery-audit`: Static & architectural code auditor for Next.js, Server Actions, and security.
+   - `jsmastery-scope`: Feature scoping, MVP milestone breakdown, and tracer-bullet vertical slices.
+   - `mattpocock-domain-modeling`: TypeScript domain modeling, discriminated unions, branded types, and ADRs.
+   - `mattpocock-wayfinder`: Multi-session macro planning and issue map manager for complex refactors.
+   - `mattpocock-to-spec`: Technical SPEC compiler turning loose user prompts into structured architecture contracts.
+   - `mattpocock-to-tickets`: Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD.
+   - `mattpocock-teach`: Socratic teaching and mental model builder for TypeScript & web engineering.
+   - `mattpocock-setup-ts-deep-modules`: Deep module boundary enforcement and package structure setup.
+3. **Cross-System Integration**: Updated `.agents/AGENTS.md`, `GEMINI.md`, `references/antigravity-skills-guide.md`, `references/aios-user-manual.md`, `MEMORY.md`, and `WORKSPACE_MAP.md`.
+
+**Why:** Combining JS Mastery's fullstack Next.js architectural workflows with Matt Pocock's TypeScript domain modeling and wayfinding discipline gives the AIOS world-class fullstack JS and TS engineering capabilities natively in Antigravity.
+
+**Owner:** Antigravity AIOS & Atinek Maurya
+
+---
 
 ## 2026-07-27 — Executed Phase 2 Site #23: Merci Michel Ingestion & Phase 2 Queue Completion
 

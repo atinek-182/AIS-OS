@@ -50,3 +50,9 @@ Automates multi-platform competitor content research. It routes requests through
 
 4. **Strategic Synthesis**:
    - Present the parsed competitor breakdown highlighting hook mechanics, script visual structure, CTA conversion levers, and AI automation takeaways.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Competitor Ingestion**: Scrapes competitor reels/posts into second-brain-zorixel/wiki/research/.
+- **Content Pipeline**: Feeds insights into **/carousel-copy** and **/marketing**.

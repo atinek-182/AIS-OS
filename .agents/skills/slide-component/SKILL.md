@@ -89,3 +89,8 @@ Surgically inject the approved HTML/CSS/JS block into the target slide container
 2. Locate the specific slide section (e.g., `<section class="slide" id="slide-3">`).
 3. Replace the placeholder container or append the compiled component block inside the slide's `.slide-content` wrapper.
 4. Verify the full presentation loads correctly without text overlaps or viewport scroll overflows.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Slide Layout Elements**: Injects Vengeance UI-inspired layouts (Bento grids, terminals, pipelines) into **/frontend-slides**.

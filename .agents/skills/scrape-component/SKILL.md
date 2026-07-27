@@ -70,3 +70,9 @@ Use this skill when the user likes a specific component, effect, or animation on
    - Delete the raw files if the temporary retention policy was requested, leaving only the visual screenshots and `analysis.md` documentation.
 3. **Roast Phase:**
    - Offer the user to run `/roast` to pressure-test the integration strategy.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Component Extraction**: Extracts specific UI components, animations, or styles from website URLs.
+- **Vault Integration**: Saves extracted .tsx components into premium-frontend-experience-system/references/component-vault/.

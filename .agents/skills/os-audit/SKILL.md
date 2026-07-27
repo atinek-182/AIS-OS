@@ -180,3 +180,9 @@ Exposure rules: a mode is HIGH when a RED finding feeds it, MED when only YELLOW
 - A stale local snapshot of data whose live source of truth is an external tool (a task manager, a CRM) is a labeling problem, not a freshness problem. The fix is marking it "snapshot — live data lives in X," not endless re-syncing.
 - Suggest re-running quarterly, or after any big reorganization. The "Since last audit" section is the payoff for saving dated reports.
 - If the project also has the AIS-OS kit's `/audit` skill, that's the companion: `/audit` scores whether the AIOS is built right (Four Cs, structural); `/os-audit` checks whether it's still true. Run both for the full picture. If `/audit` isn't installed, skip the reference; this skill stands alone.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Read-Only AIOS Audit**: Evaluates operating context drift, freshness, index truth, and file placement.
+- **System Health**: Complements **/audit** (Four Cs audit) and **/level-up**.

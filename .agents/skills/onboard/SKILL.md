@@ -117,4 +117,8 @@ The Default Shift question seeds the Mindset framework before `/level-up` formal
 - Idempotency: re-run `/onboard` with one Q3 priority changed. Expected: only `context/priorities.md` and `GEMINI.md`'s priority section update; backup created in `archives/intake-{ts}/`.
 - Voice rejection: type a sample mid-chat. Expected: skill refuses, asks for paste.
 
+---
 
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Day-1 Onboarding**: Refreshes workspace context from context/aios-intake.md.
+- **System Setup**: Initializes identity, brand goals, and initial skill configurations.

@@ -1,51 +1,66 @@
 ---
 name: verify-design
-description: Automatically build the project, run Playwright console checks, and generate
-  responsive screenshots at all 5 viewports. Use when completing a front-end milestone,
-  verifying layouts, or saying "/verify-design".
-argument-hint: '[optional parameters]'
+description: Automatically build the project, run Fullstack /jsmastery-audit code checks, Playwright console audits, Hallmark anti-slop tests, and generate responsive screenshots across all 5 viewports. Invokable via /verify-design.
+argument-hint: '[optional_target_directory]'
 ---
 
-
-
-# Verify Design Milestone
+# ZORIXEL Visual & Fullstack Verification Engine (`/verify-design`)
 
 ## ⚡ Invocation & Tri-Mode Routing
 
-This skill supports **Tri-Mode Flexible Execution**:
-- **Slash Command**: Explicitly run `/verify-design [optional parameters]` in chat.
-- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
-- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/verify-design` or by reading `SKILL.md` directly.
+This skill automates fullstack code quality audits and 5-viewport visual QA using Playwright and static analysis tools.
 
+Invokable via:
+- **Slash Command**: `/verify-design [target_dir]`
+- **Dynamic Intent**: Triggered automatically when completing frontend milestones, verifying layouts, or preparing for release.
 
-Automate the visual, responsive, and console QA checklists using Playwright.
+---
 
-## Use When
-- You are ready to verify a front-end milestone (e.g. Hero, Subsections).
-- You want to check for horizontal overflows or layout breakages.
-- You want to ensure there are no unhandled JavaScript errors in the browser console.
-- The user runs `/verify-design` or asks to "verify the current build".
+## 🎯 Specific Use Cases
+- **Web App Release QA**: Audit Next.js App Router code (`/jsmastery-audit`), test Server Action security, check console errors, and verify responsive design across 5 viewports before deployment.
+- **Micrographics & Component Library QA**: Execute visual regression sweeps across compiled cards, SVGs, and layouts to ensure 0 layout breakages.
 
-## Steps
+---
 
-1. **Locate Target Directory & Resolve Playwright Environment**:
-   - By default, use the current active project directory.
-   - If not specified, look in the `projects/` subdirectories or workspace root.
-   - **Playwright Context check**: Playwright Node scripts require the `playwright` module. Before executing Playwright, verify where `playwright` is installed (e.g. check local `node_modules` or parent folders). Always write or copy scripts to the nearest folder containing `playwright` in its dependencies, and execute them in that directory's context to prevent "module not found" errors.
+## 🛠️ Verification Execution Steps
 
-2. **Execute Audit Script**:
-   - Run the automated verification script in the terminal (e.g. `python scripts/verify_design_milestone.py` or node scripts).
-   - **Multi-Asset Regression Sweep**: If the project compiles multiple pages, cards, or assets (like our 50 micrographics templates), the verification script MUST run a visual audit sweep checking a representative sample of multiple items (e.g. all targeted templates or a set of 15+ cards). This prevents "dark fixes" where fixing one asset causes layout breakages in another.
-   - Do NOT run manual browser steps; let the script handle the static server startup, navigation, console audits, and screenshot captures.
+### Step 1: Fullstack Code Quality Audit (`/jsmastery-audit`)
+1. Run `/jsmastery-audit` on the target project directory.
+2. Check 6 Audit Gates:
+   - Next.js `'use client'` boundaries & Server Action input validation (Zod).
+   - Strict TypeScript types (zero `any`).
+   - Environment variable hygiene (no private keys exposed).
+   - Performance caching & image optimization.
+   - Accessibility (WCAG AA contrast, keyboard focus).
+   - Error boundaries (`error.tsx`, `not-found.tsx`).
 
-3. **Verify Outputs (GStack QA, Designer Lenses & Hallmark Anti-Slop Audit)**:
-   - Check the terminal output of the execution script.
-   - **Hallmark Anti-Slop Audit**: Run `python scripts/hallmark_runner.py audit <target-dir-or-file>` to verify compliance with 57 anti-slop quality gates (confirm zero fake metrics, zero un-tokenized inline hex colors, zero generic AI purple/blue gradients, and presence of Hallmark pre-emit self-critique scores).
-   - **GStack QA Lens (`/gstack qa`)**: Verify console logs for 0 JavaScript errors or unhandled exceptions. Highlight any errors as blocking items.
-   - **GStack Designer Lens (`/gstack design`)**: Inspect layout screenshots across 5 viewports (Mobile 375px, Mobile 414px, Tablet 768px, Laptop 1024px, Desktop 1440px) to verify visual contrast, typography legibility, margins, and micro-interaction polish. Display clickable links to generated audit screenshots.
+### Step 2: Hallmark Anti-Slop Audit (`/hallmark`)
+Run `python scripts/hallmark_runner.py audit <target-dir>` to verify compliance with 57 anti-slop quality gates:
+- Confirm zero generic purple/blue gradients (`bg-gradient-to-r`).
+- Confirm zero invented fake metric cards ("+47% conversion").
+- Confirm zero un-tokenized Hex/HSL colors.
+- Verify presence of Hallmark pre-emit self-critique headers.
 
-4. **Code Quality and Regression Review**:
-   - Ensure the build and verification scripts finish with exit code `0` and no console errors or Hallmark slop findings.
-   - Inspect the compiled screenshots side-by-side to guarantee visual parity with designs, and double-check for regressions (e.g. text wrapping, overlapping elements, or broken borders) in unrelated components before claiming the work is complete.
+### Step 3: Playwright 5-Viewport Visual Sweep
+Run `python scripts/verify_design_milestone.py` across 5 viewports:
+- Mobile Small (320px / 375px)
+- Mobile Large (414px)
+- Tablet (768px)
+- Laptop (1024px)
+- Desktop (1440px / 1920px)
 
+### Step 4: Verification Report Output
+Generate a clean Markdown verification summary:
+- **Build Status**: Exit code 0, 0 linter/TS errors.
+- **Console Audit**: 0 unhandled JS errors or network failures.
+- **Hallmark Score**: Anti-slop pass / pre-emit score.
+- **Visual Links**: Clickable links to generated screenshots.
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Web Creation QA**: Executed as Phase 6 in **`/website-design-engine`** and Milestone 4 in **`/new-project`**.
+- **Code Auditor**: Calls **`/jsmastery-audit`** for fullstack static code analysis.
+- **Anti-Slop & Quality Gates**: Invokes `python scripts/hallmark_runner.py` and **`/hallmark`**.
+- **Executive Team QA**: Serves as the QA lens for **`/gstack`** (`/gstack qa` and `/gstack design`).
 

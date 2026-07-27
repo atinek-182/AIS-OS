@@ -1,21 +1,18 @@
 ---
 name: skill-builder
-description: Use when creating new skills, optimizing existing skills, or auditing
-  skill quality. Guides skill development following Antigravity official best practices.
-  Invokable directly via /skill-builder.
-argument-hint: '[optional parameters]'
+description: Skill creation and quality audit engine tailored for Atinek Maurya. Enforces Matt Pocock's writing-great-skills discipline (No-Op test, pruning discipline, leading words, explicit use cases, dual-triggering) following Antigravity best practices. Invokable via /skill-builder.
+argument-hint: '[skill-name_or_path]'
 ---
-
-
 
 ## What This Skill Does
 
-Guides the creation and optimization of Antigravity skills using official best practices. Use this whenever:
+Guides the creation, optimization, and quality auditing of Antigravity skills. Incorporates Matt Pocock's **`writing-great-skills`** quality gates:
 
-- Building a new skill from scratch
-- Optimizing or auditing an existing skill
-- Deciding on advanced features (subagent execution, hooks, dynamic context, etc.)
-- Troubleshooting a skill that isn't working correctly
+1. **The No-Op Test**: Every instruction line MUST change model behavior versus default behavior. Eliminate redundant, obvious, or no-op fluff.
+2. **Pruning Discipline**: Strip stale cruft, duplicate meaning, or accreted lines that add token cost without adding value.
+3. **Leading Words Technique**: Use strong imperative verbs ("Enforce", "Verify", "Ban", "Compile") to direct model attention.
+4. **Explicit Purpose & Use-Case Specification**: Every skill MUST explicitly state when, why, and how to use it, with concrete usage scenarios.
+5. **Mandatory Dual-Trigger Frontmatter**: Ensure description contains both slash command (`/skill-name`) and natural language trigger phrases.
 
 For the complete technical reference on all frontmatter fields, advanced patterns, and troubleshooting, see [reference.md](reference.md).
 
@@ -296,3 +293,11 @@ Adapt these to fit your project:
 - Always read an existing skill before optimizing it. Never propose changes to a skill you haven't read.
 - When building a new skill, check if a similar skill already exists that could be extended instead.
 - For advanced patterns (subagent execution, hooks, permissions), see [reference.md](reference.md).
+
+---
+
+## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Quality Control Discipline**: Incorporates Matt Pocock's `writing-great-skills` guidelines (`GLOSSARY.md` rules: No-Op test, leading words, pruning discipline).
+- **Skill Ingestion & Adaptation**: Evaluates skills produced by **`/ingest-repo`** and **`/agent-adapt`**.
+- **System Improvement**: Hands off optimized skills to **`/improve-system`** for GEMINI.md and workspace registration.
+
