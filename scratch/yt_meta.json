@@ -1,0 +1,98 @@
+{
+  "title": "How Senior Engineers Actually Build With AI in 2026 | Build a Full Stack Systems Architecture App",
+  "uploader": "JavaScript Mastery",
+  "duration": 14297,
+  "description": "Build a production-ready SaaS without writing code by hand. Architecture-first workflow, proper context management for AI agents, and a real app shipped with Next.js, Prisma, Postgres, TypeScript, and Tailwind.\n\nClerk: https://jsm.dev/ghost-clerk\nTrigger.dev: https://jsm.dev/ghost-triggerdev\nLiveblocks: https://jsm.dev/ghost-liveblocks\nCodeRabbit: https://jsm.dev/ghost-coderabbit\n\n📘 FREE Six-File Methodology for Spec-Driven Dev: https://jsm.dev/ghost-context\n📋 Join the Agentic Course Waitlist: https://jsm.dev/ghost-agentic\n 🎁 Video Kit (Code, Assets, Prompts): https://jsm.dev/ghost-kit\n⭐ Join JS Mastery Pro: https://jsm.dev/ghost-jsm\n\n➤ Links not working? Some regions may need a VPN.\n\nhttps://discord.com/invite/n6EdbFJ https://twitter.com/jsmasterypro https://instagram.com/javascriptmastery https://linkedin.com/company/javascriptmastery\n\nBusiness Inquiries: contact@jsmastery.pro\n\nTimestamps: \n00:00:00 — Introduction\n00:03:15 — Crash Course\n00:14:31 — Project Setup\n00:21:43 — Preparing Context\n00:39:51 — UI Primitive Components\n00:48:14 — Layout Setup\n00:58:17 — Authentication\n01:21:05 — Project Dialogues\n01:31:00 — Prisma Setup\n01:38:58 — Project CRUD APIs\n01:51:18 — Editor: Access Sharing\n02:04:02 — Editor: Liveblocks Canvas\n02:23:54 — Editor: Canvas Features\n02:46:19 — Avatar Feature, Chat Sidebar UI & Auto Save\n03:05:01 — Trigger.dev Setup\n03:15:32 — AI Architecture Design Generation Flow\n03:39:21 — AI Spec Generation\n03:50:28 — Deployment",
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Introduction",
+      "end_time": 195
+    },
+    {
+      "start_time": 195,
+      "title": "Crash Course",
+      "end_time": 871
+    },
+    {
+      "start_time": 871,
+      "title": "Project Setup",
+      "end_time": 1303
+    },
+    {
+      "start_time": 1303,
+      "title": "Preparing Context",
+      "end_time": 2391
+    },
+    {
+      "start_time": 2391,
+      "title": "UI Primitive Components",
+      "end_time": 2894
+    },
+    {
+      "start_time": 2894,
+      "title": "Layout Setup",
+      "end_time": 3497
+    },
+    {
+      "start_time": 3497,
+      "title": "Authentication",
+      "end_time": 4865
+    },
+    {
+      "start_time": 4865,
+      "title": "Project Dialogues",
+      "end_time": 5460
+    },
+    {
+      "start_time": 5460,
+      "title": "Prisma Setup",
+      "end_time": 5938
+    },
+    {
+      "start_time": 5938,
+      "title": "Project CRUD APIs",
+      "end_time": 6678
+    },
+    {
+      "start_time": 6678,
+      "title": "Editor: Access Sharing",
+      "end_time": 7442
+    },
+    {
+      "start_time": 7442,
+      "title": "Editor: Liveblocks Canvas",
+      "end_time": 8634
+    },
+    {
+      "start_time": 8634,
+      "title": "Editor: Canvas Features",
+      "end_time": 9979
+    },
+    {
+      "start_time": 9979,
+      "title": "Avatar Feature, Chat Sidebar UI & Auto Save",
+      "end_time": 11101
+    },
+    {
+      "start_time": 11101,
+      "title": "Trigger.dev Setup",
+      "end_time": 11732
+    },
+    {
+      "start_time": 11732,
+      "title": "AI Architecture Design Generation Flow",
+      "end_time": 13161
+    },
+    {
+      "start_time": 13161,
+      "title": "AI Spec Generation",
+      "end_time": 13828
+    },
+    {
+      "start_time": 13828,
+      "title": "Deployment",
+      "end_time": 14297
+    }
+  ]
+}

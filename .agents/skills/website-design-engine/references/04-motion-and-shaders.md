@@ -1,16 +1,25 @@
 # ⚡ Phase 4 Reference: Motion Engineering, GSAP & WebGL Shaders
 
-## 1. Motion Strategy & Dial Gating
+## 1. Motion Dialing Matrix (Dial 0 to 10)
 
-Apply animation ONLY when indicated by `MOTION_INTENSITY > 4`. Every animation must serve 1 of 4 functions:
-1. **Hierarchy**: Drawing attention to primary element.
-2. **Narrative Sequence**: Revealing content in story order.
-3. **Tactile Feedback**: Confirming user interaction (press scale `0.98`).
-4. **State Transition**: Explaining spatial origin of modals/drawers.
+Motion intensity is established in Phase 0 Q&A. Every animation must serve a clear purpose (hierarchy, tactile feedback, spatial transition, narrative sequence):
+
+- **Dial 0–3 (Airy / Minimalist)**: Clean CSS hover transitions (`duration-200 ease-out`), subtle press scale (`0.98`), zero heavy JS scroll hooks.
+- **Dial 4–6 (Kinetic / Interactive)**: Motion/React reveal animations, GSAP ScrollTrigger sticky-card stacks, horizontal scroll tracks, magnetic button cursors.
+- **Dial 7–10 (Immersive / 3D Canvas)**: Three.js / React Three Fiber interactive 3D stages, custom GLSL liquid/aurora shaders, audio-reactive visualizers, particle physics.
 
 ---
 
-## 2. GSAP ScrollTrigger Canonical Skeletons
+## 2. AUTOMATIC MANDATORY PURE SKILLS INGESTION STEP
+
+When `MOTION_INTENSITY > 3`, you MUST NOT rely on memory alone. Execute `view_file` automatically on the target pure skill instructions BEFORE writing code:
+
+- **GSAP & ScrollTrigger Animation**: Read `d:\AI-OS\brain-aios\wiki\research\skills-library\gsap-skills\SKILL.md` (or `C:\Users\HP\.gemini\config\skills\gsap-animation\SKILL.md`) for pin spacing, scrub math, text split reveals, and Lenis smooth scroll setup.
+- **Three.js & GLSL Canvas Shaders**: Read `d:\AI-OS\brain-aios\wiki\research\skills-library\threejs-skills\SKILL.md` (or `C:\Users\HP\.gemini\config\skills\threejs-webgl\SKILL.md`) for vertex/fragment shader programs, camera lighting, and frame-rate throttling.
+
+---
+
+## 3. GSAP ScrollTrigger Canonical Skeletons
 
 ### A. Sticky-Stack Scroll (Card Stack Effect)
 ```tsx
@@ -115,19 +124,28 @@ export function HorizontalPan({ children }: { children: React.ReactNode }) {
 
 ---
 
-## 3. Motion/React State Rules & Anti-Patterns
+## 4. Motion Performance Rules & WebGL Canvas Fallbacks
 
-- **NEVER use `useState` for Scroll/Pointer Physics**: Always use Motion's `useMotionValue` and `useTransform`. React state re-renders the component tree on every frame and causes severe jank on mobile devices.
-- **Hardware Acceleration**: Animate ONLY `transform` (translate, scale, rotate) and `opacity`. Never animate `top`, `left`, `width`, `height`, or `margin`.
-- **Forbidden Scroll Listener**: `window.addEventListener("scroll")` state updates are BANNED. Use Motion's `useScroll()` or GSAP's `ScrollTrigger`.
-- **Marquee Limit**: Capped at max 1 marquee per page.
-- **Reduced Motion Safety**: All animations MUST degrade gracefully to static layout when `prefers-reduced-motion: reduce` is active.
+- **NEVER use `useState` for Scroll/Pointer Physics**: Always use Motion's `useMotionValue` and `useTransform`. React state re-renders cause severe jank on mobile devices.
+- **Hardware Acceleration**: Animate ONLY `transform` (`translate`, `scale`, `rotate`) and `opacity`. Never animate `top`, `left`, `width`, `height`, or `margin`.
+- **Forbidden Scroll Listener**: Raw `window.addEventListener("scroll")` state updates are BANNED. Use Motion `useScroll()` or GSAP `ScrollTrigger`.
+- **Mandatory WebGL Canvas Fallback Guard**:
+  ```tsx
+  // WebGL Container Guard Pattern
+  export function SafeCanvas({ children, fallback }: { children: React.ReactNode; fallback: React.ReactNode }) {
+    const [webGlAvailable, setWebGlAvailable] = useState(true);
+    useEffect(() => {
+      try {
+        const canvas = document.createElement("canvas");
+        const hasGl = !!(window.WebGLRenderingContext && (canvas.getContext("webgl") || canvas.getContext("experimental-webgl")));
+        setWebGlAvailable(hasGl);
+      } catch (e) {
+        setWebGlAvailable(false);
+      }
+    }, []);
 
----
-
-## 4. Three.js & WebGL Shader Fallbacks
-
-When creating 3D canvases or custom GLSL shaders:
-1. Always handle `webglcontextlost` events to restore the WebGL context.
-2. Provide a 2D CSS background gradient/image fallback wrapper behind `<canvas>` so the page remains beautiful if WebGL is disabled or fails to initialize.
-3. Pause WebGL render loop (`requestAnimationFrame`) when the canvas is not intersecting the active viewport (`IntersectionObserver`).
+    return webGlAvailable ? <>{children}</> : <div className="canvas-fallback-container">{fallback}</div>;
+  }
+  ```
+- **Pause Render Loops**: Pause WebGL render loops (`requestAnimationFrame`) when canvas is not intersecting the active viewport (`IntersectionObserver`).
+- **Reduced Motion Safety**: All animations MUST degrade gracefully to static layout when `@media (prefers-reduced-motion: reduce)` is active.

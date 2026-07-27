@@ -48,6 +48,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/scrape-web` — Scrapes web content, parses DOM elements, bypasses anti-bot blocks via Scrapling engine.
 - `/seo-audit` — Technical SEO, GEO, and page speed audit router referencing Daniel Agrici's library.
 - `/session-handoff` — Generate a clean end-of-session summary so you can clear context and resume work without losing state.
+- `/six-file-context-methodology` — Senior AI Engineering 6-File Context Methodology & 3-Step Decoupled Workflow engine.
 - `/skill-builder` — Workspace custom skill optimization and quality audit tool.
 - `/slide-component` — Injects custom components and animations into slide layouts.
 - `/using-superpowers` — Establishes how to find and use skills, requiring skill invocation before any response.
@@ -109,6 +110,8 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Self-Improvement Suggestion**: When we finish a major milestone, significantly refine a skill, or discuss a critical life/business lesson, suggest calling `/improve-system` to persist these learnings.
 - **Premium Frontend Experience System**: When designing or building any UI, component, or website, strictly adhere to the guidelines, workflows, and policies mapped under [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/). Use this as a core design brain to prevent templated layouts, overbuilt animations, or accessibility regressions. Check references, define visual concepts, establish viewports, and verify using Playwright browser testing.
 - **Unbounded Exhaustive Discovery Rule**: Whenever the user or instructions provide examples (e.g., "nav, hero, buttons, GSAP, WebGL, shaders"), treat them strictly as non-exhaustive sample illustrations — NEVER as limits. You MUST proactively inspect, discover, extract, and document EVERY SINGLE novel element, component, script, animation, shader, and interaction present on the target website or repository, even if not explicitly named in an example list.
+- **Global Zero-Hurry & Architectural Rigor Mandate**: Hard-and-fast rule across ALL skills, prompts, and AIOS projects: Never rush execution. Systems take time (weeks/months). Quality, deep option-based Q&A, web search research, Playwright visual QA, pre-write `/roast` audits, and pre-coding backstops take absolute precedence over speed. Always explain concepts before asking questions if the user hasn't watched videos or read source material.
+- **Security-First & Automatic Security Skill Ingestion Mandate**: Security is the top non-negotiable priority for all web apps and AI SaaS tools. Always enforce `/vibesec` rules (IDOR prevention, tenant isolation, JWT `httpOnly` cookies, Zod mass assignment validation, SSRF private IP blocking). Whenever new security or backend skills are installed in `.agents/skills/` or `skills-library/`, the AIOS MUST automatically detect, scan, ingest, and apply their quality gates to all context files, feature specs, and pre-write `/roast` audits without requiring manual reconfiguration.
 
 
 

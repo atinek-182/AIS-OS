@@ -78,8 +78,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brainstorms/2026-07-23-ingest-repo-skill-design.md](file:///d:/AI-OS/brainstorms/2026-07-23-ingest-repo-skill-design.md) | File | Ingest-repo skill architecture and security audit design. | AIOS |
 | [brainstorms/2026-07-24-raw-components-strategy.md](file:///d:/AI-OS/brainstorms/2026-07-24-raw-components-strategy.md) | File | Brainstorm capture notes for UI component library ingestion & strategy. | AIOS |
 | [brainstorms/2026-07-24-unified-design-system-engine-planning.md](file:///d:/AI-OS/brainstorms/2026-07-24-unified-design-system-engine-planning.md) | File | Planning capture notes for unified design system engine. | AIOS |
-| [.agents/skills/website-design-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/website-design-engine/SKILL.md) | File | Master orchestrator skill for unified website creation from scratch. | AIOS |
-| [.agents/skills/website-design-engine/references/](file:///d:/AI-OS/.agents/skills/website-design-engine/references/) | Folder | Modular reference guides (01-06) for macrostructures, layout math, 147 components, motion, quality gates, and visual QA. | AIOS |
+| [.agents/skills/website-design-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/website-design-engine/SKILL.md) | File | Master orchestrator skill for unified 10-phase website creation from scratch. | AIOS |
+| [.agents/skills/website-design-engine/references/](file:///d:/AI-OS/.agents/skills/website-design-engine/references/) | Folder | Modular reference guides (00-06) for sitemaps, macrostructures, layout math, 147 components, motion, quality gates, and visual QA. | AIOS |
 | [brainstorms/2026-07-24-ingest-os-audit.md](file:///d:/AI-OS/brainstorms/2026-07-24-ingest-os-audit.md) | File | Ingestion capture notes and VibeSec security audit for os-audit skill. | AIOS |
 | [diagrams/canvas_output.png](file:///d:/AI-OS/diagrams/canvas_output.png) | File | Output screenshot from canvas design experiments. | AIOS |
 | [brain-aios/wiki/research/skills-library/os-audit/SKILL.md](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/os-audit/SKILL.md) | File | Reference copy of os-audit skill instructions in the skills library vault. | AIOS |
@@ -227,9 +227,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/gsap-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/gsap-skills/) | Folder | Static reference library for GSAP, ScrollTrigger, and timelines. | AIOS |
 | [brain-aios/wiki/research/skills-library/seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/) | Folder | Static reference library containing SEO audit guidelines and validation scripts. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
-| [second-brain-zorixel/wiki/research/jordan-watkins-reference/](file:///d:/AI-OS/second-brain-zorixel/wiki/research/jordan-watkins-reference/) | Folder | Mirrored assets, design scripts, and visual analysis of jordanwatkins.xyz. | AIOS |
+| [references/six-file-context-methodology/](file:///d:/AI-OS/references/six-file-context-methodology/) | Folder | Knowledge vault storing the 6-File Context Methodology, masterclass handbook, 29 production feature specs, debugging templates, and full ~37,000-word video transcript. | AIOS |
+| [.agents/skills/six-file-context-methodology/SKILL.md](file:///d:/AI-OS/.agents/skills/six-file-context-methodology/SKILL.md) | File | Custom skill enforcing Senior AI Engineering 6-file context scaffolding and 3-step decoupled workflows. | AIOS |
 
 ---
+
 
 ## 2. Read/Write Policy & Log Alignment Table
 

@@ -20,6 +20,48 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ---
 
+## 2026-07-27 — Upgrade `/grill-me` Skill Globally & Locally across AIOS
+
+**Decision:** Upgraded `/grill-me` skill across both local workspace (`d:\AI-OS\.agents\skills\grill-me\SKILL.md`) and global configuration (`C:\Users\HP\.gemini\config\skills\grill-me\SKILL.md`). Codified 8 mandatory execution rules:
+1. Concept Explanation BEFORE Every Question (plain language explanations before asking).
+2. Proactive Web Search Research before offering options.
+3. Exhaustive Option-Based Inquiries with recommended answers (no question count limits).
+4. Pre-Write Feature Confirmation Check (*"Would you like to add any additional features before finalizing?"*).
+5. Checkpoint to Disk after every single answer.
+6. Mandatory Pre-Write `/roast` Council Audit (5 personas).
+7. Pre-Coding Backstop (*"Is there anything else remaining before we touch the code?"*).
+8. Global Zero-Hurry & Architectural Rigor Mandate across all discovery sessions.
+
+**Why:** Ensures the AI agent operates as a true thought partner and mentor rather than a vending machine. Explaining concepts first removes the burden of watching 4-hour video tutorials, while proactive web search and option-based questioning refine ideas to enterprise standards.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-27 — Enforce Security-First Architecture & Automatic Security Skill Ingestion Mandate
+
+**Decision:** Codified Security as the primary non-negotiable requirement across all web apps and AI SaaS projects. Integrated `/vibesec` protocol (IDOR prevention, tenant isolation, JWT `httpOnly` cookies, Zod mass assignment validation, SSRF private IP blocking) directly into the 7-File Context System (`STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md`), `/six-file-context-methodology` skill, `/grill-me` skill, and `GEMINI.md`. Mandated automatic detection, scanning, and ingestion of any present or future security/backend skills added to `.agents/skills/` or `skills-library/` into pre-write `/roast` audits.
+
+**Why:** Security flaws (IDOR, mass assignment, token leaks) are the #1 killer of production AI applications. Codifying automatic security skill ingestion ensures the AIOS scales its defense capabilities automatically whenever new security tools are installed.
+
+**Alternatives considered:** Manual security auditing after build completion (rejected because security must be designed upfront in `architecture.md` before writing code).
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-25 — Create Senior AI Engineering Knowledge Vault & `/six-file-context-methodology` Skill
+
+**Decision:** Created `references/six-file-context-methodology/` knowledge vault containing the unsummarized masterclass handbook (`STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md`), complete ~37,000-word video transcript (`FULL_TRANSCRIPT.md`), 6 core context file templates (`6-file-context-templates/`), 29 production feature specifications (`feature-specs-library/`), and debugging templates (`current-issues-templates/`). Created custom skill at `.agents/skills/six-file-context-methodology/SKILL.md` and registered it in `WORKSPACE_MAP.md`.
+
+**Why:** Synthesizes JavaScript Mastery's *How Senior Engineers Build With AI in 2026* masterclass into a reusable, zero-summarization knowledge base and operational skill. It codifies the Senior AI Engineer Mindset (System Architect > Code typist), Context Architecture, and Decoupled 3-Step Build Workflow for future ZORIXEL SaaS projects.
+
+**Alternatives considered:** Keeping reference files loosely stored in `Downloads/` (rejected due to context fragmentation and risk of loss).
+
+**Owner:** Antigravity AIOS
+
+---
+
 ## 2026-07-24 — Create Unified Master Website Creation Skill (`website-design-engine`)
 
 **Decision:** Created `website-design-engine` at `.agents/skills/website-design-engine/SKILL.md` with 6 modular reference files (`references/01-06.md`). Consolidated 13 global & local web design skills (`frontend-design`, `taste`, `design-is`, `design-loop-controlled`, `ui-ux-pro-max`, `gsap-animation`, `threejs-webgl`, `tailwind-patterns`, `browser-testing`, `vercel-web-design-guidelines`, `react-performance`, `remotion`, `impeccable`), 147 cataloged components (`component_registry_cli.py`), Obys 4 grid canons, Hallmark anti-slop gates, and 5-viewport Playwright visual QA without touching or breaking underlying individual skills.
@@ -965,9 +1007,29 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 - Saved experience log `brain-aios/wiki/experiences/2026-07-25-mandatory-deep-planning-multi-page-architecture.md` and indexed in `context/experiences/README.md` and `brain-aios/wiki/index.md`.
 - Registered experience document in `WORKSPACE_MAP.md`.
 
-**Why:** Rushing code generation in 2 minutes creates shallow landing layouts. A real Awwwards-grade client conversion flagship requires comprehensive architectural planning, conversion psychology, and a full multi-page application structure.
+---
+
+## 2026-07-27 — Website Design Engine v2.0 Upgrade (10-Phase System & Anti-Slop Discipline)
+
+**Decision:** Upgraded `website-design-engine` (`.agents/skills/website-design-engine/SKILL.md`) and reference manuals (`references/00-06.md`) into a master 10-Phase Web Creation System following a `/grill-me` discovery session and a 5-persona `/roast` council audit:
+1. **Multi-Page Sitemap & Shared Architecture (Phase 0.5)**: Added `references/00-sitemap-and-architecture.md` for multi-page route trees, shared `RootLayout`, navbar route state, and global footer.
+2. **Automated Design Token Extraction (Phase 1)**: Added token extraction via `hallmark study` / `scrape-reference` to lock OKLCH color palettes (`index.css`), brand font locks (Nuqun, Rosehot, Outfit, Geist Mono), and stark visual hierarchy.
+3. **Motion Dialing (0-10) & Pure Skills Integration (Phase 4)**: Integrated Motion Intensity Dialing with `gsap-skills` and `threejs-skills` library escalation, adding mandatory WebGL Canvas Fallback Guards (`SafeCanvas`).
+4. **Nano Banana & Google Veo Media Pipelines (Phase 4.5)**: Integrated Nano Banana (`generate_image`) for AI images and Google Veo (`credentials_personal.json`) for hero ambient video backgrounds.
+5. **Context Bloat & Rushing Fixes**: Enforced **Just-In-Time (JIT) Phase Reference Loading** (loading ONLY the 1-page reference for the active phase) to eliminate token fatigue, paired with the **Global Zero-Hurry & Architectural Rigor Mandate** for hard phase checkpoints.
+6. **Strict Anti-Slop & AI Gradient Bans**: Explicitly banned generic purple/blue gradients (`bg-gradient-to-r from-purple...`), floating blur blobs (`blur-3xl opacity-30`), and fake metric cards. Enforced Together AI Hallmark 57 gates, single `<h1>` SEO/GEO schema, and Playwright 5-viewport visual QA.
+
+7. **Automatic Mandatory Vault Reading Mandates**: Replaced passive links with explicit required `view_file` calls in SKILL.md and `references/04-motion-and-shaders.md` so the model automatically inspects `premium-frontend-experience-system/vault-references/INDEX.md` (Phase 1), `brain-aios/wiki/sops/grid-systems-sop.md` (Phase 2), and `skills-library/gsap-skills/` / `threejs-skills/` (Phase 4) without prompting.
+8. **Strict Zero-Cost & Subscription Media Guard**: Enforced zero extra cost policy for Nano Banana / Veo asset generation. If any generation step asks for payment/extra billing (even ₹1), the engine automatically aborts AI generation and falls back to free high-resolution Unsplash image URLs (`https://images.unsplash.com/photo-...`) or CSS ambient video loops.
+
+9. **Roast Council RESHAPE Audit Refinement (v2.2)**: Convened the 5-persona `/roast` council (Contrarian 7/10, Expansionist 10/10, Logician 9/10, Researcher 9/10, Buyer 9/10). Applied Logician/Contrarian RESHAPE recommendation: targeted Phase 1 mandatory `view_file` calls to specific sub-manuals (`grids-obys-agency-granularity-master.md`, `sondaven-granularity-master.md`, `oryzo-ai-granularity-master.md`) based on the site archetype rather than reading the heavy 68KB `INDEX.md`, saving ~15,000 tokens per run while preserving 100% automatic reading automation.
+
+**Why:** Solves user pain points: (1) AI failing to read vault/pure skills unless prompted every time; (2) Preventing unexpected AI image/video generation costs; (3) Optimizing context token footprint during mandatory vault ingestion turns.
 
 **Owner:** Antigravity AIOS
+
+
+
 
 
 

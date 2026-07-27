@@ -1,8 +1,8 @@
-# 🏛️ Phase 1 Reference: Macrostructures & Brand Systems
+# 🏛️ Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems
 
 ## 1. 21 Hallmark Macrostructure Archetypes
 
-Select ONE macrostructure that fits the brief's subject matter. Do not default to hero -> 3-col feature -> CTA:
+Select ONE macrostructure archetype that fits the brief's subject matter. Do not default to standard hero -> 3-column feature -> CTA:
 
 1. **Asymmetric Editorial**: Off-center hero, wide display typography, generous whitespace, staggered content blocks.
 2. **Bento Showcase**: Asymmetric grid tiles with varied cell spans, mixed media, and high-density visual storytelling.
@@ -28,45 +28,57 @@ Select ONE macrostructure that fits the brief's subject matter. Do not default t
 
 ---
 
-## 2. Zorixel & Studio Typography Rules
+## 2. Automated Design Token Extraction (`hallmark study` / `scrape-reference`)
 
-- **Nuqun**: Primary logo mark & signature brand brandmark.
-- **Rosehot**: Primary display font for major headlines, titles, and hero statements.
-- **Outfit**: Primary body font for clean readability, body paragraphs, and UI labels.
-- **Geist / JetBrains Mono**: Monospace utility font for technical metrics, code, captions, and structural tags.
+When a reference URL or screenshot is provided during initial discovery:
+1. **Extract Visual DNA**: Inspect reference styles to capture the primary color accent, background tone, font stack, and border radius.
+2. **Generate Token Variables**: Automatically map findings into CSS custom properties in `index.css`:
 
-### Typography Discipline:
+```css
+@theme {
+  --color-bg-primary: oklch(0.14 0.01 260);
+  --color-bg-surface: oklch(0.18 0.02 260);
+  --color-border: oklch(0.25 0.02 260);
+  --color-text-main: oklch(0.95 0.01 260);
+  --color-text-muted: oklch(0.65 0.02 260);
+  --color-accent: oklch(0.65 0.22 140); /* Emerald Pop */
+  --font-logo: "Nuqun", sans-serif;
+  --font-display: "Rosehot", sans-serif;
+  --font-body: "Outfit", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+}
+```
+
+---
+
+## 3. Brand Typography Discipline
+
+- **Nuqun**: Signature brandmark logo typeface.
+- **Rosehot**: Display typography for hero headlines, major titles, and section headers.
+- **Outfit**: Body text for paragraphs, feature descriptions, and UI labels.
+- **Geist Mono / JetBrains Mono**: Monospace font for telemetry, metrics, code, and structural tags.
+
+### Typography Rules:
 - **Hero Headline**: `text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none`.
 - **Body Paragraphs**: `text-base text-zinc-400 leading-relaxed max-w-[65ch]`.
-- **Sans Display Default**: Sans-serif display is default for modern/tech/creative briefs. Serif fonts (like `PP Editorial New`, `Tiempos`, `Cormorant`) are ONLY used if explicitly requested or for heritage editorial briefs.
 - **No Mixed-Family Emphasis**: Use italic/bold of the SAME font family for emphasis. Never inject a random serif word into a sans headline.
 - **Italic Descender Clearance**: When italic display text contains `y g j p q`, set minimum `leading-[1.1]` and `pb-1` to prevent clipping.
 
 ---
 
-## 3. OKLCH Color Math & Palette Rotation
+## 4. OKLCH Color Math & AI Slop Ban
 
-Always use locked CSS variable tokens or Tailwind OKLCH themes. Max 1 accent color per page:
+Always use locked CSS OKLCH tokens. Max 1 accent color per page.
 
-```css
-@theme {
-  --color-bg: oklch(0.14 0.01 260);
-  --color-surface: oklch(0.18 0.02 260);
-  --color-border: oklch(0.25 0.02 260);
-  --color-text-main: oklch(0.95 0.01 260);
-  --color-text-muted: oklch(0.65 0.02 260);
-  --color-accent: oklch(0.65 0.22 140); /* Emerald Pop */
-}
-```
+### ⛔ BANNED AI SLOP GRADIENTS & STEREOTYPES:
+- **BANNED**: Generic purple/blue gradient backgrounds (`bg-gradient-to-r from-purple-500 to-indigo-600` or `#8b5cf6` glows over `#09090b`).
+- **BANNED**: Floating blurred color blobs (`blur-3xl opacity-30 bg-purple-500`).
+- **BANNED**: Fake invented statistics cards ("+47% conversion", "50,000+ teams").
+- **BANNED**: Un-tokenized raw Hex strings in inline styles.
 
-### Banned Default Palettes:
-- BANNED: Warm beige/cream background (`#f5f1ea`) + brass/clay accent (`#b08947`) as generic default.
-- BANNED: Generic AI purple gradient slop (`#8b5cf6` glow over `#09090b`).
-
-### Rotational Palette Families:
-1. **Cold Luxury**: Silver-grey (`oklch(0.92 0.005 240)`) + smoke + chrome accent.
-2. **Forest**: Deep forest (`oklch(0.20 0.04 150)`) + bone + amber accent.
-3. **Black & Tan**: True off-black (`oklch(0.12 0.01 260)`) + crisp tan accent.
+### Rotational OKLCH Palette Families:
+1. **Pure Dark Pop**: Off-black (`oklch(0.12 0.01 260)`) + stark white + 1 Emerald or Cyan accent.
+2. **Cold Luxury**: Silver-grey (`oklch(0.92 0.005 240)`) + smoke + chrome accent.
+3. **Forest Studio**: Deep forest (`oklch(0.20 0.04 150)`) + bone + amber accent.
 4. **Cobalt + Cream**: Deep saturated cobalt pop against cool neutral.
-5. **Terracotta + Slate**: Rust accent against slate-grey structure.
-6. **Pure Monochrome + Pop**: Off-black + off-white + 1 vibrant pop (Emerald, Electric Cyan, Hot Pink).
+5. **Slate + Terracotta**: Rust accent against slate-grey structure.

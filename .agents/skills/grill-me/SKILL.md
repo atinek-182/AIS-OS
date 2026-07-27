@@ -8,9 +8,7 @@ description: Interview the user relentlessly about a plan, design, or topic, che
 argument-hint: '[optional parameters]'
 ---
 
-
-
-# Grill Me
+# Grill Me (`/grill-me`)
 
 ## ⚡ Invocation & Tri-Mode Routing
 
@@ -19,41 +17,49 @@ This skill supports **Tri-Mode Flexible Execution**:
 - **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description.
 - **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills or subagents via `/grill-me` or by reading `SKILL.md` directly.
 
+---
 
-Relentlessly interview the user about every aspect of the topic until you reach shared understanding. Walk down each branch of the decision tree, resolving dependencies one by one. The real goal is to **extract what's in their head into a durable, organized markdown file** so nothing is lost as context fills up.
+## 📌 Non-Negotiable Core Execution Rules
 
-## The capture file is the whole point
+1. **Global Zero-Hurry & Rigor Mandate**:  
+   Never rush the discovery session. Complex systems take time (weeks or months). Deep exploration, option-based Q&A, and architectural rigor take absolute precedence over speed.
 
-Long interviews fill up context. If you hold answers only in your head, you will eventually misremember, conflate, or drop something. So you **checkpoint to disk after every single answer**. The file, not your context, is the source of truth. Never make the user ask you to save progress.
+2. **Concept Explanation BEFORE Every Question**:  
+   If the user has not watched a video, read source documentation, or touched a specific topic, **ALWAYS explain the underlying concept in clear, plain language FIRST** before asking any question or making a suggestion.
+
+3. **Proactive Web Search Research**:  
+   Before asking a question or offering options, search the web to discover industry-leading best practices, modern tools, or trending features in the target domain.
+
+4. **Exhaustive Option-Based Inquiries**:  
+   Present detailed, structured multiple-choice options for every question (with your recommended answer highlighted) so the user can easily confirm, correct, or redirect. Never artificially limit questions to 2-3 vague queries — ask as many detailed questions as needed until every decision branch is resolved.
+
+5. **Pre-Write Feature Confirmation Check**:  
+   Before generating any document content, spec file, or code, explicitly ask the user:  
+   *"Would you like to add any additional features, suggestions, or modifications before I finalize this document/code?"*
+
+6. **Checkpoint to Disk After Every Single Answer**:  
+   Immediately append to `brainstorms/{YYYY-MM-DD}-{topic-slug}.md` after every user response BEFORE asking the next question. The capture file is the single source of truth.
+
+7. **Mandatory Pre-Write `/roast` Council Audit**:  
+   Run the `/roast` skill (5 persona council: Contrarian, Expansionist, Logician, Researcher, Buyer) to pressure-test every document concept before emitting final content.
+
+8. **Pre-Coding Backstop**:  
+   Before concluding the interview or moving to implementation, ask:  
+   *"Is there anything else remaining before we touch the code?"*
+
+---
 
 ## Setup (do this BEFORE the first question)
 
-1. **Create the capture file** at `brainstorms/{YYYY-MM-DD}-{topic-slug}.md` (create the `brainstorms/` folder if it doesn't exist). Every brainstorm capture lives here. One predictable home, regardless of topic. Do NOT scatter captures into project folders. If a session later produces a polished deliverable (a plan, a map, a spec), that artifact can move into the relevant `projects/` folder, but the raw capture always stays in `brainstorms/`.
-   - Get today's date with Python or system commands if you don't already know it.
-2. **Create the file immediately** with a header: title, date, the goal of the session, and an empty "Open flags" section.
-3. **Tell the user where you're saving**, in one line. Then ask Q1.
+1. Create the capture file at `brainstorms/{YYYY-MM-DD}-{topic-slug}.md`.
+2. Notify the user of the file path in one line.
+3. Explain **Concept 1** in clear language, then ask **Question 1** with structured options and your recommended answer highlighted.
 
-## The checkpoint rule (non-negotiable)
+---
 
-After EVERY user answer, BEFORE you ask the next question:
-- Append a structured entry to the capture file: the question topic, the key facts and decisions from their answer (in their words where the wording matters), and any flags (things they couldn't answer plus who should).
-- Be strict. Challenge assumptions. Don’t accept vague answers
-- Update or correct earlier entries if a later answer changes them.
-- Only then ask the next question.
+## Capture File Structure
 
-Never batch multiple answers into one write. Checkpoint one answer at a time. The point is that if context is lost at any moment, the file already holds everything said so far.
-
-## Interview method
-
-- Ask **one question at a time**. For each, provide your **recommended answer** (your best inference from context) so the user can simply confirm, correct, or redirect.
-- Resolve dependencies in order: settle the upstream decision before the ones that depend on it.
-- If a question can be answered by **exploring the codebase or reading a file/doc**, do that instead of asking. If the user hands you a doc (e.g. a Google Doc), read it and only surface what's net-new.
-- When the user **can't answer** something, capture it as a flag with the right owner and move on. Don't stall.
-- Keep going until the user says you're done, or you've covered every branch. Offer a completeness backstop near the end ("anything we haven't touched?").
-
-## Capture file structure
-
-```
+```markdown
 # {Topic}: Brainstorm / Discovery Notes
 Date: {date} · Goal: {one line}
 
@@ -65,13 +71,16 @@ Date: {date} · Goal: {one line}
 - Asked: {question}
 - Captured: {facts, decisions, in their words where it matters}
 - Flags: {open item -> owner}
-...
 
 ## Open flags (pending input)
 - {item} -> {who can answer}
 ```
 
-## At the end
-- Do a final read of the capture file for contradictions or gaps and reconcile them.
-- Give the user a short recap: what's captured, what's still flagged, and the suggested next step.
-- **Run the `/roast` skill**: Convene the adversarial roast council on the captured decisions/plan to pressure-test the underlying logic, identify fatal risks, and outline a cheapest 48-hour validation test before final approval.
+---
+
+## At the End of Session
+
+1. Do a final read of the capture file for contradictions or gaps and reconcile them.
+2. Convene the 5-persona `/roast` council to audit the captured decisions.
+3. Give the user a short recap: what's captured, what's flagged, and the suggested next steps.
+4. Execute the Pre-Coding Backstop check (*"Is there anything else remaining before we touch the code?"*).
