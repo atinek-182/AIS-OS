@@ -50,6 +50,18 @@ This skill supports **Tri-Mode Flexible Execution**:
 6. **Playwright Visual QA Engine (`verify`)**: Run Playwright CLI headless browser screenshots and console audits for every spec unit.
 7. **Explicit Tracker Confirmation**: Ask user confirmation before updating `progress-tracker.md`.
 8. **Pre-Coding Backstop**: Always ask: *"Is there anything else remaining before we touch the code?"*
+
+10. **Website Design Engine Integration (`website-design-engine` v2.2)**:
+    - *Pure Frontend Boundary*: `website-design-engine` powers 100% of pure frontend design (layouts, typography, motion, component sourcing, visual QA).
+    - *Flexible Template Rule*: Enforces Together AI Hallmark 57 anti-slop quality gates as visual standards without forcing rigid or templated code structures.
+    
+    - *Bundle Size & Script Hygiene Guard (Contrarian Fix)*:
+      1. Zero-Duplicate Libraries: Never mix Framer Motion and GSAP for simple widgets when one suffices.
+      2. Tree-Shaking Discipline: Use modular imports (`import { gsap } from 'gsap'`) — never import un-shaken full bundles.
+      3. Dynamic Lazy Loading: Heavy 3D WebGL components (`Three.js`) or complex GSAP timelines MUST use dynamic lazy imports (`ssr: false`) with a lightweight fallback skeleton to guarantee 100/100 Core Web Vitals page speed.
+    - *Hybrid Motion Architecture*: `ui-context.md` sets global motion rhythm & easing curves (`cubic-bezier(0.16, 1, 0.3, 1)` / `power3.out`) for visual cohesion across the entire site. Individual feature specs (`NN-component.md`) escalate to specialized animation tech (GSAP ScrollTrigger, Three.js WebGL shaders, Framer Motion, CSS) while strictly obeying the global easing DNA.
+    - *Component Sourcing*: Queries 147 cataloged components from Aceternity UI, Animate UI React, Forge UI, Vengence UI via `python scripts/component_registry_cli.py search <query>`.
+    - *Anti-Slop Hybrid Media Pipeline*: Uses high-engineering prompts for `generate_image` (no plastic textures or generic purple AI slop), paired with high-definition Unsplash URLs (`https://images.unsplash.com/photo-...`) and automatic zero-cost fallbacks.
 9. **Security-First & Auto-Skill Ingestion Mandate**: Security is top priority. Always apply `/vibesec` rules (IDOR, JWT HttpOnly cookies, Zod Mass Assignment validation, SSRF private IP blocking). Automatically detect, scan, and apply ANY present or future security/backend skill in `.agents/skills/` or `skills-library/` during planning, spec generation, and pre-write `/roast` audits.
 
 ---

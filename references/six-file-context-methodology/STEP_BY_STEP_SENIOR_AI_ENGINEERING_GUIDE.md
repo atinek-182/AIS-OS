@@ -174,3 +174,22 @@ To prevent reading 7 files on every turn and wasting context tokens:
 
 ### 3. State Drift Sync Check
 `/six-file-context-methodology check` verifies git commit logs against `progress-tracker.md` to ensure code changes and documentation remain 100% synchronized.
+
+
+---
+
+## 🎨 Website Design Engine Integration (`website-design-engine` v2.2)
+
+When building pure frontend interfaces or landing pages within the 7-File Context Methodology:
+
+1. **Pure Frontend Scope**: `website-design-engine` manages 100% of pure frontend design, typography, layout math, component sourcing, and visual motion.
+2. **Flexible Quality Standards**: Applies Together AI Hallmark 57 anti-slop rules (strict ban on generic AI purple/blue gradients `bg-gradient-to-r from-purple...` and floating blur blobs) without enforcing rigid page templates.
+3. **Hybrid Motion Architecture**:
+   - `ui-context.md` defines global motion rhythm & easing curves (`cubic-bezier(0.16, 1, 0.3, 1)`) for site-wide visual unity.
+   - Individual feature specs (`context/specs/NN-component.md`) select component-tailored animation tech (GSAP, Three.js WebGL shaders, Framer Motion, CSS) while obeying global easing.
+4. **147 UI Component Sourcing**: Queries Aceternity UI, Animate UI React, Forge UI, Vengence UI for modern interactive patterns.
+5. **Anti-Slop Media Pipeline**: Combines high-prompt AI generation with zero-cost Unsplash photography fallbacks.
+
+6. **Bundle Size & Script Tree Hygiene (Contrarian Audit Fix)**:
+   - Prevents animation library bloat by enforcing modular tree-shakeable imports.
+   - Heavy WebGL canvases (`Three.js`) or GSAP timelines are dynamically lazy-loaded (`next/dynamic` / `React.lazy` with `ssr: false`) to ensure initial page load speeds remain at 100/100 Lighthouse performance scores.

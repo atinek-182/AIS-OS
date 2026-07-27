@@ -7,6 +7,7 @@ Date: 2026-07-27 · Goal: Integrate the master 10-phase Website Design Engine (A
 - **Pure Frontend Boundaries**: `website-design-engine` handles 100% of pure frontend design (layouts, typography, motion 0-10, component sourcing, visual QA).
 - **Flexible Template Rule**: Enforces Hallmark 57 anti-slop quality gates without restricting code to rigid or templated layouts.
 - **Hybrid Motion Architecture**: Global motion rhythm & easing curves defined in `ui-context.md` for visual unity, paired with component-specific technology escalation (GSAP, Three.js, WebGL, Framer Motion, CSS) in individual feature specs.
+- **Anti-Slop Hybrid Media Pipeline**: High-engineering AI prompts (`generate_image`) avoiding generic AI purple/glow slop, combined with curated Unsplash photography. Zero-cost fallback to Unsplash or user prompt if AI output risks slop or payment triggers.
 
 ## Q&A log
 ### Q1 — Website Design Engine Integration Strategy
@@ -21,7 +22,22 @@ Date: 2026-07-27 · Goal: Integrate the master 10-phase Website Design Engine (A
   2. Component-Specific Technology Escalation (`context/specs/NN-component.md`): Each component selects its tailored animation technology (GSAP ScrollTrigger for heroes, Three.js/WebGL for 3D stages, Framer Motion for UI widgets, CSS for buttons) while strictly obeying the global easing & visual feel.
 - Flags: None.
 
+### Q3 — Anti-Slop Hybrid Media Pipeline
+- Asked: How should media assets (images/videos) be generated in pure frontend specs?
+- Captured: Hybrid Option A + Option B with Anti-Slop Guardrails:
+  1. High-Engineering AI Generation (`generate_image`): Use advanced anti-slop prompts (no plastic textures, no glowing purple hands, no generic stock AI look).
+  2. Unsplash & Curated Free Image Sources: Use high-definition Unsplash URLs (`https://images.unsplash.com/photo-...`) whenever AI prompts risk slop or zero-cost payment triggers occur.
+  3. User Option: Ask the user directly if custom brand images or specific assets are preferred.
+- Flags: None.
+
 ## Open flags (pending input)
-- None yet.
+- None.
 
 
+### Q4 — Contrarian Audit Resolution: Animation Bundle Size & Performance Guard
+- Asked: How to prevent multi-library animation bloat (GSAP + Framer Motion + Three.js) from slowing down page loads?
+- Captured: Enforced 3-tier Bundle Size & Script Tree Hygiene Guard:
+  1. Tree-shaken modular imports for GSAP and Framer Motion.
+  2. Dynamic lazy loading (`ssr: false`) with skeleton loaders for Three.js/WebGL canvases to preserve 100/100 Core Web Vitals.
+  3. No duplicate library imports for basic UI widgets.
+- Flags: None.
