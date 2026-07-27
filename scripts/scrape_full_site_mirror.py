@@ -167,23 +167,150 @@ async def mirror_site(url, site_slug):
             print("Executing Unbounded Component Extractor for DOM elements...")
             dom_elements = await page.evaluate("""() => {
                 const nodes = [];
-                const selectors = ['nav', 'header', 'main', 'section', 'footer', 'aside', '.hero', '.bento', '.card', 'canvas'];
-                selectors.forEach(sel => {
-                    document.querySelectorAll(sel).forEach((el, idx) => {
-                        nodes.push({
-                            tag: el.tagName.toLowerCase(),
-                            className: el.className || '',
-                            id: el.id || '',
-                            selector: sel,
-                            html: el.outerHTML.slice(0, 1500),
-                            text: (el.innerText || '').slice(0, 300)
-                        });
+                const selectorList = [
+                    'nav', 'header', 'footer', 'main', 'section', 'article', 'aside', 'form', 'dialog', 'canvas',
+                    '[class*="hero"]', '[class*="bento"]', '[class*="card"]', '[class*="nav"]', '[class*="header"]',
+                    '[class*="footer"]', '[class*="menu"]', '[class*="modal"]', '[class*="slider"]', '[class*="carousel"]',
+                    '[class*="accord"]', '[class*="scrolly"]', '[class*="grid"]', '[class*="stage"]', '[class*="wrapper"]',
+                    '[class*="container"]', '[class*="btn"]', '[class*="cta"]'
+                ];
+                const seenHtml = new Set();
+                
+                const elements = document.querySelectorAll(selectorList.join(', '));
+                elements.forEach((el, idx) => {
+                    const rect = el.getBoundingClientRect();
+                    // Skip hidden non-canvas elements with zero size
+                    if (el.tagName.toLowerCase() !== 'canvas' && rect.width === 0 && rect.height === 0) return;
+                    
+                    const html = el.outerHTML;
+                    // Skip tiny strings or exact duplicate HTML nodes
+                    if (!html || html.length < 30 || seenHtml.has(html)) return;
+                    seenHtml.add(html);
+
+                    const tag = el.tagName.toLowerCase();
+                    const cls = typeof el.className === 'string' ? el.className : '';
+                    const id = el.id || '';
+                    const clsLower = cls.toLowerCase();
+                    const idLower = id.toLowerCase();
+
+                    // Determine Category
+                    let category = 'misc';
+                    if (tag === 'nav' || clsLower.includes('nav') || clsLower.includes('menu') || tag === 'header' || clsLower.includes('header')) {
+                        category = 'nav';
+                    } else if (clsLower.includes('hero') || idLower.includes('hero') || (tag === 'section' && idx === 0)) {
+                        category = 'hero';
+                    } else if (tag === 'footer' || clsLower.includes('footer')) {
+                        category = 'footers';
+                    } else if (clsLower.includes('card') || clsLower.includes('bento') || clsLower.includes('tile') || clsLower.includes('item')) {
+                        category = 'cards';
+                    } else if (clsLower.includes('scroll') || clsLower.includes('pin') || clsLower.includes('sticky') || clsLower.includes('scrolly')) {
+                        category = 'scrolly';
+                    } else if (tag === 'dialog' || clsLower.includes('modal') || clsLower.includes('popup') || clsLower.includes('overlay')) {
+                        category = 'modals';
+                    } else if (tag === 'canvas' || clsLower.includes('canvas') || clsLower.includes('webgl') || clsLower.includes('three') || clsLower.includes('stage')) {
+                        category = '3d';
+                    } else if (tag === 'section' || tag === 'article' || tag === 'main' || clsLower.includes('section')) {
+                        category = 'sections';
+                    } else if (tag === 'form' || tag === 'button' || clsLower.includes('btn') || clsLower.includes('cta') || clsLower.includes('slider') || clsLower.includes('accord')) {
+                        category = 'interactive';
+                    }
+
+                    nodes.push({
+                        idx: idx + 1,
+                        tag: tag,
+                        className: cls,
+                        id: id,
+                        category: category,
+                        html: html,
+                        text: (el.innerText || '').slice(0, 300).trim(),
+                        width: Math.round(rect.width),
+                        height: Math.round(rect.height)
                     });
                 });
                 return nodes;
             }""")
             
-            print(f"Extracted {len(dom_elements)} structural DOM element candidates for React .tsx components.")
+            print(f"Extracted {len(dom_elements)} structural DOM element candidates. Synthesizing React .tsx components...")
+
+            def html_to_jsx(html_str):
+                # Basic HTML to JSX attribute replacements
+                jsx = html_str
+                jsx = re.sub(r'\bclass=', 'className=', jsx)
+                jsx = re.sub(r'\bfor=', 'htmlFor=', jsx)
+                jsx = re.sub(r'\btabindex=', 'tabIndex=', jsx)
+                jsx = re.sub(r'\bautocomplete=', 'autoComplete=', jsx)
+                jsx = re.sub(r'\bsrcset=', 'srcSet=', jsx)
+                jsx = re.sub(r'\bclip-path=', 'clipPath=', jsx)
+                jsx = re.sub(r'\bstroke-width=', 'strokeWidth=', jsx)
+                jsx = re.sub(r'\bstroke-linecap=', 'strokeLinecap=', jsx)
+                jsx = re.sub(r'\bstroke-linejoin=', 'strokeLinejoin=', jsx)
+                jsx = re.sub(r'\bfill-rule=', 'fillRule=', jsx)
+                # Self-close common un-closed void HTML tags in string
+                jsx = re.sub(r'<(img|input|br|hr|source|meta|link)([^>]*?)(?<!/)>', r'<\1\2 />', jsx)
+                return jsx
+
+            import json
+            categories_count = {}
+            index_metadata = []
+
+            for elem in dom_elements:
+                cat = elem["category"]
+                cat_dir = os.path.join(code_dir, "components", cat)
+                os.makedirs(cat_dir, exist_ok=True)
+                
+                categories_count[cat] = categories_count.get(cat, 0) + 1
+                cat_idx = categories_count[cat]
+
+                # Generate clean component name
+                raw_name = elem["id"] or (elem["className"].split()[0] if elem["className"] else elem["tag"])
+                clean_name = re.sub(r'[^a-zA-Z0-9]', '_', raw_name).strip('_')
+                clean_name = ''.join(word.capitalize() for word in clean_name.split('_') if word)
+                if not clean_name:
+                    clean_name = "Component"
+                comp_name = f"{cat.capitalize()}_{clean_name}_{cat_idx:02d}"
+
+                jsx_body = html_to_jsx(elem["html"])
+
+                tsx_content = f"""import React from 'react';
+
+/**
+ * Component: {comp_name}
+ * Target URL: {url}
+ * Category: {cat}
+ * Tag: <{elem['tag']}> | ID: "{elem['id']}" | Class: "{elem['className']}"
+ * Dimensions: {elem['width']}px x {elem['height']}px
+ */
+export const {comp_name}: React.FC = () => {{
+  return (
+    <div className="component-container-{cat}">
+      {{/* --- Raw Extracted DOM Structure --- */}}
+      {jsx_body}
+    </div>
+  );
+}};
+
+export default {comp_name};
+"""
+                file_path = os.path.join(cat_dir, f"{comp_name}.tsx")
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(tsx_content)
+
+                index_metadata.append({
+                    "name": comp_name,
+                    "category": cat,
+                    "file": os.path.join(cat, f"{comp_name}.tsx").replace("\\", "/"),
+                    "tag": elem["tag"],
+                    "id": elem["id"],
+                    "className": elem["className"],
+                    "width": elem["width"],
+                    "height": elem["height"]
+                })
+
+            index_path = os.path.join(code_dir, "components", "components-index.json")
+            with open(index_path, "w", encoding="utf-8") as f:
+                json.dump(index_metadata, f, indent=2)
+
+            print(f"Successfully generated {len(index_metadata)} React .tsx components in {code_dir}/components/ across categories: {categories_count}")
 
         except Exception as e:
             print(f"Page loading error: {e}")
