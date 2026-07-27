@@ -79,18 +79,20 @@ This skill supports **Tri-Mode Flexible Execution**:
 3. Apply Obys 4 Grid Canons & Vertical Rhythm (`leading-none`, `max-w-[65ch]`, grid baseline alignment).
 4. Enforce Hero Stack Discipline (max 4 text elements; hero must fit in `100dvh` without forced scroll).
 
-### Phase 3: Mandatory Component Sourcing (147 Catalog)
-1. Read `references/03-component-catalog-guide.md`.
-2. Query component catalog via CLI:
-   `python scripts/component_registry_cli.py search <query>`
-3. Select matching components from Aceternity UI, Animate UI React, Vengence UI, or Forge UI. Never write generic placeholder divs.
+### Phase 3: Mandatory Component Sourcing & Component Vault (300+ Catalog)
+1. Read `references/03-component-catalog-guide.md` and `premium-frontend-experience-system/references/component-vault/INDEX.md`.
+2. Query component catalog & UX pattern index via CLI:
+   `python scripts/component_registry_cli.py search-pattern <hero|pricing|navigation|bento|scrollytelling|forms|modals>`
+   `python scripts/component_registry_cli.py adapt <component_name>`
+3. Select matching components from 11 indexed registries (Aceternity UI, Animate UI React, Magic UI, 21st.dev, Motion Primitives, React Bits, Origin UI, Kokonut UI / Cult UI, Uiverse, Forge UI, Vengence UI) or `component-vault/`. Never write generic placeholder divs.
 
-### Phase 4: Motion, Shaders & Mandatory Pure Skills Ingestion
-1. Read `references/04-motion-and-shaders.md`.
+### Phase 4: Motion, Dedicated Shader Vault & Mandatory Pure Skills Ingestion
+1. Read `references/04-motion-and-shaders.md` and `premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md`.
 2. **AUTOMATIC MANDATORY STEP**: If Motion Dial > 3, call `view_file` on:
+   - For Dedicated GLSL Shaders & Physics: `premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md`
    - For GSAP/ScrollTrigger: `brain-aios/wiki/research/skills-library/gsap-skills/SKILL.md`
    - For Three.js/WebGL: `brain-aios/wiki/research/skills-library/threejs-skills/SKILL.md`
-3. Assemble layout using Tailwind CSS v4, Motion/React, GSAP ScrollTrigger skeletons, or Three.js GLSL shaders.
+3. Assemble layout using Tailwind CSS v4, Motion/React, GSAP ScrollTrigger skeletons, or Three.js GLSL shaders from `shader-canvas-vault/glsl-catalog/`.
 4. **Mandatory WebGL Fallback Guard**: Wrap all Three.js / Canvas elements with automatic CSS/2D canvas fallback wrappers (`SafeCanvas`) for low-power mobile or disabled WebGL contexts.
 
 ### Phase 4.5: Zero-Cost Asset Generation & Unsplash Fallback Pipeline

@@ -18,6 +18,18 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 Keep it terse. Future-you will thank present-you for capturing the *why*, not just the *what*.
 
+## 2026-07-27 — Frontend Vault 300+ Component Registry, Dual Vault & Security Hardening Upgrade
+
+**Decision:** Upgraded Frontend Experience System references, component registries, site deconstruction engine, dual reference vaults, and AIOS web design skills:
+1. Expanded component registry index from 147 to 172+ components across 11 libraries (**Magic UI, 21st.dev, Motion Primitives, React Bits, Origin UI, Kokonut/Cult UI, Uiverse**). Added Refero/Mobbin UX pattern tags and `component_registry_cli.py adapt` tooling.
+2. Upgraded `scrape_full_site_mirror.py` with WebGL GLSL runtime shader hooks, 3D asset interceptors, and Unbounded Component Extractor logic. Patched path traversal vulnerability via `safe_path()` regex sanitization and scheme validation.
+3. Created Dual Dedicated Reference Vaults: `references/component-vault/` and `references/shader-canvas-vault/`.
+4. Auto-synced all AIOS rules in `.agents/skills/website-design-engine/SKILL.md`, `.agents/skills/scrape-reference/SKILL.md`, `AGENTS.md`, and `WORKSPACE_MAP.md`.
+
+**Why:** Transforms the Frontend Vault into an active AIOS design system engine capable of querying components by pattern and building Awwwards-grade websites with raw WebGL GLSL shaders.
+
+**Owner:** Antigravity AIOS
+
 ---
 
 ## 2026-07-27 — Upgrade `/grill-me` Skill Globally & Locally across AIOS

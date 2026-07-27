@@ -49,12 +49,12 @@ For complete technical specifications, network interceptor schemas, and deep arc
    - Record WebP browser interaction session video (`recording_[site-slug].webp`).
    - **Hyper-Detailed Visual UI/UX Wireframe Blueprint (`assets/wireframe.html` & `assets/wireframe.png`):** Generate a hyper-detailed, section-by-section visual wireframe HTML page and Playwright screenshot (`wireframe.png`) containing actual site headlines, copy outlines, navigation controls, 3D WebGL canvas boxes, scrollytelling card grids, interactive prompt widgets, component specification tags, and technical annotations (GSAP parameters, CSS flex/grid math, backdrop blur filters, and scroll thresholds).
 
-3. **Raw Code Extraction (`code-extracts/`):**
-   - Extract raw, runnable code files:
-     - `code-extracts/components/` — Standalone React + TypeScript (`.tsx`) components (e.g. `Nav.tsx`, `Hero.tsx`, `MagneticButton.tsx`, `Card.tsx`)
-     - `code-extracts/animations/` — Exact GSAP timelines, `ScrollTrigger` pin ranges, Lenis easing functions, motion smoothness math, magnetic cursor scripts (`.js`)
-     - `code-extracts/shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shader files (`.glsl`)
-     - `code-extracts/styles/` — OKLCH design tokens, CSS keyframe animations (`.css`)
+3. **Raw Code & Unbounded Component Extraction (`code-extracts/`):**
+   - Extract raw, runnable code files without hard caps:
+     - `code-extracts/components/` — Standalone React + TypeScript (`.tsx`) components organized by UX pattern subfolders (`nav/`, `hero/`, `cards/`, `scrolly/`, `modals/`, `footers/`, `3d/`). Extract ALL unique, signature UI components present on the target site. NEVER artificially cap component extraction.
+     - `code-extracts/animations/` — Exact GSAP timelines, `ScrollTrigger` pin ranges, Lenis easing functions, motion smoothness math, magnetic cursor scripts (`.js`).
+     - `code-extracts/shaders/` — Raw WebGL / Three.js GLSL vertex & fragment shader files (`.glsl`) intercepted from browser runtime context.
+     - `code-extracts/styles/` — OKLCH design tokens, CSS keyframe animations (`.css`).
 
 4. **Dynamic Unbounded Master Reference Manual (15+ Categories):**
    - Create `premium-frontend-experience-system/vault-references/[site-slug]-granularity-master.md` analyzing **all micro & macro web decision categories (15 baseline categories + dynamic N+ categories for any novel site features)**:

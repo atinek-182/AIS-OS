@@ -13,7 +13,41 @@ VIEWPORTS = [
     {"name": "mobile_375", "width": 375, "height": 812},
 ]
 
+INIT_SHADER_HOOK_SCRIPT = """
+window.__extractedShaders = [];
+(function() {
+    function hookGL(proto) {
+        if (!proto) return;
+        var origShaderSource = proto.shaderSource;
+        proto.shaderSource = function(shader, source) {
+            try {
+                window.__extractedShaders.push({
+                    type: this.getShaderParameter(shader, this.SHADER_TYPE) === this.VERTEX_SHADER ? 'vertex' : 'fragment',
+                    source: source
+                });
+            } catch(e) {}
+            return origShaderSource.apply(this, arguments);
+        };
+    }
+    if (window.WebGLRenderingContext) hookGL(window.WebGLRenderingContext.prototype);
+    if (window.WebGL2RenderingContext) hookGL(window.WebGL2RenderingContext.prototype);
+})();
+"""
+
+def safe_path(base_folder, filename):
+    clean_filename = os.path.basename(filename)
+    clean_filename = re.sub(r'[^a-zA-Z0-9_\-\.]', '_', clean_filename)
+    if not clean_filename:
+        clean_filename = "asset.bin"
+    target = os.path.abspath(os.path.join(base_folder, clean_filename))
+    base = os.path.abspath(base_folder)
+    if not target.startswith(base):
+        raise ValueError(f"Security Warning: Path traversal blocked for {filename}")
+    return target
+
 async def mirror_site(url, site_slug):
+    # Sanitize site_slug to prevent directory traversal
+    site_slug = re.sub(r'[^a-zA-Z0-9_\-]', '', site_slug)
     base_dir = os.path.join(r"d:\AI-OS\premium-frontend-experience-system\reference-inputs\sites", site_slug)
     mirror_dir = os.path.join(base_dir, "mirror")
     assets_dir = os.path.join(base_dir, "assets")
@@ -26,7 +60,7 @@ async def mirror_site(url, site_slug):
     os.makedirs(os.path.join(code_dir, "shaders"), exist_ok=True)
     os.makedirs(os.path.join(code_dir, "styles"), exist_ok=True)
 
-    print(f"[MIRROR] Starting Ultimate Mirror for {url} -> {site_slug}")
+    print(f"[MIRROR] Starting Upgraded Ultimate Mirror for {url} -> {site_slug}")
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -36,7 +70,10 @@ async def mirror_site(url, site_slug):
         )
         page = await context.new_page()
 
-        # Intercept and save network responses
+        # Inject WebGL GLSL Shader Interceptor
+        await page.add_init_script(INIT_SHADER_HOOK_SCRIPT)
+
+        # Intercept and save network responses with security validation
         async def handle_response(response):
             try:
                 res_url = response.url
@@ -44,6 +81,11 @@ async def mirror_site(url, site_slug):
                 if status >= 400:
                     return
                 parsed = urllib.parse.urlparse(res_url)
+                
+                # Block non-http/https schemes
+                if parsed.scheme not in ["http", "https"]:
+                    return
+                    
                 path = parsed.path
                 if not path or path == "/":
                     filename = "index.html"
@@ -52,24 +94,25 @@ async def mirror_site(url, site_slug):
                     if not filename or "." not in filename:
                         filename = path.strip("/").replace("/", "_") + ".html"
                 
-                # Determine asset category
                 mime = response.headers.get("content-type", "")
                 buffer = await response.body()
 
                 if "javascript" in mime or filename.endswith(".js"):
-                    save_path = os.path.join(mirror_dir, "js", filename)
+                    save_path = safe_path(os.path.join(mirror_dir, "js"), filename)
                 elif "css" in mime or filename.endswith(".css"):
-                    save_path = os.path.join(mirror_dir, "css", filename)
+                    save_path = safe_path(os.path.join(mirror_dir, "css"), filename)
                 elif any(ext in filename for ext in [".woff2", ".woff", ".ttf", ".otf"]):
-                    save_path = os.path.join(mirror_dir, "fonts", filename)
+                    save_path = safe_path(os.path.join(mirror_dir, "fonts"), filename)
                 elif any(ext in filename for ext in [".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif"]):
-                    save_path = os.path.join(assets_dir, "images", filename)
+                    save_path = safe_path(os.path.join(assets_dir, "images"), filename)
                 elif any(ext in filename for ext in [".mp4", ".webm", ".ogv"]):
-                    save_path = os.path.join(assets_dir, "videos", filename)
+                    save_path = safe_path(os.path.join(assets_dir, "videos"), filename)
+                elif any(ext in filename for ext in [".glb", ".gltf", ".splat", ".ply", ".obj", ".buf", ".riv", ".wasm"]):
+                    save_path = safe_path(os.path.join(assets_dir, "3d"), filename)
                 elif filename.endswith(".html") or "html" in mime:
-                    save_path = os.path.join(mirror_dir, filename)
+                    save_path = safe_path(mirror_dir, filename)
                 else:
-                    save_path = os.path.join(mirror_dir, "misc", filename)
+                    save_path = safe_path(os.path.join(mirror_dir, "misc"), filename)
 
                 os.makedirs(os.path.dirname(save_path), exist_ok=True)
                 with open(save_path, "wb") as f:
@@ -84,8 +127,8 @@ async def mirror_site(url, site_slug):
             await page.goto(url, wait_until="domcontentloaded", timeout=45000)
             await asyncio.sleep(3)
 
-            # Scroll to trigger lazy loaded assets and animations
-            print("Scrolling page to capture lazy media & triggers...")
+            # Scroll to trigger lazy loaded assets, GSAP animations & shader initializations
+            print("Scrolling page to trigger lazy assets, GLSL shaders & GSAP timelines...")
             for _ in range(10):
                 await page.evaluate("window.scrollBy(0, 800)")
                 await asyncio.sleep(0.5)
@@ -109,6 +152,39 @@ async def mirror_site(url, site_slug):
             with open(os.path.join(code_dir, "styles", "inline-styles.css"), "w", encoding="utf-8") as f:
                 f.write(full_inline_css)
 
+            # Extract GLSL Shaders from Runtime Interceptor Hook
+            shaders = await page.evaluate("window.__extractedShaders || []")
+            print(f"Intercepted {len(shaders)} GLSL shaders from browser runtime.")
+            for idx, sh in enumerate(shaders, 1):
+                stype = sh.get("type", "fragment")
+                src = sh.get("source", "")
+                if src:
+                    sh_path = os.path.join(code_dir, "shaders", f"shader_{idx:02d}_{stype}.glsl")
+                    with open(sh_path, "w", encoding="utf-8") as f:
+                        f.write(f"// GLSL {stype.upper()} SHADER #{idx}\n// Target: {url}\n\n{src}")
+
+            # Unbounded Component Extractor Logic
+            print("Executing Unbounded Component Extractor for DOM elements...")
+            dom_elements = await page.evaluate("""() => {
+                const nodes = [];
+                const selectors = ['nav', 'header', 'main', 'section', 'footer', 'aside', '.hero', '.bento', '.card', 'canvas'];
+                selectors.forEach(sel => {
+                    document.querySelectorAll(sel).forEach((el, idx) => {
+                        nodes.push({
+                            tag: el.tagName.toLowerCase(),
+                            className: el.className || '',
+                            id: el.id || '',
+                            selector: sel,
+                            html: el.outerHTML.slice(0, 1500),
+                            text: (el.innerText || '').slice(0, 300)
+                        });
+                    });
+                });
+                return nodes;
+            }""")
+            
+            print(f"Extracted {len(dom_elements)} structural DOM element candidates for React .tsx components.")
+
         except Exception as e:
             print(f"Page loading error: {e}")
 
@@ -125,7 +201,7 @@ async def mirror_site(url, site_slug):
                 print(f"Error capturing viewport {vp['name']}: {e}")
 
         await browser.close()
-        print(f"[SUCCESS] Ultimate Mirror Complete for {site_slug}!")
+        print(f"[SUCCESS] Upgraded Ultimate Mirror Complete for {site_slug}!")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -134,3 +210,4 @@ if __name__ == "__main__":
     target_url = sys.argv[1]
     slug = sys.argv[2]
     asyncio.run(mirror_site(target_url, slug))
+

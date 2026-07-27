@@ -76,8 +76,11 @@
 ## Hyper-Detailed Visual UI/UX Wireframe Rule
 - **Visual Wireframe Mandate**: Never output basic placeholder shapes or basic Excalidraw JSON strings for wireframe requests. All reference ingestion wireframes MUST be hyper-detailed visual HTML pages (`wireframe.html`) and Playwright screenshots (`wireframe.png`) containing real site copy, real headlines, component spec tags (`COMPONENT: HEADER / NAV SYSTEM`), 3D stage boxes (`canvas#canvas`), 12-column grid overlays, and explicit technical annotations.
 
-## Curated UI Component Registry & Sourcing Rule
-- **Mandatory Component Sourcing Rule**: Whenever building web interfaces, landing pages, or UI components for ZORIXEL or client projects, Antigravity MUST query `premium-frontend-experience-system/source-registries/component-registry-index.json` (or run `python scripts/component_registry_cli.py search <query>`) to locate and install/adapt a matching component from the 4 curated libraries (Aceternity UI, Animate UI React, Forge UI, Vengence UI) via `npx shadcn@latest add ...` instead of building generic components from scratch. Styling, colors, and content may be customized per project, but the underlying component pattern must come from this collection.
+## Curated UI Component Registry & Dual Vault Rule
+- **Mandatory Component & Shader Sourcing Rule**: Whenever building web interfaces, landing pages, or UI components for ZORIXEL or client projects, Antigravity MUST query `premium-frontend-experience-system/source-registries/component-registry-index.json` (or run `python scripts/component_registry_cli.py search-pattern <pattern>` or `adapt <component>`) to locate and install/adapt a matching component from our 300+ component catalog across 11 libraries (Aceternity UI, Animate UI React, Magic UI, 21st.dev, Motion Primitives, React Bits, Origin UI, Kokonut/Cult UI, Uiverse, Forge UI, Vengence UI), `references/component-vault/`, or `references/shader-canvas-vault/` instead of building generic components from scratch.
+
+## Unbounded Component Extraction & Deconstruction Mandate
+- **Site Deconstruction Rule**: When reverse-engineering websites via `/scrape-reference` or `scrape_full_site_mirror.py`, the AI agent MUST extract ALL unique, signature React + TypeScript (`.tsx`) components present on the target site into organized subfolders (`code-extracts/components/nav/`, `code-extracts/components/hero/`, `code-extracts/components/cards/`, `code-extracts/components/3d/`, `code-extracts/components/footers/`). NEVER artificially cap component extraction to 5 components.
 
 ## Tri-Mode Skill Execution & Inter-Skill Calling Protocol
 - **Tri-Mode Invocation Modes**: Every skill in the workspace (`.agents/skills/`) is invokable through three distinct, fully compatible mechanisms:
@@ -85,6 +88,8 @@
   2. **Dynamic Intent Mode (Natural Language)**: Automatic keyword matching based on task context, user intent, and frontmatter `description`.
   3. **Inter-Skill & AIOS Programmatic Calling**: Any skill, subagent, or automated AIOS loop can programmatically invoke another child skill either by referencing `/<skill-name> [args]` or reading its target `SKILL.md` directly (`view_file`).
 - **Inter-Skill Context Preservation**: When a parent skill (e.g. `/website-design-engine` or `/ingest-repo`) delegates to child skills (e.g. `/hallmark`, `/verify-design`, `/brand-colors`, `/gstack`), the parent passes current parameters cleanly without losing workflow context.
+
 ## Master Website Creation & Auto-Evolution Rule
-- **Unified Master Web Creation Engine**: Whenever asked to build a website or landing page from scratch, use `.agents/skills/website-design-engine/SKILL.md`. Enforce Phase 0 Intent Discovery Q&A, query `component_registry_cli.py` for matching components out of the 147 cataloged, load phase reference files dynamically (`references/01-06.md`), run 5-viewport Playwright visual QA via `verify_design_milestone.py`, and automatically persist new design lessons via Phase 7 Auto-Evolution.
+- **Unified Master Web Creation Engine**: Whenever asked to build a website or landing page from scratch, use `.agents/skills/website-design-engine/SKILL.md`. Enforce Phase 0 Intent Discovery Q&A, query `component_registry_cli.py` for matching components out of the 300+ cataloged, query `references/component-vault/` and `references/shader-canvas-vault/`, load phase reference files dynamically (`references/01-06.md`), run 5-viewport Playwright visual QA via `verify_design_milestone.py`, and automatically persist new design lessons via Phase 7 Auto-Evolution.
+
 
