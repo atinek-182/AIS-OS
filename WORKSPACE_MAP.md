@@ -250,8 +250,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/gsap-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/gsap-skills/) | Folder | Static reference library for GSAP, ScrollTrigger, and timelines. | AIOS |
 | [brain-aios/wiki/research/skills-library/seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/) | Folder | Static reference library containing SEO audit guidelines and validation scripts. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
-| [references/six-file-context-methodology/](file:///d:/AI-OS/references/six-file-context-methodology/) | Folder | Knowledge vault storing the 6-File Context Methodology, masterclass handbook, 29 production feature specs, debugging templates, and full ~37,000-word video transcript. | AIOS |
+| [references/six-file-context-methodology/](file:///d:/AI-OS/references/six-file-context-methodology/) | Folder | Knowledge vault storing clean authentic 6-file context templates (6-file-context-templates/), creator project reference vault (creator-project-reference/), masterclass handbook, and full ~37,000-word video transcript. | AIOS |
 | [.agents/skills/six-file-context-methodology/SKILL.md](file:///d:/AI-OS/.agents/skills/six-file-context-methodology/SKILL.md) | File | Custom skill enforcing Senior AI Engineering 6-file context scaffolding and 3-step decoupled workflows. | AIOS |
+
 
 ---
 

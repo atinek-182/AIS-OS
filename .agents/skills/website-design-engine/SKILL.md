@@ -127,6 +127,7 @@ Persist design lessons into `references/` and suggest running `/improve-system`.
 ## 🔗 Inter-Skill Connections & Handoff Pipeline
 - **Project Setup**: Started by **`/new-project`**.
 - **Discovery & Validation**: Driven by **`/grill-me`** and **`/roast`**.
-- **Architecture & Scoping**: Guided by **`/jsmastery-architect`**, **`/jsmastery-scope`**, and **`/mattpocock-to-spec`**.
+- **Architecture, Macro Planning & Scoping**: Guided by **`/jsmastery-architect`**, **`/mattpocock-wayfinder`**, **`/jsmastery-scope`**, and **`/mattpocock-to-spec`**.
 - **Component & Motion Sourcing**: Uses `scripts/component_registry_cli.py`, `shader-canvas-vault`, and `skills-library/gsap-skills/`.
 - **Verification & QA**: Executed by **`/verify-design`**, **`/jsmastery-audit`**, **`/gstack`**, and `scripts/verify_design_milestone.py`.
+

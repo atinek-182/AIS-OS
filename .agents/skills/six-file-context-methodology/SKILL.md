@@ -85,15 +85,20 @@ Audits context state synchronization against git commit history to detect and fi
 
 ---
 
-## 📚 Knowledge Base References
+## 📚 Knowledge Base References & Clean Templates
 
+- **Clean Real Templates**: [6-file-context-templates/](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/)
+- **Official Template Guide**: [TEMPLATE_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/TEMPLATE_GUIDE.md)
 - **Masterclass Handbook**: [STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md)
 - **Full Video Transcript**: [FULL_TRANSCRIPT.md](file:///d:/AI-OS/references/six-file-context-methodology/FULL_TRANSCRIPT.md)
-- **29 Ghost AI Specs Library**: [feature-specs-library/](file:///d:/AI-OS/references/six-file-context-methodology/feature-specs-library/)
+- **Creator Project Reference Vault**: [creator-project-reference/](file:///d:/AI-OS/references/six-file-context-methodology/creator-project-reference/) (29 Ghost AI Specs, issue templates, creator sample files)
 - **SEO Skills Library Vault**: [seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/)
+
 
 ---
 
 ## 🔗 Inter-Skill Connections & Handoff Pipeline
-- **6-File Architecture**: Senior AI engineering 6-file context scaffolding (PROJECT.md, REQUIREMENTS.md, ARCHITECTURE.md, DATA_FLOW.md, DECISIONS.md, PROGRESS.md).
-- **Spec & Ticket Integration**: Connects with **/mattpocock-to-spec**, **/jsmastery-scope**, and **/mattpocock-to-tickets**.
+- **6-File Architecture**: Senior AI engineering 6-file context scaffolding (`project-overview.md`, `architecture.md`, `code-standards.md`, `ui-context.md`, `ai-workflow-rules.md`, `progress-tracker.md`).
+- **Macro Planning & Multi-Session Maps**: Integrates with **`/mattpocock-wayfinder`** to track multi-session epic destinations and decision ticket maps (`docs/wayfinder/map.md`).
+- **Spec & Ticket Integration**: Connects with **`/mattpocock-to-spec`**, **`/jsmastery-scope`**, and **`/mattpocock-to-tickets`**.
+
