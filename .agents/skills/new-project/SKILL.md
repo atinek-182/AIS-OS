@@ -39,8 +39,8 @@ Invokable via:
    - Copy templates from `premium-frontend-experience-system/assets-briefs/` to `projects/[project-name]/assets-briefs/`.
    - Ensure copied templates contain relative Obsidian cross-links pointing to `../../PROJECT_BRIEF.md`.
 
-### Step 2: Phase 0 Socratic Discovery (`/grill-me` + `/hallmark`)
-Run `/grill-me` on the 10 Project Discovery questions:
+### Step 2: Phase 0 Socratic Discovery (`/grill-me` + `/hallmark` + Design Intelligence)
+Run `python scripts/design_synthesis_engine.py recommend-layout --niche <niche>` and run `/grill-me` on the 10 Project Discovery questions:
 1. Website/Product name & core goal.
 2. Target audience & conversion outcome.
 3. Emotional feel in the first 5 seconds.

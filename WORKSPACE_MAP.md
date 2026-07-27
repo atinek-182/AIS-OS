@@ -56,6 +56,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/grids-obys-agency-deep-research.md) | File | Comprehensive deep research document, word-for-word text corpus analysis, and Obys Grid System rules. | AIOS |
 | [brain-aios/wiki/sops/grid-systems-sop.md](file:///d:/AI-OS/brain-aios/wiki/sops/grid-systems-sop.md) | File | Standard operating procedure codifying Obys 4 Grid Canons and Vertical Rhythm math. | AIOS |
 | [brain-aios/wiki/sops/grill-me-and-roast-integration-sop.md](file:///d:/AI-OS/brain-aios/wiki/sops/grill-me-and-roast-integration-sop.md) | File | Standard operating procedure codifying universal /grill-me and /roast dual-gate integration across all AIOS workflows. | AIOS |
+| [brain-aios/wiki/sops/design-intelligence-system-sop.md](file:///d:/AI-OS/brain-aios/wiki/sops/design-intelligence-system-sop.md) | File | Standard operating procedure codifying the 23-Site AIOS Design Intelligence System. | AIOS |
 | [premium-frontend-experience-system/vault-references/the-shift-tokyo-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/the-shift-tokyo-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Tokyo live clock widget, and runnable code for The Shift Tokyo. | AIOS |
 | [premium-frontend-experience-system/vault-references/good-fella-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/good-fella-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Annnimate components, and Next.js Turbopack code for Good Fella. | AIOS |
 | [premium-frontend-experience-system/vault-references/follow-art-granularity-master.md](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/follow-art-granularity-master.md) | File | Dot-to-dot ultra-granular 15-category reference manual, Vide Infra 3D WebGL engine, and Vite React code for Follow Art. | AIOS |
@@ -137,6 +138,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [references/playwright-api.md](file:///d:/AI-OS/references/playwright-api.md) | File | Playwright headless browser automation actions manual. | AIOS |
 | [references/utility-scripts.md](file:///d:/AI-OS/references/utility-scripts.md) | File | Manual documenting maintenance scripts (verifiers, copiers, adaptors). | AIOS |
 | [references/voice.md](file:///d:/AI-OS/references/voice.md) | File | Brand voice tone guide and messaging guidelines. | Operator |
+| [references/23-sites-matrix.json](file:///d:/AI-OS/references/23-sites-matrix.json) | File | Lightweight zero-bloat JSON index synthesizing 23 reference sites. | AIOS |
+| [references/23-SITES-MASTER-DESIGN-MATRIX.md](file:///d:/AI-OS/references/23-SITES-MASTER-DESIGN-MATRIX.md) | File | Master design rules, layout math, and section taxonomy matrix for 23 reference sites. | AIOS |
+| [references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md](file:///d:/AI-OS/references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md) | File | UX psychology, progressive disclosure, and section flow choreography guide. | AIOS |
+| [scripts/design_synthesis_engine.py](file:///d:/AI-OS/scripts/design_synthesis_engine.py) | File | Zero-bloat CLI indexer and design recommendation engine across 23 reference sites. | AIOS |
+| [premium-frontend-experience-system/23-sites-showroom.html](file:///d:/AI-OS/premium-frontend-experience-system/23-sites-showroom.html) | File | Interactive local HTML browser showcase of extracted reference designs. | AIOS |
 
 ### Maintenance Scripts (`scripts/`)
 | Directory / File | Type | Purpose | Owner / Writer |

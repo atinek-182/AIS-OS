@@ -58,6 +58,12 @@ These skills reside in `.agents/skills/` and can be triggered in conversation by
 - **Purpose:** Stress-tests business ideas or operational plans through five independent adversarial personas and a Judge, outputting a GO / RESHAPE / KILL decision and the cheapest 48-hour validation test.
 - **How to Use:**
   - Type `/roast` or `/roast [your business idea]`.
+
+### 9. `/website-design-engine` (Master Web Creation Engine)
+- **Purpose:** Build distinctive, Awwwards-grade multi-page websites from scratch. Orchestrates 23-site design intelligence (`python scripts/design_synthesis_engine.py`), 300+ component catalog searches (`component_registry_cli.py`), Obys grid math, OKLCH color palettes, and 5-viewport Playwright visual QA.
+- **How to Use:**
+  - Type `/website-design-engine [brief_or_url]`.
+  - The AIOS executes Phase 0 discovery, queries the 23-site synthesis matrix, sources components, and builds fullstack web applications.
   - Answer 3-4 simple questions from the AIOS regarding the concept, target audience, edge, and runway constraints.
   - The council (Contrarian, Expansionist, Logician, Researcher, Buyer) will evaluate the idea in parallel. The Judge will deliver a finalized recommendation and a 48-hour test guide.
 

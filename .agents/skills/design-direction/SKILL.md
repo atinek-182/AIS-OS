@@ -32,9 +32,11 @@ Use this skill to compile a premium visual style guide and design concept before
    - Locate and read `projects/[project_dir]/PROJECT_BRIEF.md`.
    - Resolve design tokens and curves from [[POLICIES.md]].
 
-2. **Generate Design Direction (Hallmark Anti-Slop System)**:
+2. **Generate Design Direction (23-Site Design Intelligence System & Hallmark Anti-Slop)**:
+   - Run `python scripts/design_synthesis_engine.py recommend-layout --niche <niche>` to obtain recommended section sequences.
+   - Cross-reference `references/23-SITES-MASTER-DESIGN-MATRIX.md` and `references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md` for layout math and UX psychology.
    - Compile a detailed `DESIGN_DIRECTION.md` under `projects/[project_dir]/`.
-   - Select a macrostructure layout archetype from Hallmark's 21 catalog patterns (e.g. `split-hero-stage`, `bento-stage`, `asymmetric-editorial`, `ticker-grid`) rather than generic SaaS layout templates.
+   - Select a macrostructure layout archetype from Hallmark's 21 catalog patterns or 23-site section taxonomy rather than generic SaaS layout templates.
    - Select a color palette from Hallmark's 20 OKLCH themes or construct a custom OKLCH palette.
    - Incorporate the structured output format:
      - **Project Understanding**

@@ -41,12 +41,12 @@ Invokable via:
 ## 🧭 10-Phase Execution Architecture
 
 ```
-[Phase 0: Socratic Intent Discovery]       ──► /grill-me (Audience, Vibe, Motion Dial 0-10)
+[Phase 0: Socratic Intent Discovery]       ──► /grill-me (Audience, Vibe, Motion Dial 0-10) + design_synthesis_engine.py recommend-layout
 [Phase 0.2: Adversarial Pre-Build Audit]   ──► /roast (5-persona council: Contrarian, Bull, Logician, Researcher, Buyer)
 [Phase 0.5: Build Spec & Sitemap]          ──► /jsmastery-architect (docs/specs/SPEC-[slug].md) + Sitemap Architecture
-[Phase 1: Brand Tokens & Vault Ingestion]  ──► AUTOMATICALLY reads target granularity master in vault-references/
-[Phase 2: Grid Canons & Obys Math]         ──► AUTOMATICALLY reads brain-aios/wiki/sops/grid-systems-sop.md
-[Phase 3: Component Sourcing (147 Catalog)]──► Executes python scripts/component_registry_cli.py search
+[Phase 1: Brand Tokens & Vault Ingestion]  ──► AUTOMATICALLY reads target granularity master in vault-references/ & 23-SITES-MASTER-DESIGN-MATRIX.md
+[Phase 2: Grid Canons & Obys Math]         ──► AUTOMATICALLY reads brain-aios/wiki/sops/grid-systems-sop.md & 23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md
+[Phase 3: Component Sourcing (147 Catalog)]──► Executes python scripts/component_registry_cli.py search & python scripts/design_synthesis_engine.py search-pattern
 [Phase 4: Motion, Shaders & Pure Skills]    ──► AUTOMATICALLY reads skills-library/gsap-skills/ or threejs-skills/
 [Phase 4.5: Zero-Cost Asset Pipeline]      ──► Free Nano Banana/Veo OR Unsplash Fallback URLs
 [Phase 5: Pre-Emit Anti-Slop & Code Audit] ──► /jsmastery-audit (App Router, Security, Types) & hallmark_runner.py

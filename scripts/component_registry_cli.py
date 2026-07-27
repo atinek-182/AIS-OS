@@ -15,13 +15,35 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding='utf-8')
 
 INDEX_FILE = r"d:\AI-OS\premium-frontend-experience-system\source-registries\component-registry-index.json"
+SITES_MATRIX_FILE = r"d:\AI-OS\references\23-sites-matrix.json"
 
 def load_registry():
     if not os.path.exists(INDEX_FILE):
         print(f"Error: Registry file not found at {INDEX_FILE}")
         sys.exit(1)
     with open(INDEX_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # Merge 23-Site reference components if matrix exists
+    if os.path.exists(SITES_MATRIX_FILE):
+        try:
+            with open(SITES_MATRIX_FILE, "r", encoding="utf-8") as sf:
+                sites_data = json.load(sf)
+                for site_name, site in sites_data.get("sites", {}).items():
+                    for comp in site.get("components", []):
+                        data["components"].append({
+                            "name": comp["name"],
+                            "library": f"23-Ref:{site_name}",
+                            "category": comp.get("category", "reference"),
+                            "pattern": comp.get("category", "reference"),
+                            "url": comp["path"],
+                            "cli_command": f"view_file {comp['path']}",
+                            "is_favorite": True
+                        })
+        except Exception as e:
+            pass
+
+    return data
 
 def list_favorites(data):
     print("\n--- FAVORITE COMPONENTS ---")

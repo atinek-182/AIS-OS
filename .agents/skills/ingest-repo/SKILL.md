@@ -81,6 +81,7 @@ This skill supports **Tri-Mode Flexible Execution**:
      - **Developer Subagent**: Update `.agents/agents/developer.md` with quality checks.
      - **Existing Skills**: Integrate into `new-project`, `website-design-engine`, `verify-design`, `carousel-copy`, etc.
      - **SOPs & Playbooks**: Update matching playbooks in `brain-aios/wiki/sops/` and `second-brain-zorixel/`.
+     - **Design Intelligence Auto-Evolution**: If ingesting a website, UI, or design repository, automatically execute `python scripts/design_synthesis_engine.py index` to synthesize and re-index new TSX components, tokens, and layout patterns into the AIOS Design Intelligence Matrix.
 2. **Mandatory Documentation Sweep Across ALL Handbooks & Vaults**:
    - **User Manual**: Update `references/aios-user-manual.md`.
    - **Skills Guide**: Update `references/antigravity-skills-guide.md`.

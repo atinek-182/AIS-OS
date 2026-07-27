@@ -17,6 +17,21 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 ```
 
+## 2026-07-27 — 23-Site AIOS Design Intelligence System Synthesis & Universal Integration
+
+**Decision:** Designed, built, and universally integrated the 23-Site AIOS Design Intelligence System across all skills, reference vaults, scripts, SOPs, and system prompt rules:
+1. **Zero-Bloat CLI Synthesis Engine (`scripts/design_synthesis_engine.py`)**: Indexes all 23 extracted reference sites (*Active Theory, Obys, Locomotive, Resn, Oryzo AI, etc.*) into `references/23-sites-matrix.json` with strict 3-result snippet capping to prevent context bloat.
+2. **Unified Component Registry**: Enhanced `scripts/component_registry_cli.py` to search across cataloged UI libraries AND 23-site reference TSX extractions.
+3. **Master Reference Matrices**: Created `references/23-SITES-MASTER-DESIGN-MATRIX.md` (OKLCH color math, layout formulas, GSAP inertia, magnetic cursor physics) and `references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md` (UX design psychology, cognitive load rules, progressive disclosure, 4 section sequence flows).
+4. **Live Visual Showroom**: Created `premium-frontend-experience-system/23-sites-showroom.html` local HTML browser showcase.
+5. **Universal Integration**: Embedded design synthesis into `GEMINI.md`, `/website-design-engine`, `/design-direction`, `/canvas-design`, `/brand-colors`, `/carousel-render`, `/new-project`, `/ingest-repo`, `vault-references/INDEX.md`, and `brain-aios/wiki/sops/design-intelligence-system-sop.md`.
+
+**Why:** Gives the AIOS an unfair advantage in web design quality, enabling it to synthesize Awwwards-grade design strategy, layout math, and component physics across all project workflows without context bloat.
+
+**Owner:** Antigravity AIOS & Atinek Maurya
+
+---
+
 ## 2026-07-27 — Codified Automatic Skill Evolution & On-Demand Vault Promotion Mandate
 
 **Decision:** Codified the permanent AIOS Mandate for Automatic Skill Evolution & On-Demand Vault Promotion:

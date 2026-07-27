@@ -39,6 +39,27 @@ This document describes the utility scripts stored under the [scripts/](file:///
 
 ---
 
+## 4. `design_synthesis_engine.py`
+- **Location:** `scripts/design_synthesis_engine.py`
+- **Purpose:** Zero-bloat indexer and recommendation engine synthesizing 23 reference sites. Parses TSX extractions, OKLCH tokens, section taxonomy, and UX psychology into `references/23-sites-matrix.json`.
+- **How to Run:**
+  ```powershell
+  python scripts/design_synthesis_engine.py index
+  python scripts/design_synthesis_engine.py search-pattern "hero"
+  python scripts/design_synthesis_engine.py recommend-layout --niche saas
+  ```
+
+---
+
+## 5. `component_registry_cli.py`
+- **Location:** `scripts/component_registry_cli.py`
+- **Purpose:** Unified component search CLI querying 300+ cataloged UI components AND 23 reference sites extractions.
+- **How to Run:**
+  ```powershell
+  python scripts/component_registry_cli.py search "bento"
+  python scripts/component_registry_cli.py adapt <component_name>
+  ```
+
 ## 4. `copy_skills_to_antigravity.py`
 - **Location:** `scripts/copy_skills_to_antigravity.py`
 - **Purpose:** Copies all 122 custom skills from local Claude Code plugin and marketplace folders into the global Antigravity customization folder (`C:\Users\HP\.gemini\config\skills\`) and automatically updates references to be compatible.
