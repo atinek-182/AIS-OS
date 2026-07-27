@@ -25,7 +25,10 @@ TARGET_SITES = [
     "the-shift-tokyo",
     "tresmares-capital",
     "truck-n-roll",
-    "unleashing-best"
+    "unleashing-best",
+    "trionn-agency",
+    "resn-corn-revolution",
+    "active-theory"
 ]
 
 DOM_EXTRACTOR_SCRIPT = """() => {

@@ -18,6 +18,51 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 Keep it terse. Future-you will thank present-you for capturing the *why*, not just the *what*.
 
+## 2026-07-27 — Executed Phase 2 Site #20: Resn (Corn Revolution) Ingestion
+
+**Decision:** Completed 10-stage reference ingestion pipeline for **Site #20: Resn (Corn Revolution)** (`https://cornrevolution.resn.global/#`):
+1. Mirrored full site source (HTML, CSS, JS, WOFF2 fonts, WebGL GLSL shaders).
+2. Intercepted **6 WebGL GLSL Shaders** directly from browser runtime.
+3. Generated **5 responsive viewport screenshots** (`desktop_1920.png`, `laptop_1440.png`, `tablet_1024.png`, `tablet_768.png`, `mobile_375.png`).
+4. Built **Hyper-Detailed Visual UX Blueprint** (`assets/wireframe.html` & `assets/wireframe.png`).
+5. Authored 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`), 5-Layer Site DNA (`site-dna.md`), 15-Category Master Reference (`resn-corn-revolution-granularity-master.md`), and registered in central vault index (`vault-references/INDEX.md`).
+
+**Why:** Resn is an Awwwards Site of the Year winner. Ingesting their 3D WebGL camera scrubbing, infinite scrollytelling loop, and spatial soundscape mechanics provides world-class creative engineering blueprints for the Zorixel Experience System.
+
+**Owner:** Antigravity AIOS
+
+---
+
+## 2026-07-27 — Batch Unbounded Component Extraction Across All 18 Reference Sites (3,309 React .tsx Components)
+
+**Decision:** Ran `scripts/extract_components_batch.py` across all 18 existing reference sites in `premium-frontend-experience-system/reference-inputs/sites/`. Synthesized **3,309 standalone React TypeScript (`.tsx`) drop-in components** organized into pattern subfolders (`nav/`, `cards/`, `hero/`, `3d/`, `sections/`, `footers/`, `interactive/`, `misc/`) alongside a machine-readable `components-index.json` manifest for every site.
+
+**Site Extraction Summary (3,309 Components):**
+- `sondaven`: 539 components
+- `grids-obys-agency`: 1,141 components
+- `follow-art`: 235 components
+- `truck-n-roll`: 166 components
+- `ashley-brooke-cs`: 164 components
+- `the-line-studio`: 161 components
+- `champions-4-good`: 139 components
+- `jasmine-gunarto`: 138 components
+- `gehry-getty`: 122 components
+- `unleashing-best`: 117 components
+- `made-in-evolve`: 95 components
+- `good-fella`: 70 components
+- `tresmares-capital`: 60 components
+- `oryzo-ai`: 53 components
+- `detroit-paris`: 40 components
+- `the-shift-tokyo`: 40 components
+- `off-menu-design`: 18 components
+- `outfit-hello-hello`: 11 components
+
+**Why:** Upgrades the entire 18-site Frontend Vault into an exhaustive catalog of over 3,400+ React UI components ready for instant pattern searching, adaptation, and component registry integration.
+
+**Owner:** Antigravity AIOS
+
+---
+
 ## 2026-07-27 — Refined Unbounded Component Extractor & Executed Phase 2 Site #19 (TRIONN Agency)
 
 **Decision:** Refined `scripts/scrape_full_site_mirror.py` Unbounded Component Extractor to parse DOM structural and interactive elements without artificial caps, classify into UX pattern subfolders (`nav/`, `cards/`, `hero/`, `3d/`, `sections/`, `footers/`, `misc/`), and convert raw HTML structures into clean React TypeScript (`.tsx`) drop-in components alongside `components-index.json`. Executed Phase 2 Awwwards Sweep on **Site #19: TRIONN Agency (`https://trionn.com/`)**:
