@@ -9,7 +9,14 @@ This file logs cross-session learnings, operational preferences, and recurring c
 - **Brand Goal:** Launch ZORIXEL (educational brand for web design and AI tools) and build a sellable AI automation (Q4 target: ₹1,00,000 revenue in 2026).
 - **Obsidian Vaults:**
   - `brain-aios/` -> General AI OS hub and checklist vault.
-  - `second-brain-zorixel/` -> ZORIXEL content drafts and research.
+  - `second-brain-zorixel/` -> ZORIXEL content drafts and research (connected to `D:\ZORIXEL-BRAND-OS`).
+- **ZORIXEL Brand OS & Global Async Arbitrage:**
+  - Dedicated Brand OS at `D:\ZORIXEL-BRAND-OS` (junction: `d:\AI-OS\zorixel-brand-os`).
+  - Operator: Atinek Maurya (16 years old, Class 10 Board Topper 95.4%, 28–49 hrs/week available, India-based).
+  - Flagship Offer: 14-Day $3,000 Web Experience Sprint ($1,500 deposit upfront).
+  - Sales Model: 100% Async Closing (LinkedIn/X DMs + 2-Minute Loom Audits + Notion Proposals).
+  - Revenue Target: $10,000/month MRR (~₹8.5 Lakhs/month) within 60–90 days.
+
 
 ---
 

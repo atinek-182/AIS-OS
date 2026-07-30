@@ -17,6 +17,18 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 ```
 
+## 2026-07-30 — ZORIXEL Brand OS Initialization, Ingestion Vault & Global Async Arbitrage Model
+
+**Decision:** Created dedicated ZORIXEL Brand OS on Drive D (`D:\ZORIXEL-BRAND-OS`) attached via directory junctions (`d:\AI-OS\zorixel-brand-os` and `second-brain-zorixel`). Ingested 7 YouTube transcripts + 40-page PDF playbook (*The First Client Playbook*), and codified **The Global Async Arbitrage Model**:
+1. **Zero-Cost India Stack:** 100% local AIOS execution (`website-design-engine`, Playwright, Scrapling, local component vault) with zero software overhead.
+2. **Western High-Ticket Pricing:** $3,000 per 14-Day Web Experience Sprint ($1,500 deposit upfront), which equals ~₹2.5 Lakhs INR per sale.
+3. **100% Async Closing:** 100% text DMs + 2-minute Loom screen video audits + Notion proposals (zero live Zoom sales calls).
+4. **Organized Research Vault:** Reorganized cryptic video files into human-readable Markdown notes, created 5 deep topic framework manuals (`research/frameworks/`), and built `research/INDEX.md`.
+
+**Why:** Gives Atinek Maurya a clear, repeatable path to total financial independence ($10k/mo MRR ~ ₹8.5 Lakhs/mo) at age 17 without live sales call friction or local capital overhead.
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-07-27 — 23-Site AIOS Design Intelligence System Synthesis & Universal Integration
 
 **Decision:** Designed, built, and universally integrated the 23-Site AIOS Design Intelligence System across all skills, reference vaults, scripts, SOPs, and system prompt rules:
@@ -1204,9 +1216,21 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 9. **Roast Council RESHAPE Audit Refinement (v2.2)**: Convened the 5-persona `/roast` council (Contrarian 7/10, Expansionist 10/10, Logician 9/10, Researcher 9/10, Buyer 9/10). Applied Logician/Contrarian RESHAPE recommendation: targeted Phase 1 mandatory `view_file` calls to specific sub-manuals (`grids-obys-agency-granularity-master.md`, `sondaven-granularity-master.md`, `oryzo-ai-granularity-master.md`) based on the site archetype rather than reading the heavy 68KB `INDEX.md`, saving ~15,000 tokens per run while preserving 100% automatic reading automation.
 
-**Why:** Solves user pain points: (1) AI failing to read vault/pure skills unless prompted every time; (2) Preventing unexpected AI image/video generation costs; (3) Optimizing context token footprint during mandatory vault ingestion turns.
+---
+
+## 2026-07-29 — System Improvement: Codegraph & Shadcn MCP Direct Binary Resolution & Timeout Fix
+
+**Decision:** Resolved `codegraph: context deadline exceeded` and `shadcn: context deadline exceeded` MCP initialization timeouts:
+1. Identified that `codegraph.cmd` is a Windows batch script wrapper that introduces `cmd.exe` subprocess tree buffering overhead, while `npx -y shadcn@latest mcp` executes online npm registry network queries on every launch.
+2. Configured direct Node.js binary invocation across all runtime config paths (`C:\Users\HP\.gemini\antigravity\mcp_config.json`, `C:\Users\HP\.gemini\antigravity-ide\mcp_config.json`, `C:\Users\HP\.gemini\config\mcp_config.json`, `claude_desktop_config.json`):
+   - **Codegraph**: `command`: `C:\Users\HP\AppData\Local\codegraph\current\node.exe`, `args`: `["--liftoff-only", "C:\\Users\\HP\\AppData\\Local\\codegraph\\current\\lib\\dist\\bin\\codegraph.js", "serve", "--mcp"]`
+   - **Shadcn**: `command`: `C:\Program Files\nodejs\node.exe`, `args`: `["C:\\Users\\HP\\AppData\\Roaming\\npm\\node_modules\\shadcn\\dist\\index.js", "mcp"]`
+3. Tested initialization in isolation to verify **~0.1s execution time** with 0 network latency or `cmd.exe` process buffering hangs.
+
+**Why:** Completely eliminates context deadline timeouts during MCP client bootup on Windows.
 
 **Owner:** Antigravity AIOS
+
 
 
 

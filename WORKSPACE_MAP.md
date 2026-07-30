@@ -33,7 +33,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
 | [projects/font-showcase/](file:///d:/AI-OS/projects/font-showcase/) | Folder | Typographic brand exploration slides showcase project. | AIOS |
+| [zorixel-brand-os/](file:///d:/AI-OS/zorixel-brand-os/) | Junction | Dedicated ZORIXEL Brand Operating System (junction to D:\ZORIXEL-BRAND-OS). | Operator / AIOS |
 | [docs/](file:///d:/AI-OS/docs/) | Folder | Workspace documentation folder. | AIOS |
+| [docs/daily-plans/2026-07-30-master-plan.md](file:///d:/AI-OS/docs/daily-plans/2026-07-30-master-plan.md) | File | Master sprint plan for 30 July 2026 covering 4 phases and Higgsfield trial. | AIOS |
 | [New Fonts/](file:///d:/AI-OS/New Fonts/) | Folder | Display font archives folder containing Queensides, Pavot, Kosmolet, Van Arkel, and Aicon fonts. | Operator / AIOS |
 | [projects/Websites/client-showcase/](file:///d:/AI-OS/projects/Websites/client-showcase/) | Standalone Repo | ZORIXEL Client-Conversion Showcase Web Application (Vite + React + Tailwind v4 + OKLCH). | AIOS |
 
@@ -210,7 +212,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/daily-plan-day](file:///d:/AI-OS/.agents/skills/daily-plan-day) | Folder | Daily morning checklists scheduler. | AIOS |
 | [.agents/skills/project-agent](file:///d:/AI-OS/.agents/skills/project-agent) | Folder | Scoped background developer agent runner. | AIOS |
 | [.agents/skills/roast](file:///d:/AI-OS/.agents/skills/roast) | Folder | Adversarial 5-persona council audit engine. | AIOS |
+| [.agents/skills/session-handoff](file:///d:/AI-OS/.agents/skills/session-handoff) | Folder | End-of-session state handoff summary generator. | AIOS |
 | [.agents/skills/daily-review-day](file:///d:/AI-OS/.agents/skills/daily-review-day) | Folder | Daily evening reflections log script. | AIOS |
+
 | [.agents/skills/scrape-competitor](file:///d:/AI-OS/.agents/skills/scrape-competitor) | Folder | Competitor Instagram posts scanner. | AIOS |
 | [.agents/skills/scrape-carousel](file:///d:/AI-OS/.agents/skills/scrape-carousel) | Folder | Scrapes competitor reels/posts and takes screenshots of carousel slides. | AIOS |
 | [.agents/skills/scrape-component](file:///d:/AI-OS/.agents/skills/scrape-component) | Folder | Extracts a specific UI component, animation, or style from a website URL. | AIOS |

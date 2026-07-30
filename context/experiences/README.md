@@ -1,6 +1,7 @@
 # System Experience Learning Index
 
 - **2026-07-23**: [2026-07-23-hyper-detailed-visual-wireframe-pipeline.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-hyper-detailed-visual-wireframe-pipeline.md) — Hyper-Detailed Visual UI/UX Wireframe Blueprint & 3D Media Extraction Engine.
+- **2026-07-23**: [2026-07-23-figma-mcp-stdio-transport-and-stdout-logging-fix.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-figma-mcp-stdio-transport-and-stdout-logging-fix.md) — Figma MCP Stdio Transport Protocol & Clean Logging Fix: Resolve JSON-RPC initialization crashes.
 - **2026-07-24**: [2026-07-24-obys-grid-system-mastery.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-obys-grid-system-mastery.md) — Obys Agency Grid System Analysis, 4 Canons & Vertical Rhythm Mastery.
 - **2026-07-24**: [2026-07-24-18-site-reference-ingestion-completion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-18-site-reference-ingestion-completion.md) — 18-Site Reference Ingestion Campaign Completion & Dual-Stack Vault Architecture.
 - **2026-07-24**: [2026-07-24-curated-component-libraries-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-curated-component-libraries-ingestion.md) — Curated UI Component Libraries Ingestion, 100% URL/CLI Mapping & System Integration.
@@ -14,5 +15,9 @@
 - **2026-07-27**: [2026-07-27-unbounded-component-extraction-and-23-site-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-27-unbounded-component-extraction-and-23-site-ingestion.md) — Unbounded Component Extractor Batch Scaling & 23-Site Reference Vault Completion.
 - **2026-07-27**: [2026-07-27-universal-grill-me-roast-integration-and-automatic-skill-evolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-27-universal-grill-me-roast-integration-and-automatic-skill-evolution.md) — Universal /grill-me & /roast Integration, 100% Skill Interconnectedness, and Automatic Skill Evolution Mandate.
 - **2026-07-27**: [2026-07-27-23-site-design-intelligence-synthesis.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-27-23-site-design-intelligence-synthesis.md) — 23-Site AIOS Design Intelligence System Synthesis, Zero-Bloat Context Indexing & Universal Integration.
+- **2026-07-29**: [2026-07-29-codegraph-and-shadcn-mcp-direct-binary-resolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-29-codegraph-and-shadcn-mcp-direct-binary-resolution.md) — Codegraph & Shadcn MCP Direct Binary Resolution & Timeout Fix: Bypass cmd.exe wrappers and npx network checks.
+- **2026-07-30**: [2026-07-30-zorixel-brand-os-and-global-async-arbitrage.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-30-zorixel-brand-os-and-global-async-arbitrage.md) — ZORIXEL Brand OS Initialization, 7-Video & PDF Playbook Research Ingestion, and Global Async Arbitrage Engine.
+
+
 
 
