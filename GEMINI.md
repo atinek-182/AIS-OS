@@ -60,6 +60,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/six-file-context-methodology` — Senior AI Engineering 6-File Context Methodology & 3-Step Decoupled Workflow engine.
 - `/skill-builder` — Workspace custom skill optimization and quality audit tool.
 - `/slide-component` — Injects custom components and animations into slide layouts.
+- `/storm-research` — Stanford's STORM multi-perspective research method (5 expert lenses, contradiction map, HTML briefing, primary-source verification subagents).
 - `/using-superpowers` — Establishes how to find and use skills, requiring skill invocation before any response.
 - `/verify-design` — Run automated visual QA and Playwright console audits.
 - `/vibesec` — Web application secure coding guide and vulnerability scanner audit.

@@ -228,6 +228,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/verify-design](file:///d:/AI-OS/.agents/skills/verify-design) | Folder | Visual and console audits of front-end milestones. | AIOS |
 | [.agents/skills/autoresearch-manage](file:///d:/AI-OS/.agents/skills/autoresearch-manage) | Folder | Manage Autoresearch loop target directories and registries. | AIOS |
 | [.agents/skills/frontend-slides](file:///d:/AI-OS/.agents/skills/frontend-slides) | Folder | Programs 16:9 responsive HTML presentation deck layouts. | AIOS |
+| [.agents/skills/storm-research](file:///d:/AI-OS/.agents/skills/storm-research) | Folder | Stanford's STORM multi-perspective research engine spawning 5 expert lenses and HTML briefings. | AIOS |
 | [.agents/skills/slide-component](file:///d:/AI-OS/.agents/skills/slide-component) | Folder | Injects custom components and animations into slide layouts. | AIOS |
 | [.agents/skills/jsmastery-architect](file:///d:/AI-OS/.agents/skills/jsmastery-architect) | Folder | Fullstack JS & Next.js architecture design build-spec engine. | AIOS |
 | [.agents/skills/jsmastery-audit](file:///d:/AI-OS/.agents/skills/jsmastery-audit) | Folder | Fullstack JS & Next.js App Router code auditor. | AIOS |
@@ -238,6 +239,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [.agents/skills/mattpocock-to-tickets](file:///d:/AI-OS/.agents/skills/mattpocock-to-tickets) | Folder | Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD. | AIOS |
 | [.agents/skills/mattpocock-teach](file:///d:/AI-OS/.agents/skills/mattpocock-teach) | Folder | Socratic teaching and mental model builder for TypeScript & web engineering. | AIOS |
 | [.agents/skills/mattpocock-setup-ts-deep-modules](file:///d:/AI-OS/.agents/skills/mattpocock-setup-ts-deep-modules) | Folder | TS deep module boundaries and package isolation engine. | AIOS |
+| [.agents/skills/storm-research](file:///d:/AI-OS/.agents/skills/storm-research) | Folder | Stanford's STORM multi-perspective research method skill with report synthesis and verification subagents. | AIOS |
 
 ### Workspace-Scoped Agents (`.agents/agents/`)
 | Directory / File | Type | Purpose | Owner / Writer |
