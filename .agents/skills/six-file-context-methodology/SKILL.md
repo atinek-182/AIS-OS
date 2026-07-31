@@ -1,68 +1,76 @@
 ---
 name: six-file-context-methodology
-description: Senior AI Engineering 7-File Context Methodology v3.1. Scaffolds 7-File Context System, project-local reference/ priority vault (#1 source of truth), 4-level component synthesis priority chain, Spec & Ticket Pipeline (docs/tickets/), Token-Optimized Wave Execution, Modern Security Quality Gates (OWASP LLM & Server Actions), and Smart STORM 7-Lens Research Integration.
-argument-hint: '[init|scaffold|spec <feature-name>|spec-all|execute [ticket|wave|all]|verify|check]'
+description: Senior AI Engineering 7-File Context Methodology v3.2. Scaffolds 7-File Context System, project-local reference/ priority vault, granular reference deconstruction manifests (MANIFEST.md), 4-phase Socratic init interview, feature-specific spec Socratic sessions, Graphify knowledge graph integration (.planning/graphs/), Interactive Playwright 5-viewport visual handoff gate, Multi-Session state persistence (zero context loss), Token-Optimized Wave Execution, and OWASP LLM & Server Action security gates.
+argument-hint: '[init|scaffold|spec <feature-name>|spec-all|execute [ticket|wave|all]|verify|check|resume]'
 ---
 
-# Six-File Context Methodology (`/six-file-context-methodology` v3.1)
+# Six-File Context Methodology (`/six-file-context-methodology` v3.2)
 
 ## Invocation & Tri-Mode Routing
 
 This skill supports Tri-Mode Flexible Execution:
-- Slash Command: Explicitly run `/six-file-context-methodology [init|scaffold|spec <feature-name>|spec-all|execute|verify|check]` in chat.
-- Dynamic Intent Matching: Triggered automatically when task context involves context scaffolding, feature specs, ticket deconstruction, or senior AI engineering workflows.
+- Slash Command: Explicitly run `/six-file-context-methodology [init|scaffold|spec <feature-name>|spec-all|execute|verify|check|resume]` in chat.
+- Dynamic Intent Matching: Triggered automatically when task context involves context scaffolding, feature specs, ticket deconstruction, design reference ingestion, or senior AI engineering workflows.
 - Inter-Skill & AIOS Calling: Programmatically invokable by parent skills (e.g. `/new-project`, `/make-plan`, `/website-design-engine`) or subagents via `/six-file-context-methodology` or reading `SKILL.md` directly.
 
 ---
 
-## Addressed Vulnerabilities & v3.1 System Upgrades
+## Addressed Vulnerabilities & v3.2 System Upgrades
 
-1. Mandatory Project-Local `reference/` Vault Scaffolding:
-   - Scaffolds a project-local `reference/` (or `references/`) directory during `/six-file-context-methodology init`.
-   - Stores screenshots (`.png`, `.jpg`), screen recordings (`.mp4`), HTML gallery files (e.g. `radiant-shaders`), TSX/CSS component snippets, and design briefs.
-   - Enforces `reference/` as the **#1 Priority Source of Truth** for visual designs and component implementations, taking precedence over standard catalogs.
+1. Mandatory Project-Local `reference/` Vault & Per-Reference Granular Deconstruction (`reference/MANIFEST.md`):
+   - Scaffolds a project-local `reference/` directory during `/six-file-context-methodology init`.
+   - Stores screenshots (`.png`, `.jpg`), screen recordings (`.mp4`), HTML gallery files (e.g. WebGL shaders), TSX/CSS component snippets, and design briefs.
+   - Enforces `reference/` as the **#1 Priority Source of Truth** for visual designs and component implementations.
+   - **Per-Reference Socratic Interview Rule**: For every reference asset added to `reference/`, the AI engine interactively interviews the operator to clarify: (1) What specific elements to keep vs remove, (2) Whether to use the full layout or a targeted sub-component/motion/shader, and (3) How to re-bind the design into project OKLCH brand tokens within `reference/MANIFEST.md`.
 
-2. 4-Level Component Synthesis Priority Chain:
-   - Level 1 (#1 Priority): Local project `reference/` folder (user screenshots, recordings, TSX/HTML snippets).
-   - Level 2 (#2 Priority): Categorized Favorite Components (`is_favorite: true`) via `component_registry_cli.py search`.
-   - Level 3 (#3 Priority): 300+ Curated UI Component Catalog across 11 registries.
-   - Level 4 (Interactive Radiant Shader Protocol): Asks user if a WebGL background is needed, extracts shader code from user-provided HTML file placed in `reference/`.
+2. 4-Phase Socratic Discovery (`init`) & Feature-Specific Spec Socratic Sessions:
+   - `/six-file-context-methodology init` executes a mandatory 4-Phase Socratic Interview (Brand & Vision -> Architecture & Data -> Component & Motion Choreography -> Conversion & Store Flows) explaining concepts before asking questions.
+   - **Feature-Specific Socratic Sessions**: Every feature spec command (`spec <feature-name>`) triggers a dedicated feature-level Socratic Q&A session before writing `context/specs/NN-feature.md` or deconstructing tickets.
 
-3. Dual Spec & Ticket Pipeline (Matt Pocock Integration):
+3. Interactive Human-in-the-Loop Visual QA Gate (`verify`):
+   - Runs automated Playwright headless browser testing across 5 viewports (Desktop, Laptop, Tablet, Mobile Portrait, Mobile Landscape) for every completed UI component ticket.
+   - Pauses execution, presents screenshot artifact paths and visual evaluation summary to the operator, and waits for explicit operator approval (or user-uploaded feedback screenshots) before signing off on ticket Definition of Done (DoD).
+
+4. Graphify Knowledge Graph Integration (`.planning/graphs/`):
+   - Integrates `graphify update .` and `graphify query` into project initialization and spec creation.
+   - Builds and maintains a local AST and architectural dependency knowledge graph under `.planning/graphs/` tracking node links, layout dependencies, and decision tickets.
+
+5. Multi-Session Zero-Context-Loss Protocol (`/six-file-context-methodology resume`):
+   - Prevents AI model hallucination when starting fresh chat sessions for the same project.
+   - Continuously persists project state, active tickets, and completed DoD milestones in `context/progress-tracker.md`, `docs/wayfinder/map.md`, `context/specs/`, and `decisions/log.md`.
+   - Running `/six-file-context-methodology resume` in a new chat session immediately restores 100% accurate context without re-reading entire conversation transcripts.
+
+6. Dual Spec & Ticket Pipeline (Matt Pocock Integration):
    - Generates high-level technical feature specs in `context/specs/NN-feature.md`.
-   - Automatically deconstructs feature specs into atomic engineering tickets in `docs/tickets/` with verifiable DoD (Definition of Done).
+   - Automatically deconstructs feature specs into atomic engineering tickets in `docs/tickets/` with verifiable DoD.
    - Synchronizes multi-session destinations in `docs/wayfinder/map.md`.
 
-4. Token-Optimized Wave Execution (`/six-file-context-methodology execute`):
+7. Token-Optimized Wave Execution (`/six-file-context-methodology execute`):
    - Executes tickets in wave-based parallel streams (Dependencies -> Auth/DB -> API Routes -> UI Components).
    - Strict Token Safeguards: Surgical context ingestion (subagents receive only exact target files, never full context folders), 2-attempt max retry hard stop, and 1-3 file boundary caps per ticket.
 
-5. Catalog-First Component Sourcing & Token Theme Adaptation:
+8. Catalog-First Component Sourcing & Token Theme Adaptation:
    - Queries 300+ Component Synthesis Engine (`component_registry_cli.py search`), prioritizing operator favorites and custom user-provided lists.
    - Catalog-First Rule: Prohibits writing UI components from scratch when matching catalog components exist.
    - Token Theme Adaptation: Strips inline hardcoded component colors and re-binds styles strictly to project OKLCH/CSS tokens in `ui-context.md`.
 
-6. Comprehensive Security Quality Gates (VibeSec + OWASP LLM):
+9. Comprehensive Security Quality Gates (VibeSec + OWASP LLM):
    - Embeds `/vibesec` rules directly into `code-standards.md` and ticket DoD.
    - Next.js 15 / React 19 Server Action Security: Forces in-function `auth()` verification and `import 'server-only'` to prevent public endpoint invocation or server secret leaks.
-   - OWASP LLM Application Security: Prompt injection defense, RAG vector tenant isolation (`workspace_id` filtering), Excessive Agency safeguards (human approval for destructive actions), and Unbounded Consumption rate limiting.
-   - Raw Webhook Signature Verification: Validates HMAC signatures (Stripe Svix/Supabase) on raw request buffers before JSON parsing.
+   - OWASP LLM Application Security: Prompt injection defense, RAG vector tenant isolation (`workspace_id` filtering), Excessive Agency safeguards, and Unbounded Consumption rate limiting.
 
-7. Smart Conditional STORM 7-Lens Research Integration:
-   - Triggers `/storm-research-project` (7 specialized research lenses) conditionally during `init` or complex `spec` trade-offs.
-   - Logs research summaries to `brain-aios/wiki/research/` and `MEMORY.md` so the AIOS persistently retains research insights across sessions without re-running tools.
-
-8. Strict Zero-Emoji Mandate:
-   - No emojis used anywhere in skill markdown, output logs, or code artifacts.
+10. Strict Zero-Emoji Mandate:
+    - No emojis used anywhere in skill markdown, output logs, or code artifacts.
 
 ---
 
 ## Hard-and-Fast System Mandates
 
 1. Global Zero-Hurry Rule: Never rush execution. Architectural rigor, deep option-based Q&A, web search research, Playwright visual QA, and pre-coding backstops take precedence over speed.
-2. Interactive Architect Discovery (`init`): Runs an interactive option-based Q&A loop before creating context files. Offers Lite Mode vs Pro Mode choice.
-3. Mandatory Project-Local `reference/` Creation: Automatically creates `reference/` folder in the project root.
-4. 7-File Context Foundation (Pro Mode):
+2. Interactive 4-Phase Discovery (`init`): Runs a 4-phase Socratic interview before scaffolding the 7 context files.
+3. Mandatory Project-Local `reference/` & `MANIFEST.md`: Automatically creates `reference/` folder and interviews operator for every reference asset added.
+4. Graphify AST Knowledge Graph: Runs `graphify update .` during initialization and maintains `.planning/graphs/`.
+5. 7-File Context Foundation (Pro Mode):
    - `context/project-overview.md`
    - `context/architecture.md`
    - `context/code-standards.md`
@@ -70,20 +78,21 @@ This skill supports Tri-Mode Flexible Execution:
    - `context/ai-workflow-rules.md`
    - `context/progress-tracker.md`
    - `context/seo-context.md` (Integrated with 23-skill SEO vault)
-5. Dynamic Unbounded Specs (`spec-all`): Generates feature specs upfront in `context/specs/` and compiles atomic tickets in `docs/tickets/`.
-6. Mandatory Pre-Write `/roast` Council: Runs `/roast` gatekeeper audit before creating any document file.
-7. Playwright Visual QA Engine (`verify`): Runs Playwright CLI headless browser screenshots and console audits for every spec unit.
-8. Pre-Coding Backstop: Always asks: "Is there anything else remaining before we touch the code?"
+6. Dynamic Unbounded Specs & Feature-Specific Socratic Q&A (`spec`): Generates feature specs upfront in `context/specs/` and compiles atomic tickets in `docs/tickets/`.
+7. Mandatory Pre-Write `/roast` Council: Runs `/roast` gatekeeper audit before creating any document file.
+8. Interactive Playwright Visual QA Engine (`verify`): Captures 5-viewport screenshots, presents them to operator, and waits for manual approval.
+9. Multi-Session Resume Protocol (`resume`): Restores project state cleanly in fresh chat windows using `progress-tracker.md` and `wayfinder/map.md`.
+10. Pre-Coding Backstop: Always asks: "Is there anything else remaining before we touch the code?"
 
 ---
 
 ## Commands & Workflow Guide
 
 ### 1. `/six-file-context-methodology init`
-Runs interactive Q&A discovery loop, creates project `reference/` directory, queries component synthesis CLI, and scaffolds 7 context files in `context/`.
+Runs 4-phase Socratic discovery interview, creates project `reference/` directory, initializes Graphify knowledge graph (`.planning/graphs/`), queries component synthesis CLI, and scaffolds 7 context files in `context/`.
 
 ### 2. `/six-file-context-methodology spec <feature-name>`
-Generates a numbered, 5-section feature spec in `context/specs/NN-<feature-name>.md` and compiles atomic tickets in `docs/tickets/`. Runs `/roast` before emitting file content.
+Triggers feature-specific Socratic Q&A session, generates a numbered 5-section feature spec in `context/specs/NN-<feature-name>.md`, and compiles atomic tickets in `docs/tickets/`. Runs `/roast` before emitting file content.
 
 ### 3. `/six-file-context-methodology spec-all`
 Decomposes `project-overview.md` into an unbounded list of feature specs upfront in `context/specs/`, compiling corresponding ticket streams in `docs/tickets/`.
@@ -92,10 +101,13 @@ Decomposes `project-overview.md` into an unbounded list of feature specs upfront
 Dispatches background developer agents using wave-based parallelization protected by strict token efficiency rules.
 
 ### 5. `/six-file-context-methodology verify`
-Executes Playwright CLI to capture 5-viewport screenshots and verify console error cleanliness for completed feature units.
+Executes Playwright CLI to capture 5-viewport screenshots, presents visual artifacts to operator, and waits for manual approval/feedback.
 
 ### 6. `/six-file-context-methodology check`
-Audits context state synchronization against git commit history to detect and fix documentation drift.
+Audits context state synchronization against git commit history and Graphify AST nodes to detect and fix documentation drift.
+
+### 7. `/six-file-context-methodology resume`
+Restores project context state in a fresh chat window by reading `context/progress-tracker.md` and `docs/wayfinder/map.md`.
 
 ---
 
@@ -109,7 +121,8 @@ Audits context state synchronization against git commit history to detect and fi
 ---
 
 ## Inter-Skill Connections & Handoff Pipeline
-- 6-File Architecture: Senior AI engineering 7-file context scaffolding + local `reference/` vault.
+- 6-File Architecture: Senior AI engineering 7-file context scaffolding + local `reference/` vault + `MANIFEST.md`.
+- Graphify Knowledge Graph: Integrated AST dependency & node tracking (`.planning/graphs/`).
 - Web Design Engine Sync: Directly provides layout & UI context specifications for `/website-design-engine` v3.0.
 - Macro Planning & Multi-Session Maps: Integrates with `/mattpocock-wayfinder` (`docs/wayfinder/map.md`).
 - Spec & Ticket Integration: Connects with `/mattpocock-to-spec`, `/jsmastery-scope`, `/mattpocock-to-tickets`, and `/storm-research-project`.
