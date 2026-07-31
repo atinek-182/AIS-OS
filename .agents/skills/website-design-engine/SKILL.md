@@ -1,6 +1,6 @@
 ---
 name: website-design-engine
-description: Master 10-Phase Web Creation Engine. Synthesizes Phase 0 /grill-me discovery Q&A, /roast visual council gate, /jsmastery-architect build specs, 147 curated UI components, Motion Dialing (0-10), GSAP/ThreeJS WebGL fallbacks, zero-cost asset pipelines, Hallmark anti-slop gates, /jsmastery-audit App Router audits, and 5-viewport Playwright visual QA into a zero-rush execution framework. Invokable via /website-design-engine.
+description: Master 10-Phase Web Creation Engine. Synthesizes Phase 0 /grill-me discovery Q&A, /roast visual council gate, /jsmastery-architect build specs, 173 curated UI components (including 26 award-winning scrollytelling, WebGL shaders, tools & tricks), Motion Dialing (0-10), GSAP/ThreeJS WebGL fallbacks, zero-cost asset pipelines, Hallmark anti-slop gates, /jsmastery-audit App Router audits, and 5-viewport Playwright visual QA into a zero-rush execution framework. Invokable via /website-design-engine.
 argument-hint: '[optional parameters or target URL/brief]'
 ---
 
@@ -46,12 +46,12 @@ Invokable via:
 [Phase 0.5: Build Spec & Sitemap]          ──► /jsmastery-architect (docs/specs/SPEC-[slug].md) + Sitemap Architecture
 [Phase 1: Brand Tokens & Vault Ingestion]  ──► AUTOMATICALLY reads target granularity master in vault-references/ & 23-SITES-MASTER-DESIGN-MATRIX.md
 [Phase 2: Grid Canons & Obys Math]         ──► AUTOMATICALLY reads brain-aios/wiki/sops/grid-systems-sop.md & 23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md
-[Phase 3: Component Sourcing (147 Catalog)]──► Executes python scripts/component_registry_cli.py search & python scripts/design_synthesis_engine.py search-pattern
+[Phase 3: Component Sourcing (300+ Catalog)]──► Queries python scripts/graphify_runner.py query & python scripts/component_registry_cli.py search
 [Phase 4: Motion, Shaders & Pure Skills]    ──► AUTOMATICALLY reads skills-library/gsap-skills/ or threejs-skills/
 [Phase 4.5: Zero-Cost Asset Pipeline]      ──► Free Nano Banana/Veo OR Unsplash Fallback URLs
 [Phase 5: Pre-Emit Anti-Slop & Code Audit] ──► /jsmastery-audit (App Router, Security, Types) & hallmark_runner.py
 [Phase 6: Playwright 5-Viewport Visual QA] ──► verify_design_milestone.py (320px to 1920px 0-regression check)
-[Phase 7: Auto-Evolution & Memory Sync]     ──► Appends lessons to references/ & suggests /improve-system
+[Phase 7: Auto-Evolution, Graphify & Memory]──► Runs graphify update ., appends lessons to references/ & suggests /improve-system
 ```
 
 ---

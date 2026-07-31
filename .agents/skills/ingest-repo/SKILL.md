@@ -54,6 +54,10 @@ This skill supports **Tri-Mode Flexible Execution**:
      - **Tier 1 (Immediate AIOS Adaptation)**: High-leverage features for active goals -> build active scripts (`scripts/`), slash command skills (`.agents/skills/`), and workspace rules immediately.
      - **Tier 2 (Future Vault Reference)**: Specs, manuals, and future-potential guides -> store in `brain-aios/wiki/research/skills-library/{repo-slug}/` for automatic retrieval.
 
+### Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation
+1. **Repository AST Extraction**: Run `graphify update .` inside `scratch/ingest-{repo-slug}/` to extract tree-sitter AST nodes, confidence-tagged relationships (`[EXTRACTED]` vs `[INFERRED]`), and Leiden community clusters.
+2. **AIOS Hub Graph Update**: Run `python scripts/graphify_runner.py build root` to incorporate new adapted scripts/skills into the root AIOS knowledge graph.
+
 ### Phase 5: Adversarial Roast Council Gate (`/roast`)
 1. **Convene the 5-Persona Roast Council (`/roast`)**:
    - **Contrarian (Red Team)**: Attacks workspace pollution, token leaks, security vulnerabilities, and fatal flaws.

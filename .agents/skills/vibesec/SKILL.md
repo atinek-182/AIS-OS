@@ -28,6 +28,7 @@ This guide provides comprehensive secure coding practices for web applications. 
 - Least privilege: Grant minimum permissions necessary
 - Input validation: Never trust user input, validate everything server-side
 - Output encoding: Encode data appropriately for the context it's rendered in
+- Graphify AST Path Tracing: Use `graphify path "<UserInputSource>" "<DatabaseSink>"` and `graphify explain "<AuthModule>"` to trace un-sanitized data paths and verify isolation.
 
 ---
 
@@ -747,6 +748,40 @@ const server = new ApolloServer({
   ]
 })
 ```
+
+---
+
+## Next.js 15 & React 19 Server Action Security
+
+Server Actions are publicly accessible POST HTTP endpoints under hashed IDs.
+
+### 1. In-Function Authentication & Authorization
+- Never rely solely on middleware or page layout guards.
+- Always execute `await auth()` and verify user/tenant permissions explicitly inside the Server Action function body before performing any operation.
+
+### 2. Module Boundary Isolation (`server-only`)
+- Import `import 'server-only'` at the top of server utility files to guarantee server secrets and database drivers are never bundled into client components.
+
+### 3. Webhook Signature Verification
+- When receiving webhooks (Stripe, Clerk, Supabase), always verify raw request buffer HMAC signatures (e.g., `stripe.webhooks.constructEvent`, Svix) BEFORE calling `req.json()`.
+
+---
+
+## OWASP Top 10 for LLM & AI Applications
+
+### 1. Prompt Injection (LLM01)
+- Sanitize and wrap untrusted user input before interpolating into system prompts.
+- Isolate untrusted RAG document contexts using XML delimiters (`<user_context>`).
+
+### 2. Excessive Agency (LLM06)
+- Apply least privilege to AI tool functions.
+- Require human approval before executing destructive actions (deleting DB records, sending emails, processing payments).
+
+### 3. Unbounded Consumption & Financial Exhaustion (LLM10)
+- Implement strict per-user rate limiting (Upstash Redis / Arcjet) and monthly credit caps on LLM endpoints to prevent financial token denial-of-service.
+
+### 4. Vector Database Tenant Isolation (LLM02)
+- Enforce strict `workspace_id` and `user_id` filtering in vector search metadata queries to prevent cross-tenant data leaks.
 
 ---
 

@@ -17,6 +17,19 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 ```
 
+## 2026-07-31 — Graphify Knowledge Graph Engine Ingestion & Multi-Vault Integration
+
+**Decision:** Ingested and integrated Graphify (`https://github.com/Graphify-Labs/graphify`) across the entire AIOS system:
+1. **Installed Extended Engine**: Installed `graphifyy[all]` globally via `uv tool install` with complete AST language parsers, PDF/Office extraction, media transcription, and graph exporters.
+2. **Multi-Vault Automation Script**: Built `scripts/graphify_runner.py` managing AST knowledge graph generation and status checks across 4 workspace hubs (`root`, `brain`, `zorixel`, `frontend`).
+3. **Tier 1 Native Skill**: Created `.agents/skills/graphify/SKILL.md` with dual-triggering (`/graphify`) and intent-matching for querying subgraphs, explaining node concepts, and tracing paths.
+4. **Query-First Navigation Rule**: Updated `.agents/AGENTS.md` and `GEMINI.md` to establish `graphify query` as the primary method for codebase and vault exploration over brute-force file grepping.
+5. **Research Library**: Archived Graphify manuals and architecture specs to `brain-aios/wiki/research/skills-library/graphify/`.
+
+**Why:** Gives AIOS zero-LLM local tree-sitter AST knowledge graph traversal across all workspace vaults and brand operating systems.
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-07-30 — ZORIXEL Brand OS Initialization, Ingestion Vault & Global Async Arbitrage Model
 
 **Decision:** Created dedicated ZORIXEL Brand OS on Drive D (`D:\ZORIXEL-BRAND-OS`) attached via directory junctions (`d:\AI-OS\zorixel-brand-os` and `second-brain-zorixel`). Ingested 7 YouTube transcripts + 40-page PDF playbook (*The First Client Playbook*), and codified **The Global Async Arbitrage Model**:
@@ -1227,9 +1240,22 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
    - **Shadcn**: `command`: `C:\Program Files\nodejs\node.exe`, `args`: `["C:\\Users\\HP\\AppData\\Roaming\\npm\\node_modules\\shadcn\\dist\\index.js", "mcp"]`
 3. Tested initialization in isolation to verify **~0.1s execution time** with 0 network latency or `cmd.exe` process buffering hangs.
 
-**Why:** Completely eliminates context deadline timeouts during MCP client bootup on Windows.
+---
 
-**Owner:** Antigravity AIOS
+## 2026-07-31 — Six-File Context Methodology v3.0 Architecture & Storm Research Integration
+
+**Decision:** Upgraded `/six-file-context-methodology` skill to v3.0, integrated Stanford STORM multi-perspective research engine, and enforced a global Strict Zero-Emoji Mandate:
+1. **Matt Pocock & JS Mastery Spec/Ticket Pipeline**: Deconstructs feature specs (`context/specs/`) into atomic engineering tickets (`docs/tickets/`) with verifiable Definition of Done (DoD) and updates multi-session maps (`docs/wayfinder/map.md`).
+2. **Token-Optimized Wave Execution**: `/six-file-context-methodology execute` dispatches background developer subagents with wave-based parallelization, protected by strict Token Safeguards (Surgical Context Ingestion, Max 2-Attempt Loop Backstop, 1-3 File Scope Boundaries).
+3. **Catalog-First Component Sourcing & Theme Adaptation**: Queries 300+ Component Synthesis Engine (`component_registry_cli.py search`), prioritizing operator favorites and custom lists. Prohibits creating generic components from scratch when catalog matches exist, and strips hardcoded inline colors to re-bind strictly to project OKLCH tokens in `ui-context.md`.
+4. **Security Quality Gates & OWASP LLM Additions**: Embeds `/vibesec` security contracts into `code-standards.md` and ticket DoD. Adds Next.js 15 Server Action isolation (`import 'server-only'`, in-function `auth()` checks), raw webhook signature verification, and OWASP Top 10 for LLM Applications (Prompt injection, RAG tenant isolation, Excessive Agency safeguards, and Unbounded Consumption rate limits).
+5. **`storm-research-project` Skill & Brain Memory Logging**: Duplicated `storm-research` into a dedicated skill `.agents/skills/storm-research-project/SKILL.md` (leaving the original `storm-research` completely intact). Expanded to 7 research lenses (adding AI/LLM Integration & Latency Specialist and Developer Ergonomics & Token Footprint Auditor). Findings automatically log to `brain-aios/wiki/research/` and `MEMORY.md` so the AIOS persistently retains research context across sessions.
+6. **Strict Zero-Emoji Mandate**: Banned emojis across all responses, chat outputs, skill files, documentation, code comments, and project artifacts.
+
+**Why:** Gives the AIOS an enterprise-grade senior AI engineering workflow that maximizes architectural rigor, security, component quality, and multi-perspective research while strictly protecting against token credit exhaustion and context bloat.
+
+**Owner:** Antigravity AIOS & Atinek Maurya
+
 
 
 

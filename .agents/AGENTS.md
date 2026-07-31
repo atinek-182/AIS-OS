@@ -110,6 +110,14 @@
 - **On-Demand Tier 2 to Tier 1 Promotion**: Whenever a skill, guide, or workflow stored in `skills-library/` is needed for active work, the AIOS MUST automatically adapt, promote, format (with dual-trigger YAML frontmatter, No-Op test quality discipline, and explicit `## 🔗 Inter-Skill Connections`), and install it directly into `.agents/skills/` without requiring explicit user prompt permission.
 - **Continuous Skill Upgrading**: During milestone completions, `/improve-system` calls, or system reviews, the AIOS MUST automatically audit and upgrade existing active skills in `.agents/skills/` to integrate superior patterns, CLI parameters, and security safeguards as the workspace evolves.
 
+## Universal 5 Master Graphify Knowledge Graph Operating Patterns
+- **1. Query-First Discovery Gate (Pre-Search)**: Before conducting raw file grepping or reading files, AI agents and skills MUST run `graphify query "<topic>"` or `python scripts/graphify_runner.py query "<term>" --hub <hub>` to extract AST nodes, line numbers, and community groups.
+- **2. Shortest Path & Dependency Tracer**: When refactoring, designing domain models, or planning code changes, run `graphify path "<NodeA>" "<NodeB>"` to discover hidden side effects, missing imports, or tight couplings.
+- **3. God-Node & Security Audit Gate**: During `/vibesec`, `/roast`, `/hallmark`, and `/os-audit`, run `graphify explain "<component>"` to score degree centrality, risk exposure, and module isolation.
+- **4. Post-Modification Graph Update & Diff**: Whenever creating or modifying project code or documentation, run `graphify update .` to keep `graph.json`, `graph.html`, `GRAPH_REPORT.md` fresh, and run `graphify diff` to verify graph topology changes.
+- **5. Multi-Vault Hub Routing**: Route graph queries to the relevant workspace hub (`root`, `brain`, `zorixel`, `frontend`) or build local `.planning/graphs/` graphs for standalone project directories.
+
+
 
 
 

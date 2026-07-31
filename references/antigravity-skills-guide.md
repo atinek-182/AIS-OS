@@ -57,7 +57,15 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 
 ---
 
-## 🎨 6. Front-End Design (`frontend-design`)
+## 🕸️ 7. Graphify Knowledge Graph Engine (`graphify`)
+* **Purpose**: Maps codebases, docs, PDFs, images, and videos into deterministic, zero-LLM tree-sitter AST knowledge graphs. Replaces brute-force file grepping with `graphify query`, `graphify explain`, and `graphify path`.
+* **Repository**: [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
+* **Active Local Skill**: `.agents/skills/graphify/SKILL.md` (`/graphify`)
+* **Runner Script**: `scripts/graphify_runner.py` (Managing 4 workspace hubs: `root`, `brain`, `zorixel`, `frontend`)
+
+---
+
+## 🎨 8. Front-End Design (`frontend-design`)
 *   **Purpose:** Injects styling guidelines and assets so that generated user interfaces use premium visual rules (harmonious HSL colors, outfit typography, hover transitions) instead of default layouts.
 *   **Installation Command:** Utilizes local design SOP instructions or Antigravity Design native configurations.
 

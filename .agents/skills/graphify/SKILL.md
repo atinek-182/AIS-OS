@@ -1,0 +1,67 @@
+---
+name: graphify
+description: Build, query, explain, and trace paths across codebase and vault knowledge graphs (AIOS root, brain-aios, second-brain-zorixel, premium-frontend-experience-system) without brute-force file grepping. Invokable directly via /graphify.
+argument-hint: '[build|query <term>|explain <concept>|path <A> <B>|status] [--hub root|brain|zorixel|frontend]'
+---
+
+# Graphify Multi-Vault Knowledge Graph Engine (`/graphify`)
+
+## ⚡ Invocation & Tri-Mode Routing
+
+This skill supports **Tri-Mode Flexible Execution**:
+- **Slash Command**: Explicitly run `/graphify [build|query|explain|path|status] [--hub hub_name]` in chat.
+- **Dynamic Intent Matching**: Triggered automatically when task context involves codebase architecture exploration, dependency mapping, path tracing between concepts, or vault relationship queries.
+- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills (`gsd-graphify`, `ingest-repo`, `website-design-engine`, `gstack`) or subagents via `/graphify` or by executing `python scripts/graphify_runner.py`.
+
+---
+
+## 🎯 Primary Capabilities & Output Files
+
+Graphify builds deterministic, tree-sitter AST knowledge graphs across four primary AIOS hubs:
+1. **`root`**: `d:\AI-OS` (Main AIOS Codebase, Skills, and Engine)
+2. **`brain`**: `d:\AI-OS\brain-aios` (AIOS Operations, SOPs, Master Task List)
+3. **`zorixel`**: `d:\AI-OS\second-brain-zorixel` (ZORIXEL Brand Strategy, Content Vault, Research)
+4. **`frontend`**: `d:\AI-OS\premium-frontend-experience-system` (UI Design System, Component Registry, Shaders)
+
+Every build outputs `graphify-out/`:
+- `graph.html`: Force-directed interactive Leiden community graph visualizer.
+- `GRAPH_REPORT.md`: Highlighted god-nodes, surprising connections, and suggested queries.
+- `graph.json`: Full structured JSON graph schema.
+
+---
+
+## 🛠 Command Usage
+
+### 1. Build or Rebuild Knowledge Graph
+```bash
+python scripts/graphify_runner.py build all
+# Or for a specific hub:
+python scripts/graphify_runner.py build brain
+```
+
+### 2. Query Graph Instead of Grepping
+```bash
+python scripts/graphify_runner.py query "how does Carousel Copy work?" --hub zorixel
+```
+
+### 3. Explain Concept & Degree Connections
+```bash
+python scripts/graphify_runner.py explain "design_synthesis_engine" --hub frontend
+```
+
+### 4. Trace Connection Path Between Two Concepts
+```bash
+python scripts/graphify_runner.py path "FastAPI" "ModelField" --hub root
+```
+
+### 5. Check Multi-Vault Graph Status
+```bash
+python scripts/graphify_runner.py status
+```
+
+---
+
+## 🔗 Inter-Skill Connections & Workflow Integration
+- **Ingestion Engine**: Triggered automatically post-ingestion by `/ingest-repo` and `/ingest-skills`.
+- **GStack Architecture Review**: Used during `/gstack eng` to audit call-trees and module dependencies.
+- **Fullstack Next.js Scoping**: Integrates with `/jsmastery-scope` and `/mattpocock-wayfinder` to trace domain models.

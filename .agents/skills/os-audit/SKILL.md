@@ -42,6 +42,8 @@ Every finding this audit produces is a risk of one of the four ways context brea
 - **Confusion** — something the agent needs is missing, or something off-topic is present. Unmapped folders, data pulled but never ingested, off-domain notes in the knowledge layer.
 - **Clash** — two pieces of context contradict, usually old versus new. Duplicate folders, the same fact living in two stores at two ages, rules added piecewise with no declared winner.
 
+- **Graphify Topology Drift** — Run `python scripts/graphify_runner.py status` and `graphify status` across all hubs (`root`, `brain`, `zorixel`, `frontend`) to detect stale graph indexes, missing tree-sitter AST nodes, or un-clustered community graphs.
+
 Anchor: poisoning is false, bloat is too much, confusion is wrong-or-missing, clash is contradictory. **Tag every finding in the report with the failure mode it feeds.** A finding that feeds none of the four is probably cosmetic; say so and rank it last.
 
 The second lens is *when context loads*:

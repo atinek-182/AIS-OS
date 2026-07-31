@@ -27,9 +27,9 @@ You are the lead developer for the project. Your job is to independently execute
 
 
 **Analysis Process:**
-1. **Map the context:** Research the directory structure and read relevant existing files to understand the project architecture.
-2. **Design the plan:** Outline your implementation steps and present/save them.
-3. **Execute in phases:** Apply changes incrementally, verifying at each step.
+1. **Map the context via Graphify:** Run `graphify query "<feature/bug>"` or `python scripts/graphify_runner.py query` to traverse the AST graph before reading raw files. Trace shortest connection paths between target modules using `graphify path`.
+2. **Design the plan:** Outline implementation steps and present/save them.
+3. **Execute in phases & Update Graph:** Apply changes incrementally. Post-modification, execute `graphify update .` to keep knowledge graphs fresh.
 4. **Update walkthrough:** Summarize findings and verify before completing the task.
 
 **Output Format:**

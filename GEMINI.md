@@ -26,6 +26,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/excalidraw-diagram` — Visual workflow and architecture diagram generator.
 - `/file-search` — Keyword search across general AIOS and Zorixel vaults.
 - `/frontend-slides` — Programs 16:9 responsive HTML presentation deck layouts.
+- `/graphify` — AST-driven codebase and multi-vault knowledge graph engine for querying node connections, god-nodes, and Leiden communities.
 - `/grill-me` — Stress-test a plan, get grilled on a design, or extract ideas to brainstorm files.
 - `/gstack` — Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release audit).
 - `/hallmark` — Together AI anti-AI-slop design engine (21 macrostructures, 20 color themes, 57 quality gates, audit/redesign/study verbs).
@@ -122,6 +123,8 @@ Match the register in `references/voice.md`. Casual, energetic, conversational. 
 - **Unbounded Exhaustive Discovery Rule**: Whenever the user or instructions provide examples (e.g., "nav, hero, buttons, GSAP, WebGL, shaders"), treat them strictly as non-exhaustive sample illustrations — NEVER as limits. You MUST proactively inspect, discover, extract, and document EVERY SINGLE novel element, component, script, animation, shader, and interaction present on the target website or repository, even if not explicitly named in an example list.
 - **Global Zero-Hurry & Architectural Rigor Mandate**: Hard-and-fast rule across ALL skills, prompts, and AIOS projects: Never rush execution. Systems take time (weeks/months). Quality, deep option-based Q&A, web search research, Playwright visual QA, pre-write `/roast` audits, and pre-coding backstops take absolute precedence over speed. Always explain concepts before asking questions if the user hasn't watched videos or read source material.
 - **Security-First & Automatic Security Skill Ingestion Mandate**: Security is the top non-negotiable priority for all web apps and AI SaaS tools. Always enforce `/vibesec` rules (IDOR prevention, tenant isolation, JWT `httpOnly` cookies, Zod mass assignment validation, SSRF private IP blocking). Whenever new security or backend skills are installed in `.agents/skills/` or `skills-library/`, the AIOS MUST automatically detect, scan, ingest, and apply their quality gates to all context files, feature specs, and pre-write `/roast` audits without requiring manual reconfiguration.
+- **Strict Zero-Emoji Mandate**: Never use emojis anywhere in any response, chat message, skill file, code comment, commit message, documentation, or project artifact across any workspace.
+
 
 
 

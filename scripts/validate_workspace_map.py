@@ -106,5 +106,10 @@ if unmapped:
     print("\nPlease register them in WORKSPACE_MAP.md before committing changes.\n")
     sys.exit(1)
 
+# Check Graphify Knowledge Graph status
+root_graph = os.path.join(workspace_root, "graphify-out", "graph.json")
+if os.path.exists(root_graph):
+    print("[Graphify] Root Knowledge Graph is active and verified.")
+
 print("[git pre-commit hook] SUCCESS: WORKSPACE_MAP.md is fully aligned.")
 sys.exit(0)

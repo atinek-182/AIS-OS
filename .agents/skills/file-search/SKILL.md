@@ -22,15 +22,16 @@ Enables high-performance keyword search across both local Obsidian vaults (the A
 
 ## Steps
 
-1. If no query is provided in `$ARGUMENTS`, ask the user what keyword or phrase they want to find.
-2. Run a recursive search across the following directories:
+1. **Graphify AST Knowledge Search (Query-First Gate)**: Run `graphify query "$ARGUMENTS"` or `python scripts/graphify_runner.py query "$ARGUMENTS" --hub root` to search AST nodes, line numbers, and confidence-tagged relationships across all indexed workspace vaults.
+2. If keyword matching is required beyond AST nodes, run a recursive grep across:
    - [brain-aios/](file:///d:/AI-OS/brain-aios/)
    - [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/)
+   - [premium-frontend-experience-system/](file:///d:/AI-OS/premium-frontend-experience-system/)
    Exclude `.git`, `.obsidian`, and binary files.
 3. For each match found:
    - Format the filename as a clickable link: `[basename](file:///d:/AI-OS/...)`.
-   - Include the line number and a snippet of the matching content.
-4. Output the search results grouped by vault.
+   - Include the line number, AST community tag, and a snippet of content.
+4. Output search results grouped by hub.
 
 ---
 

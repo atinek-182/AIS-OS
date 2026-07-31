@@ -38,6 +38,7 @@ Evaluate feature proposals from a YC CEO & Product Founder perspective:
 
 ### 2. Engineering Manager Review (`/gstack eng`)
 Evaluate code & architecture against strict senior EM standards:
+- **Graphify Call-Tree & Dependency Tracing**: Run `graphify query` and `graphify path` to trace module call-trees and uncover hidden couplings.
 - **Simplicity & Surgical Edits**: Is the implementation simple, readable, and surgical?
 - **No Over-Abstraction**: Are there unnecessary patterns, speculative abstractions, or unused dependencies?
 - **Type Safety & Reliability**: Are error states, edge cases, and empty states handled cleanly?
@@ -52,6 +53,7 @@ Evaluate frontend interface & aesthetics against premium web standards:
 
 ### 4. Browser QA Audit (`/gstack qa`)
 Physically verify built web applications:
+- **Graphify Status Check**: Run `graphify status` and `graphify update .` to confirm AST topology integrity.
 - Launch headless browser validation via Playwright / DevTools.
 - Verify console logs for 0 JavaScript errors or unhandled warnings.
 - Capture responsive screenshots across 5 viewports (Mobile 375px, Mobile 414px, Tablet 768px, Laptop 1024px, Desktop 1440px).

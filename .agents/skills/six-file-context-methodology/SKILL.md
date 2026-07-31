@@ -1,104 +1,102 @@
 ---
 name: six-file-context-methodology
-description: Apply Senior AI Engineering 7-File Context Methodology, Spec-Driven Development, Playwright Visual QA, and Global Zero-Hurry Mandate (from JavaScript Mastery masterclass). Use when initializing new projects, structuring AI coding context, or creating feature specifications.
-argument-hint: '[init|scaffold|spec <feature-name>|spec-all|verify|check]'
+description: Senior AI Engineering 7-File Context Methodology v3.0. Scaffolds 7-File Context System, Spec & Ticket Pipeline (docs/tickets/), Token-Optimized Wave Execution, Catalog-First Component Synthesis, Modern Security Quality Gates (OWASP LLM & Server Actions), and Smart STORM 7-Lens Research Integration.
+argument-hint: '[init|scaffold|spec <feature-name>|spec-all|execute [ticket|wave|all]|verify|check]'
 ---
 
-# ⚡ Six-File Context Methodology (`/six-file-context-methodology`)
+# Six-File Context Methodology (`/six-file-context-methodology` v3.0)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
-This skill supports **Tri-Mode Flexible Execution**:
-- **Slash Command**: Explicitly run `/six-file-context-methodology [init|scaffold|spec <feature-name>|spec-all|verify]` in chat.
-- **Dynamic Intent Matching**: Triggered automatically when task context involves keywords in the description (e.g. "scaffold context", "7-file context", "feature spec", "senior AI workflow").
-- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills (e.g. `/new-project`, `/make-plan`) or subagents via `/six-file-context-methodology` or reading `SKILL.md` directly.
-
----
-
-## 🛡️ Addressed Vulnerabilities & Quality Fixes (From Roast Council Audit)
-
-1. **Lite Mode vs Pro Mode Selector (Eliminates Build-Tooling Tax)**:
-   - **Pro Mode (Default for Full SaaS)**: Scaffolds the full 7-File Context System (`project-overview.md`, `architecture.md`, `code-standards.md`, `ui-context.md`, `ai-workflow-rules.md`, `progress-tracker.md`, `seo-context.md` + root `AGENTS.md`) and handles unbounded 10-50+ feature specs.
-   - **Lite Mode (For Micro-Tools & Landing Pages)**: Scaffolds a 4-File Minimal System (`project-overview.md`, `architecture.md`, `ui-context.md`, `progress-tracker.md`) + 3-5 specs to eliminate setup overhead on small 1-day builds.
-
-2. **Token Footprint & Prompt Context Optimization**:
-   - To avoid token context churn, the agent reads only relevant context files during specific sub-tasks:
-     - *UI Tasks*: Reads `ui-context.md` + `code-standards.md`.
-     - *DB / API Tasks*: Reads `architecture.md` + `code-standards.md` + `vibesec` security rules.
-     - *SEO Tasks*: Reads `seo-context.md` + `seo-audit-reference/` vault.
-
-3. **State Synchronization & Drift Prevention**:
-   - Automated check during `/six-file-context-methodology check` comparing git commit history against `progress-tracker.md` entries to prevent stale documentation.
+This skill supports Tri-Mode Flexible Execution:
+- Slash Command: Explicitly run `/six-file-context-methodology [init|scaffold|spec <feature-name>|spec-all|execute|verify|check]` in chat.
+- Dynamic Intent Matching: Triggered automatically when task context involves context scaffolding, feature specs, ticket deconstruction, or senior AI engineering workflows.
+- Inter-Skill & AIOS Calling: Programmatically invokable by parent skills (e.g. `/new-project`, `/make-plan`, `/website-design-engine`) or subagents via `/six-file-context-methodology` or reading `SKILL.md` directly.
 
 ---
 
-## 📌 Hard-and-Fast System Mandates
+## Addressed Vulnerabilities & v3.0 System Upgrades
 
-1. **Global Zero-Hurry Rule**: Never rush execution. Systems take time (weeks/months). Architectural rigor, deep questioning, and web research take precedence over speed.
-2. **Interactive Architect Discovery (`init`)**: Run Playbook prompts in an interactive option-based Q&A loop before writing context files. Offers **Lite Mode vs Pro Mode** choice.
-3. **7-File Context Foundation (Pro Mode)**:
+1. Dual Spec & Ticket Pipeline (Matt Pocock Integration):
+   - Generates high-level technical feature specs in `context/specs/NN-feature.md`.
+   - Automatically deconstructs feature specs into atomic engineering tickets in `docs/tickets/` with verifiable DoD (Definition of Done).
+   - Synchronizes multi-session destinations in `docs/wayfinder/map.md`.
+
+2. Token-Optimized Wave Execution (`/six-file-context-methodology execute`):
+   - Executes tickets in wave-based parallel streams (Dependencies -> Auth/DB -> API Routes -> UI Components).
+   - Strict Token Safeguards: Surgical context ingestion (subagents receive only exact target files, never full context folders), 2-attempt max retry hard stop, and 1-3 file boundary caps per ticket.
+
+3. Catalog-First Component Sourcing & Token Theme Adaptation:
+   - Queries 300+ Component Synthesis Engine (`component_registry_cli.py search`), prioritizing operator favorites and custom user-provided lists.
+   - Catalog-First Rule: Prohibits writing UI components from scratch when matching catalog components exist.
+   - Token Theme Adaptation: Strips inline hardcoded component colors and re-binds styles strictly to project OKLCH/CSS tokens in `ui-context.md`.
+
+4. Comprehensive Security Quality Gates (VibeSec + OWASP LLM):
+   - Embeds `/vibesec` rules directly into `code-standards.md` and ticket DoD.
+   - Next.js 15 / React 19 Server Action Security: Forces in-function `auth()` verification and `import 'server-only'` to prevent public endpoint invocation or server secret leaks.
+   - OWASP LLM Application Security: Prompt injection defense, RAG vector tenant isolation (`workspace_id` filtering), Excessive Agency safeguards (human approval for destructive actions), and Unbounded Consumption rate limiting.
+   - Raw Webhook Signature Verification: Validates HMAC signatures (Stripe Svix/Supabase) on raw request buffers before JSON parsing.
+
+5. Smart Conditional STORM 7-Lens Research Integration:
+   - Triggers `/storm-research-project` (7 specialized research lenses) conditionally during `init` or complex `spec` trade-offs.
+   - Logs research summaries to `brain-aios/wiki/research/` and `MEMORY.md` so the AIOS persistently retains research insights across sessions without re-running tools.
+
+6. Strict Zero-Emoji Mandate:
+   - No emojis used anywhere in skill markdown, output logs, or code artifacts.
+
+---
+
+## Hard-and-Fast System Mandates
+
+1. Global Zero-Hurry Rule: Never rush execution. Architectural rigor, deep option-based Q&A, web search research, Playwright visual QA, and pre-coding backstops take precedence over speed.
+2. Interactive Architect Discovery (`init`): Runs an interactive option-based Q&A loop before creating context files. Offers Lite Mode vs Pro Mode choice.
+3. 7-File Context Foundation (Pro Mode):
    - `context/project-overview.md`
    - `context/architecture.md`
    - `context/code-standards.md`
-   - `context/ui-context.md` (Integrated with 147 components from Aceternity, Animate UI, Forge UI, Vengence UI)
+   - `context/ui-context.md` (Integrated with 300+ components via `component_registry_cli.py`)
    - `context/ai-workflow-rules.md`
    - `context/progress-tracker.md`
-   - `context/seo-context.md` (Integrated with 23-skill SEO skills-library vault)
-   - Root `AGENTS.md` / `CLAUDE.md`
-4. **Dynamic Unbounded Specs (`spec-all`)**: Generate all feature specs upfront (can be 10, 15, 20, 40, 50+ specs).
-5. **Mandatory Pre-Write `/roast` Council**: Run `/roast` gatekeeper audit before creating any document file.
-6. **Playwright Visual QA Engine (`verify`)**: Run Playwright CLI headless browser screenshots and console audits for every spec unit.
-7. **Explicit Tracker Confirmation**: Ask user confirmation before updating `progress-tracker.md`.
-8. **Pre-Coding Backstop**: Always ask: *"Is there anything else remaining before we touch the code?"*
-
-10. **Website Design Engine Integration (`website-design-engine` v2.2)**:
-    - *Pure Frontend Boundary*: `website-design-engine` powers 100% of pure frontend design (layouts, typography, motion, component sourcing, visual QA).
-    - *Flexible Template Rule*: Enforces Together AI Hallmark 57 anti-slop quality gates as visual standards without forcing rigid or templated code structures.
-    
-    - *Bundle Size & Script Hygiene Guard (Contrarian Fix)*:
-      1. Zero-Duplicate Libraries: Never mix Framer Motion and GSAP for simple widgets when one suffices.
-      2. Tree-Shaking Discipline: Use modular imports (`import { gsap } from 'gsap'`) — never import un-shaken full bundles.
-      3. Dynamic Lazy Loading: Heavy 3D WebGL components (`Three.js`) or complex GSAP timelines MUST use dynamic lazy imports (`ssr: false`) with a lightweight fallback skeleton to guarantee 100/100 Core Web Vitals page speed.
-    - *Hybrid Motion Architecture*: `ui-context.md` sets global motion rhythm & easing curves (`cubic-bezier(0.16, 1, 0.3, 1)` / `power3.out`) for visual cohesion across the entire site. Individual feature specs (`NN-component.md`) escalate to specialized animation tech (GSAP ScrollTrigger, Three.js WebGL shaders, Framer Motion, CSS) while strictly obeying the global easing DNA.
-    - *Component Sourcing*: Queries 147 cataloged components from Aceternity UI, Animate UI React, Forge UI, Vengence UI via `python scripts/component_registry_cli.py search <query>`.
-    - *Anti-Slop Hybrid Media Pipeline*: Uses high-engineering prompts for `generate_image` (no plastic textures or generic purple AI slop), paired with high-definition Unsplash URLs (`https://images.unsplash.com/photo-...`) and automatic zero-cost fallbacks.
-9. **Security-First & Auto-Skill Ingestion Mandate**: Security is top priority. Always apply `/vibesec` rules (IDOR, JWT HttpOnly cookies, Zod Mass Assignment validation, SSRF private IP blocking). Automatically detect, scan, and apply ANY present or future security/backend skill in `.agents/skills/` or `skills-library/` during planning, spec generation, and pre-write `/roast` audits.
+   - `context/seo-context.md` (Integrated with 23-skill SEO vault)
+4. Dynamic Unbounded Specs (`spec-all`): Generates feature specs upfront in `context/specs/` and compiles atomic tickets in `docs/tickets/`.
+5. Mandatory Pre-Write `/roast` Council: Runs `/roast` gatekeeper audit before creating any document file.
+6. Playwright Visual QA Engine (`verify`): Runs Playwright CLI headless browser screenshots and console audits for every spec unit.
+7. Pre-Coding Backstop: Always asks: "Is there anything else remaining before we touch the code?"
 
 ---
 
-## 🛠️ Commands & Workflow Guide
+## Commands & Workflow Guide
 
 ### 1. `/six-file-context-methodology init`
-Runs an interactive Q&A discovery loop using Playbook prompts to gather product vision, scope mode (Lite vs Pro), stack choices, UI tokens, SEO strategy, and invariants before creating context files in `context/`.
+Runs interactive Q&A discovery loop, queries component synthesis CLI, and scaffolds 7 context files in `context/`.
 
 ### 2. `/six-file-context-methodology spec <feature-name>`
-Generates a numbered, 5-section feature spec in `context/specs/NN-<feature-name>.md`. Search the web for best practices and run `/roast` before emitting file content.
+Generates a numbered, 5-section feature spec in `context/specs/NN-<feature-name>.md` and compiles atomic tickets in `docs/tickets/`. Runs `/roast` before emitting file content.
 
 ### 3. `/six-file-context-methodology spec-all`
-Decomposes `project-overview.md` into an unbounded list of numbered units (`00-build-plan.md`) following strict build-order rules (Dependencies -> Auth -> Backend APIs -> UI Wiring), generating feature specs upfront in `context/specs/`.
+Decomposes `project-overview.md` into an unbounded list of feature specs upfront in `context/specs/`, compiling corresponding ticket streams in `docs/tickets/`.
 
-### 4. `/six-file-context-methodology verify`
+### 4. `/six-file-context-methodology execute [ticket|wave|all]`
+Dispatches background developer agents using wave-based parallelization protected by strict token efficiency rules.
+
+### 5. `/six-file-context-methodology verify`
 Executes Playwright CLI to capture 5-viewport screenshots and verify console error cleanliness for completed feature units.
 
-### 5. `/six-file-context-methodology check`
-Audits context state synchronization against git commit history to detect and fix any documentation drift.
+### 6. `/six-file-context-methodology check`
+Audits context state synchronization against git commit history to detect and fix documentation drift.
 
 ---
 
-## 📚 Knowledge Base References & Clean Templates
+## Knowledge Base References & Clean Templates
 
-- **Clean Real Templates**: [6-file-context-templates/](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/)
-- **Official Template Guide**: [TEMPLATE_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/TEMPLATE_GUIDE.md)
-- **Masterclass Handbook**: [STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md)
-- **Full Video Transcript**: [FULL_TRANSCRIPT.md](file:///d:/AI-OS/references/six-file-context-methodology/FULL_TRANSCRIPT.md)
-- **Creator Project Reference Vault**: [creator-project-reference/](file:///d:/AI-OS/references/six-file-context-methodology/creator-project-reference/) (29 Ghost AI Specs, issue templates, creator sample files)
-- **SEO Skills Library Vault**: [seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/)
-
+- Clean Real Templates: [6-file-context-templates/](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/)
+- Official Template Guide: [TEMPLATE_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/6-file-context-templates/TEMPLATE_GUIDE.md)
+- Masterclass Handbook: [STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md](file:///d:/AI-OS/references/six-file-context-methodology/STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md)
+- Creator Project Reference Vault: [creator-project-reference/](file:///d:/AI-OS/references/six-file-context-methodology/creator-project-reference/)
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
-- **6-File Architecture**: Senior AI engineering 6-file context scaffolding (`project-overview.md`, `architecture.md`, `code-standards.md`, `ui-context.md`, `ai-workflow-rules.md`, `progress-tracker.md`).
-- **Macro Planning & Multi-Session Maps**: Integrates with **`/mattpocock-wayfinder`** to track multi-session epic destinations and decision ticket maps (`docs/wayfinder/map.md`).
-- **Spec & Ticket Integration**: Connects with **`/mattpocock-to-spec`**, **`/jsmastery-scope`**, and **`/mattpocock-to-tickets`**.
-
+## Inter-Skill Connections & Handoff Pipeline
+- 6-File Architecture: Senior AI engineering 7-file context scaffolding.
+- Macro Planning & Multi-Session Maps: Integrates with `/mattpocock-wayfinder` (`docs/wayfinder/map.md`).
+- Spec & Ticket Integration: Connects with `/mattpocock-to-spec`, `/jsmastery-scope`, `/mattpocock-to-tickets`, and `/storm-research-project`.
