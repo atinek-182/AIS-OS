@@ -90,6 +90,17 @@ See `EXPANSIONS.md` for what to add as you grow.
 - **What you do:** Aspiring web designer/developer, AI automation builder, and digital creator building ZORIXEL (educational brand for web design and AI tools).
 - **Who you serve:** UI/web designers, freelancers, beginner frontend developers, and vibe coders.
 - **What matters this quarter:** Launching ZORIXEL (consistent Instagram publishing and resource website), completing core AI OS (5–10 workflows), and building/launching a sellable AI automation/digital product (target: ₹1,00,000 total 2026 revenue).
+- **ZORIXEL Master Brand Identity v3.0**:
+  - **Colors (Option 1 Palette)**: Obsidian Midnight (`#0D0E12`, dark canvas), Warm Linen Cream (`#FAF8F5`, light canvas), Velvet Burgundy (`#6D001A`, primary brand / headers), Electric Crimson (`#D61C2C`, primary pop CTA), Vintage Ochre Gold (`#C5A059`, ACCENT ONLY <5%, strictly prohibited as slide background).
+  - **Typography Hierarchy**:
+    - `Nuqun-Regular`: Official Logotype / Logo Mark ONLY (`d:/AI-OS/projects/font-showcase/zorixel_logo_solid_white.svg`, `zorixel_logo_solid_dark.svg`). Never used for body or UI text.
+    - `Havock`: Primary Display Headline #1 (User's favorite! Big middle display & hero titles).
+    - `Vixa`: Approved Display Heading & Poster Font.
+    - `Rosehot`: Official Subheadings & Editorial Tag Font (used for all headings apart from the main big headline).
+    - `AICON` (Bold & ExtraBold): Selective Section Accent Sans (used when matching technical section vibes).
+    - `Chorus-Black`: Approved for Zorixel Instagram posters & carousels (not for main website).
+    - Non-Zorixel Client Vault: `Pavot`, `Queensides`, `Rozina-Bold`, `ST-Kosmolet`, `BiggerDisplay`, `Martius`, `Ortland`, `KalamaykaVF`, `SunsetHeavy`, `Medium-Font`, `VanArkel`.
+
 
 ## Voice
 

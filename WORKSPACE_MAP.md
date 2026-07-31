@@ -99,14 +99,16 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brainstorms/2026-07-24-raw-components-strategy.md](file:///d:/AI-OS/brainstorms/2026-07-24-raw-components-strategy.md) | File | Brainstorm capture notes for UI component library ingestion & strategy. | AIOS |
 | [brainstorms/2026-07-24-unified-design-system-engine-planning.md](file:///d:/AI-OS/brainstorms/2026-07-24-unified-design-system-engine-planning.md) | File | Planning capture notes for unified design system engine. | AIOS |
 | [brainstorms/2026-07-27-six-file-webdesign-integration.md](file:///d:/AI-OS/brainstorms/2026-07-27-six-file-webdesign-integration.md) | File | Brainstorm notes for integrating website design engine into 6-file context methodology. | AIOS |
-| [.agents/skills/website-design-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/website-design-engine/SKILL.md) | File | Master orchestrator skill for unified 10-phase website creation from scratch. | AIOS |
+| [.agents/skills/website-design-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/website-design-engine/SKILL.md) | File | Master orchestrator skill v3.0 for unified 10-phase website creation (local reference priority, Six-File layout control, categorized favorites, and interactive Radiant Shaders protocol). | AIOS |
 | [.agents/skills/website-design-engine/references/](file:///d:/AI-OS/.agents/skills/website-design-engine/references/) | Folder | Modular reference guides (00-06) for sitemaps, macrostructures, layout math, 147 components, motion, quality gates, and visual QA. | AIOS |
 | [brainstorms/2026-07-24-ingest-os-audit.md](file:///d:/AI-OS/brainstorms/2026-07-24-ingest-os-audit.md) | File | Ingestion capture notes and VibeSec security audit for os-audit skill. | AIOS |
 | [diagrams/canvas_output.png](file:///d:/AI-OS/diagrams/canvas_output.png) | File | Output screenshot from canvas design experiments. | AIOS |
 | [brain-aios/wiki/research/skills-library/os-audit/SKILL.md](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/os-audit/SKILL.md) | File | Reference copy of os-audit skill instructions in the skills library vault. | AIOS |
 | [brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-24-exhaustive-10-pillar-reference-ingestion.md) | File | Experience log codifying the 10-pillar ultra-exhaustive deep research ingestion pipeline and Obys grid engine. | AIOS |
 | [brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-25-anti-slop-design-engine-evolution.md) | File | Experience log codifying user-enforced anti-slop quality gates #58-#62, light editorial standards, and Nuqun typography. | AIOS |
+| [second-brain-zorixel/wiki/brand/colors.md](file:///d:/AI-OS/second-brain-zorixel/wiki/brand/colors.md) | File | Official ZORIXEL Brand Color System documentation (Obsidian, Burgundy, Crimson, Ochre Gold, Linen Cream). | AIOS |
 | [premium-frontend-experience-system/references/component-vault/INDEX.md](file:///d:/AI-OS/premium-frontend-experience-system/references/component-vault/INDEX.md) | File | Central index for Structured Component Vault organized by UX patterns (navigation, heroes, cards, scrollytelling, forms, modals, footers, 3d-widgets). | AIOS |
+
 | [premium-frontend-experience-system/references/component-vault/components-showcase.html](file:///d:/AI-OS/premium-frontend-experience-system/references/component-vault/components-showcase.html) | File | Master interactive HTML showcase displaying all 26 components stacked sequentially. | AIOS |
 | [brainstorms/2026-07-31-components-ingestion-vault.md](file:///d:/AI-OS/brainstorms/2026-07-31-components-ingestion-vault.md) | File | Ingestion discovery capture file for 26 award-winning UI components, tools, and WebGL tricks. | AIOS |
 | [premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md](file:///d:/AI-OS/premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md) | File | Central index for Dedicated Shader & Canvas Physics Vault (GLSL catalog, R3F wrappers, Lenis/Rapier physics, WebGPU/TSL guide). | AIOS |
@@ -182,6 +184,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/manage_autoresearch.py](file:///d:/AI-OS/scripts/manage_autoresearch.py) | File | CLI helper managing Autoresearch loop targets and registries. | AIOS |
 | [scripts/rebuild_presentation.py](file:///d:/AI-OS/scripts/rebuild_presentation.py) | File | Script compiling slide HTML presentation files. | AIOS |
 | [scripts/rebuild_presentation_20.py](file:///d:/AI-OS/scripts/rebuild_presentation_20.py) | File | Script compiling 20-slide carousel presentation layouts. | AIOS |
+| [generate_final_brand_deck.py](file:///d:/AI-OS/generate_final_brand_deck.py) | File | Python generator script compiling the final Zorixel brand deck presentation. | AIOS |
 | [scripts/rename_and_link_update.py](file:///d:/AI-OS/scripts/rename_and_link_update.py) | File | Script automating file renaming and updating markdown relative links. | AIOS |
 | [scripts/scrape_full_site_mirror.py](file:///d:/AI-OS/scripts/scrape_full_site_mirror.py) | File | Script cloning complete offline HTML/CSS/JS reference mirrors. | AIOS |
 | [scripts/security_check.py](file:///d:/AI-OS/scripts/security_check.py) | File | VibeSec security audit runner script. | AIOS |
@@ -276,7 +279,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/seo-audit-reference/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/seo-audit-reference/) | Folder | Static reference library containing SEO audit guidelines and validation scripts. | AIOS |
 | [second-brain-zorixel/](file:///d:/AI-OS/second-brain-zorixel/) | Junction | ZORIXEL brand-specific Obsidian vault (junction to local vault). | AIOS / Obsidian |
 | [references/six-file-context-methodology/](file:///d:/AI-OS/references/six-file-context-methodology/) | Folder | Knowledge vault storing clean authentic 6-file context templates (6-file-context-templates/), creator project reference vault (creator-project-reference/), masterclass handbook, and full ~37,000-word video transcript. | AIOS |
-| [.agents/skills/six-file-context-methodology/SKILL.md](file:///d:/AI-OS/.agents/skills/six-file-context-methodology/SKILL.md) | File | Custom skill enforcing Senior AI Engineering 6-file context scaffolding and 3-step decoupled workflows. | AIOS |
+| [.agents/skills/six-file-context-methodology/SKILL.md](file:///d:/AI-OS/.agents/skills/six-file-context-methodology/SKILL.md) | File | Custom skill enforcing Senior AI Engineering 7-file context scaffolding v3.1, local reference priority vault, and 4-level component synthesis priority chain. | AIOS |
 
 
 ---

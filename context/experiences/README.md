@@ -18,6 +18,7 @@
 - **2026-07-29**: [2026-07-29-codegraph-and-shadcn-mcp-direct-binary-resolution.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-29-codegraph-and-shadcn-mcp-direct-binary-resolution.md) — Codegraph & Shadcn MCP Direct Binary Resolution & Timeout Fix: Bypass cmd.exe wrappers and npx network checks.
 - **2026-07-30**: [2026-07-30-zorixel-brand-os-and-global-async-arbitrage.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-30-zorixel-brand-os-and-global-async-arbitrage.md) — ZORIXEL Brand OS Initialization, 7-Video & PDF Playbook Research Ingestion, and Global Async Arbitrage Engine.
 - **2026-07-31**: [2026-07-31-graphify-knowledge-graph-ingestion-and-zero-emoji-mandate.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-31-graphify-knowledge-graph-ingestion-and-zero-emoji-mandate.md) — Graphify Knowledge Graph Engine Ingestion, Universal 5 Master Patterns & Strict Zero-Emoji Mandate.
+- **2026-07-31**: [2026-07-31-website-design-engine-v3-and-six-file-methodology-upgrade.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-31-website-design-engine-v3-and-six-file-methodology-upgrade.md) — Website Design Engine v3.0 & Six-File Context Methodology v3.1 Upgrade (Local Reference Priority, Six-File Layout Control & Radiant Shaders HTML Extraction).
 
 
 

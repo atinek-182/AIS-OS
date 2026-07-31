@@ -17,6 +17,19 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 ```
 
+## 2026-07-31 — Upgrade Web Design Skill (`website-design-engine` v3.0) & Six-File Context Sync (v3.1)
+
+**Decision:** Upgraded the Web Design creation architecture and context methodology across the AIOS:
+1. **`website-design-engine` v3.0 (`.agents/skills/website-design-engine/SKILL.md`)**: Upgraded to 10-phase v3.0 engine. Removed automatic wireframe generation in favor of Six-File layout control. Established project-local `reference/` (or `references/`) folder as the **#1 Priority Source of Truth** for screenshots, screen recordings, HTML files, and TSX/CSS component snippets.
+2. **Categorized Favorite Component Priority**: Maintained existing component categories in `component-registry-index.json` with `"favorite": true` markers prioritized in CLI search results.
+3. **Interactive Radiant Shader HTML Protocol (`pbakaus/radiant`)**: Integrated `radiant-shaders` (`https://radiant-shaders.com/gallery/`). Never auto-generate `.tsx` shaders blindly; AI asks user first if a shader is needed and which one. User drops HTML file into `reference/`, and AI extracts WebGL shader code from that HTML file.
+4. **`six-file-context-methodology` v3.1 (`.agents/skills/six-file-context-methodology/SKILL.md`)**: Upgraded to v3.1. Mandated `reference/` directory creation during `init`, codified the 4-level component priority chain (Local Reference -> Categorized Favorites -> 300+ Catalog -> Radiant Shaders), and synchronized layout specs directly with `website-design-engine` v3.0.
+5. **Slow & Methodical Zero-Hurry Execution**: Enforced step-by-step verification and user check-ins on any doubt.
+
+**Why:** Gives Atinek Maurya total layout control via Six-File specs while establishing an unambiguous priority hierarchy for design assets, user favorites, and WebGL graphics.
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-07-31 — Graphify Knowledge Graph Engine Ingestion & Multi-Vault Integration
 
 **Decision:** Ingested and integrated Graphify (`https://github.com/Graphify-Labs/graphify`) across the entire AIOS system:
@@ -1254,7 +1267,53 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Why:** Gives the AIOS an enterprise-grade senior AI engineering workflow that maximizes architectural rigor, security, component quality, and multi-perspective research while strictly protecting against token credit exhaustion and context bloat.
 
-**Owner:** Antigravity AIOS & Atinek Maurya
+
+---
+
+## 2026-07-31 — ZORIXEL Luxury Editorial Brand Color System Finalization
+
+**Decision:** Finalized and codified the official ZORIXEL brand color identity across all workspace brand documentation:
+1. **Master Tokens**:
+   - **Obsidian (`#0D0E12`)**: Dark Theme Canvas / Deep Ink & Structural Text
+   - **Burgundy (`#6D001A`)**: Primary Brand Color / Section Headers
+   - **Crimson (`#D61C2C`)**: Primary Interactive Accent / Active Indicators & High-Contrast CTAs
+   - **Vintage Ochre Gold (`#C5A059`)**: Signature Luxury Accent (restricted strictly to <5% screen space for badges and key metrics)
+   - **Linen Cream (`#FAF8F5`)**: Light Theme Canvas / Warm Editorial Paper Base
+2. **Vault Documentation**: Created `second-brain-zorixel/wiki/brand/colors.md` containing full HSL/Hex tokens, CSS variables, WCAG 2.2 AA legibility math (17.8:1 contrast ratios), card shadow calculations, and anti-slop guidelines.
+3. **Cross-System Updates**: Updated `candidates.md`, `personality-and-voice.md`, `typography.md`, `index.md`, `instagram-profile-structure.md`, `instagram-profile-setup-checklist.md`, `MEMORY.md`, and `second-brain-zorixel/wiki/log.md`.
+
+**Why:** Establishes a distinct, high-contrast, luxury editorial identity for ZORIXEL that enforces strict legibility and eliminates generic AI template tropes.
+
+**Owner:** Atinek Maurya & Antigravity AIOS
+
+---
+
+## 2026-07-31 — ZORIXEL Master Brand Identity v3.0 (Typography, Logo Assets & Color Rules)
+
+**Decision:** Finalized and codified the official ZORIXEL master brand identity, typography architecture, logo assets, and color rules across all workspace vaults and system configurations:
+1. **Official Brand Typography Hierarchy**:
+   - **`Nuqun-Regular`**: Reserved EXCLUSIVELY for the official ZORIXEL logotype and name mark. Never used for body copy or standard UI headings.
+   - **`Havock`**: Primary Display Headline Font #1 (User's #1 favorite font). Used for big middle display text, hero titles, and major brand headers.
+   - **`Vixa`**: Approved Display Heading & Poster Font for major section headers and campaign graphics.
+   - **`Rosehot`**: Official Subheading & Editorial Tag Font (used for all headings apart from the main big headline).
+   - **`AICON` (Bold & ExtraBold)**: Selective Section Accent Sans (used in specific technical sections when matching section vibe).
+   - **`Chorus-Black`**: Approved for Zorixel Instagram posters, carousels, and graphic designs (not used on main website).
+   - **Non-Zorixel Client Vault**: `Pavot`, `Queensides`, `Rozina-Bold`, `ST-Kosmolet`, `BiggerDisplay`, `Martius`, `Ortland`, `KalamaykaVF`, `SunsetHeavy`, `Medium-Font`, `VanArkel` archived for external client projects.
+2. **Official Logo Assets Registered**:
+   - Solid White PNG: `d:/AI-OS/projects/font-showcase/zorixel_logo_solid_white.png`
+   - Solid Dark PNG: `d:/AI-OS/projects/font-showcase/zorixel_logo_solid_dark.png`
+   - Solid White SVG: `d:/AI-OS/projects/font-showcase/zorixel_logo_solid_white.svg`
+   - Solid Dark SVG: `d:/AI-OS/projects/font-showcase/zorixel_logo_solid_dark.svg`
+3. **Upgraded Option 1 Color Palette Rules**:
+   - Canvas: Obsidian Midnight (`#0D0E12`) dark, Warm Linen Cream (`#FAF8F5`) light, Velvet Burgundy (`#6D001A`) hero headers.
+   - Primary Pop CTA: Electric Crimson (`#D61C2C`).
+   - Accent Restriction: Vintage Ochre Gold (`#C5A059`) is strictly restricted to badges, numbers, sub-headings, and iconography (<5% screen area). STRICTLY PROHIBITED as a full slide/page background.
+4. **Documentation & Showcase Sync**: Updated `second-brain-zorixel/wiki/brand/typography.md`, `second-brain-zorixel/wiki/brand/colors.md`, `GEMINI.md`, `second-brain-zorixel/wiki/log.md`, `brain-aios/wiki/checklists/master-task-list.md`, and compiled interactive specimen deck `d:/AI-OS/projects/font-showcase/zorixel_final_brand_deck.html`.
+
+**Why:** Establishes an immutable, high-end, editorial visual identity for ZORIXEL across web applications, video assets, educational carousels, and print graphics while maintaining clean separation between brand fonts and client project assets.
+
+**Owner:** Atinek Maurya & Antigravity AIOS
+
 
 
 
