@@ -15,6 +15,22 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-01 — ZORIXEL Brand Pivot: Dedicated AI Workflows & Business Automation Agency
+
+**Decision:** Formally pivoted ZORIXEL's strategic focus from standalone web design/development to a dedicated **AI Workflows & Business Automation Agency**, with custom full-stack web UI as an integrated superpower pillar:
+1. **Core Service Focus**: Dedicated AI workflows, custom agentic automations, lead qualification systems, and business bottleneck resolution (charging $1,500–$5,000+ per DFY build sprint).
+2. **Integrated Full-Stack UI Moat**: Demoted standalone web design to an integrated frontend UI pillar (building custom TypeScript/Next.js client portals and dashboards to interface with backend Python/n8n AI agents).
+3. **Dual-Market Strategy**:
+   - **Domestic (India - INR)**: Rapid case study launchpad, Hindi client communication, adjusted purchasing power pricing, early confidence-building milestone.
+   - **International (USD)**: Primary revenue engine targeting US/UK/CA/AU businesses.
+4. **Primary Content & Funnel Architecture**: YouTube designated as the primary long-form technical authority engine (showing Claude Code/n8n/Python build-in-public breakdowns). Content syndicated to LinkedIn, X, Reddit, and Instagram.
+5. **Client-Owned Infrastructure**: Clients own their Anthropic/OpenAI API keys and cloud hosting accounts (Vercel/Supabase/Render/n8n), eliminating monthly server hosting liabilities for ZORIXEL.
+6. **Value-First Proposals**: Unified global intake tool -> Asynchronous personalized Loom video proposal -> closing Zoom call.
+
+**Why:** Addresses the growing demand for high-ROI business automations while capitalizing on ZORIXEL's unique dual advantage (combining backend AI workflows with world-class frontend interactive design). Eliminates server hosting liabilities and prevents domestic vs. international pricing leaks.
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-08-01 — Universal Humanizer Skill & Writing Discipline Mandate (v2.9.1)
 
 **Decision:** Ingested `https://github.com/blader/humanizer` (v2.9.1, 33 AI pattern cleanup rules based on Wikipedia's AI cleanup project) and established a non-negotiable global mandate across the entire AIOS and Zorixel website project:

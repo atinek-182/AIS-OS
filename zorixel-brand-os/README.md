@@ -1,6 +1,6 @@
 # ZORIXEL Brand Operating System (ZORIXEL-BRAND-OS)
 
-Welcome to the dedicated **ZORIXEL Brand Operating System**. This workspace connects all strategy, content production engines, YouTube transcript ingestion vaults, productized service specifications, adapted brand skills, platform connections, and your **Obsidian Second Brain Vault** for launching and scaling ZORIXEL.
+Welcome to the dedicated **ZORIXEL Brand Operating System**. This workspace connects all strategy, content production engines, YouTube transcript ingestion vaults, AI agency service specifications, adapted brand skills, platform connections, and your **Obsidian Second Brain Vault** for launching and scaling ZORIXEL.
 
 ---
 
@@ -47,5 +47,5 @@ D:\ZORIXEL-BRAND-OS\ (Junction: d:\AI-OS\zorixel-brand-os)
 
 1. **Obsidian Vault Sync**: All brand decisions, briefs, and captions automatically sync between `second-brain-zorixel/` and this Brand OS.
 2. **Ingest YouTube Videos**: Paste YT URLs to extract transcripts and map into `research/youtube-transcripts/`.
-3. **Draft Content & Carousels**: Use `/carousel-copy` and `/canvas-design` to build Instagram slides & YouTube scripts.
-4. **Build Productized Service**: Execute the 14-Day $3,000 Web Experience Sprint mapped in `strategy/service-offer-spec.md`.
+3. **YouTube Build Breakdowns**: Produce YouTube long-form technical builds showcasing real AI workflow automations and full-stack web UI dashboards.
+4. **Build AI Agency Systems**: Execute DFY AI Engineering Build Sprints ($1,500–$5,000+ USD) mapped in `strategy/service-offer-spec.md`.

@@ -25,13 +25,13 @@ md_content = """# 👑 ZORIXEL Personal Brand Positioning Brief
 
 ## 🎯 1. Locked Positioning Statement
 
-> **"I help growth-stage AI SaaS founders and agency owners replace ugly, generic websites with high-converting, micro-interactive web experiences and instant <5-minute lead intake automations — delivered in 14 days for $3,000."**
+> **"ZORIXEL is an AI Workflows & Business Automation Agency delivering high-ROI AI agent infrastructure, sales automations, and custom full-stack web UI dashboards for companies globally — eliminating operational bottlenecks and driving client revenue."**
 
 ---
 
 ## 🧲 2. The Hook Phrase
 
-> **"The 16-year-old AIOS architect destroying generic AI-slop websites."**
+> **"High-ROI Autonomous AI Workflows & Custom Web Dashboards for Growing Businesses."**
 
 ---
 

@@ -1,36 +1,21 @@
-# ZORIXEL AIOS Hot Cache
+# ZORIXEL AIOS Hot Cache & Handoff State
 
-**Last Updated:** 2026-07-31 15:52 IST
-**Active Project:** Zorixel Brand Website (`d:\AI-OS\projects\Zorixel brand\zorixel-website\`)
+**Last Updated:** 2026-08-01 (Session Handoff)
+**Active Core Project:** ZORIXEL AI Workflows & Business Automation Agency
 
-**Active Context:**
-- **1-to-2 Week Pre-Coding Lock Active:** All 21 atomic feature specs (`SPEC-01` to `SPEC-21`) and engineering tickets (`.planning/tickets/`) are 100% deconstructed on disk. Code implementation is locked for 14 days to focus on asset collection, design prep, platform keys, and brand strategy audits.
-- **Reference Vault Completed:**
-  - `REF-001`: Zorixel Brand Identity v3.0 (Obsidian, Linen, Burgundy, Crimson, Gold, `Nuqun`, `Havock`, `Rosehot`, `AICON`).
-  - `REF-002`: `shader-gallary/` StudioDialect 3D Helical Spiral Canvas on `/` & `/components`.
-  - `REF-003`: `Insane-PRELOADER/` 3-digit GSAP rolling counter (5.0-5.5s timeline) + 40x morphing scale-up mask wipe exit transition.
-  - `REF-004`: `3d-scroll-effect/` Three.js parabolic curved 3D ribbon on `/resources` (Free Resource Hub).
-  - `REF-005`: `Dragon-Scroll-Effect/` GSAP dynamic polygon clip-path morph & per-character SplitText kinetic reveal on `/about` (Brand Manifesto Stage).
-  - `REF-006`: `SVG-Page-transition/` Global GSAP dual-path SVG liquid stroke wipe provider wrapping App Router navigation.
-  - `REF-007`: `Prototype-studio-rebuilt/` Pinned 3-way synchronized multi-media spotlight stage on `/insights` (Articles & Teardowns).
-  - `REF-008`: `text-image-line-reveal.html` Inline image-span GSAP reveal on `/` (Homepage Standalone Manifesto Section).
-  - `REF-009`: `newmixcoffee.com/en` & `newmix recording .mp4` WebGL shader tagline morph ("Not your typical Vibe Coding" -> `Nuqun` logomark) & signature dark minimalist footer.
-- **Morphing Modal Engine:** 3D ribbon card click handler in `SPEC-11` / `TKT-11` uses the `REF-003`-inspired 40x morphing mask wipe to open the Lead Magnet Modal seamlessly.
-- **Completed Discovery (`AGY-FEAT-01`):** AI Workflow ROI & Bottleneck Calculator specified in `brainstorms/2026-08-01-ai-workflow-roi-calculator.md` (3-step stepper, custom bottleneck input freedom, value-first price delay, Google Sheets CRM sync, brand OKLCH tokens locked, layout `[PENDING OPERATOR REFERENCE]`).
-- **Universal Feature Rules:** All lead-gen features enforce custom bottleneck input freedom, value-first price delay, Google Sheets CRM sync, humanized voice, and proactive Awwwards design references.
-- **Universal Humanizer Mandate:** `humanizer` (33 AI pattern cleanup rules: zero em dashes, zero fluff, zero sycophancy, sentence case headings, straight quotes) is enforced globally across all chat replies, skills, workflows, copy drafts, and docs.
-- **Strict Pre-Coding Lock Mandate:** Code implementation and wave execution are strictly locked until Atinek Maurya explicitly says "YES" in chat. Maintain 1-to-2 week pre-coding focus on assets, credentials, strategy, and Q&A.
-- **Project Research Skill Rule:** Always use `/storm-research-project` (`d:\AI-OS\.agents\skills\storm-research-project`) with 7 expert lenses for all project-level research.
-- **Single Source of Truth:** Locked in `context/brand-identity-and-scope.md`, `context/PRE_CODING_ROADMAP.md`, and `MEMORY.md`.
+**Active Context & Strategic Baseline:**
+- **Brand Pivot Complete:** ZORIXEL is a dedicated **AI Workflows & Business Automation Agency** delivering high-ROI AI agent infrastructure, sales automations, and custom full-stack web UI dashboards for companies globally ($1,500–$5,000+ USD per DFY build sprint).
+- **Integrated Full-Stack UI Moat:** Web application development and custom client dashboard creation (demoted from standalone service to an integrated frontend UI pillar for AI backends, outperforming generic no-code coders).
+- **Dual-Market Strategy:**
+  - **Domestic (India - INR):** Rapid local case study launchpad, Hindi client communication, adjusted purchasing power pricing, building early confidence and video testimonials.
+  - **International (Global - USD):** Primary revenue engine targeting US/UK/CA/AU businesses.
+- **Acquisition Engine:** **YouTube** as primary long-form technical authority engine (showing AI workflow builds, Claude Code agents, n8n pipelines) -> syndicated to LinkedIn, X, Reddit, and Instagram.
+- **Sales Funnel:** Value-based interactive bottleneck intake tool on zorixel.com -> Asynchronous personalized Loom video proposals -> Closing discovery call.
+- **Infrastructure Protocol:** Client-Owned Infrastructure (clients own Anthropic/OpenAI keys and cloud hosting accounts like Vercel/Supabase/Render/n8n), eliminating monthly server hosting liabilities for ZORIXEL.
+- **100% Workspace Alignment Deep Purge Complete:** Purged legacy "14-day $3,000 web design sprint" pitch and "educational brand" copy across all 9 target directory trees (`projects/Zorixel brand/`, `templates/zorixel/`, `zorixel-brand-os/`, `second-brain-zorixel/`, `decisions/log.md`, `brainstorms/`, `brain-aios/`, `audits/`, `.agents/skills/`, and `scripts/`). Verified via OS Audit [os-audit-2026-08-01-brand-pivot.md](file:///d:/AI-OS/audits/os-audit-2026-08-01-brand-pivot.md).
+- **Pending External Research Report:** User ran ChatGPT / Deep Research with the 10-tier Perplexity prompt on competitor Autoploy (`https://autoploy.us/`) and founder Ty Chen. The user will paste ChatGPT's competitive report in the next chat session.
 
-
-**Immediate Next Actions:**
-- [x] Week 1 Pre-Coding Checklist: Converted and staged `.woff2` font files (`Nuqun`, `Havock`, `Rosehot`) in `public/fonts/` and exported SVG logomarks in `public/vectors/`.
-- [x] Rendered 10 preview cards for 3D Helical Spiral (`REF-002`) and 7 thumbnail cards for 3D Curved Ribbon (`REF-004`) under `public/previews/`.
-- [x] Packaged real freebie ZIP/PDF downloads for the Free Resource Hub under `public/downloads/`.
-- [x] Completed `/grill-me` specification for `AGY-FEAT-01` (AI Workflow ROI & Bottleneck Calculator).
-- [ ] Week 2 Credentials Checklist: Set up dev keys for Clerk Auth (`SPEC-15`), Supabase DB (`SPEC-11`), UploadThing, Resend, and Trigger.dev v3.
-- [ ] Run `/grill-me` discovery for Feature 2 (`AGY-FEAT-02` Web Audit & Async Loom Request Widget) in upcoming session.
-- [ ] Hold code execution until explicit "YES" from Atinek Maurya in chat.
-
-
+**Immediate Next Actions for Next Session:**
+1. **Ingest ChatGPT Competitive Report:** Ingest the raw ChatGPT / Deep Research audit of Autoploy, Ty Chen's YouTube channel, and horizontal AI agency competitors into `projects/Zorixel brand/zorixel-website/brainstorms/2026-08-01-competitor-research-autoploy.md`.
+2. **Deconstruct Competitor Weaknesses:** Extract Autoploy's exact vulnerabilities (lack of custom UI dashboards, generic VSL lander, API key cost confusion) and translate them into ZORIXEL counter-attack features.
+3. **Refine Agency Intake Calculator (`AGY-FEAT-01`):** Incorporate ingested competitor insights into the ZORIXEL interactive bottleneck ROI calculator and Loom proposal funnel.

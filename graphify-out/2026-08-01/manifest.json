@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
-    "mtime": 1785567290.4403133,
-    "ast_hash": "17a0f1617e5828f54008abe187ce076a",
+    "mtime": 1785476617.7878737,
+    "ast_hash": "56478ec55772358dbcd8c85a0329a905",
     "semantic_hash": ""
   },
   ".agents/agents/developer.md": {
@@ -475,8 +475,8 @@
     "semantic_hash": ""
   },
   ".agents/skills/draft-message/SKILL.md": {
-    "mtime": 1785573646.2956252,
-    "ast_hash": "93a65d8be54970f3931c7b6e227a3bdb",
+    "mtime": 1785168780.0347536,
+    "ast_hash": "0104e2e6eb3b6e2891ff345f0af618dc",
     "semantic_hash": ""
   },
   ".agents/skills/excalidraw-diagram/SKILL.md": {
@@ -1540,8 +1540,8 @@
     "semantic_hash": ""
   },
   ".agents/skills/session-handoff/SKILL.md": {
-    "mtime": 1785522051.5098765,
-    "ast_hash": "7d74db8ec093becb3714175330b0764b",
+    "mtime": 1785176483.501702,
+    "ast_hash": "033e81d2c4c2f1332e4fe9ee32ac9916",
     "semantic_hash": ""
   },
   ".agents/skills/six-file-context-methodology/SKILL.md": {
@@ -1585,8 +1585,8 @@
     "semantic_hash": ""
   },
   ".agents/skills/using-superpowers/SKILL.md": {
-    "mtime": 1785573638.525666,
-    "ast_hash": "874704252a30e04b6569480ff5503f88",
+    "mtime": 1785168780.046873,
+    "ast_hash": "50a9da2b09b2446cbaa89ef3c94f5b98",
     "semantic_hash": ""
   },
   ".agents/skills/verify-design/SKILL.md": {
@@ -1645,18 +1645,18 @@
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1785609606.6592922,
-    "ast_hash": "e94536c257354cfc586eb07cc8f85248",
+    "mtime": 1785486546.8487108,
+    "ast_hash": "b6535a2f7126988c99c91985721f074d",
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1785610154.3419619,
-    "ast_hash": "a50ba854e8477aafb05c0f0db391582b",
+    "mtime": 1785493212.477512,
+    "ast_hash": "51804edd9b799d0535d22db2bcc7a2f9",
     "semantic_hash": ""
   },
   "WORKSPACE_MAP.md": {
-    "mtime": 1785573664.3007262,
-    "ast_hash": "f4127b0cc3d35cedc946e88216a89317",
+    "mtime": 1785489588.9801826,
+    "ast_hash": "82e66bfe8f1059f897f50d4b04f97d52",
     "semantic_hash": ""
   },
   "archives/intake-2026-07-14-1940/GEMINI.md": {
@@ -1785,8 +1785,8 @@
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-service-offer-definition.md": {
-    "mtime": 1785610343.662797,
-    "ast_hash": "12e3455a55ba4249ee300de2c5dc51fc",
+    "mtime": 1785390066.4280071,
+    "ast_hash": "2a425f7dbf1806448168d36bfa747ac7",
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-zorixel-ikigai-discovery.md": {
@@ -1795,8 +1795,8 @@
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-zorixel-positioning-discovery.md": {
-    "mtime": 1785610347.8634849,
-    "ast_hash": "3326f3574239d953778dea5cd76e3347",
+    "mtime": 1785394370.915094,
+    "ast_hash": "b14b289af0def9085eacf448e269e3c2",
     "semantic_hash": ""
   },
   "brainstorms/2026-07-31-six-file-context-methodology-upgrade.md": {
@@ -1840,8 +1840,8 @@
     "semantic_hash": ""
   },
   "context/about-business.md": {
-    "mtime": 1785610142.9190626,
-    "ast_hash": "85ceedc2972466db045c5a11d1e2a7b0",
+    "mtime": 1784038269.2701714,
+    "ast_hash": "0873b5b7b0e5c759fdf1d6c4eae4d4c0",
     "semantic_hash": ""
   },
   "context/about-me.md": {
@@ -1850,8 +1850,8 @@
     "semantic_hash": ""
   },
   "context/aios-intake.md": {
-    "mtime": 1785610330.185864,
-    "ast_hash": "facf876caab9f7ea4cc5599c0acbe82a",
+    "mtime": 1784038241.952834,
+    "ast_hash": "f80b0bf01cbc864674c1b7b83b07de55",
     "semantic_hash": ""
   },
   "context/connections.md": {
@@ -1860,18 +1860,18 @@
     "semantic_hash": ""
   },
   "context/experiences/README.md": {
-    "mtime": 1785574617.0512528,
-    "ast_hash": "a44f8c52293a055b8194e150b5ff8503",
+    "mtime": 1785488055.462571,
+    "ast_hash": "9d8c63e0100382b95e33268ddf16afe1",
     "semantic_hash": ""
   },
   "context/priorities.md": {
-    "mtime": 1785610147.1859186,
-    "ast_hash": "ac6e29766a5479c116c88321f96934d5",
+    "mtime": 1784038272.769847,
+    "ast_hash": "d9c874cb21a18fe00a7ee3a03e099fcd",
     "semantic_hash": ""
   },
   "decisions/log.md": {
-    "mtime": 1785609601.5362291,
-    "ast_hash": "3127035e46bf10300908a379bb3c1957",
+    "mtime": 1785489579.3723824,
+    "ast_hash": "5988dc0344c5faca5aef49e3f45e888f",
     "semantic_hash": ""
   },
   "docs/daily-plans/2026-07-30-master-plan.md": {
@@ -1890,8 +1890,8 @@
     "semantic_hash": ""
   },
   "hot.md": {
-    "mtime": 1785574686.1999261,
-    "ast_hash": "d11a2d477661c9066f8fb54ae511c05d",
+    "mtime": 1785521785.482976,
+    "ast_hash": "f47fcae75afcab0b6157aec81f8e2203",
     "semantic_hash": ""
   },
   "references/23-SITES-MASTER-DESIGN-MATRIX.md": {
@@ -2742,11 +2742,6 @@
   "brainstorms/2026-07-31-zorixel-six-file-context-upgrade.md": {
     "mtime": 1785489396.3123913,
     "ast_hash": "45fbac4b3ab60c9e002048fcb5e39ec4",
-    "semantic_hash": ""
-  },
-  ".agents/skills/humanizer/SKILL.md": {
-    "mtime": 1785573488.0906575,
-    "ast_hash": "6b7edb72f857fb4b4a002f86e3cfc89c",
     "semantic_hash": ""
   }
 }

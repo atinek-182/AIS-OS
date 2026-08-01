@@ -5,23 +5,19 @@ This file logs cross-session learnings, operational preferences, and recurring c
 ---
 
 ## 🧠 Core Identity & Context
-- **Operator:** Atinek Maurya (Aspiring Web Designer/Developer, AI Automation Builder, and Digital Creator).
-- **Brand Goal:** Launch ZORIXEL (educational brand for web design and AI tools) and build a sellable AI automation (Q4 target: ₹1,00,000 revenue in 2026).
+- **Operator:** Atinek Maurya (Founder of ZORIXEL).
+- **Brand Identity & Core Focus:** ZORIXEL — dedicated **AI Workflows & Business Automation Agency** delivering outcome-focused AI engineering build sprints ($1,500–$5,000+ USD) and custom full-stack web UI dashboards for companies globally.
+- **Integrated Full-Stack UI Moat:** Web application development and custom dashboard creation (demoted from standalone service to an integrated frontend UI pillar for AI backends, outperforming generic no-code coders).
+- **Dual-Market Launch Architecture:**
+  - **Domestic (India - INR):** Rapid local case study launchpad, Hindi client communication, adjusted purchasing power pricing, building early confidence and video testimonials.
+  - **International (Global - USD):** Core revenue engine targeting US/UK/CA/AU businesses.
+- **Acquisition Engine:** **YouTube** as primary long-form technical authority engine (showing AI workflow builds, Claude Code agents, n8n pipelines) -> syndicated to LinkedIn, X, Reddit, and Instagram.
+- **Sales Funnel:** Value-based interactive intake tool on zorixel.com -> Asynchronous personalized Loom video proposals -> Closing discovery call.
+- **Infrastructure Model:** Client-Owned Infrastructure (clients own Anthropic/OpenAI keys and cloud hosting accounts like Vercel/Supabase/Render/n8n), eliminating monthly server hosting liabilities for the agency.
 - **Obsidian Vaults:**
-  - `brain-aios/` -> General AI OS hub and checklist vault.
-  - `second-brain-zorixel/` -> ZORIXEL content drafts and research (connected to `D:\ZORIXEL-BRAND-OS`).
-- **ZORIXEL Brand OS & Global Async Arbitrage:**
-  - Dedicated Brand OS at `D:\ZORIXEL-BRAND-OS` (junction: `d:\AI-OS\zorixel-brand-os`).
-  - Operator: Atinek Maurya (16 years old, Class 10 Board Topper 95.4%, 28–49 hrs/week available, India-based).
-  - Flagship Offer: 14-Day $3,000 Web Experience Sprint ($1,500 deposit upfront).
-  - Sales Model: 100% Async Closing (LinkedIn/X DMs + 2-Minute Loom Audits + Notion Proposals).
-  - Revenue Target: $10,000/month MRR (~₹8.5 Lakhs/month) within 60–90 days.
-- **ZORIXEL Brand Web Platform Project (`d:\AI-OS\projects\Zorixel brand\zorixel-website\`):**
-  - **1-to-2 Week Pre-Coding Lock:** 100% code lock active for 14 days. Zero code implementation requests until pre-coding research & asset gathering complete.
-  - **Pre-Coding Roadmap:** `context/PRE_CODING_ROADMAP.md` (gathering WOFF2 fonts, 3D ribbon/spiral thumbnails, ZIP lead magnet assets, Clerk/Supabase/Stripe credentials, `/roast` audits).
-  - **16-Spec Blueprint & Tickets:** 16 atomic feature specs in `context/specs/` and deconstructed engineering tickets in `.planning/tickets/` with universal 5-viewport mobile responsiveness mandates (`390x844`, `768x1024`, `1280x800`, `1920x1080`, `2560x1440`).
-  - **Reference Vault Catalog:** `REF-001` (Brand v3.0), `REF-002` (`shader-gallary` 3D Spiral), `REF-003` (`Insane-PRELOADER` 3-Digit GSAP Rolling Counter & 40x Scale-Up Wipe Mask), `REF-004` (`3d-scroll-effect` Three.js Curved 3D Filmstrip Ribbon on `/resources`).
-  - **Single Source of Context:** Full brand identity, audience personas, visual DNA, and specs locked in `context/brand-identity-and-scope.md` and `context/progress-tracker.md`.
+  - `brain-aios/` -> General AI OS hub and master task checklist vault.
+  - `second-brain-zorixel/` -> ZORIXEL content drafts, brand guidelines, and research (connected to `D:\ZORIXEL-BRAND-OS`).
+
 
 
 

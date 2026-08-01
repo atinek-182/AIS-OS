@@ -26631,8 +26631,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_c3_typographic_link",
-      "community": 9,
-      "community_name": "c3-typographic-link.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "c3-typographic-link.md"
     },
     {
@@ -26642,8 +26642,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_c3_typographic_link_c3_typographic_link",
-      "community": 9,
-      "community_name": "c3-typographic-link.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "c3 \u00b7 typographic link"
     },
     {
@@ -26719,8 +26719,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_f3_tabular_spec_sheet",
-      "community": 10,
-      "community_name": "f3-tabular-spec-sheet.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "f3-tabular-spec-sheet.md"
     },
     {
@@ -26730,8 +26730,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_f3_tabular_spec_sheet_f3_tabular_spec_sheet",
-      "community": 10,
-      "community_name": "f3-tabular-spec-sheet.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "f3 \u00b7 tabular spec sheet"
     },
     {
@@ -26741,8 +26741,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_f4_step_sequence",
-      "community": 12,
-      "community_name": "f4-step-sequence.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "f4-step-sequence.md"
     },
     {
@@ -26752,8 +26752,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_f4_step_sequence_f4_step_sequence",
-      "community": 12,
-      "community_name": "f4-step-sequence.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "f4 \u00b7 step sequence"
     },
     {
@@ -26829,8 +26829,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_ft2_inline_rule_single_line",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 7,
+      "community_name": "ft2-inline-rule-single-line.md",
       "norm_label": "ft2-inline-rule-single-line.md"
     },
     {
@@ -26840,8 +26840,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_ft2_inline_rule_single_line_ft2_inline_rule_single_line",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 7,
+      "community_name": "ft2-inline-rule-single-line.md",
       "norm_label": "ft2 \u00b7 inline-rule single line"
     },
     {
@@ -26917,8 +26917,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_ft6_letter_close",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 10,
+      "community_name": "ft6-letter-close.md",
       "norm_label": "ft6-letter-close.md"
     },
     {
@@ -26928,8 +26928,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_ft6_letter_close_ft6_letter_close",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 10,
+      "community_name": "ft6-letter-close.md",
       "norm_label": "ft6 \u00b7 letter close"
     },
     {
@@ -27093,8 +27093,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h6_photographic_fold",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 8,
+      "community_name": "h6-photographic-fold.md",
       "norm_label": "h6-photographic-fold.md"
     },
     {
@@ -27104,8 +27104,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h6_photographic_fold_h6_photographic_fold",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 8,
+      "community_name": "h6-photographic-fold.md",
       "norm_label": "h6 \u00b7 photographic fold"
     },
     {
@@ -27137,8 +27137,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h8_mockup_split_browser_framed",
-      "community": 15,
-      "community_name": "h8-mockup-split-browser-framed.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "h8-mockup-split-browser-framed.md"
     },
     {
@@ -27148,8 +27148,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h8_mockup_split_browser_framed_h8_mockup_split_browser_framed",
-      "community": 15,
-      "community_name": "h8-mockup-split-browser-framed.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "h8 \u00b7 mockup split (browser-framed)"
     },
     {
@@ -27159,8 +27159,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h9_custom_illustration_centerpiece",
-      "community": 0,
-      "community_name": "hallmark/SKILL.md",
+      "community": 12,
+      "community_name": "h9-custom-illustration-centerpiece.md",
       "norm_label": "h9-custom-illustration-centerpiece.md"
     },
     {
@@ -27170,8 +27170,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_h9_custom_illustration_centerpiece_h9_custom_illustration_centerpiece",
-      "community": 0,
-      "community_name": "hallmark/SKILL.md",
+      "community": 12,
+      "community_name": "h9-custom-illustration-centerpiece.md",
       "norm_label": "h9 \u00b7 custom illustration centerpiece"
     },
     {
@@ -27203,8 +27203,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n10_floating_on_scroll_morph",
-      "community": 3,
-      "community_name": "Floating nav on scroll \u2014 the cross-fade morph",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n10-floating-on-scroll-morph.md"
     },
     {
@@ -27214,8 +27214,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n10_floating_on_scroll_morph_n10_floating_on_scroll_morph",
-      "community": 3,
-      "community_name": "Floating nav on scroll \u2014 the cross-fade morph",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n10 \u00b7 floating-on-scroll morph"
     },
     {
@@ -27225,8 +27225,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n11_mega_menu",
-      "community": 17,
-      "community_name": "n11-mega-menu.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n11-mega-menu.md"
     },
     {
@@ -27236,8 +27236,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n11_mega_menu_n11_mega_menu_panel",
-      "community": 17,
-      "community_name": "n11-mega-menu.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n11 \u00b7 mega-menu panel"
     },
     {
@@ -27269,8 +27269,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n13_inline_cmdk_pill",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 9,
+      "community_name": "n13-inline-cmdk-pill.md",
       "norm_label": "n13-inline-cmdk-pill.md"
     },
     {
@@ -27280,8 +27280,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n13_inline_cmdk_pill_n13_inline_k_search_pill",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 9,
+      "community_name": "n13-inline-cmdk-pill.md",
       "norm_label": "n13 \u00b7 inline \u2318k search pill"
     },
     {
@@ -27313,8 +27313,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n2_floating_chip",
-      "community": 18,
-      "community_name": "n2-floating-chip.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n2-floating-chip.md"
     },
     {
@@ -27324,8 +27324,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_n2_floating_chip_n2_floating_chip",
-      "community": 18,
-      "community_name": "n2-floating-chip.md",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "n2 \u00b7 floating chip"
     },
     {
@@ -27511,8 +27511,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_s2_hanging",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 15,
+      "community_name": "s2-hanging.md",
       "norm_label": "s2-hanging.md"
     },
     {
@@ -27522,8 +27522,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_s2_hanging_s2_hanging",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 15,
+      "community_name": "s2-hanging.md",
       "norm_label": "s2 \u00b7 hanging"
     },
     {
@@ -27555,8 +27555,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_s4_inline_no_break",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 17,
+      "community_name": "s4-inline-no-break.md",
       "norm_label": "s4-inline-no-break.md"
     },
     {
@@ -27566,8 +27566,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_components_s4_inline_no_break_s4_inline_no_break",
-      "community": 13,
-      "community_name": "component-cookbook.md",
+      "community": 17,
+      "community_name": "s4-inline-no-break.md",
       "norm_label": "s4 \u00b7 inline (no break)"
     },
     {
@@ -28787,8 +28787,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_floating_nav",
-      "community": 3,
-      "community_name": "Floating nav on scroll \u2014 the cross-fade morph",
+      "community": 13,
+      "community_name": "component-cookbook.md",
       "norm_label": "floating-nav.md"
     },
     {
@@ -30096,8 +30096,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_macrostructures",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "macrostructures"
     },
     {
@@ -30107,8 +30107,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_diversification_rule_mandatory",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "diversification rule (mandatory)"
     },
     {
@@ -30118,8 +30118,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_hero_polish_patterns",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "hero polish patterns"
     },
     {
@@ -30129,8 +30129,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_nav_and_footer_voice",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "nav and footer voice"
     },
     {
@@ -30140,8 +30140,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_the_21_macrostructures_index",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "the 21 macrostructures \u2014 index"
     },
     {
@@ -30151,8 +30151,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_saas_page_sequence",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "saas page sequence"
     },
     {
@@ -30162,8 +30162,8 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "agents_skills_hallmark_references_macrostructures_how_to_pick",
-      "community": 7,
-      "community_name": "Macrostructures",
+      "community": 34,
+      "community_name": "macrostructures.md",
       "norm_label": "how to pick"
     },
     {
@@ -38148,8 +38148,8 @@
       "source_location": "L227",
       "_origin": "ast",
       "id": "agents_skills_vibesec_skill_secret_keys_and_sensitive_data_exposure",
-      "community": 8,
-      "community_name": "Secret Keys and Sensitive Data Exposure",
+      "community": 307,
+      "community_name": "Client-Side Bugs",
       "norm_label": "secret keys and sensitive data exposure"
     },
     {
@@ -38159,8 +38159,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "agents_skills_vibesec_skill_never_expose_in_client_side_code",
-      "community": 8,
-      "community_name": "Secret Keys and Sensitive Data Exposure",
+      "community": 307,
+      "community_name": "Client-Side Bugs",
       "norm_label": "never expose in client-side code"
     },
     {
@@ -38170,8 +38170,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "agents_skills_vibesec_skill_where_secrets_hide_check_these",
-      "community": 8,
-      "community_name": "Secret Keys and Sensitive Data Exposure",
+      "community": 307,
+      "community_name": "Client-Side Bugs",
       "norm_label": "where secrets hide (check these!)"
     },
     {
@@ -38181,8 +38181,8 @@
       "source_location": "L266",
       "_origin": "ast",
       "id": "agents_skills_vibesec_skill_best_practices",
-      "community": 8,
-      "community_name": "Secret Keys and Sensitive Data Exposure",
+      "community": 307,
+      "community_name": "Client-Side Bugs",
       "norm_label": "best practices"
     },
     {
@@ -39685,7 +39685,7 @@
       "label": "Voice",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L106",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "gemini_voice",
       "community": 264,
@@ -39696,7 +39696,7 @@
       "label": "Connections",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L110",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "gemini_connections",
       "community": 264,
@@ -39707,7 +39707,7 @@
       "label": "How you work with me",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L120",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "gemini_how_you_work_with_me",
       "community": 264,
@@ -39718,7 +39718,7 @@
       "label": "Google Workspace CLI Account Management",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L159",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "gemini_google_workspace_cli_account_management",
       "community": 264,
@@ -39729,7 +39729,7 @@
       "label": "Dual-Vault Obsidian Architecture",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L172",
+      "source_location": "L171",
       "_origin": "ast",
       "id": "gemini_dual_vault_obsidian_architecture",
       "community": 264,
@@ -39740,7 +39740,7 @@
       "label": "1. Brain for AIOS (`brain-aios/`)",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L176",
+      "source_location": "L175",
       "_origin": "ast",
       "id": "gemini_1_brain_for_aios_brain_aios",
       "community": 264,
@@ -39751,7 +39751,7 @@
       "label": "2. Second Brain for Zorixel (`second-brain-zorixel/`)",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L183",
+      "source_location": "L182",
       "_origin": "ast",
       "id": "gemini_2_second_brain_for_zorixel_second_brain_zorixel",
       "community": 264,
@@ -39762,7 +39762,7 @@
       "label": "Log Alignment",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L194",
+      "source_location": "L193",
       "_origin": "ast",
       "id": "gemini_log_alignment",
       "community": 264,
@@ -39773,7 +39773,7 @@
       "label": "Coding Behavior Guidelines (Karpathy-Inspired)",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L200",
+      "source_location": "L199",
       "_origin": "ast",
       "id": "gemini_coding_behavior_guidelines_karpathy_inspired",
       "community": 264,
@@ -39784,7 +39784,7 @@
       "label": "1. Think Before Coding",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L204",
+      "source_location": "L203",
       "_origin": "ast",
       "id": "gemini_1_think_before_coding",
       "community": 264,
@@ -39795,7 +39795,7 @@
       "label": "2. Simplicity First",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L211",
+      "source_location": "L210",
       "_origin": "ast",
       "id": "gemini_2_simplicity_first",
       "community": 264,
@@ -39806,7 +39806,7 @@
       "label": "3. Surgical Changes",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L219",
+      "source_location": "L218",
       "_origin": "ast",
       "id": "gemini_3_surgical_changes",
       "community": 264,
@@ -39817,7 +39817,7 @@
       "label": "4. Goal-Driven Execution",
       "file_type": "document",
       "source_file": "GEMINI.md",
-      "source_location": "L225",
+      "source_location": "L224",
       "_origin": "ast",
       "id": "gemini_4_goal_driven_execution",
       "community": 264,
@@ -39861,7 +39861,7 @@
       "label": "\ud83d\udee0\ufe0f Global Environment & Integrations",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L26",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "memory_global_environment_integrations",
       "community": 632,
@@ -39872,7 +39872,7 @@
       "label": "\u2699\ufe0f Operational Rules & Preferences",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L34",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "memory_operational_rules_preferences",
       "community": 632,
@@ -39883,7 +39883,7 @@
       "label": "\ud83c\udfa8 Zorixel Design Taste & Visual Guidelines",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L84",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "memory_zorixel_design_taste_visual_guidelines",
       "community": 632,
@@ -42564,15 +42564,26 @@
       "norm_label": "executive summary & key decisions"
     },
     {
-      "label": "Domain Vocabulary & Glossary (`CONTEXT.md`)",
+      "label": "Domain Vocabulary & Glossary (CONTEXT.md updates)",
       "file_type": "document",
       "source_file": "brainstorms/2026-07-30-service-offer-definition.md",
-      "source_location": "L13",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "brainstorms_2026_07_30_service_offer_definition_domain_vocabulary_glossary_context_md",
+      "id": "brainstorms_2026_07_30_service_offer_definition_domain_vocabulary_glossary_context_md_updates",
       "community": 708,
       "community_name": "ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes",
-      "norm_label": "domain vocabulary & glossary (`context.md`)"
+      "norm_label": "domain vocabulary & glossary (context.md updates)"
+    },
+    {
+      "label": "Q&A Log",
+      "file_type": "document",
+      "source_file": "brainstorms/2026-07-30-service-offer-definition.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "brainstorms_2026_07_30_service_offer_definition_q_a_log",
+      "community": 708,
+      "community_name": "ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes",
+      "norm_label": "q&a log"
     },
     {
       "label": "2026-07-30-zorixel-ikigai-discovery.md",
@@ -42710,12 +42721,23 @@
       "label": "Executive Summary & Baseline",
       "file_type": "document",
       "source_file": "brainstorms/2026-07-30-zorixel-positioning-discovery.md",
-      "source_location": "L4",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "brainstorms_2026_07_30_zorixel_positioning_discovery_executive_summary_baseline",
       "community": 742,
       "community_name": "ZORIXEL Brand: Personal Brand Positioning Session",
       "norm_label": "executive summary & baseline"
+    },
+    {
+      "label": "Phase 0 Discovery Q&A Log",
+      "file_type": "document",
+      "source_file": "brainstorms/2026-07-30-zorixel-positioning-discovery.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "brainstorms_2026_07_30_zorixel_positioning_discovery_phase_0_discovery_q_a_log",
+      "community": 742,
+      "community_name": "ZORIXEL Brand: Personal Brand Positioning Session",
+      "norm_label": "phase 0 discovery q&a log"
     },
     {
       "label": "2026-07-31-six-file-context-methodology-upgrade.md",
@@ -43216,7 +43238,7 @@
       "label": "Q1 \u2014 Who are you, what do you sell, who do you sell it to?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "context_aios_intake_q1_who_are_you_what_do_you_sell_who_do_you_sell_it_to",
       "community": 459,
@@ -43227,7 +43249,7 @@
       "label": "Q2 \u2014 Paste 1-2 things you've written recently. Don't edit them.",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L15",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "context_aios_intake_q2_paste_1_2_things_you_ve_written_recently_don_t_edit_them",
       "community": 459,
@@ -43238,7 +43260,7 @@
       "label": "Q3 \u2014 What are your 2-3 biggest priorities for the next 90 days?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L32",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "context_aios_intake_q3_what_are_your_2_3_biggest_priorities_for_the_next_90_days",
       "community": 459,
@@ -43249,7 +43271,7 @@
       "label": "Q4 \u2014 Where does revenue actually land, and where is it tracked?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L42",
+      "source_location": "L67",
       "_origin": "ast",
       "id": "context_aios_intake_q4_where_does_revenue_actually_land_and_where_is_it_tracked",
       "community": 459,
@@ -43260,7 +43282,7 @@
       "label": "Q5 \u2014 Where do you talk to customers, your team, and the outside world day-to-day?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L50",
+      "source_location": "L77",
       "_origin": "ast",
       "id": "context_aios_intake_q5_where_do_you_talk_to_customers_your_team_and_the_outside_world_day_to_day",
       "community": 459,
@@ -43271,7 +43293,7 @@
       "label": "Q6 \u2014 Where do meeting recordings, notes, and important docs live?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L58",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "context_aios_intake_q6_where_do_meeting_recordings_notes_and_important_docs_live",
       "community": 459,
@@ -43282,7 +43304,7 @@
       "label": "Q7 \u2014 What's the one task that eats your week, and where do you currently track work?",
       "file_type": "document",
       "source_file": "context/aios-intake.md",
-      "source_location": "L66",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "context_aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work",
       "community": 459,
@@ -89209,7 +89231,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L200",
+      "source_location": "L199",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89220,7 +89242,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L110",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89231,7 +89253,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L172",
+      "source_location": "L171",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89242,7 +89264,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L159",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89253,7 +89275,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L120",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89275,7 +89297,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L194",
+      "source_location": "L193",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89286,7 +89308,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L106",
+      "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_atinek_maurya_s_ai_operating_system",
@@ -89330,7 +89352,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L176",
+      "source_location": "L175",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_dual_vault_obsidian_architecture",
@@ -89341,7 +89363,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L183",
+      "source_location": "L182",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_dual_vault_obsidian_architecture",
@@ -89352,7 +89374,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L204",
+      "source_location": "L203",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_coding_behavior_guidelines_karpathy_inspired",
@@ -89363,7 +89385,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L211",
+      "source_location": "L210",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_coding_behavior_guidelines_karpathy_inspired",
@@ -89374,7 +89396,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L219",
+      "source_location": "L218",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_coding_behavior_guidelines_karpathy_inspired",
@@ -89385,7 +89407,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "GEMINI.md",
-      "source_location": "L225",
+      "source_location": "L224",
       "weight": 1.0,
       "_origin": "ast",
       "source": "gemini_coding_behavior_guidelines_karpathy_inspired",
@@ -89418,7 +89440,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "MEMORY.md",
-      "source_location": "L26",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
       "source": "memory_zorixel_aios_persistent_memory",
@@ -89429,7 +89451,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "MEMORY.md",
-      "source_location": "L34",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "memory_zorixel_aios_persistent_memory",
@@ -89440,7 +89462,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "MEMORY.md",
-      "source_location": "L84",
+      "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast",
       "source": "memory_zorixel_aios_persistent_memory",
@@ -91816,11 +91838,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "brainstorms/2026-07-30-service-offer-definition.md",
-      "source_location": "L13",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "brainstorms_2026_07_30_service_offer_definition_zorixel_brand_strategy_high_ticket_service_offer_discovery_brainstorm_notes",
-      "target": "brainstorms_2026_07_30_service_offer_definition_domain_vocabulary_glossary_context_md",
+      "target": "brainstorms_2026_07_30_service_offer_definition_domain_vocabulary_glossary_context_md_updates",
       "confidence_score": 1.0
     },
     {
@@ -91832,6 +91854,17 @@
       "_origin": "ast",
       "source": "brainstorms_2026_07_30_service_offer_definition_zorixel_brand_strategy_high_ticket_service_offer_discovery_brainstorm_notes",
       "target": "brainstorms_2026_07_30_service_offer_definition_executive_summary_key_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brainstorms/2026-07-30-service-offer-definition.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "brainstorms_2026_07_30_service_offer_definition_zorixel_brand_strategy_high_ticket_service_offer_discovery_brainstorm_notes",
+      "target": "brainstorms_2026_07_30_service_offer_definition_q_a_log",
       "confidence_score": 1.0
     },
     {
@@ -91948,11 +91981,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "brainstorms/2026-07-30-zorixel-positioning-discovery.md",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "brainstorms_2026_07_30_zorixel_positioning_discovery_zorixel_brand_personal_brand_positioning_session",
       "target": "brainstorms_2026_07_30_zorixel_positioning_discovery_executive_summary_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brainstorms/2026-07-30-zorixel-positioning-discovery.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "brainstorms_2026_07_30_zorixel_positioning_discovery_zorixel_brand_personal_brand_positioning_session",
+      "target": "brainstorms_2026_07_30_zorixel_positioning_discovery_phase_0_discovery_q_a_log",
       "confidence_score": 1.0
     },
     {
@@ -92377,7 +92421,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92388,7 +92432,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L15",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92399,7 +92443,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L32",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92410,7 +92454,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L42",
+      "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92421,7 +92465,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L50",
+      "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92432,7 +92476,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L58",
+      "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -92443,7 +92487,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "context/aios-intake.md",
-      "source_location": "L66",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "context_aios_intake_ais_os_intake",
@@ -98348,5 +98392,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6f6698c0f0f52b09963e23a3ca22e95a979731d0"
+  "built_at_commit": "39761c7ff673bf597a304195b13176ec24ae02e0"
 }

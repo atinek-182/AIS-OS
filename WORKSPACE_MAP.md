@@ -17,6 +17,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [diagrams/aios-skills-reference.excalidraw](file:///d:/AI-OS/diagrams/aios-skills-reference.excalidraw) | File | Detailed Excalidraw reference diagram mapping all 30 local & global skills. | AIOS |
 | [diagrams/apps-security.excalidraw](file:///d:/AI-OS/diagrams/apps-security.excalidraw) | File | Excalidraw diagram showing application security zones, defense layers, and perimeters. | AIOS |
 | [context/connections.md](file:///d:/AI-OS/context/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
+| [audits/os-audit-2026-08-01-brand-pivot.md](file:///d:/AI-OS/audits/os-audit-2026-08-01-brand-pivot.md) | File | Audit report documenting 100% workspace-wide deep alignment purge for ZORIXEL AI Agency pivot. | AIOS |
 | [decisions/log.md](file:///d:/AI-OS/decisions/log.md) | File | Append-only log recording architectural modifications to the root workspace. | AIOS |
 | [MEMORY.md](file:///d:/AI-OS/MEMORY.md) | File | Persistent memory documenting cross-session learnings and preferences. | AIOS (Auto-update) |
 | [EXPANSIONS.md](file:///d:/AI-OS/EXPANSIONS.md) | File | AIOS expansion roadmap outlining future workflows and system targets. | AIOS |

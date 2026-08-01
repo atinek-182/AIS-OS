@@ -1,24 +1,26 @@
-# ZORIXEL Flagship Service Specification: 14-Day AI Web Experience Sprint
+# ZORIXEL Flagship Service Specification: DFY AI Engineering Build Sprint
 
 ## 1. Executive Summary
-- **Offer Name**: 14-Day AI-Powered Web Experience & Component Sprint
-- **Target Price**: $3,000 USD (or ₹2,50,000 INR)
-- **Target Audience (ICP)**: Growth-Stage AI SaaS Founders & High-Ticket Design Agency Owners ($1M – $10M ARR) who currently have generic, low-converting, AI-slop websites.
-- **Turnaround Time**: 14 Days
-- **Delivery Model**: 80% AI Delivery via `website-design-engine`, `hallmark`, `gstack`, and local component vault; 20% high-craft strategy and visual polish.
+- **Offer Name**: Done-For-You (DFY) AI Engineering Build Sprint
+- **Target Price**: $1,500 – $5,000+ USD (International) / Tailored INR Pricing (Domestic India)
+- **Target Audience (ICP)**: Business Owners, Founders, SMBs, and Agency Leads seeking operational bottleneck resolution, lead qualification systems, and custom AI agent workflows.
+- **Turnaround Time**: 7 to 14 Days
+- **Delivery Model**: Autonomous AI agent architecture (Claude Code, n8n, Python) + custom TypeScript/Next.js client dashboards & web portals.
+- **Infrastructure Protocol**: Client-Owned Infrastructure (clients own Anthropic/OpenAI keys and cloud accounts like Vercel/Supabase/Render/n8n), eliminating monthly server hosting liabilities for ZORIXEL.
 
 ---
 
 ## 2. Package Scope & Deliverables
-1. **Brand Aesthetic Upgrade**: Custom OKLCH color design system tokens, WCAG AA contrast audit, typography pairing (e.g. `Rosehot` / `Nuqun` + `Outfit`).
-2. **5–8 Page Responsive Web App / Landing Page**: Production Next.js / Tailwind v4 codebase with zero generic layout patterns.
-3. **Micro-Interactions & Animation Suite**: Integrated GSAP ScrollTrigger timeline animations, WebGL/canvas stage accents,Lenis smooth scroll.
-4. **AI Intake & Lead Capture Automation**: Automated contact form intake connected to Notion / CRM database and automated email drafting response.
-5. **5-Viewport Visual QA Report**: Playwright visual verification across Mobile, Tablet, Laptop, Desktop, and Ultrawide viewports.
+1. **Operational Bottleneck Audit & Blueprint**: Mapping existing manual business processes into automated multi-agent workflow diagrams.
+2. **Autonomous AI Agent Engineering**: Custom n8n/Python/Claude agents handling lead qualification, email triage, invoice processing, CRM synchronization, or customer support.
+3. **Custom Full-Stack Client Dashboard**: Polished React/Next.js frontend UI dashboard for real-time human-in-the-loop oversight and webhook management.
+4. **Google Sheets Lead CRM & Notification Sync**: Automated lead intake logging, Resend email notifications, and live status pipeline updates.
+5. **Client Ownership Handover & System Walkthrough**: Full code export, API key handover, and personalized Loom video walkthrough.
 
 ---
 
-## 3. Payment & Commitment Terms
-- **Structure**: 50% deposit upon signature ($1,500), 50% upon final launch ($1,500).
-- **Retainer Upsell (Post-Sprint)**: $1,500/month recurring maintenance, weekly micro-graphics, and new landing page variations.
-- **Goal Math**: 3 Clients @ $3,500/mo = $10,500 MRR (Target: 60–90 days).
+## 3. Payment & Dual-Market Terms
+- **Structure**: 50% upfront deposit upon signature, 50% upon final system handover and live testing.
+- **Dual-Market Strategy**:
+  - **Domestic (India - INR)**: Adjusted purchasing power pricing for rapid local case study acquisition and video testimonials.
+  - **International (Global - USD)**: Core revenue engine ($1,500–$5,000+ Sprints) targeting global businesses.

@@ -1645,13 +1645,13 @@
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1785609606.6592922,
-    "ast_hash": "e94536c257354cfc586eb07cc8f85248",
+    "mtime": 1785567296.964679,
+    "ast_hash": "36a25b159d06d12b12918ac1f2f2ba98",
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1785610154.3419619,
-    "ast_hash": "a50ba854e8477aafb05c0f0db391582b",
+    "mtime": 1785573521.3762052,
+    "ast_hash": "7a7c3a9d1cf549d0219471c7a594d84d",
     "semantic_hash": ""
   },
   "WORKSPACE_MAP.md": {
@@ -1785,8 +1785,8 @@
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-service-offer-definition.md": {
-    "mtime": 1785610343.662797,
-    "ast_hash": "12e3455a55ba4249ee300de2c5dc51fc",
+    "mtime": 1785390066.4280071,
+    "ast_hash": "2a425f7dbf1806448168d36bfa747ac7",
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-zorixel-ikigai-discovery.md": {
@@ -1795,8 +1795,8 @@
     "semantic_hash": ""
   },
   "brainstorms/2026-07-30-zorixel-positioning-discovery.md": {
-    "mtime": 1785610347.8634849,
-    "ast_hash": "3326f3574239d953778dea5cd76e3347",
+    "mtime": 1785394370.915094,
+    "ast_hash": "b14b289af0def9085eacf448e269e3c2",
     "semantic_hash": ""
   },
   "brainstorms/2026-07-31-six-file-context-methodology-upgrade.md": {
@@ -1840,8 +1840,8 @@
     "semantic_hash": ""
   },
   "context/about-business.md": {
-    "mtime": 1785610142.9190626,
-    "ast_hash": "85ceedc2972466db045c5a11d1e2a7b0",
+    "mtime": 1784038269.2701714,
+    "ast_hash": "0873b5b7b0e5c759fdf1d6c4eae4d4c0",
     "semantic_hash": ""
   },
   "context/about-me.md": {
@@ -1850,8 +1850,8 @@
     "semantic_hash": ""
   },
   "context/aios-intake.md": {
-    "mtime": 1785610330.185864,
-    "ast_hash": "facf876caab9f7ea4cc5599c0acbe82a",
+    "mtime": 1784038241.952834,
+    "ast_hash": "f80b0bf01cbc864674c1b7b83b07de55",
     "semantic_hash": ""
   },
   "context/connections.md": {
@@ -1865,13 +1865,13 @@
     "semantic_hash": ""
   },
   "context/priorities.md": {
-    "mtime": 1785610147.1859186,
-    "ast_hash": "ac6e29766a5479c116c88321f96934d5",
+    "mtime": 1784038272.769847,
+    "ast_hash": "d9c874cb21a18fe00a7ee3a03e099fcd",
     "semantic_hash": ""
   },
   "decisions/log.md": {
-    "mtime": 1785609601.5362291,
-    "ast_hash": "3127035e46bf10300908a379bb3c1957",
+    "mtime": 1785573672.5713587,
+    "ast_hash": "11aa549b8f5bb5dad7078b98044fbf27",
     "semantic_hash": ""
   },
   "docs/daily-plans/2026-07-30-master-plan.md": {

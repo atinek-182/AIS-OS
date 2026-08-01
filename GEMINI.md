@@ -87,9 +87,10 @@ See `EXPANSIONS.md` for what to add as you grow.
 
 ## Knowledge base
 
-- **What you do:** Aspiring web designer/developer, AI automation builder, and digital creator building ZORIXEL (educational brand for web design and AI tools).
-- **Who you serve:** UI/web designers, freelancers, beginner frontend developers, and vibe coders.
-- **What matters this quarter:** Launching ZORIXEL (consistent Instagram publishing and resource website), completing core AI OS (5–10 workflows), and building/launching a sellable AI automation/digital product (target: ₹1,00,000 total 2026 revenue).
+- **What you do:** Founder of ZORIXEL — an AI Workflows & Business Automation Agency delivering high-ROI AI agent infrastructure, sales automations, and custom full-stack web UI dashboards for companies globally.
+- **Who you serve:** Business owners, founders, SMBs, and agency leads seeking operational bottleneck resolution, lead automations, and custom AI systems.
+- **What matters this quarter:** Launching ZORIXEL (YouTube long-form authority channel + dual-market intake website), securing domestic case studies in India (INR) to build confidence, and executing high-ticket international AI build sprints ($1,500–$5,000+ USD).
+
 - **ZORIXEL Master Brand Identity v3.0**:
   - **Colors (Option 1 Palette)**: Obsidian Midnight (`#0D0E12`, dark canvas), Warm Linen Cream (`#FAF8F5`, light canvas), Velvet Burgundy (`#6D001A`, primary brand / headers), Electric Crimson (`#D61C2C`, primary pop CTA), Vintage Ochre Gold (`#C5A059`, ACCENT ONLY <5%, strictly prohibited as slide background).
   - **Typography Hierarchy**:

@@ -1,16 +1,16 @@
-# Graph Report - AI-OS  (2026-08-02)
+# Graph Report - AI-OS  (2026-08-01)
 
 ## Corpus Check
-- 451 files · ~1,915,891 words
+- 451 files · ~1,916,228 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4549 nodes · 4376 edges · 395 communities (360 shown, 35 thin omitted)
+- 4551 nodes · 4378 edges · 394 communities (358 shown, 36 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6f6698c0`
+- Built from commit: `39761c7f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,18 +22,17 @@
 - skill-optimizer/prepare.py
 - FILLER AND HEDGING
 - f2-sticky-scroll-stack.md
-- Macrostructures
-- Secret Keys and Sensitive Data Exposure
-- c3-typographic-link.md
-- f3-tabular-spec-sheet.md
+- ft2-inline-rule-single-line.md
+- h6-photographic-fold.md
+- n13-inline-cmdk-pill.md
+- ft6-letter-close.md
 - h7-demo-video-clipped-by-viewport-edge.md
-- f4-step-sequence.md
+- h9-custom-illustration-centerpiece.md
 - component-cookbook.md
 - n9-edge-aligned-minimal.md
-- h8-mockup-split-browser-framed.md
+- s2-hanging.md
 - log.md
-- n11-mega-menu.md
-- n2-floating-chip.md
+- s4-inline-no-break.md
 - macrostructures.md
 - biennale-yellow/design.md
 - blue-professional/design.md
@@ -388,11 +387,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (395 total, 35 thin omitted)
-
-### Community 0 - "hallmark/SKILL.md"
-Cohesion: 0.21
-Nodes (3): H9 · Custom Illustration Centerpiece, Preview-block worked examples, `hallmark audit`
+## Communities (394 total, 36 thin omitted)
 
 ### Community 1 - "Q&A Log"
 Cohesion: 0.17
@@ -403,8 +398,8 @@ Cohesion: 0.22
 Nodes (8): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Open Flags & Deferred Decisions, Q1 — Scope & Architectural Vision, Q2 — Local Reference Parsing, Categorized Favorites & Radiant Shaders Protocol, Q3 — Execution Order & Approval, Q&A Log, Upgrade Web Design Skill (`website-design-engine`): Socratic Discovery & Brainstorm Notes
 
 ### Community 3 - "Floating nav on scroll — the cross-fade morph"
-Cohesion: 0.22
-Nodes (7): N10 · Floating-on-scroll morph, Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
+Cohesion: 0.33
+Nodes (6): Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
 
 ### Community 4 - "skill-optimizer/prepare.py"
 Cohesion: 0.70
@@ -414,21 +409,13 @@ Nodes (4): evaluate_output(), load_test_cases(), main(), run_candidate()
 Cohesion: 0.05
 Nodes (43): 10. Rule of Three Overuse, 11. Elegant Variation (Synonym Cycling), 12. False Ranges, 13. Passive Voice and Subjectless Fragments, 14. Em Dashes (and En Dashes): Cut Them, 15. Overuse of Boldface, 16. Inline-Header Vertical Lists, 17. Title Case in Headings (+35 more)
 
-### Community 7 - "Macrostructures"
-Cohesion: 0.29
-Nodes (7): Diversification rule (mandatory), Hero polish patterns, How to pick, Macrostructures, Nav and footer voice, SaaS page sequence, The 21 macrostructures — index
-
-### Community 8 - "Secret Keys and Sensitive Data Exposure"
-Cohesion: 0.50
-Nodes (4): Best Practices, Never Expose in Client-Side Code, Secret Keys and Sensitive Data Exposure, Where Secrets Hide (Check These!)
-
 ### Community 13 - "component-cookbook.md"
 Cohesion: 0.02
-Nodes (39): C1 · Outlined chip, C2 · Inline form-as-CTA, C4 · Sticky bottom bar, F1 · Bento grid, F5 · Annotated screenshot, F6 · Product card grid, Ft1 · Mast-headed, Ft2 · Inline-rule single line (+31 more)
+Nodes (40): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F3 · Tabular spec sheet, F4 · Step sequence, F5 · Annotated screenshot (+32 more)
 
 ### Community 34 - "macrostructures.md"
-Cohesion: 0.05
-Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+13 more)
+Cohesion: 0.04
+Nodes (28): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+20 more)
 
 ### Community 52 - "biennale-yellow/design.md"
 Cohesion: 0.04
@@ -715,8 +702,8 @@ Cohesion: 0.13
 Nodes (14): 1. Global Zero-Hurry & Rigor Mandate, 2. Concept Explanation BEFORE Every Question, 3. Proactive Web Research & Documentation Sourcing, 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND), 5. Checkpoint to Disk After Every Single Response, 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`), 7. Mandatory Pre-Write `/roast` Council Gate, 8. Pre-Coding Backstop Check (+6 more)
 
 ### Community 307 - "Client-Side Bugs"
-Cohesion: 0.18
-Nodes (11): Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Open Redirect, Password Requirements, Password Security (+3 more)
+Cohesion: 0.13
+Nodes (15): Best Practices, Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Never Expose in Client-Side Code, Open Redirect (+7 more)
 
 ### Community 311 - "Ghost AI"
 Cohesion: 0.13
@@ -1475,8 +1462,8 @@ Cohesion: 0.40
 Nodes (4): 7-Phase Execution Architecture, Approved File Structure, Summary / Key Decisions, Unified AI OS Design System Engine: Brainstorm & Planning
 
 ### Community 708 - "ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes"
-Cohesion: 0.50
-Nodes (3): Domain Vocabulary & Glossary (`CONTEXT.md`), Executive Summary & Key Decisions, ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes
+Cohesion: 0.40
+Nodes (4): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Q&A Log, ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes
 
 ### Community 710 - "🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep"
 Cohesion: 0.40
@@ -1553,6 +1540,10 @@ Nodes (3): 🏗️ Master `RootLayout` Standards, 🗺️ Multi-Page Sitemap Spe
 ### Community 741 - "Discovery Capture: Ingestion of `jsmastery-pro/skills` & `mattpocock/skills`"
 Cohesion: 0.50
 Nodes (3): Core Strategy, Discovery Capture: Ingestion of `jsmastery-pro/skills` & `mattpocock/skills`, Overview & Objectives
+
+### Community 742 - "ZORIXEL Brand: Personal Brand Positioning Session"
+Cohesion: 0.50
+Nodes (3): Executive Summary & Baseline, Phase 0 Discovery Q&A Log, ZORIXEL Brand: Personal Brand Positioning Session
 
 ### Community 744 - "Codegraph API Reference"
 Cohesion: 0.50
@@ -1663,9 +1654,9 @@ Cohesion: 0.67
 Nodes (3): Convert a PowerPoint, Create a New Presentation, Usage
 
 ## Knowledge Gaps
-- **3242 isolated node(s):** `{ chromium }`, `fs`, `path`, `OUTPUT_FILE`, `fs` (+3237 more)
+- **3244 isolated node(s):** `{ chromium }`, `fs`, `path`, `OUTPUT_FILE`, `fs` (+3239 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **35 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **36 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1675,12 +1666,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Custom theme — protocol` connect `Custom theme — protocol` to `hallmark/SKILL.md`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `{ chromium }`, `fs`, `path` to the rest of the system?**
-  _3242 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3244 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FILLER AND HEDGING` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `component-cookbook.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.024096385542168676 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.023529411764705882 - nodes in this community are weakly interconnected._
 - **Should `macrostructures.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04 - nodes in this community are weakly interconnected._
 - **Should `biennale-yellow/design.md` be split into smaller, more focused modules?**
   _Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected._

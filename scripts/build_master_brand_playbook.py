@@ -334,13 +334,13 @@ html_content = """<!DOCTYPE html>
   <div class="header">
     <div class="badge-tag">ZORIXEL Master Operating Playbook</div>
     <h1 class="main-title">The Complete Brand Architecture & Execution Roadmap</h1>
-    <p class="subtitle">16-Year-Old Class 10 Board Topper (95.4%) Building a $10,000/Month Global 1-Person AI Web Engineering Studio from India</p>
+    <p class="subtitle">AI Workflows & Business Automation Agency — Delivering High-ROI Agent Infrastructure & Custom Web Dashboards</p>
 
     <!-- Hero Banner -->
     <div class="hero-banner">
       <div class="hero-banner-title">The Master Hook & Positioning Statement</div>
       <div class="hero-banner-hook">
-        "I help growth-stage AI SaaS founders and agency owners replace ugly, generic websites with high-converting, micro-interactive web experiences and instant &lt;5-minute lead response automations — delivered in 14 days for $3,000."
+        "ZORIXEL is an AI Workflows & Business Automation Agency delivering high-ROI AI agent infrastructure, sales automations, and custom full-stack web UI dashboards for companies globally — eliminating operational bottlenecks and driving client revenue."
       </div>
     </div>
   </div>
@@ -349,13 +349,13 @@ html_content = """<!DOCTYPE html>
   <div class="metrics-grid">
     <div class="metric-card">
       <div class="metric-label">Flagship Offer</div>
-      <div class="metric-value">$3,000</div>
-      <div class="metric-subtext">14-Day Web Experience Sprint</div>
+      <div class="metric-value">$1,500 - $5,000+</div>
+      <div class="metric-subtext">DFY AI Engineering Sprint</div>
     </div>
     <div class="metric-card">
-      <div class="metric-label">Revenue Goal</div>
-      <div class="metric-value">$10,000/mo</div>
-      <div class="metric-subtext">~₹8.5 Lakhs INR / month</div>
+      <div class="metric-label">Dual-Market Strategy</div>
+      <div class="metric-value">India + Global</div>
+      <div class="metric-subtext">INR Launchpad / USD Revenue</div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Target Clients</div>
