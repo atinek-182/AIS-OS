@@ -32,9 +32,12 @@ This is not negotiable. You cannot rationalize your way out of this.
 
 **Invoke relevant or requested skills BEFORE any response or action** — including clarifying questions, exploring the codebase, or checking files. If it turns out wrong for the situation, you don't have to use it.
 
+**Universal Humanizer Mandate:** Whenever generating chat replies, writing messages, drafting copy, writing headlines, or producing documentation that will be read by humans, ALWAYS run the text through the `humanizer` skill rules (33 AI pattern cleanup rules: zero em dashes, zero AI fluff words, zero sycophancy, sentence case headings, straight quotes, active voice).
+
 **Before entering plan mode:** if you haven't already brainstormed, invoke the brainstorming skill first.
 
 Then announce "Using [skill] to [purpose]" and follow the skill exactly. If it has a checklist, create a todo per item.
+
 
 ## Skill Priority
 

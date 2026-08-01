@@ -1,7 +1,7 @@
 # Graph Report - AI-OS  (2026-07-31)
 
 ## Corpus Check
-- 1186 files · ~3,196,999 words
+- 1186 files · ~3,197,325 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -32,7 +32,7 @@
 - detect.py
 - test_js_import_resolution.py
 - Decisions Log
-- main
+- test_extract_cli.py
 - test_install.py
 - test_analyze.py
 - test_chunking.py
@@ -174,7 +174,7 @@
 - test_hook_guard.py
 - test_read_hook.py
 - _make_symbol_doc
-- load_platforms
+- render_all
 - Recipes
 - sample.swift
 - test_vue_extraction.py
@@ -227,7 +227,7 @@
 - dedup.py
 - CsharpNameResolver
 - extract_markdown
-- audit_coverage
+- load_platforms
 - What You Must Do When Invoked
 - client.py
 - Specific Issues Found
@@ -271,7 +271,7 @@
 - utils.py
 - test_cpp_objc_cross_file_calls.py
 - test_go_builtin_call_targets.py
-- test_incomplete_build_guard.py
+- main
 - test_install_upgrade.py
 - _run
 - test_semantic_cache_out_root.py
@@ -485,7 +485,7 @@
 - Utility Scripts Reference Guide
 - README.hi-IN.md
 - _hooks_dir
-- _replace_or_append_section
+- main
 - fetch_worktrees
 - _parse_ci
 - graphify reference: extra exports and benchmark
@@ -679,7 +679,7 @@
 - test_cli_broken_pipe.py
 - _make_noisy_graph
 - _write_graph
-- _seed_semantic_doc_graph
+- _seed_semantic_doc_graph_concept_only
 - graphify reference: query, path, explain
 - graphify reference: query, path, explain
 - graphify reference: query, path, explain
@@ -1315,9 +1315,9 @@ Nodes (100): _file_node_id(), File-level node ID matching the skill.md spec: ``{
 Cohesion: 0.02
 Nodes (100): 2026-07-14 — Configure Google Workspace CLI (GWS) for Dual Accounts, 2026-07-14 — Connect Obsidian Vaults & Establish Master Task List, 2026-07-14 — Consolidate Utility Scripts & Save Skills Documentation, 2026-07-14 — Optimize AIOS for Antigravity & Formulate Workflow Skills, 2026-07-14 — Set Up Global Skills for Antigravity, 2026-07-14 — Verify Workflows & Compile AIOS User Manual, 2026-07-15 — Centralize Workspace Directory Map & Log Boundaries, 2026-07-15 — Configure Scoped External Projects Junction Workspace (+92 more)
 
-### Community 17 - "main"
-Cohesion: 0.03
-Nodes (96): main(), Handle a downstream reader that closed the pipe early. Redirect stdout to…, Console entry point. Wraps the CLI so that when a downstream consumer closes…, _silence_broken_pipe(), _clear_backend_keys(), _code_only_corpus(), _make_corpus(), _node_sources() (+88 more)
+### Community 17 - "test_extract_cli.py"
+Cohesion: 0.06
+Nodes (56): _clear_backend_keys(), _code_only_corpus(), _make_corpus(), _node_sources(), parametrize, Tests for `graphify extract` CLI dispatch path in graphify.__main__., --no-cluster's exclusion-only early exit must still scrub the excluded file's…, #1939: cache-check --prompt-file only counts entries produced by that same… (+48 more)
 
 ### Community 18 - "test_install.py"
 Cohesion: 0.03
@@ -1376,8 +1376,8 @@ Cohesion: 0.03
 Nodes (71): Communities (141 total, 52 thin omitted), Community 0 - "Community 0", Community 10 - "Community 10", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15" (+63 more)
 
 ### Community 32 - "test_codebuddy.py"
-Cohesion: 0.05
-Nodes (66): codebuddy_install(), codebuddy_uninstall(), Install the graphify skill and CODEBUDDY.md section for CodeBuddy., Remove the graphify skill tree (SKILL.md + references/) and the CODEBUDDY.md…, _codebuddy_install_user(), _codebuddy_md_path(), Tests for graphify codebuddy install / uninstall commands., The installed hook must include Read|Glob matcher for file-read interception. (+58 more)
+Cohesion: 0.04
+Nodes (74): codebuddy_install(), codebuddy_uninstall(), Install the graphify skill and CODEBUDDY.md section for CodeBuddy., Remove the graphify skill tree (SKILL.md + references/) and the CODEBUDDY.md…, Idempotently update or append a graphify-owned section in shared files. If no…, _replace_or_append_section(), _codebuddy_install_user(), _codebuddy_md_path() (+66 more)
 
 ### Community 33 - "test_serve.py"
 Cohesion: 0.06
@@ -1424,8 +1424,8 @@ Cohesion: 0.05
 Nodes (49): _check_skill_version(), Path, Warn if the installed skill is from an older graphify version., Parse a version string into a comparable integer tuple (``0.9.2`` -> ``(0, 9,…, _version_tuple(), _build_wheel_names(), fake_bundle(), _first_unbuilt_progressive_host() (+41 more)
 
 ### Community 44 - "gen.py"
-Cohesion: 0.05
-Nodes (48): Namespace, On a shallow checkout (no origin/v8) the validators skip with exit 0. CI sets…, test_git_show_validators_skip_cleanly_without_origin_v8(), bless(), _enum_lines(), _expected_path(), _is_cache_unlink_fix_line(), _is_chunk_cleanup_line() (+40 more)
+Cohesion: 0.06
+Nodes (33): _enum_lines(), _is_cache_unlink_fix_line(), _is_chunk_cleanup_line(), _is_content_scope_fix_line(), _is_directed_fix_line(), _is_enum_line(), _is_frontmatter_description_line(), _is_manifest_root_fix_line() (+25 more)
 
 ### Community 45 - "test_reflect.py"
 Cohesion: 0.09
@@ -1879,9 +1879,9 @@ Nodes (27): _env(), The Read|Glob PreToolUse guard nudges toward the graph inste
 Cohesion: 0.07
 Nodes (28): _make_symbol_doc(), Helper to build a minimal SCIP document with one symbol., is_reference → relation 'scip_ref'., is_definition → relation 'scip_def'., is_implementation → relation 'scip_impl' (takes priority over is_definition)., is_type_definition → relation 'scip_typed'., Implementation > TypeDefinition > Definition > Reference., When none of is_* flags are set, relation defaults to 'scip_ref'. (+20 more)
 
-### Community 159 - "load_platforms"
-Cohesion: 0.11
-Nodes (28): Regression for #1461: every skill body that describes Step 3 extraction must…, The committed codex/windows artifacts match a fresh render and expected/., The committed artifacts and the expected/ snapshot match a fresh render. This…, check + audit-coverage pass for every rendered progressive host., Rendering twice yields byte-identical output (no timestamps/versions)., Generated artifacts use LF newlines and end in exactly one newline., A full render carries the always-on files; a --platform render does not., No generated artifact carries the package version string. (+20 more)
+### Community 159 - "render_all"
+Cohesion: 0.14
+Nodes (14): Regression for #1461: every skill body that describes Step 3 extraction must…, Rendering twice yields byte-identical output (no timestamps/versions)., Generated artifacts use LF newlines and end in exactly one newline., A full render carries the always-on files; a --platform render does not., No generated artifact carries the package version string., #1939: a skill's cache read and write must both name the extraction prompt they…, test_always_on_included_in_full_render_not_per_platform(), test_extraction_states_no_api_key_required_for_every_host() (+6 more)
 
 ### Community 160 - "Recipes"
 Cohesion: 0.07
@@ -2091,9 +2091,9 @@ Nodes (14): _build_csharp_type_def_index(), CsharpNameResolver, _is_cs_file(), _
 Cohesion: 0.09
 Nodes (24): extract_markdown(), Path, Resolve a markdown link target to the absolute path of a sibling document.…, Extract structural nodes and edges from a Markdown file. Produces nodes for: -…, _resolve_markdown_link(), _md_link_fixture(), ### Database Migration is nested under ## Full Deploy., Fenced code blocks should NOT emit nodes (#1077). They were always orphans… (+16 more)
 
-### Community 212 - "audit_coverage"
+### Community 212 - "load_platforms"
 Cohesion: 0.10
-Nodes (24): Every v8 heading single-homes for the cli-inline split hosts too., Every v8 heading lands in the lean core or exactly one reference., Every split host's render single-homes its own v8 body's headings., The audit baseline is the host's OWN v8 skill body, not claude's monolith. This…, Re-inducing the trae regression (claude-flavored hooks) fails the audit.…, A core fragment that drops a real v8 heading fails the audit. Guards that the…, The per-host audit (the guard amp is the exact case for) passes for amp. amp…, `agents` is a post-v8 platform, so its audit baseline is amp's v8 body. (+16 more)
+Nodes (28): Every v8 heading single-homes for the cli-inline split hosts too., Every v8 heading lands in the lean core or exactly one reference., check + audit-coverage pass for every rendered progressive host., Every split host's render single-homes its own v8 body's headings., The audit baseline is the host's OWN v8 skill body, not claude's monolith. This…, Re-inducing the trae regression (claude-flavored hooks) fails the audit.…, A core fragment that drops a real v8 heading fails the audit. Guards that the…, The per-host audit (the guard amp is the exact case for) passes for amp. amp… (+20 more)
 
 ### Community 213 - "What You Must Do When Invoked"
 Cohesion: 0.08
@@ -2267,9 +2267,9 @@ Nodes (19): _call_edges(), _label(), Path, Cross-file member-call and include re
 Cohesion: 0.19
 Nodes (19): builtin_shadow_repo(), _edges_between(), _extract_go(), _label(), _nodes_by_file(), Go predeclared functions must not bind to same-named user symbols.…, The guard is a no-op for genuine user symbols. Uses a plain package-level call:…, Same-file binding needs the guard too, not just the cross-file pass.… (+11 more)
 
-### Community 256 - "test_incomplete_build_guard.py"
-Cohesion: 0.18
-Nodes (19): _arm_extract(), _arm_no_cluster(), _make_docs_corpus(), Tests for the incomplete-build shrink-guard on `graphify extract`. A full build…, #2169: an INCREMENTAL --no-cluster run merges the existing graph forward, so…, A present-but-unparseable existing graph.json (corrupt or mid-write) could be…, #2169: an incremental --no-cluster run must hard-fail on an unparseable…, Patch export.to_json to record the ``force`` it was called with and return a… (+11 more)
+### Community 256 - "main"
+Cohesion: 0.05
+Nodes (59): main(), Handle a downstream reader that closed the pipe early. Redirect stdout to…, Console entry point. Wraps the CLI so that when a downstream consumer closes…, _silence_broken_pipe(), _arm_extract(), _arm_no_cluster(), _make_docs_corpus(), Tests for the incomplete-build shrink-guard on `graphify extract`. A full build… (+51 more)
 
 ### Community 257 - "test_install_upgrade.py"
 Cohesion: 0.15
@@ -2285,7 +2285,7 @@ Nodes (19): _count_cache_files(), Path, Regression tests for #1990 and #1991. #1
 
 ### Community 260 - "parametrize"
 Cohesion: 0.10
-Nodes (20): _add_unrelated_semantic_pair(), parametrize, A full rebuild of a subdirectory must not prune graph data outside it., Like ``_seed_semantic_doc_graph``, but guide.md's semantic layer is ONLY…, #1954: a doc represented ONLY by concept/rationale nodes (no…, #1954: incremental analogue — a concept/rationale-only semantic doc must not…, #2251: unparseable graph.json (e.g. truncated by a crash) must fail the rebuild…, #1755: AST-only updates must not drop semantic hyperedges whose members survive. (+12 more)
+Nodes (20): _add_unrelated_semantic_pair(), parametrize, A full rebuild of a subdirectory must not prune graph data outside it., Build a code-only graph, then add guide.md represented ONLY semantically.…, #1915: a full _rebuild_code must not AST-quick-scan a doc whose semantic (LLM)…, #1915: an incremental rebuild whose change set includes a semantic-backed doc…, #2251: unparseable graph.json (e.g. truncated by a crash) must fail the rebuild…, #1755: AST-only updates must not drop semantic hyperedges whose members survive. (+12 more)
 
 ### Community 261 - "Slop test — 58 gates + pre-emit self-critique"
 Cohesion: 0.11
@@ -3119,9 +3119,9 @@ Nodes (8): graphify पर बनाया — Penpax, Star इतिहास, 
 Cohesion: 0.22
 Nodes (9): _hooks_dir(), Raise if a hooks path looks like a Windows absolute path (#1385). On POSIX/WSL…, Return the git hooks directory, respecting core.hooksPath if set (e.g. Husky).…, _reject_windows_path(), git legally allows duplicate keys and repeated sections in .git/config; a…, test_hooks_dir_accepts_absolute_git_hooks_path(), test_hooks_dir_no_warning_on_duplicate_config_keys(), test_hooks_dir_rejects_multiline_git_output() (+1 more)
 
-### Community 470 - "_replace_or_append_section"
-Cohesion: 0.33
-Nodes (8): Idempotently update or append a graphify-owned section in shared files. If no…, _replace_or_append_section(), #1688 - graphify's shared-file section update must not destroy user content.…, test_append_when_no_real_heading(), test_inline_reference_to_marker_is_not_treated_as_the_section(), test_prefers_last_heading_when_duplicated(), test_real_section_is_replaced_in_place(), test_reinstall_is_idempotent()
+### Community 470 - "main"
+Cohesion: 0.09
+Nodes (25): Namespace, The committed codex/windows artifacts match a fresh render and expected/., The committed artifacts and the expected/ snapshot match a fresh render. This…, A hand-edit of an always_on/*.md is caught by --check (the drift guard)., On a shallow checkout (no origin/v8) the validators skip with exit 0. CI sets…, test_always_on_files_are_guarded_by_check(), test_check_passes(), test_check_passes_for_codex_and_windows() (+17 more)
 
 ### Community 471 - "fetch_worktrees"
 Cohesion: 0.33
@@ -3883,9 +3883,9 @@ Nodes (6): _make_noisy_graph(), 20 error-handler nodes + 1 rare identifier: FooB
 Cohesion: 0.33
 Nodes (6): Write a minimal graph.json with the given node IDs., serve() picks up a new graph.json written after startup (#874)., mtime_ns + size uniquely identifies a graph version (#874)., test_load_graph_cache_key_changes_with_content(), test_maybe_reload_detects_graph_change(), _write_graph()
 
-### Community 665 - "_seed_semantic_doc_graph"
+### Community 665 - "_seed_semantic_doc_graph_concept_only"
 Cohesion: 0.33
-Nodes (6): Build a code-only graph, then add guide.md represented ONLY semantically.…, #1915: a full _rebuild_code must not AST-quick-scan a doc whose semantic (LLM)…, #1915: an incremental rebuild whose change set includes a semantic-backed doc…, _seed_semantic_doc_graph(), test_rebuild_code_incremental_preserves_semantic_doc_nodes_and_edges(), test_rebuild_code_semantic_doc_not_double_represented_on_full_rebuild()
+Nodes (6): Like ``_seed_semantic_doc_graph``, but guide.md's semantic layer is ONLY…, #1954: a doc represented ONLY by concept/rationale nodes (no…, #1954: incremental analogue — a concept/rationale-only semantic doc must not…, _seed_semantic_doc_graph_concept_only(), test_rebuild_code_concept_only_semantic_doc_not_double_represented_on_full_rebuild(), test_rebuild_code_incremental_preserves_concept_only_semantic_doc_nodes_and_edges()
 
 ### Community 666 - "graphify reference: query, path, explain"
 Cohesion: 0.33

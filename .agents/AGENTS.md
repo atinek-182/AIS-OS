@@ -117,8 +117,33 @@
 - **4. Post-Modification Graph Update & Diff**: Whenever creating or modifying project code or documentation, run `graphify update .` to keep `graph.json`, `graph.html`, `GRAPH_REPORT.md` fresh, and run `graphify diff` to verify graph topology changes.
 - **5. Multi-Vault Hub Routing**: Route graph queries to the relevant workspace hub (`root`, `brain`, `zorixel`, `frontend`) or build local `.planning/graphs/` graphs for standalone project directories.
 
+## Mandatory Change Evaluation & Synchronous Code-Doc Synchronization
+- **Mandatory Quality Check Before Modifying:** Whenever the user requests or suggests adding, modifying, or removing a feature, asset, or rule: FIRST evaluate and verify whether it is architecturally sound and good before taking action.
+- **Synchronous Code & Documentation Updates:** When a change is approved/confirmed, execute edits across BOTH implementation code and project documentation in tandem so code and docs remain 100% in sync.
 
+## Mandatory Startup Graphify Rule (Every Session)
+- **Mandatory Graphify at Task Start:** Just like invoking superpowers process skills (`using-superpowers`), ALWAYS run `graphify query "<topic>"` or inspect graphify AST context at the very start of every task to extract node connections, context, and codebase structure effortlessly.
 
+## Mandatory Pre-Coding & Design Discipline Rules (Zorixel & Web Projects)
+- **AI Agency & Client Acquisition Core Alignment Mandate:** ZORIXEL's primary business focus is an **AI Agency and Service Provider** delivering AI workflows, business automations, and high-converting web experiences ($1,500–$3,000+ Sprints). NEVER shift brand focus toward generic "vibe coding" or developer-only component hubs. Every feature, idea, resource, and page MUST directly serve client acquisition, demonstrate AI automation value, showcase agency capabilities, or convert high-ticket leads.
+- **Mandatory Brain & Zorixel OS Context Discovery:** Before answering queries, proposing features, or planning systems, the AI agent MUST inspect and reference `D:\ZORIXEL-BRAND-OS` (junction: `zorixel-brand-os`), `second-brain-zorixel/`, `brain-aios/`, and `context/` first. Ask Atinek Maurya for clarification whenever intent is underspecified.
+- **Thorough Research Prerequisite:** ALWAYS conduct deep web research (`search_web`, `agent-reach`, `@d:\AI-OS\.agents\skills\storm-research-project`) before pitching features or ideas to verify market demand, client ROI, and agency alignment.
+- **Strict Pre-Coding Lock & Chat Approval ("YES" Rule):** ABSOLUTELY ZERO code writing, file modifications, or code generation during project planning/discovery phases until Atinek Maurya explicitly commands or types "YES" in chat. Keep code implementation locked for 1-2 weeks to focus on research, asset collection, platform credentials, and strategy.
+- **Zero Rush & Zero Prompting to Move Forward:** Do NOT rush planning or push toward execution waves. NEVER suggest moving forward to code, never prompt the user to start writing code, and never ask "Should we start coding?".
+- **Mandatory 7-Agent `storm-research-project` Rule:** In ALL project repositories and coding tasks across every chat session, ALWAYS use `@d:\AI-OS\.agents\skills\storm-research-project` (the 7-agent version: Systems Architect, Vibesec Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product Economist, AI/LLM Specialist, Developer Ergonomics Auditor). Do NOT use the 5-agent version in project codebases.
+- **Continuous Proactive Idea & Feature Engine:** Actively pitch and suggest cutting-edge, high-conversion AI agency ideas, client acquisition micro-interactions, automation showcases, and SaaS enhancements during pre-coding and discovery so Atinek Maurya never feels stuck or stalled.
+- **Additive-Only & Reference Hold Policy:** Never remove pre-approved specs or assets. When new features are introduced without explicit visual references, mark them as `[PENDING OPERATOR REFERENCE]` and hold layout implementation until Atinek Maurya provides specific visual references or instructions.
+- **Strict Zero-Gradient Ban:** NEVER use gradients (color gradients, radial gradients, mesh gradients, text clip gradients, or soft blurred glows) anywhere throughout website projects, styling, assets, or docs. Fills must be solid, crisp, and flat.
+- **Strict Zero-Glassmorphism Ban:** NEVER use glassmorphism, backdrop blurs (`backdrop-filter: blur()`), semi-transparent glass cards, or glass borders anywhere throughout website projects.
+- **Trash Asset Ban (`favicon.svg` & `public/previews/`):** `favicon.svg` and SVG preview cards under `public/previews/` are permanently discarded as AI-slop. Never use them, reference them, or generate similar assets.
+- **Universal Client Acquisition Feature Blueprint Rules:** Every lead-generation feature, tool, or calculator MUST strictly incorporate four rules:
+  1. **Custom Bottleneck Freedom**: Provide an open-ended custom text input field giving prospects total freedom to type their specific business problem and exact automation needs.
+  2. **Value-First Price Lock / Delay**: Show ONLY positive financial savings & hours saved on initial screens. Hide exact price tags ($1,500–$3,000) until the personalized Loom Video Audit / Notion proposal.
+  3. **Automated Google Sheets Lead CRM Sync**: Automatically sync all lead inputs, calculations, and deal statuses into an organized Google Sheet CRM tracker (`gws` / Trigger.dev v3).
+  4. **Humanized Communication**: All auto-generated emails, receipts, and notifications must sound 100% humanized, warm, and personal.
+- **Proactive Awwwards & Design Reference Engine:** In every chat session, whenever discussing any website feature, layout, motion concept, or UI component, the AI agent MUST proactively research and suggest specific Awwwards-winning websites and world-class reference sites (e.g. Linear, Raycast, Stripe, Studio Dialect, Awwwards UI animations). The AI agent MUST break down specific frontend sections and micro-interactions from different sites (e.g. Site A for card stepper physics, Site B for tabular typography, Site C for input chips) so Atinek Maurya can easily review visual design inspiration across different parts.
+
+- **User Design Reference Priority:** Strictly await and build according to the exact design reference provided directly by Atinek Maurya. Do NOT improvise layouts or styles outside his reference.
 
 
 

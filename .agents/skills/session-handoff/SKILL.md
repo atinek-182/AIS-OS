@@ -30,8 +30,12 @@ When a session grows long or a major milestone completes, generate a structured 
    - **Active State & Unfinished Threads**: Open questions or tasks in progress.
    - **Immediate Next Action for Next Session**: The single most clear next step to resume.
 
-3. **Update Hot Cache (`hot.md`)**:
+3. **Update Graphify Knowledge Graph**:
+   - Run `python scripts/graphify_runner.py build all` (or `graphify update .`) to update knowledge graph nodes, communities, and dependency topology across workspace hubs (`root`, `brain`, `zorixel`, `frontend`).
+
+4. **Update Hot Cache (`hot.md`)**:
    - Update `hot.md` with the new active context and next actions so a fresh session reading `hot.md` instantly restores context.
 
-4. **Output Handoff Note**:
+5. **Output Handoff Note**:
    - Present the summary in chat and optionally save to `brain-aios/wiki/log.md`.
+

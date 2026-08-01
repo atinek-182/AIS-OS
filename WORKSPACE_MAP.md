@@ -27,6 +27,7 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [archives/](file:///d:/AI-OS/archives/) | Folder | Archive repository directory for storing outdated files. | Operator / AIOS |
 | [archives/fonts/](file:///d:/AI-OS/archives/fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md](file:///d:/AI-OS/brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md) | File | Ingestion discovery capture file for JS Mastery Pro and Matt Pocock skills. | AIOS |
+| [brainstorms/2026-07-31-zorixel-six-file-context-upgrade.md](file:///d:/AI-OS/brainstorms/2026-07-31-zorixel-six-file-context-upgrade.md) | File | Socratic discovery capture file for Zorixel Six-File Context Methodology v3.2 upgrade. | AIOS |
 | [graphify-out/](file:///d:/AI-OS/graphify-out/) | Folder | Output directory containing AST Knowledge Graph files (graph.json, graph.html, GRAPH_REPORT.md). | Graphify / AIOS |
 | [brain-aios/graphify-out/](file:///d:/AI-OS/brain-aios/graphify-out/) | Folder | Output directory containing Brain AIOS Vault Knowledge Graph files. | Graphify / AIOS |
 | [second-brain-zorixel/graphify-out/](file:///d:/AI-OS/second-brain-zorixel/graphify-out/) | Folder | Output directory containing Second Brain Zorixel Vault Knowledge Graph files. | Graphify / AIOS |
@@ -34,7 +35,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [brain-aios/wiki/research/skills-library/graphify/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/graphify/) | Folder | Ingested reference research vault for Graphify knowledge graph engine. | AIOS |
 | [scripts/graphify_runner.py](file:///d:/AI-OS/scripts/graphify_runner.py) | File | Multi-vault Graphify automation script managing tree-sitter AST knowledge graphs. | AIOS |
 | [.agents/skills/graphify/SKILL.md](file:///d:/AI-OS/.agents/skills/graphify/SKILL.md) | File | Tier 1 native Graphify skill for querying codebase and vault knowledge graphs. | AIOS |
+| [.agents/skills/humanizer/SKILL.md](file:///d:/AI-OS/.agents/skills/humanizer/SKILL.md) | File | Tier 1 native Humanizer skill scrubbing 33 AI writing patterns globally across text and copy. | AIOS |
 | [brain-aios/wiki/research/skills-library/jsmastery-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/jsmastery-skills/) | Folder | Ingested reference vault for JS Mastery Pro skills repo. | AIOS |
+
 | [brain-aios/wiki/research/skills-library/mattpocock-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/mattpocock-skills/) | Folder | Ingested reference vault for Matt Pocock skills repo. | AIOS |
 | [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |

@@ -15,9 +15,34 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
-```
+## 2026-08-01 — Universal Humanizer Skill & Writing Discipline Mandate (v2.9.1)
+
+**Decision:** Ingested `https://github.com/blader/humanizer` (v2.9.1, 33 AI pattern cleanup rules based on Wikipedia's AI cleanup project) and established a non-negotiable global mandate across the entire AIOS and Zorixel website project:
+1. **Installed Active Skill**: Deployed `.agents/skills/humanizer/SKILL.md` into both the main AIOS environment and the website project (`projects/Zorixel brand/zorixel-website/.agents/skills/humanizer/SKILL.md`).
+2. **System Rules Ingestion**: Embedded the Universal Humanizer Mandate into `AGENTS.md`, `ai-workflow-rules.md`, `MEMORY.md`, `hot.md`, and `.agents/skills/using-superpowers/SKILL.md`.
+3. **33 Pattern Enforcement**: Enforced strict removal of em dashes (`—`/`–`), inflated symbolism (*'testament/tapestry/fostering'*), promotional puffery, rule of three overuse, sycophancy, meta signposting (*'Let's dive in'*), and tailing negations. Enforced sentence case headings and straight quotes (`"..."`).
+4. **`[PENDING OPERATOR REFERENCE HOLD]` Rule**: Codified a mandatory fallback slot across all component specifications, prioritizing Atinek Maurya's custom references over catalog backstops.
+
+**Why:** Guarantees that every chat reply, copy draft, email auto-responder, headline, DM, and documentation file produced by the AIOS reads 100% natural, authentic, and human without AI slop tells.
+
+**Owner:** Atinek Maurya / AIOS
+
+## 2026-07-31 — Upgrade Six-File Context Methodology (`six-file-context-methodology` v3.2) for Zorixel Web Build
+
+
+**Decision:** Conducted Socratic discovery via `/grill-me` and upgraded `/six-file-context-methodology` to v3.2 (`.agents/skills/six-file-context-methodology/SKILL.md`) in preparation for building the official Zorixel brand website:
+1. **Per-Reference Granular Deconstruction (`reference/MANIFEST.md`)**: When design references are placed into `projects/zorixel-website/reference/`, the AI engine interactively interviews the operator to parse what elements to keep/remove, whether to use full templates or specific sub-components, and how to adapt them to Zorixel brand OKLCH tokens in `reference/MANIFEST.md`.
+2. **4-Phase Socratic Discovery (`init`) + Feature-Specific Socratic Spec Sessions**: `/six-file-context-methodology init` executes a mandatory 4-Phase Socratic interview. Every feature spec (`spec <feature-name>`) also triggers a feature-level Socratic interview before writing specs or tickets.
+3. **Interactive Human-in-the-Loop Visual QA (`verify`)**: Runs Playwright 5-viewport screenshot sweeps per UI ticket, pauses execution, presents visual outputs to the operator, and waits for explicit human approval or feedback screenshots before signoff.
+4. **Graphify AST Knowledge Graph Integration**: Automatically builds and updates `.planning/graphs/` AST knowledge graph during context scaffolding and spec creation.
+5. **Multi-Session Zero-Context-Loss Protocol (`resume`)**: Persists state across `context/progress-tracker.md`, `docs/wayfinder/map.md`, and decision logs, enabling seamless resumption in fresh chat sessions via `/six-file-context-methodology resume`.
+
+**Why:** Gives Atinek Maurya total visual, architectural, and motion control over the Zorixel brand website build while eliminating AI model context rot and hallucination across chat sessions.
+
+**Owner:** Atinek Maurya / AIOS
 
 ## 2026-07-31 — Upgrade Web Design Skill (`website-design-engine` v3.0) & Six-File Context Sync (v3.1)
+
 
 **Decision:** Upgraded the Web Design creation architecture and context methodology across the AIOS:
 1. **`website-design-engine` v3.0 (`.agents/skills/website-design-engine/SKILL.md`)**: Upgraded to 10-phase v3.0 engine. Removed automatic wireframe generation in favor of Six-File layout control. Established project-local `reference/` (or `references/`) folder as the **#1 Priority Source of Truth** for screenshots, screen recordings, HTML files, and TSX/CSS component snippets.

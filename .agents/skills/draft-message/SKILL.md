@@ -42,5 +42,7 @@ Automates the drafting of emails, DMs, and community replies. It loads the brand
 ---
 
 ## 🔗 Inter-Skill Connections & Handoff Pipeline
+- **Humanizer Anti-Slop Filter**: Automatically passes all drafts through **/humanizer** to scrub em dashes, sycophancy, AI filler words, and promotional puffery.
 - **Brand Voice & Copywriting**: Leverages **/marketing** copywriting patterns and ZORIXEL brand voice guidelines.
 - **Client & Audience Outreach**: Formats messages for Instagram DMs, emails, and YouTube comments.
+
