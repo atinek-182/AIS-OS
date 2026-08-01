@@ -7,7 +7,11 @@ This file logs cross-session learnings, operational preferences, and recurring c
 ## 🧠 Core Identity & Context
 - **Operator:** Atinek Maurya (Founder of ZORIXEL).
 - **Brand Identity & Core Focus:** ZORIXEL — dedicated **AI Workflows & Business Automation Agency** delivering outcome-focused AI engineering build sprints ($1,500–$5,000+ USD) and custom full-stack web UI dashboards for companies globally.
+- **Positioning Moat**: **Production-Grade AI Operations & Custom Control Dashboards** (demoted plain n8n glue scripts; ships custom human-in-the-loop React/Next.js approval UIs, audit logs, and zero vendor lock-in).
+- **Pricing & Proposal Framework (Nate Herk Masterclass Model)**: Enforce the 3-Number Corridor (Cost Floor $\le$ 10%–20% Defensible Price Corridor $\le$ Client-Stated Value Ceiling) and mandatory 10X ROI check ($\text{Value Multiple} \ge 10\text{X}$). Deliver 3-option micro-service proof proposals (Essential $1.5k–$2.5k, Growth $5k–$10k, Scale $12k–$25k+).
+- **Dedicated Pricing Skill**: `/ai-pricing-engine` (`.agents/skills/ai-pricing-engine/SKILL.md`) calculates client-stated value ceiling, delivery cost floor, 10X check, 3-option proposals, and 1-minute mathematical pitch scripts.
 - **Integrated Full-Stack UI Moat:** Web application development and custom dashboard creation (demoted from standalone service to an integrated frontend UI pillar for AI backends, outperforming generic no-code coders).
+
 - **Dual-Market Launch Architecture:**
   - **Domestic (India - INR):** Rapid local case study launchpad, Hindi client communication, adjusted purchasing power pricing, building early confidence and video testimonials.
   - **International (Global - USD):** Core revenue engine targeting US/UK/CA/AU businesses.

@@ -142,6 +142,8 @@
   3. **Automated Google Sheets Lead CRM Sync**: Automatically sync all lead inputs, calculations, and deal statuses into an organized Google Sheet CRM tracker (`gws` / Trigger.dev v3).
   4. **Humanized Communication**: All auto-generated emails, receipts, and notifications must sound 100% humanized, warm, and personal.
 - **Proactive Awwwards & Design Reference Engine:** In every chat session, whenever discussing any website feature, layout, motion concept, or UI component, the AI agent MUST proactively research and suggest specific Awwwards-winning websites and world-class reference sites (e.g. Linear, Raycast, Stripe, Studio Dialect, Awwwards UI animations). The AI agent MUST break down specific frontend sections and micro-interactions from different sites (e.g. Site A for card stepper physics, Site B for tabular typography, Site C for input chips) so Atinek Maurya can easily review visual design inspiration across different parts.
+- **Nate Herk Value-Based Pricing & Corridor Mandate:** Enforce the 3-Number Corridor (Cost Floor $\le$ Defensible Price Corridor $\le$ Value Ceiling) and mandatory 10X ROI check ($\text{Value Multiple} \ge 10\text{X}$) on all client quotes using `/ai-pricing-engine`.
+
 
 - **User Design Reference Priority:** Strictly await and build according to the exact design reference provided directly by Atinek Maurya. Do NOT improvise layouts or styles outside his reference.
 

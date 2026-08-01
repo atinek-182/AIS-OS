@@ -15,6 +15,20 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-02 — Value-Based AI Pricing Engine & ZORIXEL Master Strategy (v3.0)
+
+**Decision:** Ingested Nate Herk's 27-page Masterclass PDF (*How to Price AI Solutions*) and finalized ZORIXEL's Master Agency Strategy & Pricing Architecture:
+1. **Positioning Moat**: Refined ZORIXEL from a generic "AI automation agency" into a **Production-Grade AI Operations & Custom Control Dashboard Agency** (shipping human-in-the-loop React/Next.js control UIs, audit logs, and zero vendor lock-in).
+2. **Nate Herk Value-Based Pricing Corridor**: Strictly enforced the 3-Number Corridor (Cost Floor $\le$ 10%–20% Defensible Price Corridor $\le$ Client-Stated Value Ceiling) and mandatory 10X ROI Check ($\text{Value Multiple} \ge 10\text{X}$).
+3. **3-Option Micro-Service Proof Ladder**: Presenting 3 distinct options (Essential $1.5k–$2.5k starter proof, Growth $5k–$10k connected workflows, Scale $12k–$25k+ enterprise transformation).
+4. **Dedicated System Skill**: Built & verified Tier 1 `/ai-pricing-engine` skill (`.agents/skills/ai-pricing-engine/SKILL.md`) calculating value ceilings, cost floors, 10X ROI check, 3-option proposals, and 1-minute mathematical pitch scripts.
+5. **Client-Owned Utility Mandate**: Production API accounts (Anthropic, OpenAI, Supabase, Vercel) sit strictly in the client's name and on the client's credit card with hard monthly spending limits (e.g. $100 cap).
+6. **5-Persona Roast Refinements**: Passed 5-persona `/roast` council audit with a 9.2/10 **STRONG GO** score, codifying strict Essential tier scope boundaries, single-field bottleneck intake forms, and standardized API security caps.
+
+**Why:** Solves the #1 client objection in AI automation (fear of black-box AI errors) by shipping human control UIs, while eliminating pricing friction through affordable 10X ROI starter sprints that naturally convert into long-term retainers ($400–$1,500/mo).
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-08-01 — ZORIXEL Brand Pivot: Dedicated AI Workflows & Business Automation Agency
 
 **Decision:** Formally pivoted ZORIXEL's strategic focus from standalone web design/development to a dedicated **AI Workflows & Business Automation Agency**, with custom full-stack web UI as an integrated superpower pillar:

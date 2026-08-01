@@ -12,7 +12,9 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 
 - `/agent-adapt` — Scan and tweak files/skills to migrate them from Claude Code to Antigravity.
 - `/agent-reach` — Unified multi-platform search & reader capability engine across 10+ social/web platforms (YouTube, Bilibili, V2EX, Twitter, Reddit, RSS).
+- `/ai-pricing-engine` — AI Solution Pricing Calculator & 3-Option Proposal Compiler based on Nate Herk's Masterclass.
 - `/audit` — Four-Cs gap report. Run on Day 7, then weekly. Watch your score climb.
+
 - `/autoresearch-manage` — Manage Autoresearch loop targets (add/remove custom trials and update runner).
 - `/brand-colors` — Automate brand color palette selection, interactive swatch creation, and WCAG contrast audits.
 - `/canvas-design` — Programmatic visual assets and canvas generator dynamic router.

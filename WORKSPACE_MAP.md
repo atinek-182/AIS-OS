@@ -37,6 +37,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/graphify_runner.py](file:///d:/AI-OS/scripts/graphify_runner.py) | File | Multi-vault Graphify automation script managing tree-sitter AST knowledge graphs. | AIOS |
 | [.agents/skills/graphify/SKILL.md](file:///d:/AI-OS/.agents/skills/graphify/SKILL.md) | File | Tier 1 native Graphify skill for querying codebase and vault knowledge graphs. | AIOS |
 | [.agents/skills/humanizer/SKILL.md](file:///d:/AI-OS/.agents/skills/humanizer/SKILL.md) | File | Tier 1 native Humanizer skill scrubbing 33 AI writing patterns globally across text and copy. | AIOS |
+| [.agents/skills/ai-pricing-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/ai-pricing-engine/SKILL.md) | File | Tier 1 native AI Pricing Engine skill compiling 3-option proposals and value-based pricing based on Nate Herk's Masterclass. | AIOS |
+
 | [brain-aios/wiki/research/skills-library/jsmastery-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/jsmastery-skills/) | Folder | Ingested reference vault for JS Mastery Pro skills repo. | AIOS |
 
 | [brain-aios/wiki/research/skills-library/mattpocock-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/mattpocock-skills/) | Folder | Ingested reference vault for Matt Pocock skills repo. | AIOS |
