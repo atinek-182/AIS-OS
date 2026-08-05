@@ -1,0 +1,129 @@
+{
+  "title": "Vashishthya Master Client Desk",
+  "client_id": "001-vashishthya-research-edu",
+  "client_name": "Vashishthya Research Education Foundation",
+  "description": "Canonical Notion Master Database Schema with 7 Core Services, 4 Financial Properties, 5-Step Sub-Task Checklists, and Dynamic Progress Formulas",
+  "properties": {
+    "Scholar Name": {
+      "type": "title",
+      "description": "Full name of the student or scholar"
+    },
+    "Contact / WhatsApp Number": {
+      "type": "phone_number",
+      "description": "Primary mobile number for scholar communications"
+    },
+    "Email Address": {
+      "type": "email",
+      "description": "Scholar email address for formal document delivery"
+    },
+    "Services Required": {
+      "type": "multi_select",
+      "options": [
+        { "name": "1. Ph.D. Writing & Thesis (₹20,000)", "color": "purple" },
+        { "name": "2. PG Project & Dissertation (MCA/MBA/MSc/MA/MTech) (₹5,000)", "color": "blue" },
+        { "name": "3. Book Writing (₹3,000) / Hard Copy Publication (₹5,000)", "color": "green" },
+        { "name": "4. Paper Writing & Peer-Reviewed Journal Publication (₹2,000)", "color": "yellow" },
+        { "name": "5. Academic Reports & Removal (Turnitin ₹100 / Drillbit ₹200 / Plagiarism Removal)", "color": "orange" },
+        { "name": "6. Patent Services (UK/Germany/South Africa/India - Utility & Design) (₹15,000)", "color": "red" },
+        { "name": "7. Academic Certificates & Awards (Reviewer / Board / Proposals: AICTE/UGC/DST/DRDO/ISRO)", "color": "pink" }
+      ]
+    },
+    "Agreed Total Fee (INR)": {
+      "type": "number",
+      "format": "rupee",
+      "description": "Total agreed price for the services"
+    },
+    "Advance Received (INR)": {
+      "type": "number",
+      "format": "rupee",
+      "description": "Upfront deposit or advance payment received"
+    },
+    "Balance Due (INR)": {
+      "type": "formula",
+      "expression": "prop(\"Agreed Total Fee (INR)\") - prop(\"Advance Received (INR)\")",
+      "description": "Auto-calculated balance remaining"
+    },
+    "Payment Status": {
+      "type": "select",
+      "options": [
+        { "name": "Unpaid", "color": "red" },
+        { "name": "Partially Paid", "color": "yellow" },
+        { "name": "Fully Settled", "color": "green" }
+      ]
+    },
+    "Status": {
+      "type": "status",
+      "options": [
+        { "name": "New Intake", "color": "gray" },
+        { "name": "In Progress", "color": "blue" },
+        { "name": "Client Review", "color": "yellow" },
+        { "name": "Completed", "color": "green" }
+      ]
+    },
+    "Assigned Team Member": {
+      "type": "select",
+      "options": [
+        { "name": "Dr. Prashant Singh", "color": "purple" },
+        { "name": "Dr. Pooja Singh", "color": "blue" },
+        { "name": "Assigned Staff Lead", "color": "gray" }
+      ]
+    },
+    "Target Deadline": {
+      "type": "date",
+      "description": "Target completion date agreed with scholar"
+    },
+    "Step 1: Scope & Topic Confirmation": {
+      "type": "checkbox",
+      "weight": 20
+    },
+    "Step 2: Outline & Literature Gathering": {
+      "type": "checkbox",
+      "weight": 20
+    },
+    "Step 3: Draft Writing & Data Analysis": {
+      "type": "checkbox",
+      "weight": 20
+    },
+    "Step 4: Plagiarism (<10%) & Format Check": {
+      "type": "checkbox",
+      "weight": 20
+    },
+    "Step 5: Final Delivery & Archive": {
+      "type": "checkbox",
+      "weight": 20
+    },
+    "Progress Bar": {
+      "type": "formula",
+      "expression": "let(completed, (if(prop(\"Step 1: Scope & Topic Confirmation\"), 1, 0) + if(prop(\"Step 2: Outline & Literature Gathering\"), 1, 0) + if(prop(\"Step 3: Draft Writing & Data Analysis\"), 1, 0) + if(prop(\"Step 4: Plagiarism (<10%) & Format Check\"), 1, 0) + if(prop(\"Step 5: Final Delivery & Archive\"), 1, 0)) * 20, completed / 100)",
+      "display": "bar",
+      "description": "Dynamic 0% to 100% progress bar monitoring the 5 steps"
+    },
+    "1-Click WhatsApp Link": {
+      "type": "formula",
+      "expression": "\"https://wa.me/91\" + replaceAll(prop(\"Contact / WhatsApp Number\"), \"[^0-9]\", \"\") + \"?text=Hello%20\" + encodeURIComponent(prop(\"Scholar Name\")) + \"%2C%20your%20order%20status%20is%20\" + encodeURIComponent(prop(\"Status\")) + \"%20with%20Balance%20Due%3A%20INR%20\" + style(prop(\"Balance Due (INR)\"), \"bold\")",
+      "description": "Pre-filled 1-click WhatsApp message link"
+    }
+  },
+  "views": [
+    {
+      "name": "Call Intake Desk",
+      "type": "form_mobile",
+      "user_role": "Dr. Prashant Singh & Dr. Pooja Singh",
+      "visible_properties": ["Scholar Name", "Contact / WhatsApp Number", "Services Required", "Agreed Total Fee (INR)", "Advance Received (INR)", "Assigned Team Member", "Target Deadline"]
+    },
+    {
+      "name": "My Work Queue",
+      "type": "board",
+      "user_role": "Staff Members",
+      "group_by": "Status",
+      "filter": "Assigned Team Member = Current User",
+      "visible_properties": ["Scholar Name", "Progress Bar", "Step 1: Scope & Topic Confirmation", "Step 2: Outline & Literature Gathering", "Step 3: Draft Writing & Data Analysis", "Step 4: Plagiarism (<10%) & Format Check", "Step 5: Final Delivery & Archive", "1-Click WhatsApp Link"]
+    },
+    {
+      "name": "Executive Master Overview",
+      "type": "table",
+      "user_role": "Founders Overview",
+      "visible_properties": ["Scholar Name", "Services Required", "Agreed Total Fee (INR)", "Balance Due (INR)", "Payment Status", "Status", "Progress Bar", "Assigned Team Member", "Target Deadline"]
+    }
+  ]
+}

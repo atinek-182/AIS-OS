@@ -15,6 +15,85 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-04 — Implementation of Client 1 (Vashishthya Research) Notion OS & Google Apps Script Infrastructure
+
+**Decision:** Designed, implemented, and verified the complete 100% free, zero-developer-dependency Notion Operational OS & Google Workspace Sync Engine for Vashishthya Research Education Foundation (`001-vashishthya-research-edu`):
+1. **Canonical Notion Database Schema (`NOTION_DATABASE_SCHEMA.json`)**: Created [NOTION_DATABASE_SCHEMA.json](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/NOTION_DATABASE_SCHEMA.json) specifying 18 properties, 7 core service options, 4 financial properties (`Agreed Total Fee`, `Advance Received`, `Balance Due [Formula]`, `Payment Status [Select]`), assigned staff dropdowns, 5-step sub-task checkboxes, and visual progress bar formulas (`[████░░░░░░] 40%`).
+2. **Backward-Compatible Google Apps Script Engine (`GoogleAppsScript_NotionSync.gs`)**: Built [GoogleAppsScript_NotionSync.gs](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/GoogleAppsScript_NotionSync.gs) using **Dynamic Header Mapping (`getHeaderMap`)**. Adding new columns or tabs in the future **NEVER breaks existing sync or automation functions**.
+3. **Setup SOP & Visual Cheat Sheet**: Created [VASHISTHYA_NOTION_GSHEETS_SETUP_GUIDE.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/VASHISTHYA_NOTION_GSHEETS_SETUP_GUIDE.md) and [setup_guide_visual.html](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/setup_guide_visual.html) providing a 1-page visual cheat sheet with UI wireframes and step-by-step setup instructions.
+4. **Validation & Indexing**: Verified JSON schema syntax (`JSON Schema Valid! Properties count: 18`) and registered artifacts in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md).
+
+**Why:** Gives Client 001 a 100% free, non-technical operational OS that syncs 24/7 in the cloud without Make.com paywalls, n8n subscriptions, or local developer server maintenance.
+
+**Owner:** Atinek Maurya / AIOS
+
+## 2026-08-04 — Ingestion of Client 1 (Vashishthya Research) Primary Service Catalog & Pricing Matrix
+
+**Decision:** Ingested verified service catalog extracted from Vashishthya Research Education Foundation's primary promotional flyer provided via sister referral:
+1. **Canonical Service Catalog (`SERVICES_CATALOG.md`)**: Created [SERVICES_CATALOG.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/SERVICES_CATALOG.md) documenting all 7 core services and exact INR pricing (Ph.D. Writing ₹20,000, PG Dissertation ₹5,000, Book Writing ₹3,000 / Pub ₹5,000, Paper Writing ₹2,000, Reports ₹100-₹200, Patents ₹15,000, Academic Awards & Proposal Support), primary email `parsjp17@gmail.com`, and phone/WhatsApp numbers (`8319353139`, `8349687471`).
+2. **Updated Master Audit (`AUDIT.md`)**: Updated [AUDIT.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/AUDIT.md) with exact contact details and canonical service catalog links.
+3. **Updated Notion OS Master Plan (`NOTION_WORKFLOW_MASTER_PLAN.md`)**: Replaced placeholder service fields with exact 7 service options in View A Call Intake Desk checkboxes and assigned team members (`Dr. Prashant Singh` | `Dr. Pooja Singh`).
+4. **Updated Pitch Brainstorm**: Replaced service placeholders in [brainstorms/2026-08-03-vashishthya-client-pitch-and-pilot.md](file:///d:/AI-OS/brainstorms/2026-08-03-vashishthya-client-pitch-and-pilot.md).
+5. **Registered in WORKSPACE_MAP**: Updated [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) to index `SERVICES_CATALOG.md`.
+
+**Why:** Replaces all placeholder fields in Client 001's vault with 100% verified real-world pricing and service offerings from their actual marketing flyer.
+
+**Owner:** Atinek Maurya / AIOS
+
+## 2026-08-03 — Ingestion of Client 1 (Vashishthya Research / IJORAR / MJAP) Deep Research Audit
+
+**Decision:** Ingested the complete 6-section deep research audit report into `clients/001-vashishthya-research-edu/01-pre-outreach-audit/`:
+1. **Saved Raw Report**: Created [DEEP_RESEARCH_REPORT.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/DEEP_RESEARCH_REPORT.md) containing full forensic findings across site tech debt, missing Google Scholar metadata, operational bottlenecks, revenue leakage math, 50-Capability AI Transformation Roadmap, and Zero-Upfront Pilot Proposal.
+2. **Updated Master Audit (`AUDIT.md`)**: Enriched [AUDIT.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/01-pre-outreach-audit/AUDIT.md) with exact quantified loss metrics (50–100 staff-hours lost/mo, 60 lost candidate leads/mo, 30–50% lead dropoff rate) and technical flaws (e.g. broken external `ijariie.com` submit/board links, 768px raster DOI logos, missing viewport tags).
+3. **Updated Commercial Proposal (`PROPOSAL.md`)**: Refined [PROPOSAL.md](file:///d:/AI-OS/clients/001-vashishthya-research-edu/02-proposal-and-agreement/PROPOSAL.md) detailing the ₹0 Free Pilot deliverables (AI Intake Calculator, Guideline Checker, Google Scholar SEO generator) and 3-Tier Post-Pilot commercial expansion ($1,500 / $3,000 / $5,000/mo retainer).
+4. **Hot Cache Sync**: Updated [hot.md](file:///d:/AI-OS/hot.md) to track active focus and clear next actions for Loom script generation, sister outreach script drafting, and pilot prototyping.
+
+**Why:** Centralizes all research assets in Client 001's vault, quantifies clear client ROI, and prepares all pitch assets for immediate client outreach and pilot signoff.
+
+**Owner:** Atinek Maurya / AIOS
+
+## 2026-08-02 — 1-Line Client Audit & Research Engine (`/client-audit`) & Vashishthya Lead Strategy
+
+**Decision:** Created custom Tier 1 skill `/client-audit` (`.agents/skills/client-audit/SKILL.md`) and initialized Stage 1 lead vault for **Vashishthya Research & Educational Academy** (`001-vashishthya-research-edu`):
+1. **1-Line Automation Engine**: Triggering `/client-audit "[Client Name]" [Website URL]` automatically:
+   - Scaffolds Stage 1 lead directories via `python scripts/new_client_runner.py lead`.
+   - Scrapes website content and linked domains.
+   - Fills out `01-pre-outreach-audit/AUDIT.md` with business teardown, vulnerabilities, and pitch brief.
+   - Generates a evidence-backed `CHATGPT_DEEP_RESEARCH_PROMPT.md` for deep forensic audits.
+   - Prepares execution for 7-Agent STORM research (`storm-research-project`).
+   - Generates a line-by-line Hinglish Loom Video Script & Slide Deck in `brainstorms/`.
+2. **First Domestic Client Strategy (Vashishthya / IJORAR / MJAP)**:
+   - Target: Dr. Prashant Singh & Dr. Pooja Singh (Raipur, Chhattisgarh). Referral via Operator's Sister.
+   - Model: 100% Free Value-First Pilot (Zero upfront charge) in exchange for permission to publish an official AI Case Study, Video Testimonial, Fractional AI Consultant role, and warm referrals after 30-45 days.
+3. **Workspace Registration**: Saved ChatGPT prompt template (`CHATGPT_DEEP_RESEARCH_PROMPT.md`), registered `/client-audit` in `WORKSPACE_MAP.md`, updated `hot.md` for session handoff.
+
+**Why:** Gives ZORIXEL a 1-line client audit slash command to research, audit, and generate pitch materials for any prospective client in seconds, while establishing a risk-free case study offer for Vashishthya Research.
+
+**Owner:** Atinek Maurya / AIOS
+
+## 2026-08-02 — ZORIXEL 8-Phase Client Vault Architecture & `/new-client` Skill Engine (v3.1)
+
+**Decision:** Designed and implemented a standardized 8-phase client vault architecture (`clients/[ID]-[client-slug]/`) and custom Tier 1 `/new-client` skill engine for ZORIXEL AI Agency:
+1. **8-Phase Lifecycle**:
+   - `01-pre-outreach-audit/` (Lead source metadata, vulnerability map, Loom pitch script)
+   - `02-proposal-and-agreement/` (3-Option Proposal, pricing calculations, signed contract/NDA)
+   - `03-post-hire-onboarding/` (System credentials, internal SOPs, workflow teardowns)
+   - `04-architecture-and-specs/` (Agentic workflows, MCP server specs, UI specs)
+   - `05-development-and-build/` (Build sprint logs, prompt chains, VibeSec audit, code junction)
+   - `06-client-deliverables/` (Sub-grouped handoff packages: `01-web-application/`, `02-automation-workflows/`, `03-mcp-tools/`)
+   - `07-training-and-offboarding/` (Team training session notes, handover videos, sign-off certificate)
+   - `08-retainer-and-tracker/` (Internal ROI log, monthly maintenance, upsell roadmap)
+2. **Two-Stage Gated Scaffolding**:
+   - **Stage 1 (Lead & Sales Gate)**: Running `/new-client [client-name]` scaffolds `01` and `02` for any lead source (inbound website forms, cold audits, referrals, DMs, email).
+   - **Stage 2 (Accepted & Build Gate)**: Running `/new-client accept [client-id]` unlocks phases `03` through `08` once the deal is accepted.
+3. **Code Repo Junction Topology**: Client code projects live in `projects/Clients/` or `projects/Websites/` and link into `05-development-and-build/` via Windows junctions.
+4. **Embedded Auto-Evolution Engine**: The `/new-client` skill includes a self-improvement protocol (`/new-client evolve`) that audits completed client sprints and automatically updates canonical markdown templates (`brain-aios/wiki/templates/clients/`) without manual intervention.
+5. **System Artifacts**: Created canonical markdown templates (`01-AUDIT.md` to `08-TRACKER.md`), standard automation runner script (`scripts/new_client_runner.py`), Tier 1 skill (`.agents/skills/new-client/SKILL.md`), and SOP (`brain-aios/wiki/sops/client-vault-architecture-sop.md`).
+
+**Why:** Gives ZORIXEL a repeatable, enterprise-grade client management system that keeps unclosed leads isolated from active build spaces while enabling continuous agency automation after every client sprint.
+
+**Owner:** Atinek Maurya / AIOS
+
 ## 2026-08-02 — Value-Based AI Pricing Engine & ZORIXEL Master Strategy (v3.0)
 
 **Decision:** Ingested Nate Herk's 27-page Masterclass PDF (*How to Price AI Solutions*) and finalized ZORIXEL's Master Agency Strategy & Pricing Architecture:

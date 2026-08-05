@@ -1,0 +1,71 @@
+---
+name: new-client
+description: Standardized 8-phase client vault scaffolding engine for ZORIXEL AI Agency. Invokable via /new-client. Handles Stage 1 (Lead/Sales) and Stage 2 (Accepted/Build) directory creation, canonical template population, and post-sprint auto-evolution.
+argument-hint: '[client-name | accept client-id | evolve]'
+---
+
+# ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
+
+## ⚡ Overview & Tri-Mode Execution
+
+This skill automates the lifecycle of client directories for ZORIXEL AI Agency. It manages an **8-Phase Gated Client Vault** split into two sequential stages:
+
+1. **Stage 1 (Lead & Sales Stage)**: Triggered when a new lead enters (inbound/outbound/referral/email/DM). Creates `01-pre-outreach-audit/` and `02-proposal-and-agreement/`.
+2. **Stage 2 (Accepted & Build Stage)**: Triggered when an offer is accepted (`/new-client accept [client-id]`). Unlocks `03-post-hire-onboarding/` through `08-retainer-and-tracker/`, creates sub-grouped deliverable folders, and sets up code junctions.
+
+Invokable via:
+- **Slash Command**: `/new-client [client-name]` or `/new-client accept [client-id]`
+- **Dynamic Intent**: Triggered automatically when a new client lead is mentioned or signed.
+- **Programmatic Calling**: Invoked by parent skills (`/new-project`, `/ai-pricing-engine`, `/onboard`).
+
+---
+
+## 🎯 Usage & Command Syntax
+
+| Command | Action | Output Directories / Artifacts |
+|---|---|---|
+| `/new-client [Client Name]` | Scaffold Stage 1 (Lead Audit & Proposal) | `clients/[ID]-[slug]/01-pre-outreach-audit/` + `02-proposal-and-agreement/` |
+| `/new-client accept [ID]` | Unlock Stage 2 (Build & Deliverables) | `03-post-hire-onboarding/` through `08-retainer-and-tracker/` |
+| `/new-client evolve` | Run Auto-Evolution Audit | Audits completed client sprints and updates canonical templates |
+
+---
+
+## 📌 Workflow Instructions
+
+### Phase 1: Lead Scaffolding (Stage 1)
+When creating a new lead:
+1. Run `python scripts/new_client_runner.py lead "[Client Name]"`
+2. Verify that `clients/[ID]-[slug]/01-pre-outreach-audit/AUDIT.md` and `02-proposal-and-agreement/PROPOSAL.md` are populated.
+3. Open `AUDIT.md` to document lead acquisition source, tech debt, and Loom audit pitch notes.
+
+### Phase 2: Deal Acceptance (Stage 2)
+When an offer is accepted:
+1. Run `python scripts/new_client_runner.py accept "[Client ID]"`
+2. Verify phases `03` through `08` are scaffolded.
+3. If building a web application or custom code project, initialize the repo under `projects/Clients/[slug]` or `projects/Websites/[slug]` and create a Windows junction in `05-development-and-build/`.
+4. Update `brain-aios/wiki/checklists/master-task-list.md` and `hot.md`.
+
+---
+
+## 🔄 Auto-Evolution Engine
+
+This skill includes an embedded continuous improvement protocol. Whenever a client engagement or sprint finishes:
+
+1. **Sprint Retrospective Audit**:
+   - Inspect `08-retainer-and-tracker/TRACKER.md` and `05-development-and-build/BUILD.md`.
+   - Identify any missing checklists, recurring client questions, or redundant setup steps.
+
+2. **Automatic Template Upgrade**:
+   - Update canonical template files in `brain-aios/wiki/templates/clients/`.
+   - Re-run `python scripts/verify_tri_mode_skills.py` to maintain skill integrity.
+
+3. **System Documentation Sync**:
+   - Log improvements in `brain-aios/wiki/log.md` and `decisions/log.md`.
+
+---
+
+## 🔗 Inter-Skill Connections
+- **Proposal Generation**: Feeds into `/ai-pricing-engine` for 3-option proposals.
+- **Deep Research**: Calls `/storm-research-project` for complex technical teardowns.
+- **Security QA**: Triggered during Phase 05 build via `/vibesec`.
+- **Handoff Documentation**: Calls `/humanizer` to ensure all client-facing docs sound warm and humanized.

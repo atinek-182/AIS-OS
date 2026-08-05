@@ -160,18 +160,18 @@
     "semantic_hash": ""
   },
   "scripts/build_master_brand_playbook.py": {
-    "mtime": 1785395060.4450963,
-    "ast_hash": "2ab4a89eecbfdb5c0f0538874db84d95",
+    "mtime": 1785610674.7932007,
+    "ast_hash": "436bada4f65255d96cdaf342d1fc0767",
     "semantic_hash": ""
   },
   "scripts/build_zorixel_master_foundation.py": {
-    "mtime": 1785391554.4008446,
-    "ast_hash": "cd10cb7a6bd7a7bd206c2f8df6fa0e69",
+    "mtime": 1785610690.3526084,
+    "ast_hash": "c21d50556f98eb1075a31db3ab78b988",
     "semantic_hash": ""
   },
   "scripts/build_zorixel_positioning_report.py": {
-    "mtime": 1785394719.6561377,
-    "ast_hash": "0d8175d1b1f923e0a28e0395972c81da",
+    "mtime": 1785610650.905372,
+    "ast_hash": "31ac77b9990b1e0bbcb86e24201f9c5b",
     "semantic_hash": ""
   },
   "scripts/capture_positioning_report.py": {
@@ -290,8 +290,8 @@
     "semantic_hash": ""
   },
   "scripts/organize_brand_os_research.py": {
-    "mtime": 1785395486.4285462,
-    "ast_hash": "ba0101755760ca150f0fd07e34000c20",
+    "mtime": 1785610699.358644,
+    "ast_hash": "cb3fb237a7b8e4a4e62f8d9e754f47bb",
     "semantic_hash": ""
   },
   "scripts/rebuild_presentation.py": {
@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
-    "mtime": 1785567290.4403133,
-    "ast_hash": "17a0f1617e5828f54008abe187ce076a",
+    "mtime": 1785742990.222811,
+    "ast_hash": "294b1fb6b4cb8ff1a0a5475688180e53",
     "semantic_hash": ""
   },
   ".agents/agents/developer.md": {
@@ -1645,18 +1645,18 @@
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1785609606.6592922,
-    "ast_hash": "e94536c257354cfc586eb07cc8f85248",
+    "mtime": 1785687683.9710999,
+    "ast_hash": "96d329ef1c6f33530da7a25360e7d60d",
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1785610154.3419619,
-    "ast_hash": "a50ba854e8477aafb05c0f0db391582b",
+    "mtime": 1785612614.3407989,
+    "ast_hash": "45710aa5cded8c0acbda1d3e3cdccd77",
     "semantic_hash": ""
   },
   "WORKSPACE_MAP.md": {
-    "mtime": 1785573664.3007262,
-    "ast_hash": "f4127b0cc3d35cedc946e88216a89317",
+    "mtime": 1785687665.0343266,
+    "ast_hash": "ae21963d1df2659b465ac771e18ab667",
     "semantic_hash": ""
   },
   "archives/intake-2026-07-14-1940/GEMINI.md": {
@@ -1860,8 +1860,8 @@
     "semantic_hash": ""
   },
   "context/experiences/README.md": {
-    "mtime": 1785574617.0512528,
-    "ast_hash": "a44f8c52293a055b8194e150b5ff8503",
+    "mtime": 1785612599.9818668,
+    "ast_hash": "a9a4b437786f807485a8ceff43926eb6",
     "semantic_hash": ""
   },
   "context/priorities.md": {
@@ -1870,8 +1870,8 @@
     "semantic_hash": ""
   },
   "decisions/log.md": {
-    "mtime": 1785609601.5362291,
-    "ast_hash": "3127035e46bf10300908a379bb3c1957",
+    "mtime": 1785739253.3279383,
+    "ast_hash": "c16667a33449bf6f147bd1576c027319",
     "semantic_hash": ""
   },
   "docs/daily-plans/2026-07-30-master-plan.md": {
@@ -1890,8 +1890,8 @@
     "semantic_hash": ""
   },
   "hot.md": {
-    "mtime": 1785574686.1999261,
-    "ast_hash": "d11a2d477661c9066f8fb54ae511c05d",
+    "mtime": 1785742996.03277,
+    "ast_hash": "8a1f8fa91f0ab45474da030ca9dec908",
     "semantic_hash": ""
   },
   "references/23-SITES-MASTER-DESIGN-MATRIX.md": {
@@ -2747,6 +2747,86 @@
   ".agents/skills/humanizer/SKILL.md": {
     "mtime": 1785573488.0906575,
     "ast_hash": "6b7edb72f857fb4b4a002f86e3cfc89c",
+    "semantic_hash": ""
+  },
+  "scripts/new_client_runner.py": {
+    "mtime": 1785687632.9105184,
+    "ast_hash": "7c90ecb5f634135ee7a4ccc6887f6a6d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ai-pricing-engine/SKILL.md": {
+    "mtime": 1785611488.1246402,
+    "ast_hash": "17977a3bfc3272db279b470706ce0c17",
+    "semantic_hash": ""
+  },
+  ".agents/skills/client-audit/SKILL.md": {
+    "mtime": 1785694442.1387615,
+    "ast_hash": "1b2951ea63ecbae0f1bc330fef9df143",
+    "semantic_hash": ""
+  },
+  ".agents/skills/new-client/SKILL.md": {
+    "mtime": 1785687675.58174,
+    "ast_hash": "1befce48e40ed2d43ed15d91780dc972",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-02-client-folder-architecture.md": {
+    "mtime": 1785687505.8922825,
+    "ast_hash": "d9430bf2a83be572794967c4c3ccb1b4",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-02-vashishthya-loom-pitch.md": {
+    "mtime": 1785689232.4233017,
+    "ast_hash": "51adb5f19ab957b0f649067ff04051be",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-02-zorixel-agency-positioning-and-strategy-grill.md": {
+    "mtime": 1785611857.3551824,
+    "ast_hash": "3eb0e685b0c5121ead1dffe3aa112ea9",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-02-zorixel-agency-strategy-roast-report.md": {
+    "mtime": 1785611845.5680377,
+    "ast_hash": "a2f1fcaa21eae1fd29661c36bf6444af",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/01-pre-outreach-audit/AUDIT.md": {
+    "mtime": 1785739236.3536077,
+    "ast_hash": "58fa48da038c21862145d0dd4e601b8b",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/01-pre-outreach-audit/CHATGPT_DEEP_RESEARCH_PROMPT.md": {
+    "mtime": 1785692442.632549,
+    "ast_hash": "97136887d3791d2e5b8ccfca48d4e0ef",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/02-proposal-and-agreement/PROPOSAL.md": {
+    "mtime": 1785739241.0528517,
+    "ast_hash": "c916fbeca7ee1db3cf8e2f0190de31a6",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-03-vashishthya-client-pitch-and-pilot.md": {
+    "mtime": 1785742156.0081627,
+    "ast_hash": "1a09f81241026e285e854718c7dda815",
+    "semantic_hash": ""
+  },
+  "brainstorms/2026-08-03-vashishthya-loom-mobile-bullets.md": {
+    "mtime": 1785742146.898345,
+    "ast_hash": "409de8a5ef11a0c5d2192b21bedf2e2f",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/01-pre-outreach-audit/DEEP_RESEARCH_REPORT.md": {
+    "mtime": 1785739230.0560942,
+    "ast_hash": "5d895e8e821b346c5d4aaaddcb4af574",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/01-pre-outreach-audit/LOOM_MOBILE_CHEAT_SHEET.md": {
+    "mtime": 1785742980.528097,
+    "ast_hash": "409de8a5ef11a0c5d2192b21bedf2e2f",
+    "semantic_hash": ""
+  },
+  "clients/001-vashishthya-research-edu/01-pre-outreach-audit/NOTION_WORKFLOW_MASTER_PLAN.md": {
+    "mtime": 1785742984.5186038,
+    "ast_hash": "fe32b55fe919ece6e19bc1a3eb0c8080",
     "semantic_hash": ""
   }
 }

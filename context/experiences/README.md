@@ -21,6 +21,9 @@
 - **2026-07-31**: [2026-07-31-website-design-engine-v3-and-six-file-methodology-upgrade.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-31-website-design-engine-v3-and-six-file-methodology-upgrade.md) — Website Design Engine v3.0 & Six-File Context Methodology v3.1 Upgrade (Local Reference Priority, Six-File Layout Control & Radiant Shaders HTML Extraction).
 - **2026-08-01**: [2026-08-01-humanizer-skill-and-lead-blueprints.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-01-humanizer-skill-and-lead-blueprints.md) — Humanizer Skill Ingestion (33 AI Anti-Slop Patterns), Universal Lead Input Blueprint & Dynamic Resource Recommendation Engine.
 - **2026-08-02**: [2026-08-02-value-based-pricing-and-micro-service-proof-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-02-value-based-pricing-and-micro-service-proof-architecture.md) — Value-Based AI Solution Pricing, Nate Herk Masterclass Ingestion & Micro-Service Proof Architecture.
+- **2026-08-03**: [2026-08-03-vashishthya-notion-intake-and-vault-rule.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-03-vashishthya-notion-intake-and-vault-rule.md) — Notion Operational OS Teardown, Mobile Loom Cheat Sheet Pattern & Client Vault Placement Mandate.
+- **2026-08-05**: [2026-08-05-gws-windows-subprocess-and-notion-formula2-safeguards.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-05-gws-windows-subprocess-and-notion-formula2-safeguards.md) — GWS Windows Direct Node Subprocess Routing, Notion Formula 2.0 Null Safeguards & Pre-Flight Automation Scripts.
+
 
 
 

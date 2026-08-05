@@ -38,12 +38,10 @@ This file logs cross-session learnings, operational preferences, and recurring c
 ## ⚙️ Operational Rules & Preferences
 1. **Default Shift:** Stubbornly refuse to execute repetitive tasks manually. Proactively offer to automate 30% to 75% of them.
 2. **Curiosity Rule:** Explain the structural logic, handle empty states, and prevent "dark code" (running unverified black-box commands) rather than just dumping output.
-3. **Search-First Adaptation:** When links or guides mention Claude Code, search the web first for native Antigravity ports. Only copy-paste Claude folders as a last resort, and *always* ask for user confirmation first.
-4. **Token Optimization:** Proactively clean up folders, keep file logs concise, and organize guides to reduce context overhead.
-5. **No Placeholders:** Generate real working assets and layouts. Never use placeholder images.
-6. **Local Reference Mirroring & Server Bypasses:** Mirror design references locally. Spin up background Node static servers (e.g. port 3000) to render local HTML files for visual Playwright tests to bypass browser permission blocks.
-7. **Diagram Storage Policy:** Always create and save Excalidraw diagrams inside the dedicated `diagrams/` folder at the workspace root instead of cluttering the root workspace directory.
-8. **Understand & Verify First Principle:** Never output changes or assert a task is complete without running physical verification (like Playwright browser checks or compilers) and reviewing the outputs. Always check everything before delivering.
+3. **Client Vault Artifact Placement Mandate:** All client-specific pitch scripts, cheat sheets, operational blueprints, proposals, and teardown guides MUST be placed directly inside their respective client vault directory under `clients/[ID]-[slug]/` (e.g., `clients/001-vashishthya-research-edu/01-pre-outreach-audit/`) rather than generic root directories or transient `brainstorms/` folders.
+4. **Real-World Founder Behavior Rule:** Always align client automation workflows with the founder's actual existing habits (e.g., phone call intake vs text form) rather than forcing complex custom web apps where simple zero-code Notion/Airtable mobile templates solve the problem.
+5. **Mobile Loom Cheat Sheet Pattern:** Always format pitch bullet points into mobile-optimized cheat sheets (`LOOM_MOBILE_CHEAT_SHEET.md`) for instant smartphone viewing during Loom video recording.
+
 9. **Vulnerability, Bloat, & Duplication Auditing:** Before any code is written, conduct a check-first analysis of potential vulnerabilities, bloat code, or duplicate logic.
 10. **Grill Me & Roast Prerequisite:** For any new design, feature, or business idea, run or recommend `/grill-me` or `/roast` to define and pressure-test the concept before starting implementation.
 11. **Fresh Session Bootup upgrades**: At the start of a new chat or session, before implementing new instructions, check and upgrade custom skills (such as `grill-me` or `roast`) to keep them up to date. Avoid blindly following instructions that conflict with system safety, logic, or clean design standards; stop and clarify first.

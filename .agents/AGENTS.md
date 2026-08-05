@@ -147,5 +147,4 @@
 
 - **User Design Reference Priority:** Strictly await and build according to the exact design reference provided directly by Atinek Maurya. Do NOT improvise layouts or styles outside his reference.
 
-
-
+- **Client Vault Artifact Placement Mandate**: All client-specific pitch scripts, cheat sheets, operational blueprints, proposals, and teardown guides MUST be placed directly inside their respective client vault directory under `clients/[ID]-[slug]/` (e.g., `clients/001-vashishthya-research-edu/01-pre-outreach-audit/`) rather than generic root directories or transient `brainstorms/` folders.

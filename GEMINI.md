@@ -47,6 +47,7 @@ Read `references/3ms-framework.md` once. It's how Atinek Maurya thinks about AI 
 - `/mattpocock-to-spec` — Technical SPEC compiler turning loose user prompts into structured architecture contracts.
 - `/mattpocock-to-tickets` — Spec-to-tickets deconstructor creating atomic engineering tasks with verifiable DoD.
 - `/mattpocock-wayfinder` — Multi-session macro planning and issue map manager.
+- `/new-client` — Standardized 8-phase client vault scaffolding engine and auto-evolution protocol for ZORIXEL.
 - `/new-project` — Scaffolds project directory, design/asset briefs, and starts discovery Q&A.
 - `/notion-sync` — Sync decisions, logs, and checklists to Notion pages/databases.
 - `/onboard` — Re-run any time to refresh context from `context/aios-intake.md`.
