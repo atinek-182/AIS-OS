@@ -1,0 +1,116 @@
+---
+name: interactive-operator-guide-generator
+description: Generates interactive HTML setup dashboards and step-by-step SOP guides with copy-pasteable formulas, properties, and sample data. Use when handing off technical workflows or client system setups.
+argument-hint: '[system_name] [target_audience] [output_directory]'
+---
+
+# Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
+
+## ⚡ Overview & Tri-Mode Execution
+
+This skill compiles dual-layer operator documentation for client handoffs, team onboarding, and AIOS system deployments. It outputs both a structured Executive SOP Markdown document and an Interactive HTML Setup Dashboard featuring 1-click copy code blocks, dynamic tabbed sections, visual schema diagrams, and test checklists.
+
+Invokable via:
+- **Slash Command**: `/interactive-operator-guide-generator`
+- **Dynamic Intent**: Triggered when finalizing client deliverables, completing Notion/Apps Script builds, or handing off new automations.
+- **Programmatic Inter-Skill Calling**: Invoked by `/new-client`, `/zero-paywall-client-os`, `/gstack`, or `/session-postmortem-audit`.
+
+---
+
+## 📦 Required Output Deliverables Contract
+
+Every invocation MUST generate exactly TWO artifacts:
+
+1. **Executive SOP Markdown Document (`.md`)**:
+   - Location: `03-pitch-and-loom-guides/OPERATOR_SETUP_SOP.md`
+   - Content: Click-by-click instructions, property tables, Apps Script deployment steps, and Loom video script outline.
+
+2. **Interactive HTML Setup Dashboard (`.html`)**:
+   - Location: `04-visual-assets-and-previews/OPERATOR_DASHBOARD.html`
+   - Content: Self-contained HTML/CSS file with tabbed navigation, `user-select: all` code blocks, copy buttons, and interactive verification checkboxes.
+
+---
+
+## 🎨 HTML Dashboard Design System & Styling Tokens
+
+Strict adherence to ZORIXEL Master Brand Identity v3.0 (Option 1 Palette):
+
+- **Canvas Background**: Warm Linen Cream (`#FAF8F5`)
+- **Card Elements**: Solid White (`#FFFFFF`) with 1px border (`#E2E0DB`)
+- **Primary Headers**: Velvet Burgundy (`#6D001A`)
+- **Primary Pop CTA**: Electric Crimson (`#D61C2C`)
+- **Accent Elements**: Vintage Ochre Gold (`#C5A059`)
+- **Code Container CSS**:
+  ```css
+  .copy-code-block {
+    background-color: #F4F2EC;
+    border: 1px solid #D6D3C9;
+    border-radius: 6px;
+    padding: 14px 18px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    color: #1A1A1A;
+    user-select: all;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  ```
+
+---
+
+## 📋 Interactive HTML Dashboard Boilerplate
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZORIXEL Client OS Operator Dashboard</title>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background-color: #FAF8F5; color: #1A1A1A; margin: 0; padding: 32px; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .header { border-bottom: 2px solid #6D001A; padding-bottom: 16px; margin-bottom: 32px; }
+    .header h1 { color: #6D001A; font-size: 28px; margin: 0 0 8px 0; }
+    .card { background: #FFFFFF; border: 1px solid #E2E0DB; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+    .card h2 { color: #6D001A; margin-top: 0; font-size: 20px; }
+    .code-box { background: #F4F2EC; border: 1px solid #D6D3C9; border-radius: 6px; padding: 16px; font-family: monospace; user-select: all; overflow-x: auto; white-space: pre-wrap; }
+    .badge { background: #6D001A; color: #FAF8F5; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">ZORIXEL AIOS OPERATOR DASHBOARD</span>
+      <h1>System Setup & Interactive Formula Guide</h1>
+    </div>
+    <div class="card">
+      <h2>Step 1: Copy Notion Formula 2.0 Expression</h2>
+      <p>Click anywhere in the code box below to select the full formula, then paste into Notion:</p>
+      <div class="code-box">if(empty(prop("Phone")), "", "https://wa.me/91" + replaceAll(prop("Phone"), "[^0-9]", "") + "?text=Namaste%20" + replaceAll(if(empty(prop("Name")), "Scholar", prop("Name")), " ", "%20"))</div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+---
+
+## 🧪 Verification Protocol
+
+1. Run Playwright visual QA (`python scripts/verify_design_milestone.py` or `verify_micrographics_design.js`) to confirm HTML rendering.
+2. Confirm 0 broken layout boxes, 100% readable typography, and complete `user-select: all` functionality.
+
+---
+
+## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+
+At the completion of every execution of this skill:
+
+1. **Adversarial `/roast` Council Review**: Convene the 5-Persona ZORIXEL AIOS Roast Council (`/roast`) to stress-test the output, code edits, or strategy generated by this skill. Red-team for missing edge cases, terminal shell bugs, token leaks, or optimization gaps.
+2. **Autonomous Tool, Script & Skill Auto-Upgrade Loop**:
+   - If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.md` and execute `python scripts/sync_global_rules.py` via `run_command` so system prompts (`AGENTS.md` and `GEMINI.md`) auto-update inline.
+   - Run pre-flight health checks (`aios_gws_health_check.py`, `test_notion_formula.py`, `graphify_runner.py`).
+   - Self-upgrade this `SKILL.md` instruction file with newly learned edge cases using `replace_file_content` or `write_to_file`.
+3. **Register & Log**: Log milestone upgrades in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) and [decisions/log.md](file:///d:/AI-OS/decisions/log.md).
+

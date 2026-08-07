@@ -1,0 +1,126 @@
+---
+name: notion-formula-builder
+description: Compiles bulletproof Notion Formula 2.0 expressions with empty-property null guards, native URL encoding, progress bars, WhatsApp link generators, and financial calculations. Validates syntax locally via scripts/test_notion_formula.py. Use when building or editing Notion database formulas.
+argument-hint: '[formula_type] [property_names...]'
+---
+
+# Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
+
+## ⚡ Overview & Tri-Mode Execution
+
+This skill designs, validates, and compiles production-ready Notion Formula 2.0 expressions for database properties. It guarantees 100% crash-free formula execution on blank/empty database rows, converts text properties dynamically for URL parameters, and enforces native Notion Formula 2.0 syntax rules.
+
+Invokable via:
+- **Slash Command**: `/notion-formula-builder`
+- **Dynamic Intent**: Triggered when designing Notion database schemas, WhatsApp click buttons, balance calculations, or progress bars.
+- **Programmatic Inter-Skill Calling**: Invoked by `/new-client`, `/zero-paywall-client-os`, `/interactive-operator-guide-generator`, or `/notion-sync`.
+
+---
+
+## 🎯 Core Rules & Architectural Safeguards
+
+1. **Zero Browser JavaScript Web API Ban**:
+   - **NEVER** output browser Web APIs (`encodeURIComponent()`, `decodeURIComponent()`, `window`, `fetch`, `console.log`).
+   - Notion Formula 2.0 is a custom expression language running inside Notion's engine; browser JavaScript functions throw `[122,140] ... is not defined` syntax errors.
+2. **Defensive `empty()` Null Guards**:
+   - **ALWAYS** wrap EVERY property reference in a defensive `if(empty(prop("Property Name")), fallback_value, active_value)` guard.
+   - Concatenating or running math on empty properties in newly created database rows causes runtime formula exceptions or blank rendering crashes.
+3. **Native Pre-Encoded URL Formatting**:
+   - For WhatsApp, email, or webhook links, pre-encode static string delimiters directly:
+     - Space $\rightarrow$ `%20`
+     - Newline $\rightarrow$ `%0A`
+     - Comma $\rightarrow$ `%2C`
+     - Colon $\rightarrow$ `%3A`
+   - For user-entered text properties (e.g. `prop("Name")`, `prop("Status")`), replace spaces dynamically:
+     ```javascript
+     replaceAll(if(empty(prop("Name")), "Default", prop("Name")), " ", "%20")
+     ```
+4. **Regex Phone Sanitization**:
+   - For phone number links (`wa.me`), strip all non-numeric characters before prefixing country codes:
+     ```javascript
+     replaceAll(prop("Phone"), "[^0-9]", "")
+     ```
+
+---
+
+## 📋 Standard Production Formula Blueprints
+
+### 1. 1-Click WhatsApp Link Generator Blueprint
+Generates a pre-filled WhatsApp chat URL with client name, status, and financial balance due.
+
+```javascript
+if(
+  empty(prop("Phone")),
+  "",
+  if(
+    empty(replaceAll(prop("Phone"), "[^0-9]", "")),
+    "",
+    "https://wa.me/91" +
+    replaceAll(prop("Phone"), "[^0-9]", "") +
+    "?text=Namaste%20" +
+    replaceAll(if(empty(prop("Name")), "Scholar", prop("Name")), " ", "%20") +
+    "%20Ji%2C%0A%0AYour%20order%20status%20is%3A%20" +
+    replaceAll(if(empty(prop("Status")), "New", prop("Status")), " ", "%20") +
+    "%20(Balance%20Due%3A%20INR%20" +
+    if(empty(prop("Balance Due")), "0", format(prop("Balance Due"))) +
+    ")"
+  )
+)
+```
+
+### 2. 5-Step Checkbox Progress Bar Blueprint
+Calculates percentage completion across 5 project milestone checkboxes and renders a visual progress bar.
+
+```javascript
+(
+  if(prop("Step 1 Intake"), 1, 0) +
+  if(prop("Step 2 Draft"), 1, 0) +
+  if(prop("Step 3 Review"), 1, 0) +
+  if(prop("Step 4 Final"), 1, 0) +
+  if(prop("Step 5 Delivered"), 1, 0)
+) * 0.20
+```
+
+### 3. Financial Balance Due Blueprint
+Calculates remaining balance with defensive null fallbacks.
+
+```javascript
+if(empty(prop("Total Fee")), 0, prop("Total Fee")) - if(empty(prop("Advance Paid")), 0, prop("Advance Paid"))
+```
+
+### 4. Days Overdue / SLA Tracker Blueprint
+Calculates days remaining or days past due for tasks.
+
+```javascript
+if(
+  empty(prop("Due Date")),
+  "No SLA",
+  if(
+    dateBetween(prop("Due Date"), now(), "days") < 0,
+    "OVERDUE by " + format(abs(dateBetween(prop("Due Date"), now(), "days"))) + " days",
+    format(dateBetween(prop("Due Date"), now(), "days")) + " days remaining"
+  )
+)
+```
+
+---
+
+## 🧪 Pre-Execution Local Validation Protocol
+
+Before outputting or pasting Notion formulas:
+1. Run local Python validator `python scripts/test_notion_formula.py` using `run_command`.
+2. Inspect validation log to ensure zero parens mismatch, zero browser JS function calls, and full defensive null guard coverage.
+
+---
+
+## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+
+At the completion of every execution of this skill:
+
+1. **Adversarial `/roast` Council Review**: Convene the 5-Persona ZORIXEL AIOS Roast Council (`/roast`) to stress-test the output, code edits, or strategy generated by this skill. Red-team for missing edge cases, terminal shell bugs, token leaks, or optimization gaps.
+2. **Autonomous Tool, Script & Skill Auto-Upgrade Loop**:
+   - If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.md` and execute `python scripts/sync_global_rules.py` via `run_command` so system prompts (`AGENTS.md` and `GEMINI.md`) auto-update inline.
+   - Run pre-flight health checks (`aios_gws_health_check.py`, `test_notion_formula.py`, `graphify_runner.py`).
+   - Self-upgrade this `SKILL.md` instruction file with newly learned edge cases using `replace_file_content` or `write_to_file`.
+3. **Register & Log**: Log milestone upgrades in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) and [decisions/log.md](file:///d:/AI-OS/decisions/log.md).
+

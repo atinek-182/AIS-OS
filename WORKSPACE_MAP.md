@@ -10,7 +10,10 @@ This document serves as the centralized directory and file index for Atinek Maur
 | Directory / File | Type | Purpose | Owner / Writer |
 | :--- | :--- | :--- | :--- |
 | [GEMINI.md](file:///d:/AI-OS/GEMINI.md) | File | Primary system prompt, voice instructions, and operator guidelines. | Operator / AIOS |
+| [AGENTS.md](file:///d:/AI-OS/AGENTS.md) | File | Primary workspace system prompt rules loaded on every chat startup. | Operator / AIOS |
 | [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) | File | This map. Centralized index of configurations, scripts, and logs. | AIOS (Immediate updates) |
+| [scripts/sync_global_rules.py](file:///d:/AI-OS/scripts/sync_global_rules.py) | File | Automated script synchronizing living error rules into AGENTS.md and GEMINI.md system prompts. | AIOS |
+| [scripts/auto_evolve_all_skills.py](file:///d:/AI-OS/scripts/auto_evolve_all_skills.py) | File | Automated script injecting the /roast gate and auto-evolution loop across all 65+ workspace skills. | AIOS |
 | [.vscode/settings.json](file:///d:/AI-OS/.vscode/settings.json) | File | VS Code workspace configuration, setting default Python interpreter to trials/.venv. | AIOS |
 | [diagrams/](file:///d:/AI-OS/diagrams/) | Folder | Dedicated directory organizing all Excalidraw design and workflow diagrams. | AIOS |
 | [diagrams/aios-workflow.excalidraw](file:///d:/AI-OS/diagrams/aios-workflow.excalidraw) | File | Excalidraw workflow diagram showing vaults, engines, processing and outputs. | AIOS |
@@ -34,6 +37,19 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [second-brain-zorixel/graphify-out/](file:///d:/AI-OS/second-brain-zorixel/graphify-out/) | Folder | Output directory containing Second Brain Zorixel Vault Knowledge Graph files. | Graphify / AIOS |
 | [premium-frontend-experience-system/graphify-out/](file:///d:/AI-OS/premium-frontend-experience-system/graphify-out/) | Folder | Output directory containing Premium Frontend System Vault Knowledge Graph files. | Graphify / AIOS |
 | [brain-aios/wiki/research/skills-library/graphify/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/graphify/) | Folder | Ingested reference research vault for Graphify knowledge graph engine. | AIOS |
+| [references/GLOBAL_ERROR_PREVENTION_RULES.md](file:///d:/AI-OS/references/GLOBAL_ERROR_PREVENTION_RULES.md) | File | Central living registry of 11 error prevention rules, terminal safeguards, Windows shell limits, Notion bounds, and user first-try delivery policies. | AIOS |
+| [.agents/skills/global-rules-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/global-rules-engine/SKILL.md) | File | Tier 1 native skill for managing, appending, auditing, and synchronizing global error prevention rules into system prompts. | AIOS |
+| [.agents/skills/notion-formula-builder/SKILL.md](file:///d:/AI-OS/.agents/skills/notion-formula-builder/SKILL.md) | File | Tier 1 native skill for Notion Formula 2.0 building with defensive empty() null guards and pre-encoded URLs. | AIOS |
+| [.agents/skills/gws-automation-engine/SKILL.md](file:///d:/AI-OS/.agents/skills/gws-automation-engine/SKILL.md) | File | Tier 1 native skill for Google Workspace CLI (gws) automation engine on Windows OS. | AIOS |
+| [.agents/skills/zero-paywall-client-os/SKILL.md](file:///d:/AI-OS/.agents/skills/zero-paywall-client-os/SKILL.md) | File | Tier 1 native skill for zero-subscription client operational hub architecture engine. | AIOS |
+| [.agents/skills/interactive-operator-guide-generator/SKILL.md](file:///d:/AI-OS/.agents/skills/interactive-operator-guide-generator/SKILL.md) | File | Tier 1 native skill generating interactive HTML setup dashboards and step-by-step SOP guides. | AIOS |
+| [scripts/build_loom_presentation.py](file:///d:/AI-OS/scripts/build_loom_presentation.py) | File | Automated python compiler building 16:9 HTML slide decks with Base64 Havock & Rosehot brand fonts. | AIOS |
+| [scripts/convert_script_to_pdf.py](file:///d:/AI-OS/scripts/convert_script_to_pdf.py) | File | Automated python script building formatted HTML template for Loom video pitch script. | AIOS |
+| [scripts/compile_script_pdf.py](file:///d:/AI-OS/scripts/compile_script_pdf.py) | File | Playwright headless browser compiler compiling script HTML into branded PDF file. | AIOS |
+| [scripts/test_pdf_health.py](file:///d:/AI-OS/scripts/test_pdf_health.py) | File | Pre-flight health check script verifying base64 font embedding and script PDF output size. | AIOS |
+| [scripts/test_presentation_health.py](file:///d:/AI-OS/scripts/test_presentation_health.py) | File | Pre-flight health check script verifying presentation HTML fonts, 82px display headers, live links, and lightbox modals. | AIOS |
+| [scripts/aios_gws_health_check.py](file:///d:/AI-OS/scripts/aios_gws_health_check.py) | File | Automated pre-flight health check script verifying Node.js, gws run.js, OAuth tokens, and GCP APIs. | AIOS |
+| [scripts/test_notion_formula.py](file:///d:/AI-OS/scripts/test_notion_formula.py) | File | Local syntax and safety validator script for Notion Formula 2.0 expressions. | AIOS |
 | [scripts/graphify_runner.py](file:///d:/AI-OS/scripts/graphify_runner.py) | File | Multi-vault Graphify automation script managing tree-sitter AST knowledge graphs. | AIOS |
 | [.agents/skills/graphify/SKILL.md](file:///d:/AI-OS/.agents/skills/graphify/SKILL.md) | File | Tier 1 native Graphify skill for querying codebase and vault knowledge graphs. | AIOS |
 | [.agents/skills/humanizer/SKILL.md](file:///d:/AI-OS/.agents/skills/humanizer/SKILL.md) | File | Tier 1 native Humanizer skill scrubbing 33 AI writing patterns globally across text and copy. | AIOS |

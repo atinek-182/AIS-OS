@@ -1,6 +1,14 @@
 import sys
+import re
 
-INVALID_JS_FUNCTIONS = ["encodeURIComponent", "decodeURIComponent", "window", "fetch", "document", "console.log"]
+INVALID_JS_FUNCTIONS = [
+    "encodeURIComponent",
+    "decodeURIComponent",
+    "window",
+    "fetch",
+    "document",
+    "console.log"
+]
 
 def validate_notion_formula(formula_str):
     print("========================================================")
@@ -15,7 +23,7 @@ def validate_notion_formula(formula_str):
         sys.exit(1)
     print(f"[OK] Parentheses balanced ({open_p} pairs).")
     
-    # 2. Check for prohibited JS functions
+    # 2. Check for prohibited JS browser functions
     for fn in INVALID_JS_FUNCTIONS:
         if fn in formula_str:
             print(f"[ERROR] Invalid function '{fn}' detected! Notion Formula 2.0 does not support browser JS functions.")
@@ -31,9 +39,9 @@ def validate_notion_formula(formula_str):
         print("[OK] Defensive empty() null guards detected.")
         
     print("\n========================================================")
-    print("NOTION FORMULA VALIDATION PASSED!")
+    print("NOTION FORMULA VALIDATION PASSED SUCCESSFULLY!")
     print("========================================================\n")
 
 if __name__ == "__main__":
-    test_formula = """if(empty(prop("Phone")), "", "https://wa.me/91" + replaceAll(prop("Phone"), "[^0-9]", "") + "?text=Hello%20" + replaceAll(if(empty(prop("Name")), "Scholar", prop("Name")), " ", "%20"))"""
+    test_formula = """if(empty(prop("Phone")), "", if(empty(replaceAll(prop("Phone"), "[^0-9]", "")), "", "https://wa.me/91" + replaceAll(prop("Phone"), "[^0-9]", "") + "?text=Namaste%20" + replaceAll(if(empty(prop("Name")), "Scholar", prop("Name")), " ", "%20") + "%20Ji%2C%0A%0AYour%20order%20status%20is%3A%20" + replaceAll(if(empty(prop("Status")), "New", prop("Status")), " ", "%20") + "%20(Balance%20Due%3A%20INR%20" + if(empty(prop("Balance Due")), "0", format(prop("Balance Due"))) + ")"))"""
     validate_notion_formula(test_formula)

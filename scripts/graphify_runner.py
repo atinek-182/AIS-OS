@@ -22,8 +22,10 @@ HUBS = {
 
 def run_command(cmd, cwd=None):
     """Executes a command and returns exit code, stdout, stderr."""
-    process = subprocess.run(cmd, cwd=cwd, shell=True, capture_output=True, text=True)
-    return process.returncode, process.stdout.strip(), process.stderr.strip()
+    process = subprocess.run(cmd, cwd=cwd, shell=True, capture_output=True, encoding='utf-8', errors='replace')
+    stdout = process.stdout.strip() if process.stdout else ""
+    stderr = process.stderr.strip() if process.stderr else ""
+    return process.returncode, stdout, stderr
 
 def build_graph(target_hub="all"):
     """Builds or updates knowledge graph for target hub(s)."""

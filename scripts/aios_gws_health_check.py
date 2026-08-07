@@ -5,10 +5,11 @@ import sys
 import os
 
 GWS_RUN_JS = r"C:\Users\HP\AppData\Roaming\npm\node_modules\@googleworkspace\cli\run.js"
+BRAND_CREDS = r"C:\Users\HP\.config\gws\credentials_brand.json"
 
 def check_gws_health():
     print("========================================================")
-    print("ZORIXEL AIOS: Google Workspace CLI (gws) Health Check")
+    print("ZORIXEL AIOS: Google Workspace CLI (gws) Pre-Flight Check")
     print("========================================================\n")
     
     # 1. Verify Node.js
@@ -25,15 +26,34 @@ def check_gws_health():
     print(f"[OK] gws run.js entry point located.")
     
     # 3. Test Drive API Call
+    env = os.environ.copy()
+    valid_creds = None
+    for path, label in [(BRAND_CREDS, "ZORIXEL Brand"), (r"C:\Users\HP\.config\gws\credentials_personal.json", "Personal")]:
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    json.load(f)
+                valid_creds = (path, label)
+                break
+            except Exception:
+                pass
+                
+    if valid_creds:
+        env["GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE"] = valid_creds[0]
+        print(f"[OK] Using {valid_creds[1]} Credentials: {valid_creds[0]}")
+    else:
+        env.pop("GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE", None)
+        print("[INFO] Using Default OAuth Credentials Keyring.")
+        
     cmd = ["node", GWS_RUN_JS, "drive", "files", "list", "--params", '{"pageSize": 1}']
-    res = subprocess.run(cmd, capture_output=True, text=True, shell=False)
+    res = subprocess.run(cmd, capture_output=True, text=True, shell=False, env=env)
     
     if res.returncode != 0:
         err_text = res.stderr or res.stdout
         print("\n[ERROR] gws Health Check Failed!")
         if "invalid_grant" in err_text:
             print("-> OAuth refresh token is EXPIRED or REVOKED.")
-            print("-> RUN: python scripts/login_gws.py to re-authenticate.")
+            print("-> RUN: node " + GWS_RUN_JS + " auth login to re-authenticate.")
         elif "accessNotConfigured" in err_text or "has not been used in project" in err_text:
             print("-> Google Drive/Sheets API is DISABLED on your GCP project.")
             print("-> Enable Drive API: https://console.developers.google.com/apis/api/drive.googleapis.com/overview?project=zorixel-aios")

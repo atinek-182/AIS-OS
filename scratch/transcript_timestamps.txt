@@ -1,0 +1,66 @@
+Language: en
+
+[000.00s -> 012.92s] Namaste Pachan sir, Pujya ma'am. I got your reference through my sister, Jyushita
+[012.92s -> 018.62s] Morya and saw how dedicatively you both run, but she still is at my side and at our
+[018.62s -> 023.52s] new journals. First of all, I want to play a riff for something that I am not here to
+[023.52s -> 031.92s] sell anything to charge. So, I just made this simple, easy to use you tool for your team
+[031.92s -> 040.96s] to save time every single day. Now, I noticed a lot of your time goes into talking to scholars
+[040.96s -> 048.56s] on course, writing details on paper notes and in a few updates and calling staff again
+[048.56s -> 056.56s] again, check work progress and I want to take a lot of energy and raise around nearly
+[056.56s -> 066.88s] 50 to 100 hours of work every movement. Now, tackle this, I have created a question called
+[066.88s -> 075.20s] intake desk and it is something like that and now I want to show you how this works.
+[075.20s -> 086.40s] It has fully made for yourself and here it is something which I want to tell you and tell you.
+[088.56s -> 095.04s] So, it is a data base, it has everything, a scholar name, contact number, email address and
+[095.04s -> 102.08s] services required etc. Now, if I have a good call intake desk, it is a form you can fill whenever
+[102.16s -> 117.28s] a call can. Now, if I share how you can fill that in just simple base. Now, you can just write a name
+[117.84s -> 130.16s] of this column and also the contact of that scholar and I can also write email if they have.
+[131.12s -> 138.32s] Now, you can select services required, here are the some sections which I have found from your
+[138.32s -> 148.64s] website and scrap. Now, if I want to basically, if I am client and I want a utility writing,
+[148.64s -> 156.32s] you can check that. Also, you can write the agreed total fees there like in 2000,
+[157.28s -> 166.08s] 19,000 and I have paid in advance 10,000 rupees. Now, you can also assign the team member,
+[166.08s -> 173.12s] I have written only three for the starting, you can add more. Now, if I select the team member
+[173.12s -> 181.04s] and also I can select a deadline if the client gave me like anti-aggressive and you can submit it.
+[181.28s -> 192.24s] Okay, and also I can email a copy of this. Now, if I go back to here, now you can see in the
+[192.24s -> 203.68s] database it has added a new page which has everything to it like my name, my number. I have not
+[203.68s -> 209.28s] written the email address but you can add that as well. Now, the services required we can add more
+[209.36s -> 216.80s] from here if they ever told you that and you can see here I have written the total agreed fees
+[216.80s -> 223.52s] and also the advance fee and it all automatically generates the balance amount and you can check
+[224.32s -> 232.72s] how this payment is paid unpaid partially paid or fully settled. Now, I write partially paid
+[233.20s -> 240.80s] because I have still a balance in here. Now, I can write the status in here like it is a new intake
+[242.16s -> 247.92s] and here it is everything and these are the steps which the employees will do since I don't know
+[247.92s -> 254.80s] about your internal work. So, I have not created this system or the employees, we can take these,
+[254.80s -> 262.24s] you can take that but I want the employees to take as they work from here. Now, you can see the
+[262.24s -> 275.60s] progress bar like it is zero. Basically, it is there is no work is done. As we move forward,
+[275.60s -> 284.08s] this will the progress bar will become light on your phone and also the laptop. Now, here work
+[284.80s -> 295.60s] you can see in the 2-2 list there has been 3 tasks and her employees and you can see what is
+[295.60s -> 304.48s] what to do and what is in progress and what has completed. Now, if I move to here, I want to tell you
+[304.48s -> 310.96s] that you do not have to worry losing any data or learning any complex systems. Every 15 minutes
+[310.96s -> 318.40s] our background system automatically sings every new notion and p into this shared google sheet.
+[319.28s -> 326.64s] Now, it is 100% safe back them and accessible anytime. You can see in the audit log,
+[326.64s -> 340.08s] it in every 15 minutes it runs as script and find the data. Now, what I have I have I have I did
+[340.16s -> 347.52s] here can come in 15 minutes and also it will be sent and we can change everything here.
+[348.32s -> 358.32s] Now, if I want to tell you you can also in one click, you can also
+[358.48s -> 369.12s] in one click on ocean, what is up opens with the reshaped and
+[370.80s -> 378.24s] lens alert pre-filled for the scholar. You do not have to type long messages manually and I want
+[378.32s -> 388.48s] to show you something. Now, like here if I go to executive masterdesk and go here, I can simply
+[389.76s -> 399.92s] click on the link and it opens a link which is pre-filled and I can simply open my whatsapp and
+[399.92s -> 406.88s] it will send a pre-formatted text. Here it is my name, the client's name, here about the
+[406.88s -> 413.20s] greetings and also it shows the current status like it is a new intake and also it shows the
+[413.20s -> 417.60s] balance amount and you can send everywhere and also it has the
+[417.68s -> 443.44s] the greetings as well. Now, if I move here and I tell you, we also check your general website and
+[443.44s -> 451.36s] found two simple things we can fix for you. As fixing the website layout, so scholars can easily
+[451.36s -> 460.64s] rated on smartphones without scrolling sideways as of now your website is not permitted for the
+[460.64s -> 470.16s] mobile and the user experience we can fix easily and also the other things helping you publish
+[470.24s -> 476.24s] research papers show up directly on this Google's folder. You go, so authors can get
+[476.24s -> 483.84s] statistical credits. It's nothing, we need all these three lines in the code and the Google
+[483.84s -> 489.76s] can analyze these and know about your website and it's now.
+[493.28s -> 498.72s] This simple workspace is just one step. In the future, we can also add five more helpful
+[498.80s -> 506.56s] features for your team like our Word document layout checker just checks paper formatting
+[506.56s -> 515.20s] internet and also the 24-7 WhatsApp inquiry assistant. We can set up that and the third one
+[515.20s -> 520.24s] general reminder what for paper reviewers. The fourth one click payment,
+[521.20s -> 528.64s] APC advising which generates shifts and invices. Also, the fifth one instant functionality and
+[528.64s -> 536.80s] plagiarism checker. It checks plagiarism and originality instantly. Now, I'd
+[536.80s -> 542.80s] just set up the entire simple workspace and fix your website issues for free as a simple special
+[542.80s -> 549.76s] pilot project. If you like this idea, just reply yes on WhatsApp and we can spend 30 minutes on
+[549.76s -> 555.76s] a Zoom call to hand it over to you and discuss about the future more automations at a
+[555.76s -> 561.12s] point in the future. Thank you so much, sir. A told.
