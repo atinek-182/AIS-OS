@@ -75,12 +75,12 @@ To eliminate delivery iterations and ensure AIOS succeeds on the FIRST attempt:
 
 ---
 
-## 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES
+## 🔒 SECTION 4: SECURITYOS MITRE ATT&CK, NIST 2.0 & MITRE ATLAS STANDARDS
 
-1. **Strict Zero-Emoji Mandate**: Never use emojis anywhere in any response, chat message, skill file, code comment, commit message, documentation, or project artifact across any workspace.
-2. **Zero Prompting to Move Forward**: Never push the user toward execution waves or code writing. Never ask "Should we start coding?". Keep pre-coding locked until explicit "YES" command.
-3. **Graphify-First Context Discovery**: ALWAYS run `python scripts/graphify_runner.py` or inspect graphify AST context at task startup before making plans or edits.
-4. **Empirical Verification Before Completion Assertions**: Never claim a task is fixed or complete without running runtime tests or verification scripts and inspecting exact output logs.
+1. **Active Vulnerability Gate**: All code modifications MUST undergo static security auditing via `python scripts/security_os_runner.py audit .`. Any `CRITICAL` finding (IDOR vulnerability, SQL injection vector, unauthenticated state mutation, plain-text API key, or severe prompt injection exposure) is a hard-stop block that must be resolved before proceeding.
+2. **MITRE ATLAS AI Subagent Safety**: All AI tools, subagents, prompt templates, and user input webhooks MUST incorporate defensive sanitization against prompt injection, context hijacking, and SSRF internal network sweeps.
+3. **Zero-Trust Input Validation & Zod Schema Enforcement**: All incoming HTTP parameters, webhooks, and API payloads MUST be validated using strict Zod or equivalent type schemas to prevent mass assignment, type coercion, or arbitrary code execution vulnerabilities.
+4. **Client Deliverable Security Auditing**: All web applications and client dashboards delivered under ZORIXEL Agency Sprints MUST pass OWASP Top 10 and NIST CSF 2.0 compliance audits, delivering both an Interactive HTML Audit Dashboard and Executive PDF Security Certificate.
 <!-- END INLINE GLOBAL ERROR PREVENTION RULES -->
 
 ---
@@ -106,5 +106,14 @@ Multi-context layout using `CONTEXT-MAP.md` at root pointing to per-package `CON
 3. **GStack Executive Matrix**: `/gstack ceo` -> `/grill-with-docs` -> `/gstack eng` (Enforces `/codebase-design` deep modules) -> `/implement` -> `/gstack qa` + `/code-review`.
 4. **Fullstack UI Architecture**: `/jsmastery-architect` (Server Actions & Zod) -> `/prototype` (Throwaway UI state) -> `/to-spec` -> `/implement` + `/hallmark` (OKLCH math & anti-slop).
 5. **Incident Response & Debugging**: `/diagnosing-bugs` (6-step feedback loop) -> `/improve-codebase-architecture` -> `/vibesec` security gate.
+
+### ⚡ 5 Advanced Specialized Scenario Chains
+
+6. **MCP Engineering Pipeline**: `/build-mcp-server` -> `/build-mcpb` -> `/build-mcp-app` -> `/mcp-integration`.
+7. **Composio SaaS Integration**: `/composio` (1000+ apps) -> `/gws-automation-engine` -> `/notion-sync` -> `/zero-paywall-client-os`.
+8. **React Video & Motion Engine**: `/canvas-design` -> `/gsap-animation` -> `/remotion` -> `/carousel-render`.
+9. **Autoresearch & Observability**: `/storm-research-project` -> `/smart-explore` -> `/autoresearch-manage` -> `/graphify`.
+10. **Visual Handoff & Deck Engine**: `/excalidraw-diagram` -> `/frontend-slides` -> `/interactive-operator-guide-generator` -> `/wowerpoint`.
+
 
 

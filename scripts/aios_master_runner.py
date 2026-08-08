@@ -37,6 +37,7 @@ def health_check():
     
     checks = [
         ("SDLC Skills & Personas", "agent_skills_runner.py", ["validate"]),
+        ("SecurityOs Cybersecurity Engine", "test_security_os_health.py", []),
         ("Graphify AST Engine", "graphify_runner.py", ["status"]),
         ("Skill Workflow Evolver", "skill_workflow_evolver_runner.py", ["classify"]),
         ("Workspace Map Alignment", "validate_workspace_map.py", [])

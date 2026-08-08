@@ -15,6 +15,22 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-08 — SecurityOs Active Security Engine & 817 Skills Integration (`/security-os` & `/session-postmortem-audit`)
+
+**Decision:** Integrated **`SecurityOs` (817 Anthropic Cybersecurity Skills)** across AIOS skills, scripts, workflows, system prompts, and ZORIXEL Agency client deliverables:
+1. **Repository Junction & Licensing**: Cloned 4,510 files to `D:\SecurityOs`, linked via directory junction at `d:\AI-OS\SecurityOs`, and verified 100% free open-source status under Apache License 2.0.
+2. **Central Security Engine (`scripts/security_os_runner.py`)**: Built unified Python CLI router supporting 29-domain search, static code vulnerability auditing, smart severity hard-stop enforcement, and multi-agent platform exporting (`--target cursor|claude|gemini|antigravity|codex`).
+3. **Pre-Flight Health Check (`scripts/test_security_os_health.py`)**: Built automated validator testing skill index integrity, query speed (<500ms), and multi-agent exporter functionality. Injected into `aios_master_runner.py`.
+4. **Tier-1 Native Skill (`.agents/skills/security-os/SKILL.md`)**: Registered `/security-os` in Phase 5 (Review & Hardening) of the 6-Phase SDLC Master Engine (`using-agent-skills`).
+5. **Personalized Skill Matrix**: Injected personalized security guardrails across 13 core workspace skills (`website-design-engine`, `six-file-context-methodology`, `new-project`, `ingest-repo`, `gstack`, `hallmark`, `ai-pricing-engine`, `zero-paywall-client-os`, `interactive-operator-guide-generator`, `gws-automation-engine`, `composio`, `agent-reach`, `vibesec`).
+6. **Global Error Prevention Rules & System Prompt Synchronization**: Added Section 4 to `references/GLOBAL_ERROR_PREVENTION_RULES.md` and synchronized `AGENTS.md` and `GEMINI.md` via `python scripts/sync_global_rules.py`.
+
+**Why:** Gives AIOS active security enforcement, MITRE ATLAS AI agent safety, and high-ticket client security audit deliverables ($2,500–$5,000 ZORIXEL Agency Sprints) while maintaining 100% zero-cost operation.
+
+**Alternatives considered:** Passive manual doc lookups or locking security rules to a single platform.
+
+**Owner:** Atinek Maurya
+
 ## 2026-08-08 — Zero-Fee & Zero-Subscription Mandate Enforcement (Rule 1.23 & `/session-postmortem-audit`)
 
 **Decision:** Enforced **Rule 1.23 (Zero-Fee & Zero-Subscription Mandate)** and established `scripts/test_zero_cost_boundary.py` as an automated pre-flight health check across the workspace.

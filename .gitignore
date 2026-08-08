@@ -20,3 +20,7 @@ trials/**/renders/
 trials/.venv/
 trials/**/.venv/
 trials/**/__pycache__/
+
+# Directory Junctions & Full Disk Vaults
+SecurityOs/
+SecurityOs
