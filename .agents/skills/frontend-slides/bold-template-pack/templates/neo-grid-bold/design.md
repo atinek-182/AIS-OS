@@ -1,227 +1,255 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Accent Lemon** (`{colors.accent-lemon}` — #E6FF3D): Electric neon-yellow. The signal color. Used as a panel fill, as the'
+- Body copy is mixed case at weight 400.** Never uppercase body.
+- The `<mark>` element inside a headline always uses `{colors.accent-lemon}` background with `{colors.ink}` text and 0 6px
+- 'Page numbers are always JetBrains Mono at 24px with 0.04em tracking** in the format `01 / 12` with a single padded zero '
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/neo-grid-bold/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Neo-Grid Bold
-description: A heavy editorial poster system built on a strict 12-column × 8-row block grid with neon-yellow accents on putty-ecru. Space Grotesk at weight 700 in strict uppercase carries every display moment; JetBrains Mono carries every label and metadata tag. Each slide reads as a magazine spread divided into colored panels — paper-ecru, ink-black, and electric lemon-yellow trading roles across cells. The aesthetic borrows from contemporary editorial print, brutalist annual reports, and the populist-poster end of design week showcases.
-
+description: A heavy editorial poster system built on a strict 12-column × 8-row block grid with neon-yellow accents on putty-ecru.
+  Space Grotesk at weight 700 in strict uppercase carries every display moment; JetBrains Mono carries every label and metadata
+  tag. Each slide reads as a magazine spread divided into colored panels — paper-ecru, ink-black, and electric lemon-yellow
+  trading roles across cells. The aesthetic borrows from contemporary editorial print, brutalist annual reports, and the populist-poster
+  end of design week showcases.
 colors:
-  paper: "#F5F4EF"
-  bg: "#ECECE8"
-  ink: "#0A0A0A"
-  accent-lemon: "#E6FF3D"
-  muted: "#8A8A85"
-  stage-bg: "#1A1A1A"
-
+  paper: '#F5F4EF'
+  bg: '#ECECE8'
+  ink: '#0A0A0A'
+  accent-lemon: '#E6FF3D'
+  muted: '#8A8A85'
+  stage-bg: '#1A1A1A'
 color-aliases:
   line: ink
   primary-bg: bg
   card-bg: paper
-
 typography:
   display:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 132px
     fontWeight: 700
     lineHeight: 0.92
     letterSpacing: -0.02em
     textTransform: uppercase
   title:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 88px
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: -0.015em
     textTransform: uppercase
   subtitle:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 56px
     fontWeight: 700
     lineHeight: 1.0
     letterSpacing: -0.01em
     textTransform: uppercase
   section-num:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 320px
     fontWeight: 700
     lineHeight: 0.85
     letterSpacing: -0.05em
   stat-num:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 156px
     fontWeight: 700
     lineHeight: 0.9
     letterSpacing: -0.03em
   stat-num-lg:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 240px
     fontWeight: 700
     lineHeight: 0.85
     letterSpacing: -0.04em
   stat-num-sm:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 96px
     fontWeight: 700
     lineHeight: 0.9
     letterSpacing: -0.03em
   card-headline:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 44px
     fontWeight: 700
     lineHeight: 1.0
     letterSpacing: -0.01em
     textTransform: uppercase
   card-h3:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 30px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.005em
     textTransform: uppercase
   body:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.35
   body-sm:
-    fontFamily: "Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Helvetica, Arial, sans-serif
     fontSize: 22px
     fontWeight: 400
     lineHeight: 1.45
   label:
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontFamily: JetBrains Mono, ui-monospace, monospace
     fontSize: 24px
     fontWeight: 400
     letterSpacing: 0.08em
     textTransform: uppercase
   label-sm:
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontFamily: JetBrains Mono, ui-monospace, monospace
     fontSize: 16px
     fontWeight: 400
     letterSpacing: 0.08em
     textTransform: uppercase
   label-xs:
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontFamily: JetBrains Mono, ui-monospace, monospace
     fontSize: 14px
     fontWeight: 400
     letterSpacing: 0.12em
     textTransform: uppercase
   pagenum:
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    fontFamily: JetBrains Mono, ui-monospace, monospace
     fontSize: 24px
     fontWeight: 400
     letterSpacing: 0.04em
-
 spacing:
   frame-inset: 40px
   grid-gap: 12px
   grid-gap-lg: 18px
-  card-pad-sm: "24px 28px"
-  card-pad-md: "28px 32px"
-  card-pad-lg: "36px 32px"
-  card-pad-xl: "40px 44px"
-
+  card-pad-sm: 24px 28px
+  card-pad-md: 28px 32px
+  card-pad-lg: 36px 32px
+  card-pad-xl: 40px 44px
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   frame:
-    position: "absolute; inset: 40px"
+    position: 'absolute; inset: 40px'
     display: grid
-    gridTemplateColumns: "repeat(12, 1fr)"
-    gridTemplateRows: "repeat(8, 1fr)"
-    gap: "{spacing.grid-gap}"
-    description: "The universal slide frame — a 12-column × 8-row CSS grid inset 40px from each slide edge with 12px gaps between cells. Every slide composes its layout by spanning cells inside this frame."
+    gridTemplateColumns: repeat(12, 1fr)
+    gridTemplateRows: repeat(8, 1fr)
+    gap: '{spacing.grid-gap}'
+    description: The universal slide frame — a 12-column × 8-row CSS grid inset 40px from each slide edge with 12px gaps between
+      cells. Every slide composes its layout by spanning cells inside this frame.
   card:
-    background: "{colors.paper}"
+    background: '{colors.paper}'
     position: relative
     overflow: hidden
-    description: "Generic colored panel. Paper is the default fill; .ink switches to black with paper text; .lemon switches to yellow with ink text; .photo switches to deep-black with white text for image regions."
+    description: Generic colored panel. Paper is the default fill; .ink switches to black with paper text; .lemon switches
+      to yellow with ink text; .photo switches to deep-black with white text for image regions.
   card-ink:
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    description: "Inverted card — black background, paper text. Used as a contrast block in any composition."
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    description: Inverted card — black background, paper text. Used as a contrast block in any composition.
   card-lemon:
-    background: "{colors.accent-lemon}"
-    color: "{colors.ink}"
-    description: "Yellow accent card — full neon-yellow fill with ink text. The system's loudest signal."
+    background: '{colors.accent-lemon}'
+    color: '{colors.ink}'
+    description: Yellow accent card — full neon-yellow fill with ink text. The system's loudest signal.
   pagenum:
-    position: "absolute; left: 0; bottom: 0"
-    background: "{colors.paper}"
-    color: "{colors.ink}"
-    padding: "14px 22px"
-    fontFamily: "JetBrains Mono, monospace"
+    position: 'absolute; left: 0; bottom: 0'
+    background: '{colors.paper}'
+    color: '{colors.ink}'
+    padding: 14px 22px
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     letterSpacing: 0.04em
-    description: "Bottom-left page-number tag in the format '01 / 12'. Three variants: default (paper bg), .invert (ink bg), .lemon (yellow bg)."
+    description: 'Bottom-left page-number tag in the format ''01 / 12''. Three variants: default (paper bg), .invert (ink
+      bg), .lemon (yellow bg).'
   corner-mark:
-    position: "absolute; top: 22px; right: 22px"
+    position: 'absolute; top: 22px; right: 22px'
     width: 36px
     height: 36px
-    display: "grid 2x2"
+    display: grid 2x2
     gap: 4px
-    description: "Top-right 2x2 block mark — three solid currentColor squares plus one transparent. A small structural identity stamp."
+    description: Top-right 2x2 block mark — three solid currentColor squares plus one transparent. A small structural identity
+      stamp.
   blockmark:
     width: 56px
     height: 56px
-    display: "grid 2x2"
+    display: grid 2x2
     gap: 4px
-    description: "Larger 2x2 block stamp with diagonal squares filled — used as a brand mark on covers and dividers. May be sized 56px, 96px, or larger."
+    description: Larger 2x2 block stamp with diagonal squares filled — used as a brand mark on covers and dividers. May be
+      sized 56px, 96px, or larger.
   qr-tile:
     width: 90px
     height: 90px
-    display: "grid 5x5"
-    description: "Decorative QR-pattern tile composed of a 5x5 grid of black squares with some accent-lemon squares interspersed. Decorative, not a real scannable code."
+    display: grid 5x5
+    description: Decorative QR-pattern tile composed of a 5x5 grid of black squares with some accent-lemon squares interspersed.
+      Decorative, not a real scannable code.
   table-cell:
-    padding: "18px 22px"
-    borderBottom: "1.5px solid {colors.ink}"
-    borderRight: "1.5px solid {colors.ink}"
+    padding: 18px 22px
+    borderBottom: 1.5px solid {colors.ink}
+    borderRight: 1.5px solid {colors.ink}
     fontSize: 24px
     lineHeight: 1.35
-    description: "Comparison-matrix cell. Solid hairline ink dividers on bottom and right; last column has no right border."
+    description: Comparison-matrix cell. Solid hairline ink dividers on bottom and right; last column has no right border.
   table-head-row:
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    fontFamily: "JetBrains Mono, monospace"
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    fontFamily: JetBrains Mono, monospace
     fontSize: 14px
     letterSpacing: 0.12em
     textTransform: uppercase
-    description: "Inverted table header — black row with paper mono uppercase text."
+    description: Inverted table header — black row with paper mono uppercase text.
   pill-yes:
-    background: "{colors.accent-lemon}"
-    color: "{colors.ink}"
-    padding: "6px 14px"
-    description: "Affirmative pill in a comparison cell — yellow fill, ink text, mono uppercase."
+    background: '{colors.accent-lemon}'
+    color: '{colors.ink}'
+    padding: 6px 14px
+    description: Affirmative pill in a comparison cell — yellow fill, ink text, mono uppercase.
   pill-part:
-    background: "{colors.paper}"
-    color: "{colors.ink}"
-    border: "1.5px solid {colors.ink}"
-    description: "Partial-state pill — paper fill, ink border, ink text."
+    background: '{colors.paper}'
+    color: '{colors.ink}'
+    border: 1.5px solid {colors.ink}
+    description: Partial-state pill — paper fill, ink border, ink text.
   pill-no:
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    description: "Negative pill — black fill, paper text."
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    description: Negative pill — black fill, paper text.
   arrow:
     width: 64px
     height: 64px
-    description: "Inline SVG arrow glyph (right-pointing) at 64px square. Used as a flow indicator between process steps and as an out-of-cell pointer on stat cards."
+    description: Inline SVG arrow glyph (right-pointing) at 64px square. Used as a flow indicator between process steps and
+      as an out-of-cell pointer on stat cards.
   highlight-mark:
-    background: "{colors.accent-lemon}"
-    color: "{colors.ink}"
-    padding: "0 6px"
-    description: "Inline <mark> element — yellow background swatch wrapping one or more words inside a headline for emphasis."
+    background: '{colors.accent-lemon}'
+    color: '{colors.ink}'
+    padding: 0 6px
+    description: Inline <mark> element — yellow background swatch wrapping one or more words inside a headline for emphasis.
   bar-fill-ink:
-    background: "{colors.ink}"
-    description: "Solid black vertical bar for chart series A."
+    background: '{colors.ink}'
+    description: Solid black vertical bar for chart series A.
   bar-fill-lemon:
-    background: "{colors.accent-lemon}"
-    border: "1.5px solid {colors.ink}"
-    description: "Yellow vertical bar with ink border for chart series B."
+    background: '{colors.accent-lemon}'
+    border: 1.5px solid {colors.ink}
+    description: Yellow vertical bar with ink border for chart series B.
   copyright:
-    position: "absolute; left: 22px; bottom: 22px"
-    fontFamily: "JetBrains Mono, ui-monospace, monospace"
+    position: 'absolute; left: 22px; bottom: 22px'
+    fontFamily: JetBrains Mono, ui-monospace, monospace
     fontSize: 16px
     lineHeight: 1.4
-    color: "{colors.ink}"
+    color: '{colors.ink}'
     opacity: 0.85
 ---
 

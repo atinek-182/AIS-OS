@@ -1,6 +1,30 @@
 ---
+title: Spec-Driven Development
+domain: skill
+summary: Write a structured specification before writing any code. The spec is the shared source of truth between you and
+  the human engineer — it defines what we're building, why, and how we'll know it's done. Code without a spec is guessing.
+  - Starting a new
+critical_directives:
+- Always do:** Run tests before commits, follow naming conventions, validate inputs
+- Never do:** Commit secrets, edit vendor directories, remove failing tests without approval
+- 'Always: [...]'
+- 'Never: [...]'
+section_outline:
+- Spec-Driven Development
+- Overview
+- When to Use
+- The Gated Workflow
+- 'Phase 1: Specify'
+read_triggers:
+- When working on skill in .agents/skills/spec-driven-development/SKILL.md
+- When reading context for Spec-Driven Development
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: spec-driven-development
-description: Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.
+description: Creates specs before coding. Use when starting a new project, feature, or significant change and no specification
+  exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.
 ---
 
 # Spec-Driven Development

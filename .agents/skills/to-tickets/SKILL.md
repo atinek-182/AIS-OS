@@ -1,6 +1,28 @@
 ---
+title: To Tickets
+domain: skill
+summary: Break a plan, spec, or conversation into a set of **tickets** — tracer-bullet vertical slices, each declaring the
+  tickets that **block** it. The issue tracker and triage label vocabulary should have been provided to you — run `/setup-matt-pocock-skil
+critical_directives:
+- 'Blocked by**: which other tickets (if any) must complete first'
+- Local files** → write one file per ticket under `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, numbered from `01` in d
+section_outline:
+- To Tickets
+- Process
+- 1. Gather context
+- 2. Explore the codebase (optional)
+- 3. Draft vertical slices
+read_triggers:
+- When working on skill in .agents/skills/to-tickets/SKILL.md
+- When reading context for To Tickets
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: to-tickets
-description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.
+description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking
+  edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a
+  real tracker.
 disable-model-invocation: true
 ---
 

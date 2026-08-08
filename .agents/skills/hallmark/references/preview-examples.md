@@ -1,3 +1,22 @@
+---
+title: Preview-block worked examples
+domain: skill
+summary: Four sample Step 5 preview blocks for the model to imitate, varied across macrostructure types. Load this file only
+  when picking an unusual macrostructure or custom theme and the bullet-list spec in `SKILL.md § 5. Preview` doesn't give
+  enough scaffol
+critical_directives:
+- Sections** · Masthead · Title · Five Declarations · Bleed Band · What We Refuse · Working Rules · Practice · Reading · C
+section_outline:
+- Preview-block worked examples
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/preview-examples.md
+- When reading context for Preview-block worked examples
+tags:
+- skill
+- preview-examples
+updated: '2026-08-08'
+---
+
 # Preview-block worked examples
 
 Four sample Step 5 preview blocks for the model to imitate, varied across macrostructure types. Load this file only when picking an unusual macrostructure or custom theme and the bullet-list spec in `SKILL.md § 5. Preview` doesn't give enough scaffolding on its own. Most builds don't need to read this file.

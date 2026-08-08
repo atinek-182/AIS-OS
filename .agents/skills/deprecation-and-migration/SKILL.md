@@ -1,6 +1,27 @@
 ---
+title: Deprecation and Migration
+domain: skill
+summary: Code is a liability, not an asset. Every line of code has ongoing maintenance cost — bugs to fix, dependencies to
+  update, security patches to apply, and new engineers to onboard. Deprecation is the discipline of removing code that no
+  longer earns its
+critical_directives:
+- The Churn Rule:** If you own the infrastructure being deprecated, you are responsible for migrating your users — or prov
+section_outline:
+- Deprecation and Migration
+- Overview
+- When to Use
+- Core Principles
+- Code Is a Liability
+read_triggers:
+- When working on skill in .agents/skills/deprecation-and-migration/SKILL.md
+- When reading context for Deprecation and Migration
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: deprecation-and-migration
-description: Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when deciding whether to maintain or sunset existing code.
+description: Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users
+  from one implementation to another. Use when deciding whether to maintain or sunset existing code.
 ---
 
 # Deprecation and Migration

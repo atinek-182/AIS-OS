@@ -1,9 +1,24 @@
 ---
-title: "How I'd Start a $10K/Month One-Person Business With Claude (Masterclass)"
-video_id: "DuOolRhG2UY"
-url: "https://youtu.be/DuOolRhG2UY"
-channel: "Patrick Dang"
-skills: ["pd-1-person-business"]
+title: How I'd Start a $10K/Month One-Person Business With Claude (Masterclass)
+domain: brand
+summary: '- **Channel:** Patrick Dang - **Video Link:** [https://youtu.be/DuOolRhG2UY](https://youtu.be/DuOolRhG2UY)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 🎯 Executive Summary & Frameworks
+- 📝 Full Transcript
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/youtube-transcripts/03-10k-one-person-business-claude-masterclass.md
+- When reading context for How I'd Start a $10K/Month One-Person Business With Claude (Masterclass)
+tags:
+- brand
+- 03-10k-one-person-business-claude-masterclass
+updated: '2026-08-08'
+video_id: DuOolRhG2UY
+url: https://youtu.be/DuOolRhG2UY
+channel: Patrick Dang
+skills:
+- pd-1-person-business
 type: youtube-transcript
 date_ingested: 2026-07-30
 ---

@@ -1,3 +1,21 @@
+---
+title: N5 Floating Pill
+domain: skill
+summary: 'A rounded full-pill nav, *visibly detached* from the page edges, sitting ~`var(--space-md)` from the top, soft blur
+  backdrop, soft shadow. Reads as contemporary modern-minimal — Vercel, Linear, Framer, Raycast. *Use when:* the page is modern-minimal '
+critical_directives:
+- Anti-pattern:* a "pill" that's ~95 % viewport-wide is just a full-width nav with rounded ends — defeats the point. The p
+section_outline:
+- N5 · Floating pill
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n5-floating-pill.md
+- When reading context for N5 Floating Pill
+tags:
+- skill
+- n5-floating-pill
+updated: '2026-08-08'
+---
+
 ### N5 · Floating pill
 A rounded full-pill nav, *visibly detached* from the page edges, sitting ~`var(--space-md)` from the top, soft blur backdrop, soft shadow. Reads as contemporary modern-minimal — Vercel, Linear, Framer, Raycast.
 *Use when:* the page is modern-minimal / atmospheric and the hero has a distinct surface or imagery beneath the pill that the blur can sit over.

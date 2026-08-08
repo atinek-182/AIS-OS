@@ -1,3 +1,24 @@
+---
+title: Code Standards
+domain: architecture
+summary: '- Keep modules small and single-purpose. - Fix root causes — do not layer workarounds.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Code Standards
+- General
+- TypeScript
+- Next.js
+- Styling
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/code-standards.md
+- When reading context for Code Standards
+tags:
+- architecture
+- code-standards
+updated: '2026-08-08'
+---
+
 # Code Standards
 
 ## General

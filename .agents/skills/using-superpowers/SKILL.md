@@ -1,11 +1,29 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/using-superpowers [optional
+  parameters]` in chat.'
+critical_directives:
+- 'Universal Humanizer Mandate:** Whenever generating chat replies, writing messages, drafting copy, writing headlines, or '
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- The Rule
+- Skill Priority
+- Red Flags
+- User Instructions
+read_triggers:
+- When working on skill in .agents/skills/using-superpowers/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: using-superpowers
-description: Use when starting any conversation - establishes how to find and use
-  skills, requiring skill invocation before ANY response including clarifying questions
-  Invokable directly via /using-superpowers.
+description: Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before
+  ANY response including clarifying questions Invokable directly via /using-superpowers.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

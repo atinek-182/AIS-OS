@@ -1,23 +1,49 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: medium-low and asymmetric.** Signal is an editorial system; it breathes. A typical slide uses a smal'
+- Source Serif 4 carries every headline with a roman/italic mix mid-sentence; italics in headlines are always gold.
+- Dual surfaces — `{colors.navy}` (dark) and `{colors.cream}` (light) — used interchangeably, never blended in the same sl
+- Antique gold (`{colors.gold}`) is the only accent. It marks rules, italic emphasis, and numerical figures, and appears n
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/signal/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Signal
-description: A literary editorial presentation system in the spirit of a long-form magazine — The Economist's restraint crossed with a private intelligence briefing. Source Serif 4 carries every headline with roman/italic mixing mid-sentence in antique gold, DM Sans steps back for body, and IBM Plex Mono runs all the timestamps, kickers, and chrome. The dual surface system is warm cream paper (#F0ECE3) and deep editorial navy (#1C2644), connected by a single hot accent — antique gold (#C8A870) — used only on rules, italic emphasis, and numerical figures. A near-invisible 80px grid texture overlays every dark slide as a fingerprint. The effect is sober, considered, and a little bit aristocratic.
-
+description: A literary editorial presentation system in the spirit of a long-form magazine — The Economist's restraint crossed
+  with a private intelligence briefing. Source Serif 4 carries every headline with roman/italic mixing mid-sentence in antique
+  gold, DM Sans steps back for body, and IBM Plex Mono runs all the timestamps, kickers, and chrome. The dual surface system
+  is warm cream paper (#F0ECE3) and deep editorial navy (#1C2644), connected by a single hot accent — antique gold (#C8A870)
+  — used only on rules, italic emphasis, and numerical figures. A near-invisible 80px grid texture overlays every dark slide
+  as a fingerprint. The effect is sober, considered, and a little bit aristocratic.
 colors:
-  navy: "#1C2644"
-  navy-alt: "#232F55"
-  cream: "#F0ECE3"
-  cream-alt: "#E6E0D4"
-  text-warm: "#E2DCD0"
-  text-muted-dark: "#8A96A8"
-  text-hint-dark: "#4E5A6E"
-  ink: "#1A2030"
-  text-muted-light: "#5A6270"
-  text-hint-light: "#9AA0A8"
-  gold: "#C8A870"
-  border-dark: "#2E3D5C"
-  border-light: "#CAC4B4"
-
+  navy: '#1C2644'
+  navy-alt: '#232F55'
+  cream: '#F0ECE3'
+  cream-alt: '#E6E0D4'
+  text-warm: '#E2DCD0'
+  text-muted-dark: '#8A96A8'
+  text-hint-dark: '#4E5A6E'
+  ink: '#1A2030'
+  text-muted-light: '#5A6270'
+  text-hint-light: '#9AA0A8'
+  gold: '#C8A870'
+  border-dark: '#2E3D5C'
+  border-light: '#CAC4B4'
 color-aliases:
   c-bg: navy
   c-bg-alt: navy-alt
@@ -32,79 +58,77 @@ color-aliases:
   c-accent: gold
   c-border: border-dark
   c-border-light: border-light
-
 typography:
   display:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 9.5vw
     fontWeight: 700
     lineHeight: 0.96
     letterSpacing: -0.02em
   h1:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 5.2vw
     fontWeight: 600
     lineHeight: 1.08
     letterSpacing: -0.01em
   h2:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 3vw
     fontWeight: 600
     lineHeight: 1.18
   h3:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 1.9vw
     fontWeight: 500
     lineHeight: 1.3
   lead:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.4vw
     fontWeight: 400
     lineHeight: 1.58
   body:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.05vw
     fontWeight: 400
     lineHeight: 1.65
   caption:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 0.82vw
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "IBM Plex Mono, JetBrains Mono, monospace"
+    fontFamily: IBM Plex Mono, JetBrains Mono, monospace
     fontSize: 0.7vw
     fontWeight: 500
     letterSpacing: 0.14em
     textTransform: uppercase
   stat-value:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 5.5vw
     fontWeight: 600
     lineHeight: 1
     letterSpacing: -0.02em
   quote-text:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 3.6vw
     fontWeight: 400
     lineHeight: 1.28
     letterSpacing: -0.01em
   quote-mark:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 8vw
     fontWeight: 300
     lineHeight: 0.6
   editorial-headline:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 2.75vw
     fontWeight: 600
     lineHeight: 1.2
   dense-headline:
-    fontFamily: "Source Serif 4, Noto Serif SC, Georgia, serif"
+    fontFamily: Source Serif 4, Noto Serif SC, Georgia, serif
     fontSize: 2.4vw
     fontWeight: 600
     lineHeight: 1.2
-
 spacing:
   pad-x: 7.5vw
   pad-y: 5.5vh
@@ -112,86 +136,85 @@ spacing:
   gap-md: 2.5vh
   gap-sm: 1.2vh
   grid-cell: 80px
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   rule-short:
     width: 36px
     height: 1px
-    background: "{colors.gold}"
-    description: "Short gold rule used as a kicker separator above headlines and as a chapter accent mark."
+    background: '{colors.gold}'
+    description: Short gold rule used as a kicker separator above headlines and as a chapter accent mark.
   rule-full:
-    width: "100%"
+    width: 100%
     height: 1px
-    background: "{colors.border-dark}"
-    description: "Full-width hairline divider, color shifts to {colors.border-light} on cream surfaces."
+    background: '{colors.border-dark}'
+    description: Full-width hairline divider, color shifts to {colors.border-light} on cream surfaces.
   kicker:
-    color: "{colors.gold}"
-    typography: "{typography.label}"
-    description: "Mono uppercase label in antique gold, sits above a headline."
+    color: '{colors.gold}'
+    typography: '{typography.label}'
+    description: Mono uppercase label in antique gold, sits above a headline.
   tag:
-    border: "1px solid {colors.gold}"
-    color: "{colors.gold}"
-    padding: "0.3em 0.8em"
-    typography: "{typography.label}"
-    description: "Outlined gold pill containing a mono uppercase label."
+    border: 1px solid {colors.gold}
+    color: '{colors.gold}'
+    padding: 0.3em 0.8em
+    typography: '{typography.label}'
+    description: Outlined gold pill containing a mono uppercase label.
   chrome-bar:
-    borderBottom: "1px solid {colors.border-dark}"
-    paddingBottom: "{spacing.gap-sm}"
-    marginBottom: "{spacing.gap-md}"
-    description: "Top chrome strip with mono label left, mono counter right, hairline rule beneath."
+    borderBottom: 1px solid {colors.border-dark}
+    paddingBottom: '{spacing.gap-sm}'
+    marginBottom: '{spacing.gap-md}'
+    description: Top chrome strip with mono label left, mono counter right, hairline rule beneath.
   foot-bar:
-    borderTop: "1px solid {colors.border-dark}"
-    paddingTop: "{spacing.gap-sm}"
-    marginTop: "{spacing.gap-md}"
-    description: "Bottom chrome strip, mirror of chrome-bar."
+    borderTop: 1px solid {colors.border-dark}
+    paddingTop: '{spacing.gap-sm}'
+    marginTop: '{spacing.gap-md}'
+    description: Bottom chrome strip, mirror of chrome-bar.
   stat-card:
-    borderTop: "1px solid {colors.border-dark}"
-    padding: "{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0"
-    description: "Stat tile with a top hairline rule, big gold serif numeral above a sans label and mono note."
+    borderTop: 1px solid {colors.border-dark}
+    padding: '{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0'
+    description: Stat tile with a top hairline rule, big gold serif numeral above a sans label and mono note.
   bullet-marker:
-    content: "—"
-    color: "{colors.gold}"
-    fontFamily: "{typography.label.fontFamily}"
-    description: "Em-dash bullet rendered in mono gold prefixes every list item."
+    content: —
+    color: '{colors.gold}'
+    fontFamily: '{typography.label.fontFamily}'
+    description: Em-dash bullet rendered in mono gold prefixes every list item.
   vt-spine:
     width: 1px
-    background: "{colors.border-dark}"
-    description: "Vertical hairline spine for timeline column, with a 9px gold dot marking each entry."
+    background: '{colors.border-dark}'
+    description: Vertical hairline spine for timeline column, with a 9px gold dot marking each entry.
   vt-dot:
     width: 9px
     height: 9px
     borderRadius: 50%
-    background: "{colors.gold}"
-    description: "Gold node sitting on the timeline spine at each date."
+    background: '{colors.gold}'
+    description: Gold node sitting on the timeline spine at each date.
   pie-donut:
     borderRadius: 50%
-    innerCutout: "22% inset, painted to match slide background"
-    description: "SVG/CSS donut chart, segments in palette colors with a 1px gold ring divider where used."
+    innerCutout: 22% inset, painted to match slide background
+    description: SVG/CSS donut chart, segments in palette colors with a 1px gold ring divider where used.
   bar-fill-default:
-    background: "{colors.text-hint-dark}"
-    description: "Default bar fill in muted slate; switches to gold for the highlighted bar."
+    background: '{colors.text-hint-dark}'
+    description: Default bar fill in muted slate; switches to gold for the highlighted bar.
   bar-fill-accent:
-    background: "{colors.gold}"
+    background: '{colors.gold}'
   compare-divider:
-    borderRight: "1px solid {colors.border-dark}"
-    description: "Single vertical hairline separating two comparison panels."
+    borderRight: 1px solid {colors.border-dark}
+    description: Single vertical hairline separating two comparison panels.
   pyramid-band:
-    borderLeft: "3px solid {colors.gold}"
-    padding: "1.3vh 2.5vw"
-    fillFunction: "color-mix(in srgb, {colors.gold} N%, {colors.navy})"
-    description: "Horizontal band in pyramid layouts; opacity of gold mix decreases from top tier to bottom."
+    borderLeft: 3px solid {colors.gold}
+    padding: 1.3vh 2.5vw
+    fillFunction: color-mix(in srgb, {colors.gold} N%, {colors.navy})
+    description: Horizontal band in pyramid layouts; opacity of gold mix decreases from top tier to bottom.
   grid-texture:
-    background: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)"
-    backgroundSize: "80px 80px"
-    description: "Near-invisible 80px grid overlay applied to every dark slide via ::before pseudo-element."
+    background: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03)
+      1px, transparent 1px)
+    backgroundSize: 80px 80px
+    description: Near-invisible 80px grid overlay applied to every dark slide via ::before pseudo-element.
   cycle-step:
-    borderTop: "2px solid {colors.gold}"
-    padding: "{spacing.gap-md}"
-    description: "Cycle/process step card with a 2px gold rule at top, gold numeral, serif title, sans body."
+    borderTop: 2px solid {colors.gold}
+    padding: '{spacing.gap-md}'
+    description: Cycle/process step card with a 2px gold rule at top, gold numeral, serif title, sans body.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

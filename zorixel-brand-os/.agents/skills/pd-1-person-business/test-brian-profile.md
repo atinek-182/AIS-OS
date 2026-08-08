@@ -1,3 +1,25 @@
+---
+title: Brian Test Profile — Demo Input for /pd-1-person-business
+domain: skill
+summary: 'Use this as the paste-in input when demoing the skill in the PD #26 video. Tells the skill it''s working with Brian''s
+  actual situation so it can arrive at the'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Brian Test Profile — Demo Input for /pd-1-person-business
+- Quick paste version (for video demo)
+- Expected skill output (the conclusion Brian should land on)
+- Video demo flow (how to use this on screen)
+- Notes
+read_triggers:
+- When working on skill in second-brain-zorixel/zorixel-brand-os/.agents/skills/pd-1-person-business/test-brian-profile.md
+- When reading context for Brian Test Profile — Demo Input for /pd-1-person-business
+tags:
+- skill
+- test-brian-profile
+updated: '2026-08-08'
+---
+
 # Brian Test Profile — Demo Input for /pd-1-person-business
 
 Use this as the paste-in input when demoing the skill in the PD #26 video.

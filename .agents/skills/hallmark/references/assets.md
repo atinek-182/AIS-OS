@@ -1,3 +1,29 @@
+---
+title: Assets — sourcing canon for icons, logos, illustrations, photography, video
+domain: skill
+summary: This file is loaded when an enrichment archetype actually needs an external asset (load-on-demand). It catalogues
+  the *3–5 canonical sources per category*, the licence terms, the import patterns, the rules for using them, and the sources
+  to avoid. **
+critical_directives:
+- Never inline base64 placeholder images (bloats CSS).
+- Never call random Unsplash without keywords (returns un-curated stock-photo-ish results).
+- 'Never use kittens / lorempixel / "tiger.jpg" / cute-default services. The placeholder must read as an obvious slot, not '
+- Never ship a kit image where the brief actually calls for a real product photo (e.g. abstract bottle for an actual coffe
+section_outline:
+- Assets — sourcing canon for icons, logos, illustrations, photography, video
+- Placeholder strategy
+- Icons
+- Canon
+- The rules
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/assets.md
+- When reading context for Assets — sourcing canon for icons, logos, illustrations, photography, video
+tags:
+- skill
+- assets
+updated: '2026-08-08'
+---
+
 # Assets — sourcing canon for icons, logos, illustrations, photography, video
 
 This file is loaded when an enrichment archetype actually needs an external asset (load-on-demand). It catalogues the *3–5 canonical sources per category*, the licence terms, the import patterns, the rules for using them, and the sources to avoid.

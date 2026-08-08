@@ -1,3 +1,29 @@
+---
+title: Typography
+domain: skill
+summary: Type carries the design. If the type is wrong, nothing else matters. - A page is a pairing, not a single font. Display
+  face + body face, minimum. *Single-font pages are allowed only when the single font IS the design choice* — a true terminal
+  aesthet
+critical_directives:
+- Display max — keep it ≤ 5.5rem (88 px).** Above that, hero headlines crowd themselves on 1280–1440 px viewports and requ
+- Aggressive-display themes step down one rung when headline > 50 chars.** Brutal, Riso, and Manifesto clamp `--text-displ
+- 'Never synthesise. Load the weight you need; don''t rely on `font-weight: bold` against a single-weight file.'
+- 'Proper typographic punctuation: `" " — … ‘ ’`. Never straight quotes, never `--` or `...`.'
+section_outline:
+- Typography
+- Principles
+- The 2+1 rule — three faces is the ceiling
+- Banned defaults
+- The font catalog
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/typography.md
+- When reading context for Typography
+tags:
+- skill
+- typography
+updated: '2026-08-08'
+---
+
 # Typography
 
 Type carries the design. If the type is wrong, nothing else matters.

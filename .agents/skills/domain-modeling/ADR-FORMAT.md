@@ -1,3 +1,25 @@
+---
+title: ADR Format
+domain: skill
+summary: 'ADRs live in `docs/adr/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc. Create the `docs/adr/`
+  directory lazily — only when the first ADR is needed.'
+critical_directives:
+- Constraints not visible in the code.** "We can't use AWS because of compliance requirements." "Response times must be un
+section_outline:
+- ADR Format
+- Template
+- '{Short title of the decision}'
+- Optional sections
+- Numbering
+read_triggers:
+- When working on skill in .agents/skills/domain-modeling/ADR-FORMAT.md
+- When reading context for ADR Format
+tags:
+- skill
+- ADR-FORMAT
+updated: '2026-08-08'
+---
+
 # ADR Format
 
 ADRs live in `docs/adr/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.

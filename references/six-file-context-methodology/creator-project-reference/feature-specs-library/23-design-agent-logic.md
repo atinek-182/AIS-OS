@@ -1,3 +1,25 @@
+---
+title: 23 Design Agent Logic
+domain: architecture
+summary: Implement the full AI design agent so a user prompt results in real-time updates on the collaborative canvas, with
+  visible AI presence and status.a 1. Update the design agent task in `trigger/design-agent.ts`.
+critical_directives:
+- check `context/project-overview.md` and `context/architecture-context.md` for product behavior and s
+- layout and spacing rules
+section_outline:
+- Implementation
+- Dependencies
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/23-design-agent-logic.md
+- When reading context for 23 Design Agent Logic
+tags:
+- architecture
+- 23-design-agent-logic
+updated: '2026-08-08'
+---
+
 Implement the full AI design agent so a user prompt results in real-time updates on the collaborative canvas, with visible AI presence and status.a
 
 ## Implementation

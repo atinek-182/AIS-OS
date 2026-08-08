@@ -1,6 +1,36 @@
 ---
+title: Personal Brand Positioning (Deep Market Intelligence Edition)
+domain: skill
+summary: Most people creating content are invisible because they never took the time to figure out WHO they are to the market.
+  This skill fixes that. It combines structured discovery with deep live market intelligence — competitor mapping, audience
+  language m
+critical_directives:
+- '*Core belief:** Positioning is being the obvious choice for one specific kind of person solving one '
+- '*Rule:** Every Phase 2 Opportunity Score must be traceable to at least 3 scorecard data points. No v'
+- Generous whitespace — never cramped
+- 'Table columns (mandatory): `Keyword | Trends Index | Trend | YT Top-10 Views | Avg Channel | Content'
+section_outline:
+- Personal Brand Positioning (Deep Market Intelligence Edition)
+- THE FOUR PHASES
+- 'PHASE 0: DISCOVERY QUESTIONNAIRE'
+- 1. Industry / Niche
+- 2. Background & Unfair Advantage
+read_triggers:
+- When working on skill in second-brain-zorixel/zorixel-brand-os/.agents/skills/pd-personal-brand-positioning/SKILL.md
+- When reading context for Personal Brand Positioning (Deep Market Intelligence Edition)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: pd-personal-brand-positioning
-description: Find a unique, profitable personal brand positioning in any industry — backed by deep market intelligence. Walks the user through a discovery questionnaire (background, personality, results, passions, values), then runs deep research across YouTube, Reddit, X, LinkedIn, TikTok, Google, and forums to map the entire competitive landscape, extract verbatim audience language, score trend velocity, and identify the exact gap only they can credibly own. Delivers a positioning brief AND a dark-mode HTML report with real numbers, competitor tables, audience pain quotes, trend data, and scored opportunities (1-100). Use whenever someone wants to define their brand, find their niche, or says things like "what should my brand be about", "how am I different", "find my angle", "help me position myself", "I don't know what to be known for", /positioning, /brand, /find-my-angle. Works for any industry.
+description: Find a unique, profitable personal brand positioning in any industry — backed by deep market intelligence. Walks
+  the user through a discovery questionnaire (background, personality, results, passions, values), then runs deep research
+  across YouTube, Reddit, X, LinkedIn, TikTok, Google, and forums to map the entire competitive landscape, extract verbatim
+  audience language, score trend velocity, and identify the exact gap only they can credibly own. Delivers a positioning brief
+  AND a dark-mode HTML report with real numbers, competitor tables, audience pain quotes, trend data, and scored opportunities
+  (1-100). Use whenever someone wants to define their brand, find their niche, or says things like "what should my brand be
+  about", "how am I different", "find my angle", "help me position myself", "I don't know what to be known for", /positioning,
+  /brand, /find-my-angle. Works for any industry.
 ---
 
 # Personal Brand Positioning (Deep Market Intelligence Edition)

@@ -1,9 +1,24 @@
 ---
-title: "How I'd Start a $10K/Month Claude AI Side Hustle That Pays More Than a 9-5"
-video_id: "8LL5Z9Lz0-4"
-url: "https://youtu.be/8LL5Z9Lz0-4"
-channel: "Patrick Dang"
-skills: ["pd-1-person-business"]
+title: How I'd Start a $10K/Month Claude AI Side Hustle That Pays More Than a 9-5
+domain: brand
+summary: '- **Channel:** Patrick Dang - **Video Link:** [https://youtu.be/8LL5Z9Lz0-4](https://youtu.be/8LL5Z9Lz0-4)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 🎯 Executive Summary & Frameworks
+- 📝 Full Transcript
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/youtube-transcripts/01-10k-claude-ai-side-hustle.md
+- When reading context for How I'd Start a $10K/Month Claude AI Side Hustle That Pays More Than a 9-5
+tags:
+- brand
+- 01-10k-claude-ai-side-hustle
+updated: '2026-08-08'
+video_id: 8LL5Z9Lz0-4
+url: https://youtu.be/8LL5Z9Lz0-4
+channel: Patrick Dang
+skills:
+- pd-1-person-business
 type: youtube-transcript
 date_ingested: 2026-07-30
 ---

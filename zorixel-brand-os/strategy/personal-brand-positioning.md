@@ -1,3 +1,24 @@
+---
+title: 👑 ZORIXEL Personal Brand Positioning Brief
+domain: brand
+summary: '**Founder & Operator:** Atinek Maurya (16 years old, Class 10 Board Topper - 95.4%) **Brand Name:** ZORIXEL'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 👑 ZORIXEL Personal Brand Positioning Brief
+- 🎯 1. Locked Positioning Statement
+- 🧲 2. The Hook Phrase
+- 🏛️ 3. ZORIXEL's Three Content Pillars
+- 'Pillar 1: AI Web Engineering & Micro-Interactions (Opportunity Score: 95/100)'
+read_triggers:
+- When working on brand in zorixel-brand-os/strategy/personal-brand-positioning.md
+- When reading context for 👑 ZORIXEL Personal Brand Positioning Brief
+tags:
+- brand
+- personal-brand-positioning
+updated: '2026-08-08'
+---
+
 # 👑 ZORIXEL Personal Brand Positioning Brief
 
 **Date:** 2026-07-30  
@@ -70,4 +91,5 @@
   Search volume for AI web engineering, OKLCH design tokens, and local AI OS workflows is at an all-time peak.
 - **Monetization Signals:**  
   - Target Pricing: $3,000 per 14-Day Sprint ($1,500 deposit upfront).  
-  - Global Async Arbitrage: 1 Sale/mo = $3,000 (~₹2.5 Lakhs INR) $ightarrow$ Full financial independence at age 16/17!
+  - Global Async Arbitrage: 1 Sale/mo = $3,000 (~₹2.5 Lakhs INR) $
+ightarrow$ Full financial independence at age 16/17!

@@ -1,3 +1,22 @@
+---
+title: 09 Quote Led
+domain: skill
+summary: The hero is a pull-quote with attribution. The headline is borrowed credibility, not the brand's voice. The page
+  leads with social proof. - **Heading:** italic display setting a customer's quote (36–60 px), with attribution below in
+  small caps.
+critical_directives:
+- Divider:** centered quote-mark glyph or an em-rule between testimonials.
+section_outline:
+- 09 · Quote-Led
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/09-quote-led.md
+- When reading context for 09 Quote Led
+tags:
+- skill
+- 09-quote-led
+updated: '2026-08-08'
+---
+
 ## 09 · Quote-Led
 
 The hero is a pull-quote with attribution. The headline is borrowed credibility, not the brand's voice. The page leads with social proof.

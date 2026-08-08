@@ -1,164 +1,189 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Four accent colors used as flat fills; each slide uses two or three of the four, never all simultaneously.
+- 'Ink** (`{colors.ink}` — #0F0F0F): Near-black used for all borders, body text, rules, topbar chrome, and the closing stam'
+- '3px dashed `{colors.ink}`**: Dashed horizontal rule separating the process slide''s topbar from its flow cards.'
+- Use JetBrains Mono for all labels, metadata, indices, figure notes, and axis text. Never use it for body or headlines.
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Canvas and Ink
+- Accent Colors
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/creative-mode/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Creative Mode
-description: A neo-brutalist editorial presentation system built for 1920x1080 slides. The deck anchors on a warm cream canvas with heavy 4px ink borders, hard offset drop-shadows, and a bold four-color accent palette (forest green, hot pink, burnt orange, sunshine yellow). Display headlines run Archivo Black in pure uppercase — aggressive, loud, zero letter-spacing softness. Monospace labels in JetBrains Mono echo a typesetting rule-sheet. Body copy sits in Space Grotesk. Every slide uses flat color-blocking with no gradients, no rounded cards, and no subtlety. The aesthetic is part Bauhaus grid, part punk zine, part Swiss editorial.
-
+description: A neo-brutalist editorial presentation system built for 1920x1080 slides. The deck anchors on a warm cream canvas
+  with heavy 4px ink borders, hard offset drop-shadows, and a bold four-color accent palette (forest green, hot pink, burnt
+  orange, sunshine yellow). Display headlines run Archivo Black in pure uppercase — aggressive, loud, zero letter-spacing
+  softness. Monospace labels in JetBrains Mono echo a typesetting rule-sheet. Body copy sits in Space Grotesk. Every slide
+  uses flat color-blocking with no gradients, no rounded cards, and no subtlety. The aesthetic is part Bauhaus grid, part
+  punk zine, part Swiss editorial.
 colors:
-  cream: "#EFE9D9"
-  cream-2: "#E4DCC4"
-  ink: "#0F0F0F"
-  ink-2: "#2A2A2A"
-  green: "#1F8A4C"
-  green-dark: "#136636"
-  pink: "#F06CA8"
-  pink-dark: "#D14E8B"
-  orange: "#E85A1F"
-  yellow: "#F5C518"
-
+  cream: '#EFE9D9'
+  cream-2: '#E4DCC4'
+  ink: '#0F0F0F'
+  ink-2: '#2A2A2A'
+  green: '#1F8A4C'
+  green-dark: '#136636'
+  pink: '#F06CA8'
+  pink-dark: '#D14E8B'
+  orange: '#E85A1F'
+  yellow: '#F5C518'
 typography:
   display-jumbo:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 220px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-hero:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 160px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-xl:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 140px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-lg:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 100px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-md:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 96px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-sm:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 84px
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   display-xs:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 72px
     fontWeight: 400
     lineHeight: 0.95
     letterSpacing: -0.01em
     textTransform: uppercase
   stat-num:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 96px
     fontWeight: 400
     lineHeight: 0.9
     letterSpacing: 0
   step-num:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 140px
     fontWeight: 400
     lineHeight: 0.85
     letterSpacing: 0
   step-title:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 34px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   stamp-num:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 64px
     fontWeight: 400
     lineHeight: 0.9
     letterSpacing: 0
   marker-label:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 46px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   badge-label:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   table-head:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   table-label:
-    fontFamily: "Archivo Black, sans-serif"
+    fontFamily: Archivo Black, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   body-lg:
-    fontFamily: "Space Grotesk, sans-serif"
+    fontFamily: Space Grotesk, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0
   body-md:
-    fontFamily: "Space Grotesk, sans-serif"
+    fontFamily: Space Grotesk, sans-serif
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: 0
   mono-label:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.06em
     textTransform: uppercase
   mono-kicker:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.14em
     textTransform: uppercase
   mono-tag:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.1em
     textTransform: uppercase
   mono-chart:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.08em
     textTransform: uppercase
-
 spacing:
   slide-gutter: 96px
   chrome-gutter: 64px
@@ -168,15 +193,13 @@ spacing:
   topbar-top: 48px
   meta-bottom: 40px
   table-cell-pad: 18px 26px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   slide-chrome:
     topbar:
-      fontFamily: "JetBrains Mono, monospace"
+      fontFamily: JetBrains Mono, monospace
       fontSize: 24px
       letterSpacing: 0.08em
       textTransform: uppercase
@@ -185,11 +208,11 @@ components:
       right: 64px
       top: 48px
     topbar-pill:
-      border: "2px solid {colors.ink}"
+      border: 2px solid {colors.ink}
       padding: 6px 14px
       borderRadius: 999px
     slide-meta:
-      fontFamily: "JetBrains Mono, monospace"
+      fontFamily: JetBrains Mono, monospace
       fontSize: 24px
       letterSpacing: 0.06em
       textTransform: uppercase
@@ -200,111 +223,111 @@ components:
     slide-meta-dot:
       width: 10px
       height: 10px
-      background: "{colors.ink}"
+      background: '{colors.ink}'
       borderRadius: 50%
   stat-cell:
-    border: "4px solid {colors.ink}"
+    border: 4px solid {colors.ink}
     padding: 28px 32px
   stat-cell-green:
-    background: "{colors.green}"
-    color: "{colors.cream}"
+    background: '{colors.green}'
+    color: '{colors.cream}'
   stat-cell-pink:
-    background: "{colors.pink}"
-    color: "{colors.ink}"
+    background: '{colors.pink}'
+    color: '{colors.ink}'
   stat-cell-cream:
-    background: "{colors.cream}"
-    color: "{colors.ink}"
+    background: '{colors.cream}'
+    color: '{colors.ink}'
   stat-cell-orange:
-    background: "{colors.orange}"
-    color: "{colors.cream}"
+    background: '{colors.orange}'
+    color: '{colors.cream}'
   step-card:
-    border: "4px solid {colors.ink}"
+    border: 4px solid {colors.ink}
     padding: 28px
     height: 420px
   step-card-cream:
-    background: "{colors.cream}"
-    color: "{colors.ink}"
+    background: '{colors.cream}'
+    color: '{colors.ink}'
   step-card-pink:
-    background: "{colors.pink}"
-    color: "{colors.ink}"
+    background: '{colors.pink}'
+    color: '{colors.ink}'
   step-card-yellow:
-    background: "{colors.yellow}"
-    color: "{colors.ink}"
+    background: '{colors.yellow}'
+    color: '{colors.ink}'
   step-card-green:
-    background: "{colors.green}"
-    color: "{colors.cream}"
+    background: '{colors.green}'
+    color: '{colors.cream}'
   step-arrow:
-    borderTop: "18px solid transparent"
-    borderBottom: "18px solid transparent"
-    borderLeft: "24px solid {colors.ink}"
+    borderTop: 18px solid transparent
+    borderBottom: 18px solid transparent
+    borderLeft: 24px solid {colors.ink}
   table:
-    border: "4px solid {colors.ink}"
-    background: "{colors.cream-2}"
-    rowBorder: "3px solid {colors.ink}"
-    colBorder: "3px solid {colors.ink}"
+    border: 4px solid {colors.ink}
+    background: '{colors.cream-2}'
+    rowBorder: 3px solid {colors.ink}
+    colBorder: 3px solid {colors.ink}
   table-head-row:
-    background: "{colors.ink}"
-    color: "{colors.cream}"
-    fontFamily: "Archivo Black, sans-serif"
+    background: '{colors.ink}'
+    color: '{colors.cream}'
+    fontFamily: Archivo Black, sans-serif
     fontSize: 28px
-    borderColor: "{colors.cream}"
+    borderColor: '{colors.cream}'
   table-col-pink:
-    background: "{colors.pink}"
-    color: "{colors.ink}"
+    background: '{colors.pink}'
+    color: '{colors.ink}'
   table-col-green:
-    background: "{colors.green}"
-    color: "{colors.cream}"
+    background: '{colors.green}'
+    color: '{colors.cream}'
   table-col-orange:
-    background: "{colors.orange}"
-    color: "{colors.cream}"
+    background: '{colors.orange}'
+    color: '{colors.cream}'
   marker-block:
-    background: "{colors.pink}"
-    border: "4px solid {colors.ink}"
-    fontFamily: "Archivo Black, sans-serif"
+    background: '{colors.pink}'
+    border: 4px solid {colors.ink}
+    fontFamily: Archivo Black, sans-serif
     fontSize: 46px
-    hardShadow: "24px 24px 0 {colors.orange}, 24px 24px 0 4px {colors.ink}"
+    hardShadow: 24px 24px 0 {colors.orange}, 24px 24px 0 4px {colors.ink}
   iso-panel:
-    background: "{colors.green}"
-    border: "4px solid {colors.ink}"
+    background: '{colors.green}'
+    border: 4px solid {colors.ink}
   stacked-block:
-    border: "4px solid {colors.ink}"
-    hardShadow: "18px 18px 0 {colors.ink}"
+    border: 4px solid {colors.ink}
+    hardShadow: 18px 18px 0 {colors.ink}
   badge-rotated:
-    background: "{colors.yellow}"
-    border: "4px solid {colors.ink}"
-    fontFamily: "Archivo Black, sans-serif"
+    background: '{colors.yellow}'
+    border: 4px solid {colors.ink}
+    fontFamily: Archivo Black, sans-serif
     fontSize: 28px
     textTransform: uppercase
     transform: rotate(-4deg)
   stamp:
-    background: "{colors.pink}"
-    border: "4px solid {colors.cream}"
+    background: '{colors.pink}'
+    border: 4px solid {colors.cream}
     width: 340px
     height: 340px
     transform: rotate(-6deg)
   stamp-inner:
-    border: "4px solid {colors.cream}"
+    border: 4px solid {colors.cream}
     borderRadius: 50%
   kicker-block:
-    background: "{colors.ink}"
-    color: "{colors.cream}"
-    fontFamily: "JetBrains Mono, monospace"
+    background: '{colors.ink}'
+    color: '{colors.cream}'
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     letterSpacing: 0.14em
     textTransform: uppercase
     padding: 8px 16px
   bar-chart-bar:
-    border: "3px solid {colors.ink}"
+    border: 3px solid {colors.ink}
   bar-chart-axis:
-    borderRight: "3px solid {colors.ink}"
-    borderBottom: "3px solid {colors.ink}"
+    borderRight: 3px solid {colors.ink}
+    borderBottom: 3px solid {colors.ink}
   decorative-circle:
-    background: "{colors.yellow}"
-    border: "4px solid {colors.ink}"
+    background: '{colors.yellow}'
+    border: 4px solid {colors.ink}
     borderRadius: 50%
   closing-slide:
-    background: "{colors.green}"
-    color: "{colors.cream}"
+    background: '{colors.green}'
+    color: '{colors.cream}'
 ---
 
 ## Frontend Slides Fixed-Stage Policy

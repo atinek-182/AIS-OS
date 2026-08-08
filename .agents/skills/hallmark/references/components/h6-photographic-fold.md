@@ -1,3 +1,21 @@
+---
+title: H6 Photographic Fold
+domain: skill
+summary: Single full-bleed image fills the viewport. Caption sits in a corner. *Use when:* you have real photography that
+  earns full-bleed.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H6 · Photographic Fold
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h6-photographic-fold.md
+- When reading context for H6 Photographic Fold
+tags:
+- skill
+- h6-photographic-fold
+updated: '2026-08-08'
+---
+
 ### H6 · Photographic Fold
 Single full-bleed image fills the viewport. Caption sits in a corner.
 *Use when:* you have real photography that earns full-bleed.

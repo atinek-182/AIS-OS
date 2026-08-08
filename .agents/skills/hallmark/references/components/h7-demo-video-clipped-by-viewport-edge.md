@@ -1,3 +1,22 @@
+---
+title: H7 Demo Video Clipped By Viewport Edge
+domain: skill
+summary: Display headline left, demo video right, the rightmost ~10–20 % extending past the viewport so it's intentionally
+  cut off. The clip *is* the design — implies "there's more product than fits the screen". Pioneered by Linear, refined by
+  Vercel / Resend
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H7 · Demo Video — Clipped-by-viewport-edge
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h7-demo-video-clipped-by-viewport-edge.md
+- When reading context for H7 Demo Video Clipped By Viewport Edge
+tags:
+- skill
+- h7-demo-video-clipped-by-viewport-edge
+updated: '2026-08-08'
+---
+
 ### H7 · Demo Video — Clipped-by-viewport-edge
 Display headline left, demo video right, the rightmost ~10–20 % extending past the viewport so it's intentionally cut off. The clip *is* the design — implies "there's more product than fits the screen". Pioneered by Linear, refined by Vercel / Resend / Cursor.
 *Use when:* the brief is SaaS / dev-tool / dashboard / platform AND you have real footage of the product (or a hand-built CSS-art mockup of it).

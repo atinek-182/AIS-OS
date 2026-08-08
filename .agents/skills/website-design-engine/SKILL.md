@@ -1,6 +1,31 @@
 ---
+title: Website Design Engine (Master Web Creation Skill v4.0)
+domain: skill
+summary: 'This skill builds distinctive, non-templated, world-class multi-page websites and web applications from scratch
+  by orchestrating project-local `reference/` assets, Six-File Context specifications, 23-Sites Awwwards design matrixes,
+  interactive WebGL '
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Website Design Engine (Master Web Creation Skill v4.0)
+- Overview & Tri-Mode Execution
+- Specific Use Cases
+- Non-Negotiable Core Mandates
+- 10-Phase Execution Architecture (v4.0)
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/SKILL.md
+- When reading context for Website Design Engine (Master Web Creation Skill v4.0)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: website-design-engine
-description: Master 10-Phase Web Creation Engine v4.0 (Awwwards-Grade Architecture). Synthesizes official Awwwards judging criteria (40% Design, 30% Usability, 20% Creativity, 10% Content), 23-Sites Master Design Matrix, UX psychology, Lenis inertia scroll, GSAP ScrollTrigger scrollytelling, Radiant WebGL Shaders (pbakaus/radiant), OKLCH color math, Obys grid math, Nate Herk lead conversion mechanics, Phase 0.1 Complete Project & Graphify Sweep, Phase 0.2 Adversarial /roast Gate, /jsmastery-audit App Router audits, and 5-viewport Playwright visual QA with base64 font inlining into a zero-rush execution framework. Invokable via /website-design-engine.
+description: Master 10-Phase Web Creation Engine v4.0 (Awwwards-Grade Architecture). Synthesizes official Awwwards judging
+  criteria (40% Design, 30% Usability, 20% Creativity, 10% Content), 23-Sites Master Design Matrix, UX psychology, Lenis inertia
+  scroll, GSAP ScrollTrigger scrollytelling, Radiant WebGL Shaders (pbakaus/radiant), OKLCH color math, Obys grid math, Nate
+  Herk lead conversion mechanics, Phase 0.1 Complete Project & Graphify Sweep, Phase 0.2 Adversarial /roast Gate, /jsmastery-audit
+  App Router audits, and 5-viewport Playwright visual QA with base64 font inlining into a zero-rush execution framework. Invokable
+  via /website-design-engine.
 argument-hint: '[optional parameters or target URL/brief]'
 ---
 

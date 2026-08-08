@@ -1,3 +1,22 @@
+---
+title: 10 Specimen
+domain: skill
+summary: Numbered left-margin labels, huge serif display, asymmetric column spans, hairline rules, typographic-only CTA, generous
+  whitespace. Editorial / type-foundry energy. - **Heading:** left-margin number + label (`01 — HELLO.`) beside a large serif
+  phras
+critical_directives:
+- Divider:** hairline rules between sections.
+section_outline:
+- 10 · Specimen *(no longer the default)*
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/10-specimen.md
+- When reading context for 10 Specimen
+tags:
+- skill
+- 10-specimen
+updated: '2026-08-08'
+---
+
 ## 10 · Specimen *(no longer the default)*
 
 Numbered left-margin labels, huge serif display, asymmetric column spans, hairline rules, typographic-only CTA, generous whitespace. Editorial / type-foundry energy.

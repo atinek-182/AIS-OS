@@ -1,13 +1,40 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- The `em` tag within Bricolage Grotesque headlines always triggers a switch to Instrument Serif italic — the system's pri
+- 'Instrument Serif**: Weight 400 only, italic variant loaded. Functions as the expressive counterpoint to Bricolage Grotes'
+- 'JetBrains Mono**: Weights 400 and 500. All labels are uppercase with 0.10–0.18em letter-spacing. Always secondary inform'
+- 'Use Instrument Serif only for moments of human expressiveness: numerals, years, signatures, quotation marks, endorsement'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- The Three Actual Colors
+- Alias Map
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/editorial-tri-tone/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Editorial Tri-Tone
-description: A literary magazine-meets-annual-report presentation system built on a strict three-color palette — blush pink, golden butter, and deep burgundy wine. Despite having eleven CSS variable names, only three hex values exist in the entire system; every alias is a semantic rename of one of those three. Headlines run Bricolage Grotesque (a variable grotesque with an optical-size axis) at extreme weights and negative letter-spacing. Instrument Serif (italic-cut only) appears as the expressive accent face for chapter numerals, pull-quotes, years, and signatures. JetBrains Mono carries all metadata, labels, and section markers at tight uppercase tracking. The aesthetic is "independent arts publication" — the kind with a colophon, hand-numbered editions, and an editorial desk.
-
+description: A literary magazine-meets-annual-report presentation system built on a strict three-color palette — blush pink,
+  golden butter, and deep burgundy wine. Despite having eleven CSS variable names, only three hex values exist in the entire
+  system; every alias is a semantic rename of one of those three. Headlines run Bricolage Grotesque (a variable grotesque
+  with an optical-size axis) at extreme weights and negative letter-spacing. Instrument Serif (italic-cut only) appears as
+  the expressive accent face for chapter numerals, pull-quotes, years, and signatures. JetBrains Mono carries all metadata,
+  labels, and section markers at tight uppercase tracking. The aesthetic is "independent arts publication" — the kind with
+  a colophon, hand-numbered editions, and an editorial desk.
 colors:
-  pink: "#F2B6C6"
-  butter: "#F2D86A"
-  burgundy: "#7A1F35"
-
+  pink: '#F2B6C6'
+  butter: '#F2D86A'
+  burgundy: '#7A1F35'
 color-aliases:
   pink-deep: pink
   sky: pink
@@ -17,166 +44,164 @@ color-aliases:
   navy: burgundy
   forest: burgundy
   ink: burgundy
-
 typography:
   display-wordmark:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 300px
     fontWeight: 800
     lineHeight: 0.82
     letterSpacing: -0.04em
   display-closer:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 320px
     fontWeight: 700
     lineHeight: 0.82
     letterSpacing: -0.05em
   display-stat:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 540px
     fontWeight: 700
     lineHeight: 0.78
     letterSpacing: -0.06em
   display-stat-unit:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 220px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
   chapter-num:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 240px
     fontWeight: 400
     lineHeight: 0.9
     letterSpacing: 0
   quote-mark:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 200px
     fontWeight: 400
     lineHeight: 0.6
     letterSpacing: 0
   display-xl:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 84px
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: -0.02em
   display-lg:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 76px
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: -0.02em
   signature:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 64px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
   endorsement-num:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 56px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     color: pink
   timeline-year:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 56px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
   subhead-serif:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 48px
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0
   lede:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 56px
     fontWeight: 500
     lineHeight: 1.05
     letterSpacing: -0.02em
   cover-pill:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 44px
     fontWeight: 500
     lineHeight: 1.0
     letterSpacing: 0
   chart-title:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 40px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
   card-title:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 40px
     fontWeight: 600
     lineHeight: 1.0
     letterSpacing: -0.02em
   quote-heading:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 56px
     fontWeight: 600
     lineHeight: 1.0
     letterSpacing: -0.02em
   body-lg:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 28px
     fontWeight: 400
     lineHeight: 1.45
     letterSpacing: 0
   body-md:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 26px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0
   body-sm:
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.45
     letterSpacing: 0
   label:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.15em
     textTransform: uppercase
   label-wide:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.18em
     textTransform: uppercase
   label-mid:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.12em
     textTransform: uppercase
   label-tight:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.10em
     textTransform: uppercase
   footer:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.12em
     textTransform: uppercase
     opacity: 0.75
-
 spacing:
   slide-pad: 96px
   chrome-gutter: 64px
@@ -186,16 +211,14 @@ spacing:
   footer-bottom: 36px
   grid-gap: 24px
   endorsement-pad: 20px 0
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   pill:
     borderRadius: 999px
     padding: 0.35em 0.9em
-    fontFamily: "Bricolage Grotesque, sans-serif"
+    fontFamily: Bricolage Grotesque, sans-serif
     fontWeight: 500
     lineHeight: 1.0
   cover-pill:
@@ -212,38 +235,38 @@ components:
     padding: 28px 28px 30px
     height: 340px
   value-card-dark:
-    background: "{colors.burgundy}"
-    color: "{colors.butter}"
+    background: '{colors.burgundy}'
+    color: '{colors.butter}'
   value-card-light:
-    background: "{colors.butter}"
-    color: "{colors.burgundy}"
+    background: '{colors.butter}'
+    color: '{colors.burgundy}'
   chart-card:
-    background: "{colors.butter}"
-    color: "{colors.burgundy}"
+    background: '{colors.butter}'
+    color: '{colors.burgundy}'
     borderRadius: 32px
     padding: 48px 48px 56px
   timeline-ribbon:
-    background: "{colors.burgundy}"
-    color: "{colors.butter}"
+    background: '{colors.burgundy}'
+    color: '{colors.butter}'
     borderRadius: 999px
     padding: 24px 44px
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     letterSpacing: 0.15em
     textTransform: uppercase
   timeline-ribbon-accent:
-    fontFamily: "Instrument Serif, serif"
+    fontFamily: Instrument Serif, serif
     fontSize: 30px
     fontWeight: 400
     letterSpacing: 0
     textTransform: none
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   footer-chrome:
     position: absolute
     left: 64px
     right: 64px
     bottom: 36px
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 16px
     letterSpacing: 0.12em
     textTransform: uppercase
@@ -262,27 +285,27 @@ components:
   stat-breakdown-bar:
     height: 10px
     borderRadius: 999px
-    background: "rgba(246,237,220,0.15)"
+    background: rgba(246,237,220,0.15)
   stat-breakdown-divider:
-    borderTop: "1px solid rgba(246,237,220,0.25)"
+    borderTop: 1px solid rgba(246,237,220,0.25)
   endorsement-divider:
-    borderTop: "1px solid rgba(246,237,220,0.30)"
+    borderTop: 1px solid rgba(246,237,220,0.30)
   avatar:
     width: 72px
     height: 72px
     borderRadius: 999px
-    background: "{colors.burgundy}"
-    border: "3px solid {colors.burgundy}"
+    background: '{colors.burgundy}'
+    border: 3px solid {colors.burgundy}
   timeline-axis:
     height: 4px
-    background: "{colors.burgundy}"
+    background: '{colors.burgundy}'
     opacity: 0.15
   timeline-dot:
     width: 28px
     height: 28px
     borderRadius: 999px
-    border: "4px solid {colors.butter}"
-    background: "{colors.burgundy}"
+    border: 4px solid {colors.butter}
+    background: '{colors.burgundy}'
 ---
 
 ## Frontend Slides Fixed-Stage Policy

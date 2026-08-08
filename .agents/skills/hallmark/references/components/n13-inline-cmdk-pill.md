@@ -1,3 +1,22 @@
+---
+title: N13 Inline Cmdk Pill
+domain: skill
+summary: A **visible** search pill sits inline in the bar — placeholder text plus a `⌘K` kbd hint — alongside (not replacing)
+  the links. Click it, or press ⌘K / Ctrl K, to open a spotlight modal with grouped, keyboard-navigable results. The opposite
+  of N4 (wh
+critical_directives:
+- Anti-pattern:* don't fake the modal with a `<div>` that traps no focus and ignores Esc — if you ship the pill you ship t
+section_outline:
+- N13 · Inline ⌘K search pill
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n13-inline-cmdk-pill.md
+- When reading context for N13 Inline Cmdk Pill
+tags:
+- skill
+- n13-inline-cmdk-pill
+updated: '2026-08-08'
+---
+
 ### N13 · Inline ⌘K search pill
 A **visible** search pill sits inline in the bar — placeholder text plus a `⌘K` kbd hint — alongside (not replacing) the links. Click it, or press ⌘K / Ctrl K, to open a spotlight modal with grouped, keyboard-navigable results. The opposite of N4 (which *hides* nav behind the shortcut): here the affordance is on the surface for newcomers, with the shortcut for power users. Tailwind, Linear, Raycast, docs sites.
 *Use when:* the product is search-heavy or docs-heavy and search is a primary action (dev tools, music/library apps, large content sites).

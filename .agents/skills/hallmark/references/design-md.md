@@ -1,3 +1,28 @@
+---
+title: design.md — opt-in portable design system
+domain: skill
+summary: Loaded by [`SKILL.md`](../SKILL.md) Step 6 ONLY when the user explicitly asks Hallmark to lock the current build's
+  design system into a portable file. The default verb does NOT auto-emit `design.md`. The user iterates freely until they
+  say the system
+critical_directives:
+- Multi-page redesign keeps existing behaviour.** `hallmark redesign --multi-page` produces the heavyweight `design.md` pe
+- 'color-rule:       oklch(<L> <C> <H>);'
+- The diversification rule INVERTS — pages must SHARE the system, not differ from each other.
+section_outline:
+- design.md — opt-in portable design system
+- Triggers (phrase-only — no new verb)
+- Two emission paths (default vs study)
+- Scope
+- CTA — surface the offer in the Step 5 preview
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/design-md.md
+- When reading context for design.md — opt-in portable design system
+tags:
+- skill
+- design-md
+updated: '2026-08-08'
+---
+
 # design.md — opt-in portable design system
 
 Loaded by [`SKILL.md`](../SKILL.md) Step 6 ONLY when the user explicitly asks Hallmark to lock the current build's design system into a portable file. The default verb does NOT auto-emit `design.md`. The user iterates freely until they say the system is settled, then asks for it.

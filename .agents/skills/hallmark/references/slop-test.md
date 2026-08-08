@@ -1,3 +1,29 @@
+---
+title: Slop test — 58 gates + pre-emit self-critique
+domain: skill
+summary: Run this list before handing back any output. Every answer must be **no**. Update the Step 5 preview block's `Slop
+  test` row to reflect the actual outcome of this run. Some gates are **universal** (apply to every genre); some are **genre-scoped**
+  (ap
+critical_directives:
+- 'Border-width shifts between states** — default / hover / focus / error must all keep `border-width: 1px`. State changes '
+- 'Focus ring built from `border` instead of `outline`** — must be `outline: 2px solid var(--color-focus)` with `outline-of'
+- '`--color-accent-ink` missing or unused** — whenever `--color-accent` fills a surface that carries text, `--color-accent-'
+- Dark-section ink-on-ink** — any section / panel whose `background-color` is OKLCH lightness < 50 % must also swap its te
+section_outline:
+- Slop test — 58 gates + pre-emit self-critique
+- Pre-emit self-critique (six axes)
+- Visual
+- Structural
+- Microinteractions
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/slop-test.md
+- When reading context for Slop test — 58 gates + pre-emit self-critique
+tags:
+- skill
+- slop-test
+updated: '2026-08-08'
+---
+
 # Slop test — 58 gates + pre-emit self-critique
 
 Run this list before handing back any output. Every answer must be **no**. Update the Step 5 preview block's `Slop test` row to reflect the actual outcome of this run.

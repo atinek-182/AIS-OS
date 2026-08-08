@@ -1,3 +1,23 @@
+---
+title: 'Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)'
+domain: skill
+summary: 'Before writing individual page components or route handlers: 1. **Phase 0 Stack Inquiry (`/grill-me`)**:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)'
+- Phase 0 & Phase 0.1 Verification Protocol
+- Multi-Page Sitemap Specification
+- Master RootLayout Standards
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/00-sitemap-and-architecture.md
+- 'When reading context for Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)'
+tags:
+- skill
+- 00-sitemap-and-architecture
+updated: '2026-08-08'
+---
+
 # Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)
 
 ## Phase 0 & Phase 0.1 Verification Protocol

@@ -1,205 +1,236 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Playfair Display at weight 400** carries every headline, every quote, every stat figure, and every watermark numeral. **
+- JetBrains Mono at weight 300** carries every label, kicker, footline, slide counter, and stat caption. Always uppercase,
+- 'Density philosophy: sparse and breathing.** Grove reads as elegant when slides are quiet — one headline, one supporting '
+- Playfair Display at weight 400 — never bold — for every serif moment. Italic in `{colors.accent}` is the headline accent
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/grove/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Grove
-description: A quiet, editorial-serif presentation system in the register of a well-bound monograph or boutique brand book. Playfair Display at weight 400 (never bold) carries every headline, italicized in terracotta coral for accent emphasis as the signature move. Jost weight 300 carries every paragraph as the "good paper" body face. JetBrains Mono at weight 300 holds labels, kickers, and the thin chrome bars. The palette pairs a deep forest green canvas (#192b1b) with warm cream text (#d4cfbf) and a single terracotta coral accent (#c8524a). Generous negative space, hairline 1px borders, and a near-invisible serif watermark numeral give it the calm authority of a literary journal.
-
+description: A quiet, editorial-serif presentation system in the register of a well-bound monograph or boutique brand book.
+  Playfair Display at weight 400 (never bold) carries every headline, italicized in terracotta coral for accent emphasis as
+  the signature move. Jost weight 300 carries every paragraph as the "good paper" body face. JetBrains Mono at weight 300
+  holds labels, kickers, and the thin chrome bars. The palette pairs a deep forest green canvas (#192b1b) with warm cream
+  text (#d4cfbf) and a single terracotta coral accent (#c8524a). Generous negative space, hairline 1px borders, and a near-invisible
+  serif watermark numeral give it the calm authority of a literary journal.
 colors:
-  bg: "#192b1b"
-  bg-alt: "#1e3221"
-  bg-light: "#e8e4d6"
-  bg-light-alt: "#dedad0"
-  fg: "#d4cfbf"
-  fg-2: "rgba(212, 207, 191, 0.6)"
-  fg-3: "rgba(212, 207, 191, 0.32)"
-  fg-light: "#192b1b"
-  fg-light-2: "rgba(25, 43, 27, 0.58)"
-  fg-light-3: "rgba(25, 43, 27, 0.33)"
-  accent: "#c8524a"
-  border: "rgba(212, 207, 191, 0.12)"
-  border-light: "rgba(25, 43, 27, 0.14)"
-  watermark-dark: "rgba(212, 207, 191, 0.06)"
-  watermark-light: "rgba(25, 43, 27, 0.06)"
-
+  bg: '#192b1b'
+  bg-alt: '#1e3221'
+  bg-light: '#e8e4d6'
+  bg-light-alt: '#dedad0'
+  fg: '#d4cfbf'
+  fg-2: rgba(212, 207, 191, 0.6)
+  fg-3: rgba(212, 207, 191, 0.32)
+  fg-light: '#192b1b'
+  fg-light-2: rgba(25, 43, 27, 0.58)
+  fg-light-3: rgba(25, 43, 27, 0.33)
+  accent: '#c8524a'
+  border: rgba(212, 207, 191, 0.12)
+  border-light: rgba(25, 43, 27, 0.14)
+  watermark-dark: rgba(212, 207, 191, 0.06)
+  watermark-light: rgba(25, 43, 27, 0.06)
 color-aliases:
   fg-light: bg
-  fg-light-canonical: "fg-light shares hex #192b1b with bg — the green is reused as both surface and primary text-on-light"
-
+  fg-light-canonical: 'fg-light shares hex #192b1b with bg — the green is reused as both surface and primary text-on-light'
 typography:
   display:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "10vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 10vw
     fontWeight: 400
     lineHeight: 1
     letterSpacing: -0.01em
   h1:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "5.5vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 5.5vw
     fontWeight: 400
     lineHeight: 1.1
   h1-statement:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "min(4.5vw, 7.5vh, 88px)"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: min(4.5vw, 7.5vh, 88px)
     fontWeight: 400
     lineHeight: 1.15
   h2:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "3.2vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 3.2vw
     fontWeight: 400
     lineHeight: 1.2
   h3:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "2vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 2vw
     fontWeight: 400
     lineHeight: 1.3
   quote-text:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "3.2vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 3.2vw
     fontWeight: 400
     lineHeight: 1.35
     letterSpacing: -0.01em
     fontStyle: italic
   quote-mark:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "8vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 8vw
     fontWeight: 400
     lineHeight: 0.6
   stat-value:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "4.5vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 4.5vw
     fontWeight: 400
     lineHeight: 1
     letterSpacing: -0.02em
   grove-num:
-    fontFamily: "'Playfair Display', 'Noto Serif SC', Georgia, serif"
-    fontSize: "18vw"
+    fontFamily: '''Playfair Display'', ''Noto Serif SC'', Georgia, serif'
+    fontSize: 18vw
     fontWeight: 400
     lineHeight: 1
     letterSpacing: -0.03em
   lead:
-    fontFamily: "'Jost', 'Noto Sans SC', system-ui, sans-serif"
-    fontSize: "1.45vw"
+    fontFamily: '''Jost'', ''Noto Sans SC'', system-ui, sans-serif'
+    fontSize: 1.45vw
     fontWeight: 300
     lineHeight: 1.65
   body:
-    fontFamily: "'Jost', 'Noto Sans SC', system-ui, sans-serif"
-    fontSize: "1.05vw"
+    fontFamily: '''Jost'', ''Noto Sans SC'', system-ui, sans-serif'
+    fontSize: 1.05vw
     fontWeight: 300
     lineHeight: 1.75
   body-list-emph:
-    fontFamily: "'Jost', 'Noto Sans SC', system-ui, sans-serif"
-    fontSize: "max(1.4vw, 17px)"
+    fontFamily: '''Jost'', ''Noto Sans SC'', system-ui, sans-serif'
+    fontSize: max(1.4vw, 17px)
     fontWeight: 300
     lineHeight: 1.6
   caption:
-    fontFamily: "'Jost', 'Noto Sans SC', system-ui, sans-serif"
-    fontSize: "0.82vw"
+    fontFamily: '''Jost'', ''Noto Sans SC'', system-ui, sans-serif'
+    fontSize: 0.82vw
     fontWeight: 300
     lineHeight: 1.55
   label:
-    fontFamily: "'JetBrains Mono', monospace"
-    fontSize: "0.7vw"
+    fontFamily: '''JetBrains Mono'', monospace'
+    fontSize: 0.7vw
     fontWeight: 300
     letterSpacing: 0.12em
   kicker:
-    fontFamily: "'JetBrains Mono', monospace"
-    fontSize: "0.7vw"
+    fontFamily: '''JetBrains Mono'', monospace'
+    fontSize: 0.7vw
     fontWeight: 300
     letterSpacing: 0.14em
     textTransform: uppercase
   chapter-num:
-    fontFamily: "'JetBrains Mono', monospace"
-    fontSize: "0.7vw"
+    fontFamily: '''JetBrains Mono'', monospace'
+    fontSize: 0.7vw
     fontWeight: 300
     letterSpacing: 0.2em
     textTransform: uppercase
   stat-label:
-    fontFamily: "'JetBrains Mono', monospace"
-    fontSize: "0.7vw"
+    fontFamily: '''JetBrains Mono'', monospace'
+    fontSize: 0.7vw
     fontWeight: 300
     letterSpacing: 0.12em
     textTransform: uppercase
-
 spacing:
-  pad-x: "8vw"
-  pad-y: "6.5vh"
-  pad-quote-x: "calc(8vw * 1.1)"
-  pad-quote-y: "calc(6.5vh * 1.2)"
-  gap-lg: "4.5vh"
-  gap-md: "2.8vh"
-  gap-sm: "1.4vh"
-  rule-short: "36px"
-
+  pad-x: 8vw
+  pad-y: 6.5vh
+  pad-quote-x: calc(8vw * 1.1)
+  pad-quote-y: calc(6.5vh * 1.2)
+  gap-lg: 4.5vh
+  gap-md: 2.8vh
+  gap-sm: 1.4vh
+  rule-short: 36px
 motion:
-  ease-slide: "cubic-bezier(0.77, 0, 0.175, 1)"
-  dur-slide: "0.9s"
-  ease-enter: "cubic-bezier(0.16, 1, 0.3, 1)"
-  dur-enter: "0.7s"
-  stagger-delays: "0 / 0.08s / 0.18s / 0.3s / 0.44s / 0.6s / 0.78s"
-
+  ease-slide: cubic-bezier(0.77, 0, 0.175, 1)
+  dur-slide: 0.9s
+  ease-enter: cubic-bezier(0.16, 1, 0.3, 1)
+  dur-enter: 0.7s
+  stagger-delays: 0 / 0.08s / 0.18s / 0.3s / 0.44s / 0.6s / 0.78s
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   slide-chrome:
-    description: "Thin top bar separating slide content from the page edge. A flex space-between row holding mono label text on each side, separated below by a 1px hairline in {colors.border} (or {colors.border-light} on light slides). Pads with {spacing.gap-sm} above the rule, then {spacing.gap-md} below before content starts."
-    border: "1px solid {colors.border}"
-    typography: "{typography.label}"
+    description: Thin top bar separating slide content from the page edge. A flex space-between row holding mono label text
+      on each side, separated below by a 1px hairline in {colors.border} (or {colors.border-light} on light slides). Pads
+      with {spacing.gap-sm} above the rule, then {spacing.gap-md} below before content starts.
+    border: 1px solid {colors.border}
+    typography: '{typography.label}'
   slide-foot:
-    description: "Matching bottom bar. Flex space-between row holding section name and 'NN / TT' counter, with 1px hairline border-top. The chrome and foot together frame every content slide; cover, chapter, quote, and end slides hide both."
-    border: "1px solid {colors.border}"
-    typography: "{typography.label}"
+    description: Matching bottom bar. Flex space-between row holding section name and 'NN / TT' counter, with 1px hairline
+      border-top. The chrome and foot together frame every content slide; cover, chapter, quote, and end slides hide both.
+    border: 1px solid {colors.border}
+    typography: '{typography.label}'
   grove-num:
-    description: "Massive serif digit placed in the background at very low opacity (6%) as compositional texture. Sits absolutely at right: {spacing.pad-x}, bottom: -0.15em, with pointer-events disabled. The system's signature wallpaper element on chapter and section moments."
-    fontSize: "18vw"
-    color: "{colors.watermark-dark} on dark / {colors.watermark-light} on light"
+    description: 'Massive serif digit placed in the background at very low opacity (6%) as compositional texture. Sits absolutely
+      at right: {spacing.pad-x}, bottom: -0.15em, with pointer-events disabled. The system''s signature wallpaper element
+      on chapter and section moments.'
+    fontSize: 18vw
+    color: '{colors.watermark-dark} on dark / {colors.watermark-light} on light'
   grove-stat:
-    description: "Stat card: large Playfair value in {colors.accent}, mono uppercase label beneath, 1px border-bottom hairline. No background fill — the card is defined by the rule and the type ratio alone."
-    valueColor: "{colors.accent}"
-    valueSize: "4.5vw"
-    labelTypography: "{typography.stat-label}"
-    borderBottom: "1px solid {colors.border}"
+    description: 'Stat card: large Playfair value in {colors.accent}, mono uppercase label beneath, 1px border-bottom hairline.
+      No background fill — the card is defined by the rule and the type ratio alone.'
+    valueColor: '{colors.accent}'
+    valueSize: 4.5vw
+    labelTypography: '{typography.stat-label}'
+    borderBottom: 1px solid {colors.border}
   bullet-list:
-    description: "Two-column grid list (2em / 1fr) where the bullet is a coral em-dash glyph rendered in JetBrains Mono, not a CSS bullet. The em-dash is the system's bullet language."
-    bulletGlyph: "—"
-    bulletColor: "{colors.accent}"
-    bulletFont: "'JetBrains Mono', monospace"
+    description: Two-column grid list (2em / 1fr) where the bullet is a coral em-dash glyph rendered in JetBrains Mono, not
+      a CSS bullet. The em-dash is the system's bullet language.
+    bulletGlyph: —
+    bulletColor: '{colors.accent}'
+    bulletFont: '''JetBrains Mono'', monospace'
   rule-coral:
-    width: "{spacing.rule-short}"
-    height: "1px"
-    background: "{colors.accent}"
-    description: "A 36px-wide 1px-tall terracotta coral rule. The compositional beat between a kicker and the headline that follows."
+    width: '{spacing.rule-short}'
+    height: 1px
+    background: '{colors.accent}'
+    description: A 36px-wide 1px-tall terracotta coral rule. The compositional beat between a kicker and the headline that
+      follows.
   rule-full:
-    width: "100%"
-    height: "1px"
-    background: "{colors.border} on dark / {colors.border-light} on light"
-    description: "Full-width hairline divider. Used between stacked sections inside a slide."
+    width: 100%
+    height: 1px
+    background: '{colors.border} on dark / {colors.border-light} on light'
+    description: Full-width hairline divider. Used between stacked sections inside a slide.
   kicker:
-    typography: "{typography.kicker}"
-    color: "{colors.accent}"
-    description: "Mono uppercase eyebrow in coral, placed above an h1/h2 headline."
+    typography: '{typography.kicker}'
+    color: '{colors.accent}'
+    description: Mono uppercase eyebrow in coral, placed above an h1/h2 headline.
   chapter-num:
-    typography: "{typography.chapter-num}"
-    color: "{colors.accent}"
-    marginBottom: "{spacing.gap-md}"
+    typography: '{typography.chapter-num}'
+    color: '{colors.accent}'
+    marginBottom: '{spacing.gap-md}'
   quote-mark:
-    typography: "{typography.quote-mark}"
-    color: "{colors.accent}"
-    description: "Massive Playfair opening-quote glyph in coral, placed above the italic quote body."
+    typography: '{typography.quote-mark}'
+    color: '{colors.accent}'
+    description: Massive Playfair opening-quote glyph in coral, placed above the italic quote body.
   img-placeholder:
-    background: "{colors.bg-alt} on dark / {colors.border-light} on light"
-    color: "{colors.fg-3} on dark / {colors.fg-light-3} on light"
-    typography: "{typography.label}"
-    minHeight: "30vh"
-    description: "Image-region marker — solid darker-than-background fill with a mono caption stating the placeholder text. Use this in place of <img> until a real image is available."
+    background: '{colors.bg-alt} on dark / {colors.border-light} on light'
+    color: '{colors.fg-3} on dark / {colors.fg-light-3} on light'
+    typography: '{typography.label}'
+    minHeight: 30vh
+    description: Image-region marker — solid darker-than-background fill with a mono caption stating the placeholder text.
+      Use this in place of <img> until a real image is available.
   nav-dots:
-    position: "fixed"
-    placement: "bottom: 24px, horizontally centered"
-    dotSize: "5px"
-    dotBackground: "rgba(255, 255, 255, 0.22)"
-    activeBackground: "rgba(255, 255, 255, 0.8)"
-    activeTransform: "scale(1.4)"
-    description: "Small white dots at the bottom of the viewport indicating slide position. The fixed counter (#slide-counter) is intentionally disabled — the slide-foot already shows NN / TT."
+    position: fixed
+    placement: 'bottom: 24px, horizontally centered'
+    dotSize: 5px
+    dotBackground: rgba(255, 255, 255, 0.22)
+    activeBackground: rgba(255, 255, 255, 0.8)
+    activeTransform: scale(1.4)
+    description: Small white dots at the bottom of the viewport indicating slide position. The fixed counter (#slide-counter)
+      is intentionally disabled — the slide-foot already shows NN / TT.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

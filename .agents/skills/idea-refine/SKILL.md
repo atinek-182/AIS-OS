@@ -1,6 +1,27 @@
 ---
+title: Idea Refine
+domain: skill
+summary: Refines raw ideas into sharp, actionable concepts worth building through structured divergent and convergent thinking.
+  1.  **Understand & Expand (Divergent):** Restate the idea, ask sharpening questions, and generate variations.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Idea Refine
+- How It Works
+- Usage
+- 'Optional: Initialize the ideas directory'
+- Output
+read_triggers:
+- When working on skill in .agents/skills/idea-refine/SKILL.md
+- When reading context for Idea Refine
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: idea-refine
-description: Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking. Use when an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand options before converging on one. Triggers on "ideate", "refine this idea", or "stress-test my plan".
+description: Refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking. Use when
+  an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand
+  options before converging on one. Triggers on "ideate", "refine this idea", or "stress-test my plan".
 ---
 
 # Idea Refine

@@ -1,3 +1,28 @@
+---
+title: Biennale Yellow Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/biennale-yellow/design.md`'
+critical_directives:
+- 'Signature move: Warm parchment ground ({colors.paper}) on every surface; never white, never gray.'
+- 'Signature move: Single ink color ({colors.ink}) for all text and all rules — no secondary text colors.'
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+section_outline:
+- Biennale Yellow Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/biennale-yellow/preview.md
+- When reading context for Biennale Yellow Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Biennale Yellow Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

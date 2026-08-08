@@ -1,6 +1,28 @@
 ---
+title: JS Mastery Fullstack Code Auditor (`/jsmastery-audit`)
+domain: skill
+summary: 'This skill performs comprehensive static and architectural audits on fullstack JavaScript, TypeScript, and Next.js
+  applications, following JS Mastery Pro standards. - **Slash Command**: `/jsmastery-audit [path]`'
+critical_directives:
+- Ensure sensitive logic, secret tokens, and DB queries never leak to client components.
+- Audit accessibility (WCAG AA color contrast, ARIA labels, keyboard focus) and Hallmark anti-slop rules (`/hallmark`).
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- JS Mastery Fullstack Code Auditor (`/jsmastery-audit`)
+- Overview & Tri-Mode Routing
+- The 6 Audit Gates
+- 1. Next.js App Router & Server/Client Boundary Gate
+- 2. TypeScript & Type-Safety Gate
+read_triggers:
+- When working on skill in .agents/skills/jsmastery-audit/SKILL.md
+- When reading context for JS Mastery Fullstack Code Auditor (`/jsmastery-audit`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: jsmastery-audit
-description: Fullstack JavaScript and Next.js App Router code auditor. Audits server actions, API routes, security boundaries, performance, rendering patterns, and type-safety. Triggered via /jsmastery-audit or naturally when auditing JS/TS codebases.
+description: Fullstack JavaScript and Next.js App Router code auditor. Audits server actions, API routes, security boundaries,
+  performance, rendering patterns, and type-safety. Triggered via /jsmastery-audit or naturally when auditing JS/TS codebases.
 argument-hint: '[target_dir_or_file]'
 ---
 

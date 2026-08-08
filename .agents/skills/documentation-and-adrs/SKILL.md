@@ -1,6 +1,29 @@
 ---
+title: Documentation and ADRs
+domain: skill
+summary: Document decisions, not just code. The most valuable documentation captures the *why* — the context, constraints,
+  and trade-offs that led to a decision. Code shows *what* was built; documentation explains *why it was built this way* and
+  *what alterna
+critical_directives:
+- 'IMPORTANT: This function must be called before the first render.'
+- CLAUDE.md / rules files** — Document project conventions so agents follow them
+- '[ ] Rules files (CLAUDE.md etc.) are current and accurate'
+section_outline:
+- Documentation and ADRs
+- Overview
+- When to Use
+- Architecture Decision Records (ADRs)
+- When to Write an ADR
+read_triggers:
+- When working on skill in .agents/skills/documentation-and-adrs/SKILL.md
+- When reading context for Documentation and ADRs
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: documentation-and-adrs
-description: Records decisions and documentation. Use when making architectural decisions, changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.
+description: Records decisions and documentation. Use when making architectural decisions, changing public APIs, shipping
+  features, or when you need to record context that future engineers and agents will need to understand the codebase.
 ---
 
 # Documentation and ADRs

@@ -1,3 +1,29 @@
+---
+title: 'Masterclass Guide: How Senior AI Engineers Build With AI in 2026'
+domain: architecture
+summary: This guide provides an unsummarized, complete blueprint of the Senior AI Engineering workflow taught by **JavaScript
+  Mastery (Adrian Hajdin)** in the 4-hour masterclass *How Senior Engineers Actually Build With AI in 2026*, expanded with
+  Atinek Maury
+critical_directives:
+- '**Invariants**: Mandatory codebase rules that can NEVER be broken (e.g. *"Auth enforced at every mut'
+- Naming conventions & folder layout rules.
+- Named color tokens (`globals.css` HSL/OKLCH variables, never raw hex values).
+- Rules for 1-spec-at-a-time execution and no speculative changes.
+section_outline:
+- 'Masterclass Guide: How Senior AI Engineers Build With AI in 2026'
+- 📌 Executive Overview
+- 🚨 Why Most AI-Assisted Projects Fail
+- 🏗️ The 7-File Context Methodology
+- 1. `AGENTS.md` / `CLAUDE.md` (System Entry Instructions)
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE.md
+- 'When reading context for Masterclass Guide: How Senior AI Engineers Build With AI in 2026'
+tags:
+- architecture
+- STEP_BY_STEP_SENIOR_AI_ENGINEERING_GUIDE
+updated: '2026-08-08'
+---
+
 # Masterclass Guide: How Senior AI Engineers Build With AI in 2026
 
 ## 📌 Executive Overview

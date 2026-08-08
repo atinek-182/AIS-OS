@@ -1,3 +1,21 @@
+---
+title: 15 Split Studio
+domain: skill
+summary: Diptych. Every major content block divides the screen — text on one side, proof on the other. The pairing alternates
+  direction down the page. - **Heading:** half-screen wide; the other half holds a screenshot or a quote.
+critical_directives:
+- Divider:** a clear gutter between halves; no rules.
+section_outline:
+- 15 · Split Studio
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/15-split-studio.md
+- When reading context for 15 Split Studio
+tags:
+- skill
+- 15-split-studio
+updated: '2026-08-08'
+---
+
 ## 15 · Split Studio
 
 Diptych. Every major content block divides the screen — text on one side, proof on the other. The pairing alternates direction down the page.

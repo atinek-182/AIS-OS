@@ -1,108 +1,127 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Two muted pastel accent surfaces — blush pink and sage green — used as region fills, never as text colors.
+- 'Green** (`{colors.green}` — #E5EDD6): Sage celadon. The cool accent surface — region backgrounds, bar fills, hover-state'
+- 'Default headline color**: `{colors.black}` — always. Headlines never appear in pink, green, or gray; only in black (on
+  l'
+- 'Default border color**: `{colors.black}` — always.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/raw-grid/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Raw Grid
-description: A neobrutalist presentation system where 3px solid black borders ARE the layout. Display type runs in the native system sans-serif stack (Segoe UI / system-ui) at weight 900 in strict uppercase — no web fonts loaded. The palette is white canvas + black structure + two muted pastel accents (blush pink #F2D4CF and sage green #E5EDD6) + a neutral gray. Depth comes from hard offset shadows in solid black at 4px and 6px — never blurred, never colored. The aesthetic borrows from brutalist editorial web design and zine layout: borders meet without gaps, contrast is high but warmed by the pastel accents, and large numerals sit at very low opacity behind content as decorative wallpaper. The effect is sharp, system-native, and unmistakably digital — closer to a Notion-meets-protest-poster than a polished pitch deck.
-
+description: A neobrutalist presentation system where 3px solid black borders ARE the layout. Display type runs in the native
+  system sans-serif stack (Segoe UI / system-ui) at weight 900 in strict uppercase — no web fonts loaded. The palette is white
+  canvas + black structure + two muted pastel accents (blush pink
 colors:
-  black: "#0A0A0A"
-  white: "#FFFFFF"
-  pink: "#F2D4CF"
-  green: "#E5EDD6"
-  gray: "#F5F5F5"
-  darkgray: "#333333"
-
+  black: '#0A0A0A'
+  white: '#FFFFFF'
+  pink: '#F2D4CF'
+  green: '#E5EDD6'
+  gray: '#F5F5F5'
+  darkgray: '#333333'
 borders:
-  primary: "3px solid {colors.black}"
-
+  primary: 3px solid {colors.black}
 shadows:
-  default: "6px 6px 0 {colors.black}"
-  small: "4px 4px 0 {colors.black}"
-
+  default: 6px 6px 0 {colors.black}
+  small: 4px 4px 0 {colors.black}
 typography:
   display:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(48px, 7vw, 96px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(48px, 7vw, 96px)
     fontWeight: 900
     lineHeight: 1.05
     letterSpacing: -0.02em
     textTransform: uppercase
   headline:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(32px, 4.5vw, 64px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(32px, 4.5vw, 64px)
     fontWeight: 900
     lineHeight: 1.1
     letterSpacing: -0.01em
     textTransform: uppercase
   title:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(24px, 2.5vw, 36px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(24px, 2.5vw, 36px)
     fontWeight: 800
     lineHeight: 1.2
     letterSpacing: 0.01em
     textTransform: uppercase
   subtitle:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(16px, 1.4vw, 22px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(16px, 1.4vw, 22px)
     fontWeight: 700
     lineHeight: 1.3
     letterSpacing: 0.04em
     textTransform: uppercase
   body:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(16px, 1.3vw, 20px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(16px, 1.3vw, 20px)
     fontWeight: 500
     lineHeight: 1.6
     letterSpacing: 0
   caption:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(11px, 1vw, 13px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(11px, 1vw, 13px)
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: 0.08em
     textTransform: uppercase
   number:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(64px, 8vw, 120px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(64px, 8vw, 120px)
     fontWeight: 900
     lineHeight: 1.0
     letterSpacing: -0.04em
   number-md:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(36px, 4vw, 56px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(36px, 4vw, 56px)
     fontWeight: 900
     lineHeight: 1.0
     letterSpacing: -0.02em
   number-lg:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
-    fontSize: "clamp(48px, 6vw, 80px)"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
+    fontSize: clamp(48px, 6vw, 80px)
     fontWeight: 900
     lineHeight: 1.0
     letterSpacing: -0.02em
   label-text:
-    fontFamily: "Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif"
+    fontFamily: Segoe UI, system-ui, -apple-system, Helvetica, Arial, sans-serif
     fontSize: 11px
     fontWeight: 800
     lineHeight: 1.0
     letterSpacing: 0.08em
     textTransform: uppercase
-
 spacing:
-  pad-lg: "clamp(32px, 4vw, 64px)"
-  pad-md: "clamp(20px, 2.5vw, 40px)"
-  pad-sm: "clamp(12px, 1.5vw, 20px)"
-  gap-lg: "clamp(24px, 3vw, 48px)"
-  gap-md: "clamp(16px, 2vw, 32px)"
-  gap-sm: "clamp(8px, 1vw, 16px)"
-
+  pad-lg: clamp(32px, 4vw, 64px)
+  pad-md: clamp(20px, 2.5vw, 40px)
+  pad-sm: clamp(12px, 1.5vw, 20px)
+  gap-lg: clamp(24px, 3vw, 48px)
+  gap-md: clamp(16px, 2vw, 32px)
+  gap-sm: clamp(8px, 1vw, 16px)
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   label:
-    background: "{colors.black}"
-    color: "{colors.white}"
-    padding: "6px 14px"
+    background: '{colors.black}'
+    color: '{colors.white}'
+    padding: 6px 14px
     fontSize: 11px
     fontWeight: 800
     letterSpacing: 0.08em
@@ -110,87 +129,89 @@ components:
   line-h:
     width: 60px
     height: 4px
-    background: "{colors.black}"
+    background: '{colors.black}'
   line-v:
     width: 4px
     height: 60px
-    background: "{colors.black}"
+    background: '{colors.black}'
   line-full:
-    width: "100%"
+    width: 100%
     height: 4px
-    background: "{colors.black}"
+    background: '{colors.black}'
   arrow-prefix:
-    content: "→\\00a0"
-    description: "Inline right-arrow glyph (U+2192) followed by a non-breaking space. Prepended via ::before on CTAs and interactive list items."
+    content: →\00a0
+    description: Inline right-arrow glyph (U+2192) followed by a non-breaking space. Prepended via ::before on CTAs and interactive
+      list items.
   icon-box:
     width: 48px
     height: 48px
-    border: "3px solid {colors.black}"
-    background: "{colors.white}"
-    fontSize: "18px–20px"
+    border: 3px solid {colors.black}
+    background: '{colors.white}'
+    fontSize: 18px–20px
     fontWeight: 900
-    description: "Square white box with 3px black border, used for logos and feature icons. Contains 1–3 character glyph or Roman numeral."
+    description: Square white box with 3px black border, used for logos and feature icons. Contains 1–3 character glyph or
+      Roman numeral.
   bar-track:
-    width: "100%"
+    width: 100%
     height: 32px
-    border: "3px solid {colors.black}"
-    background: "{colors.white}"
+    border: 3px solid {colors.black}
+    background: '{colors.white}'
   bar-fill-pink:
-    background: "{colors.pink}"
+    background: '{colors.pink}'
   bar-fill-green:
-    background: "{colors.green}"
+    background: '{colors.green}'
   bar-fill-black:
-    background: "{colors.black}"
-    color: "{colors.white}"
+    background: '{colors.black}'
+    color: '{colors.white}'
   stat-box:
-    border: "3px solid {colors.black}"
-    padding: "clamp(16px, 2vw, 28px)"
-    background: "{colors.white}"
+    border: 3px solid {colors.black}
+    padding: clamp(16px, 2vw, 28px)
+    background: '{colors.white}'
   card:
-    padding: "clamp(24px, 3vw, 48px)"
-    border: "3px solid {colors.black}"
-    description: "Generic content card. Background may be white, pink, green, or gray."
+    padding: clamp(24px, 3vw, 48px)
+    border: 3px solid {colors.black}
+    description: Generic content card. Background may be white, pink, green, or gray.
   decorative-numeral:
     fontWeight: 900
-    fontSize: "clamp(40px, 5vw, 72px)"
+    fontSize: clamp(40px, 5vw, 72px)
     lineHeight: 1.0
     opacity: 0.2–0.35
-    description: "Oversized numeral placed inside a card at very low opacity as decorative wallpaper behind the actual content."
+    description: Oversized numeral placed inside a card at very low opacity as decorative wallpaper behind the actual content.
   decorative-quote-mark:
-    fontSize: "clamp(80px, 12vw, 160px)"
+    fontSize: clamp(80px, 12vw, 160px)
     fontWeight: 900
     opacity: 0.15
-    description: "Oversized opening quotation mark placed absolutely at the top-left of a quote region at very low opacity."
+    description: Oversized opening quotation mark placed absolutely at the top-left of a quote region at very low opacity.
   connector-node:
     width: 32px
     height: 32px
-    border: "3px solid {colors.black}"
-    background: "{colors.black}"
-    color: "{colors.white}"
+    border: 3px solid {colors.black}
+    background: '{colors.black}'
+    color: '{colors.white}'
     fontSize: 16px
     fontWeight: 900
-    description: "Small black square with white arrow glyph, used as a connector between sequential items in a horizontal flow."
+    description: Small black square with white arrow glyph, used as a connector between sequential items in a horizontal flow.
   legend-swatch:
     width: 16px
     height: 16px
-    border: "3px solid {colors.black}"
+    border: 3px solid {colors.black}
   donut-stroke-width: 24
   donut-track-stroke-width: 1.5
   table-cell:
-    border: "3px solid {colors.black}"
-    padding: "clamp(12px, 1.5vw, 20px)"
+    border: 3px solid {colors.black}
+    padding: clamp(12px, 1.5vw, 20px)
     fontWeight: 600
   table-header:
-    background: "{colors.black}"
-    color: "{colors.white}"
+    background: '{colors.black}'
+    color: '{colors.white}'
     fontWeight: 800
     letterSpacing: 0.06em
     textTransform: uppercase
   table-zebra-row:
-    background: "{colors.gray}"
+    background: '{colors.gray}'
   hover-highlight:
-    background: "{colors.green}"
-    transition: "background 0.15s"
+    background: '{colors.green}'
+    transition: background 0.15s
 ---
 
 ## Frontend Slides Fixed-Stage Policy

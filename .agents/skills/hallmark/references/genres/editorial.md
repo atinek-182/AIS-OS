@@ -1,3 +1,29 @@
+---
+title: Genre — editorial (default)
+domain: skill
+summary: 'The canonical Hallmark voice. Pages built for content-led briefs: portfolios, manifestos, type specimens, agency
+  sites, magazine pieces, indie podcasts, bakery / brand stories, considered B2C marketing. This is what Hallmark looks like
+  when no other '
+critical_directives:
+- Display** — roman serif, condensed sans, or display-heavy. Not Inter. Not Geist. The weight commits to an extreme (300 o
+- Hairline rules, fleurons, drop caps, double rules.
+- Glassmorphism** — never; the medium is paper, not glass.
+- Default nav:** N6 Newspaper masthead — full-width, large centred wordmark, thin issue/date row in serif small caps, doub
+section_outline:
+- Genre — editorial (default)
+- When to pick it
+- Themes that belong
+- Voice
+- What this genre allows
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/genres/editorial.md
+- When reading context for Genre — editorial (default)
+tags:
+- skill
+- editorial
+updated: '2026-08-08'
+---
+
 # Genre — editorial (default)
 
 The canonical Hallmark voice. Pages built for content-led briefs: portfolios, manifestos, type specimens, agency sites, magazine pieces, indie podcasts, bakery / brand stories, considered B2C marketing.

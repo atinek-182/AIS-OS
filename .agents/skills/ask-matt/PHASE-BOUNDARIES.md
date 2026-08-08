@@ -1,3 +1,26 @@
+---
+title: Phase boundaries
+domain: skill
+summary: 'A **phase** is a chunk of work inside a session — the grilling, the implementation, the QA. The definition is fuzzy
+  on purpose: a phase ends when you think *"ok, we''re done with that"*. The **phase boundary** is the gap between two phases,
+  and it is '
+critical_directives:
+- '1. Can you continue in this session?** Two things make the answer yes: the next phase needs this phase as a **primary so'
+section_outline:
+- Phase boundaries
+- The five options
+- The tree
+- Primary and secondary sources
+- These are judgement calls
+read_triggers:
+- When working on skill in .agents/skills/ask-matt/PHASE-BOUNDARIES.md
+- When reading context for Phase boundaries
+tags:
+- skill
+- PHASE-BOUNDARIES
+updated: '2026-08-08'
+---
+
 # Phase boundaries
 
 A **phase** is a chunk of work inside a session — the grilling, the implementation, the QA. The definition is fuzzy on purpose: a phase ends when you think *"ok, we're done with that"*.

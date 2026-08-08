@@ -1,6 +1,31 @@
 ---
+title: Observability and Instrumentation
+domain: skill
+summary: Code you can't observe is code you can't operate. Observability is the ability to answer "what is the system doing
+  and why?" from the outside, using the telemetry the code emits. Instrumentation is not a post-launch add-on — it's written
+  alongside th
+critical_directives:
+- Setting up or reviewing alerting rules
+- Correlation IDs are mandatory.** Generate (or accept) a request ID at the system boundary and attach it to every log lin
+- Never log secrets, tokens, passwords, or full PII.** This is a hard rule from the `security-and-hardening` skill — telem
+- Cardinality is the failure mode.** Every unique label combination is a separate time series. Labels must come from small
+section_outline:
+- Observability and Instrumentation
+- Overview
+- When to Use
+- Process
+- 1. Define "working" before instrumenting
+read_triggers:
+- When working on skill in .agents/skills/observability-and-instrumentation/SKILL.md
+- When reading context for Observability and Instrumentation
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: observability-and-instrumentation
-description: Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.
+description: Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing,
+  or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues
+  are reported but you can't tell what happened from the available data.
 ---
 
 # Observability and Instrumentation

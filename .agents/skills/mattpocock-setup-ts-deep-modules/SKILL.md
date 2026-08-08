@@ -1,6 +1,27 @@
 ---
+title: Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`)
+domain: skill
+summary: Adapted from Matt Pocock's package structure tooling. Configures strict module boundaries, `exports` fields in `package.json`,
+  and dependency-cruiser configs to enforce clean separation of concerns in TypeScript monorepos and multi-module apps. -
+  **S
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Overview & Tri-Mode Routing
+- Package Isolation Rules
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-setup-ts-deep-modules/SKILL.md
+- When reading context for Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-setup-ts-deep-modules
-description: Setup TypeScript package deep module boundaries and dependency-cruiser isolation. Prevents illegal cross-imports and circular dependencies in TS codebases. Triggered via /mattpocock-setup-ts-deep-modules or naturally when configuring TS module boundaries.
+description: Setup TypeScript package deep module boundaries and dependency-cruiser isolation. Prevents illegal cross-imports
+  and circular dependencies in TS codebases. Triggered via /mattpocock-setup-ts-deep-modules or naturally when configuring
+  TS module boundaries.
 argument-hint: '[optional_target_directory]'
 ---
 

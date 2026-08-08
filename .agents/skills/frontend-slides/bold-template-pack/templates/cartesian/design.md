@@ -1,200 +1,231 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Text Primary** (`{colors.text-primary}` — #1A1A1A): Near-black ink. Used for headlines, stat numerals, and the special
+  `'
+- 'Line** (`{colors.line}` — #B8B0A4): Pale taupe. The universal 1px line color: card borders, agenda rules, timeline conne'
+- 'Default headline color**: `{colors.text-primary}` — always ink, never colored, never accent-taupe. Playfair headlines ar'
+- 'Default border color**: `{colors.line}` — every 1px structural border. Never use ink-black for borders except the rare
+  `'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Stone & Ink Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/cartesian/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Cartesian
-description: A quiet, museum-catalog editorial system built on Playfair Display serif headlines, Inter sans body, and a five-tone warm-stone palette. The aesthetic is "consulting deck meets architectural monograph" — minimal geometric line decorations (thin circles, dashed arcs, vertical and horizontal hairlines) drift behind content, suggesting drafting paper and compass work. Every divider is a single 1px line in a muted taupe; nothing is bold, nothing is loud. The cultural reference is Massimo Vignelli's editorial work, the Cooper Hewitt catalog, and pencil-and-tracing-paper urban planning documents.
-
+description: A quiet, museum-catalog editorial system built on Playfair Display serif headlines, Inter sans body, and a five-tone
+  warm-stone palette. The aesthetic is "consulting deck meets architectural monograph" — minimal geometric line decorations
+  (thin circles, dashed arcs, vertical and horizontal hairlines) drift behind content, suggesting drafting paper and compass
+  work. Every divider is a single 1px line in a muted taupe; nothing is bold, nothing is loud. The cultural reference is Massimo
+  Vignelli's editorial work, the Cooper Hewitt catalog, and pencil-and-tracing-paper urban planning documents.
 colors:
-  bg-primary: "#EDE8E0"
-  bg-secondary: "#E2DBD1"
-  text-primary: "#1A1A1A"
-  text-secondary: "#5A5A5A"
-  accent: "#8A8178"
-  line: "#B8B0A4"
-  white-overlay: "rgba(255, 255, 255, 0.3)"
-
+  bg-primary: '#EDE8E0'
+  bg-secondary: '#E2DBD1'
+  text-primary: '#1A1A1A'
+  text-secondary: '#5A5A5A'
+  accent: '#8A8178'
+  line: '#B8B0A4'
+  white-overlay: rgba(255, 255, 255, 0.3)
 typography:
   display:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "clamp(3rem, 6vw, 5.5rem)"
+    fontFamily: Playfair Display, serif
+    fontSize: clamp(3rem, 6vw, 5.5rem)
     fontWeight: 400
     lineHeight: 1.1
   h1:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "clamp(2.5rem, 5vw, 4.5rem)"
+    fontFamily: Playfair Display, serif
+    fontSize: clamp(2.5rem, 5vw, 4.5rem)
     fontWeight: 400
     lineHeight: 1.1
   h2:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "clamp(1.8rem, 3.5vw, 3rem)"
+    fontFamily: Playfair Display, serif
+    fontSize: clamp(1.8rem, 3.5vw, 3rem)
     fontWeight: 400
     lineHeight: 1.1
   h3:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "clamp(1.2rem, 2vw, 1.6rem)"
+    fontFamily: Playfair Display, serif
+    fontSize: clamp(1.2rem, 2vw, 1.6rem)
     fontWeight: 400
     lineHeight: 1.1
   stat-figure:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "2rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 2rem
     fontWeight: 400
     lineHeight: 1
   agenda-numeral:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "1.5rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 1.5rem
     fontWeight: 400
     lineHeight: 1
   team-initial:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "2rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 2rem
     fontWeight: 400
     lineHeight: 1
   quote-mark:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "5rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 5rem
     fontWeight: 400
     lineHeight: 1
   card-headline:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "1.3rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 1.3rem
     fontWeight: 400
     lineHeight: 1.1
   timeline-headline:
-    fontFamily: "Playfair Display, serif"
-    fontSize: "1.2rem"
+    fontFamily: Playfair Display, serif
+    fontSize: 1.2rem
     fontWeight: 400
     lineHeight: 1.1
   body:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(0.9rem, 1.2vw, 1.1rem)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(0.9rem, 1.2vw, 1.1rem)
     fontWeight: 400
     lineHeight: 1.6
   body-sm:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "0.9rem"
+    fontFamily: Inter, sans-serif
+    fontSize: 0.9rem
     fontWeight: 400
     lineHeight: 1.6
   subtitle:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(1rem, 1.5vw, 1.3rem)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(1rem, 1.5vw, 1.3rem)
     fontWeight: 400
     lineHeight: 1.5
   attribution:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "0.85rem"
+    fontFamily: Inter, sans-serif
+    fontSize: 0.85rem
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 2px
     textTransform: uppercase
   label:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "0.75rem"
+    fontFamily: Inter, sans-serif
+    fontSize: 0.75rem
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 3px
     textTransform: uppercase
   micro:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "0.7rem"
+    fontFamily: Inter, sans-serif
+    fontSize: 0.7rem
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
     textTransform: uppercase
-
 spacing:
-  pad-y: "4vh"
-  pad-x: "4vw"
-  gap-xl: "6vw"
-  gap-lg: "5vw"
-  gap-md: "3vw"
-  gap-sm: "2vh"
-  card-pad: "4vh 2vw"
-
+  pad-y: 4vh
+  pad-x: 4vw
+  gap-xl: 6vw
+  gap-lg: 5vw
+  gap-md: 3vw
+  gap-sm: 2vh
+  card-pad: 4vh 2vw
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   card:
-    border: "1px solid {colors.line}"
-    padding: "{spacing.card-pad}"
-    background: "{colors.white-overlay}"
-    description: "Tracing-paper card — 1px taupe outline with semi-transparent white fill that lets the canvas tone bleed through. No radius, no shadow."
+    border: 1px solid {colors.line}
+    padding: '{spacing.card-pad}'
+    background: '{colors.white-overlay}'
+    description: Tracing-paper card — 1px taupe outline with semi-transparent white fill that lets the canvas tone bleed through.
+      No radius, no shadow.
   card-icon:
     width: 40px
     height: 40px
-    border: "1px solid {colors.line}"
-    borderRadius: "50%"
-    color: "{colors.accent}"
-    fontSize: "1rem"
-    description: "Small ringed circle (40px) containing a 1–3 character Roman numeral or letter in accent taupe."
+    border: 1px solid {colors.line}
+    borderRadius: 50%
+    color: '{colors.accent}'
+    fontSize: 1rem
+    description: Small ringed circle (40px) containing a 1–3 character Roman numeral or letter in accent taupe.
   agenda-row:
-    padding: "2vh 0"
-    borderBottom: "1px solid {colors.line}"
-    description: "List row separated only by a 1px taupe hairline. Numeral at left, label at right."
+    padding: 2vh 0
+    borderBottom: 1px solid {colors.line}
+    description: List row separated only by a 1px taupe hairline. Numeral at left, label at right.
   timeline-rule:
-    height: "1px"
-    background: "{colors.line}"
-    description: "Single horizontal 1px taupe line connecting timeline items. No nodes, no markers — just the line."
+    height: 1px
+    background: '{colors.line}'
+    description: Single horizontal 1px taupe line connecting timeline items. No nodes, no markers — just the line.
   vertical-line:
-    width: "1px"
-    height: "100%"
-    background: "{colors.line}"
+    width: 1px
+    height: 100%
+    background: '{colors.line}'
     opacity: 0.3
-    description: "Optional decorative vertical hairline anchored at left edge (default 8vw from edge) at low opacity. Provides drafting-paper grid feel."
+    description: Optional decorative vertical hairline anchored at left edge (default 8vw from edge) at low opacity. Provides
+      drafting-paper grid feel.
   horizontal-accent:
-    width: "20vw"
-    height: "1px"
-    background: "{colors.text-primary}"
-    description: "Single short ink-black 1px horizontal line used as a strong accent rule. Black, not taupe."
+    width: 20vw
+    height: 1px
+    background: '{colors.text-primary}'
+    description: Single short ink-black 1px horizontal line used as a strong accent rule. Black, not taupe.
   geo-circle:
-    border: "1px solid {colors.line}"
-    borderRadius: "50%"
+    border: 1px solid {colors.line}
+    borderRadius: 50%
     opacity: 0.5
-    description: "Thin solid taupe ring at low opacity, used as decorative geometry behind content."
+    description: Thin solid taupe ring at low opacity, used as decorative geometry behind content.
   geo-arc:
-    border: "1px dashed {colors.line}"
-    borderRadius: "50%"
+    border: 1px dashed {colors.line}
+    borderRadius: 50%
     opacity: 0.3
-    description: "Thin dashed taupe ring at very low opacity, paired with geo-circle to suggest compass construction."
+    description: Thin dashed taupe ring at very low opacity, paired with geo-circle to suggest compass construction.
   geo-decoration:
-    border: "1px solid {colors.line}"
-    borderRadius: "50%"
-    description: "Large decorative ring (30–50vw diameter) anchored to a corner or center. Always pairs with a ::before pseudo-element rendering a smaller dashed ring inside it, suggesting concentric drafting."
+    border: 1px solid {colors.line}
+    borderRadius: 50%
+    description: Large decorative ring (30–50vw diameter) anchored to a corner or center. Always pairs with a ::before pseudo-element
+      rendering a smaller dashed ring inside it, suggesting concentric drafting.
   geo-ring:
-    width: "50vw"
-    height: "50vw"
-    border: "1px solid {colors.line}"
-    borderRadius: "50%"
+    width: 50vw
+    height: 50vw
+    border: 1px solid {colors.line}
+    borderRadius: 50%
     opacity: 0.3
-    description: "The largest geometric decoration variant — a 50vw centered ring with an inner ::before dashed ring at 70% diameter."
+    description: The largest geometric decoration variant — a 50vw centered ring with an inner ::before dashed ring at 70%
+      diameter.
   image-placeholder:
-    background: "{colors.bg-secondary}"
-    border: "1px solid {colors.line}"
-    description: "Solid taupe-tinted block with two crossed 1px diagonal hairlines via ::before/::after at +30° and -30°, suggesting an X over a blank frame. Holds a small uppercase label centered."
+    background: '{colors.bg-secondary}'
+    border: 1px solid {colors.line}
+    description: Solid taupe-tinted block with two crossed 1px diagonal hairlines via ::before/::after at +30° and -30°, suggesting
+      an X over a blank frame. Holds a small uppercase label centered.
   team-photo:
-    width: "12vw"
-    height: "12vw"
-    borderRadius: "50%"
-    border: "1px solid {colors.line}"
-    background: "{colors.bg-secondary}"
-    description: "Circular portrait frame (12vw) in slightly darker stone, ringed in taupe, holding a single Playfair initial in accent taupe at center."
+    width: 12vw
+    height: 12vw
+    borderRadius: 50%
+    border: 1px solid {colors.line}
+    background: '{colors.bg-secondary}'
+    description: Circular portrait frame (12vw) in slightly darker stone, ringed in taupe, holding a single Playfair initial
+      in accent taupe at center.
   nav-arrow:
     width: 40px
     height: 40px
-    border: "1px solid {colors.line}"
-    background: "transparent"
-    description: "Square 40px button with 1px taupe border holding an arrow glyph. Hover state inverts to ink fill with cream text."
+    border: 1px solid {colors.line}
+    background: transparent
+    description: Square 40px button with 1px taupe border holding an arrow glyph. Hover state inverts to ink fill with cream
+      text.
   nav-dot:
     width: 8px
     height: 8px
-    borderRadius: "50%"
-    background: "{colors.line}"
-    description: "Small taupe dot at right edge as navigation indicator. Active state shifts to ink and scales 1.3."
-  chart-stroke-primary: "{colors.text-primary}"
-  chart-stroke-comparison: "{colors.line}"
-  chart-comparison-dash: "5, 5"
-  chart-grid-color: "{colors.bg-secondary}"
-  chart-axis-tick-color: "{colors.accent}"
+    borderRadius: 50%
+    background: '{colors.line}'
+    description: Small taupe dot at right edge as navigation indicator. Active state shifts to ink and scales 1.3.
+  chart-stroke-primary: '{colors.text-primary}'
+  chart-stroke-comparison: '{colors.line}'
+  chart-comparison-dash: 5, 5
+  chart-grid-color: '{colors.bg-secondary}'
+  chart-axis-tick-color: '{colors.accent}'
 ---
 
 ## Frontend Slides Fixed-Stage Policy

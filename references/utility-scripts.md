@@ -1,3 +1,25 @@
+---
+title: Utility Scripts Reference Guide
+domain: architecture
+summary: This document describes the utility scripts stored under the [scripts/](file:///d:/AI-OS/scripts/) folder of the
+  workspace and provides instructions for running them. - **Location:** `scripts/agent_adapt.py`
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Utility Scripts Reference Guide
+- 1. `agent_adapt.py`
+- 2. `rename_and_link_update.py`
+- 3. `verify_skills.py`
+- 4. `design_synthesis_engine.py`
+read_triggers:
+- When working on architecture in references/utility-scripts.md
+- When reading context for Utility Scripts Reference Guide
+tags:
+- architecture
+- utility-scripts
+updated: '2026-08-08'
+---
+
 # Utility Scripts Reference Guide
 
 This document describes the utility scripts stored under the [scripts/](file:///d:/AI-OS/scripts/) folder of the workspace and provides instructions for running them.

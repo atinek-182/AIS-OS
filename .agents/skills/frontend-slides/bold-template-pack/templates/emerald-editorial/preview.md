@@ -1,3 +1,28 @@
+---
+title: Emerald Editorial Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/emerald-editorial/design.md`'
+critical_directives:
+- 'Tagline: A magazine-cover business deck: emerald + navy + paper, double-rule masthead ornaments, and a bold Bodoni-style'
+- 'Best for: Anything that should feel like the front of a serious magazine, including but not limited to leadership readou'
+- 'Signature move: Double-rule ornament with centered serif word is the signature decorative device.'
+- 'Signature move: 4px ink horizontal rules separate every stacked section, every list row, every chart border. The 4px wei'
+section_outline:
+- Emerald Editorial Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/emerald-editorial/preview.md
+- When reading context for Emerald Editorial Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Emerald Editorial Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

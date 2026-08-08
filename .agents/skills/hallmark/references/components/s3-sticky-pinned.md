@@ -1,3 +1,22 @@
+---
+title: S3 Sticky Pinned
+domain: skill
+summary: Heading remains in viewport while content scrolls beneath. Orientation aid. *Use when:* the section is dense and
+  the user benefits from always seeing where they are.
+critical_directives:
+- Use when:* the section is dense and the user benefits from always seeing where they are.
+- 'Sticky pairing rule:** if the page emits a sticky `<header>` / `<nav>` / `.banner` (anything with `position: sticky; top'
+section_outline:
+- S3 · Sticky pinned
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/s3-sticky-pinned.md
+- When reading context for S3 Sticky Pinned
+tags:
+- skill
+- s3-sticky-pinned
+updated: '2026-08-08'
+---
+
 ### S3 · Sticky pinned
 Heading remains in viewport while content scrolls beneath. Orientation aid.
 *Use when:* the section is dense and the user benefits from always seeing where they are.

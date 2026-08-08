@@ -1,6 +1,27 @@
 ---
+title: Triage
+domain: skill
+summary: 'Move issues on the project issue tracker through a small state machine of triage roles. If this repo treats external
+  pull requests as a request surface (see the issue-tracker config), triage covers them too: **a PR is an issue with attached
+  code** — '
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Triage
+- Reference docs
+- Roles
+- Invocation
+- Show what needs attention
+read_triggers:
+- When working on skill in .agents/skills/triage/SKILL.md
+- When reading context for Triage
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: triage
-description: Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.
+description: Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and
+  write agent-ready briefs.
 disable-model-invocation: true
 ---
 

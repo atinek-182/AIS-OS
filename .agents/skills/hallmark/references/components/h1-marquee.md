@@ -1,3 +1,19 @@
+---
+title: H1 Marquee
+domain: skill
+summary: A single statement fills the fold. No subhead, no CTA in view. *Use when:* the brand or person *is* the message.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H1 · Marquee
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h1-marquee.md
+- When reading context for H1 Marquee
+tags:
+- skill
+- h1-marquee
+updated: '2026-08-08'
+---
 
 ### H1 · Marquee
 A single statement fills the fold. No subhead, no CTA in view.

@@ -1,3 +1,29 @@
+---
+title: Retro Windows Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/retro-windows/design.md`'
+critical_directives:
+- 'Avoid for: Decks that need to read as modern, elegant, or institutionally credible — the Win95 chrome will always read
+  a'
+- 'Signature move: Status colors (green / red / yellow / cyan) carry semantic meaning: green = OK, red = warning, yellow = '
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+section_outline:
+- Retro Windows Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/retro-windows/preview.md
+- When reading context for Retro Windows Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Retro Windows Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

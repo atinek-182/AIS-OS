@@ -1,3 +1,24 @@
+---
+title: N12 Banner Retract
+domain: skill
+summary: 'A coloured promo **banner** stacked above one real nav. On scroll-down the banner slides up and retracts, leaving
+  a single clean nav docked to the top; on scroll-up it slides back. A dismiss × removes the banner for good (its height zeroes
+  so no gap '
+critical_directives:
+- Don't confuse with:* a static announcement bar that never moves (fine, but not N12); N1b (single bar, no banner).
+- JS:* track scroll direction — past ~48px going down → `.is-compact`; going up → remove it; near top → always show. Dismi
+- 'Anti-pattern:* never make the top tier a second set of nav links — that''s the "two nav bars" smell the banner exists to '
+section_outline:
+- N12 · Announcement banner + retracting nav
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n12-banner-retract.md
+- When reading context for N12 Banner Retract
+tags:
+- skill
+- n12-banner-retract
+updated: '2026-08-08'
+---
+
 ### N12 · Announcement banner + retracting nav
 A coloured promo **banner** stacked above one real nav. On scroll-down the banner slides up and retracts, leaving a single clean nav docked to the top; on scroll-up it slides back. A dismiss × removes the banner for good (its height zeroes so no gap is left). Apple-style coupled bars, but the top tier is a *banner*, not a second nav — the colour contrast is what stops it reading as "two navs".
 *Use when:* there's a genuine, time-bound announcement (a launch, a sale, free shipping) worth a persistent strip, over a product/marketing page. Great for stat-led or commerce pages.

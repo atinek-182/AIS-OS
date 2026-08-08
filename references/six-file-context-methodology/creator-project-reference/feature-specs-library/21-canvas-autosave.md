@@ -1,3 +1,25 @@
+---
+title: 21 Canvas Autosave
+domain: architecture
+summary: Add autosave and loading for the collaborative canvas so project state is persisted before adding AI generation Canvas
+  JSON should be stored in Vercel Blob, and the saved blob URL should be stored on the Prisma project record. 1. Check the
+  existing p
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- What to Install
+- Implementation
+- Storage Pattern
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/21-canvas-autosave.md
+- When reading context for 21 Canvas Autosave
+tags:
+- architecture
+- 21-canvas-autosave
+updated: '2026-08-08'
+---
+
 Add autosave and loading for the collaborative canvas so project state is persisted before adding AI generation Canvas JSON should be stored in Vercel Blob, and the saved blob URL should be stored on the Prisma project record.
 
 ## What to Install

@@ -1,8 +1,28 @@
 ---
+title: Skill
+domain: skill
+summary: The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over
+  multiple sessions. Treat the current directory as a teaching workspace. The state of their learning is captured in this
+  directory in seve
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Teaching Workspace
+- Philosophy
+- Fluency vs Storage Strength
+- Lessons
+- Assets
+read_triggers:
+- When working on skill in .agents/skills/teach/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: teach
 description: Teach the user a new skill or concept, within this workspace.
 disable-model-invocation: true
-argument-hint: "What would you like to learn about?"
+argument-hint: What would you like to learn about?
 ---
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.

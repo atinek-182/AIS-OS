@@ -1,3 +1,27 @@
+---
+title: Skill mechanics
+domain: skill
+summary: 'The skill-specific branch of [`writing-for-agents`](SKILL.md): what changes when the document is a skill — frontmatter,
+  the invocation choice, and router skills. Everything else about writing it is the universal reference in `SKILL.md`. Two
+  choices, '
+critical_directives:
+- 'A **model-invoked** skill keeps a `description`, so the agent can fire it autonomously — and other skills can reach it. '
+- 'A **user-invoked** skill strips the description from the agent''s reach: only the human typing its name can invoke it,
+  an'
+section_outline:
+- Skill mechanics
+- Invocation
+- Splitting by invocation
+- Router skills
+read_triggers:
+- When working on skill in .agents/skills/writing-for-agents/SKILL-MECHANICS.md
+- When reading context for Skill mechanics
+tags:
+- skill
+- SKILL-MECHANICS
+updated: '2026-08-08'
+---
+
 # Skill mechanics
 
 The skill-specific branch of [`writing-for-agents`](SKILL.md): what changes when the document is a skill — frontmatter, the invocation choice, and router skills. Everything else about writing it is the universal reference in `SKILL.md`.

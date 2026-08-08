@@ -1,3 +1,21 @@
+---
+title: F2 Sticky Scroll Stack
+domain: skill
+summary: Sticky left pane, scrolling right pane that cycles through related screenshots. *Use when:* feature has multiple
+  sub-states worth showing in sequence.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- F2 · Sticky-scroll stack
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/f2-sticky-scroll-stack.md
+- When reading context for F2 Sticky Scroll Stack
+tags:
+- skill
+- f2-sticky-scroll-stack
+updated: '2026-08-08'
+---
+
 ### F2 · Sticky-scroll stack
 Sticky left pane, scrolling right pane that cycles through related screenshots.
 *Use when:* feature has multiple sub-states worth showing in sequence.

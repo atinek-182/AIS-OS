@@ -1,3 +1,27 @@
+---
+title: 'Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)'
+domain: skill
+summary: 'Run the Hallmark runner script to execute static checks on the codebase: python scripts/hallmark_runner.py audit
+  <target-dir>'
+critical_directives:
+- 'Mandatory Base64 Data URIs**: ALWAYS inline `.otf`/`.ttf` font files as Base64 Data URIs (`data:font/opentype;base64,...'
+- 'Banned Local Paths**: NEVER use `file:///` local font paths in Playwright HTML templates as headless Chromium fails to
+  r'
+section_outline:
+- 'Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)'
+- 1. Pre-Emit Anti-Slop Audit Execution
+- 2. Playwright Multi-Viewport Visual QA Sweep
+- 'The 5 Viewport Audit Suite:'
+- 3. Base64 Font Data URI Inlining Requirement (Rule 1.13 & Rule 1.18)
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/06-visual-qa-verification.md
+- 'When reading context for Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)'
+tags:
+- skill
+- 06-visual-qa-verification
+updated: '2026-08-08'
+---
+
 # Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)
 
 ## 1. Pre-Emit Anti-Slop Audit Execution

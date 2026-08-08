@@ -1,6 +1,28 @@
 ---
+title: New Project Initialization Engine (`/new-project`)
+domain: skill
+summary: 'This skill initializes brand-new website applications, client landing pages, or digital product MVPs. - **Slash
+  Command**: `/new-project [project-name]`'
+critical_directives:
+- 'Client Conversion Portfolios / Agency Sites**: Rapidly scaffold multi-page React/Vite/Next.js projects with locked OKLCH'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- New Project Initialization Engine (`/new-project`)
+- Invocation & Tri-Mode Routing
+- Specific Use Cases & Goal Alignment
+- Execution Workflow
+- 'Step 1: Resolve Directory & Scaffold Structure'
+read_triggers:
+- When working on skill in .agents/skills/new-project/SKILL.md
+- When reading context for New Project Initialization Engine (`/new-project`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: new-project
-description: Initialize a new Premium Frontend website or web app project tailored for Atinek Maurya. Scaffolds project directories, runs Phase 0 /grill-me discovery + /roast council gate, compiles /mattpocock-to-spec build contract, scopes /jsmastery-scope tracer-bullet slices, and deconstructs /mattpocock-to-tickets execution tasks. Invokable via /new-project.
+description: Initialize a new Premium Frontend website or web app project tailored for Atinek Maurya. Scaffolds project directories,
+  runs Phase 0 /grill-me discovery + /roast council gate, compiles /mattpocock-to-spec build contract, scopes /jsmastery-scope
+  tracer-bullet slices, and deconstructs /mattpocock-to-tickets execution tasks. Invokable via /new-project.
 argument-hint: '[project-name]'
 ---
 

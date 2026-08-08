@@ -1,7 +1,30 @@
 ---
+title: Storm Research (`/storm-research`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/storm-research [topic]
+  [--domain general|tech|design|content|audit]` in chat.'
+critical_directives:
+- 'Inter-Skill & AIOS Programmatic Calling**: Programmatically invokable by parent skills (e.g. `/six-file-context-methodol'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Storm Research (`/storm-research`)
+- Invocation & Tri-Mode Routing
+- What this does
+- 🎭 Domain Persona Presets
+- Execution Pipeline
+read_triggers:
+- When working on skill in .agents/skills/storm-research/SKILL.md
+- When reading context for Storm Research (`/storm-research`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: storm-research
-description: Run Stanford's STORM multi-perspective research method on a topic using the mandatory 7-agent suite (Systems Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product/SaaS Economist, AI/LLM Specialist, Developer Ergonomics Auditor). Spawns 7 expert lenses -> contradiction map -> self-contained verified HTML report -> primary-source verification subagents. Invokable directly via /storm-research.
-argument-hint: "[topic to research] [--domain tech|design|content|audit|general]"
+description: Run Stanford's STORM multi-perspective research method on a topic using the mandatory 7-agent suite (Systems
+  Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product/SaaS Economist, AI/LLM Specialist,
+  Developer Ergonomics Auditor). Spawns 7 expert lenses -> contradiction map -> self-contained verified HTML report -> primary-source
+  verification subagents. Invokable directly via /storm-research.
+argument-hint: '[topic to research] [--domain tech|design|content|audit|general]'
 ---
 
 # Storm Research (`/storm-research`)

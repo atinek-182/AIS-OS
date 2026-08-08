@@ -1,6 +1,27 @@
 ---
+title: Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
+domain: skill
+summary: 'This skill compiles dual-layer operator documentation for client handoffs, team onboarding, and AIOS system deployments.
+  It outputs both a structured Executive SOP Markdown document and an Interactive HTML Setup Dashboard featuring 1-click copy
+  code '
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
+- Overview & Tri-Mode Execution
+- Required Output Deliverables Contract
+- HTML Dashboard Design System & Styling Tokens
+- 📋 Interactive HTML Dashboard Boilerplate
+read_triggers:
+- When working on skill in .agents/skills/interactive-operator-guide-generator/SKILL.md
+- When reading context for Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: interactive-operator-guide-generator
-description: Generates interactive HTML setup dashboards and step-by-step SOP guides with copy-pasteable formulas, properties, and sample data. Use when handing off technical workflows or client system setups.
+description: Generates interactive HTML setup dashboards and step-by-step SOP guides with copy-pasteable formulas, properties,
+  and sample data. Use when handing off technical workflows or client system setups.
 argument-hint: '[system_name] [target_audience] [output_directory]'
 ---
 

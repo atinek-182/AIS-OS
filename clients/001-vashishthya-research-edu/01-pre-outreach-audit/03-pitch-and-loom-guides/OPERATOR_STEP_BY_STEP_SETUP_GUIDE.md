@@ -1,3 +1,23 @@
+---
+title: 'Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch'
+domain: audit
+summary: '**Target Operator:** Atinek Maurya **Goal:** Build the live Notion Master Database in your own free Notion account,
+  generate the shareable template link, and set up Google Apps Script live sync in 6 minutes.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- '📌 PART 1: BUILD THE NOTION DATABASE IN YOUR ACCOUNT (3 MINUTES)'
+- '📊 PART 2: BUILD GOOGLE SHEETS & APPS SCRIPT (3 MINUTES)'
+- '🎥 PART 3: RECORDING YOUR LOOM VIDEO DEMO'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/OPERATOR_STEP_BY_STEP_SETUP_GUIDE.md
+- 'When reading context for Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch'
+tags:
+- audit
+- OPERATOR_STEP_BY_STEP_SETUP_GUIDE
+updated: '2026-08-08'
+---
+
 # Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch
 
 **Target Operator:** Atinek Maurya  

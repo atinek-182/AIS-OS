@@ -1,10 +1,29 @@
 ---
+title: Scrape Web Skill (Scrapling Engine)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/scrape-web [optional
+  parameters]` in chat.'
+critical_directives:
+- 'Note: Use `defuddle` when high-fidelity code blocks, tables, footnotes, and LaTeX math formulas must be preserved cleanl'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Scrape Web Skill (Scrapling Engine)
+- Invocation & Tri-Mode Routing
+- Engine Overview
+- 'Fetcher Modes:'
+- Usage Guide
+read_triggers:
+- When working on skill in .agents/skills/scrape-web/SKILL.md
+- When reading context for Scrape Web Skill (Scrapling Engine)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: scrape-web
-description: Scraping, dynamic HTML parsing, anti-bot bypass, and adaptive element
-  extraction using Scrapling engine. Invokable directly via /scrape-web.
+description: Scraping, dynamic HTML parsing, anti-bot bypass, and adaptive element extraction using Scrapling engine. Invokable
+  directly via /scrape-web.
 argument-hint: '[url] [--mode fast|dynamic|stealth] [--css selector]'
 ---
-
 
 # Scrape Web Skill (Scrapling Engine)
 

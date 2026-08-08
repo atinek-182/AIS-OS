@@ -1,3 +1,22 @@
+---
+title: Ft7 Newsletter First
+domain: skill
+summary: The form (label + input + submit) is the *primary* element of the footer; everything else (wordmark, links, copyright)
+  is set in 12 px muted type beneath. Stratechery, Substack-shaped sites, indie magazines. *Use when:* the brand legitimately
+  publish
+critical_directives:
+- Anti-pattern:* Ft7 when the page never said "subscribe" above the fold. The footer is an honest *conclusion*; if you did
+section_outline:
+- Ft7 · Newsletter-first
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft7-newsletter-first.md
+- When reading context for Ft7 Newsletter First
+tags:
+- skill
+- ft7-newsletter-first
+updated: '2026-08-08'
+---
+
 ### Ft7 · Newsletter-first
 The form (label + input + submit) is the *primary* element of the footer; everything else (wordmark, links, copyright) is set in 12 px muted type beneath. Stratechery, Substack-shaped sites, indie magazines.
 *Use when:* the brand legitimately publishes — and the page above the fold has *already* offered a subscription. The footer is a final invitation, not an ambush.

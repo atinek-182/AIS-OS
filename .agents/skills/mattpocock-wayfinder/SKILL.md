@@ -1,6 +1,28 @@
 ---
+title: Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
+domain: skill
+summary: Wayfinder is Matt Pocock's macro-planning skill for large, wrapped-in-fog efforts spanning multiple agent sessions.
+  It charts the journey as a **shared map** of **decision tickets**, resolving decisions one at a time until the path to the
+  destination
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
+- Overview & Tri-Mode Routing
+- 🗺️ The Map & Ticket System
+- 1. Map Structure (`docs/wayfinder/map.md` or tracker issue)
+- Destination
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-wayfinder/SKILL.md
+- When reading context for Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-wayfinder
-description: Multi-session macro planning and issue map manager. Chart large complex projects as a shared decision map on issue trackers/markdown, working through frontier decision tickets step-by-step. Triggered via /mattpocock-wayfinder or naturally when handling large ambiguous epics.
+description: Multi-session macro planning and issue map manager. Chart large complex projects as a shared decision map on
+  issue trackers/markdown, working through frontier decision tickets step-by-step. Triggered via /mattpocock-wayfinder or
+  naturally when handling large ambiguous epics.
 argument-hint: '[destination_or_map_link]'
 ---
 

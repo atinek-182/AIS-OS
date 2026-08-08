@@ -1,12 +1,29 @@
 ---
+title: Scrape Component Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/scrape-component [optional
+  parameters]` in chat.'
+critical_directives:
+- Extract its computed CSS styles or find the specific stylesheet rules mapping to its selectors.
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Scrape Component Skill
+- Invocation & Tri-Mode Routing
+- 'Phase 1: Clarification & Targeted Q&A (Do FIRST)'
+- 'Phase 2: Isolated Extraction & Dependency Audit'
+- 'Phase 3: Visual Verification & Auditing (Playwright Bypass)'
+read_triggers:
+- When working on skill in .agents/skills/scrape-component/SKILL.md
+- When reading context for Scrape Component Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: scrape-component
-description: Extract a specific UI component, animation, or style from a website URL.
-  Conducts a target-selection Q&A, downloads only relevant code and assets, hosts
-  a local test server, and performs a visual audit. Invokable directly via /scrape-component.
+description: Extract a specific UI component, animation, or style from a website URL. Conducts a target-selection Q&A, downloads
+  only relevant code and assets, hosts a local test server, and performs a visual audit. Invokable directly via /scrape-component.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Scrape Component Skill
 

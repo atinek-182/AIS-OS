@@ -1,3 +1,29 @@
+---
+title: Theme — Lumen
+domain: skill
+summary: Premium AI-tool register, built around a **hand-engineered apparatus** rather than a glowing orb. One precision SVG/CSS
+  object per page, with leader-line callouts in mono micro-type, set against dead space alongside a **lowercase classical-serif
+  head
+critical_directives:
+- '`--rule-blueprint: oklch(96% 0.006 262 / 0.04)` — grid hairline'
+- Pure CSS + SVG.** Never `<img>`, never icon fonts, never SVG paths copied from Figma. The apparatus is *constructed*, no
+- One per page.** Never two apparatus objects on a single Lumen build.
+- Leader-line callouts.** Every apparatus carries 3–5 mono micro-type annotations (`P50 · 28 ms`, `λ = 612 nm`, `→ refunds
+section_outline:
+- Theme — Lumen
+- Axes (diversification)
+- Reference register
+- Palette drops
+- Drop 01 · Night Foundry *(default · canonical)*
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/themes/lumen.md
+- When reading context for Theme — Lumen
+tags:
+- skill
+- lumen
+updated: '2026-08-08'
+---
+
 # Theme — Lumen
 
 Premium AI-tool register, built around a **hand-engineered apparatus** rather than a glowing orb. One precision SVG/CSS object per page, with leader-line callouts in mono micro-type, set against dead space alongside a **lowercase classical-serif headline** and a technical mono eyebrow. Three font families. Two palette drops (Night Foundry / Day Foundry) with different physics — Night emits, Day refracts — and entirely different visual languages, not the same shape in two colours.

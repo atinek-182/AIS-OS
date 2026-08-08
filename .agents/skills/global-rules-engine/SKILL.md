@@ -1,6 +1,31 @@
 ---
+title: ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)
+domain: skill
+summary: This skill automates the management, appending, auditing, and multi-file synchronization of the ZORIXEL AIOS global
+  error prevention rules. It incorporates an **Adversarial `/roast` Council Audit Gate** and an **Autonomous Script, Tool
+  & Skill Auto-U
+critical_directives:
+- 'Slash Command**: `/global-rules [action]` or `/sync-global-rules`'
+- 'Dynamic Intent**: Triggered automatically when discovering new terminal errors, writing system rules, or completing sess'
+- Executes `python scripts/sync_global_rules.py` via `run_command`.
+- Copies the complete block from `references/GLOBAL_ERROR_PREVENTION_RULES.md` into the inline comment blocks inside `AGEN
+section_outline:
+- ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)
+- Overview & Tri-Mode Execution
+- 3-Phase Execution Architecture
+- '📑 PHASE 1: RULE ACTION & MANIFESTATION'
+- 'Mode 1: Synchronize (`/global-rules sync`)'
+read_triggers:
+- When working on skill in .agents/skills/global-rules-engine/SKILL.md
+- When reading context for ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: global-rules-engine
-description: Centralized engine for managing, appending, auditing, and synchronizing global error prevention rules across AGENTS.md, GEMINI.md, and references/GLOBAL_ERROR_PREVENTION_RULES.md. Features a 5-persona /roast council gate and an autonomous script, tool, and skill auto-upgrade loop.
+description: Centralized engine for managing, appending, auditing, and synchronizing global error prevention rules across
+  AGENTS.md, GEMINI.md, and references/GLOBAL_ERROR_PREVENTION_RULES.md. Features a 5-persona /roast council gate and an autonomous
+  script, tool, and skill auto-upgrade loop.
 argument-hint: '[sync | append "rule_category" "rule_text" | audit | list]'
 ---
 

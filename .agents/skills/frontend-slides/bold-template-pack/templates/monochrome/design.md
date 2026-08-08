@@ -1,17 +1,42 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: sparse.** Ivory Ledger reads as elegant when generous whitespace dominates and a single typographic '
+- Cream paper background (`{colors.cream-paper}`) on every slide — never white, never dark by default. The cream is the su
+- 'All structural separation is 1px hairline rules in black, plus the signature 36px short rule (`{components.rule}`) used '
+- 'Cream Paper** (`{colors.cream-paper}` — #FAFADF): The default surface. Warm off-yellow, never pure white. Every slide ba'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/monochrome/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Monochrome (Ivory Ledger)
-description: A literary editorial system rendered in black ink on cream paper. Ultra-light geometric sans (Jost at weight 200–300) carries every headline; Lora italic serif handles quote text and insight-card titles; JetBrains Mono provides the structural chrome. There are no chromatic accents — every color in the palette is a graphite or cream tone, and "accent" simply means "darker ink." The aesthetic borrows from independent research reports, scholarly monographs, and the quietest end of contemporary editorial design — closer to a printed journal than a tech presentation.
-
+description: A literary editorial system rendered in black ink on cream paper. Ultra-light geometric sans (Jost at weight
+  200–300) carries every headline; Lora italic serif handles quote text and insight-card titles; JetBrains Mono provides the
+  structural chrome. There are no chromatic accents — every color in the palette is a graphite or cream tone, and "accent"
+  simply means "darker ink." The aesthetic borrows from independent research reports, scholarly monographs, and the quietest
+  end of contemporary editorial design — closer to a printed journal than a tech presentation.
 colors:
-  cream-paper: "#FAFADF"
-  cream-paper-2: "#F2F2D2"
-  cream-paper-3: "#F0F0D4"
-  cream-warm: "#F5F0E4"
-  ink-black: "#1A1A16"
-  ink-graphite: "#5E5E54"
-  ink-graphite-light: "#8A8A80"
-
+  cream-paper: '#FAFADF'
+  cream-paper-2: '#F2F2D2'
+  cream-paper-3: '#F0F0D4'
+  cream-warm: '#F5F0E4'
+  ink-black: '#1A1A16'
+  ink-graphite: '#5E5E54'
+  ink-graphite-light: '#8A8A80'
 color-aliases:
   c-bg: cream-paper
   c-bg-light: cream-paper
@@ -23,155 +48,155 @@ color-aliases:
   c-accent: ink-black
   c-border: ink-black
   c-border-light: ink-black
-
 typography:
   display:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 8.5vw
     fontWeight: 200
     lineHeight: 0.96
     letterSpacing: -0.02em
   h1:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 5vw
     fontWeight: 200
     lineHeight: 1.1
     letterSpacing: -0.01em
   h2:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 3.2vw
     fontWeight: 300
     lineHeight: 1.2
   h3:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 2vw
     fontWeight: 400
     lineHeight: 1.3
   lead:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.5vw
     fontWeight: 300
     lineHeight: 1.65
   body:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.1vw
     fontWeight: 300
     lineHeight: 1.7
   caption:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 0.85vw
     fontWeight: 300
     lineHeight: 1.55
   label:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 0.72vw
     fontWeight: 400
     letterSpacing: 0.12em
     textTransform: uppercase
   quote-serif:
-    fontFamily: "Lora, Noto Serif SC, Georgia, serif"
+    fontFamily: Lora, Noto Serif SC, Georgia, serif
     fontSize: 3.2vw
     fontWeight: 400
     lineHeight: 1.35
   insight-serif:
-    fontFamily: "Lora, Noto Serif SC, Georgia, serif"
+    fontFamily: Lora, Noto Serif SC, Georgia, serif
     fontSize: 2.8vw
     fontWeight: 400
     lineHeight: 1.15
   stat-value:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 5.5vw
     fontWeight: 200
     lineHeight: 1.0
     letterSpacing: -0.03em
   flow-num:
-    fontFamily: "Jost, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Jost, Noto Sans SC, system-ui, sans-serif
     fontSize: 3.5vw
     fontWeight: 200
     lineHeight: 1.0
     letterSpacing: -0.02em
-
 spacing:
   pad-x: 8vw
   pad-y: 6vh
   gap-lg: 5vh
   gap-md: 3vh
   gap-sm: 1.5vh
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   rule:
     width: 36px
     height: 1px
-    background: "{colors.ink-black}"
-    description: "A 36-pixel hairline accent rule. The system's signature small punctuation mark — appears under chapter labels, beside kickers, above stat values."
+    background: '{colors.ink-black}'
+    description: A 36-pixel hairline accent rule. The system's signature small punctuation mark — appears under chapter labels,
+      beside kickers, above stat values.
   rule-full:
-    width: "100%"
+    width: 100%
     height: 1px
-    background: "{colors.ink-black}"
-    description: "Full-width 1px hairline rule for chrome bands, foot bands, and section dividers."
+    background: '{colors.ink-black}'
+    description: Full-width 1px hairline rule for chrome bands, foot bands, and section dividers.
   kicker:
-    fontFamily: "{typography.label.fontFamily}"
-    fontSize: "{typography.label.fontSize}"
+    fontFamily: '{typography.label.fontFamily}'
+    fontSize: '{typography.label.fontSize}'
     letterSpacing: 0.14em
     textTransform: uppercase
-    color: "{colors.ink-graphite-light}"
-    description: "Muted mono uppercase eyebrow label above a headline."
+    color: '{colors.ink-graphite-light}'
+    description: Muted mono uppercase eyebrow label above a headline.
   tag:
-    border: "1px solid {colors.ink-black}"
-    padding: "0.3em 0.8em"
-    fontFamily: "{typography.label.fontFamily}"
-    fontSize: "{typography.label.fontSize}"
+    border: 1px solid {colors.ink-black}
+    padding: 0.3em 0.8em
+    fontFamily: '{typography.label.fontFamily}'
+    fontSize: '{typography.label.fontSize}'
     letterSpacing: 0.12em
     textTransform: uppercase
-    description: "Bordered inline tag for version numbers, status labels."
+    description: Bordered inline tag for version numbers, status labels.
   bullet-marker:
-    content: "—"
-    color: "{colors.ink-graphite-light}"
-    fontFamily: "{typography.label.fontFamily}"
-    description: "Em-dash in muted graphite via JetBrains Mono. The standard list mark; never a dot, never a check."
+    content: —
+    color: '{colors.ink-graphite-light}'
+    fontFamily: '{typography.label.fontFamily}'
+    description: Em-dash in muted graphite via JetBrains Mono. The standard list mark; never a dot, never a check.
   insight-card:
-    background: "{colors.cream-warm}"
+    background: '{colors.cream-warm}'
     borderRadius: 16px
-    padding: "3vh 2.5vw"
-    description: "Tall rounded-rectangle card in cream tone (one of three near-identical creams). Holds a large Lora serif title and a Jost body block at the bottom."
+    padding: 3vh 2.5vw
+    description: Tall rounded-rectangle card in cream tone (one of three near-identical creams). Holds a large Lora serif
+      title and a Jost body block at the bottom.
   stat-cell:
-    borderTop: "1px solid {colors.ink-black}"
-    padding: "{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0"
-    description: "Rule-topped vertical cell with a 5.5vw weight-200 numeral, a Jost label, and a mono source note."
+    borderTop: 1px solid {colors.ink-black}
+    padding: '{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0'
+    description: Rule-topped vertical cell with a 5.5vw weight-200 numeral, a Jost label, and a mono source note.
   timeline-dot:
     width: 8px
     height: 8px
     borderRadius: 50%
-    background: "{colors.ink-black}"
-    border: "2px solid {colors.cream-warm}"
-    description: "Solid black dot with a cream border ring that punches through a horizontal connector rule."
+    background: '{colors.ink-black}'
+    border: 2px solid {colors.cream-warm}
+    description: Solid black dot with a cream border ring that punches through a horizontal connector rule.
   vtimeline-spine:
     width: 1px
-    background: "{colors.ink-black}"
-    description: "1px vertical rule that anchors a vertical timeline. Carries a 9px solid black dot at the top of each entry."
+    background: '{colors.ink-black}'
+    description: 1px vertical rule that anchors a vertical timeline. Carries a 9px solid black dot at the top of each entry.
   pie-donut:
-    width: "min(26vw, 42vh)"
-    height: "min(26vw, 42vh)"
+    width: min(26vw, 42vh)
+    height: min(26vw, 42vh)
     borderRadius: 50%
-    description: "Donut ring rendered by overlaying a same-color circular ::after pseudo on a conic-gradient or similar. Center cutout is the slide background."
+    description: Donut ring rendered by overlaying a same-color circular ::after pseudo on a conic-gradient or similar. Center
+      cutout is the slide background.
   pyramid-bar:
-    borderLeft: "2px solid {colors.ink-black}"
-    background: "color-mix(in srgb, {colors.ink-black} N%, {colors.cream-paper})"
-    description: "Horizontal pyramid level. Width grows down each level (36% → 100%); fill darkens up the pyramid via color-mix at increasing percentages."
+    borderLeft: 2px solid {colors.ink-black}
+    background: color-mix(in srgb, {colors.ink-black} N%, {colors.cream-paper})
+    description: Horizontal pyramid level. Width grows down each level (36% → 100%); fill darkens up the pyramid via color-mix
+      at increasing percentages.
   bar-fill:
-    width: "100%"
-    background: "{colors.ink-graphite-light}"
+    width: 100%
+    background: '{colors.ink-graphite-light}'
     opacity: 0.5
-    description: "Vertical bar in muted graphite at half opacity. Accented variant uses solid ink-black at full opacity."
+    description: Vertical bar in muted graphite at half opacity. Accented variant uses solid ink-black at full opacity.
   img-placeholder:
-    border: "1px solid {colors.ink-black}"
-    background: "{colors.cream-paper-3}"
-    color: "{colors.ink-graphite}"
-    description: "Hairline-bordered cream void with a centered mono label. Used until photography is dropped in."
+    border: 1px solid {colors.ink-black}
+    background: '{colors.cream-paper-3}'
+    color: '{colors.ink-graphite}'
+    description: Hairline-bordered cream void with a centered mono label. Used until photography is dropped in.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

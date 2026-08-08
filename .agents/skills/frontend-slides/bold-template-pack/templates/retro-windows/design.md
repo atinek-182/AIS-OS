@@ -1,240 +1,282 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Status colors (green / red / yellow / cyan) carry semantic meaning: green = OK, red = warning, yellow = moderate, cyan
+  ='
+- 'Red Retro** (`{colors.red-retro}` — #800000): Brick red. Reserved for error/warning text and the brick-red status family'
+- 'Yellow Retro** (`{colors.yellow-retro}` — #808000): Mustard yellow. Reserved for "moderate" risk labels and warning char'
+- 'Default status-warning color**: `{colors.red-retro}` or `{colors.yellow-retro}` — red for hard errors, yellow for modera'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/retro-windows/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Retro Windows
-description: A Windows 95 / 98 desktop-OS aesthetic rendered as a presentation system. Every slide is a window — beveled chrome, navy gradient title bar, MS Sans Serif body type, with chart areas, group boxes, and panels arranged as if they were software UI from 1995. The palette is the original Win9x system colors (gray button-face, navy title bars, white sunken inputs) with retro accent hues (DOS green, brick red, mustard yellow, teal cyan) reserved for status text and chart data. Pixel-font (Press Start 2P) and terminal-font (VT323) appear sparingly for nostalgic punctuation. The effect is half playful nostalgia, half functional dashboard — a deck that reads as a software product running on a CRT monitor.
-
+description: A Windows 95 / 98 desktop-OS aesthetic rendered as a presentation system. Every slide is a window — beveled chrome,
+  navy gradient title bar, MS Sans Serif body type, with chart areas, group boxes, and panels arranged as if they were software
+  UI from 1995. The palette is the original Win9x system colors (gray button-face, navy title bars, white sunken inputs) with
+  retro accent hues (DOS green, brick red, mustard yellow, teal cyan) reserved for status text and chart data. Pixel-font
+  (Press Start 2P) and terminal-font (VT323) appear sparingly for nostalgic punctuation. The effect is half playful nostalgia,
+  half functional dashboard — a deck that reads as a software product running on a CRT monitor.
 colors:
-  bg-gray: "#c0c0c0"
-  bg-light: "#d4d0c8"
-  bg-dark: "#808080"
-  white: "#ffffff"
-  black: "#000000"
-  text-dark: "#222222"
-  blue-navy: "#000080"
-  blue-bright: "#0000a0"
-  blue-light: "#1084d0"
-  green-retro: "#008000"
-  red-retro: "#800000"
-  yellow-retro: "#808000"
-  cyan-retro: "#008080"
-  text-gray: "#555555"
-
+  bg-gray: '#c0c0c0'
+  bg-light: '#d4d0c8'
+  bg-dark: '#808080'
+  white: '#ffffff'
+  black: '#000000'
+  text-dark: '#222222'
+  blue-navy: '#000080'
+  blue-bright: '#0000a0'
+  blue-light: '#1084d0'
+  green-retro: '#008000'
+  red-retro: '#800000'
+  yellow-retro: '#808000'
+  cyan-retro: '#008080'
+  text-gray: '#555555'
 color-aliases:
   btn-face: bg-light
   btn-highlight: white
-  btn-shadow: "#404040"
+  btn-shadow: '#404040'
   btn-dark-shadow: black
-
 typography:
   body:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.5
   text-xl:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 32px
     fontWeight: 700
     lineHeight: 1.2
   text-lg:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 22px
     fontWeight: 700
     lineHeight: 1.3
   text-md:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.6
   text-sm:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 14px
     fontWeight: 400
     lineHeight: 1.5
   text-xs:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
   metric-xl:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 30px
     fontWeight: 700
     lineHeight: 1.1
   title-bar:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 14px
     fontWeight: 700
     lineHeight: 1.0
     letterSpacing: 0.5px
   group-box-title:
-    fontFamily: "MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif"
+    fontFamily: MS Sans Serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif
     fontSize: 13px
     fontWeight: 700
     lineHeight: 1.0
   pixel-display:
-    fontFamily: "'Press Start 2P', cursive"
-    fontSize: "20–24px"
+    fontFamily: '''Press Start 2P'', cursive'
+    fontSize: 20–24px
     fontWeight: 400
     lineHeight: 1.8
   terminal:
-    fontFamily: "'VT323', monospace"
+    fontFamily: '''VT323'', monospace'
     fontSize: 22px
     fontWeight: 400
     lineHeight: 1.2
   nav-hint:
-    fontFamily: "'VT323', monospace"
+    fontFamily: '''VT323'', monospace'
     fontSize: 16px
     fontWeight: 400
     lineHeight: 1.0
-
 spacing:
-  slide-pad: "24px 32px 44px 32px"
-  win-body-pad: "20px 24px 24px 24px"
+  slide-pad: 24px 32px 44px 32px
+  win-body-pad: 20px 24px 24px 24px
   panel-pad: 16px
-  group-box-pad: "20px 18px 16px 18px"
+  group-box-pad: 20px 18px 16px 18px
   panel-sunken-pad: 12px
   gap-1: 6px
   gap-2: 10px
   gap-3: 16px
   gap-4: 24px
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   crt-overlay:
-    backgroundImage: "repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 3px)"
+    backgroundImage: repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent
+      3px)
     zIndex: 9999
-    description: "Fixed, full-viewport scanline overlay at 3% black opacity that sits above all content. Imitates the horizontal phosphor lines of a CRT monitor. Pointer-events disabled."
+    description: Fixed, full-viewport scanline overlay at 3% black opacity that sits above all content. Imitates the horizontal
+      phosphor lines of a CRT monitor. Pointer-events disabled.
   win-window:
-    background: "{colors.bg-light}"
-    border: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
-    boxShadow: "inset 1px 1px 0 {colors.white}, inset -1px -1px 0 #404040"
-    description: "The signature framing element. Every slide is one (or more) win-window. The asymmetric border + double inset shadow creates the Win9x beveled raised effect — top-left highlighted, bottom-right shadowed."
+    background: '{colors.bg-light}'
+    border: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
+    boxShadow: 'inset 1px 1px 0 {colors.white}, inset -1px -1px 0 #404040'
+    description: The signature framing element. Every slide is one (or more) win-window. The asymmetric border + double inset
+      shadow creates the Win9x beveled raised effect — top-left highlighted, bottom-right shadowed.
   win-titlebar:
-    background: "linear-gradient(90deg, {colors.blue-navy} 0%, {colors.blue-bright} 100%)"
-    color: "{colors.white}"
-    padding: "4px 8px"
+    background: linear-gradient(90deg, {colors.blue-navy} 0%, {colors.blue-bright} 100%)
+    color: '{colors.white}'
+    padding: 4px 8px
     fontSize: 14px
     fontWeight: 700
-    description: "Navy-blue gradient bar at the top of every window. Contains a left lockup (icon + filename in caps) and a right cluster of three minimize/maximize/close buttons (_, [], X)."
+    description: Navy-blue gradient bar at the top of every window. Contains a left lockup (icon + filename in caps) and a
+      right cluster of three minimize/maximize/close buttons (_, [], X).
   win-titlebar-inactive:
-    background: "linear-gradient(90deg, #808080 0%, #a0a0a0 100%)"
-    description: "Grayed-out title bar variant for inactive/secondary windows (used when a slide contains multiple stacked windows representing different states)."
+    background: 'linear-gradient(90deg, #808080 0%, #a0a0a0 100%)'
+    description: Grayed-out title bar variant for inactive/secondary windows (used when a slide contains multiple stacked
+      windows representing different states).
   win-btn:
     width: 20px
     height: 18px
-    background: "{colors.bg-light}"
-    border: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
-    description: "Beveled-raised mini button used inside the title bar (_, [], X) and elsewhere. Active state inverts the bevel."
+    background: '{colors.bg-light}'
+    border: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
+    description: Beveled-raised mini button used inside the title bar (_, [], X) and elsewhere. Active state inverts the bevel.
   btn-retro:
-    background: "{colors.bg-light}"
-    border: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
-    padding: "6px 24px"
+    background: '{colors.bg-light}'
+    border: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
+    padding: 6px 24px
     fontSize: 14px
-    description: "Standard Win9x command button. Beveled raised; active state inverts the bevel so the button appears pressed in."
+    description: Standard Win9x command button. Beveled raised; active state inverts the bevel so the button appears pressed
+      in.
   group-box:
-    border: "2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)"
-    padding: "20px 18px 16px 18px"
-    background: "{colors.bg-light}"
-    description: "Sunken-bevel framed container with a title label that breaks the top border (the title sits in a small background-painted notch at top-left). The Win9x equivalent of a fieldset/legend."
+    border: '2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)'
+    padding: 20px 18px 16px 18px
+    background: '{colors.bg-light}'
+    description: Sunken-bevel framed container with a title label that breaks the top border (the title sits in a small background-painted
+      notch at top-left). The Win9x equivalent of a fieldset/legend.
   group-box-title:
     position: absolute
     top: -10px
     left: 12px
-    background: "{colors.bg-light}"
-    padding: "0 8px"
+    background: '{colors.bg-light}'
+    padding: 0 8px
     fontSize: 13px
     fontWeight: 700
-    description: "The title label that sits on top of a group-box's upper border, painted with the parent background to mask the border behind it."
+    description: The title label that sits on top of a group-box's upper border, painted with the parent background to mask
+      the border behind it.
   panel-raised:
-    background: "{colors.bg-light}"
-    border: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
+    background: '{colors.bg-light}'
+    border: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
     padding: 16px
-    description: "Raised-bevel panel. Used for tool palettes, button strips, and elevated content regions inside a window body."
+    description: Raised-bevel panel. Used for tool palettes, button strips, and elevated content regions inside a window body.
   panel-sunken:
-    background: "{colors.white}"
-    border: "2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)"
+    background: '{colors.white}'
+    border: '2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)'
     padding: 12px
-    description: "Sunken-bevel panel with a white interior. Used for text input fields, read-only data displays, and status regions. The white interior is the system's signal for 'this is content, not chrome.'"
+    description: Sunken-bevel panel with a white interior. Used for text input fields, read-only data displays, and status
+      regions. The white interior is the system's signal for 'this is content, not chrome.'
   progress-bar:
-    width: "100%"
+    width: 100%
     height: 24px
-    background: "{colors.white}"
-    border: "2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)"
+    background: '{colors.white}'
+    border: '2px solid #404040 (top/left) + 2px solid {colors.white} (right/bottom)'
     padding: 2px
-    description: "Sunken white well containing a solid navy fill div whose width represents the data value. The fill is `{colors.blue-navy}` solid — no gradient, no animation beyond width transition."
+    description: Sunken white well containing a solid navy fill div whose width represents the data value. The fill is `{colors.blue-navy}`
+      solid — no gradient, no animation beyond width transition.
   retro-list:
     listStyle: none
-    marker: "> (chevron)"
-    markerColor: "{colors.blue-navy}"
-    description: "Custom-bullet list where each item is prefixed with a navy '>' character. The chevron is set via ::before, never via list-style."
+    marker: '> (chevron)'
+    markerColor: '{colors.blue-navy}'
+    description: Custom-bullet list where each item is prefixed with a navy '>' character. The chevron is set via ::before,
+      never via list-style.
   retro-check:
-    checkBoxSize: "16px"
-    checkBoxBorder: "2px solid {colors.black} (top/left) + 2px solid {colors.white} (right/bottom)"
-    checkMarker: "x"
-    description: "Sunken white square checkbox with a literal lowercase 'x' character as the checked-state marker. Inset-beveled the opposite direction from buttons."
+    checkBoxSize: 16px
+    checkBoxBorder: 2px solid {colors.black} (top/left) + 2px solid {colors.white} (right/bottom)
+    checkMarker: x
+    description: Sunken white square checkbox with a literal lowercase 'x' character as the checked-state marker. Inset-beveled
+      the opposite direction from buttons.
   retro-table:
     borderCollapse: collapse
     fontSize: 14px
-    headerBackground: "{colors.bg-gray}"
-    headerBorder: "1px solid #404040"
-    cellBackground: "{colors.white}"
-    cellBorder: "1px solid {colors.bg-gray}"
-    zebraRowBackground: "#f0f0f0"
-    description: "Pixel-flat data table with gray headers, white cells, light-gray border lines, and a barely-different zebra fill on alternate rows."
+    headerBackground: '{colors.bg-gray}'
+    headerBorder: '1px solid #404040'
+    cellBackground: '{colors.white}'
+    cellBorder: 1px solid {colors.bg-gray}
+    zebraRowBackground: '#f0f0f0'
+    description: Pixel-flat data table with gray headers, white cells, light-gray border lines, and a barely-different zebra
+      fill on alternate rows.
   marquee:
-    background: "{colors.white}"
-    border: "1px inset {colors.bg-gray}"
-    padding: "3px 0"
-    animation: "marquee 14s linear infinite"
-    description: "Scrolling text inside a sunken white well. The animation translates the text from 100% right to -100% left over 14 seconds. The original Win marquee element re-implemented in CSS."
+    background: '{colors.white}'
+    border: 1px inset {colors.bg-gray}
+    padding: 3px 0
+    animation: marquee 14s linear infinite
+    description: Scrolling text inside a sunken white well. The animation translates the text from 100% right to -100% left
+      over 14 seconds. The original Win marquee element re-implemented in CSS.
   win-icon:
     width: 18px
     height: 18px
-    background: "{colors.white}"
-    border: "1px solid {colors.black}"
+    background: '{colors.white}'
+    border: 1px solid {colors.black}
     fontSize: 11px
-    color: "{colors.blue-navy}"
+    color: '{colors.blue-navy}'
     fontWeight: 700
-    description: "Tiny 18px square icon next to a title-bar filename — a navy-on-white letter glyph that imitates an application icon. The glyph is a 1-character mnemonic of the window's role (P for Presentation, R for README, D for Dataview, etc.)."
+    description: Tiny 18px square icon next to a title-bar filename — a navy-on-white letter glyph that imitates an application
+      icon. The glyph is a 1-character mnemonic of the window's role (P for Presentation, R for README, D for Dataview, etc.).
   tree-item:
     fontSize: 14px
-    indent: "24px per level"
-    folderGlyph: " (U+1F4C1)"
-    fileGlyph: " (U+1F4C4)"
-    expandedMarker: "-"
-    collapsedMarker: "+"
-    description: "Explorer-style hierarchical tree view. Each row carries an expand marker (+/−), a folder or file emoji glyph, and the label text. Indentation steps by 24px per nesting level."
+    indent: 24px per level
+    folderGlyph: ' (U+1F4C1)'
+    fileGlyph: ' (U+1F4C4)'
+    expandedMarker: '-'
+    collapsedMarker: +
+    description: Explorer-style hierarchical tree view. Each row carries an expand marker (+/−), a folder or file emoji glyph,
+      and the label text. Indentation steps by 24px per nesting level.
   separator-vertical:
     width: 2px
-    background: "#404040"
-    borderLeft: "1px solid {colors.white}"
-    margin: "0 12px"
-    description: "Beveled vertical separator between inline elements — the Win9x equivalent of a vertical rule."
+    background: '#404040'
+    borderLeft: 1px solid {colors.white}
+    margin: 0 12px
+    description: Beveled vertical separator between inline elements — the Win9x equivalent of a vertical rule.
   hr-retro:
-    borderTop: "1px solid #404040"
-    borderBottom: "1px solid {colors.white}"
-    margin: "14px 0"
-    description: "Beveled horizontal rule. Two stacked 1px lines (dark on top, white on bottom) create the engraved-in look."
+    borderTop: '1px solid #404040'
+    borderBottom: 1px solid {colors.white}
+    margin: 14px 0
+    description: Beveled horizontal rule. Two stacked 1px lines (dark on top, white on bottom) create the engraved-in look.
   nav-dot:
     width: 12px
     height: 12px
-    background: "{colors.bg-gray}"
-    border: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
-    activeBackground: "{colors.blue-navy}"
-    description: "Beveled square mini-dot used as a slide-indicator chip. Active state fills navy with a 4px white center square."
+    background: '{colors.bg-gray}'
+    border: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
+    activeBackground: '{colors.blue-navy}'
+    description: Beveled square mini-dot used as a slide-indicator chip. Active state fills navy with a 4px white center square.
   chart-canvas-host:
-    background: "{colors.bg-light}"
-    description: "Chart.js canvas embedded inside a panel-raised. Chart colors use {colors.blue-navy}, {colors.blue-bright}, {colors.blue-light}, {colors.green-retro}, {colors.cyan-retro}, {colors.yellow-retro}. Axis labels use MS Sans Serif at 11–12px in {colors.text-dark}. Gridlines in {colors.bg-gray}."
+    background: '{colors.bg-light}'
+    description: Chart.js canvas embedded inside a panel-raised. Chart colors use {colors.blue-navy}, {colors.blue-bright},
+      {colors.blue-light}, {colors.green-retro}, {colors.cyan-retro}, {colors.yellow-retro}. Axis labels use MS Sans Serif
+      at 11–12px in {colors.text-dark}. Gridlines in {colors.bg-gray}.
   scrollbar:
     width: 16px
-    trackBackground: "{colors.bg-gray}"
-    thumbBackground: "{colors.bg-gray}"
-    thumbBorder: "2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)"
-    description: "Custom webkit scrollbar styled as a beveled-raised gray thumb on a flat gray track. Width is fixed 16px to match Win9x default."
+    trackBackground: '{colors.bg-gray}'
+    thumbBackground: '{colors.bg-gray}'
+    thumbBorder: 2px solid {colors.white} (top/left) + 2px solid {colors.black} (right/bottom)
+    description: Custom webkit scrollbar styled as a beveled-raised gray thumb on a flat gray track. Width is fixed 16px to
+      match Win9x default.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

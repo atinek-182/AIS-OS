@@ -1,3 +1,28 @@
+---
+title: Copy
+domain: skill
+summary: Words are part of the design. A great layout with stock copy looks generic. Tight copy in an average layout reads
+  as considered. - **Specific verbs.** "Save changes" beats "OK" beats "Submit".
+critical_directives:
+- '"Click here." Link text must stand alone.'
+- 'Em-dash for interruption: `—` (U+2014). En-dash for ranges: `10–20` (U+2013). Never `--`.'
+- 'Ellipsis: `…` (U+2026). Never `...`.'
+- 'Apostrophe: `’`. Never the prime `''`.'
+section_outline:
+- Copy
+- Principles
+- Buttons
+- Error messages
+- Empty states
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/copy.md
+- When reading context for Copy
+tags:
+- skill
+- copy
+updated: '2026-08-08'
+---
+
 # Copy
 
 Words are part of the design. A great layout with stock copy looks generic. Tight copy in an average layout reads as considered.

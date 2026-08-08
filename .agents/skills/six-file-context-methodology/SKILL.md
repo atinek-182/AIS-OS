@@ -1,6 +1,33 @@
 ---
+title: Six-File Context Methodology (`/six-file-context-methodology` v3.2)
+domain: skill
+summary: 'This skill supports Tri-Mode Flexible Execution: - Slash Command: Explicitly run `/six-file-context-methodology
+  [init|scaffold|spec <feature-name>|spec-all|execute|verify|check|resume]` in chat.'
+critical_directives:
+- 'Per-Reference Socratic Interview Rule**: For every reference asset added to `reference/`, the AI engine interactively in'
+- '`/six-file-context-methodology init` executes a mandatory 4-Phase Socratic Interview (Brand & Vision -> Architecture &
+  D'
+- 'Strict Token Safeguards: Surgical context ingestion (subagents receive only exact target files, never full context folde'
+- 'Catalog-First Rule: Prohibits writing UI components from scratch when matching catalog components exist.'
+section_outline:
+- Six-File Context Methodology (`/six-file-context-methodology` v3.2)
+- Invocation & Tri-Mode Routing
+- Addressed Vulnerabilities & v3.2 System Upgrades
+- Hard-and-Fast System Mandates
+- Commands & Workflow Guide
+read_triggers:
+- When working on skill in .agents/skills/six-file-context-methodology/SKILL.md
+- When reading context for Six-File Context Methodology (`/six-file-context-methodology` v3.2)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: six-file-context-methodology
-description: Senior AI Engineering 7-File Context Methodology v3.2. Scaffolds 7-File Context System, project-local reference/ priority vault, granular reference deconstruction manifests (MANIFEST.md), 4-phase Socratic init interview, feature-specific spec Socratic sessions, Graphify knowledge graph integration (.planning/graphs/), Interactive Playwright 5-viewport visual handoff gate, Multi-Session state persistence (zero context loss), Token-Optimized Wave Execution, and OWASP LLM & Server Action security gates.
+description: Senior AI Engineering 7-File Context Methodology v3.2. Scaffolds 7-File Context System, project-local reference/
+  priority vault, granular reference deconstruction manifests (MANIFEST.md), 4-phase Socratic init interview, feature-specific
+  spec Socratic sessions, Graphify knowledge graph integration (.planning/graphs/), Interactive Playwright 5-viewport visual
+  handoff gate, Multi-Session state persistence (zero context loss), Token-Optimized Wave Execution, and OWASP LLM & Server
+  Action security gates.
 argument-hint: '[init|scaffold|spec <feature-name>|spec-all|execute [ticket|wave|all]|verify|check|resume]'
 ---
 

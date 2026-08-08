@@ -1,6 +1,31 @@
 ---
+title: ZORIXEL AIOS Active Security Engine (`/security-os`)
+domain: skill
+summary: This skill is the central cybersecurity defense, AI agent safety, and compliance auditing engine for Atinek Maurya's
+  AIOS (`AI-OS`) and ZORIXEL Agency. Powered by **817 cybersecurity skills** from `SecurityOs` linked at [SecurityOs/](file:///d:/AI-OS
+critical_directives:
+- '`CRITICAL`** (IDOR, SQLi, hardcoded tokens, RCE, severe prompt injection): **ALWAYS Hard-Stop**, zero exceptions, across'
+- '`HIGH`** (Missing rate limits, unvalidated redirects, CSRF): **Hard-Stop** during shipping (`/ship` & `/vibesec`); Warni'
+section_outline:
+- ZORIXEL AIOS Active Security Engine (`/security-os`)
+- Overview & Tri-Mode Execution
+- 29 Security Domains & 6 Frameworks Covered
+- CLI Execution Parameters (`scripts/security_os_runner.py`)
+- Unified Smart Severity Engine
+read_triggers:
+- When working on skill in .agents/skills/security-os/SKILL.md
+- When reading context for ZORIXEL AIOS Active Security Engine (`/security-os`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: security-os
-description: Active Cybersecurity Audit & Enforcement Engine powered by 817 structured security skills from SecurityOs (Anthropic Cybersecurity Skills). Enforces MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS (AI Safety & Prompt Injection Protection), OWASP Top 10, D3FEND, NIST AI RMF, and MITRE F3 frameworks. Features smart severity hard-stops, multi-agent platform export (--target cursor|claude|gemini|antigravity|codex), AST graph delta scanning, and dual client deliverables (Interactive HTML Audit Dashboard + Executive PDF Certificate). Invokable via /security-os or integrated into Phase 5 SDLC security gates (/vibesec, /code-review, /ship).
+description: Active Cybersecurity Audit & Enforcement Engine powered by 817 structured security skills from SecurityOs (Anthropic
+  Cybersecurity Skills). Enforces MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS (AI Safety & Prompt Injection Protection), OWASP
+  Top 10, D3FEND, NIST AI RMF, and MITRE F3 frameworks. Features smart severity hard-stops, multi-agent platform export (--target
+  cursor|claude|gemini|antigravity|codex), AST graph delta scanning, and dual client deliverables (Interactive HTML Audit
+  Dashboard + Executive PDF Certificate). Invokable via /security-os or integrated into Phase 5 SDLC security gates (/vibesec,
+  /code-review, /ship).
 argument-hint: '[search <query> | audit <path> | export --target <platform> | cert <client_name>]'
 ---
 

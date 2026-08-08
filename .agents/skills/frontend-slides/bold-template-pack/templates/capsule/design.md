@@ -1,227 +1,254 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Hard-offset shadows in low-opacity ink (`{colors.shadow}`) at 4/6/8/12px offsets, always solid, always bottom-right.
+- 'White** (`{colors.white}` — #FFFFFF): True white. Used as the default fill for pill-cards, stat-pills, diagram nodes, an'
+- 'Yellow** (`{colors.yellow}` — #F2D160): Warm marigold. The default fill for title pills, closing pills, and any pill tha'
+- 'Shadow** (`{colors.shadow}` — `rgba(26, 26, 26, 0.08)`): The universal soft hard-offset shadow color. Never use a differ'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Canvas & Ink
+- Candy Accents
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/capsule/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Capsule
-description: A playful editorial system built on pill-shaped containers, a sun-bleached cream canvas, and a nine-color candy palette. Bodoni Moda serif headlines pair with Space Grotesk body to suggest a literary magazine that took a holiday at a 1970s ice-cream parlor. Every container that holds text is a pill (border-radius 9999px) outlined with a 2px ink stroke, casting a soft 6–12px offset shadow. The aesthetic is "Memphis-meets-editorial" — confident typography, generous bordered shapes, and decorative floating pills as atmospheric wallpaper.
-
+description: A playful editorial system built on pill-shaped containers, a sun-bleached cream canvas, and a nine-color candy
+  palette. Bodoni Moda serif headlines pair with Space Grotesk body to suggest a literary magazine that took a holiday at
+  a 1970s ice-cream parlor. Every container that holds text is a pill (border-radius 9999px) outlined with a 2px ink stroke,
+  casting a soft 6–12px offset shadow. The aesthetic is "Memphis-meets-editorial" — confident typography, generous bordered
+  shapes, and decorative floating pills as atmospheric wallpaper.
 colors:
-  cream: "#F5F5F0"
-  ink: "#1A1A1A"
-  outline: "#1E1E1E"
-  white: "#FFFFFF"
-  coral: "#E85D4E"
-  lime: "#C4D94E"
-  lavender: "#C5B5E0"
-  sky: "#8BB4F7"
-  violet: "#A06CE8"
-  yellow: "#F2D160"
-  peach: "#F5B895"
-  mint: "#A8E6CF"
-  shadow: "rgba(26, 26, 26, 0.08)"
-
+  cream: '#F5F5F0'
+  ink: '#1A1A1A'
+  outline: '#1E1E1E'
+  white: '#FFFFFF'
+  coral: '#E85D4E'
+  lime: '#C4D94E'
+  lavender: '#C5B5E0'
+  sky: '#8BB4F7'
+  violet: '#A06CE8'
+  yellow: '#F2D160'
+  peach: '#F5B895'
+  mint: '#A8E6CF'
+  shadow: rgba(26, 26, 26, 0.08)
 color-aliases:
   bg: cream
   fg: ink
-  outline: outline                  # same hue family as ink; reserved for stroke role
-
+  outline: outline
 typography:
   display:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(3rem, 8vw, 7rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(3rem, 8vw, 7rem)
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: -0.02em
   closing-display:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(2.5rem, 6vw, 5rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(2.5rem, 6vw, 5rem)
     fontWeight: 800
     lineHeight: 0.95
     letterSpacing: -0.03em
   headline:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(2rem, 4vw, 3.5rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(2rem, 4vw, 3.5rem)
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.02em
   section-headline:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(1.8rem, 3.5vw, 3rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(1.8rem, 3.5vw, 3rem)
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.01em
   quote-display:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(1.6rem, 3.5vw, 3rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(1.6rem, 3.5vw, 3rem)
     fontWeight: 600
     lineHeight: 1.35
     letterSpacing: -0.01em
   card-headline:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "1.5rem"
+    fontFamily: Bodoni Moda, serif
+    fontSize: 1.5rem
     fontWeight: 700
     lineHeight: 1.1
   stat-number:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "clamp(2rem, 3.5vw, 3rem)"
+    fontFamily: Bodoni Moda, serif
+    fontSize: clamp(2rem, 3.5vw, 3rem)
     fontWeight: 800
     lineHeight: 1
     letterSpacing: -0.03em
   orbit-numeral:
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "2.5rem"
+    fontFamily: Bodoni Moda, serif
+    fontSize: 2.5rem
     fontWeight: 700
     lineHeight: 1
   body:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "clamp(0.95rem, 1.2vw, 1.15rem)"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: clamp(0.95rem, 1.2vw, 1.15rem)
     fontWeight: 400
     lineHeight: 1.6
   body-sm:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "0.9rem"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: 0.9rem
     fontWeight: 400
     lineHeight: 1.55
   subtitle:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "clamp(0.8rem, 1.5vw, 1.1rem)"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: clamp(0.8rem, 1.5vw, 1.1rem)
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0.15em
     textTransform: uppercase
   pill-text-md:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "0.85rem"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: 0.85rem
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0.12em
     textTransform: uppercase
   pill-text-sm:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "0.7rem"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: 0.7rem
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0.1em
     textTransform: uppercase
   label:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "0.75rem"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: 0.75rem
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.1em
     textTransform: uppercase
   mini-label:
-    fontFamily: "Space Grotesk, sans-serif"
-    fontSize: "0.65rem"
+    fontFamily: Space Grotesk, sans-serif
+    fontSize: 0.65rem
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.08em
     textTransform: uppercase
-
 spacing:
-  pad-lg: "3rem 4rem"
-  pad-md: "2rem"
-  gap-xl: "4rem"
-  gap-lg: "3rem"
-  gap-md: "2rem"
-  gap-sm: "1.5rem"
-  gap-xs: "0.75rem"
-  card-pad: "2.5rem 2rem"
-  pill-pad-lg: "1.5rem 3.5rem"
-  pill-pad-md: "1rem 2.5rem"
-  pill-pad-sm: "0.4rem 1.2rem"
-  pill-pad-xs: "0.35rem 1rem"
-
+  pad-lg: 3rem 4rem
+  pad-md: 2rem
+  gap-xl: 4rem
+  gap-lg: 3rem
+  gap-md: 2rem
+  gap-sm: 1.5rem
+  gap-xs: 0.75rem
+  card-pad: 2.5rem 2rem
+  pill-pad-lg: 1.5rem 3.5rem
+  pill-pad-md: 1rem 2.5rem
+  pill-pad-sm: 0.4rem 1.2rem
+  pill-pad-xs: 0.35rem 1rem
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   pill:
     borderRadius: 9999px
-    border: "2px solid {colors.outline}"
-    fontFamily: "Space Grotesk, sans-serif"
+    border: 2px solid {colors.outline}
+    fontFamily: Space Grotesk, sans-serif
     fontWeight: 500
     letterSpacing: 0.02em
     whiteSpace: nowrap
-    description: "The universal container shape. Any text container — chip, button, label, statement-highlight, stat tile, card, bar — is a pill with 2px outline. Background can be any palette accent or white."
+    description: The universal container shape. Any text container — chip, button, label, statement-highlight, stat tile,
+      card, bar — is a pill with 2px outline. Background can be any palette accent or white.
   pill-card:
-    background: "{colors.white}"
-    border: "2px solid {colors.outline}"
-    borderRadius: "2rem"
-    padding: "{spacing.card-pad}"
-    boxShadow: "8px 8px 0 {colors.shadow}"
-    description: "Larger pill-shaped card (slightly squared corners at 2rem rather than full pill) for content blocks. Always white background, always shadowed."
+    background: '{colors.white}'
+    border: 2px solid {colors.outline}
+    borderRadius: 2rem
+    padding: '{spacing.card-pad}'
+    boxShadow: 8px 8px 0 {colors.shadow}
+    description: Larger pill-shaped card (slightly squared corners at 2rem rather than full pill) for content blocks. Always
+      white background, always shadowed.
   stat-pill:
-    background: "{colors.white}"
-    border: "2px solid {colors.outline}"
-    borderRadius: "2rem"
-    padding: "2rem 1.5rem"
-    boxShadow: "6px 6px 0 {colors.shadow}"
-    description: "Stat tile — pill-shaped white card containing a colored stat number, label, and a tiny accent bar."
+    background: '{colors.white}'
+    border: 2px solid {colors.outline}
+    borderRadius: 2rem
+    padding: 2rem 1.5rem
+    boxShadow: 6px 6px 0 {colors.shadow}
+    description: Stat tile — pill-shaped white card containing a colored stat number, label, and a tiny accent bar.
   bar-track:
     height: 36px
-    background: "{colors.cream}"
-    border: "2px solid {colors.outline}"
+    background: '{colors.cream}'
+    border: 2px solid {colors.outline}
     borderRadius: 9999px
     overflow: hidden
-    description: "Horizontal bar chart track shaped as a pill. Fills use the candy palette."
+    description: Horizontal bar chart track shaped as a pill. Fills use the candy palette.
   bar-fill:
-    height: "100%"
+    height: 100%
     borderRadius: 9999px
-    borderRight: "2px solid {colors.outline}"
-    description: "Inner bar pill with the value label printed at right edge inside the fill."
+    borderRight: 2px solid {colors.outline}
+    description: Inner bar pill with the value label printed at right edge inside the fill.
   accent-line:
     width: 60px
     height: 4px
-    background: "{colors.coral}"
+    background: '{colors.coral}'
     borderRadius: 9999px
-    description: "Pill-shaped 60×4 accent rule. Default color coral; closing-context variant uses 80×4."
+    description: Pill-shaped 60×4 accent rule. Default color coral; closing-context variant uses 80×4.
   card-icon:
     width: 60px
     height: 60px
-    borderRadius: "50%"
-    border: "2px solid {colors.outline}"
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "1.5rem"
+    borderRadius: 50%
+    border: 2px solid {colors.outline}
+    fontFamily: Bodoni Moda, serif
+    fontSize: 1.5rem
     fontWeight: 700
-    description: "Circular pill icon (60px) used as a card mark. Background is an accent color; contains a 1–3 character Roman numeral or letter."
+    description: Circular pill icon (60px) used as a card mark. Background is an accent color; contains a 1–3 character Roman
+      numeral or letter.
   step-node:
     width: 56px
     height: 56px
-    borderRadius: "50%"
-    border: "2px solid {colors.outline}"
-    background: "{colors.white}"
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "1.3rem"
+    borderRadius: 50%
+    border: 2px solid {colors.outline}
+    background: '{colors.white}'
+    fontFamily: Bodoni Moda, serif
+    fontSize: 1.3rem
     fontWeight: 700
-    boxShadow: "4px 4px 0 {colors.shadow}"
-    description: "Circular pill node (56px) used as a timeline step or sequence marker. Step accent color appears as filled-pill class on the node."
+    boxShadow: 4px 4px 0 {colors.shadow}
+    description: Circular pill node (56px) used as a timeline step or sequence marker. Step accent color appears as filled-pill
+      class on the node.
   orbit-center:
     width: 160px
     height: 160px
-    borderRadius: "50%"
-    background: "{colors.lime}"
-    border: "2px solid {colors.outline}"
-    fontFamily: "Bodoni Moda, serif"
-    fontSize: "2.5rem"
+    borderRadius: 50%
+    background: '{colors.lime}'
+    border: 2px solid {colors.outline}
+    fontFamily: Bodoni Moda, serif
+    fontSize: 2.5rem
     fontWeight: 700
-    description: "Large circular pill (160px) used as the gravitational anchor of an orbit composition. Default fill lime; small satellite pills orbit around it."
+    description: Large circular pill (160px) used as the gravitational anchor of an orbit composition. Default fill lime;
+      small satellite pills orbit around it.
   diagram-node:
     borderRadius: 9999px
-    border: "2px solid {colors.outline}"
-    padding: "1rem 2rem"
-    boxShadow: "6px 6px 0 {colors.shadow}"
-    background: "{colors.white}"
-    description: "Flow-diagram node — pill-shaped container with shadow. Connected by 50×4 ink connectors with triangular arrowheads."
+    border: 2px solid {colors.outline}
+    padding: 1rem 2rem
+    boxShadow: 6px 6px 0 {colors.shadow}
+    background: '{colors.white}'
+    description: Flow-diagram node — pill-shaped container with shadow. Connected by 50×4 ink connectors with triangular arrowheads.
   diagram-connector:
     width: 50px
     height: 4px
-    background: "{colors.outline}"
-    description: "Solid 50×4 ink bar with a triangular arrowhead at the right end, connecting two diagram nodes inline."
+    background: '{colors.outline}'
+    description: Solid 50×4 ink bar with a triangular arrowhead at the right end, connecting two diagram nodes inline.
   visual-frame:
-    borderRadius: "2rem"
-    border: "2px solid {colors.outline}"
-    boxShadow: "12px 12px 0 {colors.shadow}"
-    description: "Large image/illustration frame — slightly squared pill (2rem radius) with thicker 12px offset shadow. Often filled with a tri-stop linear gradient and a dot-pattern overlay."
+    borderRadius: 2rem
+    border: 2px solid {colors.outline}
+    boxShadow: 12px 12px 0 {colors.shadow}
+    description: Large image/illustration frame — slightly squared pill (2rem radius) with thicker 12px offset shadow. Often
+      filled with a tri-stop linear gradient and a dot-pattern overlay.
   grain-overlay:
     position: fixed
     inset: 0
@@ -229,10 +256,12 @@ components:
     zIndex: 9999
     opacity: 0.04
     mixBlendMode: multiply
-    backgroundImage: "fractalNoise SVG"
-    description: "Subtle film-grain noise overlay applied to the entire viewport at 4% opacity in multiply blend mode. Always present, never absent."
+    backgroundImage: fractalNoise SVG
+    description: Subtle film-grain noise overlay applied to the entire viewport at 4% opacity in multiply blend mode. Always
+      present, never absent.
   radial-glow:
-    description: "Soft radial gradient wash anchored to a corner or center of a slide background. Uses one of the candy palette colors at 6–15% opacity, blended into the cream canvas. Provides atmospheric warmth without changing the surface color."
+    description: Soft radial gradient wash anchored to a corner or center of a slide background. Uses one of the candy palette
+      colors at 6–15% opacity, blended into the cream canvas. Provides atmospheric warmth without changing the surface color.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

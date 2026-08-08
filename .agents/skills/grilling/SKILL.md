@@ -1,6 +1,23 @@
 ---
+title: Skill
+domain: skill
+summary: 'Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision
+  branches into the decisions that hang off it. Work the tree in **rounds**. The **frontier** is every decision whose prerequisites
+  ar'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Skill
+read_triggers:
+- When working on skill in .agents/skills/grilling/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: grilling
-description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.
+description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking,
+  or uses any 'grill' trigger phrases.
 ---
 
 Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.

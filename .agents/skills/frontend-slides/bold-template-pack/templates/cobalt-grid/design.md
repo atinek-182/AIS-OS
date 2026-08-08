@@ -1,226 +1,258 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 1.5px cobalt **topbar rule** under section headers.
+- 'Default border color (structural rules)**: `{colors.ink}` at 1.5px solid.'
+- 'Default grid color**: `{colors.grid}` — never visible at full strength; never disabled.'
+- The graph-paper grid is permanent on every slide.** The `.stage::before` rule is not overridable per-slide — every compo
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Two-Color System
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/cobalt-grid/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Cobalt Grid
-description: "A Japanese-magazine trend-report system built on warm cream paper, electric cobalt ink, and a graph-paper grid that lives permanently behind every slide. Newsreader serif headlines tower at 18vh while DM Mono carries chrome and ticker text. The signature decoration is a pixel-glitch column — vertical scanlines stair-stepped down the right edge of declarative slides — paired with QR-style 8×8 grid patches. The cultural reference is WIRED Japan, Shift magazine, and architectural trend reports printed in two-color risograph: cream + one cobalt."
-
+description: 'A Japanese-magazine trend-report system built on warm cream paper, electric cobalt ink, and a graph-paper grid
+  that lives permanently behind every slide. Newsreader serif headlines tower at 18vh while DM Mono carries chrome and ticker
+  text. The signature decoration is a pixel-glitch column — vertical scanlines stair-stepped down the right edge of declarative
+  slides — paired with QR-style 8×8 grid patches. The cultural reference is WIRED Japan, Shift magazine, and architectural
+  trend reports printed in two-color risograph: cream + one cobalt.'
 colors:
-  paper: "#F0EBDE"
-  paper-2: "#E6E0CE"
-  ink: "#1F2BE0"
-  ink-soft: "#5560E5"
-  grid: "rgba(31, 43, 224, 0.10)"
-  ink-faint: "rgba(31, 43, 224, 0.18)"
-
+  paper: '#F0EBDE'
+  paper-2: '#E6E0CE'
+  ink: '#1F2BE0'
+  ink-soft: '#5560E5'
+  grid: rgba(31, 43, 224, 0.10)
+  ink-faint: rgba(31, 43, 224, 0.18)
 color-aliases:
   rule: ink
   bg: paper
-
 typography:
   display-hero:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(100px, min(11vw, 18vh), 200px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(100px, min(11vw, 18vh), 200px)
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.008em
   display-closing:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(72px, min(8.4vw, 14vh), 180px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(72px, min(8.4vw, 14vh), 180px)
     fontWeight: 400
     lineHeight: 0.96
     letterSpacing: -0.005em
   display-chapter:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(56px, min(6vw, 10vh), 130px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(56px, min(6vw, 10vh), 130px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: -0.005em
   display-quote:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(50px, min(5.6vw, 9vh), 110px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(50px, min(5.6vw, 9vh), 110px)
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: -0.005em
   display-manifesto:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(56px, min(6.4vw, 11vh), 120px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(56px, min(6.4vw, 11vh), 120px)
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: -0.005em
   headline:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(46px, min(4.8vw, 8.2vh), 92px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(46px, min(4.8vw, 8.2vh), 92px)
     fontWeight: 400
     lineHeight: 0.95
   headline-index:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(48px, min(5vw, 8.5vh), 100px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(48px, min(5vw, 8.5vh), 100px)
     fontWeight: 400
     lineHeight: 0.95
   vbig-numeral:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(110px, min(11vw, 18vh), 240px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(110px, min(11vw, 18vh), 240px)
     fontWeight: 400
     lineHeight: 0.92
     letterSpacing: -0.015em
   ed-callout:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(28px, min(2.8vw, 4.6vh), 50px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(28px, min(2.8vw, 4.6vh), 50px)
     fontWeight: 400
     lineHeight: 1.1
   row-headline:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(26px, 2vw, 40px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(26px, 2vw, 40px)
     fontWeight: 400
     lineHeight: 1.05
   table-name:
-    fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(20px, 1.6vw, 28px)"
+    fontFamily: Newsreader, Georgia, serif
+    fontSize: clamp(20px, 1.6vw, 28px)
     fontWeight: 400
     lineHeight: 1.15
   micro:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(12px, 0.9vw, 14px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(12px, 0.9vw, 14px)
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0.16em
     textTransform: uppercase
   micro-strong:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(13px, 1vw, 16px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(13px, 1vw, 16px)
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0.18em
     textTransform: uppercase
   micro-sm:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(11px, 0.75vw, 12px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(11px, 0.75vw, 12px)
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 0.18em
     textTransform: uppercase
   body:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(14px, 0.95vw, 15px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(14px, 0.95vw, 15px)
     fontWeight: 400
     lineHeight: 1.5
   body-lede:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(15px, 1vw, 18px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(15px, 1vw, 18px)
     fontWeight: 400
     lineHeight: 1.5
   body-stat:
-    fontFamily: "Hanken Grotesk, sans-serif"
-    fontSize: "clamp(15px, 1vw, 17px)"
+    fontFamily: Hanken Grotesk, sans-serif
+    fontSize: clamp(15px, 1vw, 17px)
     fontWeight: 400
     lineHeight: 1.5
   mono-tag:
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    fontSize: "clamp(13px, 0.9vw, 15px)"
+    fontFamily: DM Mono, ui-monospace, monospace
+    fontSize: clamp(13px, 0.9vw, 15px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.04em
   mono-chrome:
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    fontSize: "clamp(11px, 0.82vw, 13px)"
+    fontFamily: DM Mono, ui-monospace, monospace
+    fontSize: clamp(11px, 0.82vw, 13px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.06em
   mono-tick:
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    fontSize: "clamp(12px, 0.85vw, 14px)"
+    fontFamily: DM Mono, ui-monospace, monospace
+    fontSize: clamp(12px, 0.85vw, 14px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.04em
-
 spacing:
-  edge: "clamp(36px, 3.6vw, 80px)"
-  edge-inner: "clamp(60px, 8vw, 160px)"
-  pad-top: "clamp(76px, 8vh, 130px)"
-  pad-bottom: "clamp(100px, 10vh, 150px)"
-  gap-lg: "clamp(28px, 3vw, 56px)"
-  gap-md: "clamp(20px, 2.2vh, 36px)"
-  gap-sm: "clamp(14px, 1.6vh, 24px)"
-  gap-xs: "clamp(10px, 1.2vh, 18px)"
-
+  edge: clamp(36px, 3.6vw, 80px)
+  edge-inner: clamp(60px, 8vw, 160px)
+  pad-top: clamp(76px, 8vh, 130px)
+  pad-bottom: clamp(100px, 10vh, 150px)
+  gap-lg: clamp(28px, 3vw, 56px)
+  gap-md: clamp(20px, 2.2vh, 36px)
+  gap-sm: clamp(14px, 1.6vh, 24px)
+  gap-xs: clamp(10px, 1.2vh, 18px)
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   graph-paper-grid:
-    backgroundImage: "linear-gradient(to right, {colors.grid} 1px, transparent 1px), linear-gradient(to bottom, {colors.grid} 1px, transparent 1px)"
-    backgroundSize: "clamp(28px, 2.2vw, 44px) clamp(28px, 2.2vw, 44px)"
-    description: "Permanent ::before pseudo on every stage. 28–44px squared graph paper grid in 10%-opacity cobalt that sits behind every slide at z-index 1. Cannot be turned off — it is the canvas tone."
+    backgroundImage: linear-gradient(to right, {colors.grid} 1px, transparent 1px), linear-gradient(to bottom, {colors.grid}
+      1px, transparent 1px)
+    backgroundSize: clamp(28px, 2.2vw, 44px) clamp(28px, 2.2vw, 44px)
+    description: Permanent ::before pseudo on every stage. 28–44px squared graph paper grid in 10%-opacity cobalt that sits
+      behind every slide at z-index 1. Cannot be turned off — it is the canvas tone.
   hairlines:
-    height: "1.5px"
-    background: "{colors.ink}"
-    description: "Two persistent slim cobalt rules — one at the top of every slide (≈2.6vh from top) and one near the bottom (≈2vh from bottom) — both inset from edges by {spacing.edge}. They frame the slide composition."
+    height: 1.5px
+    background: '{colors.ink}'
+    description: Two persistent slim cobalt rules — one at the top of every slide (≈2.6vh from top) and one near the bottom
+      (≈2vh from bottom) — both inset from edges by {spacing.edge}. They frame the slide composition.
   pagenum:
     position: absolute
-    right: "{spacing.edge}"
-    bottom: "clamp(48px, 4.8vh, 76px)"
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    fontSize: "clamp(11px, 0.82vw, 13px)"
-    color: "{colors.ink}"
+    right: '{spacing.edge}'
+    bottom: clamp(48px, 4.8vh, 76px)
+    fontFamily: DM Mono, ui-monospace, monospace
+    fontSize: clamp(11px, 0.82vw, 13px)
+    color: '{colors.ink}'
     letterSpacing: 0.06em
-    description: "Mono cobalt page number anchored bottom-right above the bottom hairline. One per slide."
+    description: Mono cobalt page number anchored bottom-right above the bottom hairline. One per slide.
   nav-hint:
     position: fixed
-    left: "{spacing.edge}"
-    bottom: "clamp(48px, 4.8vh, 76px)"
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    fontSize: "clamp(10px, 0.75vw, 12px)"
-    color: "{colors.ink}"
+    left: '{spacing.edge}'
+    bottom: clamp(48px, 4.8vh, 76px)
+    fontFamily: DM Mono, ui-monospace, monospace
+    fontSize: clamp(10px, 0.75vw, 12px)
+    color: '{colors.ink}'
     letterSpacing: 0.08em
     opacity: 0.4
-    description: "Mono cobalt navigation hint anchored bottom-left, mirrors pagenum."
+    description: Mono cobalt navigation hint anchored bottom-left, mirrors pagenum.
   pixel-glitch:
-    description: "Stair-stepped column of vertical scanlines, rendered as inline SVG. Each stepped rectangle contains evenly-spaced cobalt vertical lines on cream. Sits absolutely positioned (typically right edge) at z-index 3, decorative only. Size ranges from 16vw × full-height (compact decoration) to 32vw × full-height (signature cover decoration)."
+    description: Stair-stepped column of vertical scanlines, rendered as inline SVG. Each stepped rectangle contains evenly-spaced
+      cobalt vertical lines on cream. Sits absolutely positioned (typically right edge) at z-index 3, decorative only. Size
+      ranges from 16vw × full-height (compact decoration) to 32vw × full-height (signature cover decoration).
   qr-block:
     display: grid
-    gridTemplateColumns: "repeat(8, 1fr)"
-    gridTemplateRows: "repeat(8, 1fr)"
+    gridTemplateColumns: repeat(8, 1fr)
+    gridTemplateRows: repeat(8, 1fr)
     gap: 1.5px
-    background: "{colors.paper}"
+    background: '{colors.paper}'
     padding: 4px
-    boxShadow: "0 0 0 1.5px {colors.paper}"
-    description: "8×8 QR-style mosaic of cobalt cells on cream background. Paper-fill ensures it reads as a discrete patch when overlapping the pixel-glitch column. Typical size 58–100px square."
+    boxShadow: 0 0 0 1.5px {colors.paper}
+    description: 8×8 QR-style mosaic of cobalt cells on cream background. Paper-fill ensures it reads as a discrete patch
+      when overlapping the pixel-glitch column. Typical size 58–100px square.
   topbar-rule:
-    borderBottom: "1.5px solid {colors.ink}"
-    paddingBottom: "clamp(12px, 1.4vh, 22px)"
-    description: "1.5px cobalt rule under the topbar of an index, data, or table layout. Below the rule sits a Newsreader headline (left) and a mono lab-tag (right)."
+    borderBottom: 1.5px solid {colors.ink}
+    paddingBottom: clamp(12px, 1.4vh, 22px)
+    description: 1.5px cobalt rule under the topbar of an index, data, or table layout. Below the rule sits a Newsreader headline
+      (left) and a mono lab-tag (right).
   row-divider:
-    borderBottom: "1px solid {colors.ink-faint}"
-    description: "Faint 18%-opacity cobalt rule between rows of an index list, table, or ledger."
+    borderBottom: 1px solid {colors.ink-faint}
+    description: Faint 18%-opacity cobalt rule between rows of an index list, table, or ledger.
   attribution-rule:
-    borderTop: "1px solid {colors.ink}"
-    paddingTop: "clamp(10px, 1.2vh, 18px)"
-    description: "Solid cobalt rule above a quote attribution or manifesto byline."
+    borderTop: 1px solid {colors.ink}
+    paddingTop: clamp(10px, 1.2vh, 18px)
+    description: Solid cobalt rule above a quote attribution or manifesto byline.
   pixel-stack-bars:
-    description: "Vertical bar chart rendered as a column of stacked 'cells' — flex column-reverse with 3px gaps, each cell a small horizontal block. Cells default to 10%-opacity cobalt (the grid color); .on cells fill solid cobalt to represent the value. Reads as a pixelated bar made of grid units."
+    description: Vertical bar chart rendered as a column of stacked 'cells' — flex column-reverse with 3px gaps, each cell
+      a small horizontal block. Cells default to 10%-opacity cobalt (the grid color); .on cells fill solid cobalt to represent
+      the value. Reads as a pixelated bar made of grid units.
   ledger-row:
     display: grid
-    gridTemplateColumns: "76px 0.6fr 1.4fr 0.7fr 0.5fr"
-    gap: "clamp(14px, 1.4vw, 28px)"
-    borderBottom: "1px solid {colors.ink-faint}"
-    description: "Dense table row carrying a num-tag, name (Newsreader), description (Hanken Grotesk), mood-tag, and delta-tag (mono with up/down arrow prefix). Header row uses 1.5px solid cobalt bottom border."
+    gridTemplateColumns: 76px 0.6fr 1.4fr 0.7fr 0.5fr
+    gap: clamp(14px, 1.4vw, 28px)
+    borderBottom: 1px solid {colors.ink-faint}
+    description: Dense table row carrying a num-tag, name (Newsreader), description (Hanken Grotesk), mood-tag, and delta-tag
+      (mono with up/down arrow prefix). Header row uses 1.5px solid cobalt bottom border.
   vstack-label:
-    fontFamily: "DM Mono, ui-monospace, monospace"
-    writingMode: "vertical-rl"
-    textOrientation: "mixed"
+    fontFamily: DM Mono, ui-monospace, monospace
+    writingMode: vertical-rl
+    textOrientation: mixed
     letterSpacing: 0.04em
-    description: "Vertical-orientation mono label column anchored to the right edge of a slide. Replaces the Korean vertical column of the reference with mono catalogue text rotated 90°."
+    description: Vertical-orientation mono label column anchored to the right edge of a slide. Replaces the Korean vertical
+      column of the reference with mono catalogue text rotated 90°.
   delta-up:
-    content: "↑ "
-    description: "Up arrow prefix via ::before on a mono delta tag in the ledger table."
+    content: '↑ '
+    description: Up arrow prefix via ::before on a mono delta tag in the ledger table.
   delta-down:
-    content: "↓ "
+    content: '↓ '
     opacity: 0.6
-    description: "Down arrow prefix via ::before, dimmed 40% to read as decline."
+    description: Down arrow prefix via ::before, dimmed 40% to read as decline.
   delta-flat:
-    content: "— "
+    content: '— '
     opacity: 0.6
-    description: "Em-dash prefix via ::before, dimmed 40% to read as neutral."
+    description: Em-dash prefix via ::before, dimmed 40% to read as neutral.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

@@ -1,11 +1,31 @@
 ---
+title: Brand Colors & Contrast Audit Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/brand-colors [optional
+  action or theme context]` in chat.'
+critical_directives:
+- 🔴 **FAIL (< 4.5)** - Low contrast warning.
+- 'Design Rules: Avoid generic saturation (plain primary red/blue). Prefer curated, harmonious tones matching the Zorixel
+  p'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Brand Colors & Contrast Audit Skill
+- Invocation & Tri-Mode Routing
+- Capabilities
+- Rendering Swatch Page Rules
+- Inter-Skill Connections & Handoff Pipeline
+read_triggers:
+- When working on skill in .agents/skills/brand-colors/SKILL.md
+- When reading context for Brand Colors & Contrast Audit Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: brand-colors
-description: Automate brand color palette exploration, WCAG contrast audits, and swatch
-  prototype page creation. Invokable directly via /brand-colors.
+description: Automate brand color palette exploration, WCAG contrast audits, and swatch prototype page creation. Invokable
+  directly via /brand-colors.
 argument-hint: '[optional action or theme context]'
 ---
-
-
 
 # Brand Colors & Contrast Audit Skill
 

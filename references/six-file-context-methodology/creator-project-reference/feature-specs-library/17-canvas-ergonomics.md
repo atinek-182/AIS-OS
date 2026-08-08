@@ -1,3 +1,23 @@
+---
+title: 17 Canvas Ergonomics
+domain: architecture
+summary: Add a floating control bar for zoom and undo/redo, then wire the same actions to keyboard shortcuts. 1. Add a pill-shaped
+  control bar at the bottom-left of the canvas.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/17-canvas-ergonomics.md
+- When reading context for 17 Canvas Ergonomics
+tags:
+- architecture
+- 17-canvas-ergonomics
+updated: '2026-08-08'
+---
+
 Add a floating control bar for zoom and undo/redo, then wire the same actions to keyboard shortcuts.
 
 ## Implementation

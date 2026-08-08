@@ -1,10 +1,28 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/daily-plan-day [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Steps
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/daily-plan-day/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: daily-plan-day
-description: Use when the user wants to plan their day, start a morning routine, or
-  generate a daily schedule. Invokable directly via /daily-plan-day.
+description: Use when the user wants to plan their day, start a morning routine, or generate a daily schedule. Invokable directly
+  via /daily-plan-day.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

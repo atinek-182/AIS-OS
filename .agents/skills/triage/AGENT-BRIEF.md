@@ -1,3 +1,26 @@
+---
+title: Writing Agent Briefs
+domain: skill
+summary: An agent brief is a structured comment posted on a GitHub issue or PR when it moves to `ready-for-agent`. It is the
+  authoritative specification that an AFK agent will work from. The original body and discussion are context — the agent brief
+  is the co
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Writing Agent Briefs
+- Principles
+- Durability over precision
+- Behavioral, not procedural
+- Complete acceptance criteria
+read_triggers:
+- When working on skill in .agents/skills/triage/AGENT-BRIEF.md
+- When reading context for Writing Agent Briefs
+tags:
+- skill
+- AGENT-BRIEF
+updated: '2026-08-08'
+---
+
 # Writing Agent Briefs
 
 An agent brief is a structured comment posted on a GitHub issue or PR when it moves to `ready-for-agent`. It is the authoritative specification that an AFK agent will work from. The original body and discussion are context — the agent brief is the contract.

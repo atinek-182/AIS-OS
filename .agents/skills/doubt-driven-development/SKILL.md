@@ -1,6 +1,31 @@
 ---
+title: Doubt-Driven Development
+domain: skill
+summary: A confident answer is not a correct one. Long sessions accumulate context that quietly turns assumptions into "facts"
+  without anyone noticing. Doubt-driven development is the discipline of materializing a fresh-context reviewer — biased to
+  **disprove
+critical_directives:
+- If you find yourself applying this skill from inside a subagent context** (where Claude Code prevents nested subagent sp
+- Pass ARTIFACT + CONTRACT only. Do NOT pass the CLAIM.** Handing the reviewer your conclusion biases it toward agreement.
+- 'Interactive sessions: always offer. Never silently skip.**'
+- Never interpolate the artifact into a shell-quoted argument.** Code, markdown, and review prompts routinely contain back
+section_outline:
+- Doubt-Driven Development
+- Overview
+- When to Use
+- Loading Constraints
+- The Process
+read_triggers:
+- When working on skill in .agents/skills/doubt-driven-development/SKILL.md
+- When reading context for Doubt-Driven Development
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: doubt-driven-development
-description: Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production, security-sensitive logic, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.
+description: Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when correctness
+  matters more than speed, when working in unfamiliar code, when stakes are high (production, security-sensitive logic, irreversible
+  operations), or any time a confident output would be cheaper to verify now than to debug later.
 ---
 
 # Doubt-Driven Development

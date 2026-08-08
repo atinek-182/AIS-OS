@@ -1,3 +1,22 @@
+---
+title: 14 Node Editing
+domain: architecture
+summary: Add resizing and inline label editing to canvas nodes. - selected nodes should show resize handles
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/14-node-editing.md
+- When reading context for 14 Node Editing
+tags:
+- architecture
+- 14-node-editing
+updated: '2026-08-08'
+---
+
 Add resizing and inline label editing to canvas nodes.
 
 ## Implementation

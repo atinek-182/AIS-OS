@@ -1,3 +1,29 @@
+---
+title: Theme — Hum
+domain: skill
+summary: The playful, vibrant, **alive** register. Cream paper, multi-accent palette (pear-yellow primary, sky-cyan secondary,
+  coral-red pop), rounded sans typography, generous radii, soft lifting shadows, mandatory hover-and-on-paint motion. Hum
+  is the catal
+critical_directives:
+- Paper band** — light (`L 97%`), warm cream tinted toward pear-yellow hue (~95°). Yellower and brighter than any other wa
+- Patron-saint reference (internal):** *Brilliant.org's Koji moment* + *PostHog's "if it could belong to any SaaS, it isn'
+- '`--color-ink: oklch(20% 0.012 250)` — near-black with cool tilt (PostHog''s `#151515` discipline — never pure black)'
+- Three-rule for accents:**
+section_outline:
+- Theme — Hum
+- Axes (diversification)
+- Reference register
+- Palette
+- Typography
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/themes/hum.md
+- When reading context for Theme — Hum
+tags:
+- skill
+- hum
+updated: '2026-08-08'
+---
+
 # Theme — Hum
 
 The playful, vibrant, **alive** register. Cream paper, multi-accent palette (pear-yellow primary, sky-cyan secondary, coral-red pop), rounded sans typography, generous radii, soft lifting shadows, mandatory hover-and-on-paint motion. Hum is the catalog theme for products that don't take themselves too seriously — daily-curiosity apps, learning platforms, habit trackers, friendship apps, kids' tools, indie creative software. Sites that should feel like the room is warm and someone smart is smiling.

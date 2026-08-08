@@ -1,6 +1,27 @@
 ---
+title: Domain Modeling
+domain: skill
+summary: Actively build and sharpen the project's domain model as you design. This is the *active* discipline — challenging
+  terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading*
+  `CONTE
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Domain Modeling
+- File structure
+- During the session
+- Challenge against the glossary
+- Sharpen fuzzy language
+read_triggers:
+- When working on skill in .agents/skills/domain-modeling/SKILL.md
+- When reading context for Domain Modeling
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: domain-modeling
-description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.
+description: Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous
+  language, record an architectural decision, or when another skill needs to maintain the domain model.
 ---
 
 # Domain Modeling

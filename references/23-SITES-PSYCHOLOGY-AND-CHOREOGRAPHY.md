@@ -1,3 +1,26 @@
+---
+title: 23-Sites Design Psychology, Sensory Feel, & Spatial Choreography Guide
+domain: architecture
+summary: '*Synthesized from 23 award-winning reference sites: Active Theory, Obys Agency, Locomotive Agency, Merci Michel,
+  Resn, Oryzo AI, Trionn Agency, and more.* - **Micro-Copy Friction Reducers**: Never demand action without relieving friction.
+  Place subtl'
+critical_directives:
+- '**Micro-Copy Friction Reducers**: Never demand action without relieving friction. Place subtle micro'
+section_outline:
+- 23-Sites Design Psychology, Sensory Feel, & Spatial Choreography Guide
+- 🧠 1. UX Design Psychology Principles
+- A. Cognitive Load Optimization & Chunking
+- B. Eye-Tracking Scanning Patterns (F-Pattern & Z-Pattern)
+- 📐 2. Spatial Choreography & Section Sequencing
+read_triggers:
+- When working on architecture in references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md
+- When reading context for 23-Sites Design Psychology, Sensory Feel, & Spatial Choreography Guide
+tags:
+- architecture
+- 23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY
+updated: '2026-08-08'
+---
+
 # 23-Sites Design Psychology, Sensory Feel, & Spatial Choreography Guide
 
 *Synthesized from 23 award-winning reference sites: Active Theory, Obys Agency, Locomotive Agency, Merci Michel, Resn, Oryzo AI, Trionn Agency, and more.*

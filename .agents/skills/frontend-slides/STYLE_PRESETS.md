@@ -1,3 +1,27 @@
+---
+title: Style Presets Reference
+domain: skill
+summary: Curated visual styles for Frontend Slides. Each preset is inspired by real design references — no generic "AI slop"
+  aesthetics. **Abstract shapes only — no illustrations.** **Viewport CSS:** For mandatory base styles, see [viewport-base.css](viewport
+critical_directives:
+- Viewport CSS:** For mandatory base styles, see [viewport-base.css](viewport-base.css). Include in every presentation.
+- 'Tab text must scale with viewport: `font-size: clamp(0.5rem, 1vh, 0.7rem)`'
+- Signature:** Drop caps, pull quotes, elegant horizontal rules
+section_outline:
+- Style Presets Reference
+- Dark Themes
+- 1. Bold Signal
+- 2. Electric Studio
+- 3. Creative Voltage
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/STYLE_PRESETS.md
+- When reading context for Style Presets Reference
+tags:
+- skill
+- STYLE_PRESETS
+updated: '2026-08-08'
+---
+
 # Style Presets Reference
 
 Curated visual styles for Frontend Slides. Each preset is inspired by real design references — no generic "AI slop" aesthetics. **Abstract shapes only — no illustrations.**

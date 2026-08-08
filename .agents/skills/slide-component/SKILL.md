@@ -1,14 +1,30 @@
 ---
+title: Slide Component Generator
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/slide-component [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Slide Component Generator
+- Invocation & Tri-Mode Routing
+- Core Principles
+- Operating Instructions
+- 'Step 1: Identify Category & Copy'
+read_triggers:
+- When working on skill in .agents/skills/slide-component/SKILL.md
+- When reading context for Slide Component Generator
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: slide-component
-description: This skill should be used when the user asks to "generate slide component",
-  "inject animated block", "create slide element", or "add custom component to library".
-  Handles block-injection, compounding libraries, and Playwright verification. Invokable
-  directly via /slide-component.
+description: This skill should be used when the user asks to "generate slide component", "inject animated block", "create
+  slide element", or "add custom component to library". Handles block-injection, compounding libraries, and Playwright verification.
+  Invokable directly via /slide-component.
 version: 1.0.0
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Slide Component Generator
 

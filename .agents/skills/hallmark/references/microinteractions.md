@@ -1,3 +1,28 @@
+---
+title: Microinteractions
+domain: skill
+summary: The single biggest gap in 2026's anti-slop canon. Most skills correct typography and colour; very few correct *the
+  small, repeated moments where an interface either feels designed or feels generated.* This file is the correction. A microinteraction
+  i
+critical_directives:
+- Motion has intent or motion is cut.** Every animation must clarify, guide, or confirm. If you cannot name what a transit
+- Cursor followers. Always slop.
+- Focus rings** are 2–3 px, ≥ 3:1 contrast, never animated in/out, present on every interactive element via `:focus-visibl
+section_outline:
+- Microinteractions
+- Principles
+- When to ship motion by default
+- Hard rules for default-on motion
+- What never gets default motion
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/microinteractions.md
+- When reading context for Microinteractions
+tags:
+- skill
+- microinteractions
+updated: '2026-08-08'
+---
+
 # Microinteractions
 
 The single biggest gap in 2026's anti-slop canon. Most skills correct typography and colour; very few correct *the small, repeated moments where an interface either feels designed or feels generated.* This file is the correction.

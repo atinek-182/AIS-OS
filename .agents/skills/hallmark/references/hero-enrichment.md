@@ -1,3 +1,29 @@
+---
+title: Hero enrichment — when, what, and how much
+domain: skill
+summary: 'This file is loaded after the macrostructure pick (Step 3 in the design flow), when you reach Step 4: "Decide on
+  hero enrichment." It tells you whether to enrich the hero with media at all, and if so, which archetype and how to build
+  it. **The promis'
+critical_directives:
+- 'The promise.** Enrichment is an option, not a default. A typographic-only hero is *always* an acceptable answer. Visual '
+- The bar.** Better nothing than bad something. A page that ships a quiet, well-set typographic hero is always better than
+- When the user has attached an image asset (or `.hallmark/preflight.json` cached one), use it. Never overwrite with a pla
+- A placeholder must look like a placeholder, not like a confident decision. The skill refuses to invent stock photos as i
+section_outline:
+- Hero enrichment — when, what, and how much
+- Image-need detection — does this brief need imagery at all?
+- The enrichment hierarchy
+- Eyeball or ask — the decision protocol
+- Eight enrichment archetypes
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/hero-enrichment.md
+- When reading context for Hero enrichment — when, what, and how much
+tags:
+- skill
+- hero-enrichment
+updated: '2026-08-08'
+---
+
 # Hero enrichment — when, what, and how much
 
 This file is loaded after the macrostructure pick (Step 3 in the design flow), when you reach Step 4: "Decide on hero enrichment." It tells you whether to enrich the hero with media at all, and if so, which archetype and how to build it.

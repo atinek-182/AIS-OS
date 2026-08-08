@@ -1,6 +1,29 @@
 ---
+title: ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
+domain: skill
+summary: This skill automates Stage 1 client lead discovery, web scraping, vulnerability auditing, forensic research prompt
+  generation, 7-agent STORM research, Mobile Loom Cheat Sheet creation, Notion Operational OS blueprinting, and 5-persona
+  `/roast` valida
+critical_directives:
+- All generated pitch scripts, cheat sheets, blueprints, and audit documents MUST be stored strictly inside the designated
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
+- Overview & Tri-Mode Execution
+- Generic 1-Line Execution Pipeline
+- 'Step 1: Client Vault Scaffolding & Placement Mandate'
+- 'Step 2: Autonomous Web Scrape & Technical Inspection'
+read_triggers:
+- When working on skill in .agents/skills/client-audit/SKILL.md
+- When reading context for ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: client-audit
-description: Autonomous 1-Line Client Outreach Audit & Research Engine for ZORIXEL. Automatically scaffolds client vaults, scrapes target websites, populates vulnerability audits, generates forensic research prompts, synthesizes 7-agent STORM reports, generates Mobile Loom Cheat Sheets, and builds Notion Operational OS master plans inside client vaults in one line.
+description: Autonomous 1-Line Client Outreach Audit & Research Engine for ZORIXEL. Automatically scaffolds client vaults,
+  scrapes target websites, populates vulnerability audits, generates forensic research prompts, synthesizes 7-agent STORM
+  reports, generates Mobile Loom Cheat Sheets, and builds Notion Operational OS master plans inside client vaults in one line.
 argument-hint: '[Client Name] [Website URL] [optional: lead channel / context notes]'
 ---
 

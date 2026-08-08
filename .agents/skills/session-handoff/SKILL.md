@@ -1,6 +1,25 @@
 ---
+title: Session Handoff — Clear Context, Preserve State
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/session-handoff` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Session Handoff — Clear Context, Preserve State
+- Invocation & Tri-Mode Routing
+- Purpose
+- 📋 Handoff Workflow
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/session-handoff/SKILL.md
+- When reading context for Session Handoff — Clear Context, Preserve State
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: session-handoff
-description: Generate a clean end-of-session handoff summary so you can clear context and resume work cleanly in a new session without losing state. Invokable directly via /session-handoff.
+description: Generate a clean end-of-session handoff summary so you can clear context and resume work cleanly in a new session
+  without losing state. Invokable directly via /session-handoff.
 argument-hint: '[optional: specific topic or milestone focus]'
 ---
 

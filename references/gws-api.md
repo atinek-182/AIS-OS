@@ -1,3 +1,26 @@
+---
+title: Google Workspace CLI (GWS) Integration Guide
+domain: architecture
+summary: This guide details the integration details, environment credentials, CLI syntax, and scripting templates for the
+  Google Workspace CLI (`gws`) used inside your AIOS. The `gws` CLI determines which account to hit based on the path supplied
+  in the `GOOG
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Google Workspace CLI (GWS) Integration Guide
+- 🔒 1. Environment & Authentication Profile Flow
+- 💻 2. Common CLI Commands Reference
+- Calendar Operations (GCal)
+- Gmail Operations (Emails & Drafts)
+read_triggers:
+- When working on architecture in references/gws-api.md
+- When reading context for Google Workspace CLI (GWS) Integration Guide
+tags:
+- architecture
+- gws-api
+updated: '2026-08-08'
+---
+
 # Google Workspace CLI (GWS) Integration Guide
 
 This guide details the integration details, environment credentials, CLI syntax, and scripting templates for the Google Workspace CLI (`gws`) used inside your AIOS.

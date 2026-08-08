@@ -1,3 +1,21 @@
+---
+title: 16 Feature Stack
+domain: skill
+summary: Sticky left pane (label / description) + scroll-synced right pane (screenshots cycling through related details).
+  Cinematic pacing. - **Heading:** held inside the sticky pane; persists while content cycles beside it.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 16 · Feature Stack
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/16-feature-stack.md
+- When reading context for 16 Feature Stack
+tags:
+- skill
+- 16-feature-stack
+updated: '2026-08-08'
+---
+
 ## 16 · Feature Stack
 
 Sticky left pane (label / description) + scroll-synced right pane (screenshots cycling through related details). Cinematic pacing.

@@ -1,325 +1,363 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Single tomato red (`{colors.red}`) as the only accent — used for every numerical figure, every section rule, every label
+- Em-dash and bullet glyphs in red as list markers — never default disc bullets.
+- 'Red** (`{colors.red}` — `#D8000F`): Saturated tomato red. The system''s single accent. Used for every numerical figure
+  (S'
+- 'Default leftbar rule color**: `{colors.red}`. The 4px (or 3px on dark surfaces) red left rule is the editorial card sign'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/bold-poster/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Bold Poster
-description: "A populist editorial poster system that mashes vintage Italian sports-magazine display lettering with classical serif body and tight monospace metadata. The display face is Shrikhand — a heavy slab/script hybrid with playful italic personality — rendered at poster scale (often 200-320px) and routinely tilted off-axis. Body runs Libre Baskerville for a literary editorial register; Space Grotesk handles tiny uppercase labels and chrome. The palette is uncompromising: white canvas, deep brown-black ink (#1C1410), single saturated tomato red (#D8000F), and a warm off-white (#F5F2EF) for alternating panels. Borders are bold 1.5-3px ink rules; the only shadow is a single stacked offset behind red display text. The aesthetic is loud, confident, and unmistakably print-poster — closer to a 1970s European brand annual report or a wine merchant's catalogue than a contemporary slide deck."
-
+description: 'A populist editorial poster system that mashes vintage Italian sports-magazine display lettering with classical
+  serif body and tight monospace metadata. The display face is Shrikhand — a heavy slab/script hybrid with playful italic
+  personality — rendered at poster scale (often 200-320px) and routinely tilted off-axis. Body runs Libre Baskerville for
+  a literary editorial register; Space Grotesk handles tiny uppercase labels and chrome. The palette is uncompromising: white
+  canvas, deep brown-black ink (#1C1410), single saturated tomato red (#D8000F), and a warm off-white (#F5F2EF) for alternating
+  panels. Borders are bold 1.5-3px ink rules; the only shadow is a single stacked offset behind red display text. The aesthetic
+  is loud, confident, and unmistakably print-poster — closer to a 1970s European brand annual report or a wine merchant''s
+  catalogue than a contemporary slide deck.'
 colors:
-  bg: "#FFFFFF"
-  dark: "#1C1410"
-  red: "#D8000F"
-  light: "#F5F2EF"
-
+  bg: '#FFFFFF'
+  dark: '#1C1410'
+  red: '#D8000F'
+  light: '#F5F2EF'
 typography:
   hero-title:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(72px, 16vw, 220px)"
+    fontSize: clamp(72px, 16vw, 220px)
     lineHeight: 0.88
     letterSpacing: 1px
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   hero-title-red:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(84px, 18vw, 260px)"
+    fontSize: clamp(84px, 18vw, 260px)
     lineHeight: 0.85
-    color: "{colors.red}"
-    transform: "rotate(-4deg)"
+    color: '{colors.red}'
+    transform: rotate(-4deg)
   hero-title-bottom:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(64px, 14vw, 200px)"
+    fontSize: clamp(64px, 14vw, 200px)
     lineHeight: 0.9
-    color: "{colors.dark}"
-    transform: "rotate(2deg)"
+    color: '{colors.dark}'
+    transform: rotate(2deg)
   close-big:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(80px, 18vw, 260px)"
+    fontSize: clamp(80px, 18vw, 260px)
     lineHeight: 0.88
-    color: "{colors.red}"
-    transform: "rotate(-5deg)"
+    color: '{colors.red}'
+    transform: rotate(-5deg)
   stat-big:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(120px, 26vw, 320px)"
+    fontSize: clamp(120px, 26vw, 320px)
     lineHeight: 0.82
-    color: "{colors.red}"
-    transform: "rotate(-6deg)"
+    color: '{colors.red}'
+    transform: rotate(-6deg)
   red-quote:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(32px, 7vw, 90px)"
+    fontSize: clamp(32px, 7vw, 90px)
     lineHeight: 1.15
-    color: "{colors.bg}"
-    textShadow: "2px 2px 0 rgba(28,20,16,0.25), 4px 4px 0 rgba(28,20,16,0.2), 6px 6px 0 rgba(28,20,16,0.15)"
+    color: '{colors.bg}'
+    textShadow: 2px 2px 0 rgba(28,20,16,0.25), 4px 4px 0 rgba(28,20,16,0.2), 6px 6px 0 rgba(28,20,16,0.15)
   section-header:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(32px, 5vw, 64px)"
+    fontSize: clamp(32px, 5vw, 64px)
     lineHeight: 1
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   section-header-lg:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(36px, 6vw, 72px)"
+    fontSize: clamp(36px, 6vw, 72px)
     lineHeight: 1
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   cell-number-lg:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(28px, 3.5vw, 52px)"
+    fontSize: clamp(28px, 3.5vw, 52px)
     lineHeight: 1
-    color: "{colors.red}"
+    color: '{colors.red}'
   cell-number-md:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(28px, 3.5vw, 48px)"
+    fontSize: clamp(28px, 3.5vw, 48px)
     lineHeight: 1
-    color: "{colors.red}"
+    color: '{colors.red}'
   card-title:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(22px, 3vw, 36px)"
+    fontSize: clamp(22px, 3vw, 36px)
     lineHeight: 1.1
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   card-title-sm:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(20px, 2.5vw, 32px)"
+    fontSize: clamp(20px, 2.5vw, 32px)
     lineHeight: 1.1
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   pillar-num:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(36px, 5vw, 64px)"
+    fontSize: clamp(36px, 5vw, 64px)
     lineHeight: 1
-    color: "{colors.red}"
+    color: '{colors.red}'
   pillar-title:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(18px, 2.2vw, 28px)"
+    fontSize: clamp(18px, 2.2vw, 28px)
     lineHeight: 1.15
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   stat-item-num:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(28px, 4vw, 56px)"
+    fontSize: clamp(28px, 4vw, 56px)
     lineHeight: 1
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   roadmap-title:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(18px, 2.5vw, 32px)"
+    fontSize: clamp(18px, 2.5vw, 32px)
     lineHeight: 1.1
   inline-stat:
-    fontFamily: "'Shrikhand', cursive"
+    fontFamily: '''Shrikhand'', cursive'
     fontWeight: 400
-    fontSize: "clamp(18px, 2vw, 28px)"
+    fontSize: clamp(18px, 2vw, 28px)
     lineHeight: 1
-    color: "{colors.red}"
+    color: '{colors.red}'
   body:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(13px, 1.2vw, 16px)"
+    fontSize: clamp(13px, 1.2vw, 16px)
     lineHeight: 1.75
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   body-card:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(12px, 1.1vw, 14px)"
+    fontSize: clamp(12px, 1.1vw, 14px)
     lineHeight: 1.6
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   body-cell:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(11px, 1vw, 13px)"
+    fontSize: clamp(11px, 1vw, 13px)
     lineHeight: 1.55
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   body-small:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(11px, 1vw, 13px)"
+    fontSize: clamp(11px, 1vw, 13px)
     lineHeight: 1.5
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   hero-meta:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(11px, 1vw, 14px)"
+    fontSize: clamp(11px, 1vw, 14px)
     lineHeight: 1.5
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   tag-body:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(13px, 1.2vw, 16px)"
+    fontSize: clamp(13px, 1.2vw, 16px)
     lineHeight: 1.6
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   red-cite:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(13px, 1.3vw, 16px)"
+    fontSize: clamp(13px, 1.3vw, 16px)
     lineHeight: 1.5
-    color: "{colors.bg}"
+    color: '{colors.bg}'
   close-sub:
-    fontFamily: "'Libre Baskerville', serif"
+    fontFamily: '''Libre Baskerville'', serif'
     fontWeight: 400
-    fontSize: "clamp(14px, 1.5vw, 18px)"
+    fontSize: clamp(14px, 1.5vw, 18px)
     lineHeight: 1.6
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   label:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 10px
     letterSpacing: 2px
     textTransform: uppercase
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   label-red:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 10px
     letterSpacing: 2px
     textTransform: uppercase
-    color: "{colors.red}"
+    color: '{colors.red}'
   rm-label:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 9px
     letterSpacing: 3px
     textTransform: uppercase
-    color: "{colors.red}"
+    color: '{colors.red}'
   tag-label:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(10px, 0.9vw, 12px)"
+    fontSize: clamp(10px, 0.9vw, 12px)
     letterSpacing: 3px
     textTransform: uppercase
-    color: "{colors.red}"
+    color: '{colors.red}'
   bullet-body:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(10px, 0.9vw, 12px)"
+    fontSize: clamp(10px, 0.9vw, 12px)
     lineHeight: 1.45
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   counter:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 11px
     lineHeight: 1
     letterSpacing: 2px
     textTransform: uppercase
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   link:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(10px, 0.9vw, 12px)"
+    fontSize: clamp(10px, 0.9vw, 12px)
     letterSpacing: 2px
     textTransform: uppercase
-    color: "{colors.dark}"
+    color: '{colors.dark}'
   fc-micro:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 400
     fontSize: 10px
     lineHeight: 1.4
-    color: "{colors.dark}"
-
+    color: '{colors.dark}'
 spacing:
-  pad-slide: "48px 56px"
-  pad-cell: "22px 20px"
-  pad-cell-sm: "20px 24px"
-  pad-pillar: "32px 24px"
-  pad-card: "24px"
-  pad-roadmap: "40px 48px"
-  gap-grid-md: "24px 32px"
-  gap-grid-roadmap: "28px 36px"
-  gap-grid-stats: "48px"
-  gap-stat-row: "20px"
-  pad-bottom-clearance: "40px"
+  pad-slide: 48px 56px
+  pad-cell: 22px 20px
+  pad-cell-sm: 20px 24px
+  pad-pillar: 32px 24px
+  pad-card: 24px
+  pad-roadmap: 40px 48px
+  gap-grid-md: 24px 32px
+  gap-grid-roadmap: 28px 36px
+  gap-grid-stats: 48px
+  gap-stat-row: 20px
+  pad-bottom-clearance: 40px
   max-width-content: 1100px
   max-width-services: 1000px
-
 canvas:
   width: 100vw
   height: 100vh
-  background: "{colors.bg}"
-
+  background: '{colors.bg}'
 components:
   progress-bar:
-    position: "fixed, bottom 0 left 0"
+    position: fixed, bottom 0 left 0
     height: 5px
-    background: "{colors.red}"
-    description: "Persistent thick red progress strip at the bottom of the viewport. Width grows linearly with slide index. The system's most prominent piece of chrome."
+    background: '{colors.red}'
+    description: Persistent thick red progress strip at the bottom of the viewport. Width grows linearly with slide index.
+      The system's most prominent piece of chrome.
   counter:
-    position: "fixed, bottom 18px right 24px"
-    color: "{colors.dark}"
+    position: fixed, bottom 18px right 24px
+    color: '{colors.dark}'
     opacity: 0.5
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontSize: 11px
     letterSpacing: 2px
-    description: "Persistent slide counter NN / NN at 50% opacity in Space Grotesk uppercase."
+    description: Persistent slide counter NN / NN at 50% opacity in Space Grotesk uppercase.
   hint-pill:
-    position: "fixed, bottom 18px center"
-    background: "{colors.light}"
-    padding: "6px 14px"
+    position: fixed, bottom 18px center
+    background: '{colors.light}'
+    padding: 6px 14px
     borderRadius: 4px
     fontSize: 10px
     opacity: 0
-    description: "Bottom-center hint pill that fades to 50% opacity on body hover. Subtle wayfinding only."
+    description: Bottom-center hint pill that fades to 50% opacity on body hover. Subtle wayfinding only.
   section-bordered-grid:
-    border: "3px solid {colors.dark}"
-    description: "Heavy 3px ink border enclosing a grid of cells. Each child cell carries a 1.5px ink inner border, producing a hairline-on-heavy double-border tabular grid. Used for financial-figure and summary-highlight grids."
+    border: 3px solid {colors.dark}
+    description: Heavy 3px ink border enclosing a grid of cells. Each child cell carries a 1.5px ink inner border, producing
+      a hairline-on-heavy double-border tabular grid. Used for financial-figure and summary-highlight grids.
   cell-bordered:
-    border: "1.5px solid {colors.dark}"
-    padding: "22px 20px"
-    description: "Tabular cell with 1.5px ink border. Lives inside a 3px-bordered parent grid; the two border weights touch to produce the system's signature grid-with-double-edge."
+    border: 1.5px solid {colors.dark}
+    padding: 22px 20px
+    description: Tabular cell with 1.5px ink border. Lives inside a 3px-bordered parent grid; the two border weights touch
+      to produce the system's signature grid-with-double-edge.
   red-leftbar-card:
-    borderLeft: "4px solid {colors.red}"
+    borderLeft: 4px solid {colors.red}
     paddingLeft: 18px
-    description: "Service or content card marked by a 4px solid red left rule and 18px left padding. The system's editorial card pattern — no outline, just the red rule signaling the start of a block."
+    description: Service or content card marked by a 4px solid red left rule and 18px left padding. The system's editorial
+      card pattern — no outline, just the red rule signaling the start of a block.
   red-leftbar-card-thin:
-    borderLeft: "3px solid {colors.red}"
+    borderLeft: 3px solid {colors.red}
     paddingLeft: 16px
-    description: "Thinner variant of the red-leftbar card used on dark surfaces (roadmap phases). Same pattern, scaled-down rule weight."
+    description: Thinner variant of the red-leftbar card used on dark surfaces (roadmap phases). Same pattern, scaled-down
+      rule weight.
   bullet-em-dash:
-    glyph: "—"
-    color: "{colors.red}"
+    glyph: —
+    color: '{colors.red}'
     fontWeight: 700
     paddingLeft: 14px
-    description: "List bullet using a red em-dash (—) glyph in place of a disc. The dash sits at position absolute left and the body text indents to clear it."
+    description: List bullet using a red em-dash (—) glyph in place of a disc. The dash sits at position absolute left and
+      the body text indents to clear it.
   bullet-bullet:
-    glyph: "•"
-    color: "{colors.red}"
+    glyph: •
+    color: '{colors.red}'
     paddingLeft: 12px
-    description: "List bullet using a red round bullet (•) glyph. Same indent pattern as the em-dash variant."
+    description: List bullet using a red round bullet (•) glyph. Same indent pattern as the em-dash variant.
   pillar-panel:
     flex: 1
-    padding: "32px 24px"
-    borderRight: "3px solid {colors.dark}"
-    description: "Vertical column panel inside a multi-pillar layout. Each pillar separated by a 3px ink vertical rule. Alternating panels swap background from {colors.bg} to {colors.light} for striping."
+    padding: 32px 24px
+    borderRight: 3px solid {colors.dark}
+    description: Vertical column panel inside a multi-pillar layout. Each pillar separated by a 3px ink vertical rule. Alternating
+      panels swap background from {colors.bg} to {colors.light} for striping.
   pillar-bullet-row:
-    padding: "5px 0"
-    borderBottom: "1px solid rgba(28, 20, 16, 0.08)"
-    description: "Bullet row inside a pillar with a hairline-soft bottom border (ink at 8%) separating items. The last item drops the border."
+    padding: 5px 0
+    borderBottom: 1px solid rgba(28, 20, 16, 0.08)
+    description: Bullet row inside a pillar with a hairline-soft bottom border (ink at 8%) separating items. The last item
+      drops the border.
   global-card:
-    border: "2px solid {colors.dark}"
+    border: 2px solid {colors.dark}
     padding: 24px
-    description: "Bordered information card with 2px ink outline. Used on the global presence layout. Heavier than the leftbar pattern, more contained."
+    description: Bordered information card with 2px ink outline. Used on the global presence layout. Heavier than the leftbar
+      pattern, more contained.
   stacked-text-shadow:
-    textShadow: "2px 2px 0 rgba(28,20,16,0.25), 4px 4px 0 rgba(28,20,16,0.2), 6px 6px 0 rgba(28,20,16,0.15)"
-    description: "Three-step decreasing-opacity stacked offset shadow in ink. Applied only to large red display text on red panels. The system's only shadow treatment."
+    textShadow: 2px 2px 0 rgba(28,20,16,0.25), 4px 4px 0 rgba(28,20,16,0.2), 6px 6px 0 rgba(28,20,16,0.15)
+    description: Three-step decreasing-opacity stacked offset shadow in ink. Applied only to large red display text on red
+      panels. The system's only shadow treatment.
   red-panel:
-    background: "{colors.red}"
-    color: "{colors.bg}"
-    description: "Full-bleed saturated red panel surface. Carries white text with the stacked-text-shadow treatment on display."
+    background: '{colors.red}'
+    color: '{colors.bg}'
+    description: Full-bleed saturated red panel surface. Carries white text with the stacked-text-shadow treatment on display.
   dark-panel:
-    background: "{colors.dark}"
-    color: "{colors.bg}"
-    description: "Full-bleed deep brown-black panel surface. Carries white text and red accents (left bars, mono labels)."
+    background: '{colors.dark}'
+    color: '{colors.bg}'
+    description: Full-bleed deep brown-black panel surface. Carries white text and red accents (left bars, mono labels).
   link-underline:
-    color: "{colors.dark}"
-    borderBottom: "2px solid {colors.red}"
+    color: '{colors.dark}'
+    borderBottom: 2px solid {colors.red}
     paddingBottom: 4px
-    description: "Footer link style — Space Grotesk uppercase with a 2px red underline. Hover swaps text color to red."
+    description: Footer link style — Space Grotesk uppercase with a 2px red underline. Hover swaps text color to red.
   hero-title-stack:
-    description: "A three-line stacked title where each line is a Shrikhand display element at a slightly different size. Two of the three lines carry rotation transforms (-4deg, +2deg) and one is set in red. The composition is the system's signature opener."
+    description: A three-line stacked title where each line is a Shrikhand display element at a slightly different size. Two
+      of the three lines carry rotation transforms (-4deg, +2deg) and one is set in red. The composition is the system's signature
+      opener.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

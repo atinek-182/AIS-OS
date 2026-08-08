@@ -1,3 +1,22 @@
+---
+title: Playwright MCP API Reference
+domain: architecture
+summary: 'Playwright MCP controls a headless Chromium browser instance for visual testing. - `playwright/browser_navigate`:
+  Navigate to a URL.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Playwright MCP API Reference
+- Tools
+read_triggers:
+- When working on architecture in references/playwright-api.md
+- When reading context for Playwright MCP API Reference
+tags:
+- architecture
+- playwright-api
+updated: '2026-08-08'
+---
+
 # Playwright MCP API Reference
 
 Playwright MCP controls a headless Chromium browser instance for visual testing.

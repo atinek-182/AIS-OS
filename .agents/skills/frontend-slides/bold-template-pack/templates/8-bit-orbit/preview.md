@@ -1,3 +1,28 @@
+---
+title: 8-Bit Orbit Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/8-bit-orbit/design.md`'
+critical_directives:
+- 'Signature move: Three-font stack: Tektur (display), Chakra Petch (body), Space Mono (HUD/labels) — never substitute, nev'
+- 'Signature move: Three neons (cyan, pink, yellow) reserved for display, stats, rules, and label fills — never for body te'
+- 'Signature move: Stacked hard offset shadows are the system''s depth language — never blurred, never colored on text shado'
+- The rendered preview must look like a real first slide, not a template-selection card.
+section_outline:
+- 8-Bit Orbit Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/8-bit-orbit/preview.md
+- When reading context for 8-Bit Orbit Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # 8-Bit Orbit Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

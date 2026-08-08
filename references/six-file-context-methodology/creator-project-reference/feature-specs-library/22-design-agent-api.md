@@ -1,3 +1,23 @@
+---
+title: 22 Design Agent Api
+domain: architecture
+summary: Set up the backend flow for design generation using Trigger.dev. This unit handles triggering background jobs, tracking
+  runs, and issuing tokens. No AI logic yet.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/22-design-agent-api.md
+- When reading context for 22 Design Agent Api
+tags:
+- architecture
+- 22-design-agent-api
+updated: '2026-08-08'
+---
+
 Set up the backend flow for design generation using Trigger.dev.
 This unit handles triggering background jobs, tracking runs, and issuing tokens. No AI logic yet.
 

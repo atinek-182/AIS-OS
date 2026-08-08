@@ -1,298 +1,333 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Cinnabar Red** (`{colors.red}` — #C2342B): The stamp color and the negative-pill border/text color. Used only in two rol'
+- 'Default slide surface**: `{components.paper-surface}` — yellow paper with layered gradients. Always.'
+- 'Default border color**: `{colors.ink}` at 1.5px. Always.'
+- 'Default scribble / handwritten color**: `{colors.ink}`. Caveat is always ink-blue on yellow.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/pin-and-paper/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Pin & Paper
-description: A field-notebook editorial system rendered as yellow legal-pad paper with deep cobalt-blue ink. Every slide carries a fractalnoise paper-grain overlay, hand-drawn safety-pin SVG illustrations that "pin" cards to the page, and a hand-script Caveat face for personal annotations. Space Grotesk at heavy weights carries the printed headlines; DM Mono handles archival labels. The aesthetic borrows from analog field reports, vintage public-notice boards, and the diary pages of scientific notebooks — closer to a lab journal pinned to a corkboard than a polished deck.
-
+description: A field-notebook editorial system rendered as yellow legal-pad paper with deep cobalt-blue ink. Every slide carries
+  a fractalnoise paper-grain overlay, hand-drawn safety-pin SVG illustrations that "pin" cards to the page, and a hand-script
+  Caveat face for personal annotations. Space Grotesk at heavy weights carries the printed headlines; DM Mono handles archival
+  labels. The aesthetic borrows from analog field reports, vintage public-notice boards, and the diary pages of scientific
+  notebooks — closer to a lab journal pinned to a corkboard than a polished deck.
 colors:
-  paper: "#EFE56A"
-  paper-2: "#F5ECA0"
-  paper-3: "#E8D85A"
-  paper-extra: "#FBE6A4"
-  cream: "#F8F1D6"
-  kraft: "#C9A66B"
-  ink: "#1F3A8A"
-  ink-soft: "#2D4FB8"
-  ink-line: "#3457C4"
-  ink-deep: "#0E1430"
-  red: "#C2342B"
-  olive: "#6B7A2E"
-  orange: "#D8702A"
-
+  paper: '#EFE56A'
+  paper-2: '#F5ECA0'
+  paper-3: '#E8D85A'
+  paper-extra: '#FBE6A4'
+  cream: '#F8F1D6'
+  kraft: '#C9A66B'
+  ink: '#1F3A8A'
+  ink-soft: '#2D4FB8'
+  ink-line: '#3457C4'
+  ink-deep: '#0E1430'
+  red: '#C2342B'
+  olive: '#6B7A2E'
+  orange: '#D8702A'
 color-aliases:
   c-bg: paper
   c-text: ink
   c-card: cream
   c-stamp: red
-
 typography:
   display-mega:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 196px
     fontWeight: 700
     lineHeight: 1.08
     letterSpacing: -0.04em
   display-section:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 168px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.04em
   display-stat:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 168px
     fontWeight: 700
     lineHeight: 0.85
     letterSpacing: -0.04em
   h1-cta:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 130px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.035em
   h1-chart:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 110px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.035em
   h2:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 96px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.03em
   h2-md:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 84px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.03em
   h2-sm:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 50px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.02em
   quote-text:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 50px
     fontWeight: 500
     lineHeight: 1.1
     letterSpacing: -0.02em
   card-row:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 44px
     fontWeight: 600
     lineHeight: 1.0
     letterSpacing: -0.02em
   card-h3:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 38px
     fontWeight: 700
     lineHeight: 1.02
     letterSpacing: -0.02em
   card-h3-sm:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 28px
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.015em
   body:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 22px
     fontWeight: 400
     lineHeight: 1.45
   body-md:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 21px
     fontWeight: 400
     lineHeight: 1.35
   body-sm:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 19px
     fontWeight: 400
     lineHeight: 1.45
   body-list:
-    fontFamily: "Space Grotesk, Helvetica Neue, Arial, sans-serif"
+    fontFamily: Space Grotesk, Helvetica Neue, Arial, sans-serif
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.4
   scribble-mega:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontSize: 360px
     fontWeight: 700
     lineHeight: 0.8
   scribble-lg:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontSize: 70px
     fontWeight: 700
     lineHeight: 0.9
   scribble-md:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontSize: 60px
     fontWeight: 700
     lineHeight: 0.9
   scribble-sm:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontSize: 38px
     fontWeight: 600
     lineHeight: 1.05
   scribble-xs:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontSize: 32px
     fontWeight: 600
     lineHeight: 1.05
   label-top:
-    fontFamily: "DM Mono, ui-monospace, monospace"
+    fontFamily: DM Mono, ui-monospace, monospace
     fontSize: 18px
     fontWeight: 500
     letterSpacing: 0.12em
     textTransform: uppercase
   label-meta:
-    fontFamily: "DM Mono, ui-monospace, monospace"
+    fontFamily: DM Mono, ui-monospace, monospace
     fontSize: 16px
     fontWeight: 500
     letterSpacing: 0.18em
     textTransform: uppercase
   label-footer:
-    fontFamily: "DM Mono, ui-monospace, monospace"
+    fontFamily: DM Mono, ui-monospace, monospace
     fontSize: 15px
     fontWeight: 500
     letterSpacing: 0.14em
     textTransform: uppercase
   stamp:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 16px
     fontWeight: 500
     letterSpacing: 0.18em
     textTransform: uppercase
-
 spacing:
   pad-edge: 64px
   pad-top: 110px
   pad-bottom: 90px
-  card-pad-md: "28px 28px 24px"
-  card-pad-lg: "32px 22px 22px"
-  card-pad-xl: "36px 28px 28px"
-  card-pad-quote: "60px 80px"
+  card-pad-md: 28px 28px 24px
+  card-pad-lg: 32px 22px 22px
+  card-pad-xl: 36px 28px 28px
+  card-pad-quote: 60px 80px
   grid-gap-sm: 22px
   grid-gap-md: 28px
   grid-gap-lg: 32px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   paper-surface:
-    background: "radial-gradient(120% 90% at 20% 10%, rgba(255,255,255,.18), transparent 60%), radial-gradient(140% 100% at 80% 95%, rgba(0,0,0,.05), transparent 55%), {colors.paper}"
-    description: "Default slide surface — yellow paper with a soft upper-left highlight gradient and a soft lower-right shadow gradient layered over the base paper color."
+    background: radial-gradient(120% 90% at 20% 10%, rgba(255,255,255,.18), transparent 60%), radial-gradient(140% 100% at
+      80% 95%, rgba(0,0,0,.05), transparent 55%), {colors.paper}
+    description: Default slide surface — yellow paper with a soft upper-left highlight gradient and a soft lower-right shadow
+      gradient layered over the base paper color.
   paper-grain-overlay:
-    selector: ".slide::before"
-    background: "fractalNoise SVG via data URI, baseFrequency=1.4, octaves=2"
+    selector: .slide::before
+    background: fractalNoise SVG via data URI, baseFrequency=1.4, octaves=2
     opacity: 0.35
     mixBlendMode: multiply
-    description: "Non-optional fractal-noise paper grain overlay on every slide. Lives on the ::before pseudo-element; opacity 0.35, multiply blend. On ink slides, opacity drops to 0.25 with screen blend."
+    description: Non-optional fractal-noise paper grain overlay on every slide. Lives on the ::before pseudo-element; opacity
+      0.35, multiply blend. On ink slides, opacity drops to 0.25 with screen blend.
   pinned-card:
-    background: "{colors.cream}"
-    border: "1.5px solid {colors.ink}"
+    background: '{colors.cream}'
+    border: 1.5px solid {colors.ink}
     borderRadius: 4px
-    boxShadow: "5px 6px 0 0 {colors.ink}"
-    padding: "{spacing.card-pad-md}"
-    description: "Cream paper card with a 1.5px ink border, 4px micro-radius, and a hard 5px-6px ink-blue offset shadow. The system's universal card pattern — every card looks like a piece of paper pinned to the surface."
+    boxShadow: 5px 6px 0 0 {colors.ink}
+    padding: '{spacing.card-pad-md}'
+    description: Cream paper card with a 1.5px ink border, 4px micro-radius, and a hard 5px-6px ink-blue offset shadow. The
+      system's universal card pattern — every card looks like a piece of paper pinned to the surface.
   pinned-card-alt:
-    background: "{colors.paper-2}"
-    description: "Card variant using the lighter paper-2 tone. Used to break up adjacent same-tone cards."
+    background: '{colors.paper-2}'
+    description: Card variant using the lighter paper-2 tone. Used to break up adjacent same-tone cards.
   pinned-card-alt2:
-    background: "{colors.paper-extra}"
-    transform: "rotate(0.6deg)"
-    description: "Card variant with the deepest paper tone and a slight rotation (0.6 to 1.5 degrees) — gives the impression of being pinned slightly askew."
+    background: '{colors.paper-extra}'
+    transform: rotate(0.6deg)
+    description: Card variant with the deepest paper tone and a slight rotation (0.6 to 1.5 degrees) — gives the impression
+      of being pinned slightly askew.
   pin-illustration:
-    width: "varies (110–640px)"
-    color: "currentColor"
-    transform: "rotate(-14deg to +20deg)"
-    description: "Hand-drawn safety-pin SVG illustration in ink-blue or paper (when on ink surface). Multiple variants: closed pin (#pin), open pin (#pin-open). Always rotated slightly off-axis. Acts as both decoration and the visual signal that a card is 'pinned' to the page."
+    width: varies (110–640px)
+    color: currentColor
+    transform: rotate(-14deg to +20deg)
+    description: 'Hand-drawn safety-pin SVG illustration in ink-blue or paper (when on ink surface). Multiple variants: closed
+      pin (#pin), open pin (#pin-open). Always rotated slightly off-axis. Acts as both decoration and the visual signal that
+      a card is ''pinned'' to the page.'
   scribble:
-    fontFamily: "Caveat, cursive"
-    color: "{colors.ink}"
+    fontFamily: Caveat, cursive
+    color: '{colors.ink}'
     lineHeight: 1.05
-    description: "Caveat hand-script face used for handwritten notes, marginalia, and 'me' voice annotations. May be rotated slightly (-3 to -1.5 degrees) and underlined via 2px solid ink for emphasis."
+    description: Caveat hand-script face used for handwritten notes, marginalia, and 'me' voice annotations. May be rotated
+      slightly (-3 to -1.5 degrees) and underlined via 2px solid ink for emphasis.
   stamp:
-    border: "3px solid {colors.red}"
-    color: "{colors.red}"
-    padding: "6px 16px"
-    fontFamily: "DM Mono, monospace"
+    border: 3px solid {colors.red}
+    color: '{colors.red}'
+    padding: 6px 16px
+    fontFamily: DM Mono, monospace
     fontSize: 16px
     letterSpacing: 0.18em
     textTransform: uppercase
-    transform: "rotate(-4deg)"
-    description: "Cinnabar-red rubber stamp — 3px solid red border, red mono text, rotated -4 degrees. Used for status marks like CONFIDENTIAL or RECEIVED."
+    transform: rotate(-4deg)
+    description: Cinnabar-red rubber stamp — 3px solid red border, red mono text, rotated -4 degrees. Used for status marks
+      like CONFIDENTIAL or RECEIVED.
   top-chrome:
-    position: "absolute; top: 44px; left: 64px; right: 64px"
-    fontFamily: "DM Mono, ui-monospace, monospace"
+    position: 'absolute; top: 44px; left: 64px; right: 64px'
+    fontFamily: DM Mono, ui-monospace, monospace
     fontSize: 18px
     fontWeight: 500
     letterSpacing: 0.12em
     textTransform: uppercase
-    description: "Top metadata band — brand lockup on left (with inline #mark SVG glyph), meta tags on right. Mono uppercase, line-height 1."
+    description: 'Top metadata band — brand lockup on left (with inline #mark SVG glyph), meta tags on right. Mono uppercase,
+      line-height 1.'
   footer-chrome:
-    position: "absolute; left: 64px; right: 64px; bottom: 36px"
-    fontFamily: "DM Mono, ui-monospace, monospace"
+    position: 'absolute; left: 64px; right: 64px; bottom: 36px'
+    fontFamily: DM Mono, ui-monospace, monospace
     fontSize: 15px
     fontWeight: 500
     letterSpacing: 0.14em
     textTransform: uppercase
     opacity: 0.65
-    description: "Bottom metadata band — typically left-source + right-page-position pair at 65% opacity."
+    description: Bottom metadata band — typically left-source + right-page-position pair at 65% opacity.
   pin-glyph-closed:
-    svgId: "#pin"
-    viewBox: "0 0 360 110"
-    description: "Closed safety-pin SVG glyph — coiled spring on the right, shaft sweeping left, oval clasp cap on the left."
+    svgId: '#pin'
+    viewBox: 0 0 360 110
+    description: Closed safety-pin SVG glyph — coiled spring on the right, shaft sweeping left, oval clasp cap on the left.
   pin-glyph-open:
-    svgId: "#pin-open"
-    viewBox: "0 0 360 130"
-    description: "Open safety-pin SVG glyph — clasp lifted, sharp point exposed pointing left."
+    svgId: '#pin-open'
+    viewBox: 0 0 360 130
+    description: Open safety-pin SVG glyph — clasp lifted, sharp point exposed pointing left.
   mark-glyph:
-    svgId: "#mark"
-    viewBox: "0 0 32 16"
-    description: "Small inline mark glyph for the top-chrome brand lockup — circle on the right, arrow shaft pointing left."
+    svgId: '#mark'
+    viewBox: 0 0 32 16
+    description: Small inline mark glyph for the top-chrome brand lockup — circle on the right, arrow shaft pointing left.
   table-cell:
-    padding: "18px 22px"
-    borderBottom: "1.5px solid rgba(31,58,138,.5)"
-    borderRight: "1.5px solid rgba(31,58,138,.5)"
+    padding: 18px 22px
+    borderBottom: 1.5px solid rgba(31,58,138,.5)
+    borderRight: 1.5px solid rgba(31,58,138,.5)
     fontSize: 21px
     lineHeight: 1.35
-    description: "Comparison table cell with semi-transparent ink-blue dividers. Sits inside the same cream + ink-border + offset-shadow card pattern."
+    description: Comparison table cell with semi-transparent ink-blue dividers. Sits inside the same cream + ink-border +
+      offset-shadow card pattern.
   pill-yes:
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    border: "1.5px solid {colors.ink}"
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    border: 1.5px solid {colors.ink}
     borderRadius: 999px
-    padding: "4px 14px"
-    fontFamily: "Caveat, cursive"
+    padding: 4px 14px
+    fontFamily: Caveat, cursive
     fontSize: 28px
     fontWeight: 600
-    description: "Affirmative pill — solid ink fill with paper text, rounded 999px, Caveat script face. Unusual treatment: handwritten letterforms inside a UI pill shape."
+    description: 'Affirmative pill — solid ink fill with paper text, rounded 999px, Caveat script face. Unusual treatment:
+      handwritten letterforms inside a UI pill shape.'
   pill-no:
     background: transparent
-    color: "{colors.red}"
-    border: "1.5px solid {colors.red}"
-    fontFamily: "DM Mono, monospace"
+    color: '{colors.red}'
+    border: 1.5px solid {colors.red}
+    fontFamily: DM Mono, monospace
     fontSize: 16px
     letterSpacing: 0.14em
     textTransform: uppercase
-    description: "Negative pill — red mono uppercase text in a red-bordered transparent pill. The only place red appears in regular use (outside the stamp component)."
+    description: Negative pill — red mono uppercase text in a red-bordered transparent pill. The only place red appears in
+      regular use (outside the stamp component).
   pill-part:
-    background: "{colors.paper-2}"
-    color: "{colors.ink}"
-    fontFamily: "Caveat, cursive"
-    description: "Partial-state pill — light paper fill with Caveat script ink text."
+    background: '{colors.paper-2}'
+    color: '{colors.ink}'
+    fontFamily: Caveat, cursive
+    description: Partial-state pill — light paper fill with Caveat script ink text.
   number-script:
-    fontFamily: "Caveat, cursive"
+    fontFamily: Caveat, cursive
     fontWeight: 700
-    fontSize: "60–70px"
-    color: "{colors.ink}"
-    description: "Hand-script numeral used as step numbers in process diagrams and ordered CTA steps. The script face makes ordering feel hand-counted, not algorithmic."
+    fontSize: 60–70px
+    color: '{colors.ink}'
+    description: Hand-script numeral used as step numbers in process diagrams and ordered CTA steps. The script face makes
+      ordering feel hand-counted, not algorithmic.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

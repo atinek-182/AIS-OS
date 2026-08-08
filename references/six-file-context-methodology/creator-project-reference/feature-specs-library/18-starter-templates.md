@@ -1,3 +1,23 @@
+---
+title: 18 Starter Templates
+domain: architecture
+summary: Add a small starter template library so users can start a canvas from a pre-built diagram instead of building from
+  scratch. 1. Create `components/editor/starter-templates.ts`.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/18-starter-templates.md
+- When reading context for 18 Starter Templates
+tags:
+- architecture
+- 18-starter-templates
+updated: '2026-08-08'
+---
+
 Add a small starter template library so users can start a canvas from a pre-built diagram instead of building from scratch.
 
 ## Implementation

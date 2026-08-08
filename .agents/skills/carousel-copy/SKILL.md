@@ -1,6 +1,30 @@
 ---
+title: ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)
+domain: skill
+summary: 'This skill converts a topic, prompt, or concept into a viral Instagram carousel copy plan following ZORIXEL brand
+  rules and adarshxdesign visual contracts. - **Slash Command**: `/carousel-copy [topic]`'
+critical_directives:
+- '`split-comparison`: Side-by-side comparison of "Before" vs. "After" concepts (perfect for rules/do''s-and-don''ts).'
+- 'Large Typography Scale**: All font sizes must be styled to be very large (Hooks at `68px`, headings at `46px`, body text'
+- 'CTA Contrast**: Button text must be styled as solid white on a solid black/charcoal button background (no low-contrast
+  g'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)
+- Invocation & Tri-Mode Routing
+- Specific Use Cases & Target Audience
+- Execution Workflow
+- 'Step 1: Phase 0 Socratic Discovery (`/grill-me`)'
+read_triggers:
+- When working on skill in .agents/skills/carousel-copy/SKILL.md
+- When reading context for ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: carousel-copy
-description: Plan slide-by-slide copywriting and layouts for viral carousels following the Zorixel Design System and adarshxdesign rules. Runs Phase 0 /grill-me topic discovery and /roast hook critique. Invokable via /carousel-copy.
+description: Plan slide-by-slide copywriting and layouts for viral carousels following the Zorixel Design System and adarshxdesign
+  rules. Runs Phase 0 /grill-me topic discovery and /roast hook critique. Invokable via /carousel-copy.
 argument-hint: '[topic_or_idea]'
 ---
 

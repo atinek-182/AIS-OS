@@ -1,6 +1,30 @@
 ---
+title: 'Meeting: [title]'
+domain: skill
+summary: 'Guides the creation, optimization, and quality auditing of Antigravity skills. Incorporates Matt Pocock''s **`writing-great-skills`**
+  quality gates: 1. **The No-Op Test**: Every instruction line MUST change model behavior versus default behavior. Elim'
+critical_directives:
+- Your project's `GEMINI.md` instructions are always loaded, every conversation
+- Skill *descriptions* (from frontmatter) are always loaded so Antigravity knows what's available
+- Once loaded, Antigravity follows the skill's instructions while still respecting your GEMINI.md rules
+- 'Why this matters: The `description` field is how Antigravity decides whether to load your skill. Bad trigger words mean '
+section_outline:
+- What This Skill Does
+- 'Quick Start: What Is a Skill?'
+- 'Mode 1: Build a New Skill'
+- Discovery Interview
+- 'Skill Summary: [name]'
+read_triggers:
+- When working on skill in .agents/skills/skill-builder/SKILL.md
+- 'When reading context for Meeting: [title]'
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: skill-builder
-description: Skill creation and quality audit engine tailored for Atinek Maurya. Enforces Matt Pocock's writing-great-skills discipline (No-Op test, pruning discipline, leading words, explicit use cases, dual-triggering) following Antigravity best practices. Invokable via /skill-builder.
+description: Skill creation and quality audit engine tailored for Atinek Maurya. Enforces Matt Pocock's writing-great-skills
+  discipline (No-Op test, pruning discipline, leading words, explicit use cases, dual-triggering) following Antigravity best
+  practices. Invokable via /skill-builder.
 argument-hint: '[skill-name_or_path]'
 ---
 

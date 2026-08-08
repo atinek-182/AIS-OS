@@ -1,3 +1,29 @@
+---
+title: Component cookbook
+domain: skill
+summary: 'Fifty component archetypes you can compose into any macrostructure. Every entry: a *shape*, a one-line "use when",
+  a one-line "don''t confuse with", and a short structural sketch (DOM + minimal CSS). Pick from this file when you''re building
+  a section '
+critical_directives:
+- Diversification rule:** within a single page, no two sections should use the same archetype. A Bento Grid might pair *Be
+- S2 · Hanging** — Heading floats above the section in negative space; no border, no rule. [`components/s2-hanging.md`](co
+- F3 · Tabular spec sheet** — Each row is a feature; columns hold name, value, footnote. Hairline rules between rows. Tabu
+- T2 · Logo wall hairline** — A row of customer logos, monochromatic, separated by hairline rules. No card boxes, no shado
+section_outline:
+- Component cookbook
+- Archetype index — load ONLY the picks you need
+- Heroes
+- Section heads
+- Feature blocks
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/component-cookbook.md
+- When reading context for Component cookbook
+tags:
+- skill
+- component-cookbook
+updated: '2026-08-08'
+---
+
 # Component cookbook
 
 Fifty component archetypes you can compose into any macrostructure. Every entry: a *shape*, a one-line "use when", a one-line "don't confuse with", and a short structural sketch (DOM + minimal CSS). Pick from this file when you're building a section and don't know which shape to reach for.

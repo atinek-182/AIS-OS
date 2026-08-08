@@ -1,3 +1,26 @@
+---
+title: RESOURCES.md Format
+domain: skill
+summary: '`RESOURCES.md` is the curated set of trusted sources for this topic. Knowledge for explainers should be drawn from
+  here, not from parametric guesses. Wisdom comes from the communities listed here. - [Book: _The Science and Practice of
+  Strength Traini'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- RESOURCES.md Format
+- Structure
+- '{Topic} Resources'
+- Knowledge
+- Wisdom (Communities)
+read_triggers:
+- When working on skill in .agents/skills/teach/RESOURCES-FORMAT.md
+- When reading context for RESOURCES.md Format
+tags:
+- skill
+- RESOURCES-FORMAT
+updated: '2026-08-08'
+---
+
 # RESOURCES.md Format
 
 `RESOURCES.md` is the curated set of trusted sources for this topic. Knowledge for explainers should be drawn from here, not from parametric guesses. Wisdom comes from the communities listed here.

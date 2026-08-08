@@ -1,3 +1,24 @@
+---
+title: 🏛️ Client-Conversion AI Design Studio Showcase — Design Specification
+domain: architecture
+summary: '**Project:** ZORIXEL Client-Conversion AI & Web Design Showcase **Status:** Approved Specification'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 🏛️ Client-Conversion AI Design Studio Showcase — Design Specification
+- 1. Business Objective & Strategy
+- 'Core Conversion Drivers:'
+- 2. Design System & Aesthetic Foundation
+- '🚫 Banned Anti-Patterns (Hallmark Anti-Slop):'
+read_triggers:
+- When working on architecture in docs/superpowers/specs/2026-07-25-client-showcase-website-design.md
+- When reading context for 🏛️ Client-Conversion AI Design Studio Showcase — Design Specification
+tags:
+- architecture
+- 2026-07-25-client-showcase-website-design
+updated: '2026-08-08'
+---
+
 # 🏛️ Client-Conversion AI Design Studio Showcase — Design Specification
 
 **Date:** 2026-07-25  

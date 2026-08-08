@@ -1,6 +1,29 @@
 ---
+title: Repository Ingestion & Deep Skill Adaptation Engine (`/ingest-repo`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/ingest-repo [repo_url]
+  [optional focus or instructions]` in chat.'
+critical_directives:
+- Scan for existing skills (`skills/`), rules (`rules/`, `.cursorrules`), or scripts (`scripts/`).
+- Verify License (Must be 100% free and open-source for personal/commercial gain, e.g. MIT, Apache 2.0, BSD).
+- 'Mandatory Dual-Triggering**: Ensure YAML frontmatter `description` includes natural language trigger phrases.'
+- 'System Rules**: Update `.agents/AGENTS.md` with Dynamic Invocation Rules.'
+section_outline:
+- Repository Ingestion & Deep Skill Adaptation Engine (`/ingest-repo`)
+- Invocation & Tri-Mode Routing
+- Specific Use Cases & Purpose
+- 🧭 The 8-Phase Ingestion & Deep System Integration Workflow
+- 'Phase 1: Discovery Capture & Setup (`/grill-me` loop)'
+read_triggers:
+- When working on skill in .agents/skills/ingest-repo/SKILL.md
+- When reading context for Repository Ingestion & Deep Skill Adaptation Engine (`/ingest-repo`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: ingest-repo
-description: Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, deep cross-system integration, and dual slash/dynamic skill adaptation engine. Invokable via /ingest-repo.
+description: Autonomous 8-phase repository ingestion, security audit, comparative analysis, roast council, deep cross-system
+  integration, and dual slash/dynamic skill adaptation engine. Invokable via /ingest-repo.
 argument-hint: '[repo_url] [optional focus or instructions]'
 ---
 

@@ -1,3 +1,21 @@
+---
+title: H2 Split Diptych
+domain: skill
+summary: Headline + lede on one side, image or product capture on the other. 6/6 or 7/5 columns. *Use when:* you can pair
+  every claim with a visual proof.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H2 · Split Diptych
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h2-split-diptych.md
+- When reading context for H2 Split Diptych
+tags:
+- skill
+- h2-split-diptych
+updated: '2026-08-08'
+---
+
 ### H2 · Split Diptych
 Headline + lede on one side, image or product capture on the other. 6/6 or 7/5 columns.
 *Use when:* you can pair every claim with a visual proof.

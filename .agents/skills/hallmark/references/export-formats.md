@@ -1,3 +1,28 @@
+---
+title: Export formats
+domain: skill
+summary: 'Loaded by [`SKILL.md`](../SKILL.md) Step 6 when emitting the design system as portable tokens. Defines the four
+  canonical formats Hallmark always writes: 1. **`tokens.css`** — the source of truth. Always emitted alongside the page CSS.'
+critical_directives:
+- 'color-rule:         oklch(86% 0.020 78);'
+- 'color-rule-2:       oklch(72% 0.022 78);'
+- 'rule-hair: 0.5px;'
+- 'rule-fine: 1px;'
+section_outline:
+- Export formats
+- Token taxonomy — Hallmark's source of truth
+- Format 1 — `tokens.css`
+- Format 2 — Tailwind v4 `@theme`
+- Format 3 — DTCG `tokens.json`
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/export-formats.md
+- When reading context for Export formats
+tags:
+- skill
+- export-formats
+updated: '2026-08-08'
+---
+
 # Export formats
 
 Loaded by [`SKILL.md`](../SKILL.md) Step 6 when emitting the design system as portable tokens. Defines the four canonical formats Hallmark always writes:

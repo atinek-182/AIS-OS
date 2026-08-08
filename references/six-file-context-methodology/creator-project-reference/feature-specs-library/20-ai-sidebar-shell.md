@@ -1,3 +1,24 @@
+---
+title: 20 Ai Sidebar Shell
+domain: architecture
+summary: Complete the existing AI sidebar placeholder and turn it into a proper floating chat sidebar component. The sidebar
+  already exists, so keep the current floating placement and smooth slide-in behavior from the right side. This unit is focused
+  on build
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/20-ai-sidebar-shell.md
+- When reading context for 20 Ai Sidebar Shell
+tags:
+- architecture
+- 20-ai-sidebar-shell
+updated: '2026-08-08'
+---
+
 Complete the existing AI sidebar placeholder and turn it into a proper floating chat sidebar component. The sidebar already exists, so keep the current floating placement and smooth slide-in behavior from the right side. This unit is focused on building out the sidebar UI inside it.
 
 ## Implementation

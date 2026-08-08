@@ -1,3 +1,27 @@
+---
+title: Genre — modern-minimal
+domain: skill
+summary: 'For the polished enterprise / dev-tool / API page. Stripe / Linear / ElevenLabs school: Geist sans, large confident
+  displays, generous whitespace, pill CTAs, monochrome with optional accent. Minimalism with conviction, not the absence of
+  choice. Brie'
+critical_directives:
+- Copy tone** — declarative, specific, technical. "Built for X" is not banned but must name the X concretely.
+- Default footer:** Ft2 Inline single line — wordmark + tagline + tiny credit, hairline rule above. Restrained.
+section_outline:
+- Genre — modern-minimal
+- When to pick it
+- Themes that belong
+- Voice
+- What this genre allows
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/genres/modern-minimal.md
+- When reading context for Genre — modern-minimal
+tags:
+- skill
+- modern-minimal
+updated: '2026-08-08'
+---
+
 # Genre — modern-minimal
 
 For the polished enterprise / dev-tool / API page. Stripe / Linear / ElevenLabs school: Geist sans, large confident displays, generous whitespace, pill CTAs, monochrome with optional accent. Minimalism with conviction, not the absence of choice.

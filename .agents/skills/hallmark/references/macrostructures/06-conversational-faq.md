@@ -1,3 +1,21 @@
+---
+title: 06 Conversational Faq
+domain: skill
+summary: Bold questions, brief answers. The page reads like an honest interview with the product. Often each Q/A is a collapsible
+  accordion. - **Heading:** each section *is* a question — a short, direct phrase ending in `?`.
+critical_directives:
+- Divider:** thin rule between Q/A pairs, or zero rule and a paper-colour swap.
+section_outline:
+- 06 · Conversational FAQ
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/06-conversational-faq.md
+- When reading context for 06 Conversational Faq
+tags:
+- skill
+- 06-conversational-faq
+updated: '2026-08-08'
+---
+
 ## 06 · Conversational FAQ
 
 Bold questions, brief answers. The page reads like an honest interview with the product. Often each Q/A is a collapsible accordion.

@@ -1,3 +1,22 @@
+---
+title: Figma MCP API Reference
+domain: architecture
+summary: Official remote Model Context Protocol (MCP) server integration for Figma. * **Connection URL:** `https://mcp.figma.com/mcp`
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Figma MCP API Reference
+- Exposed Tools
+- OAuth Authentication Flow
+read_triggers:
+- When working on architecture in references/figma-api.md
+- When reading context for Figma MCP API Reference
+tags:
+- architecture
+- figma-api
+updated: '2026-08-08'
+---
+
 # Figma MCP API Reference
 
 Official remote Model Context Protocol (MCP) server integration for Figma.

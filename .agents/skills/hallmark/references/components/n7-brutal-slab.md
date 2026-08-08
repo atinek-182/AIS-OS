@@ -1,3 +1,22 @@
+---
+title: N7 Brutal Slab
+domain: skill
+summary: 'A heavy, full-width nav with a 2 px solid border-bottom, all-caps wordmark and tracked uppercase link row, dense
+  rhythm, no shadow, no rounded corners. Reads as Pentagram project pages, Liquid Death, brutalist-leaning agencies. *Use
+  when:* the genre '
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- N7 · Brutal slab
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n7-brutal-slab.md
+- When reading context for N7 Brutal Slab
+tags:
+- skill
+- n7-brutal-slab
+updated: '2026-08-08'
+---
+
 ### N7 · Brutal slab
 A heavy, full-width nav with a 2 px solid border-bottom, all-caps wordmark and tracked uppercase link row, dense rhythm, no shadow, no rounded corners. Reads as Pentagram project pages, Liquid Death, brutalist-leaning agencies.
 *Use when:* the genre is playful (Brutal, Manifesto, Sport) or the brand voice is heavy / declarative.

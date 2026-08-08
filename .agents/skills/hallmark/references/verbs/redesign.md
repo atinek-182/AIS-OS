@@ -1,3 +1,29 @@
+---
+title: '`hallmark redesign`'
+domain: skill
+summary: The user wants a different page from the same content. They are not happy with the current visual structure — typically
+  because it reads as templated, generic, or AI-shaped. Your job is to redesign the page's structure, rhythm, and component
+  voice wh
+critical_directives:
+- Never delete existing route files, component directories, page trees, or the old website unless the user explicitly asks
+- '`--color-rule`    oklch(<L> <C> <H>)'
+- '<silent success / celebratory toasts: never>'
+- App pages MUST NOT use enrichment — function carries the page.
+section_outline:
+- '`hallmark redesign`'
+- Non-destructive implementation rule
+- Step 0 · Detect scope first
+- § Multi-page flow — design.md first, then redesign
+- 1. Read the project, then pause
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/verbs/redesign.md
+- When reading context for `hallmark redesign`
+tags:
+- skill
+- redesign
+updated: '2026-08-08'
+---
+
 # `hallmark redesign`
 
 The user wants a different page from the same content. They are not happy with the current visual structure — typically because it reads as templated, generic, or AI-shaped. Your job is to redesign the page's structure, rhythm, and component voice while respecting the existing implementation boundaries unless the user explicitly confirms a full rebuild.

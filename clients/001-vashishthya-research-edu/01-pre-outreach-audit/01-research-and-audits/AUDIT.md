@@ -1,3 +1,24 @@
+---
+title: 'Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown'
+domain: audit
+summary: '**Client:** Vashishthya Research & Educational Academy / IJORAR & MJAP Journals **Client ID:** `001-vashishthya-research-edu`'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown'
+- 1. Lead Acquisition & Metadata
+- 2. Forensic Technical & Web Architecture Audit
+- 3. SEO, Google Scholar & Indexing Audit
+- 4. Operational Bottlenecks & Manuscript Friction
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/01-research-and-audits/AUDIT.md
+- 'When reading context for Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown'
+tags:
+- audit
+- AUDIT
+updated: '2026-08-08'
+---
+
 # Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown
 **Client:** Vashishthya Research & Educational Academy / IJORAR & MJAP Journals  
 **Client ID:** `001-vashishthya-research-edu`  

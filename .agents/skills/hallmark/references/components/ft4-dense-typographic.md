@@ -1,3 +1,21 @@
+---
+title: Ft4 Dense Typographic
+domain: skill
+summary: One large block of text — credits, references, licence, address — in a small monospace font, fully justified or ragged-right.
+  Editorial colophon energy. *Use when:* the brand is editorial and a colophon-style sign-off fits.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ft4 · Dense typographic
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft4-dense-typographic.md
+- When reading context for Ft4 Dense Typographic
+tags:
+- skill
+- ft4-dense-typographic
+updated: '2026-08-08'
+---
+
 ### Ft4 · Dense typographic
 One large block of text — credits, references, licence, address — in a small monospace font, fully justified or ragged-right. Editorial colophon energy.
 *Use when:* the brand is editorial and a colophon-style sign-off fits.

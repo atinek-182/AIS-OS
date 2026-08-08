@@ -1,6 +1,28 @@
 ---
+title: Wizard
+domain: skill
+summary: A **wizard** is a bash script that walks a human, step by step, through a manual procedure that's tedious to do by
+  hand and tedious to re-explain to an AI every time. It opens each URL, says exactly what to click and copy, captures the
+  values, writes
+critical_directives:
+- 'For setup: `.env`, `.env.example`, `.env.*`, `README`, `docker-compose*`, framework config, and `.github/workflows/*` (e'
+section_outline:
+- Wizard
+- Process
+- 1. Scope the procedure
+- 2. Map each stage's journey
+- 3. Author the wizard
+read_triggers:
+- When working on skill in .agents/skills/wizard/SKILL.md
+- When reading context for Wizard
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: wizard
-description: Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.
+description: Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning
+  infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off
+  migration or cutover. Don't invoke this for steps the agent can perform itself.
 ---
 
 # Wizard

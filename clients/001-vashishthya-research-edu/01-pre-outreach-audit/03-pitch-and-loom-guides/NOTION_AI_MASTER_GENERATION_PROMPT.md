@@ -1,3 +1,21 @@
+---
+title: 'Master Notion AI Prompt: Vashishthya Master Client OS Database'
+domain: audit
+summary: 'Copy and paste the exact prompt below into Notion AI (press `Spacebar` or click `Ask AI` on a blank page in Notion):
+  Create a complete Master Database named "Vashishthya Master Client Desk" for an academic research consultancy foundation.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Master Notion AI Prompt: Vashishthya Master Client OS Database'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/NOTION_AI_MASTER_GENERATION_PROMPT.md
+- 'When reading context for Master Notion AI Prompt: Vashishthya Master Client OS Database'
+tags:
+- audit
+- NOTION_AI_MASTER_GENERATION_PROMPT
+updated: '2026-08-08'
+---
+
 # Master Notion AI Prompt: Vashishthya Master Client OS Database
 
 Copy and paste the exact prompt below into Notion AI (press `Spacebar` or click `Ask AI` on a blank page in Notion):

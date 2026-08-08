@@ -1,3 +1,25 @@
+---
+title: 26 Ai Chat Functional
+domain: architecture
+summary: Wire up the AI sidebar so users can submit design prompts, track AI run status in real time, and reflect AI-driven
+  canvas updates through Liveblocks.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- UI Details
+- Scope Limits
+- Notes
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/26-ai-chat-functional.md
+- When reading context for 26 Ai Chat Functional
+tags:
+- architecture
+- 26-ai-chat-functional
+updated: '2026-08-08'
+---
+
 Wire up the AI sidebar so users can submit design prompts, track AI run status
 in real time, and reflect AI-driven canvas updates through Liveblocks.
 

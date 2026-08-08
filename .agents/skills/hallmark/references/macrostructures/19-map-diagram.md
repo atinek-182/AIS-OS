@@ -1,3 +1,21 @@
+---
+title: 19 Map Diagram
+domain: skill
+summary: A single large spatial diagram organises the page — flowchart, floor plan, network graph, system map. Information
+  is laid out *spatially*, not linearly. - **Heading:** a small orientation phrase above or beside the map.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 19 · Map / Diagram
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/19-map-diagram.md
+- When reading context for 19 Map Diagram
+tags:
+- skill
+- 19-map-diagram
+updated: '2026-08-08'
+---
+
 ## 19 · Map / Diagram
 
 A single large spatial diagram organises the page — flowchart, floor plan, network graph, system map. Information is laid out *spatially*, not linearly.

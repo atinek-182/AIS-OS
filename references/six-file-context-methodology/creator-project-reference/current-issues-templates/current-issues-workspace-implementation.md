@@ -1,3 +1,25 @@
+---
+title: Current Issues Workspace Implementation
+domain: architecture
+summary: Review the editor workspace implementation and fix the following issues. Check `components/editor` first. Do not
+  break existing
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Issues
+- 1. Save Button in Workspace Navbar
+- 2. Delete Nodes and Edges
+- 3. Node Connection Handles
+- 4. Drag and Drop Position Offset
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/current-issues-templates/current-issues-workspace-implementation.md
+- When reading context for Current Issues Workspace Implementation
+tags:
+- architecture
+- current-issues-workspace-implementation
+updated: '2026-08-08'
+---
+
 Review the editor workspace implementation and fix the following
 issues. Check `components/editor` first. Do not break existing
 features.

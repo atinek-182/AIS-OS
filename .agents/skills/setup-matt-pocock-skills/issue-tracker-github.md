@@ -1,3 +1,25 @@
+---
+title: 'Issue tracker: GitHub'
+domain: skill
+summary: 'Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all operations. - **Create an issue**:
+  `gh issue create --title "..." --body "..."`. Use a heredoc for multi-line bodies.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Issue tracker: GitHub'
+- Conventions
+- Pull requests as a triage surface
+- When a skill says "publish to the issue tracker"
+- When a skill says "fetch the relevant ticket"
+read_triggers:
+- When working on skill in .agents/skills/setup-matt-pocock-skills/issue-tracker-github.md
+- 'When reading context for Issue tracker: GitHub'
+tags:
+- skill
+- issue-tracker-github
+updated: '2026-08-08'
+---
+
 # Issue tracker: GitHub
 
 Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all operations.

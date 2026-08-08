@@ -1,11 +1,29 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/file-search [''search
+  query'']` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Steps
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/file-search/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: file-search
-description: Use when the user wants to search for a file, find information across
-  vaults, or retrieve documents by keyword. Invokable directly via /file-search.
+description: Use when the user wants to search for a file, find information across vaults, or retrieve documents by keyword.
+  Invokable directly via /file-search.
 argument-hint:
 - search query
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

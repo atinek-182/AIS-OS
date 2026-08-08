@@ -1,12 +1,29 @@
 ---
+title: Canvas Design Router Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/canvas-design [optional
+  parameters]` in chat.'
+critical_directives:
+- 'Windows Localhost Serving Rule**: Browser subagents block loading local `file://` URIs due to sandbox policies. To bypas'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Canvas Design Router Skill
+- Invocation & Tri-Mode Routing
+- Step-by-Step Execution Workflow
+- 1. Settle Dimensions & Layout
+- 2. Compile HTML Preview
+read_triggers:
+- When working on skill in .agents/skills/canvas-design/SKILL.md
+- When reading context for Canvas Design Router Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: canvas-design
-description: Use when generating original visual art, posters, social media graphics,
-  Instagram carousel slides, YouTube banners, thumbnails, or logo/brand asset compositions.
-  Invokable directly via /canvas-design.
+description: Use when generating original visual art, posters, social media graphics, Instagram carousel slides, YouTube banners,
+  thumbnails, or logo/brand asset compositions. Invokable directly via /canvas-design.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Canvas Design Router Skill
 

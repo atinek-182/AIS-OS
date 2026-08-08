@@ -1,11 +1,29 @@
 ---
+title: Design Direction Generator
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/design-direction [project-name]`
+  in chat.'
+critical_directives:
+- To avoid context bloat, the agent must **not** load the entire design system. Read only the specific target `PROJECT_BRI
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Design Direction Generator
+- Invocation & Tri-Mode Routing
+- Triggering Rules
+- Context Optimization Rule
+- Execution Steps
+read_triggers:
+- When working on skill in .agents/skills/design-direction/SKILL.md
+- When reading context for Design Direction Generator
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: design-direction
-description: Generate a premium visual design direction file and run the adversarial
-  roast council on the concept. Invokable directly via /design-direction.
+description: Generate a premium visual design direction file and run the adversarial roast council on the concept. Invokable
+  directly via /design-direction.
 argument-hint: '[project-name]'
 ---
-
-
 
 # Design Direction Generator
 

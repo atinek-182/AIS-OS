@@ -1,3 +1,26 @@
+---
+title: GLOSSARY.md Format
+domain: skill
+summary: '`GLOSSARY.md` is the canonical language for this teaching workspace. All explainers, exercises, and learning records
+  should adhere to its terminology. Building it is itself part of learning: compressing a concept into a tight definition
+  is evidence t'
+critical_directives:
+- 'Flag ambiguities explicitly.** If a term is used loosely in the wider field, note the resolution: "In this workspace, ''s'
+section_outline:
+- GLOSSARY.md Format
+- Structure
+- '{Topic} Glossary'
+- Terms
+- Rules
+read_triggers:
+- When working on skill in .agents/skills/teach/GLOSSARY-FORMAT.md
+- When reading context for GLOSSARY.md Format
+tags:
+- skill
+- GLOSSARY-FORMAT
+updated: '2026-08-08'
+---
+
 # GLOSSARY.md Format
 
 `GLOSSARY.md` is the canonical language for this teaching workspace. All explainers, exercises, and learning records should adhere to its terminology. Building it is itself part of learning: compressing a concept into a tight definition is evidence the user understands it.

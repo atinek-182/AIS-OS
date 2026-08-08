@@ -1,3 +1,22 @@
+---
+title: Ft6 Letter Close
+domain: skill
+summary: Closes the page like a letter — `Yours, the team. 2026.` Optional postscript line beneath. Sets the page as a piece
+  of writing rather than a product. *Use when:* the page voice is warm, hand-written, editorial-quiet — Garden, Atelier, personal
+  sites.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ft6 · Letter close
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft6-letter-close.md
+- When reading context for Ft6 Letter Close
+tags:
+- skill
+- ft6-letter-close
+updated: '2026-08-08'
+---
+
 ### Ft6 · Letter close
 Closes the page like a letter — `Yours, the team. 2026.` Optional postscript line beneath. Sets the page as a piece of writing rather than a product.
 *Use when:* the page voice is warm, hand-written, editorial-quiet — Garden, Atelier, personal sites.

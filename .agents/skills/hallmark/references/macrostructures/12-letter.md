@@ -1,3 +1,21 @@
+---
+title: 12 Letter
+domain: skill
+summary: First-person, written, intimate. Opens with a greeting ("Dear friend,"). No buttons in the fold. Reads as a personal
+  note from the founder. - **Heading:** salutation in serif italic ("Dear reader,"), 1.5–2× body size.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 12 · Letter
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/12-letter.md
+- When reading context for 12 Letter
+tags:
+- skill
+- 12-letter
+updated: '2026-08-08'
+---
+
 ## 12 · Letter
 
 First-person, written, intimate. Opens with a greeting ("Dear friend,"). No buttons in the fold. Reads as a personal note from the founder.

@@ -1,3 +1,28 @@
+---
+title: Cobalt Grid Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/cobalt-grid/design.md`'
+critical_directives:
+- 'Tagline: Electric cobalt serifs on a graph-paper canvas, anchored by stair-stepped pixel-glitch decorations and slim hai'
+- 'Signature move: 1.5px cobalt topbar rule under section headers.'
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+section_outline:
+- Cobalt Grid Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/cobalt-grid/preview.md
+- When reading context for Cobalt Grid Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Cobalt Grid Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

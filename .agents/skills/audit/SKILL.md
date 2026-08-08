@@ -1,13 +1,31 @@
 ---
+title: AIOS Audit — {date}
+domain: skill
+summary: Runs the **Four Cs Audit** on the current Antigravity project. Reads (never writes) the project's operating manual,
+  memory, skills, agents, MCPs, decisions, and references. Scores each of the Four Cs out of 25. Surfaces strengths and the
+  top 3 levera
+critical_directives:
+- Read-only by default.** Never modify GEMINI.md, memory, skills, or any project files. Only optional write is the audit r
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- What this skill does
+- Today's context
+- The Four Cs (scored 25 each = 100 total)
+- Execution
+- 'Step 1: Discover the project shape'
+read_triggers:
+- When working on skill in .agents/skills/audit/SKILL.md
+- When reading context for AIOS Audit — {date}
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: audit
-description: Use when someone asks for an AIOS audit, asks to score their setup against
-  the Four Cs, or says "is my AIOS working" / "audit my setup" / "find gaps in my
-  AIOS". Produces a Four-Cs scoreboard with top-3 fixes ranked by leverage. Invokable
+description: Use when someone asks for an AIOS audit, asks to score their setup against the Four Cs, or says "is my AIOS working"
+  / "audit my setup" / "find gaps in my AIOS". Produces a Four-Cs scoreboard with top-3 fixes ranked by leverage. Invokable
   directly via /audit.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 ## What this skill does
 

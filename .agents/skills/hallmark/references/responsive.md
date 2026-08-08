@@ -1,3 +1,28 @@
+---
+title: Responsive
+domain: skill
+summary: 'Mobile-first. Content-driven breakpoints. No desktop-only interactions. Every Hallmark output must render flawlessly
+  at **320 px, 375 px, 414 px, and 768 px** CSS-pixel widths. Eyeball each viewport before marking the output complete:'
+critical_directives:
+- No image-bearing grid pushing the layout past viewport — use `minmax(0, 1fr)`, never bare `1fr`, on tracks containing im
+- 'Root carries `overflow-x: clip` on both `html` and `body` — never `hidden` (gate 34)'
+- Section heads collapse to one column on mobile across every theme variant — per-theme overrides need a matching mobile r
+- 'Base styles are for the smallest viewport. `min-width` media queries add as you go up. Never `max-width` as the primary '
+section_outline:
+- Responsive
+- Mobile — non-negotiable
+- Principles
+- Breakpoints
+- Fluid scaling
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/responsive.md
+- When reading context for Responsive
+tags:
+- skill
+- responsive
+updated: '2026-08-08'
+---
+
 # Responsive
 
 Mobile-first. Content-driven breakpoints. No desktop-only interactions.

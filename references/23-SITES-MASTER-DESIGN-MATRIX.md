@@ -1,3 +1,26 @@
+---
+title: 23-Sites Master Design System & Blueprint Matrix
+domain: architecture
+summary: '*Synthesized from 23 award-winning reference sites: Active Theory, Obys Agency, Locomotive Agency, Merci Michel,
+  Resn, Oryzo AI, Trionn Agency, Ashley Brooke, Detroit Paris, Gehry Getty, Sondaven, and more.* | Section Type | Signature
+  Patterns & Layo'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 23-Sites Master Design System & Blueprint Matrix
+- 🏛️ 1. Section Taxonomy & Macrostructures
+- 🎨 2. Color Tokens & OKLCH Theme Architecture
+- ⚡ 3. Motion Math & Physics Hooks
+- GSAP ScrollTrigger Inertia Formula
+read_triggers:
+- When working on architecture in references/23-SITES-MASTER-DESIGN-MATRIX.md
+- When reading context for 23-Sites Master Design System & Blueprint Matrix
+tags:
+- architecture
+- 23-SITES-MASTER-DESIGN-MATRIX
+updated: '2026-08-08'
+---
+
 # 23-Sites Master Design System & Blueprint Matrix
 
 *Synthesized from 23 award-winning reference sites: Active Theory, Obys Agency, Locomotive Agency, Merci Michel, Resn, Oryzo AI, Trionn Agency, Ashley Brooke, Detroit Paris, Gehry Getty, Sondaven, and more.*

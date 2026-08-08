@@ -1,3 +1,24 @@
+---
+title: '📐 Framework 01: The Offer Triangle & High-Ticket Pricing Architecture'
+domain: brand
+summary: '1. **What to Sell:** AI-Powered Web Experience & Component Sprints. AI tools perform 80% of delivery work, human
+  judgment provides strategy and visual polish. 2. **Who to Sell To:** Able and willing buyers. B2B companies with real revenue
+  ($500K–$5M '
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- '📐 Framework 01: The Offer Triangle & High-Ticket Pricing Architecture'
+- 1. The Offer Triangle Mechanics
+- 2. The 3 Pricing Tiers
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/frameworks/01-offer-triangle-and-pricing-architecture.md
+- 'When reading context for 📐 Framework 01: The Offer Triangle & High-Ticket Pricing Architecture'
+tags:
+- brand
+- 01-offer-triangle-and-pricing-architecture
+updated: '2026-08-08'
+---
+
 # 📐 Framework 01: The Offer Triangle & High-Ticket Pricing Architecture
 
 ## 1. The Offer Triangle Mechanics

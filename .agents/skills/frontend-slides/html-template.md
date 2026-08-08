@@ -1,3 +1,26 @@
+---
+title: HTML Presentation Template
+domain: skill
+summary: 'Reference architecture for generating slide presentations. Every presentation follows a fixed 16:9 stage model:
+  slides are authored at 1920×1080 and the whole stage scales to fit the browser window. <meta charset="UTF-8">'
+critical_directives:
+- Letterbox/pillarbox as needed; never reflow slide content per device
+- 'Adapt border/shadow colors to match the chosen style''s accent.** Never repeat the same image on multiple slides (except '
+section_outline:
+- HTML Presentation Template
+- Base HTML Structure
+- Required JavaScript Features
+- Inline Editing Implementation
+- Image Pipeline (Skip If No Images)
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/html-template.md
+- When reading context for HTML Presentation Template
+tags:
+- skill
+- html-template
+updated: '2026-08-08'
+---
+
 # HTML Presentation Template
 
 Reference architecture for generating slide presentations. Every presentation follows a fixed 16:9 stage model: slides are authored at 1920×1080 and the whole stage scales to fit the browser window.

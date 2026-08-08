@@ -1,3 +1,26 @@
+---
+title: ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+domain: architecture
+summary: '> **MANDATORY BOOTUP RULE FOR ALL AI AGENTS & CHAT SESSIONS:** > Every AI agent, subagent, and LLM chat session
+  operating in `d:\AI-OS` MUST read and strictly enforce every rule in this document. Never bypass, ignore, or relax these
+  safeguards.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+- '⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES'
+- Error Categorization Matrix & Execution Safeguards
+- '🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES'
+- '🔒 SECTION 4: SECURITYOS MITRE ATT&CK, NIST 2.0 & MITRE ATLAS STANDARDS'
+read_triggers:
+- When working on architecture in references/GLOBAL_ERROR_PREVENTION_RULES.md
+- When reading context for ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+tags:
+- architecture
+- GLOBAL_ERROR_PREVENTION_RULES
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
 
 > **MANDATORY BOOTUP RULE FOR ALL AI AGENTS & CHAT SESSIONS:**  
@@ -34,6 +57,10 @@
 | **Rule 1.21** | **Repository Ingestion** | Medium | **Scratch Isolation & Vault Bloat Prevention**: When ingesting external repositories, clone strictly inside `scratch/ingest-[repo-slug]/` and force-delete the scratch folder post-ingestion. NEVER dump full unpruned git repositories into `skills-library/` unless explicitly requested. |
 | **Rule 1.22** | **SDLC & Quality** | High | **Unified SDLC Master Engine Enforcement**: Always route software lifecycle tasks through the 6-Phase SDLC Master Engine (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`). Never skip verification tests or anti-rationalization checks before asserting code completeness. |
 | **Rule 1.23** | **Cost Discipline** | High | **Zero-Fee & Zero-Subscription Mandate**: Default all workspace tools, integrations, skills, and client deliverables to 100% zero-subscription, zero-paywall tools (Google Workspace, GitHub, Notion, YouTube yt-dlp, local Python engines). NEVER integrate or save any tool, skill, or API requiring per-use paid credits or recurring subscriptions without explicit operator cost clearance. |
+| **Rule 1.24** | **Path & OS Binary** | High | **Windows Directory Junction Resolution**: On Windows OS, `os.path.islink()` fails to identify NTFS Directory Junctions. Always check `is_reparse_or_link(path)` (testing `st_file_attributes & 1024` and `os.path.isjunction`) to prevent infinite recursion during `os.walk()` sweeps. |
+| **Rule 1.25** | **Shell & Execution** | High | **Regex Backtracking Isolation**: Never execute unbounded multi-line regular expressions (`re.findall(r'...', content)`) across full file contents in workspace batch scripts. Always split text into lines and use simple string methods (`startswith`, `lower()`, `in`) for deterministic $O(N)$ scanning. |
+| **Rule 1.26** | **Repository Ingestion** | Medium | **External Scratch & Library Isolation**: Workspace batch scripts MUST exclude `skills-library`, `scratch/`, `archives/`, and `node_modules` from automated file mutations to preserve third-party repository integrity and prevent processing bloat. |
+| **Rule 1.27** | **CLI Wrapper** | Low | **CLI Argument Schema Verification**: Always inspect `--help` or subcommand definitions before invoking custom runner scripts to prevent invalid argument execution failures. |
 
 ---
 

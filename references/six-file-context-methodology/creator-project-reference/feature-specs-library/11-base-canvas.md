@@ -1,3 +1,22 @@
+---
+title: 11 Base Canvas
+domain: architecture
+summary: Replace the canvas placeholder with a Liveblocks-backed React Flow canvas. 1. Keep the workspace page server-side.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/11-base-canvas.md
+- When reading context for 11 Base Canvas
+tags:
+- architecture
+- 11-base-canvas
+updated: '2026-08-08'
+---
+
 Replace the canvas placeholder with a Liveblocks-backed React Flow canvas.
 
 ## Implementation

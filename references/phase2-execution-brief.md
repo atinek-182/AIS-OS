@@ -1,3 +1,24 @@
+---
+title: '🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep'
+domain: architecture
+summary: '> **Copy and paste this brief into your next chat to immediately kick off Phase 2 execution!** In the previous session,
+  we successfully:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- '🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep'
+- 📋 Overview & Task Goal
+- 🎯 Next Chat Immediate Action Required
+- '💡 Suggested Prompt to Paste in Next Chat:'
+read_triggers:
+- When working on architecture in references/phase2-execution-brief.md
+- 'When reading context for 🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep'
+tags:
+- architecture
+- phase2-execution-brief
+updated: '2026-08-08'
+---
+
 # 🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep
 
 > **Copy and paste this brief into your next chat to immediately kick off Phase 2 execution!**

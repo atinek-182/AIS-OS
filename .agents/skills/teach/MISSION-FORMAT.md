@@ -1,3 +1,26 @@
+---
+title: MISSION.md Format
+domain: skill
+summary: '`MISSION.md` lives at the workspace root. It captures the _reason_ the user is learning this topic. Every teaching
+  decision — what to teach next, which resources to surface, which exercises to design — should trace back to this document.
+  {1-3 sentenc'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- MISSION.md Format
+- Template
+- 'Mission: {Topic}'
+- Why
+- Success looks like
+read_triggers:
+- When working on skill in .agents/skills/teach/MISSION-FORMAT.md
+- When reading context for MISSION.md Format
+tags:
+- skill
+- MISSION-FORMAT
+updated: '2026-08-08'
+---
+
 # MISSION.md Format
 
 `MISSION.md` lives at the workspace root. It captures the _reason_ the user is learning this topic. Every teaching decision — what to teach next, which resources to surface, which exercises to design — should trace back to this document.

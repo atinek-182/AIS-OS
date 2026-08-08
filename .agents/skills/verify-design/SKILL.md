@@ -1,6 +1,27 @@
 ---
+title: ZORIXEL Visual & Fullstack Verification Engine (`/verify-design`)
+domain: skill
+summary: 'This skill automates fullstack code quality audits and 5-viewport visual QA using Playwright and static analysis
+  tools. - **Slash Command**: `/verify-design [target_dir]`'
+critical_directives:
+- Never use local `file:///` font paths in Playwright HTML templates as headless Chromium fails to resolve local OS font f
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL Visual & Fullstack Verification Engine (`/verify-design`)
+- Invocation & Tri-Mode Routing
+- Specific Use Cases
+- Verification Execution Steps
+- 'Step 1: Fullstack Code Quality Audit (`/jsmastery-audit`)'
+read_triggers:
+- When working on skill in .agents/skills/verify-design/SKILL.md
+- When reading context for ZORIXEL Visual & Fullstack Verification Engine (`/verify-design`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: verify-design
-description: Automatically build the project, run Fullstack /jsmastery-audit code checks, Playwright console audits, Hallmark anti-slop tests, and generate responsive screenshots across all 5 viewports. Invokable via /verify-design.
+description: Automatically build the project, run Fullstack /jsmastery-audit code checks, Playwright console audits, Hallmark
+  anti-slop tests, and generate responsive screenshots across all 5 viewports. Invokable via /verify-design.
 argument-hint: '[optional_target_directory]'
 ---
 

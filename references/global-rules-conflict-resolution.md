@@ -1,3 +1,26 @@
+---
+title: Global Rules & Design Conflict Resolution Guide
+domain: architecture
+summary: This reference outlines the unified design rules for Atinek Maurya's AIOS. It resolves contradictions between the
+  global design skills (`impeccable` vs. `ui-ux-pro-max`) and Zorixel's custom brand identity. When generating User Interfaces,
+  components
+critical_directives:
+- '**The Resolution:** **BANNED BY DEFAULT**. Never generate gradient text (`background-clip: text`) or'
+section_outline:
+- Global Rules & Design Conflict Resolution Guide
+- 1. Core Visual Priority & Easing Overrides
+- 2. Resolving Specific Design Conflicts
+- A. Body Background & Colors
+- B. Typography & Headers
+read_triggers:
+- When working on architecture in references/global-rules-conflict-resolution.md
+- When reading context for Global Rules & Design Conflict Resolution Guide
+tags:
+- architecture
+- global-rules-conflict-resolution
+updated: '2026-08-08'
+---
+
 # Global Rules & Design Conflict Resolution Guide
 
 This reference outlines the unified design rules for Atinek Maurya's AIOS. It resolves contradictions between the global design skills (`impeccable` vs. `ui-ux-pro-max`) and Zorixel's custom brand identity.

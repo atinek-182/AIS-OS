@@ -1,16 +1,34 @@
 ---
+title: OS Audit — is your AIOS still true?
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/os-audit [optional: a
+  subfolder to scope the audit to]` in chat.'
+critical_directives:
+- Read-only.** Never fix, move, rename, or delete anything during the audit. The only write is the report file at the end.
+- Works on any Antigravity / Gemini project.** Look for patterns and intent, not exact paths. The operating manual might b
+- 'Bloat** — too much piles in and the model loses the thread. Oversized always-loaded files, scratch inside the knowledge '
+- Confusion** — something the agent needs is missing, or something off-topic is present. Unmapped folders, data pulled but
+section_outline:
+- OS Audit — is your AIOS still true?
+- Invocation & Tri-Mode Routing
+- Today's context
+- 'The lens: four failure modes, two context types'
+- Step 0 — Prior report and recent evidence
+read_triggers:
+- When working on skill in .agents/skills/os-audit/SKILL.md
+- When reading context for OS Audit — is your AIOS still true?
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: os-audit
-description: Use when someone asks to run an OS audit, check their AIOS for stale
-  or outdated data, verify routing points at things that actually exist, find duplicate
-  or bloated folders, clean up or organize their project, check for context failure
-  modes (poisoning, bloat, confusion, clash), or says "os audit", "is my setup stale",
-  "run a data audit", "my project root is a mess", or "my agent keeps missing things
-  that are there". Read-only drift, freshness, and organization audit of the current
-  project. Invokable directly via /os-audit.
+description: Use when someone asks to run an OS audit, check their AIOS for stale or outdated data, verify routing points
+  at things that actually exist, find duplicate or bloated folders, clean up or organize their project, check for context
+  failure modes (poisoning, bloat, confusion, clash), or says "os audit", "is my setup stale", "run a data audit", "my project
+  root is a mess", or "my agent keeps missing things that are there". Read-only drift, freshness, and organization audit of
+  the current project. Invokable directly via /os-audit.
 argument-hint: '[optional: a subfolder to scope the audit to]'
 ---
-
-
 
 # OS Audit — is your AIOS still true?
 

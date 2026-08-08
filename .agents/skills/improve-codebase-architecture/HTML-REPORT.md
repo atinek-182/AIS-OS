@@ -1,3 +1,27 @@
+---
+title: HTML Report Format
+domain: skill
+summary: The architectural review is rendered as a single self-contained HTML file in the OS temp directory. Tailwind and
+  Mermaid both come from CDNs. Mermaid handles graph-shaped diagrams reliably; hand-built divs and inline SVG handle the more
+  editorial vis
+critical_directives:
+- 'Colour sparingly: one accent (emerald or indigo) plus red for leakage and amber for warnings.'
+- Never substitute:** component, service, unit (for module) · API, signature (for interface) · boundary (for seam) · layer
+section_outline:
+- HTML Report Format
+- Scaffold
+- Header
+- Candidate card
+- Diagram patterns
+read_triggers:
+- When working on skill in .agents/skills/improve-codebase-architecture/HTML-REPORT.md
+- When reading context for HTML Report Format
+tags:
+- skill
+- HTML-REPORT
+updated: '2026-08-08'
+---
+
 # HTML Report Format
 
 The architectural review is rendered as a single self-contained HTML file in the OS temp directory. Tailwind and Mermaid both come from CDNs. Mermaid handles graph-shaped diagrams reliably; hand-built divs and inline SVG handle the more editorial visuals (mass diagrams, cross-sections). Mix the two — don't lean on Mermaid for everything, it'll start to look generic.

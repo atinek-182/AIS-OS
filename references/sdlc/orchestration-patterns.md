@@ -1,3 +1,27 @@
+---
+title: Orchestration Patterns
+domain: architecture
+summary: Reference catalog of agent orchestration patterns this repo endorses, plus anti-patterns to avoid. Read this before
+  adding a new slash command that coordinates multiple personas, or before introducing a new persona that "wraps" existing
+  ones. The gov
+critical_directives:
+- '*Cost:** one round trip. The baseline you should always compare orchestrated patterns against.'
+- Failure modes multiply (which persona's output format wins? whose rules apply?)
+section_outline:
+- Orchestration Patterns
+- Endorsed patterns
+- 1. Direct invocation (no orchestration)
+- 2. Single-persona slash command
+- 3. Parallel fan-out with merge
+read_triggers:
+- When working on architecture in references/sdlc/orchestration-patterns.md
+- When reading context for Orchestration Patterns
+tags:
+- architecture
+- orchestration-patterns
+updated: '2026-08-08'
+---
+
 # Orchestration Patterns
 
 Reference catalog of agent orchestration patterns this repo endorses, plus anti-patterns to avoid. Read this before adding a new slash command that coordinates multiple personas, or before introducing a new persona that "wraps" existing ones.

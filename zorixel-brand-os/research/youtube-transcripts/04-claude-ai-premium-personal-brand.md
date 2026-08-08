@@ -1,9 +1,25 @@
 ---
-title: "How I'd Use Claude AI to Build a Premium Personal Brand (1-Person Business)"
-video_id: "4lbl9MtKUF8"
-url: "https://youtu.be/4lbl9MtKUF8"
-channel: "Patrick Dang"
-skills: ["pd-ikigai-pro", "pd-personal-brand-positioning"]
+title: How I'd Use Claude AI to Build a Premium Personal Brand (1-Person Business)
+domain: brand
+summary: '- **Channel:** Patrick Dang - **Video Link:** [https://youtu.be/4lbl9MtKUF8](https://youtu.be/4lbl9MtKUF8)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 🎯 Executive Summary & Frameworks
+- 📝 Full Transcript
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/youtube-transcripts/04-claude-ai-premium-personal-brand.md
+- When reading context for How I'd Use Claude AI to Build a Premium Personal Brand (1-Person Business)
+tags:
+- brand
+- 04-claude-ai-premium-personal-brand
+updated: '2026-08-08'
+video_id: 4lbl9MtKUF8
+url: https://youtu.be/4lbl9MtKUF8
+channel: Patrick Dang
+skills:
+- pd-ikigai-pro
+- pd-personal-brand-positioning
 type: youtube-transcript
 date_ingested: 2026-07-30
 ---

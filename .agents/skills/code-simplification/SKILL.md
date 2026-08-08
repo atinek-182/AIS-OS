@@ -1,6 +1,28 @@
 ---
+title: Code Simplification
+domain: skill
+summary: 'Simplify code by reducing complexity while preserving exact behavior. The goal is not fewer lines — it''s code that
+  is easier to read, understand, modify, and debug. Every simplification must pass a simple test: "Would a new team member
+  understand thi'
+critical_directives:
+- The Rule of 500:** If a refactoring would touch more than 500 lines, invest in automation (codemods, sed scripts, AST tr
+- '[ ] Build succeeds with no new warnings'
+section_outline:
+- Code Simplification
+- Overview
+- When to Use
+- The Five Principles
+- 1. Preserve Behavior Exactly
+read_triggers:
+- When working on skill in .agents/skills/code-simplification/SKILL.md
+- When reading context for Code Simplification
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: code-simplification
-description: Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.
+description: Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works
+  but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.
 ---
 
 # Code Simplification

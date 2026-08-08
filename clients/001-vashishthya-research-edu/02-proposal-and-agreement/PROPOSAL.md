@@ -1,3 +1,24 @@
+---
+title: 'Phase 02: Proposal, Financial Calculations & Agreement'
+domain: research
+summary: '**Client:** Vashishthya Research & Educational Academy (IJORAR & MJAP) **Client ID:** `001-vashishthya-research-edu`'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Phase 02: Proposal, Financial Calculations & Agreement'
+- 1. Zero-Upfront Flagship Pilot Agreement (Phase 1)
+- 2. Quantified ROI & Cost Floor Calculations
+- 3. Post-Pilot Commercial Expansion Tiers (Nate Herk Masterclass Model)
+- 'Option 1: Essential Journal & Intake Automation Sprint'
+read_triggers:
+- When working on research in clients/001-vashishthya-research-edu/02-proposal-and-agreement/PROPOSAL.md
+- 'When reading context for Phase 02: Proposal, Financial Calculations & Agreement'
+tags:
+- research
+- PROPOSAL
+updated: '2026-08-08'
+---
+
 # Phase 02: Proposal, Financial Calculations & Agreement
 **Client:** Vashishthya Research & Educational Academy (IJORAR & MJAP)  
 **Client ID:** `001-vashishthya-research-edu`  

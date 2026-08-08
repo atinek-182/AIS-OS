@@ -1,3 +1,23 @@
+---
+title: 01 Bento Grid
+domain: skill
+summary: Modular blocks of varying sizes laid out as an irregular grid. Each block is a feature, a quote, an image, a stat.
+  Visual rhythm comes from size variation, not card uniformity. - **Heading:** centered display in a fixed-height hero (not
+  full viewport
+critical_directives:
+- Divider:** consistent 12–24 px gap; no rules; the grid itself is the rhythm.
+- Image:** tightly cropped inside individual blocks; never full-bleed.
+section_outline:
+- 01 · Bento Grid
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/01-bento-grid.md
+- When reading context for 01 Bento Grid
+tags:
+- skill
+- 01-bento-grid
+updated: '2026-08-08'
+---
+
 ## 01 · Bento Grid
 
 Modular blocks of varying sizes laid out as an irregular grid. Each block is a feature, a quote, an image, a stat. Visual rhythm comes from size variation, not card uniformity.

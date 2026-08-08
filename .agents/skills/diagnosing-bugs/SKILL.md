@@ -1,6 +1,28 @@
 ---
+title: Diagnosing Bugs
+domain: skill
+summary: A discipline for hard bugs. Skip phases only when explicitly justified. When exploring the codebase, read `CONTEXT.md`
+  (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
+critical_directives:
+- '[ ] **Red-capable** — it drives the actual bug code path and asserts the **user''s exact symptom**, so it can go red on
+  t'
+- Show the ranked list to the user before testing.** They often have domain knowledge that re-ranks instantly ("we just de
+section_outline:
+- Diagnosing Bugs
+- Redact
+- Phase 1 — Build a feedback loop
+- Ways to construct one — try them in roughly this order
+- Tighten the loop
+read_triggers:
+- When working on skill in .agents/skills/diagnosing-bugs/SKILL.md
+- When reading context for Diagnosing Bugs
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: diagnosing-bugs
-description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
+description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or
+  reports something broken/throwing/failing/slow.
 ---
 
 # Diagnosing Bugs

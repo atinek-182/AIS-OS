@@ -1,16 +1,16 @@
 # Graph Report - AI-OS  (2026-08-08)
 
 ## Corpus Check
-- 656 files · ~2,147,750 words
+- 671 files · ~2,208,802 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 6582 nodes · 6308 edges · 566 communities (528 shown, 38 thin omitted)
+- 6688 nodes · 6417 edges · 580 communities (541 shown, 39 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b6f9280c`
+- Built from commit: `a2fc4f33`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -129,7 +129,7 @@
 - 👥 Persona Council Audit: website-design-engine v4.0 Proposal
 - 👥 Persona Council Audit: 65 Active Skills Research & Reform Sweep
 - 👥 Persona Council Audit: Workspace Utility Scripts & Core Memory State
-- Secret Keys and Sensitive Data Exposure
+- ZORIXEL AIOS Session Post-Mortem & System Evolution Audit Report
 - DeckStage
 - Custom craft — how to hand-build hero artwork
 - Hallmark
@@ -138,6 +138,7 @@
 - 👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features
 - Q&A Log
 - Custom theme — protocol
+- Adversarial `/roast` Council Audit Report
 - Issue tracker: GitHub
 - SESSION_POSTMORTEM_2026-08-08_DEFUDDLE_YOUTUBE_COMPOSIO_SKILLS.md
 - Triage
@@ -146,7 +147,7 @@
 - Security and Hardening
 - Test-Driven Development
 - teach/SKILL.md
-- 🚀 Option B: 7-Stage Complete AI Agency Master Engine
+- 5 Advanced Specialized Scenario Chains
 - Process
 - Recipes
 - SECTION 2: USER INSTRUCTION-TO-DELIVERY & TWEAK ITERATION AUDIT
@@ -207,9 +208,11 @@
 - Hero enrichment — when, what, and how much
 - Theme — Carnival
 - Observability Checklist
+- ZORIXEL AIOS Session Post-Mortem Audit Report
 - Capabilities & Usage Guide
 - YouTube Full Skill (`/youtube-full`)
 - Ideation Frameworks Reference
+- Idea: Converting Every Doc into Pure YAML Format — Discovery & Adversarial Roast
 - to-spec/SKILL.md
 - SDLC & AIOS Unified Workflows, Skills, Scripts & Automations Integration
 - 👥 5-Persona Adversarial Audit Breakdown
@@ -224,6 +227,7 @@
 - Domain Docs
 - Issue tracker: Local Markdown
 - test_ingested_skills_health.py
+- ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual
 - skill_workflow_evolver_runner.py
 - hitl-loop.template.sh
 - GLOSSARY.md Format
@@ -232,9 +236,15 @@
 - Major (looks AI-generated)
 - agents/triage-labels.md
 - Full Video Transcript: How Senior Engineers Actually Build With AI in 2026
+- aios_frontmatter_standardizer.py
+- ZORIXEL AIOS Active Security Engine (`/security-os`)
+- Macrostructures
+- security_os_runner.py
 - Slop test — 58 gates + pre-emit self-critique
 - Phase-by-Phase Execution Details
+- validate_yaml_frontmatter.py
 - Atinek Maurya's AI Operating System (`GEMINI.md`)
+- aios_workflow_runner.py
 - Copy
 - Critical (ships as slop)
 - Typography
@@ -525,7 +535,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (566 total, 38 thin omitted)
+## Communities (580 total, 39 thin omitted)
 
 ### Community 0 - "hallmark/SKILL.md"
 Cohesion: 0.19
@@ -656,16 +666,16 @@ Cohesion: 0.20
 Nodes (9): Executive Summary & Key Decisions, Q1 — Universal Domain Adapters & Dynamic Context Injection, Q2 — Multi-Turn Adversarial Red-Teaming Loop ("Attack & Patch" Mode), Q3 — Disk Persistence & Handoff Artifacts, Q4 — Persona Count & Extended Council (Baseline 5 Personas + Specialized 6th/7th Roles), Q5 — Automated `--deep` Trigger Recommendations, Q6 — Quantitative Risk Matrix & Refinement Ticket (`ROAST_REFINEMENT_SPEC`), Q&A Log (+1 more)
 
 ### Community 34 - "macrostructures.md"
-Cohesion: 0.04
-Nodes (28): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+20 more)
+Cohesion: 0.05
+Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+13 more)
 
 ### Community 35 - "Deep Search Context Engine: 5-Persona `/roast` Council Audit"
 Cohesion: 0.22
 Nodes (8): Candidate Architecture Evaluation, Candidate Option 1: Multi-Hub Graphify AST + Ripgrep Hybrid Engine (`scripts/aios_deep_search.py`), Candidate Option 2: Local SQLite FTS5 Database Indexer (`.planning/aios_context.db`), Candidate Option 3: Two-Pass Vector Embeddings / Heavy LLM Summarizer, Deep Search Context Engine: 5-Persona `/roast` Council Audit, System Objective, 👥 The 5-Persona `/roast` Council Audit, ⚖️ THE VERDICT: GO FOR OPTION 1 (Graphify + Ripgrep Real-Time Hybrid Engine)
 
 ### Community 36 - "Agent skills"
-Cohesion: 0.15
-Nodes (12): ⚡ 5 Multi-Workflow Integration Matrices, Agent skills, ⚡ Core Operational Guidelines, Domain docs, Error Categorization Matrix & Execution Safeguards, Issue tracker, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES (+4 more)
+Cohesion: 0.14
+Nodes (13): ⚡ 5 Advanced Specialized Scenario Chains, ⚡ 5 Multi-Workflow Integration Matrices, Agent skills, ⚡ Core Operational Guidelines, Domain docs, Error Categorization Matrix & Execution Safeguards, Issue tracker, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES (+5 more)
 
 ### Community 37 - "Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)"
 Cohesion: 0.25
@@ -713,7 +723,7 @@ Nodes (5): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary 
 
 ### Community 48 - "ZORIXEL AIOS Global Error Prevention & Execution Rules Registry"
 Cohesion: 0.33
-Nodes (5): Error Categorization Matrix & Execution Safeguards, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES, ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+Nodes (5): Error Categorization Matrix & Execution Safeguards, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🔒 SECTION 4: SECURITYOS MITRE ATT&CK, NIST 2.0 & MITRE ATLAS STANDARDS, ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
 
 ### Community 49 - "Client 1 Loom Video Presentation Deck: Discovery & Brainstorm Notes"
 Cohesion: 0.40
@@ -939,9 +949,9 @@ Nodes (9): 1. Category A: Research & Multi-Agent Intelligence Skills, 2. Categor
 Cohesion: 0.20
 Nodes (9): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Operator / User), 👥 Persona Council Audit: Workspace Utility Scripts & Core Memory State, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: RESHAPE (+1 more)
 
-### Community 139 - "Secret Keys and Sensitive Data Exposure"
-Cohesion: 0.50
-Nodes (4): Best Practices, Never Expose in Client-Side Code, Secret Keys and Sensitive Data Exposure, Where Secrets Hide (Check These!)
+### Community 139 - "ZORIXEL AIOS Session Post-Mortem & System Evolution Audit Report"
+Cohesion: 0.10
+Nodes (20): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer / Operator (Atinek Maurya), Category 1: External Paid API Cost Friction & Zero-Fee Boundary Risk, Category 2: PowerShell Multi-File Delete Command Isolation, Category 3: System Prompt Synchronization Post-Purge (+12 more)
 
 ### Community 141 - "Custom craft — how to hand-build hero artwork"
 Cohesion: 0.07
@@ -970,6 +980,10 @@ Nodes (5): Executive Summary & Key Decisions, Q1 — Next.js 15 App Router & Tai
 ### Community 147 - "Custom theme — protocol"
 Cohesion: 0.07
 Nodes (29): § A · The one follow-up question, B.1 · Anchor accent first, B.2 · Paper, B.3 · Ink, B.4 · Supporting greys, B.5 · Focus, B.6 · Accent-ink (overlay text colour on accent), B.7 · Verification (+21 more)
+
+### Community 148 - "Adversarial `/roast` Council Audit Report"
+Cohesion: 0.11
+Nodes (18): 1. The Contrarian (Red Team), 1. The Logician (Unified Severity & Smart Gate Engine), 2. The Expansionist (Bull), 2. The Expansionist (Future Modular Adapters & Extensibility), 3. The Logician (First Principles), 3. The Security Auditor (Safe Execution & Offensive vs. Defensive Modes), 4-Axis Risk Matrix, 4. The Buyer (Client Asset Value) (+10 more)
 
 ### Community 149 - "Issue tracker: GitHub"
 Cohesion: 0.06
@@ -1003,9 +1017,9 @@ Nodes (29): Browser Testing with DevTools, Common Rationalizations, DAMP Over DR
 Cohesion: 0.07
 Nodes (25): Learning Record Format, Numbering, Optional sections, Supersession, Template, What does _not_ qualify, When to write a learning record, MISSION.md Format (+17 more)
 
-### Community 158 - "🚀 Option B: 7-Stage Complete AI Agency Master Engine"
-Cohesion: 0.07
-Nodes (28): 1. Skill Metadata Registration Standard, 2. Capability Auto-Routing Matrix, A. Reusable Google Workspace CLI Provisioner (`scripts/gws_client_provisioner.py`), B. Reusable Google Apps Script Live Sync Engine (Header-Flexible), C. Reusable Notion Formula 2.0 Defensive Null Guards & WhatsApp Click Link, 🏛️ Domain 1: AI Agency & Business Automation Pipeline, 💻 Domain 2: Fullstack JS / Next.js Engineering Architecture Pipeline, 🎨 Domain 3: Zero-Slop Visual UI/UX & Web Design Engine Pipeline (+20 more)
+### Community 158 - "5 Advanced Specialized Scenario Chains"
+Cohesion: 0.13
+Nodes (14): 1. MCP Server & Application Engineering Chain, 2. Multi-Platform SaaS Automation Chain, 3. React Video & Motion Graphics Engine Chain, 4. Autoresearch & System Observability Chain, 5 Advanced Specialized Scenario Chains, 5. Visual Architecture & Executive Handoff Chain, Open Flags (Pending Input), Q1 — Web Design & Visual Experience System Pipeline (+6 more)
 
 ### Community 159 - "Process"
 Cohesion: 0.07
@@ -1247,6 +1261,10 @@ Nodes (22): Anti-patterns (theme-specific), Axes (diversification), Build hint, 
 Cohesion: 0.18
 Nodes (10): Alerting, Dashboards, Distributed Tracing, Metrics, Observability Checklist, On-Call Questions (Start Here), Pre-Launch Gate, Structured Logging (+2 more)
 
+### Community 219 - "ZORIXEL AIOS Session Post-Mortem Audit Report"
+Cohesion: 0.12
+Nodes (16): 3.1 SecurityOs CLI Runner Specification (`scripts/security_os_runner.py`), 3.2 Tier-1 Native Skill Specification (`.agents/skills/security-os/SKILL.md`), Council Scores & Final Verdict, Error 1.1: Missing Command Parameter in CLI Runner Execution, Error 1.2: Workspace Map Alignment Fail on Unregistered Skill File, Error 1.3: Unintended Skill Entry Omission During Text Replacement, Executive Summary & System Overview, Key Architectural Deliverables Completed: (+8 more)
+
 ### Community 220 - "Capabilities & Usage Guide"
 Cohesion: 0.20
 Nodes (9): 1. Search 1000+ App Tools by Natural Language, 2. Connect an Account via Managed OAuth Link, 3. Execute a Tool Action with JSON Data, 4. Verify Authentication & User Context, Capabilities & Usage Guide, Composio Skill (`/composio`), Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
@@ -1258,6 +1276,10 @@ Nodes (9): 1. Extract Video Transcript & Subtitles, 2. Search YouTube Videos by 
 ### Community 222 - "Ideation Frameworks Reference"
 Cohesion: 0.22
 Nodes (8): Analogous Inspiration, Constraint-Based Ideation, First Principles Thinking, How Might We (HMW), Ideation Frameworks Reference, Jobs to Be Done (JTBD), Pre-mortem, SCAMPER
+
+### Community 223 - "Idea: Converting Every Doc into Pure YAML Format — Discovery & Adversarial Roast"
+Cohesion: 0.17
+Nodes (11): 4-Axis Quantitative Risk Matrix, 5-Persona Council Roast Matrix, Executive Summary & Key Decisions, Idea: Converting Every Doc into Pure YAML Format — Discovery & Adversarial Roast, Q1 — Scope of YAML Conversion (Pure YAML vs. Hybrid Frontmatter), Q2 — Preventing AI Agents from Skipping Critical Markdown Content, Q&A Log & Socratic Grilling, Refined Workspace YAML Frontmatter Specification (+3 more)
 
 ### Community 224 - "to-spec/SKILL.md"
 Cohesion: 0.22
@@ -1315,6 +1337,10 @@ Nodes (5): Conventions, Issue tracker: Local Markdown, Wayfinding operations, Wh
 Cohesion: 0.60
 Nodes (5): check_composio_runner(), check_rules(), check_youtube_runner(), check_ytdlp(), main()
 
+### Community 238 - "ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual"
+Cohesion: 0.17
+Nodes (11): 10. Visual Architecture & Executive Handoff, 1. ZORIXEL Client Sprints & Acquisition, 2. Superpowers Parallel Subagent System, 3. GStack Executive Team Matrix, 4. Fullstack Next.js & UI Architecture, 5. Incident Response & Debugging, 6. MCP Server & Application Engineering, 7. Multi-Platform SaaS Automation (+3 more)
+
 ### Community 239 - "skill_workflow_evolver_runner.py"
 Cohesion: 0.70
 Nodes (4): classify_skill_domain(), parse_skill_yaml(), run_evolver_sweep(), scan_all_skills()
@@ -1339,6 +1365,22 @@ Nodes (20): AI-illustration look, Animate-on-scroll on everything, Bounce and el
 Cohesion: 0.10
 Nodes (19): Chapter 01: Introduction (00:00:00), Chapter 02: Crash Course (00:03:15), Chapter 03: Project Setup (00:14:31), Chapter 04: Preparing Context (00:21:43), Chapter 05: UI Primitive Components (00:39:51), Chapter 06: Layout Setup (00:48:14), Chapter 07: Authentication (00:58:17), Chapter 08: Project Dialogues (01:21:05) (+11 more)
 
+### Community 257 - "aios_frontmatter_standardizer.py"
+Cohesion: 0.38
+Nodes (9): extract_directives(), extract_headings(), extract_summary(), extract_title(), infer_domain(), is_reparse_or_link(), main(), parse_existing_frontmatter() (+1 more)
+
+### Community 258 - "ZORIXEL AIOS Active Security Engine (`/security-os`)"
+Cohesion: 0.25
+Nodes (7): 29 Security Domains & 6 Frameworks Covered, CLI Execution Parameters (`scripts/security_os_runner.py`), Overview & Tri-Mode Execution, Personalized Skill & Workflow Integrations, Post-Execution Auto-Evolution, Unified Smart Severity Engine, ZORIXEL AIOS Active Security Engine (`/security-os`)
+
+### Community 259 - "Macrostructures"
+Cohesion: 0.29
+Nodes (7): Diversification rule (mandatory), Hero polish patterns, How to pick, Macrostructures, Nav and footer voice, SaaS page sequence, The 21 macrostructures — index
+
+### Community 260 - "security_os_runner.py"
+Cohesion: 0.73
+Nodes (5): export_rules(), load_domain_index(), main(), run_audit(), search_skills()
+
 ### Community 261 - "Slop test — 58 gates + pre-emit self-critique"
 Cohesion: 0.11
 Nodes (19): Contrast & readability, Diversification gates, Hero enrichment gates, Honest copy · no fabricated content, Implementation gates, Input-state gate, Layout-safety gates, Microinteractions (+11 more)
@@ -1347,9 +1389,13 @@ Nodes (19): Contrast & readability, Diversification gates, Hero enrichment gates
 Cohesion: 0.10
 Nodes (19): 10-Phase Execution Architecture (v4.0), Inter-Skill Connections & Handoff Pipeline, Non-Negotiable Core Mandates, Overview & Tri-Mode Execution, Phase 0.1: Comprehensive Project Files & Graphify Context Verification Gate, Phase 0.2: Adversarial Pre-Build Audit (`/roast`), Phase 0: Socratic Intent & Stack Discovery (`/grill-me`), Phase 1: Local Reference Vault & OKLCH Theme Architecture (+11 more)
 
+### Community 263 - "validate_yaml_frontmatter.py"
+Cohesion: 0.83
+Nodes (3): is_reparse_or_link(), main(), validate_file()
+
 ### Community 264 - "Atinek Maurya's AI Operating System (`GEMINI.md`)"
 Cohesion: 0.17
-Nodes (11): Atinek Maurya's AI Operating System (`GEMINI.md`), 📌 Core Business & Brand Knowledge, Error Categorization Matrix & Execution Safeguards, 🛠️ How You Work With Me, ⚡ Mandatory Startup & Deep Search Directives, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES (+3 more)
+Nodes (11): Atinek Maurya's AI Operating System (`GEMINI.md`), 📌 Core Business & Brand Knowledge, Error Categorization Matrix & Execution Safeguards, 🛠️ How You Work With Me, ⚡ Mandatory Startup & Deep Search Directives, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🔒 SECTION 4: SECURITYOS MITRE ATT&CK, NIST 2.0 & MITRE ATLAS STANDARDS (+3 more)
 
 ### Community 273 - "Copy"
 Cohesion: 0.11
@@ -1392,8 +1438,8 @@ Cohesion: 0.12
 Nodes (15): 1. Global Zero-Hurry & Rigor Mandate, 2. Concept Explanation BEFORE Every Question, 3. Proactive Web Research & Documentation Sourcing, 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND), 5. Checkpoint to Disk After Every Single Response, 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`), 7. Mandatory Pre-Write `/roast` Council Gate, 8. Pre-Coding Backstop Check (+7 more)
 
 ### Community 307 - "Client-Side Bugs"
-Cohesion: 0.18
-Nodes (11): Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Open Redirect, Password Requirements, Password Security (+3 more)
+Cohesion: 0.13
+Nodes (15): Best Practices, Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Never Expose in Client-Side Code, Open Redirect (+7 more)
 
 ### Community 311 - "Ghost AI"
 Cohesion: 0.13
@@ -2336,24 +2382,24 @@ Cohesion: 0.40
 Nodes (4): Active Context & Strategic Baseline, Immediate Next Actions, Verified Pre-Flight Health Scripts, ZORIXEL AIOS Hot Cache & Handoff State
 
 ## Knowledge Gaps
-- **4625 isolated node(s):** `idea-refine.sh script`, `{ chromium }`, `fs`, `path`, `OUTPUT_FILE` (+4620 more)
+- **4679 isolated node(s):** `idea-refine.sh script`, `{ chromium }`, `fs`, `path`, `OUTPUT_FILE` (+4674 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Anti-patterns — the named tells` connect `Minor (small taste issues)` to `hallmark/SKILL.md`, `Microinteraction tells`, `Major (looks AI-generated)`, `Critical (ships as slop)`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Microinteractions` connect `Recipes` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Hallmark` connect `Hallmark` to `hallmark/SKILL.md`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Critical (ships as slop)` connect `Critical (ships as slop)` to `Minor (small taste issues)`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `{ chromium }`, `fs` to the rest of the system?**
-  _4625 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _4679 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FILLER AND HEDGING` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Step-by-Step 8-Phase Pricing Protocol` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `component-cookbook.md` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
-- **Should `Vashishthya Notion OS & Google Sheets Automated Infrastructure: Discovery & Setup Blueprint` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

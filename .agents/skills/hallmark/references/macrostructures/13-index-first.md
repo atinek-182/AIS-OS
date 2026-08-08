@@ -1,3 +1,21 @@
+---
+title: 13 Index First
+domain: skill
+summary: The page IS a list of links. No hero image, no narrative flow. Pure navigation as design. - **Heading:** one short
+  paragraph at the top introducing the index, no display type.
+critical_directives:
+- Divider:** hairline rules between rows; or zero rules with paper-colour bands.
+section_outline:
+- 13 · Index-First
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/13-index-first.md
+- When reading context for 13 Index First
+tags:
+- skill
+- 13-index-first
+updated: '2026-08-08'
+---
+
 ## 13 · Index-First
 
 The page IS a list of links. No hero image, no narrative flow. Pure navigation as design.

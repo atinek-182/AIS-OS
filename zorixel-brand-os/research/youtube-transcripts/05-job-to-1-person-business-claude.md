@@ -1,9 +1,24 @@
 ---
-title: "If you have a Job, Start a 1-Person Business with Claude AI ASAP"
-video_id: "qy_MIMtT_d8"
-url: "https://youtu.be/qy_MIMtT_d8"
-channel: "Patrick Dang"
-skills: ["pd-1-person-business"]
+title: If you have a Job, Start a 1-Person Business with Claude AI ASAP
+domain: brand
+summary: '- **Channel:** Patrick Dang - **Video Link:** [https://youtu.be/qy_MIMtT_d8](https://youtu.be/qy_MIMtT_d8)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 🎯 Executive Summary & Frameworks
+- 📝 Full Transcript
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/youtube-transcripts/05-job-to-1-person-business-claude.md
+- When reading context for If you have a Job, Start a 1-Person Business with Claude AI ASAP
+tags:
+- brand
+- 05-job-to-1-person-business-claude
+updated: '2026-08-08'
+video_id: qy_MIMtT_d8
+url: https://youtu.be/qy_MIMtT_d8
+channel: Patrick Dang
+skills:
+- pd-1-person-business
 type: youtube-transcript
 date_ingested: 2026-07-30
 ---

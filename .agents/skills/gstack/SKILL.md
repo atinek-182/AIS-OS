@@ -1,13 +1,30 @@
 ---
+title: '`gstack` — Garry Tan''s AI Engineering Team Workflow'
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/gstack [ceo | eng | design
+  | qa | full] [optional target or plan]` in chat.'
+critical_directives:
+- Verify console logs for 0 JavaScript errors or unhandled warnings.
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- '`gstack` — Garry Tan''s AI Engineering Team Workflow'
+- Invocation & Tri-Mode Routing
+- The Virtual Engineering Team Roles
+- 1. CEO Product Review (`/gstack ceo`)
+- 2. Engineering Manager Review (`/gstack eng`)
+read_triggers:
+- When working on skill in .agents/skills/gstack/SKILL.md
+- When reading context for `gstack` — Garry Tan's AI Engineering Team Workflow
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: gstack
-description: Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture,
-  UI/UX design, browser QA, release audit). Automatically triggers when reviewing
-  plans, auditing code, evaluating feature value, checking UI quality, or running
+description: Garry Tan's virtual engineering team workflow (CEO strategy, EM architecture, UI/UX design, browser QA, release
+  audit). Automatically triggers when reviewing plans, auditing code, evaluating feature value, checking UI quality, or running
   executive reviews — even without explicit /gstack command.
 argument-hint: '[ceo | eng | design | qa | full] [optional target or plan]'
 ---
-
-
 
 # `gstack` — Garry Tan's AI Engineering Team Workflow
 

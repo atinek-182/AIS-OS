@@ -1,12 +1,28 @@
 ---
+title: SEO Audit & GEO Router Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/seo-audit [optional parameters]`
+  in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- SEO Audit & GEO Router Skill
+- Invocation & Tri-Mode Routing
+- Step-by-Step Execution Workflow
+- 1. Identify the Audit Category
+- 2. Read the Reference Guide
+read_triggers:
+- When working on skill in .agents/skills/seo-audit/SKILL.md
+- When reading context for SEO Audit & GEO Router Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: seo-audit
-description: Use when running SEO audits, technical SEO reviews, schema verification,
-  sitemap checks, GEO/AEO analysis, page speed checks, keyword research, or backlinks
-  verification. Invokable directly via /seo-audit.
+description: Use when running SEO audits, technical SEO reviews, schema verification, sitemap checks, GEO/AEO analysis, page
+  speed checks, keyword research, or backlinks verification. Invokable directly via /seo-audit.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # SEO Audit & GEO Router Skill
 

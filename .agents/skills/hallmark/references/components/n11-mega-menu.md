@@ -1,3 +1,22 @@
+---
+title: N11 Mega Menu
+domain: skill
+summary: A standard top bar whose triggers open a **full-width multi-column panel** — icon · title · description per item,
+  grouped under column headers, often with a promoted feature card on one side. The page dims behind a scrim. Vercel "Products",
+  Figma "Pr
+critical_directives:
+- Anti-pattern:* never more than ~4 columns; never a panel taller than ~60vh; never open on hover with no close-grace time
+section_outline:
+- N11 · Mega-menu panel
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n11-mega-menu.md
+- When reading context for N11 Mega Menu
+tags:
+- skill
+- n11-mega-menu
+updated: '2026-08-08'
+---
+
 ### N11 · Mega-menu panel
 A standard top bar whose triggers open a **full-width multi-column panel** — icon · title · description per item, grouped under column headers, often with a promoted feature card on one side. The page dims behind a scrim. Vercel "Products", Figma "Products", Notion "Resources".
 *Use when:* the brand has many destinations that need grouping + explanation (a platform with 6+ products, or docs/resources hubs). The payload is the design problem, not the bar.

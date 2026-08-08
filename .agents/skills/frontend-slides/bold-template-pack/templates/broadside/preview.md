@@ -1,3 +1,28 @@
+---
+title: Broadside Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/broadside/design.md`'
+critical_directives:
+- 'Signature move: Massive Barlow display type at weight 900 in lowercase — never uppercase on display elements.'
+- 'Signature move: {colors.fire-orange} is both accent (on dark) and environment (on orange) — never a secondary color, alw'
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+section_outline:
+- Broadside Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/broadside/preview.md
+- When reading context for Broadside Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Broadside Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

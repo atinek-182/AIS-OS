@@ -1,6 +1,28 @@
 ---
+title: Debugging and Error Recovery
+domain: skill
+summary: Systematic debugging with structured triage. When something breaks, stop adding features, preserve evidence, and
+  follow a structured process to find and fix the root cause. Guessing wastes time. The triage checklist works for test failures,
+  build err
+critical_directives:
+- It contains sensitive data (always remove these)
+section_outline:
+- Debugging and Error Recovery
+- Overview
+- When to Use
+- The Stop-the-Line Rule
+- The Triage Checklist
+read_triggers:
+- When working on skill in .agents/skills/debugging-and-error-recovery/SKILL.md
+- When reading context for Debugging and Error Recovery
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: debugging-and-error-recovery
-description: Guides systematic root-cause debugging. Use when tests fail, builds break, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need a systematic approach to finding and fixing the root cause rather than guessing.
+description: Guides systematic root-cause debugging. Use when tests fail, builds break, behavior doesn't match expectations,
+  or you encounter any unexpected error. Use when you need a systematic approach to finding and fixing the root cause rather
+  than guessing.
 ---
 
 # Debugging and Error Recovery

@@ -1,3 +1,22 @@
+---
+title: F6 Product Card Grid
+domain: skill
+summary: Each card is a product, not a feature. Image · name · price · one micro-action. Reads like a shop floor, not a marketing
+  site. *Use when:* the brief is commerce, catalogue, lookbook, marketplace — anything where the page sells *things*, not
+  *features
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- F6 · Product card grid
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/f6-product-card-grid.md
+- When reading context for F6 Product Card Grid
+tags:
+- skill
+- f6-product-card-grid
+updated: '2026-08-08'
+---
+
 ### F6 · Product card grid
 Each card is a product, not a feature. Image · name · price · one micro-action. Reads like a shop floor, not a marketing site.
 *Use when:* the brief is commerce, catalogue, lookbook, marketplace — anything where the page sells *things*, not *features*.

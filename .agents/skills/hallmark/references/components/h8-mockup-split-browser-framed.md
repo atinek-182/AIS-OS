@@ -1,3 +1,21 @@
+---
+title: H8 Mockup Split Browser Framed
+domain: skill
+summary: Headline left, browser-frame mockup right, the mockup tilted 1–3° for life. Frame can be browser chrome, macOS toolbar,
+  minimal hairline, or floating no-frame. *Use when:* you're selling a web app and you have a clean, well-lit screenshot.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H8 · Mockup Split (browser-framed)
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h8-mockup-split-browser-framed.md
+- When reading context for H8 Mockup Split Browser Framed
+tags:
+- skill
+- h8-mockup-split-browser-framed
+updated: '2026-08-08'
+---
+
 ### H8 · Mockup Split (browser-framed)
 Headline left, browser-frame mockup right, the mockup tilted 1–3° for life. Frame can be browser chrome, macOS toolbar, minimal hairline, or floating no-frame.
 *Use when:* you're selling a web app and you have a clean, well-lit screenshot.

@@ -1,3 +1,25 @@
+---
+title: CONTEXT.md Format
+domain: skill
+summary: '{One or two sentence description of what this context is and why it exists.} {A one or two sentence description
+  of the term}'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- CONTEXT.md Format
+- Structure
+- '{Context Name}'
+- Language
+- Rules
+read_triggers:
+- When working on skill in .agents/skills/domain-modeling/CONTEXT-FORMAT.md
+- When reading context for CONTEXT.md Format
+tags:
+- skill
+- CONTEXT-FORMAT
+updated: '2026-08-08'
+---
+
 # CONTEXT.md Format
 
 ## Structure

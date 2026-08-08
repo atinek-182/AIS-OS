@@ -1,3 +1,27 @@
+---
+title: Skill Builder Reference
+domain: skill
+summary: 'Complete technical reference for Antigravity skills. This document covers all frontmatter fields, advanced patterns,
+  argument passing, troubleshooting, and how skills fit into your project. Source: https://code.agents.com/docs/en/skills'
+critical_directives:
+- Rule of thumb:** If Antigravity should *always* know it, put it in GEMINI.md. If Antigravity should only know it when do
+- Important:** `allowed-tools` adds *additional* auto-approvals on top of your existing permission settings. It doesn't re
+- '2. Allow or deny specific skills** using permission rules:'
+section_outline:
+- Skill Builder Reference
+- Understanding GEMINI.md vs Skills
+- Frontmatter Field Reference
+- Invocation Control Matrix
+- String Substitutions
+read_triggers:
+- When working on skill in .agents/skills/skill-builder/reference.md
+- When reading context for Skill Builder Reference
+tags:
+- skill
+- reference
+updated: '2026-08-08'
+---
+
 # Skill Builder Reference
 
 Complete technical reference for Antigravity skills. This document covers all frontmatter fields, advanced patterns, argument passing, troubleshooting, and how skills fit into your project.

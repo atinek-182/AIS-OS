@@ -1,3 +1,27 @@
+---
+title: Code Standards
+domain: architecture
+summary: '- [Principle — e.g. Keep modules small and single-purpose] - [Principle — e.g. Fix root causes, do not layer workarounds]'
+critical_directives:
+- '[Rule — e.g. Strict mode is required throughout the project]'
+- '[Rule — e.g. Validate unknown external input at system'
+- '[Rule — e.g. Use CSS custom property tokens — no'
+- '[Rule — e.g. Follow the border radius scale defined'
+section_outline:
+- Code Standards
+- General
+- TypeScript
+- '[Framework — e.g. Next.js]'
+- Styling
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/6-file-context-templates/context/code-standards.md
+- When reading context for Code Standards
+tags:
+- architecture
+- code-standards
+updated: '2026-08-08'
+---
+
 # Code Standards
 
 ## General

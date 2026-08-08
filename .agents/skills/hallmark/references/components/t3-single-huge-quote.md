@@ -1,3 +1,21 @@
+---
+title: T3 Single Huge Quote
+domain: skill
+summary: One quote, set big, centered, taking a whole section. No supporting text, no attribution boxes — attribution is a
+  small caps line beneath. *Use when:* one quote is so good it earns the room.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- T3 · Single huge quote
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/t3-single-huge-quote.md
+- When reading context for T3 Single Huge Quote
+tags:
+- skill
+- t3-single-huge-quote
+updated: '2026-08-08'
+---
+
 ### T3 · Single huge quote
 One quote, set big, centered, taking a whole section. No supporting text, no attribution boxes — attribution is a small caps line beneath.
 *Use when:* one quote is so good it earns the room.

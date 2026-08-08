@@ -1,3 +1,22 @@
+---
+title: 08 Photographic
+domain: skill
+summary: A single huge image dominates each fold. Text is small annotation, not headline. The design says *look* before it
+  says *read*. - **Heading:** small caption near a corner of the image; never centered display.
+critical_directives:
+- Heading:** small caption near a corner of the image; never centered display.
+- Divider:** the image edge IS the divider; no rules.
+section_outline:
+- 08 · Photographic
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/08-photographic.md
+- When reading context for 08 Photographic
+tags:
+- skill
+- 08-photographic
+updated: '2026-08-08'
+---
+
 ## 08 · Photographic
 
 A single huge image dominates each fold. Text is small annotation, not headline. The design says *look* before it says *read*.

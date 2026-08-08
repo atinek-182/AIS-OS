@@ -1,8 +1,32 @@
 ---
-name: skill-workflow-evolver
-description: Autonomous workflow evolution engine. Scans all workspace skills, parses YAML metadata, maps new skills/capabilities into the 5 core domain pipelines, auto-generates workflow playbooks, runs /roast council audits, and executes pre-flight health checks. Invokable via /skill-workflow-evolver.
+title: ZORIXEL AIOS Skill Workflow Evolver Engine (`/skill-workflow-evolver`)
 domain: research
-inter-skill-deps: [/grill-me, /roast, /global-rules-engine, /verify-skills]
+summary: 'This skill automates the detection, mapping, and self-expansion of workflow playbooks whenever Atinek Maurya installs
+  or creates new skills, tools, or MCP servers. - **Slash Command**: `/skill-workflow-evolver` or `/evolve-workflows`'
+critical_directives:
+- '`python scripts/sync_global_rules.py`'
+section_outline:
+- ZORIXEL AIOS Skill Workflow Evolver Engine (`/skill-workflow-evolver`)
+- Overview & Tri-Mode Execution
+- 5-Phase Self-Upgrading Execution Loop
+- 📑 Phase-by-Phase Execution Protocol
+- 'Phase 1: Metadata & Skill Sweep'
+read_triggers:
+- When working on research in .agents/skills/skill-workflow-evolver/SKILL.md
+- When reading context for ZORIXEL AIOS Skill Workflow Evolver Engine (`/skill-workflow-evolver`)
+tags:
+- research
+- SKILL
+updated: '2026-08-08'
+name: skill-workflow-evolver
+description: Autonomous workflow evolution engine. Scans all workspace skills, parses YAML metadata, maps new skills/capabilities
+  into the 5 core domain pipelines, auto-generates workflow playbooks, runs /roast council audits, and executes pre-flight
+  health checks. Invokable via /skill-workflow-evolver.
+inter-skill-deps:
+- /grill-me
+- /roast
+- /global-rules-engine
+- /verify-skills
 fallback: /auto-evolve-all-skills
 ---
 

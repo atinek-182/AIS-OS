@@ -1,3 +1,25 @@
+---
+title: 'Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)'
+domain: skill
+summary: 'When building UI components, follow the strict 4-level precedence hierarchy: 1. **Priority 1 [TOP PRIORITY]**: **Six-File
+  Context & Project Codebase Specs** (`TECH_STACK.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `PROJECT.md`, existing TSX components'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)'
+- Top Priority Precedence Hierarchy
+- 300+ Component Catalog Search CLI
+- 'Example Commands:'
+- Catalog Library Breakdown (11 Libraries across 23 Reference Sites)
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/03-component-catalog-guide.md
+- 'When reading context for Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)'
+tags:
+- skill
+- 03-component-catalog-guide
+updated: '2026-08-08'
+---
+
 # Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)
 
 ## Top Priority Precedence Hierarchy

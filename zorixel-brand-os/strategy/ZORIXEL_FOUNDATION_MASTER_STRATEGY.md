@@ -1,3 +1,24 @@
+---
+title: 🏛️ ZORIXEL Brand Foundation & 1-Person AI Business Master Strategy
+domain: brand
+summary: '**Author / Operator:** Atinek Maurya **Vault / System:** ZORIXEL Brand OS (`D:\ZORIXEL-BRAND-OS`)'
+critical_directives:
+- Pricing:** Value-based pricing ($1,500 – $5,000/month or $3,000 – $10,000 per project). Never charge hourly.
+section_outline:
+- 🏛️ ZORIXEL Brand Foundation & 1-Person AI Business Master Strategy
+- 🎯 Executive Summary & Architectural Vision
+- '📐 SECTION 1: The 3-Pillar 1-Person AI Business Framework'
+- 'Pillar 1: OFFER'
+- 'Pillar 2: LEAD GENERATION'
+read_triggers:
+- When working on brand in zorixel-brand-os/strategy/ZORIXEL_FOUNDATION_MASTER_STRATEGY.md
+- When reading context for 🏛️ ZORIXEL Brand Foundation & 1-Person AI Business Master Strategy
+tags:
+- brand
+- ZORIXEL_FOUNDATION_MASTER_STRATEGY
+updated: '2026-08-08'
+---
+
 # 🏛️ ZORIXEL Brand Foundation & 1-Person AI Business Master Strategy
 
 **Date:** 2026-07-30  

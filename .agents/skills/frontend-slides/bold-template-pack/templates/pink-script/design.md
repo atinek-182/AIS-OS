@@ -1,191 +1,215 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: sparse-medium with one hero moment.** Pink Script reads as elegant when a single oversized script an'
+- 'Pink** (`{colors.pink}` — #ED3D8C): Hot fuchsia. The system''s single chromatic accent. Used as the script title color,
+  k'
+- 'Default slide surface**: `{components.slide-surface}` — the lit warm-black radial gradient. Always.'
+- 'Default kicker color**: `{colors.pink}`. The eyebrow label is always pink.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/pink-script/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Pink Script (After Hours)
-description: A nocturnal couture editorial system rendered in hot fuchsia ink on dim warm-black paper, with a soft film-grain overlay and a hairline interior frame. DM Serif Display carries every script and editorial moment at sizes up to 600px; Inter at weight 300 carries the body voice; JetBrains Mono carries the boutique-catalog metadata. The aesthetic borrows from glossy fashion magazine spreads, late-night perfume advertising, and the editorial pages of high-end zines — closer to a Maison's seasonal lookbook than a startup deck.
-
+description: A nocturnal couture editorial system rendered in hot fuchsia ink on dim warm-black paper, with a soft film-grain
+  overlay and a hairline interior frame. DM Serif Display carries every script and editorial moment at sizes up to 600px;
+  Inter at weight 300 carries the body voice; JetBrains Mono carries the boutique-catalog metadata. The aesthetic borrows
+  from glossy fashion magazine spreads, late-night perfume advertising, and the editorial pages of high-end zines — closer
+  to a Maison's seasonal lookbook than a startup deck.
 colors:
-  ink-deep: "#060507"
-  ink-violet: "#0F0D11"
-  paper-blush: "#F5EDF1"
-  pink: "#ED3D8C"
-  pink-light: "#FF66A8"
-  pink-deep: "#B81D67"
-  line-pink: "rgba(237, 61, 140, 0.32)"
-  mute-paper: "rgba(245, 237, 241, 0.55)"
-  hair-paper: "rgba(245, 237, 241, 0.14)"
-
+  ink-deep: '#060507'
+  ink-violet: '#0F0D11'
+  paper-blush: '#F5EDF1'
+  pink: '#ED3D8C'
+  pink-light: '#FF66A8'
+  pink-deep: '#B81D67'
+  line-pink: rgba(237, 61, 140, 0.32)
+  mute-paper: rgba(245, 237, 241, 0.55)
+  hair-paper: rgba(245, 237, 241, 0.14)
 color-aliases:
   c-bg: ink-deep
   c-fg: paper-blush
   c-accent: pink
   c-line: line-pink
-
 typography:
   script-huge:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 540px
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: -0.01em
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-section:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 600px
     fontWeight: 400
     lineHeight: 0.82
     letterSpacing: -0.02em
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-giant:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 360px
     fontWeight: 400
     lineHeight: 1.05
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-cover:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 280px
     fontWeight: 400
     lineHeight: 1.02
     letterSpacing: -0.015em
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-large:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 220px
     fontWeight: 400
     lineHeight: 1.04
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-med:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 156px
     fontWeight: 400
     lineHeight: 1.04
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   script-sm:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 132px
     fontWeight: 400
     lineHeight: 1.06
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   serif-cta:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 140px
     fontWeight: 400
     lineHeight: 1.04
     letterSpacing: -0.015em
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-h2:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 132px
     fontWeight: 400
     lineHeight: 1.06
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-quote:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 92px
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: -0.005em
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-chart-h:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 90px
     fontWeight: 400
     lineHeight: 1.06
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-section-h:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 88px
     fontWeight: 400
     lineHeight: 1.06
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-stat:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 116px
     fontWeight: 400
     lineHeight: 0.9
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   serif-toc-num:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 64px
     fontWeight: 400
     lineHeight: 1.0
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   serif-toc-title:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 56px
     fontWeight: 400
     lineHeight: 1.05
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-quote-attr:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 48px
     fontWeight: 400
     lineHeight: 1.05
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-process-h:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 38px
     fontWeight: 400
     lineHeight: 1.05
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   serif-matrix-label:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 32px
     fontWeight: 400
     lineHeight: 1.2
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   body:
-    fontFamily: "Inter, system-ui, sans-serif"
+    fontFamily: Inter, system-ui, sans-serif
     fontSize: 24px
     fontWeight: 300
     lineHeight: 1.55
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   body-muted:
-    fontFamily: "Inter, system-ui, sans-serif"
+    fontFamily: Inter, system-ui, sans-serif
     fontSize: 22px
     fontWeight: 300
     lineHeight: 1.5
-    color: "{colors.mute-paper}"
+    color: '{colors.mute-paper}'
   body-toc-desc:
-    fontFamily: "Inter, system-ui, sans-serif"
+    fontFamily: Inter, system-ui, sans-serif
     fontSize: 24px
     fontWeight: 300
     lineHeight: 1.4
-    color: "{colors.mute-paper}"
+    color: '{colors.mute-paper}'
   mono-runner:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     fontWeight: 400
     letterSpacing: 0.14em
     textTransform: uppercase
   mono-kicker:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 22px
     fontWeight: 400
     letterSpacing: 0.14em
     textTransform: uppercase
-    color: "{colors.pink}"
+    color: '{colors.pink}'
   mono-label:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 22px
     fontWeight: 400
     letterSpacing: 0.14em
     textTransform: uppercase
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   mono-cover-pre:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 28px
     fontWeight: 400
     letterSpacing: 0.42em
     textTransform: uppercase
-    color: "{colors.paper-blush}"
+    color: '{colors.paper-blush}'
   mono-pill:
-    fontFamily: "JetBrains Mono, monospace"
+    fontFamily: JetBrains Mono, monospace
     fontSize: 16px
     fontWeight: 400
     letterSpacing: 0.08em
     textTransform: uppercase
-
 spacing:
   edge-x: 60px
   edge-top-chrome: 60px
@@ -193,112 +217,118 @@ spacing:
   content-top: 140px
   content-bottom: 140px
   inner-frame-inset: 36px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   slide-surface:
-    background: "radial-gradient(ellipse 90% 70% at 30% 30%, #1A1218 0%, #0A0709 55%, #050306 100%)"
-    description: "Universal dark surface — radial ellipse from a slightly warmer #1A1218 in the upper-left fading to near-black in the lower-right. The off-center light source is part of the system's identity."
+    background: 'radial-gradient(ellipse 90% 70% at 30% 30%, #1A1218 0%, #0A0709 55%, #050306 100%)'
+    description: 'Universal dark surface — radial ellipse from a slightly warmer #1A1218 in the upper-left fading to near-black
+      in the lower-right. The off-center light source is part of the system''s identity.'
   film-grain:
-    selector: ".slide::before"
-    background: "fractalNoise SVG via data URI, baseFrequency=0.9, octaves=2"
+    selector: .slide::before
+    background: fractalNoise SVG via data URI, baseFrequency=0.9, octaves=2
     opacity: 0.08
     mixBlendMode: screen
-    description: "Subtle film grain overlay on every slide via ::before. Opacity 0.08 with screen blend — barely visible but reads as photographic grain rather than digital flatness."
+    description: Subtle film grain overlay on every slide via ::before. Opacity 0.08 with screen blend — barely visible but
+      reads as photographic grain rather than digital flatness.
   hairline-frame:
-    selector: ".slide::after"
-    position: "absolute; inset: 36px"
-    border: "1px solid {colors.hair-paper}"
-    description: "1px paper-blush-at-14%-opacity interior frame inset 36px from each slide edge. Always present. Functions as the editorial border of the magazine page."
+    selector: .slide::after
+    position: 'absolute; inset: 36px'
+    border: 1px solid {colors.hair-paper}
+    description: 1px paper-blush-at-14%-opacity interior frame inset 36px from each slide edge. Always present. Functions
+      as the editorial border of the magazine page.
   runner:
-    position: "absolute; top: 60px; left: 60px; right: 60px"
-    fontFamily: "JetBrains Mono, monospace"
+    position: 'absolute; top: 60px; left: 60px; right: 60px'
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     letterSpacing: 0.14em
     textTransform: uppercase
-    description: "Top metadata runner — brand name on left (colored pink), section / chapter tag on right (muted paper-blush)."
+    description: Top metadata runner — brand name on left (colored pink), section / chapter tag on right (muted paper-blush).
   footer:
-    position: "absolute; bottom: 60px; left: 60px; right: 60px"
-    fontFamily: "JetBrains Mono, monospace"
+    position: 'absolute; bottom: 60px; left: 60px; right: 60px'
+    fontFamily: JetBrains Mono, monospace
     fontSize: 24px
     letterSpacing: 0.14em
     textTransform: uppercase
-    description: "Bottom metadata runner — source / confidentiality on left, page-position (e.g. '03 / 09') on right. Page-position has paper-blush base text with a pink ::em for the current number."
+    description: Bottom metadata runner — source / confidentiality on left, page-position (e.g. '03 / 09') on right. Page-position
+      has paper-blush base text with a pink ::em for the current number.
   pink-rule:
     height: 1px
-    background: "{colors.pink}"
+    background: '{colors.pink}'
     opacity: 0.45
-    description: "Hairline pink rule for soft section separators."
+    description: Hairline pink rule for soft section separators.
   hair-rule:
     height: 1px
-    background: "{colors.paper-blush}"
+    background: '{colors.paper-blush}'
     opacity: 0.25
-    description: "Hairline paper rule for muted section separators."
+    description: Hairline paper rule for muted section separators.
   pink-glow:
-    textShadow: "0 0 80px rgba(237, 61, 140, 0.18)"
-    description: "Soft pink halo behind large script titles. Applied via text-shadow on hero serif text only."
+    textShadow: 0 0 80px rgba(237, 61, 140, 0.18)
+    description: Soft pink halo behind large script titles. Applied via text-shadow on hero serif text only.
   pink-glow-mega:
-    textShadow: "0 0 120px rgba(237, 61, 140, 0.22)"
-    description: "Stronger pink halo for section-divider mega numerals."
+    textShadow: 0 0 120px rgba(237, 61, 140, 0.22)
+    description: Stronger pink halo for section-divider mega numerals.
   callout-rail:
-    borderLeft: "1px solid {colors.pink}"
+    borderLeft: 1px solid {colors.pink}
     paddingLeft: 24px
-    description: "Pink left rule with right-aligned content — used as a callout container beside a chart, beside a chapter explanation."
+    description: Pink left rule with right-aligned content — used as a callout container beside a chart, beside a chapter
+      explanation.
   matrix-cell:
-    padding: "16px 24px"
-    borderBottom: "1px solid {colors.line-pink}"
-    fontFamily: "Inter, sans-serif"
+    padding: 16px 24px
+    borderBottom: 1px solid {colors.line-pink}
+    fontFamily: Inter, sans-serif
     fontSize: 22px
     fontWeight: 300
-    color: "{colors.paper-blush}"
-    description: "Comparison matrix cell. Rows are separated by hairline pink-at-32% rules; columns are gap-separated, no vertical borders."
+    color: '{colors.paper-blush}'
+    description: Comparison matrix cell. Rows are separated by hairline pink-at-32% rules; columns are gap-separated, no vertical
+      borders.
   matrix-cell-us:
-    background: "rgba(237, 61, 140, 0.08)"
-    description: "Highlighted matrix row variant — soft pink wash to mark the 'our' column."
+    background: rgba(237, 61, 140, 0.08)
+    description: Highlighted matrix row variant — soft pink wash to mark the 'our' column.
   pill-outline:
-    border: "1px solid {colors.pink}"
-    color: "{colors.pink}"
-    padding: "6px 14px"
-    fontFamily: "JetBrains Mono, monospace"
+    border: 1px solid {colors.pink}
+    color: '{colors.pink}'
+    padding: 6px 14px
+    fontFamily: JetBrains Mono, monospace
     fontSize: 16px
     letterSpacing: 0.08em
     textTransform: uppercase
-    description: "Hollow pink pill — 1px pink border with pink mono text. The default pill state."
+    description: Hollow pink pill — 1px pink border with pink mono text. The default pill state.
   pill-solid:
-    background: "{colors.pink}"
-    color: "{colors.ink-deep}"
-    border: "1px solid {colors.pink}"
+    background: '{colors.pink}'
+    color: '{colors.ink-deep}'
+    border: 1px solid {colors.pink}
     fontWeight: 500
-    description: "Solid pink pill — pink fill, deep-ink text. Affirmative / featured state."
+    description: Solid pink pill — pink fill, deep-ink text. Affirmative / featured state.
   pill-dim:
-    borderColor: "{colors.hair-paper}"
-    color: "{colors.mute-paper}"
-    description: "Dim pill — muted paper border, muted paper text. The de-emphasized state."
+    borderColor: '{colors.hair-paper}'
+    color: '{colors.mute-paper}'
+    description: Dim pill — muted paper border, muted paper text. The de-emphasized state.
   qr-tile:
     width: 180px
     height: 180px
-    background: "{colors.paper-blush}"
+    background: '{colors.paper-blush}'
     padding: 12px
-    description: "QR-code container — solid paper-blush square with 12px white padding around the SVG QR. The only large light-surface element in the system."
+    description: QR-code container — solid paper-blush square with 12px white padding around the SVG QR. The only large light-surface
+      element in the system.
   stat-row:
-    display: "grid; columns: 240px 1fr"
-    borderBottom: "1px solid {colors.hair-paper}"
+    display: 'grid; columns: 240px 1fr'
+    borderBottom: 1px solid {colors.hair-paper}
     paddingBottom: 16px
-    description: "Stat row pattern — large pink serif figure on the left (with a paper-blush superscript unit) paired with a mono label and Inter description on the right. Rows are separated by 1px paper hairline."
+    description: Stat row pattern — large pink serif figure on the left (with a paper-blush superscript unit) paired with
+      a mono label and Inter description on the right. Rows are separated by 1px paper hairline.
   callout-num:
-    fontFamily: "DM Serif Display, serif"
+    fontFamily: DM Serif Display, serif
     fontSize: 120px
     lineHeight: 0.9
-    color: "{colors.pink}"
-    description: "Chart callout number — large pink serif numeral with smaller paper-colored unit suffix."
+    color: '{colors.pink}'
+    description: Chart callout number — large pink serif numeral with smaller paper-colored unit suffix.
   arrow-glyph:
     width: 24px
     height: 24px
-    color: "{colors.pink}"
-    description: "Small pink right-arrow SVG used between process steps."
+    color: '{colors.pink}'
+    description: Small pink right-arrow SVG used between process steps.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

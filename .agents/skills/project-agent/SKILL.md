@@ -1,11 +1,28 @@
 ---
+title: Scoped Project Developer Agent
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/project-agent [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Scoped Project Developer Agent
+- Invocation & Tri-Mode Routing
+- Invocation Parameters
+- Execution Workflow
+- Inter-Skill Connections & Handoff Pipeline
+read_triggers:
+- When working on skill in .agents/skills/project-agent/SKILL.md
+- When reading context for Scoped Project Developer Agent
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: project-agent
-description: Delegate a complex coding task or feature development to an autonomous
-  developer subagent running in the background of a specific project directory. Invokable
-  directly via /project-agent.
+description: Delegate a complex coding task or feature development to an autonomous developer subagent running in the background
+  of a specific project directory. Invokable directly via /project-agent.
 argument-hint: '[project-name] "[task description]"'
 ---
-
 
 # Scoped Project Developer Agent
 

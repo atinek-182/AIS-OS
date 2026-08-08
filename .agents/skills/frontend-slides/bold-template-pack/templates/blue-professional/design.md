@@ -1,325 +1,355 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Warm cream ground (`{colors.bg}`) on every surface — never pure white, never gray.
+- Space Grotesk (display + chrome) + Inter (body) — never substitute either.
+- 'Border** (`{colors.border}` — `rgba(30, 43, 250, 0.2)`): Cobalt at 20% opacity. The universal soft border color for card'
+- 'Positive** (`{colors.positive}` — `#059669`): Subdued green. Used only inline as the text color for positive-change indi'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/blue-professional/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Blue Professional
-description: A restrained, consulting-grade presentation system on a warm cream canvas (#fdfae7) with a single saturated cobalt blue (#1e2bfa) as the only accent color. Display type runs Space Grotesk for headlines and numerical callouts; Inter handles body and chrome. Cards are soft-tinted cobalt at 4% opacity with 1.5px translucent borders and 10-14px rounded corners — quiet, never bordered in solid color. The aesthetic borrows from investment-research reports, McKinsey-grade quarterly briefings, and contemporary financial dashboards — measured, data-dense without feeling crowded, and unmistakably professional. The system is built for executive readability at distance, with strong typographic hierarchy and a single accent color carrying every emphasis moment.
-
+description: A restrained, consulting-grade presentation system on a warm cream canvas (#fdfae7) with a single saturated cobalt
+  blue (#1e2bfa) as the only accent color. Display type runs Space Grotesk for headlines and numerical callouts; Inter handles
+  body and chrome. Cards are soft-tinted cobalt at 4% opacity with 1.5px translucent borders and 10-14px rounded corners —
+  quiet, never bordered in solid color. The aesthetic borrows from investment-research reports, McKinsey-grade quarterly briefings,
+  and contemporary financial dashboards — measured, data-dense without feeling crowded, and unmistakably professional. The
+  system is built for executive readability at distance, with strong typographic hierarchy and a single accent color carrying
+  every emphasis moment.
 colors:
-  bg: "#fdfae7"
-  primary: "#1e2bfa"
-  text: "#111111"
-  text-muted: "#6b6b6b"
-  text-light: "#9a9a9a"
-  accent-light: "rgba(30, 43, 250, 0.08)"
-  accent-medium: "rgba(30, 43, 250, 0.15)"
-  border: "rgba(30, 43, 250, 0.2)"
-  card-bg: "rgba(30, 43, 250, 0.04)"
-  positive: "#059669"
-  negative: "#dc2626"
-
+  bg: '#fdfae7'
+  primary: '#1e2bfa'
+  text: '#111111'
+  text-muted: '#6b6b6b'
+  text-light: '#9a9a9a'
+  accent-light: rgba(30, 43, 250, 0.08)
+  accent-medium: rgba(30, 43, 250, 0.15)
+  border: rgba(30, 43, 250, 0.2)
+  card-bg: rgba(30, 43, 250, 0.04)
+  positive: '#059669'
+  negative: '#dc2626'
 typography:
   h1:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
-    fontSize: "clamp(44.8px, 5vw, 67.2px)"
+    fontSize: clamp(44.8px, 5vw, 67.2px)
     lineHeight: 1.1
     letterSpacing: -0.02em
   h2:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(28.8px, 3vw, 41.6px)"
+    fontSize: clamp(28.8px, 3vw, 41.6px)
     lineHeight: 1.1
     letterSpacing: -0.02em
   h3:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(17.6px, 1.8vw, 24px)"
+    fontSize: clamp(17.6px, 1.8vw, 24px)
     lineHeight: 1.3
     letterSpacing: -0.02em
   h4-eyebrow:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(13.6px, 1.2vw, 16px)"
+    fontSize: clamp(13.6px, 1.2vw, 16px)
     lineHeight: 1.1
     letterSpacing: 0.08em
     textTransform: uppercase
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   body:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(13.6px, 1.1vw, 16.8px)"
+    fontSize: clamp(13.6px, 1.1vw, 16.8px)
     lineHeight: 1.6
-    color: "{colors.text-muted}"
+    color: '{colors.text-muted}'
   metric-value:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
-    fontSize: "clamp(35.2px, 3.4vw, 48px)"
+    fontSize: clamp(35.2px, 3.4vw, 48px)
     lineHeight: 1
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   metric-label:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(15.2px, 1.3vw, 17.6px)"
+    fontSize: clamp(15.2px, 1.3vw, 17.6px)
     lineHeight: 1.3
-    color: "{colors.text}"
+    color: '{colors.text}'
   metric-desc:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(12.5px, 0.95vw, 14.4px)"
+    fontSize: clamp(12.5px, 0.95vw, 14.4px)
     lineHeight: 1.5
-    color: "{colors.text-muted}"
+    color: '{colors.text-muted}'
   metric-support:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(12px, 0.9vw, 13.6px)"
+    fontSize: clamp(12px, 0.9vw, 13.6px)
     lineHeight: 1.45
-    color: "{colors.text-muted}"
+    color: '{colors.text-muted}'
   stat-num:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
-    fontSize: "clamp(25.6px, 2.4vw, 33.6px)"
+    fontSize: clamp(25.6px, 2.4vw, 33.6px)
     lineHeight: 1
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   stat-name:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(13.6px, 1vw, 15.2px)"
+    fontSize: clamp(13.6px, 1vw, 15.2px)
     lineHeight: 1.35
-    color: "{colors.text}"
+    color: '{colors.text}'
   stat-context:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 400
     fontSize: 12px
     lineHeight: 1.4
-    color: "{colors.text-light}"
+    color: '{colors.text-light}'
   agenda-num:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
     fontSize: 28.8px
     lineHeight: 1
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   insight-num:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 12.5px
     lineHeight: 1.7
     letterSpacing: 0.05em
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   split-highlight:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(18.4px, 1.55vw, 24px)"
+    fontSize: clamp(18.4px, 1.55vw, 24px)
     lineHeight: 1.4
-    color: "{colors.text}"
+    color: '{colors.text}'
   blockquote:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(25.6px, 2.8vw, 38.4px)"
+    fontSize: clamp(25.6px, 2.8vw, 38.4px)
     lineHeight: 1.35
-    color: "{colors.text}"
+    color: '{colors.text}'
   quote-mark:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
-    fontSize: "128px"
+    fontSize: 128px
     lineHeight: 0.5
-    color: "{colors.primary}"
+    color: '{colors.primary}'
     opacity: 0.15
   step-circle-text:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 700
     fontSize: 20.8px
     lineHeight: 1
   step-title:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(15.2px, 1.4vw, 18.4px)"
+    fontSize: clamp(15.2px, 1.4vw, 18.4px)
     lineHeight: 1.2
   bar-label:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(12.8px, 1.1vw, 16px)"
+    fontSize: clamp(12.8px, 1.1vw, 16px)
     lineHeight: 1.3
-    color: "{colors.text}"
+    color: '{colors.text}'
   bar-pct:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 15.2px
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   tag:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
     fontSize: 12px
     lineHeight: 1
-    color: "{colors.primary}"
+    color: '{colors.primary}'
   counter:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
     fontSize: 12.8px
     lineHeight: 1
     letterSpacing: 0.05em
-    color: "{colors.text-muted}"
+    color: '{colors.text-muted}'
   meta:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 400
     fontSize: 12.8px
     lineHeight: 1.4
     letterSpacing: 0.05em
-    color: "{colors.text-light}"
+    color: '{colors.text-light}'
   cite:
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
     fontSize: 12.5px
     lineHeight: 1.4
     letterSpacing: 0.04em
     textTransform: uppercase
-    color: "{colors.text-muted}"
-
+    color: '{colors.text-muted}'
 spacing:
-  pad-slide-x: "4vw"
-  pad-slide-y-top: "3.5vw"
-  pad-slide-y-bottom: "8.5vh"
-  pad-card-lg: "1.5rem 1.6rem"
-  pad-card-md: "1.4rem 1.5rem"
-  pad-card-sm: "1rem 1.2rem"
-  pad-mini: "0.9rem 1rem"
-  gap-grid-lg: "3.5rem"
-  gap-grid-md: "2rem 3rem"
-  gap-grid-sm: "1.5rem"
-  gap-cards: "1.2rem"
-  gap-mini: "1rem"
-  header-margin: "2.5vh"
-  accent-line-width: "60px"
-  accent-line-height: "4px"
-
+  pad-slide-x: 4vw
+  pad-slide-y-top: 3.5vw
+  pad-slide-y-bottom: 8.5vh
+  pad-card-lg: 1.5rem 1.6rem
+  pad-card-md: 1.4rem 1.5rem
+  pad-card-sm: 1rem 1.2rem
+  pad-mini: 0.9rem 1rem
+  gap-grid-lg: 3.5rem
+  gap-grid-md: 2rem 3rem
+  gap-grid-sm: 1.5rem
+  gap-cards: 1.2rem
+  gap-mini: 1rem
+  header-margin: 2.5vh
+  accent-line-width: 60px
+  accent-line-height: 4px
 canvas:
   width: 100vw
   height: 100vh
-  background: "{colors.bg}"
-
+  background: '{colors.bg}'
 radii:
-  pill: "100px"
-  card-lg: "14px"
-  card-md: "12px"
-  card-sm: "10px"
-  bar: "6px"
-  circle: "50%"
-
+  pill: 100px
+  card-lg: 14px
+  card-md: 12px
+  card-sm: 10px
+  bar: 6px
+  circle: 50%
 components:
   card-tinted:
-    background: "{colors.card-bg}"
-    border: "1.5px solid {colors.border}"
+    background: '{colors.card-bg}'
+    border: 1.5px solid {colors.border}
     borderRadius: 14px
-    padding: "1.5rem 1.6rem"
-    description: "Primary content card. Cobalt tinted at 4% with a 20% cobalt 1.5px border. Soft 14px radius. Never solid-colored, never outlined in full primary."
+    padding: 1.5rem 1.6rem
+    description: Primary content card. Cobalt tinted at 4% with a 20% cobalt 1.5px border. Soft 14px radius. Never solid-colored,
+      never outlined in full primary.
   card-tinted-sm:
-    background: "{colors.card-bg}"
-    border: "1px solid {colors.border}"
+    background: '{colors.card-bg}'
+    border: 1px solid {colors.border}
     borderRadius: 12px
-    padding: "1.4rem 1.5rem"
-    description: "Compact tinted card with 1px border. Used for stat cells and small data blocks."
+    padding: 1.4rem 1.5rem
+    description: Compact tinted card with 1px border. Used for stat cells and small data blocks.
   card-tinted-xs:
-    background: "{colors.card-bg}"
-    border: "1px solid {colors.border}"
+    background: '{colors.card-bg}'
+    border: 1px solid {colors.border}
     borderRadius: 10px
-    padding: "0.9rem 1rem"
-    description: "Mini tinted card used for inline mini-stats."
+    padding: 0.9rem 1rem
+    description: Mini tinted card used for inline mini-stats.
   detail-block:
-    background: "{colors.card-bg}"
-    border: "1px solid {colors.border}"
+    background: '{colors.card-bg}'
+    border: 1px solid {colors.border}
     borderRadius: 10px
-    padding: "1rem 1.2rem"
-    description: "Detail block holding a small h3 + a bulleted ul. Used in detail-analysis grids."
+    padding: 1rem 1.2rem
+    description: Detail block holding a small h3 + a bulleted ul. Used in detail-analysis grids.
   tag-pill:
-    background: "{colors.accent-light}"
-    color: "{colors.primary}"
-    padding: "0.35rem 0.9rem"
+    background: '{colors.accent-light}'
+    color: '{colors.primary}'
+    padding: 0.35rem 0.9rem
     borderRadius: 100px
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 500
     fontSize: 12px
-    description: "Pill-shaped tag sitting in the top-right of the slide-header. Fully rounded, soft cobalt tint background, cobalt text."
+    description: Pill-shaped tag sitting in the top-right of the slide-header. Fully rounded, soft cobalt tint background,
+      cobalt text.
   cta-button:
-    background: "{colors.primary}"
-    color: "{colors.bg}"
-    padding: "0.9rem 2.2rem"
+    background: '{colors.primary}'
+    color: '{colors.bg}'
+    padding: 0.9rem 2.2rem
     borderRadius: 100px
-    fontFamily: "'Space Grotesk', sans-serif"
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 15.2px
-    description: "Primary CTA. Fully rounded solid cobalt pill with cream text. Hover lifts -2 with a soft cobalt drop shadow."
+    description: Primary CTA. Fully rounded solid cobalt pill with cream text. Hover lifts -2 with a soft cobalt drop shadow.
   nav-btn:
     width: 44px
     height: 44px
     borderRadius: 50%
-    border: "1.5px solid {colors.border}"
-    background: "{colors.bg}"
-    color: "{colors.primary}"
-    description: "Circular nav-arrow button. Hover inverts: cobalt fill, cream icon. Disabled state at 30% opacity."
+    border: 1.5px solid {colors.border}
+    background: '{colors.bg}'
+    color: '{colors.primary}'
+    description: 'Circular nav-arrow button. Hover inverts: cobalt fill, cream icon. Disabled state at 30% opacity.'
   accent-line:
     width: 60px
     height: 4px
-    background: "{colors.primary}"
+    background: '{colors.primary}'
     borderRadius: 2px
-    description: "Short horizontal cobalt rule, 60×4px, slightly rounded. Used above cover titles and as eyebrow separators."
+    description: Short horizontal cobalt rule, 60×4px, slightly rounded. Used above cover titles and as eyebrow separators.
   accent-dot:
     width: 8px
     height: 8px
-    background: "{colors.primary}"
+    background: '{colors.primary}'
     borderRadius: 50%
-    description: "Small inline cobalt dot. Decorative inline marker."
+    description: Small inline cobalt dot. Decorative inline marker.
   bar-track:
     height: 28px
-    background: "{colors.accent-light}"
+    background: '{colors.accent-light}'
     borderRadius: 6px
-    description: "Horizontal bar chart track. Soft cobalt tint with 6px rounded corners."
+    description: Horizontal bar chart track. Soft cobalt tint with 6px rounded corners.
   bar-fill:
-    height: "100%"
-    background: "{colors.primary}"
+    height: 100%
+    background: '{colors.primary}'
     borderRadius: 6px
-    description: "Solid cobalt fill inside bar-track. Width carries the data value. Animates from 0 to value on slide entry."
+    description: Solid cobalt fill inside bar-track. Width carries the data value. Animates from 0 to value on slide entry.
   step-circle:
     width: 56px
     height: 56px
     borderRadius: 50%
-    background: "{colors.primary}"
-    color: "{colors.bg}"
-    description: "Circular numbered step marker in cobalt with cream numeral. Sequential steps reduce opacity (1.0 → 0.85 → 0.7 → 0.55) to suggest fade-into-future."
+    background: '{colors.primary}'
+    color: '{colors.bg}'
+    description: Circular numbered step marker in cobalt with cream numeral. Sequential steps reduce opacity (1.0 → 0.85 →
+      0.7 → 0.55) to suggest fade-into-future.
   metric-change-positive:
-    color: "{colors.positive}"
-    fontFamily: "'Space Grotesk', sans-serif"
+    color: '{colors.positive}'
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 12.5px
-    description: "Inline positive-change chip with up-arrow glyph and percentage. Green text inline; no border or fill."
+    description: Inline positive-change chip with up-arrow glyph and percentage. Green text inline; no border or fill.
   metric-change-negative:
-    color: "{colors.negative}"
-    fontFamily: "'Space Grotesk', sans-serif"
+    color: '{colors.negative}'
+    fontFamily: '''Space Grotesk'', sans-serif'
     fontWeight: 600
     fontSize: 12.5px
-    description: "Inline negative-change chip with up/down-arrow glyph and percentage. Red text inline; no border or fill."
+    description: Inline negative-change chip with up/down-arrow glyph and percentage. Red text inline; no border or fill.
   insight-list-item:
-    paddingLeft: "2.6rem"
-    description: "Numbered insight list with a Space Grotesk 600 counter (decimal-leading-zero) at position absolute left. Numbers in cobalt, body in default text color."
+    paddingLeft: 2.6rem
+    description: Numbered insight list with a Space Grotesk 600 counter (decimal-leading-zero) at position absolute left.
+      Numbers in cobalt, body in default text color.
   split-highlight-block:
-    background: "{colors.accent-light}"
-    borderLeft: "4px solid {colors.primary}"
+    background: '{colors.accent-light}'
+    borderLeft: 4px solid {colors.primary}
     borderRadius: 12px
-    padding: "1.3rem 1.5rem"
-    description: "Highlighted callout block with cobalt left rule and tinted cobalt fill. Used for inline pull-quotes inside split-column layouts."
+    padding: 1.3rem 1.5rem
+    description: Highlighted callout block with cobalt left rule and tinted cobalt fill. Used for inline pull-quotes inside
+      split-column layouts.
   progress-bar:
-    position: "fixed bottom 0 left 0"
+    position: fixed bottom 0 left 0
     height: 3px
-    background: "{colors.primary}"
-    description: "Thin cobalt progress bar at the bottom edge of the viewport, width grows linearly with slide index."
+    background: '{colors.primary}'
+    description: Thin cobalt progress bar at the bottom edge of the viewport, width grows linearly with slide index.
   cover-decoration:
-    background: "{colors.accent-light}"
-    clipPath: "polygon(30% 0, 100% 0, 100% 100%, 0% 100%)"
-    description: "Diagonal accent panel filling the right ~35% of cover surfaces. Soft cobalt tint, clip-path angled cut on the left edge."
+    background: '{colors.accent-light}'
+    clipPath: polygon(30% 0, 100% 0, 100% 100%, 0% 100%)
+    description: Diagonal accent panel filling the right ~35% of cover surfaces. Soft cobalt tint, clip-path angled cut on
+      the left edge.
   cover-dots:
-    layout: "3x3 grid of 6px cobalt dots at 12px gap, 25% opacity"
-    description: "Small dotted decoration used on cover and other open-space surfaces."
+    layout: 3x3 grid of 6px cobalt dots at 12px gap, 25% opacity
+    description: Small dotted decoration used on cover and other open-space surfaces.
   closing-circles:
-    border: "1px solid {colors.border}"
-    borderRadius: "50%"
-    description: "Two concentric centered circles (500px outer, 360px inner) as atmospheric decoration on closing-class surfaces. Opacity 0.3-0.4."
+    border: 1px solid {colors.border}
+    borderRadius: 50%
+    description: Two concentric centered circles (500px outer, 360px inner) as atmospheric decoration on closing-class surfaces.
+      Opacity 0.3-0.4.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

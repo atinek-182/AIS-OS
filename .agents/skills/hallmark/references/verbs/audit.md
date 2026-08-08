@@ -1,3 +1,23 @@
+---
+title: '`hallmark audit`'
+domain: skill
+summary: 'Read the file(s) the user pointed at. For each finding, return: - **Tell** — the named anti-pattern from [`anti-patterns.md`](../anti-patterns.md).'
+critical_directives:
+- 'Stamp-vs-page check.** If the audited file contains a `/* Hallmark · macrostructure: <name> · ... */` stamp, verify the '
+- 'Genre-aware audit.** If the audited file''s stamp names a genre (e.g. `genre: atmospheric`), apply the genre-scoped overr'
+- 'No stamp at all on a system-managed project** → flag as `major: missing system reference`. Every page on a `design.md`
+  p'
+section_outline:
+- '`hallmark audit`'
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/verbs/audit.md
+- When reading context for `hallmark audit`
+tags:
+- skill
+- audit
+updated: '2026-08-08'
+---
+
 # `hallmark audit`
 
 Read the file(s) the user pointed at. For each finding, return:

@@ -1,3 +1,25 @@
+---
+title: 'Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide'
+domain: audit
+summary: '**Target Operator:** Atinek Maurya **Goal:** Complete Operational Reference for WhatsApp Link Customization, Role
+  Permissions, and Google Sheets Synchronization.'
+critical_directives:
+- '`encodeURIComponent(...)` automatically handles spaces and special characters so the link never breaks.'
+section_outline:
+- 'Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide'
+- 1. HOW TO CUSTOMIZE THE WHATSAPP MESSAGE IN NOTION
+- 'Advanced Native Notion Formula 2.0 WhatsApp Formula (Zero JS Error):'
+- 'Simple Short Version:'
+- 'How to Modify the Text:'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/NOTION_CUSTOMIZATION_AND_PERMISSIONS_GUIDE.md
+- 'When reading context for Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide'
+tags:
+- audit
+- NOTION_CUSTOMIZATION_AND_PERMISSIONS_GUIDE
+updated: '2026-08-08'
+---
+
 # Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide
 
 **Target Operator:** Atinek Maurya  

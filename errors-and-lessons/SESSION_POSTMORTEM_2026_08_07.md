@@ -1,3 +1,30 @@
+---
+title: ZORIXEL AIOS Session Post-Mortem & System Evolution Report
+domain: architecture
+summary: 'Date: 2026-08-07 · Session ID: 264d906c-2004-4712-95e5-ff357cb649d9 · Operator: Atinek Maurya This session executed
+  a comprehensive read-only OS audit (`/os-audit`), identified root-cause failure modes in system prompt loading and context
+  retrieval, '
+critical_directives:
+- 'Empirical Root Cause**: `GEMINI.md` grew to 35,068 bytes (301 lines) by redundantly listing 65 custom skills when the An'
+- 'Mandatory Pre-Execution Rule**: System prompt rules files (`GEMINI.md` and `AGENTS.md`) MUST be kept under 15KB in size.'
+- 'Category**: Shell & Encoding (Rule 1.7)'
+- 'Mandatory Pre-Execution Rule**: All Python CLI automation scripts in `scripts/*.py` MUST include standard UTF-8 stdout
+  r'
+section_outline:
+- ZORIXEL AIOS Session Post-Mortem & System Evolution Report
+- Executive Summary
+- '📑 SECTION 1: COMPREHENSIVE TERMINAL, SYNTAX, API & ENVIRONMENT ERROR CATALOG'
+- 'Error 1: System Prompt Truncation via `GEMINI.md` Bloat'
+- Atinek Maurya's AI Operating System (`GEMINI.md`)
+read_triggers:
+- When working on architecture in errors-and-lessons/SESSION_POSTMORTEM_2026_08_07.md
+- When reading context for ZORIXEL AIOS Session Post-Mortem & System Evolution Report
+tags:
+- architecture
+- SESSION_POSTMORTEM_2026_08_07
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS Session Post-Mortem & System Evolution Report
 Date: 2026-08-07 · Session ID: 264d906c-2004-4712-95e5-ff357cb649d9 · Operator: Atinek Maurya
 

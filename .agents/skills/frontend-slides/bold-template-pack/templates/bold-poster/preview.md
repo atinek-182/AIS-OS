@@ -1,3 +1,28 @@
+---
+title: Bold Poster Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/bold-poster/design.md`'
+critical_directives:
+- 'Signature move: Single tomato red ({colors.red}) as the only accent — used for every numerical figure, every section rul'
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+- Never place the template name or slug on the slide itself; mention it only in the chat message.
+section_outline:
+- Bold Poster Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/bold-poster/preview.md
+- When reading context for Bold Poster Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Bold Poster Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

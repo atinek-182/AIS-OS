@@ -1,3 +1,29 @@
+---
+title: Macrostructures
+domain: skill
+summary: Twenty-one named landing-page shapes. **Pick one before you write code.** Each is a complete fingerprint — heading
+  placement, body composition, divider language, button voice, image treatment, reveal pattern — bundled as a single named
+  choice. Pickin
+critical_directives:
+- 'Pick one. Then read ONLY that one file** from `references/macrostructures/`. Do not load the whole catalogue. Slugs are '
+- 10 · Specimen** — Numbered left-margin labels, huge serif display, asymmetric column spans, hairline rules, typographic-
+- Voice rules for SaaS sections:**
+- Testimonials:** include the quoted person's role *and* company. Abstract "Engineering Manager" testimonials are slop. If
+section_outline:
+- Macrostructures
+- Diversification rule (mandatory)
+- Hero polish patterns
+- Nav and footer voice
+- The 21 macrostructures — index
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures.md
+- When reading context for Macrostructures
+tags:
+- skill
+- macrostructures
+updated: '2026-08-08'
+---
+
 # Macrostructures
 
 Twenty-one named landing-page shapes. **Pick one before you write code.** Each is a complete fingerprint — heading placement, body composition, divider language, button voice, image treatment, reveal pattern — bundled as a single named choice. Picking a macrostructure is faster, less error-prone, and *categorically more varied* than choosing six independent axes from `structure.md`.

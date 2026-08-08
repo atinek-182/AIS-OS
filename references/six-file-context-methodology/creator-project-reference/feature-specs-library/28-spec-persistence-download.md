@@ -1,3 +1,24 @@
+---
+title: 28 Spec Persistence Download
+domain: architecture
+summary: 'Persist generated specs with Vercel Blob and Prisma, then add a secure download route so users can retrieve their
+  generated spec files. Ensure a `ProjectSpec` Prisma model exists with:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Notes
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/28-spec-persistence-download.md
+- When reading context for 28 Spec Persistence Download
+tags:
+- architecture
+- 28-spec-persistence-download
+updated: '2026-08-08'
+---
+
 Persist generated specs with Vercel Blob and Prisma, then add a secure download route so users can retrieve their generated spec files.
 
 ### Implementation

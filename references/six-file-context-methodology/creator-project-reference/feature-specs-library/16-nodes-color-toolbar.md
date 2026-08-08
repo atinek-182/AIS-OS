@@ -1,3 +1,23 @@
+---
+title: 16 Nodes Color Toolbar
+domain: architecture
+summary: Add a small floating color toolbar so selected nodes can change both their background and text color directly on
+  the canvas. 1. Check `ui-context.md` for the node color palette.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/16-nodes-color-toolbar.md
+- When reading context for 16 Nodes Color Toolbar
+tags:
+- architecture
+- 16-nodes-color-toolbar
+updated: '2026-08-08'
+---
+
 Add a small floating color toolbar so selected nodes can change both their background and text color directly on the canvas.
 
 ## Implementation

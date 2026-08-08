@@ -1,3 +1,23 @@
+---
+title: ZORIXEL Brand Positioning & Identity Spec
+domain: brand
+summary: '- **Brand Name**: ZORIXEL - **Founder**: Atinek Maurya'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL Brand Positioning & Identity Spec
+- 1. Brand Identity
+- 2. Target Audience Segments
+- 3. Brand Aesthetic & Visual Standards
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/context/brand-positioning.md
+- When reading context for ZORIXEL Brand Positioning & Identity Spec
+tags:
+- brand
+- brand-positioning
+updated: '2026-08-08'
+---
+
 # ZORIXEL Brand Positioning & Identity Spec
 
 ## 1. Brand Identity

@@ -1,20 +1,46 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: sparse and centered.** Vellum slides are pinned essays — each slide holds a small amount of content,'
+- Dusty teal (`{colors.teal}`) is the second accent — used only for the large quote-mark glyph, the pin-note text, kickers
+- 'Italic is structural, not decorative: serif italic at display scale is the system''s identity, never the upright roman.'
+- 'Teal** (`{colors.teal}` — #3A7878): Dusty desaturated teal. The system''s second accent. Used only for: the large quote-m'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/vellum/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Vellum
-description: An essay-pinned-to-a-wall presentation system — a single monochromatic field of deep periwinkle (#2A3870) with warm chartreuse-yellow type (#E8D85C) floating centered on it, every slide. Italic Cormorant Garamond carries every headline at all sizes — the italic serif is the personality, against the bold colorfield. DM Sans handles body in a quiet supporting role. Courier Prime mono provides the typed annotation voice — appearing as a "pin-note" attribution sitting in the bottom-left corner of every slide. The mood is gallery exhibition wall meets archive folder — quiet, monochromatic, deeply still. One color, two warm typefaces, zero motion.
-
+description: An essay-pinned-to-a-wall presentation system — a single monochromatic field of deep periwinkle (#2A3870) with
+  warm chartreuse-yellow type (#E8D85C) floating centered on it, every slide. Italic Cormorant Garamond carries every headline
+  at all sizes — the italic serif is the personality, against the bold colorfield. DM Sans handles body in a quiet supporting
+  role. Courier Prime mono provides the typed annotation voice — appearing as a "pin-note" attribution sitting in the bottom-left
+  corner of every slide. The mood is gallery exhibition wall meets archive folder — quiet, monochromatic, deeply still. One
+  color, two warm typefaces, zero motion.
 colors:
-  navy: "#2A3870"
-  navy-alt: "#343F80"
-  navy-deep: "#1F2858"
-  navy-mid: "#34407A"
-  yellow: "#E8D85C"
-  yellow-2: "rgba(232,216,92,0.62)"
-  yellow-3: "rgba(232,216,92,0.32)"
-  emphasis-yellow: "#F5E168"
-  teal: "#3A7878"
-  border: "rgba(232,216,92,0.20)"
-
+  navy: '#2A3870'
+  navy-alt: '#343F80'
+  navy-deep: '#1F2858'
+  navy-mid: '#34407A'
+  yellow: '#E8D85C'
+  yellow-2: rgba(232,216,92,0.62)
+  yellow-3: rgba(232,216,92,0.32)
+  emphasis-yellow: '#F5E168'
+  teal: '#3A7878'
+  border: rgba(232,216,92,0.20)
 color-aliases:
   c-bg: navy
   c-bg-alt: navy-alt
@@ -26,169 +52,170 @@ color-aliases:
   c-emphasis: emphasis-yellow
   c-accent: teal
   c-border: border
-
 typography:
   display:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 11vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 0.92
     letterSpacing: -0.01em
   h1:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 7vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 0.95
     letterSpacing: -0.01em
   h2:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 4vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 1.05
   h3:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 2.4vw
     fontWeight: 500
     fontStyle: italic
     lineHeight: 1.15
   quote-text:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 3.2vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 1.25
   quote-mark:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 7vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 0.6
-    color: "{colors.teal}"
+    color: '{colors.teal}'
   stat-value:
-    fontFamily: "Cormorant Garamond, Noto Serif SC, Georgia, serif"
+    fontFamily: Cormorant Garamond, Noto Serif SC, Georgia, serif
     fontSize: 5.5vw
     fontWeight: 400
     fontStyle: italic
     lineHeight: 1
     letterSpacing: -0.02em
   lead:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.5vw
     fontWeight: 400
     lineHeight: 1.6
   body:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.05vw
     fontWeight: 400
     lineHeight: 1.65
   caption:
-    fontFamily: "DM Sans, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, system-ui, sans-serif
     fontSize: 0.85vw
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "Courier Prime, Courier New, monospace"
+    fontFamily: Courier Prime, Courier New, monospace
     fontSize: 0.72vw
     fontWeight: 400
     letterSpacing: 0.06em
   pin-note:
-    fontFamily: "Courier Prime, Courier New, monospace"
+    fontFamily: Courier Prime, Courier New, monospace
     fontSize: 1.15vw
     fontWeight: 500
     lineHeight: 1.5
-    color: "{colors.teal}"
+    color: '{colors.teal}'
     letterSpacing: 0.01em
   bar-val:
-    fontFamily: "Courier Prime, Courier New, monospace"
+    fontFamily: Courier Prime, Courier New, monospace
     fontSize: 1.1vw
     fontWeight: 400
     lineHeight: 1
-
 spacing:
   pad-x: 6vw
   pad-y: 6vh
   gap-lg: 5vh
   gap-md: 3vh
   gap-sm: 1.5vh
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   pin-annotation:
-    position: "absolute bottom-left, padding ~0.9 * pad-y from bottom and 1 * pad-x from left"
-    typography: "{typography.pin-note}"
-    color: "{colors.teal}"
-    maxWidth: "22vw"
-    description: "The system's signature element — a small stack of Courier Prime mono lines in dusty teal, sitting in the bottom-left of every slide. Holds slide counter (e.g., '03 / 09'), a short pinned label, and an optional second pin note. Functions as the 'tag stuck to the wall.'"
+    position: absolute bottom-left, padding ~0.9 * pad-y from bottom and 1 * pad-x from left
+    typography: '{typography.pin-note}'
+    color: '{colors.teal}'
+    maxWidth: 22vw
+    description: The system's signature element — a small stack of Courier Prime mono lines in dusty teal, sitting in the
+      bottom-left of every slide. Holds slide counter (e.g., '03 / 09'), a short pinned label, and an optional second pin
+      note. Functions as the 'tag stuck to the wall.'
   kicker:
-    typography: "{typography.label}"
-    color: "{colors.teal}"
-    description: "Small Courier Prime mono label in dusty teal, sits above a headline as a section marker."
+    typography: '{typography.label}'
+    color: '{colors.teal}'
+    description: Small Courier Prime mono label in dusty teal, sits above a headline as a section marker.
   rule:
     width: 28px
     height: 1px
-    background: "{colors.teal}"
-    description: "A 28px hairline accent rule in dusty teal, used as a small kicker separator."
+    background: '{colors.teal}'
+    description: A 28px hairline accent rule in dusty teal, used as a small kicker separator.
   chrome-bar:
-    borderBottom: "1px solid {colors.border}"
-    paddingBottom: "{spacing.gap-sm}"
-    marginBottom: "{spacing.gap-md}"
-    description: "Top chrome bar — mono label left, mono counter right, low-opacity hairline rule beneath."
+    borderBottom: 1px solid {colors.border}
+    paddingBottom: '{spacing.gap-sm}'
+    marginBottom: '{spacing.gap-md}'
+    description: Top chrome bar — mono label left, mono counter right, low-opacity hairline rule beneath.
   foot-bar:
-    borderTop: "1px solid {colors.border}"
-    paddingTop: "{spacing.gap-sm}"
-    marginTop: "{spacing.gap-md}"
-    description: "Bottom chrome bar — mirror of chrome-bar."
+    borderTop: 1px solid {colors.border}
+    paddingTop: '{spacing.gap-sm}'
+    marginTop: '{spacing.gap-md}'
+    description: Bottom chrome bar — mirror of chrome-bar.
   bullet-list-numbered:
-    listStyle: "none"
-    counter: "list-counter"
-    markerFontFamily: "{typography.label.fontFamily}"
-    markerColor: "{colors.teal}"
-    markerSize: "{typography.label.fontSize}"
-    description: "Numbered list using CSS counters — the counter renders in Courier Prime mono at label size in dusty teal, with a 2em column for the number and 0.5em gap to the body."
+    listStyle: none
+    counter: list-counter
+    markerFontFamily: '{typography.label.fontFamily}'
+    markerColor: '{colors.teal}'
+    markerSize: '{typography.label.fontSize}'
+    description: Numbered list using CSS counters — the counter renders in Courier Prime mono at label size in dusty teal,
+      with a 2em column for the number and 0.5em gap to the body.
   pin-stat:
-    borderRight: "1px solid {colors.border}"
-    padding: "{spacing.gap-md}"
-    description: "Vertically-arranged centered stat (italic serif numeral above mono label), separated from neighbors by a single 1px low-opacity hairline. Last stat in row drops the border."
+    borderRight: 1px solid {colors.border}
+    padding: '{spacing.gap-md}'
+    description: Vertically-arranged centered stat (italic serif numeral above mono label), separated from neighbors by a
+      single 1px low-opacity hairline. Last stat in row drops the border.
   pin-stat-val:
-    typography: "{typography.stat-value}"
-    color: "{colors.yellow}"
-    description: "Large italic serif stat numeral (5.5vw italic Cormorant Garamond), centered in a pin-stat tile."
+    typography: '{typography.stat-value}'
+    color: '{colors.yellow}'
+    description: Large italic serif stat numeral (5.5vw italic Cormorant Garamond), centered in a pin-stat tile.
   pin-stat-label:
-    typography: "{typography.caption}"
-    fontFamily: "{typography.label.fontFamily}"
-    color: "{colors.yellow-2}"
-    description: "Small mono caption beneath a pin-stat numeral."
+    typography: '{typography.caption}'
+    fontFamily: '{typography.label.fontFamily}'
+    color: '{colors.yellow-2}'
+    description: Small mono caption beneath a pin-stat numeral.
   compare-panel-dark:
-    background: "{colors.navy-deep}"
-    description: "Left compare panel — a slightly deeper navy to create internal contrast against the standard navy field."
+    background: '{colors.navy-deep}'
+    description: Left compare panel — a slightly deeper navy to create internal contrast against the standard navy field.
   compare-panel-light:
-    background: "{colors.navy-mid}"
-    borderLeft: "1px solid {colors.border}"
-    description: "Right compare panel — a slightly lighter navy with a hairline left-border, creating the two-shade panel pair."
+    background: '{colors.navy-mid}'
+    borderLeft: 1px solid {colors.border}
+    description: Right compare panel — a slightly lighter navy with a hairline left-border, creating the two-shade panel pair.
   bar-fill-default:
-    background: "{colors.yellow-3}"
-    description: "Default chart bar fill — yellow at 32% opacity (the tier-3 muted color)."
+    background: '{colors.yellow-3}'
+    description: Default chart bar fill — yellow at 32% opacity (the tier-3 muted color).
   bar-fill-accent:
-    background: "{colors.yellow}"
-    description: "Highlighted chart bar — full yellow."
+    background: '{colors.yellow}'
+    description: Highlighted chart bar — full yellow.
   chart-baseline:
     height: 1px
-    background: "{colors.border}"
-    description: "1px hairline baseline beneath chart bars."
+    background: '{colors.border}'
+    description: 1px hairline baseline beneath chart bars.
   img-placeholder:
-    background: "rgba(42,56,112,0.12)"
-    border: "1px dashed {colors.border}"
-    description: "Image slot — translucent navy fill with a dashed yellow-low-opacity border, centered mono label inside."
+    background: rgba(42,56,112,0.12)
+    border: 1px dashed {colors.border}
+    description: Image slot — translucent navy fill with a dashed yellow-low-opacity border, centered mono label inside.
   quote-mark:
-    typography: "{typography.quote-mark}"
-    color: "{colors.teal}"
-    description: "A 7vw italic Cormorant Garamond opening quote glyph in dusty teal, sitting centered above a centered pull-quote. The teal color is the system's only large-graphic accent."
+    typography: '{typography.quote-mark}'
+    color: '{colors.teal}'
+    description: A 7vw italic Cormorant Garamond opening quote glyph in dusty teal, sitting centered above a centered pull-quote.
+      The teal color is the system's only large-graphic accent.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

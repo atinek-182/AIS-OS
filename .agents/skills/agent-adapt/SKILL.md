@@ -1,11 +1,31 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/agent-adapt [optional
+  parameters]` in chat.'
+critical_directives:
+- Rules for Translation:**
+- 'Inject a warning callout block above the command:'
+- Warnings added for Claude-only steps.
+- 'System Rules Update**: Updates registered skill paths in **`GEMINI.md`** and **`WORKSPACE_MAP.md`**.'
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Steps
+- 'Step 1: Pre-Migration Deduplication Check'
+- 'Step 2: Extract & Inspect Claude-Specific References'
+read_triggers:
+- When working on skill in .agents/skills/agent-adapt/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: agent-adapt
-description: Migrate, adapt, or copy custom skills, prompts, or files from Claude
-  Code standard to native Antigravity standard, avoiding blind find-and-replaces.
-  Invokable directly via /agent-adapt.
+description: Migrate, adapt, or copy custom skills, prompts, or files from Claude Code standard to native Antigravity standard,
+  avoiding blind find-and-replaces. Invokable directly via /agent-adapt.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

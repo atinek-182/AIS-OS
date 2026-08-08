@@ -1,3 +1,26 @@
+---
+title: Development Workflow
+domain: architecture
+summary: Build this project incrementally using a spec-driven workflow. Context files define what to build, how to build it,
+  and what the current state of progress is. Always implement against these specs — do not infer or invent behavior from scratch.
+  - Work
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Development Workflow
+- Approach
+- Scoping Rules
+- When To Split Work
+- Handling Missing Requirements
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/ai-workflow-rules.md
+- When reading context for Development Workflow
+tags:
+- architecture
+- ai-workflow-rules
+updated: '2026-08-08'
+---
+
 # Development Workflow
 
 ## Approach

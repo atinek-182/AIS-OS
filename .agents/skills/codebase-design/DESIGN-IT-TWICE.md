@@ -1,3 +1,25 @@
+---
+title: Design It Twice
+domain: skill
+summary: When the user wants to explore alternative interfaces for a chosen deepening candidate, use this parallel sub-agent
+  pattern. Based on "Design It Twice" (Ousterhout) — your first idea is unlikely to be the best. Uses the vocabulary in [SKILL.md](SKILL
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Design It Twice
+- Process
+- 1. Frame the problem space
+- 2. Spawn sub-agents
+- 3. Present and compare
+read_triggers:
+- When working on skill in .agents/skills/codebase-design/DESIGN-IT-TWICE.md
+- When reading context for Design It Twice
+tags:
+- skill
+- DESIGN-IT-TWICE
+updated: '2026-08-08'
+---
+
 # Design It Twice
 
 When the user wants to explore alternative interfaces for a chosen deepening candidate, use this parallel sub-agent pattern. Based on "Design It Twice" (Ousterhout) — your first idea is unlikely to be the best.

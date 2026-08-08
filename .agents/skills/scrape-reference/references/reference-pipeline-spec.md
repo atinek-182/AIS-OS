@@ -1,3 +1,27 @@
+---
+title: Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification
+domain: skill
+summary: This document provides the technical reference specification for the Ultimate Site DNA, Full-Code Mirroring, and
+  Master Vault Reference Engine in AIOS. 1. **Strict One-by-One Sequential Execution Guard:**
+critical_directives:
+- NEVER proceed to site $N+1$ without explicit user command.**
+- Any list of examples provided in instructions or prompts (e.g. *"navbars, buttons, heroes, GSAP, WebGL shaders"*) is str
+- The AI agent MUST proactively discover, extract, deconstruct, and document **EVERY SINGLE novel element, component, scri
+section_outline:
+- Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification
+- Core Operational Principles
+- 1. Full Source & Media Mirroring Architecture (`mirror/`)
+- 2. Dynamic Unbounded Master Reference Manual (15+ Categories)
+- 3. Dedicated Master Vault Reference Indexing
+read_triggers:
+- When working on skill in .agents/skills/scrape-reference/references/reference-pipeline-spec.md
+- When reading context for Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification
+tags:
+- skill
+- reference-pipeline-spec
+updated: '2026-08-08'
+---
+
 # Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification
 
 This document provides the technical reference specification for the Ultimate Site DNA, Full-Code Mirroring, and Master Vault Reference Engine in AIOS.

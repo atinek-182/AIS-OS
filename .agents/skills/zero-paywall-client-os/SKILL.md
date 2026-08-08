@@ -1,6 +1,28 @@
 ---
+title: Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
+domain: skill
+summary: 'This skill designs and deploys enterprise-grade client management hubs, student desk OS systems, and operational
+  workflow engines that operate **100% free forever** without recurring monthly SaaS subscriptions (Make.com, n8n cloud, Zapier).
+  It pairs '
+critical_directives:
+- CRITICAL RULE:** Never hardcode column indices (e.g. `sheet.getRange(row, 3)`) in Google Apps Script! Reordering or addi
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
+- Overview & Tri-Mode Execution
+- 🏗️ 4-Layer Zero-Cost Architecture Model
+- Dynamic Header Mapping Pattern (Google Apps Script)
+- 📋 Client Deliverable Checklist
+read_triggers:
+- When working on skill in .agents/skills/zero-paywall-client-os/SKILL.md
+- When reading context for Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: zero-paywall-client-os
-description: Designs zero-subscription client operational hubs using Notion Master Databases, free Google Apps Script triggers, Google Sheets ledgers, and WhatsApp click actions. Guarantees 100% cost freedom without Make.com or n8n monthly fees.
+description: Designs zero-subscription client operational hubs using Notion Master Databases, free Google Apps Script triggers,
+  Google Sheets ledgers, and WhatsApp click actions. Guarantees 100% cost freedom without Make.com or n8n monthly fees.
 argument-hint: '[client_name] [service_type] [features...]'
 ---
 

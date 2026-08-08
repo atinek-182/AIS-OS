@@ -1,4 +1,25 @@
 ---
+title: <Questionnaire title>
+domain: skill
+summary: Turn something the user can't answer alone into a **questionnaire** — a Markdown document they hand to one person
+  to fill in async, or fill out together over a meeting. The recipient holds knowledge the user lacks; the questionnaire pulls
+  it out of t
+critical_directives:
+- 'Grill the send, not the subject.** Interview the user only about the _send_, which they can always answer: who it goes
+  t'
+section_outline:
+- Document structure
+- <Questionnaire title>
+- Context
+- How to answer
+- <Theme heading>
+read_triggers:
+- When working on skill in .agents/skills/to-questionnaire/SKILL.md
+- When reading context for <Questionnaire title>
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: to-questionnaire
 description: Turn a decision you can't fully answer into a questionnaire for someone else to fill in.
 disable-model-invocation: true

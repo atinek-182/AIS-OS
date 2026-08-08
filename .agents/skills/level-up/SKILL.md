@@ -1,12 +1,29 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/level-up [optional parameters]`
+  in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What this skill does
+- What `/level-up` is NOT
+- When `/level-up` runs
+- Inputs the skill reads
+read_triggers:
+- When working on skill in .agents/skills/level-up/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: level-up
-description: Use weekly to find and ship one new automation. Walks the 3Ms interview
-  — Mindset (find the candidate) → Method (scope one) → Machine (build it). Trigger
-  on "let's level up", "what should I automate next", "find me leverage this week",
+description: Use weekly to find and ship one new automation. Walks the 3Ms interview — Mindset (find the candidate) → Method
+  (scope one) → Machine (build it). Trigger on "let's level up", "what should I automate next", "find me leverage this week",
   or as a Friday ritual. One run = one shipped artifact. Invokable directly via /level-up.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

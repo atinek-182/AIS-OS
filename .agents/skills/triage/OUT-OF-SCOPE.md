@@ -1,3 +1,25 @@
+---
+title: Out-of-Scope Knowledge Base
+domain: skill
+summary: 'The `.out-of-scope/` directory in a repo stores persistent records of rejected feature requests. It serves two purposes:
+  1. **Institutional memory** — why a feature was rejected, so the reasoning isn''t lost when the issue is closed'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Out-of-Scope Knowledge Base
+- Directory structure
+- File format
+- Dark Mode
+- Why this is out of scope
+read_triggers:
+- When working on skill in .agents/skills/triage/OUT-OF-SCOPE.md
+- When reading context for Out-of-Scope Knowledge Base
+tags:
+- skill
+- OUT-OF-SCOPE
+updated: '2026-08-08'
+---
+
 # Out-of-Scope Knowledge Base
 
 The `.out-of-scope/` directory in a repo stores persistent records of rejected feature requests. It serves two purposes:

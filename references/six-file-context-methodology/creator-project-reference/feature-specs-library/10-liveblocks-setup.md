@@ -1,3 +1,25 @@
+---
+title: 10 Liveblocks Setup
+domain: architecture
+summary: Set up the realtime collaboration infrastructure using Liveblocks. Configure the `liveblocks.config.ts` at the project
+  root.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Configuration
+- Presence
+- UserMeta
+- Liveblocks Client
+- Auth Route
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/10-liveblocks-setup.md
+- When reading context for 10 Liveblocks Setup
+tags:
+- architecture
+- 10-liveblocks-setup
+updated: '2026-08-08'
+---
+
 Set up the realtime collaboration infrastructure using Liveblocks.
 
 ## Configuration

@@ -1,6 +1,30 @@
 ---
+title: Codebase Design
+domain: skill
+summary: 'Design **deep modules**: a lot of behaviour behind a small interface, placed at a clean seam, testable through that
+  interface. Use this language and these principles wherever code is being designed or restructured. The aim is leverage for
+  callers, lo'
+critical_directives:
+- 'Interface** — everything a caller must know to use the module correctly: the type signature, but also invariants, orderi'
+- '"Interface" as the TypeScript `interface` keyword or a class''s public methods**: too narrow — interface here includes
+  ev'
+section_outline:
+- Codebase Design
+- Glossary
+- Deep vs shallow
+- Principles
+- Designing for testability
+read_triggers:
+- When working on skill in .agents/skills/codebase-design/SKILL.md
+- When reading context for Codebase Design
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: codebase-design
-description: Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.
+description: Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface,
+  find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs
+  the deep-module vocabulary.
 ---
 
 # Codebase Design

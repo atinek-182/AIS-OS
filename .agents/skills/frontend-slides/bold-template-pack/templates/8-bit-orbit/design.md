@@ -1,230 +1,268 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: moderately dense, atmospherically loaded.** The system reads as broken when surfaces are clean and
+  u'
+- 'Three-font stack: Tektur (display), Chakra Petch (body), Space Mono (HUD/labels) — never substitute, never mix outside
+  t'
+- Three neons (cyan, pink, yellow) reserved for display, stats, rules, and label fills — never for body text.
+- Stacked hard offset shadows are the system's depth language — never blurred, never colored on text shadows except in the
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/8-bit-orbit/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: 8-Bit Orbit
-description: A retro-futuristic pixel-art presentation system that fuses 16-bit arcade nostalgia with editorial discipline. Display type runs in Tektur (a chunky geometric display face built on pixel-grid logic) paired with Chakra Petch for body and Space Mono for code-flavored labels and tabular data. The palette pivots on a deep cosmic navy (`#0F1B3D` / `#0A0E27`) lit by three saturated neons — cyan, hot pink, and a high-key yellow — with a soft lavender pastel for warm reprieves. Depth is built from stacked hard offset shadows in 4px increments (the pixel unit), CRT scanlines, atmospheric grain, vignettes, and animated starfields. The effect sits between an arcade cabinet and a Tron-era boardroom — unmistakably digital, intentionally lo-fi, and engineered to feel as if it just booted up.
-
+description: A retro-futuristic pixel-art presentation system that fuses 16-bit arcade nostalgia with editorial discipline.
+  Display type runs in Tektur (a chunky geometric display face built on pixel-grid logic) paired with Chakra Petch for body
+  and Space Mono for code-flavored labels and tabular data. The palette pivots on a deep cosmic navy (`#0F1B3D` / `#0A0E27`)
+  lit by three saturated neons — cyan, hot pink, and a high-key yellow — with a soft lavender pastel for warm reprieves. Depth
+  is built from stacked hard offset shadows in 4px increments (the pixel unit), CRT scanlines, atmospheric grain, vignettes,
+  and animated starfields. The effect sits between an arcade cabinet and a Tron-era boardroom — unmistakably digital, intentionally
+  lo-fi, and engineered to feel as if it just booted up.
 colors:
-  dark-void: "#0A0E27"
-  deep-navy: "#0F1B3D"
-  neon-cyan: "#5EDCF4"
-  neon-pink: "#F0A6CA"
-  neon-yellow: "#F4D03F"
-  soft-lavender: "#E2D5F2"
-  white: "#FFFFFF"
-
+  dark-void: '#0A0E27'
+  deep-navy: '#0F1B3D'
+  neon-cyan: '#5EDCF4'
+  neon-pink: '#F0A6CA'
+  neon-yellow: '#F4D03F'
+  soft-lavender: '#E2D5F2'
+  white: '#FFFFFF'
 shadows:
-  pixel-stack-cyan-yellow: "4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}, 8px 4px 0 0 {colors.neon-yellow}, 4px 8px 0 0 {colors.neon-yellow}, 8px 8px 0 0 {colors.neon-yellow}"
-  pixel-stack-pink-cyan: "4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}, 8px 4px 0 0 {colors.neon-cyan}, 4px 8px 0 0 {colors.neon-cyan}, 8px 8px 0 0 {colors.neon-cyan}"
-  pixel-l-shape: "4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}"
-  pixel-text-shadow: "4px 4px 0 {colors.neon-yellow}, 8px 8px 0 {colors.deep-navy}"
-  pixel-text-shadow-small: "3px 3px 0 {colors.deep-navy}"
-  card-offset: "6px 6px 0 rgba(15, 27, 61, 0.15)"
-  card-featured: "8px 8px 0 {colors.neon-yellow}"
-
+  pixel-stack-cyan-yellow: 4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}, 8px
+    4px 0 0 {colors.neon-yellow}, 4px 8px 0 0 {colors.neon-yellow}, 8px 8px 0 0 {colors.neon-yellow}
+  pixel-stack-pink-cyan: 4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}, 8px 4px
+    0 0 {colors.neon-cyan}, 4px 8px 0 0 {colors.neon-cyan}, 8px 8px 0 0 {colors.neon-cyan}
+  pixel-l-shape: 4px 0 0 0 {colors.deep-navy}, 0 4px 0 0 {colors.deep-navy}, 4px 4px 0 0 {colors.deep-navy}
+  pixel-text-shadow: 4px 4px 0 {colors.neon-yellow}, 8px 8px 0 {colors.deep-navy}
+  pixel-text-shadow-small: 3px 3px 0 {colors.deep-navy}
+  card-offset: 6px 6px 0 rgba(15, 27, 61, 0.15)
+  card-featured: 8px 8px 0 {colors.neon-yellow}
 typography:
   pixel-hero:
-    fontFamily: "'Tektur', cursive"
-    fontSize: "clamp(48px, 10vw, 128px)"
+    fontFamily: '''Tektur'', cursive'
+    fontSize: clamp(48px, 10vw, 128px)
     fontWeight: 900
     lineHeight: 1.05
     letterSpacing: 0.04em
   display:
-    fontFamily: "'Tektur', cursive"
-    fontSize: "clamp(32px, 5vw, 64px)"
+    fontFamily: '''Tektur'', cursive'
+    fontSize: clamp(32px, 5vw, 64px)
     fontWeight: 700
     lineHeight: 1.15
   headline:
-    fontFamily: "'Tektur', cursive"
-    fontSize: "clamp(24px, 3.5vw, 45px)"
+    fontFamily: '''Tektur'', cursive'
+    fontSize: clamp(24px, 3.5vw, 45px)
     fontWeight: 700
     lineHeight: 1.15
   subhead:
-    fontFamily: "'Tektur', cursive"
-    fontSize: "clamp(17.6px, 2vw, 24px)"
+    fontFamily: '''Tektur'', cursive'
+    fontSize: clamp(17.6px, 2vw, 24px)
     fontWeight: 700
     lineHeight: 1.15
   stat-number:
-    fontFamily: "'Tektur', cursive"
-    fontSize: "clamp(32px, 4vw, 56px)"
+    fontFamily: '''Tektur'', cursive'
+    fontSize: clamp(32px, 4vw, 56px)
     fontWeight: 900
     lineHeight: 1
   body:
-    fontFamily: "'Chakra Petch', sans-serif"
-    fontSize: "clamp(14.4px, 1.2vw, 18.4px)"
+    fontFamily: '''Chakra Petch'', sans-serif'
+    fontSize: clamp(14.4px, 1.2vw, 18.4px)
     fontWeight: 400
     lineHeight: 1.7
   hero-tagline:
-    fontFamily: "'Chakra Petch', sans-serif"
-    fontSize: "clamp(14.4px, 1.5vw, 19.2px)"
+    fontFamily: '''Chakra Petch'', sans-serif'
+    fontSize: clamp(14.4px, 1.5vw, 19.2px)
     fontWeight: 400
     lineHeight: 1.8
   quote-body:
-    fontFamily: "'Chakra Petch', sans-serif"
-    fontSize: "clamp(17.6px, 2.2vw, 25.6px)"
+    fontFamily: '''Chakra Petch'', sans-serif'
+    fontSize: clamp(17.6px, 2.2vw, 25.6px)
     fontWeight: 500
     lineHeight: 1.8
   label-pill:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 12px
     fontWeight: 700
     lineHeight: 1
     letterSpacing: 0.2em
     textTransform: uppercase
   label-eyebrow:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 13.6px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.3em
     textTransform: uppercase
   badge:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 11.2px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.1em
     textTransform: uppercase
   chart-value:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 12px
     fontWeight: 700
     lineHeight: 1
   chart-label:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 11.2px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.05em
   date-chip:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 11.2px
     fontWeight: 400
     lineHeight: 1
   counter:
-    fontFamily: "'Space Mono', monospace"
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 12.8px
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 0.15em
-
 spacing:
   pixel-unit: 4px
-  pad-slide-y: "3vh"
-  pad-slide-x: "4vw"
-  pad-card-lg: "32px 40px"
-  pad-card-md: "28px"
-  pad-card-sm: "16px 20px"
+  pad-slide-y: 3vh
+  pad-slide-x: 4vw
+  pad-card-lg: 32px 40px
+  pad-card-md: 28px
+  pad-card-sm: 16px 20px
   gap-grid-lg: 32px
   gap-grid-md: 24px
   gap-grid-sm: 16px
   content-max-width: 1200px
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   label-pill:
-    background: "{colors.deep-navy}"
-    color: "{colors.neon-yellow}"
-    padding: "6px 14px"
+    background: '{colors.deep-navy}'
+    color: '{colors.neon-yellow}'
+    padding: 6px 14px
     fontSize: 12px
     fontWeight: 700
     letterSpacing: 0.2em
     textTransform: uppercase
-    fontFamily: "'Space Mono', monospace"
-    description: "Universal section tag. Default fill is deep-navy with neon-yellow text. Variant fills swap text color so the pill stays legible (e.g., navy bg with cyan text, navy bg with pink text)."
+    fontFamily: '''Space Mono'', monospace'
+    description: Universal section tag. Default fill is deep-navy with neon-yellow text. Variant fills swap text color so
+      the pill stays legible (e.g., navy bg with cyan text, navy bg with pink text).
   pixel-button:
-    background: "{colors.neon-cyan}"
-    color: "{colors.deep-navy}"
-    padding: "16px 36px"
-    fontFamily: "'Tektur', cursive"
+    background: '{colors.neon-cyan}'
+    color: '{colors.deep-navy}'
+    padding: 16px 36px
+    fontFamily: '''Tektur'', cursive'
     fontWeight: 700
     letterSpacing: 0.08em
     textTransform: uppercase
-    boxShadow: "{shadows.pixel-stack-cyan-yellow}"
-    description: "The signature stacked-shadow CTA. The pink variant swaps cyan body for pink and yellow shadow halo for cyan halo."
+    boxShadow: '{shadows.pixel-stack-cyan-yellow}'
+    description: The signature stacked-shadow CTA. The pink variant swaps cyan body for pink and yellow shadow halo for cyan
+      halo.
   pixel-corner-bracket:
     width: 24px
     height: 24px
     borderWidth: 4px
-    description: "Two outward-facing L-shapes (top-left + bottom-right) bracketing a region. Default color is neon-cyan; yellow and pink variants exist. Sits 8px outside the bracketed element."
+    description: Two outward-facing L-shapes (top-left + bottom-right) bracketing a region. Default color is neon-cyan; yellow
+      and pink variants exist. Sits 8px outside the bracketed element.
   feature-card:
-    background: "rgba(255, 255, 255, 0.15)"
-    backdropFilter: "blur(8px)"
-    padding: "32px 24px"
-    border: "2px solid rgba(15, 27, 61, 0.2)"
-    description: "Frosted-glass card with inset navy L-brackets (top-left + bottom-right) replacing rounded corners. Used on light-surface slides."
+    background: rgba(255, 255, 255, 0.15)
+    backdropFilter: blur(8px)
+    padding: 32px 24px
+    border: 2px solid rgba(15, 27, 61, 0.2)
+    description: Frosted-glass card with inset navy L-brackets (top-left + bottom-right) replacing rounded corners. Used on
+      light-surface slides.
   stat-block:
-    background: "rgba(94, 220, 244, 0.08)"
-    border: "2px solid rgba(94, 220, 244, 0.2)"
-    padding: "32px 16px"
-    description: "Cyan-tinted glass stat tile with cyan L-bracket accents at opposite corners. Used on dark surfaces. Stat numeral uses the pixel-text-shadow-small treatment."
+    background: rgba(94, 220, 244, 0.08)
+    border: 2px solid rgba(94, 220, 244, 0.2)
+    padding: 32px 16px
+    description: Cyan-tinted glass stat tile with cyan L-bracket accents at opposite corners. Used on dark surfaces. Stat
+      numeral uses the pixel-text-shadow-small treatment.
   bar-track-light:
     height: 32px
-    background: "rgba(15, 27, 61, 0.1)"
-    description: "Horizontal track for hbar charts on light surfaces. Fill is solid navy/cyan/pink with a yellow offset shadow."
+    background: rgba(15, 27, 61, 0.1)
+    description: Horizontal track for hbar charts on light surfaces. Fill is solid navy/cyan/pink with a yellow offset shadow.
   bar-vertical:
-    background: "{colors.neon-cyan}"
-    boxShadow: "{shadows.pixel-l-shape}"
-    description: "Vertical chart bar with three-piece navy L-shadow. Color cycles cyan → pink → yellow."
+    background: '{colors.neon-cyan}'
+    boxShadow: '{shadows.pixel-l-shape}'
+    description: Vertical chart bar with three-piece navy L-shadow. Color cycles cyan → pink → yellow.
   timeline-node:
     width: 24px
     height: 24px
-    background: "{colors.neon-cyan}"
-    border: "4px solid {colors.deep-navy}"
-    description: "Square pixel node on timeline rails. Active state swaps fill to neon-yellow."
+    background: '{colors.neon-cyan}'
+    border: 4px solid {colors.deep-navy}
+    description: Square pixel node on timeline rails. Active state swaps fill to neon-yellow.
   timeline-rail:
     width: 4px
-    background: "repeating-linear-gradient(to bottom, {colors.deep-navy} 0px, {colors.deep-navy} 16px, transparent 16px, transparent 24px)"
-    description: "Dashed pixel rail running between timeline nodes."
+    background: repeating-linear-gradient(to bottom, {colors.deep-navy} 0px, {colors.deep-navy} 16px, transparent 16px, transparent
+      24px)
+    description: Dashed pixel rail running between timeline nodes.
   date-chip:
-    background: "{colors.deep-navy}"
-    color: "{colors.neon-cyan}"
-    padding: "2px 10px"
-    fontFamily: "'Space Mono', monospace"
+    background: '{colors.deep-navy}'
+    color: '{colors.neon-cyan}'
+    padding: 2px 10px
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 11.2px
-    description: "Small inline date marker on timeline events."
+    description: Small inline date marker on timeline events.
   hero-badge:
-    border: "2px solid {colors.neon-yellow}"
-    color: "{colors.neon-yellow}"
-    padding: "8px 16px"
-    fontFamily: "'Space Mono', monospace"
+    border: 2px solid {colors.neon-yellow}
+    color: '{colors.neon-yellow}'
+    padding: 8px 16px
+    fontFamily: '''Space Mono'', monospace'
     fontSize: 11.2px
     letterSpacing: 0.1em
     textTransform: uppercase
-    description: "Outline-only chip used in clusters under hero headlines."
+    description: Outline-only chip used in clusters under hero headlines.
   bg-grid:
-    backgroundColor: "{colors.dark-void}"
-    backgroundImage: "linear-gradient(rgba(94, 220, 244, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(94, 220, 244, 0.07) 1px, transparent 1px)"
-    backgroundSize: "40px 40px"
-    description: "40px cyan-on-navy grid wallpaper for dark surfaces. Pink, cyan, and lavender variants invert the relationship (colored ground with low-opacity navy grid lines)."
+    backgroundColor: '{colors.dark-void}'
+    backgroundImage: linear-gradient(rgba(94, 220, 244, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(94, 220,
+      244, 0.07) 1px, transparent 1px)
+    backgroundSize: 40px 40px
+    description: 40px cyan-on-navy grid wallpaper for dark surfaces. Pink, cyan, and lavender variants invert the relationship
+      (colored ground with low-opacity navy grid lines).
   scanlines:
-    background: "repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(10, 14, 39, 0.04) 2px, rgba(10, 14, 39, 0.04) 4px)"
+    background: repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(10, 14, 39, 0.04) 2px, rgba(10, 14,
+      39, 0.04) 4px)
     mixBlendMode: multiply
-    description: "Horizontal CRT scanline overlay applied via ::after at z-index 50. Always present on every slide."
+    description: Horizontal CRT scanline overlay applied via ::after at z-index 50. Always present on every slide.
   grain:
     opacity: 0.035
-    description: "SVG fractal-noise grain layer applied via ::before at z-index 49. Always present on every slide."
+    description: SVG fractal-noise grain layer applied via ::before at z-index 49. Always present on every slide.
   crt-glow:
-    background: "radial-gradient(ellipse at center, transparent 50%, rgba(10, 14, 39, 0.25) 100%)"
-    description: "Radial vignette that darkens the corners to mimic a CRT bulge. Applied to dark-surface slides via ::after at z-index 51."
+    background: radial-gradient(ellipse at center, transparent 50%, rgba(10, 14, 39, 0.25) 100%)
+    description: Radial vignette that darkens the corners to mimic a CRT bulge. Applied to dark-surface slides via ::after
+      at z-index 51.
   starfield:
-    description: "Container of small 4-6px colored squares (cyan, yellow, pink) positioned absolutely with a 3s twinkle keyframe. Lives on dark surfaces only."
+    description: Container of small 4-6px colored squares (cyan, yellow, pink) positioned absolutely with a 3s twinkle keyframe.
+      Lives on dark surfaces only.
   pixel-particles:
-    description: "Floating 8px colored squares with an 8s float keyframe. Decorative ambient layer on hero and CTA-type surfaces."
+    description: Floating 8px colored squares with an 8s float keyframe. Decorative ambient layer on hero and CTA-type surfaces.
   nav-dot:
     width: 12px
     height: 12px
-    border: "2px solid {colors.neon-cyan}"
+    border: 2px solid {colors.neon-cyan}
     background: transparent
-    description: "Hollow square pip with a 2px inset cyan fill on active state. Fixed vertical rail at right edge."
+    description: Hollow square pip with a 2px inset cyan fill on active state. Fixed vertical rail at right edge.
   quote-line:
     width: 60px
     height: 4px
-    background: "{colors.neon-yellow}"
-    boxShadow: "4px 4px 0 {colors.deep-navy}"
-    description: "Short yellow rule with navy offset shadow, used as a separator under quote bodies."
+    background: '{colors.neon-yellow}'
+    boxShadow: 4px 4px 0 {colors.deep-navy}
+    description: Short yellow rule with navy offset shadow, used as a separator under quote bodies.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

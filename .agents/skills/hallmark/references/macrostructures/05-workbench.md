@@ -1,3 +1,21 @@
+---
+title: 05 Workbench
+domain: skill
+summary: Product screenshots in frames are the primary content. The page is a guided tour of the app in use. Less marketing
+  copy, more "here's what you do with it." - **Heading:** small, functional — workbench pages don't shout.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 05 · Workbench
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/05-workbench.md
+- When reading context for 05 Workbench
+tags:
+- skill
+- 05-workbench
+updated: '2026-08-08'
+---
+
 ## 05 · Workbench
 
 Product screenshots in frames are the primary content. The page is a guided tour of the app in use. Less marketing copy, more "here's what you do with it."

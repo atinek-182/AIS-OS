@@ -1,3 +1,20 @@
+---
+title: C1 Outlined Chip
+domain: skill
+summary: A bordered, transparent button with a typographic verb ("Save changes"). *Use when:* the page has one primary action;
+  you want it visible but quiet.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- C1 · Outlined chip
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/c1-outlined-chip.md
+- When reading context for C1 Outlined Chip
+tags:
+- skill
+- c1-outlined-chip
+updated: '2026-08-08'
+---
 
 ### C1 · Outlined chip
 A bordered, transparent button with a typographic verb ("Save changes").

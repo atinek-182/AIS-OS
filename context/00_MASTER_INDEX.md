@@ -1,3 +1,26 @@
+---
+title: ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
+domain: architecture
+summary: 'This master index is the single canonical map for all workspace vaults, brand identity assets, business intakes,
+  decision logs, and project directories across `d:\AI-OS`. - **AIOS Operating Manual**: [GEMINI.md](file:///d:/AI-OS/GEMINI.md)
+  & [AGENTS.'
+critical_directives:
+- '**Global Rules Synchronization Engine**: [scripts/sync_global_rules.py](file:///d:/AI-OS/scripts/syn'
+section_outline:
+- ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
+- 1. Primary Knowledge Vaults & Operating Manuals
+- 2. Brand Identity & Strategy Vaults
+- 3. Automation Scripts & Search Tools
+- 4. Frontend Experience & Component Registries
+read_triggers:
+- When working on architecture in context/00_MASTER_INDEX.md
+- When reading context for ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
+tags:
+- architecture
+- 00_MASTER_INDEX
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
 
 This master index is the single canonical map for all workspace vaults, brand identity assets, business intakes, decision logs, and project directories across `d:\AI-OS`.

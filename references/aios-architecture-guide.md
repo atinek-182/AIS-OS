@@ -1,3 +1,23 @@
+---
+title: AIOS System Architecture & Vault Guide
+domain: architecture
+summary: '- `brain-aios/`: General AI OS hub, personal task tracking, system workflows, and operational logs. - `brain-aios/wiki/checklists/master-task-list.md`:
+  Canonical source of truth for task status.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- AIOS System Architecture & Vault Guide
+- Core Architectural Layout
+- Universal 5 Master Graphify Operating Patterns
+read_triggers:
+- When working on architecture in references/aios-architecture-guide.md
+- When reading context for AIOS System Architecture & Vault Guide
+tags:
+- architecture
+- aios-architecture-guide
+updated: '2026-08-08'
+---
+
 # AIOS System Architecture & Vault Guide
 
 ## Core Architectural Layout

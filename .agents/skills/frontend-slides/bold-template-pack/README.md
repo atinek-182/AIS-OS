@@ -1,3 +1,24 @@
+---
+title: Bold Template Pack
+domain: skill
+summary: This pack brings the `beautiful-html-templates` design systems into the `frontend-slides` skill without making them
+  the default for every deck.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Bold Template Pack
+- What To Read
+- How To Use In Frontend Slides
+- Implementation Contract
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/README.md
+- When reading context for Bold Template Pack
+tags:
+- skill
+- README
+updated: '2026-08-08'
+---
+
 # Bold Template Pack
 
 This pack brings the `beautiful-html-templates` design systems into the

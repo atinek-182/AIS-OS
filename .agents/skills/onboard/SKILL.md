@@ -1,13 +1,33 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/onboard [optional parameters]`
+  in chat.'
+critical_directives:
+- This is the only question with a hard rule.* Voice samples MUST be pasted, not typed mid-conversation. If the user start
+- '"Stop — paste it raw. If you type it here while we''re talking, the sample is already shaped by our conversation. Open
+  yo'
+- Q6 — Where do meeting recordings, notes, and important docs live?**
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What this skill does
+- When NOT to run this
+- Execution
+- 'Step 1: Read the intake'
+read_triggers:
+- When working on skill in .agents/skills/onboard/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: onboard
-description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard
-  me", "let's get started", "fill in my AIOS", or has just cloned the kit. Combined
-  wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the end.
-  Idempotent — re-run any time after editing context/aios-intake.md. Invokable directly
-  via /onboard.
+description: Use on Day 1 of an AIS-OS install, when someone says "set me up", "onboard me", "let's get started", "fill in
+  my AIOS", or has just cloned the kit. Combined wizard — runs the 7-question intake AND scaffolds the Day-1 file set at the
+  end. Idempotent — re-run any time after editing context/aios-intake.md. Invokable directly via /onboard.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

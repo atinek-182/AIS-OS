@@ -1,3 +1,24 @@
+---
+title: 📅 Master Sprint Plan — Thursday, 30 July 2026
+domain: architecture
+summary: '**Created At:** 2026-07-30 10:30 IST **Status:** Active Sprint'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 📅 Master Sprint Plan — Thursday, 30 July 2026
+- 🎯 High-Level Vision for Today
+- ⏰ Master Hourly Schedule & Phase Breakdown
+- ⚡ Execution Pipeline & Cross-Session Resume Protocol
+- 📑 Phase Progress Checklist
+read_triggers:
+- When working on architecture in docs/daily-plans/2026-07-30-master-plan.md
+- When reading context for 📅 Master Sprint Plan — Thursday, 30 July 2026
+tags:
+- architecture
+- 2026-07-30-master-plan
+updated: '2026-08-08'
+---
+
 # 📅 Master Sprint Plan — Thursday, 30 July 2026
 
 **Created At:** 2026-07-30 10:30 IST  

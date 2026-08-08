@@ -1,3 +1,28 @@
+---
+title: Frontend Slides
+domain: skill
+summary: 'A coding-agent skill for creating stunning HTML presentations — from scratch or by converting PowerPoint files.
+  It is packaged as a Claude Code plugin, and the core `SKILL.md` can also be read by other coding agents with filesystem
+  and shell access. '
+critical_directives:
+- Electric cobalt italic serifs on a graph-paper canvas, anchored by stair-stepped pixel-glitch decorations and slim hairl
+- 'Magazine-cover business deck: emerald + navy + paper with double-rule masthead ornaments and a heavy Bodoni-style displa'
+- 'Three-color editorial system: dusty pink, mustard cream, and deep burgundy, set in Bricolage + Instrument Serif.'
+section_outline:
+- Frontend Slides
+- 📺 Watch the Walkthrough & Tutorial
+- What This Does
+- Key Features
+- Installation
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/README.md
+- When reading context for Frontend Slides
+tags:
+- skill
+- README
+updated: '2026-08-08'
+---
+
 # Frontend Slides
 
 A coding-agent skill for creating stunning HTML presentations — from scratch or by converting PowerPoint files. It is packaged as a Claude Code plugin, and the core `SKILL.md` can also be read by other coding agents with filesystem and shell access.

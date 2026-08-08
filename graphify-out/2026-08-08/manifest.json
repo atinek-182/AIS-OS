@@ -1645,18 +1645,18 @@
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1786179145.718936,
+    "mtime": 1786180036.639963,
     "ast_hash": "3be7e9b768868e1e9087b6900c714206",
     "semantic_hash": ""
   },
   "MEMORY.md": {
-    "mtime": 1786179183.174018,
+    "mtime": 1786180064.1709116,
     "ast_hash": "0f835c07ce093baf24bdc549d4be6bb8",
     "semantic_hash": ""
   },
   "WORKSPACE_MAP.md": {
-    "mtime": 1786179032.0142949,
-    "ast_hash": "f3d5e883827727e01abb249a69865f99",
+    "mtime": 1786180042.672684,
+    "ast_hash": "ca9c90002fb7d40aad90699cb75170ea",
     "semantic_hash": ""
   },
   "archives/intake-2026-07-14-1940/GEMINI.md": {
@@ -1870,7 +1870,7 @@
     "semantic_hash": ""
   },
   "decisions/log.md": {
-    "mtime": 1786178860.5833507,
+    "mtime": 1786180049.6187882,
     "ast_hash": "a7d0f41ae72a48311956f3b5aa31f42b",
     "semantic_hash": ""
   },
@@ -1915,8 +1915,8 @@
     "semantic_hash": ""
   },
   "references/antigravity-skills-guide.md": {
-    "mtime": 1785476727.1423447,
-    "ast_hash": "1f14235aa8ae2850853ac2ec921d1fed",
+    "mtime": 1786180056.2194924,
+    "ast_hash": "bb6158a6484af81d56a34ab0615b96e1",
     "semantic_hash": ""
   },
   "references/chrome-devtools-api.md": {
@@ -3020,7 +3020,7 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1786179145.717936,
+    "mtime": 1786180036.639963,
     "ast_hash": "fb1a946376da55b0d28bab66ee3be5f8",
     "semantic_hash": ""
   },
@@ -3165,8 +3165,8 @@
     "semantic_hash": ""
   },
   "references/GLOBAL_ERROR_PREVENTION_RULES.md": {
-    "mtime": 1786179573.5789688,
-    "ast_hash": "0f0cac63c02c1bd7947836e55a59d791",
+    "mtime": 1786180032.320966,
+    "ast_hash": "2ae192cd4e0d42d101a156adeadb60b1",
     "semantic_hash": ""
   },
   "references/aios-architecture-guide.md": {
@@ -3362,11 +3362,6 @@
   "scripts/composio_runner.py": {
     "mtime": 1786176725.656384,
     "ast_hash": "85071af139feb7283d3ad837fc8b6b35",
-    "semantic_hash": ""
-  },
-  "scripts/resemble_detect_runner.py": {
-    "mtime": 1786179546.439825,
-    "ast_hash": "990399ed87a64827efb46cd510e95e2e",
     "semantic_hash": ""
   },
   "scripts/skill_workflow_evolver_runner.py": {
@@ -3684,11 +3679,6 @@
     "ast_hash": "ea8c2769bf46410cc6b302b291bb7b9d",
     "semantic_hash": ""
   },
-  ".agents/skills/resemble-detect/SKILL.md": {
-    "mtime": 1786179553.7174878,
-    "ast_hash": "8ef9509a869dff2388b35b55fefe4bfe",
-    "semantic_hash": ""
-  },
   ".agents/skills/resolving-merge-conflicts/SKILL.md": {
     "mtime": 1786171688.61148,
     "ast_hash": "bcd188abf71621828777e86be87a1738",
@@ -3919,11 +3909,6 @@
     "ast_hash": "66bd2497c8064e0307db7c87b2151c51",
     "semantic_hash": ""
   },
-  "brainstorms/2026-08-08-ingest-detect-skill.md": {
-    "mtime": 1786179463.144831,
-    "ast_hash": "8b3632991459fdb2aadcccada54f7c41",
-    "semantic_hash": ""
-  },
   "brainstorms/2026-08-08-mattpocock-skill-unification-and-vault-pruning.md": {
     "mtime": 1786172976.3724546,
     "ast_hash": "e042ea276256c8f041ebd82a10629809",
@@ -4022,16 +4007,6 @@
   "references/sdlc/testing-patterns.md": {
     "mtime": 1786177731.0914116,
     "ast_hash": "f5f74035a84f71dc01484520e102e154",
-    "semantic_hash": ""
-  },
-  "scratch/ingest-detect-skill/README.md": {
-    "mtime": 1786179450.9695394,
-    "ast_hash": "95fca4c4c8a2ba52f78be26602057741",
-    "semantic_hash": ""
-  },
-  "scratch/ingest-detect-skill/SKILL.md": {
-    "mtime": 1786179450.9705393,
-    "ast_hash": "b6d8596be5742c73c48d204439460bef",
     "semantic_hash": ""
   }
 }

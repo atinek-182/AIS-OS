@@ -1,12 +1,31 @@
 ---
+title: Secure Coding Guide for Web Applications
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/vibesec [optional parameters]`
+  in chat.'
+critical_directives:
+- 'Defense in depth: Never rely on a single security control'
+- 'Input validation: Never trust user input, validate everything server-side'
+- Each user must only access/modify their own data
+- Always verify ownership at the data layer, not just the route level
+section_outline:
+- Secure Coding Guide for Web Applications
+- Invocation & Tri-Mode Routing
+- Overview
+- Access Control Issues
+- Core Requirements
+read_triggers:
+- When working on skill in .agents/skills/vibesec/SKILL.md
+- When reading context for Secure Coding Guide for Web Applications
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: vibesec
-description: This skill helps Antigravity write secure web applications. Use this
-  when working on any web application or when a user requests a scan or audit to ensure
-  security best practices are followed. Invokable directly via /vibesec.
+description: This skill helps Antigravity write secure web applications. Use this when working on any web application or when
+  a user requests a scan or audit to ensure security best practices are followed. Invokable directly via /vibesec.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Secure Coding Guide for Web Applications
 

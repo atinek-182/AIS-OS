@@ -1,3 +1,24 @@
+---
+title: 27 Spec Generation Flow
+domain: architecture
+summary: 'Create the backend flow for AI-powered spec generation: API route, Trigger.dev task, token route, and run ownership
+  tracking. 1. Spec trigger route'
+critical_directives:
+- Project access must come from the authenticated user + `roomId`
+section_outline:
+- Implementation
+- Scope Limits
+- Notes
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/27-spec-generation-flow.md
+- When reading context for 27 Spec Generation Flow
+tags:
+- architecture
+- 27-spec-generation-flow
+updated: '2026-08-08'
+---
+
 Create the backend flow for AI-powered spec generation: API route, Trigger.dev task, token route, and run ownership tracking.
 
 ### Implementation

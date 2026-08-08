@@ -1,6 +1,26 @@
 ---
+title: Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)
+domain: skill
+summary: 'Adapted from Matt Pocock''s engineering skills, this tool converts loose, high-level requests into rigorous, unambiguous
+  technical specs before any code is touched. - **Slash Command**: `/mattpocock-to-spec [idea]`'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)
+- Overview & Tri-Mode Routing
+- The 4-Step Spec Compilation Process
+- 'Step 1: Intent Extraction & Socratic Discovery (`/grill-me`)'
+- 'Step 2: System Boundary & Interface Definition (`/mattpocock-domain-modeling`)'
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-to-spec/SKILL.md
+- When reading context for Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-to-spec
-description: Convert loose user prompts into sharp technical specs. Asks clarifying questions, resolves architectural choices, and outputs structured design contracts. Triggered via /mattpocock-to-spec or naturally when creating technical specs.
+description: Convert loose user prompts into sharp technical specs. Asks clarifying questions, resolves architectural choices,
+  and outputs structured design contracts. Triggered via /mattpocock-to-spec or naturally when creating technical specs.
 argument-hint: '[loose_idea_or_requirement]'
 ---
 

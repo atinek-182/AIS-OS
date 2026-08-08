@@ -1,3 +1,26 @@
+---
+title: Testing Patterns Reference (JavaScript/TypeScript)
+domain: architecture
+summary: Quick reference of JavaScript/TypeScript testing patterns — Jest, React Testing Library, Supertest, and Playwright
+  — illustrating the universal principles from the `test-driven-development` skill. The principles (Arrange-Act-Assert, naming,
+  mock disc
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Testing Patterns Reference (JavaScript/TypeScript)
+- Table of Contents
+- Test Structure (Arrange-Act-Assert)
+- Test Naming Conventions
+- Common Assertions
+read_triggers:
+- When working on architecture in references/sdlc/testing-patterns.md
+- When reading context for Testing Patterns Reference (JavaScript/TypeScript)
+tags:
+- architecture
+- testing-patterns
+updated: '2026-08-08'
+---
+
 # Testing Patterns Reference (JavaScript/TypeScript)
 
 Quick reference of JavaScript/TypeScript testing patterns — Jest, React Testing Library, Supertest, and Playwright — illustrating the universal principles from the `test-driven-development` skill. The principles (Arrange-Act-Assert, naming, mock discipline, anti-patterns) apply in any ecosystem; the syntax and tooling shown here are JS/TS-specific. In another stack, follow the same principles with the repository's own test framework and commands.

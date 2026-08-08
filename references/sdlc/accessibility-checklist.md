@@ -1,3 +1,24 @@
+---
+title: Accessibility Checklist
+domain: task
+summary: Quick reference for WCAG 2.1 AA compliance. Use alongside the `frontend-ui-engineering` skill. - [Essential Checks](#essential-checks)
+critical_directives:
+- '[ ] No keyboard traps (user can always Tab away from a component)'
+section_outline:
+- Accessibility Checklist
+- Table of Contents
+- Essential Checks
+- Keyboard Navigation
+- Screen Readers
+read_triggers:
+- When working on task in references/sdlc/accessibility-checklist.md
+- When reading context for Accessibility Checklist
+tags:
+- task
+- accessibility-checklist
+updated: '2026-08-08'
+---
+
 # Accessibility Checklist
 
 Quick reference for WCAG 2.1 AA compliance. Use alongside the `frontend-ui-engineering` skill.

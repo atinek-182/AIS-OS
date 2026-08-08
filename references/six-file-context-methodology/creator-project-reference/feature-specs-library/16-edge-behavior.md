@@ -1,3 +1,23 @@
+---
+title: 16 Edge Behavior
+domain: architecture
+summary: Replace the default canvas edges with custom edges that feel easier to follow, easier to click, and support inline
+  labels.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/16-edge-behavior.md
+- When reading context for 16 Edge Behavior
+tags:
+- architecture
+- 16-edge-behavior
+updated: '2026-08-08'
+---
+
 Replace the default canvas edges with custom edges that feel easier
 to follow, easier to click, and support inline labels.
 

@@ -1,3 +1,20 @@
+---
+title: F1 Bento Grid
+domain: skill
+summary: Asymmetric grid of 8–15 tiles in mixed spans (1×1, 2×1, 1×2, 2×2). Visual rhythm via size. *Use when:* multiple equally-valid
+  entry points; SaaS feature page.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- F1 · Bento grid
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/f1-bento-grid.md
+- When reading context for F1 Bento Grid
+tags:
+- skill
+- f1-bento-grid
+updated: '2026-08-08'
+---
 
 ### F1 · Bento grid
 Asymmetric grid of 8–15 tiles in mixed spans (1×1, 2×1, 1×2, 2×2). Visual rhythm via size.

@@ -1,6 +1,26 @@
 ---
+title: ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
+domain: skill
+summary: 'This skill automates the lifecycle of client directories for ZORIXEL AI Agency. It manages an **8-Phase Gated Client
+  Vault** split into two sequential stages: 1. **Stage 1 (Lead & Sales Stage)**: Triggered when a new lead enters (inbound/outbound/ref'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
+- Overview & Tri-Mode Execution
+- Usage & Command Syntax
+- Workflow Instructions
+- 'Phase 1: Lead Scaffolding (Stage 1)'
+read_triggers:
+- When working on skill in .agents/skills/new-client/SKILL.md
+- When reading context for ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: new-client
-description: Standardized 8-phase client vault scaffolding engine for ZORIXEL AI Agency. Invokable via /new-client. Handles Stage 1 (Lead/Sales) and Stage 2 (Accepted/Build) directory creation, canonical template population, and post-sprint auto-evolution.
+description: Standardized 8-phase client vault scaffolding engine for ZORIXEL AI Agency. Invokable via /new-client. Handles
+  Stage 1 (Lead/Sales) and Stage 2 (Accepted/Build) directory creation, canonical template population, and post-sprint auto-evolution.
 argument-hint: '[client-name | accept client-id | evolve]'
 ---
 

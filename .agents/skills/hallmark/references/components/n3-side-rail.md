@@ -1,3 +1,21 @@
+---
+title: N3 Side Rail
+domain: skill
+summary: A thin vertical strip on the left edge — wordmark rotated, plus 2–3 dot-indicators for sections. Editorial / portfolio
+  energy. *Use when:* the page is long and section-numbered.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- N3 · Side-rail
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n3-side-rail.md
+- When reading context for N3 Side Rail
+tags:
+- skill
+- n3-side-rail
+updated: '2026-08-08'
+---
+
 ### N3 · Side-rail
 A thin vertical strip on the left edge — wordmark rotated, plus 2–3 dot-indicators for sections. Editorial / portfolio energy.
 *Use when:* the page is long and section-numbered.

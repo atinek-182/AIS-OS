@@ -1,3 +1,29 @@
+---
+title: Study — extracting design DNA from a screenshot or URL
+domain: skill
+summary: This file is loaded when the `hallmark study` verb runs. It defines the protocol for reading a reference the user
+  supplied — either a screenshot they attached or a URL to a live page — naming what makes it work, and producing a *diagnosis
+  report* the
+critical_directives:
+- 'The mental model.** A designer who likes a reference site does not photocopy it. They look at it long enough to say "ah '
+- If redirects are visible to the tool, every redirect hop must pass the same checks. If redirect safety is unknown, conti
+- Never** silently proceed when you suspect the screenshot is a marketplace listing. The user must explicitly confirm. The
+- Image mode rule.** Do not write "this is Söhne" or "this is Inter". Write "this is a neutral grotesque body" and propose
+section_outline:
+- Study — extracting design DNA from a screenshot or URL
+- Source mode — image or URL
+- URL mode — fetch pipeline
+- Remote URL safety
+- Junk-or-blocked detection
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/study.md
+- When reading context for Study — extracting design DNA from a screenshot or URL
+tags:
+- skill
+- study
+updated: '2026-08-08'
+---
+
 # Study — extracting design DNA from a screenshot or URL
 
 This file is loaded when the `hallmark study` verb runs. It defines the protocol for reading a reference the user supplied — either a screenshot they attached or a URL to a live page — naming what makes it work, and producing a *diagnosis report* the user can accept or amend before any code is built.

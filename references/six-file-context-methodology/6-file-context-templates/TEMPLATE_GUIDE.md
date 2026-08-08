@@ -1,3 +1,28 @@
+---
+title: 'From Idea to Product: The AI-Driven Developer''s Playbook'
+domain: architecture
+summary: '> This guide was created alongside the Ghost AI build, a real-time > collaborative system design tool built entirely
+  using AI-driven'
+critical_directives:
+- What are the rules the codebase must never violate?
+- Invariants — rules the codebase must never violate
+- '*The rules for a good unit:**'
+- It has a checklist of conditions that must be true before
+section_outline:
+- 'From Idea to Product: The AI-Driven Developer''s Playbook'
+- By JavaScript Mastery
+- Who this is for
+- What you'll walk away with
+- What's included in this download
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/6-file-context-templates/TEMPLATE_GUIDE.md
+- 'When reading context for From Idea to Product: The AI-Driven Developer''s Playbook'
+tags:
+- architecture
+- TEMPLATE_GUIDE
+updated: '2026-08-08'
+---
+
 # From Idea to Product: The AI-Driven Developer's Playbook
 
 ### By JavaScript Mastery

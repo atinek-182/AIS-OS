@@ -1,6 +1,30 @@
 ---
+title: Skill
+domain: skill
+summary: 'Two-axis review of the diff between `HEAD` and a fixed point the user supplies: - **Standards** — does the code
+  conform to this repo''s documented coding standards?'
+critical_directives:
+- The repo overrides.** A documented repo standard always wins; where it endorses something the baseline would flag, suppr
+- Always a judgement call.** Each smell is a labelled heuristic ("possible Feature Envy"), never a hard violation — and, l
+- 'The brief: "Report — per file/hunk where relevant — (a) every place the diff violates a documented standard: cite the st'
+section_outline:
+- Process
+- 1. Pin the fixed point
+- 2. Identify the spec source
+- 3. Identify the standards sources
+- 4. Spawn both sub-agents in parallel
+read_triggers:
+- When working on skill in .agents/skills/code-review/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: code-review
-description: Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to "review since X".
+description: Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does
+  the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec
+  asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a
+  branch, a PR, work-in-progress changes, or asks to "review since X".
 ---
 
 Two-axis review of the diff between `HEAD` and a fixed point the user supplies:

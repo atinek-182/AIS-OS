@@ -1,207 +1,230 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Headlines on colored surfaces always carry a 3px solid charcoal text-shadow; headlines on cream sit flat.
+- 'Coral** (`{colors.coral}` — #F8635F): The single saturated accent. Used only as a marker fill (a numbered dot, a timelin'
+- 'Default headline color**: `{colors.text-dark}` — always.'
+- 'Default border color**: `{colors.text-dark}` — always. There are no colored borders anywhere.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/daisy-days/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Daisy Days
-description: A cheerful, childlike presentation system built around the chunky display face Fredoka One and the rounded humanist sans Quicksand. The palette is a sunny garden — cream canvas, turquoise, soft pink, butter yellow, mint, lavender, peach, sky blue, and a single coral accent — with charcoal-brown 2D outlines wrapping every shape. Hard offset shadows in dark charcoal, generous border-radius, and hand-drawn SVG decorations (daisies, stars, suns, clouds, rainbows) anchor the aesthetic somewhere between a children's storybook spread and a sticker-sheet kawaii zine.
-
+description: A cheerful, childlike presentation system built around the chunky display face Fredoka One and the rounded humanist
+  sans Quicksand. The palette is a sunny garden — cream canvas, turquoise, soft pink, butter yellow, mint, lavender, peach,
+  sky blue, and a single coral accent — with charcoal-brown 2D outlines wrapping every shape. Hard offset shadows in dark
+  charcoal, generous border-radius, and hand-drawn SVG decorations (daisies, stars, suns, clouds, rainbows) anchor the aesthetic
+  somewhere between a children's storybook spread and a sticker-sheet kawaii zine.
 colors:
-  cream: "#F5F0E6"
-  turquoise: "#7ECDC0"
-  soft-pink: "#F7C8D4"
-  butter: "#FDE68A"
-  mint: "#A8E6CF"
-  lavender: "#D4A5E8"
-  peach: "#FFCBA4"
-  sky: "#A8D8F0"
-  coral: "#F8635F"
-  text-dark: "#2D2D2D"
-  text-muted: "#6B6B6B"
-  white: "#FFFFFF"
-
+  cream: '#F5F0E6'
+  turquoise: '#7ECDC0'
+  soft-pink: '#F7C8D4'
+  butter: '#FDE68A'
+  mint: '#A8E6CF'
+  lavender: '#D4A5E8'
+  peach: '#FFCBA4'
+  sky: '#A8D8F0'
+  coral: '#F8635F'
+  text-dark: '#2D2D2D'
+  text-muted: '#6B6B6B'
+  white: '#FFFFFF'
 borders:
-  primary: "3px solid {colors.text-dark}"
-  thin: "2px solid {colors.text-dark}"
-
+  primary: 3px solid {colors.text-dark}
+  thin: 2px solid {colors.text-dark}
 shadows:
-  default: "6px 6px 0 {colors.text-dark}"
-  small: "4px 4px 0 {colors.text-dark}"
-  text-headline: "3px 3px 0 {colors.text-dark}"
-  text-headline-soft: "3px 3px 0 rgba(0,0,0,0.2)"
-
+  default: 6px 6px 0 {colors.text-dark}
+  small: 4px 4px 0 {colors.text-dark}
+  text-headline: 3px 3px 0 {colors.text-dark}
+  text-headline-soft: 3px 3px 0 rgba(0,0,0,0.2)
 typography:
   display:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(3.2rem, 7vw, 6.5rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(3.2rem, 7vw, 6.5rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   headline:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(2.5rem, 5vw, 4.5rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(2.5rem, 5vw, 4.5rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   title:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(1.8rem, 3.5vw, 3rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(1.8rem, 3.5vw, 3rem)
     fontWeight: 400
     lineHeight: 1.15
     letterSpacing: 0.02em
   subtitle:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(1.3rem, 2vw, 1.8rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(1.3rem, 2vw, 1.8rem)
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0.02em
   label-display:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(1rem, 1.5vw, 1.3rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(1rem, 1.5vw, 1.3rem)
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: 0.02em
   quote:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "clamp(1.3rem, 2.5vw, 2rem)"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: clamp(1.3rem, 2.5vw, 2rem)
     fontWeight: 400
     lineHeight: 1.35
   body:
-    fontFamily: "'Quicksand', sans-serif"
-    fontSize: "clamp(0.95rem, 1.3vw, 1.15rem)"
+    fontFamily: '''Quicksand'', sans-serif'
+    fontSize: clamp(0.95rem, 1.3vw, 1.15rem)
     fontWeight: 500
     lineHeight: 1.6
   body-strong:
-    fontFamily: "'Quicksand', sans-serif"
-    fontSize: "clamp(0.95rem, 1.4vw, 1.15rem)"
+    fontFamily: '''Quicksand'', sans-serif'
+    fontSize: clamp(0.95rem, 1.4vw, 1.15rem)
     fontWeight: 600
     lineHeight: 1.5
   meta:
-    fontFamily: "'Quicksand', sans-serif"
-    fontSize: "clamp(0.8rem, 1.1vw, 0.95rem)"
+    fontFamily: '''Quicksand'', sans-serif'
+    fontSize: clamp(0.8rem, 1.1vw, 0.95rem)
     fontWeight: 600
     lineHeight: 1.45
   badge:
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "0.85rem"
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: 0.85rem
     fontWeight: 400
     letterSpacing: 0.02em
-
 spacing:
-  pad-slide: "40px 60px"
-  pad-card-lg: "48px 56px"
-  pad-card-md: "32px 40px"
-  pad-card-sm: "16px 24px"
-  gap-grid-lg: "28px"
-  gap-grid-md: "24px"
-  gap-grid-sm: "14px"
-  radius: "20px"
-  radius-lg: "28px"
-  radius-pill: "50px"
-  radius-round: "50%"
-
+  pad-slide: 40px 60px
+  pad-card-lg: 48px 56px
+  pad-card-md: 32px 40px
+  pad-card-sm: 16px 24px
+  gap-grid-lg: 28px
+  gap-grid-md: 24px
+  gap-grid-sm: 14px
+  radius: 20px
+  radius-lg: 28px
+  radius-pill: 50px
+  radius-round: 50%
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   card:
-    background: "{colors.white}"
-    border: "3px solid {colors.text-dark}"
-    borderRadius: "{spacing.radius}"
-    boxShadow: "{shadows.default}"
+    background: '{colors.white}'
+    border: 3px solid {colors.text-dark}
+    borderRadius: '{spacing.radius}'
+    boxShadow: '{shadows.default}'
   card-lg:
-    background: "{colors.white}"
-    border: "3px solid {colors.text-dark}"
-    borderRadius: "{spacing.radius-lg}"
-    boxShadow: "{shadows.default}"
+    background: '{colors.white}'
+    border: 3px solid {colors.text-dark}
+    borderRadius: '{spacing.radius-lg}'
+    boxShadow: '{shadows.default}'
   badge-pill:
-    display: "inline-block"
-    padding: "8px 20px"
-    borderRadius: "{spacing.radius-pill}"
-    border: "3px solid {colors.text-dark}"
-    fontFamily: "'Fredoka One', cursive"
-    fontSize: "0.85rem"
-    background: "{colors.butter}"
+    display: inline-block
+    padding: 8px 20px
+    borderRadius: '{spacing.radius-pill}'
+    border: 3px solid {colors.text-dark}
+    fontFamily: '''Fredoka One'', cursive'
+    fontSize: 0.85rem
+    background: '{colors.butter}'
   framed-header:
-    description: "A two-part stacked card: a colored header strip (any accent surface) with rounded top corners and no bottom border, sitting flush above a white body with rounded bottom corners. The pair reads as a single unit with a tonal cap."
-    headerBackground: "any accent surface"
-    headerBorderRadius: "{spacing.radius-lg} {spacing.radius-lg} 0 0"
-    bodyBackground: "{colors.white}"
-    bodyBorderRadius: "0 0 {spacing.radius-lg} {spacing.radius-lg}"
-    border: "3px solid {colors.text-dark}"
-    boxShadow: "{shadows.default}"
+    description: 'A two-part stacked card: a colored header strip (any accent surface) with rounded top corners and no bottom
+      border, sitting flush above a white body with rounded bottom corners. The pair reads as a single unit with a tonal cap.'
+    headerBackground: any accent surface
+    headerBorderRadius: '{spacing.radius-lg} {spacing.radius-lg} 0 0'
+    bodyBackground: '{colors.white}'
+    bodyBorderRadius: 0 0 {spacing.radius-lg} {spacing.radius-lg}
+    border: 3px solid {colors.text-dark}
+    boxShadow: '{shadows.default}'
   circle-dot:
-    width: "48px"
-    height: "48px"
-    borderRadius: "{spacing.radius-round}"
-    border: "3px solid {colors.text-dark}"
-    fontFamily: "'Fredoka One', cursive"
-    color: "{colors.white}"
-    description: "Outlined colored disc holding a numeral or single letter. Used as timeline node, step marker, or list bullet anchor."
+    width: 48px
+    height: 48px
+    borderRadius: '{spacing.radius-round}'
+    border: 3px solid {colors.text-dark}
+    fontFamily: '''Fredoka One'', cursive'
+    color: '{colors.white}'
+    description: Outlined colored disc holding a numeral or single letter. Used as timeline node, step marker, or list bullet
+      anchor.
   circle-icon:
-    width: "44px"
-    height: "44px"
-    borderRadius: "{spacing.radius-round}"
-    border: "3px solid {colors.text-dark}"
-    fontFamily: "'Fredoka One', cursive"
-    background: "any accent surface"
-    description: "Smaller cousin of circle-dot used as a card icon at the top of an info card."
+    width: 44px
+    height: 44px
+    borderRadius: '{spacing.radius-round}'
+    border: 3px solid {colors.text-dark}
+    fontFamily: '''Fredoka One'', cursive'
+    background: any accent surface
+    description: Smaller cousin of circle-dot used as a card icon at the top of an info card.
   step-circle-lg:
-    width: "90px"
-    height: "90px"
-    borderRadius: "{spacing.radius-round}"
-    border: "3px solid {colors.text-dark}"
-    fontFamily: "'Fredoka One', cursive"
-    color: "{colors.white}"
-    boxShadow: "{shadows.small}"
-    description: "Oversized outlined disc used as a process step marker. Carries a hard offset shadow."
+    width: 90px
+    height: 90px
+    borderRadius: '{spacing.radius-round}'
+    border: 3px solid {colors.text-dark}
+    fontFamily: '''Fredoka One'', cursive'
+    color: '{colors.white}'
+    boxShadow: '{shadows.small}'
+    description: Oversized outlined disc used as a process step marker. Carries a hard offset shadow.
   avatar-circle:
-    width: "100px"
-    height: "100px"
-    borderRadius: "{spacing.radius-round}"
-    border: "3px solid {colors.text-dark}"
-    background: "{colors.white}"
-    boxShadow: "{shadows.small}"
-    overflow: "hidden"
+    width: 100px
+    height: 100px
+    borderRadius: '{spacing.radius-round}'
+    border: 3px solid {colors.text-dark}
+    background: '{colors.white}'
+    boxShadow: '{shadows.small}'
+    overflow: hidden
   bullet-dot:
-    width: "20px"
-    height: "20px"
-    borderRadius: "{spacing.radius-round}"
-    border: "2px solid {colors.text-dark}"
-    background: "{colors.butter}"
-    description: "Small outlined disc used as a ::before bullet for body list items, anchored 4px from the top of the line."
+    width: 20px
+    height: 20px
+    borderRadius: '{spacing.radius-round}'
+    border: 2px solid {colors.text-dark}
+    background: '{colors.butter}'
+    description: Small outlined disc used as a ::before bullet for body list items, anchored 4px from the top of the line.
   list-dash:
-    description: "A simple muted-text dash character used as a ::before bullet for compact in-card lists (day-card body)."
+    description: A simple muted-text dash character used as a ::before bullet for compact in-card lists (day-card body).
   legend-swatch:
-    width: "18px"
-    height: "18px"
-    border: "2px solid {colors.text-dark}"
-    borderRadius: "4px"
+    width: 18px
+    height: 18px
+    border: 2px solid {colors.text-dark}
+    borderRadius: 4px
   decoration:
-    position: "absolute"
-    pointerEvents: "none"
+    position: absolute
+    pointerEvents: none
     zIndex: 1
-    description: "Hand-drawn SVG sticker (daisy, star, sun, cloud, rainbow) placed at slide corners and edges as atmospheric ornament. Often crops past the slide edge."
+    description: Hand-drawn SVG sticker (daisy, star, sun, cloud, rainbow) placed at slide corners and edges as atmospheric
+      ornament. Often crops past the slide edge.
   nav-dots:
-    position: "fixed"
-    placement: "right edge, vertically centered"
-    dotSize: "12px"
-    dotBorder: "2px solid {colors.text-dark}"
-    activeBackground: "{colors.butter}"
-    activeTransform: "scale(1.2)"
+    position: fixed
+    placement: right edge, vertically centered
+    dotSize: 12px
+    dotBorder: 2px solid {colors.text-dark}
+    activeBackground: '{colors.butter}'
+    activeTransform: scale(1.2)
   slide-counter:
-    position: "fixed"
-    placement: "bottom center"
-    background: "{colors.white}"
-    border: "3px solid {colors.text-dark}"
-    borderRadius: "{spacing.radius-pill}"
-    padding: "6px 20px"
-    fontFamily: "'Fredoka One', cursive"
-    boxShadow: "{shadows.small}"
+    position: fixed
+    placement: bottom center
+    background: '{colors.white}'
+    border: 3px solid {colors.text-dark}
+    borderRadius: '{spacing.radius-pill}'
+    padding: 6px 20px
+    fontFamily: '''Fredoka One'', cursive'
+    boxShadow: '{shadows.small}'
   chart-container:
-    background: "{colors.white}"
-    border: "3px solid {colors.text-dark}"
-    borderRadius: "{spacing.radius-lg}"
-    boxShadow: "{shadows.default}"
-    padding: "{spacing.pad-card-md}"
+    background: '{colors.white}'
+    border: 3px solid {colors.text-dark}
+    borderRadius: '{spacing.radius-lg}'
+    boxShadow: '{shadows.default}'
+    padding: '{spacing.pad-card-md}'
 ---
 
 ## Frontend Slides Fixed-Stage Policy

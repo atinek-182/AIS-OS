@@ -1,3 +1,24 @@
+---
+title: 09 Share Dialog
+domain: architecture
+summary: Add sharing to the workspace so project owners can invite collaborators by email. Add a `Share` button to the editor
+  navbar that opens the share dialog.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Share Dialog
+- Clerk User Data
+- Implementation
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/09-share-dialog.md
+- When reading context for 09 Share Dialog
+tags:
+- architecture
+- 09-share-dialog
+updated: '2026-08-08'
+---
+
 Add sharing to the workspace so project owners can invite collaborators by email.
 
 ## Share Dialog

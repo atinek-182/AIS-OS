@@ -1,14 +1,33 @@
 ---
+title: Hallmark
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/hallmark [optional parameters]`
+  in chat.'
+critical_directives:
+- Never delete production files, route trees, component directories, or an old website unless the user explicitly asks for
+- Step 0 · Pre-flight scan** — same. Read existing tokens, fonts, framework, microinteraction stance. A button on a Geist-
+- 'State discipline — STRICTER.** Every interactive component MUST ship code for **all 8 states**: default · hover · `:focu'
+- Project-memory append.** No `.hallmark/log.json` entry for component runs. The diversification rule doesn't apply.
+section_outline:
+- Hallmark
+- Invocation & Tri-Mode Routing
+- How to use this skill
+- Disciplines that hold across every verb
+- When the brief is a component, not a page
+read_triggers:
+- When working on skill in .agents/skills/hallmark/SKILL.md
+- When reading context for Hallmark
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: hallmark
-description: Anti-AI-slop design skill for greenfield pages, audits, redesigns, and
-  design extraction from URLs or screenshots. Use when the user asks to build a new
-  app or landing page, wants to redesign something, invokes Hallmark by name, or uses
+description: Anti-AI-slop design skill for greenfield pages, audits, redesigns, and design extraction from URLs or screenshots.
+  Use when the user asks to build a new app or landing page, wants to redesign something, invokes Hallmark by name, or uses
   audit/redesign/study. Invokable directly via /hallmark.
 version: 1.1.0
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Hallmark
 

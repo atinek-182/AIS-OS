@@ -1,3 +1,29 @@
+---
+title: ZORIXEL AIOS User Manual & Execution Guide
+domain: architecture
+summary: Welcome to the central operational manual for your personal AI Operating System (AIOS). This handbook contains instructions
+  on how to trigger and use the custom workspace skills and global plugins set up in your environment. These skills reside
+  in `.
+critical_directives:
+- '**Purpose:** Standardizes, installs, and cleans up plugins and configuration files to transition the'
+- '**Purpose:** Establishes the rule requiring the AIOS to scan the workspace and invoke applicable ski'
+- The AIOS will load rules to state assumptions explicitly, push back on overcomplication, ensure chan
+- '**Enforced Rule:** Enforces plan-first, TDD, and code reviews.'
+section_outline:
+- ZORIXEL AIOS User Manual & Execution Guide
+- '🛠️ Part 1: Custom Workspace Skills'
+- 1. `/daily-plan-day` (Daily Morning Loop)
+- 2. `/daily-review-day` (Daily Evening Loop)
+- 3. `/scrape-competitor` (Competitor Scraper Ingest)
+read_triggers:
+- When working on architecture in references/aios-user-manual.md
+- When reading context for ZORIXEL AIOS User Manual & Execution Guide
+tags:
+- architecture
+- aios-user-manual
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS User Manual & Execution Guide
 
 Welcome to the central operational manual for your personal AI Operating System (AIOS). This handbook contains instructions on how to trigger and use the custom workspace skills and global plugins set up in your environment.

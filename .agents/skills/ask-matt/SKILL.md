@@ -1,4 +1,25 @@
 ---
+title: Ask Matt
+domain: skill
+summary: You don't remember every skill, so ask. A **flow** is a path through the skills. Most paths run along one **main
+  flow**, and two **on-ramps** merge onto it. Everything else is standalone, or a vocabulary layer that runs underneath.
+critical_directives:
+- A huge, foggy effort — a greenfield project or a huge feature build, too big for one session** → **`/wayfinder`**, the m
+- '`/improve-codebase-architecture`** — run whenever you have a spare moment to keep the codebase good for agents to operat'
+- '`/resolving-merge-conflicts`** — work an in-progress merge or rebase conflict hunk by hunk, resolving by **intent** trac'
+section_outline:
+- Ask Matt
+- 'The main flow: idea → ship'
+- Context hygiene
+- On-ramps
+- Codebase health
+read_triggers:
+- When working on skill in .agents/skills/ask-matt/SKILL.md
+- When reading context for Ask Matt
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: ask-matt
 description: Ask which skill or flow fits your situation. A router over the skills in this repo.
 disable-model-invocation: true

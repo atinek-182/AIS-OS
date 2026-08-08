@@ -1,4 +1,27 @@
 ---
+title: Skill
+domain: skill
+summary: 'Reference for writing any document an agent consumes — a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a
+  pointer. The packaging differs; the writing does not: the same levers make each one predictable — the agent taking the same
+  _process_ eve'
+critical_directives:
+- 'Context load** — the cost of always-loaded material on the agent''s window: an `AGENTS.md` line, a skill description, any'
+- 'Co-location** is the within-file companion: where the ladder decides _how far down_ a piece sits, co-location decides _w'
+- Demand** — how much it requires. "Every modified model accounted for" forces thorough work where "produce a change list"
+- 'Negation** is the failure mode beside this lever: steering by prohibition drags the forbidden behaviour into context and'
+section_outline:
+- Context pointers
+- The two loads
+- Information hierarchy
+- Steps and completion criteria
+- When to split
+read_triggers:
+- When working on skill in .agents/skills/writing-for-agents/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: writing-for-agents
 description: Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
 ---

@@ -1,3 +1,25 @@
+---
+title: ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual
+domain: architecture
+summary: 'This document defines the canonical execution specification for all 10 integrated multi-skill workflow chains operating
+  within ZORIXEL AIOS. **Goal**: End-to-end client discovery, sprint scoping, visual development, and quality audit.'
+critical_directives:
+- '**Step 3**: `/gstack eng` — Enforce `/codebase-design` deep module rules (simple interface over deep'
+section_outline:
+- ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual
+- 1. ZORIXEL Client Sprints & Acquisition
+- 2. Superpowers Parallel Subagent System
+- 3. GStack Executive Team Matrix
+- 4. Fullstack Next.js & UI Architecture
+read_triggers:
+- When working on architecture in references/10-MASTER-AIOS-WORKFLOWS.md
+- When reading context for ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual
+tags:
+- architecture
+- 10-MASTER-AIOS-WORKFLOWS
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS 10 Master Integrated Workflows Reference Manual
 
 This document defines the canonical execution specification for all 10 integrated multi-skill workflow chains operating within ZORIXEL AIOS.

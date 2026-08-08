@@ -1,10 +1,28 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/notion-sync [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Steps
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/notion-sync/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: notion-sync
-description: Use when you need to sync local decisions, content calendars, or task
-  lists to Notion databases or pages. Invokable directly via /notion-sync.
+description: Use when you need to sync local decisions, content calendars, or task lists to Notion databases or pages. Invokable
+  directly via /notion-sync.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

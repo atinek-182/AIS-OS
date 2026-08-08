@@ -1,11 +1,27 @@
 ---
+title: Scrape Carousel
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/scrape-carousel [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Scrape Carousel
+- Invocation & Tri-Mode Routing
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/scrape-carousel/SKILL.md
+- When reading context for Scrape Carousel
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: scrape-carousel
-description: Automatically scrape, screenshot, and extract design references from
-  a public Instagram or social media carousel URL. Invokable directly via /scrape-carousel.
+description: Automatically scrape, screenshot, and extract design references from a public Instagram or social media carousel
+  URL. Invokable directly via /scrape-carousel.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Scrape Carousel
 

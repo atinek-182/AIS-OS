@@ -1,3 +1,24 @@
+---
+title: Canonical Services & Pricing Catalog
+domain: audit
+summary: '**Client:** Vashishthya Research Education Foundation **Client ID:** `001-vashishthya-research-edu`'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Canonical Services & Pricing Catalog
+- Contact Information
+- Service Catalog & Price Matrix
+- 1. PHD Writing for All Disciplines
+- 2. PG Project & Dissertation Support
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/01-research-and-audits/SERVICES_CATALOG.md
+- When reading context for Canonical Services & Pricing Catalog
+tags:
+- audit
+- SERVICES_CATALOG
+updated: '2026-08-08'
+---
+
 # Canonical Services & Pricing Catalog
 
 **Client:** Vashishthya Research Education Foundation  

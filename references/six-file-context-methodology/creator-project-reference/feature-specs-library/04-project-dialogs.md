@@ -1,3 +1,25 @@
+---
+title: Project Dialogs & Editor Home
+domain: architecture
+summary: Build the `/editor` home screen and add project dialogs/sidebar actions. No API calls or persistence yet. Reuse the
+  existing editor layout. Do not modify the navbar or sidebar behavior.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Project Dialogs & Editor Home
+- Goal
+- Editor Home
+- Dialogs
+- Create Project
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/04-project-dialogs.md
+- When reading context for Project Dialogs & Editor Home
+tags:
+- architecture
+- 04-project-dialogs
+updated: '2026-08-08'
+---
+
 # Project Dialogs & Editor Home
 
 ## Goal

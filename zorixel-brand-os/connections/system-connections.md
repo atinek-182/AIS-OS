@@ -1,3 +1,23 @@
+---
+title: ZORIXEL Brand System Connections
+domain: brand
+summary: 'This file registers all external channels, accounts, and tools accessible by ZORIXEL Brand OS. - **Instagram**:
+  `@zorixel` (Content publishing, DMs, carousels, reels)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL Brand System Connections
+- 1. Social & Distribution Platforms
+- 2. CLI & API Infrastructure
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/connections/system-connections.md
+- When reading context for ZORIXEL Brand System Connections
+tags:
+- brand
+- system-connections
+updated: '2026-08-08'
+---
+
 # ZORIXEL Brand System Connections
 
 This file registers all external channels, accounts, and tools accessible by ZORIXEL Brand OS.

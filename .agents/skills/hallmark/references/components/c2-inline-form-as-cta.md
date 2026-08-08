@@ -1,3 +1,21 @@
+---
+title: C2 Inline Form As Cta
+domain: skill
+summary: The CTA *is* the form — a single email input with a "Submit →" beside it. No separate landing for sign-up. *Use when:*
+  the action is collecting an email.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- C2 · Inline form-as-CTA
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/c2-inline-form-as-cta.md
+- When reading context for C2 Inline Form As Cta
+tags:
+- skill
+- c2-inline-form-as-cta
+updated: '2026-08-08'
+---
+
 ### C2 · Inline form-as-CTA
 The CTA *is* the form — a single email input with a "Submit →" beside it. No separate landing for sign-up.
 *Use when:* the action is collecting an email.

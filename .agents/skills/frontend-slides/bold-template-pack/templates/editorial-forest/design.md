@@ -1,200 +1,227 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 2px hairline rules separate stacked sections — never thicker, never colored beyond region context.
+- No shadows, no gradients, no glows. Elevation is color-block + rule.
+- 'Green** (`{colors.green}` — #2e4a2a): The deep forest primary. Used as a slide surface, a tile fill, a card border, a me'
+- 'Ink** (`{colors.ink}` — #1a1a17): The body text color on cream surfaces. A warm near-black; never pure #000.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/editorial-forest/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Editorial Forest
-description: A serif-led editorial presentation system in the register of a literary quarterly or art-book monograph. Display type runs in Source Serif 4 at weight 500 with optical-size axis engaged, scaling up to 220px for cover and stat moments. The palette pairs a deep forest green (#2e4a2a) with a dusty rose pink (#e89cb1) over an oat-cream paper ground (#efe7d4), with JetBrains Mono as the editorial chrome (labels, captions, axis ticks). The aesthetic is closer to a Penguin classic, Apartamento spread, or quiet annual report than a tech keynote — confident, paper-feeling, and committed to a small color vocabulary.
-
+description: A serif-led editorial presentation system in the register of a literary quarterly or art-book monograph. Display
+  type runs in Source Serif 4 at weight 500 with optical-size axis engaged, scaling up to 220px for cover and stat moments.
+  The palette pairs a deep forest green (#2e4a2a) with a dusty rose pink (#e89cb1) over an oat-cream paper ground (#efe7d4),
+  with JetBrains Mono as the editorial chrome (labels, captions, axis ticks). The aesthetic is closer to a Penguin classic,
+  Apartamento spread, or quiet annual report than a tech keynote — confident, paper-feeling, and committed to a small color
+  vocabulary.
 colors:
-  green: "#2e4a2a"
-  green-deep: "#243a21"
-  green-lite: "#3a5a36"
-  pink: "#e89cb1"
-  pink-deep: "#d27e96"
-  cream: "#efe7d4"
-  cream-2: "#e6dcc4"
-  ink: "#1a1a17"
-
+  green: '#2e4a2a'
+  green-deep: '#243a21'
+  green-lite: '#3a5a36'
+  pink: '#e89cb1'
+  pink-deep: '#d27e96'
+  cream: '#efe7d4'
+  cream-2: '#e6dcc4'
+  ink: '#1a1a17'
 typography:
   display-hero:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 220
     fontWeight: 500
     lineHeight: 0.92
     letterSpacing: -0.02em
   display:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 140
     fontWeight: 500
     lineHeight: 1.02
     letterSpacing: -0.02em
   headline-xl:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 96
     fontWeight: 500
     lineHeight: 0.96
     letterSpacing: -0.02em
   headline:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 84
     fontWeight: 500
     lineHeight: 1.0
     letterSpacing: -0.02em
   headline-sm:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 80
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: -0.02em
   title-card-lg:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 84
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: -0.01em
   title-card:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 68
     fontWeight: 500
     lineHeight: 0.96
     letterSpacing: -0.01em
   title-card-sm:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 56
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: -0.01em
   figure-caption-serif:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 56
     fontWeight: 500
     lineHeight: 1.05
   name:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 44
     fontWeight: 600
     lineHeight: 1.0
   meta-value:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 32
     fontWeight: 500
   body-lg:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 32
     fontWeight: 400
     lineHeight: 1.32
   body:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 30
     fontWeight: 400
     lineHeight: 1.38
   body-card:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 26
     fontWeight: 400
     lineHeight: 1.34
   label:
-    fontFamily: "'JetBrains Mono', ui-monospace, Menlo, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, Menlo, monospace'
     fontSize: 26
     fontWeight: 500
     letterSpacing: 0.18em
     textTransform: uppercase
   label-tight:
-    fontFamily: "'JetBrains Mono', ui-monospace, Menlo, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, Menlo, monospace'
     fontSize: 26
     fontWeight: 500
     letterSpacing: 0.14em
     textTransform: uppercase
   caption-mono:
-    fontFamily: "'JetBrains Mono', ui-monospace, Menlo, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, Menlo, monospace'
     fontSize: 24
     fontWeight: 500
     letterSpacing: 0.14em
     textTransform: uppercase
   axis-mono:
-    fontFamily: "'JetBrains Mono', ui-monospace, Menlo, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, Menlo, monospace'
     fontSize: 26
     fontWeight: 500
     letterSpacing: 0.08em
   stat-figure:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 220
     fontWeight: 500
     lineHeight: 0.92
     letterSpacing: -0.03em
   stat-figure-unit:
-    fontFamily: "'Source Serif 4', 'Source Serif Pro', Georgia, serif"
+    fontFamily: '''Source Serif 4'', ''Source Serif Pro'', Georgia, serif'
     fontSize: 110
     fontWeight: 500
     lineHeight: 0.92
-
 spacing:
-  slide-pad-default: "96px 120px"
-  slide-pad-narrow: "100px 120px"
-  slide-pad-wide: "100px 140px"
-  slide-pad-statement: "130px 160px"
+  slide-pad-default: 96px 120px
+  slide-pad-narrow: 100px 120px
+  slide-pad-wide: 100px 140px
+  slide-pad-statement: 130px 160px
   grid-gap-cards: 28
   grid-gap-topics: 24
   grid-gap-kpi: 60
-  rule-weight: "2px"
-  rule-weight-card: "2.5px"
-  radius-card: "6px"
-  radius-card-step: "8px"
-  radius-bar-top: "3px 3px 0 0"
-  radius-mark-circle: "50%"
-
+  rule-weight: 2px
+  rule-weight-card: 2.5px
+  radius-card: 6px
+  radius-card-step: 8px
+  radius-bar-top: 3px 3px 0 0
+  radius-mark-circle: 50%
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   topic-tile:
-    description: "Bordered or filled rectangular region holding a mono ordinal, a serif title, optional body, and a mono foot. Background may be green / green-lite / pink / cream-2-with-green-border. Corner radius 6px."
-    borderRadius: "{spacing.radius-card}"
-    padding: "40px 40px 36px"
+    description: Bordered or filled rectangular region holding a mono ordinal, a serif title, optional body, and a mono foot.
+      Background may be green / green-lite / pink / cream-2-with-green-border. Corner radius 6px.
+    borderRadius: '{spacing.radius-card}'
+    padding: 40px 40px 36px
   step-tile:
-    description: "Vertical card carrying a mono ordinal, a serif title, body paragraph, and a mono marker row separated by a top rule. Background fills: cream-with-green-border, solid green, or solid pink."
-    borderRadius: "{spacing.radius-card-step}"
-    padding: "40px 32px 32px"
-    minHeight: "470px"
-    border: "2.5px solid currentColor-region"
+    description: 'Vertical card carrying a mono ordinal, a serif title, body paragraph, and a mono marker row separated by
+      a top rule. Background fills: cream-with-green-border, solid green, or solid pink.'
+    borderRadius: '{spacing.radius-card-step}'
+    padding: 40px 32px 32px
+    minHeight: 470px
+    border: 2.5px solid currentColor-region
   monogram-circle:
-    width: "130px"
-    height: "130px"
-    borderRadius: "{spacing.radius-mark-circle}"
-    border: "2px solid {colors.pink}"
-    fontFamily: "JetBrains Mono"
+    width: 130px
+    height: 130px
+    borderRadius: '{spacing.radius-mark-circle}'
+    border: 2px solid {colors.pink}
+    fontFamily: JetBrains Mono
     fontSize: 28
     letterSpacing: 0.1em
     fontWeight: 500
-    description: "Outlined round mark holding a short mono monogram. The system's signature identity stamp."
+    description: Outlined round mark holding a short mono monogram. The system's signature identity stamp.
   topbar:
-    placement: "top edge of slide"
-    layout: "flex space-between, baseline-aligned"
-    content: "{components.label} on the left, monogram-circle or counter on the right"
+    placement: top edge of slide
+    layout: flex space-between, baseline-aligned
+    content: '{components.label} on the left, monogram-circle or counter on the right'
   footline:
-    position: "absolute"
-    placement: "bottom edge of slide, full-width between slide padding"
-    layout: "flex space-between"
-    typography: "{typography.caption-mono}"
+    position: absolute
+    placement: bottom edge of slide, full-width between slide padding
+    layout: flex space-between
+    typography: '{typography.caption-mono}'
   meta-dl:
-    description: "Three-column definition list separated by a top rule (2px {colors.green}). Each entry has a mono dt label and a serif dd value."
+    description: Three-column definition list separated by a top rule (2px {colors.green}). Each entry has a mono dt label
+      and a serif dd value.
     columns: 3
-    gap: "36px"
-    topBorder: "2px solid {colors.green}"
+    gap: 36px
+    topBorder: 2px solid {colors.green}
   bar:
-    width: "56px"
-    borderRadius: "{spacing.radius-bar-top}"
-    description: "Vertical chart bar in pink, cream, or green. Value label printed above bar in mono."
+    width: 56px
+    borderRadius: '{spacing.radius-bar-top}'
+    description: Vertical chart bar in pink, cream, or green. Value label printed above bar in mono.
   chart-axis:
-    border: "2px solid currentColor"
-    description: "Y-axis and x-axis use a single 2px rule on the inner edges of the plot region; no full axis box."
+    border: 2px solid currentColor
+    description: Y-axis and x-axis use a single 2px rule on the inner edges of the plot region; no full axis box.
   rule-thin:
-    description: "Hairline 2px rule, used as section separator above kpi rows, summary grids, meta dls. Color follows region (green on cream, pink on green)."
+    description: Hairline 2px rule, used as section separator above kpi rows, summary grids, meta dls. Color follows region
+      (green on cream, pink on green).
   legend-swatch:
-    display: "inline-block"
-    width: "26px"
-    height: "26px"
-    borderRadius: "2px"
-    description: "Small filled square preceding a mono legend label. 2px corner radius is the smallest radius in the system."
+    display: inline-block
+    width: 26px
+    height: 26px
+    borderRadius: 2px
+    description: Small filled square preceding a mono legend label. 2px corner radius is the smallest radius in the system.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

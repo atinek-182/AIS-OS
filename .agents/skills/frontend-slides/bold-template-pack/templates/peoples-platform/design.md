@@ -1,212 +1,238 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Red (`{colors.red}`) functions exclusively as a shadow color — never a surface background.
+- Caveat Brush appears at 64–96px, always lowercase, always rotated 2–5 degrees — a deliberate roughness signal.
+- 'Blue Deep** (`{colors.blue-deep}` — #1B1BB0): A darker blue. Used exclusively as the outermost layer of stacked text-sha'
+- 'Red** (`{colors.red}` — #E83A2A): Hot red. The depth color. Used exclusively in text-shadows and box-shadows — the first'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Primary Palette
+- Surface Palette
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/peoples-platform/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: People's Platform
-description: "A WPA-poster-meets-political-campaign presentation system built on three typefaces and a five-color palette that reduces to three functional roles. Alfa Slab One — a compressed slab serif — does all the heavy lifting at extreme sizes in pure uppercase. Caveat Brush drops in as a handwritten human interrupt: lowercase, slightly rotated, emotionally warm. DM Mono carries all metadata at tight uppercase tracking. The palette is electric cobalt blue, amber orange, and hot red — with red functioning exclusively as a shadow/depth color, never as a surface fill. Every slide gets a paper grain overlay that makes the whole deck feel screen-printed. The aesthetic is loud, confident, and populist — the kind of visual language that belongs on a protest placard, a union newsletter, or a campaign bus."
-
+description: 'A WPA-poster-meets-political-campaign presentation system built on three typefaces and a five-color palette
+  that reduces to three functional roles. Alfa Slab One — a compressed slab serif — does all the heavy lifting at extreme
+  sizes in pure uppercase. Caveat Brush drops in as a handwritten human interrupt: lowercase, slightly rotated, emotionally
+  warm. DM Mono carries all metadata at tight uppercase tracking. The palette is electric cobalt blue, amber orange, and hot
+  red — with red functioning exclusively as a shadow/depth color, never as a surface fill. Every slide gets a paper grain
+  overlay that makes the whole deck feel screen-printed. The aesthetic is loud, confident, and populist — the kind of visual
+  language that belongs on a protest placard, a union newsletter, or a campaign bus.'
 colors:
-  blue: "#2C2CDC"
-  blue-deep: "#1B1BB0"
-  orange: "#F2A03A"
-  orange-deep: "#E89321"
-  red: "#E83A2A"
-  red-deep: "#B7281C"
-  cream: "#F4E9D6"
-  paper: "#F5F2EA"
-  ink: "#0E0E14"
-
+  blue: '#2C2CDC'
+  blue-deep: '#1B1BB0'
+  orange: '#F2A03A'
+  orange-deep: '#E89321'
+  red: '#E83A2A'
+  red-deep: '#B7281C'
+  cream: '#F4E9D6'
+  paper: '#F5F2EA'
+  ink: '#0E0E14'
 typography:
   display-jumbo:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 540px
     fontWeight: 400
     lineHeight: 0.82
     letterSpacing: -0.02em
     textTransform: uppercase
   display-hero:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 260px
     fontWeight: 400
     lineHeight: 0.86
     letterSpacing: 0.005em
     textTransform: uppercase
   display-title:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 240px
     fontWeight: 400
     lineHeight: 0.86
     letterSpacing: 0.005em
     textTransform: uppercase
   display-xl:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 180px
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: 0.005em
     textTransform: uppercase
   display-lg:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 140px
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: 0.005em
     textTransform: uppercase
   display-md:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 120px
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: 0.005em
     textTransform: uppercase
   display-sm:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 108px
     fontWeight: 400
     lineHeight: 1.04
     letterSpacing: 0.005em
     textTransform: uppercase
   stat-unit:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 130px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0
     textTransform: uppercase
   section-num:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 54px
     fontWeight: 400
     lineHeight: 1.0
     textTransform: uppercase
   card-title:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 54px
     fontWeight: 400
     lineHeight: 1.0
     textTransform: uppercase
   kpi-value:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 88px
     fontWeight: 400
     lineHeight: 0.9
     textTransform: uppercase
   quote-mark:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 300px
     fontWeight: 400
     lineHeight: 0.7
     textTransform: uppercase
   quote-body:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 78px
     fontWeight: 400
     lineHeight: 1.08
     textTransform: uppercase
   item-title:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 38px
     fontWeight: 400
     lineHeight: 1.0
     textTransform: uppercase
   item-title-sm:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 30px
     fontWeight: 400
     lineHeight: 1.0
     textTransform: uppercase
   toc-entry:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 36px
     fontWeight: 400
     lineHeight: 1.0
     textTransform: uppercase
   subtitle:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 72px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.01em
     textTransform: uppercase
   cta:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 48px
     fontWeight: 400
     letterSpacing: 0.02em
     textTransform: uppercase
   stamp:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 28px
     fontWeight: 400
     letterSpacing: 0.04em
     textTransform: uppercase
   url:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 46px
     fontWeight: 400
     letterSpacing: 0.02em
     textTransform: uppercase
   script-lg:
-    fontFamily: "Caveat Brush, cursive"
+    fontFamily: Caveat Brush, cursive
     fontSize: 96px
     fontWeight: 400
     textTransform: lowercase
   script-md:
-    fontFamily: "Caveat Brush, cursive"
+    fontFamily: Caveat Brush, cursive
     fontSize: 64px
     fontWeight: 400
     textTransform: lowercase
   body-lg:
-    fontFamily: "Archivo Narrow, sans-serif"
+    fontFamily: Archivo Narrow, sans-serif
     fontSize: 30px
     fontWeight: 500
     lineHeight: 1.4
     letterSpacing: 0
   body-md:
-    fontFamily: "Archivo Narrow, sans-serif"
+    fontFamily: Archivo Narrow, sans-serif
     fontSize: 28px
     fontWeight: 500
     lineHeight: 1.35
     letterSpacing: 0
   body-sm:
-    fontFamily: "Archivo Narrow, sans-serif"
+    fontFamily: Archivo Narrow, sans-serif
     fontSize: 26px
     fontWeight: 500
     lineHeight: 1.4
     letterSpacing: 0
   body-xs:
-    fontFamily: "Archivo Narrow, sans-serif"
+    fontFamily: Archivo Narrow, sans-serif
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0
   label:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.18em
     textTransform: uppercase
   label-wide:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.22em
     textTransform: uppercase
   label-accent:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 32px
     fontWeight: 600
     lineHeight: 1.0
     letterSpacing: 0.16em
     textTransform: uppercase
   signoff:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 26px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0.20em
     textTransform: uppercase
-
 spacing:
   slide-gutter: 90px
   content-gutter: 120px
@@ -216,14 +242,12 @@ spacing:
   grid-gap-lg: 90px
   grid-gap-md: 30px
   frame-inset: 48px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   inset-frame:
-    border: "6px solid {colors.cream}"
+    border: 6px solid {colors.cream}
     position: absolute
     inset: 48px
   topbar:
@@ -232,114 +256,114 @@ components:
     left: 0
     right: 0
     height: 90px
-    background: "{colors.blue}"
-    color: "{colors.cream}"
+    background: '{colors.blue}'
+    color: '{colors.cream}'
     padding: 0 90px
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     letterSpacing: 0.18em
-    borderBottom: "6px solid {colors.cream}"
+    borderBottom: 6px solid {colors.cream}
   section-divider:
-    borderBottom: "6px solid {colors.ink}"
+    borderBottom: 6px solid {colors.ink}
     height: 6px
   toc-row:
     display: grid
-    gridTemplateColumns: "90px 1fr 100px"
+    gridTemplateColumns: 90px 1fr 100px
     gap: 24px
-    padding: "20px 0"
-    borderBottom: "3px solid {colors.ink}"
+    padding: 20px 0
+    borderBottom: 3px solid {colors.ink}
   toc-num:
-    fontFamily: "Alfa Slab One, serif"
+    fontFamily: Alfa Slab One, serif
     fontSize: 54px
-    color: "{colors.orange}"
-    textShadow: "3px 3px 0 {colors.red}"
+    color: '{colors.orange}'
+    textShadow: 3px 3px 0 {colors.red}
   pillar-col:
-    padding: "60px 50px"
-    borderRight: "6px solid {colors.ink}"
-    background: "{colors.paper}"
+    padding: 60px 50px
+    borderRight: 6px solid {colors.ink}
+    background: '{colors.paper}'
   pillar-col-alt:
-    background: "{colors.blue}"
-    color: "{colors.cream}"
+    background: '{colors.blue}'
+    color: '{colors.cream}'
   pillar-tag:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     letterSpacing: 0.18em
-    borderTop: "3px solid {colors.ink}"
+    borderTop: 3px solid {colors.ink}
     paddingTop: 18px
     marginTop: 14px
     alignSelf: flex-start
   kpi-card:
-    border: "5px solid {colors.ink}"
-    padding: "28px 30px"
-    background: "{colors.paper}"
+    border: 5px solid {colors.ink}
+    padding: 28px 30px
+    background: '{colors.paper}'
   kpi-card-alt:
-    background: "{colors.blue}"
-    color: "{colors.cream}"
+    background: '{colors.blue}'
+    color: '{colors.cream}'
   timeline-dot:
     width: 60px
     height: 60px
     borderRadius: 50%
-    background: "{colors.orange}"
-    border: "6px solid {colors.ink}"
-    boxShadow: "6px 6px 0 {colors.red}"
+    background: '{colors.orange}'
+    border: 6px solid {colors.ink}
+    boxShadow: 6px 6px 0 {colors.red}
   timeline-dot-alt:
-    background: "{colors.blue}"
+    background: '{colors.blue}'
   timeline-track:
     height: 14px
-    background: "{colors.ink}"
+    background: '{colors.ink}'
   compare-side-left:
-    background: "{colors.paper}"
-    borderRight: "6px solid {colors.ink}"
-    padding: "60px 70px"
+    background: '{colors.paper}'
+    borderRight: 6px solid {colors.ink}
+    padding: 60px 70px
   compare-side-right:
-    background: "{colors.blue}"
-    color: "{colors.cream}"
-    padding: "60px 70px"
+    background: '{colors.blue}'
+    color: '{colors.cream}'
+    padding: 60px 70px
   compare-label:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     letterSpacing: 0.22em
     paddingBottom: 14px
-    borderBottom: "4px solid {colors.ink}"
+    borderBottom: 4px solid {colors.ink}
     alignSelf: flex-start
   diamond-bullet:
     width: 24px
     height: 24px
-    background: "{colors.red}"
+    background: '{colors.red}'
     borderRadius: 4px
     transform: rotate(45deg)
   diamond-bullet-alt:
-    background: "{colors.orange}"
+    background: '{colors.orange}'
   avatar:
     width: 120px
     height: 120px
     borderRadius: 50%
-    background: "{colors.blue}"
-    border: "6px solid {colors.blue}"
-    boxShadow: "6px 6px 0 {colors.red}"
+    background: '{colors.blue}'
+    border: 6px solid {colors.blue}
+    boxShadow: 6px 6px 0 {colors.red}
   quote-stamp:
-    background: "{colors.blue}"
-    color: "{colors.orange}"
-    padding: "18px 32px"
+    background: '{colors.blue}'
+    color: '{colors.orange}'
+    padding: 18px 32px
     transform: rotate(-3deg)
-    border: "5px solid {colors.cream}"
-    fontFamily: "Alfa Slab One, serif"
+    border: 5px solid {colors.cream}
+    fontFamily: Alfa Slab One, serif
     fontSize: 28px
     letterSpacing: 0.04em
-    boxShadow: "6px 6px 0 {colors.red}"
+    boxShadow: 6px 6px 0 {colors.red}
     textTransform: uppercase
   circular-stamp:
     width: 200px
     height: 200px
     borderRadius: 50%
-    background: "{colors.cream}"
-    color: "{colors.blue}"
-    border: "6px solid {colors.orange}"
+    background: '{colors.cream}'
+    color: '{colors.blue}'
+    border: 6px solid {colors.orange}
     transform: rotate(-9deg)
-    boxShadow: "8px 8px 0 {colors.red}"
+    boxShadow: 8px 8px 0 {colors.red}
   meta-pill:
-    border: "3px solid {colors.cream}"
-    padding: "8px 20px"
+    border: 3px solid {colors.cream}
+    padding: 8px 20px
     borderRadius: 999px
   ribbon:
     position: absolute
@@ -347,48 +371,49 @@ components:
     left: 0
     right: 0
     height: 60px
-    background: "{colors.orange}"
-    color: "{colors.blue}"
-    borderTop: "6px solid {colors.ink}"
-    fontFamily: "DM Mono, monospace"
+    background: '{colors.orange}'
+    color: '{colors.blue}'
+    borderTop: 6px solid {colors.ink}
+    fontFamily: DM Mono, monospace
     fontSize: 24px
     letterSpacing: 0.22em
     fontWeight: 600
   lede-block:
-    fontFamily: "Archivo Narrow, sans-serif"
+    fontFamily: Archivo Narrow, sans-serif
     fontWeight: 500
     fontSize: 28px
     lineHeight: 1.35
-    borderLeft: "4px solid {colors.ink}"
+    borderLeft: 4px solid {colors.ink}
     paddingLeft: 50px
   lede-block-top:
-    borderTop: "6px solid {colors.ink}"
+    borderTop: 6px solid {colors.ink}
     paddingTop: 24px
   underline-rule:
     height: 14px
-    background: "{colors.ink}"
-    width: "30%"
+    background: '{colors.ink}'
+    width: 30%
     marginTop: 60px
   kicker:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     letterSpacing: 0.22em
     fontSize: 26px
-    color: "{colors.red}"
+    color: '{colors.red}'
     marginBottom: 48px
   grain-overlay:
     position: absolute
     inset: 0
     pointerEvents: none
-    backgroundImage: "radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px), radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px)"
-    backgroundSize: "3px 3px, 5px 5px"
-    backgroundPosition: "0 0, 1px 2px"
+    backgroundImage: radial-gradient(rgba(0,0,0,.06) 1px, transparent 1px), radial-gradient(rgba(255,255,255,.05) 1px, transparent
+      1px)
+    backgroundSize: 3px 3px, 5px 5px
+    backgroundPosition: 0 0, 1px 2px
     mixBlendMode: multiply
     opacity: 0.5
   orange-dot:
     width: 10px
     height: 10px
     borderRadius: 50%
-    background: "{colors.orange}"
+    background: '{colors.orange}'
 ---
 
 ## Frontend Slides Fixed-Stage Policy

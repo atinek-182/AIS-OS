@@ -1,3 +1,25 @@
+---
+title: 29 Spec Ui Integration
+domain: architecture
+summary: Integrate spec generation results into the editor so users can view, preview, and download specs from the existing
+  ai sidebar specs tab. - in the right sidebar (Specs tab), show a list of specs for the current project
+critical_directives:
+- assume ProjectSpec only provides metadata, content must be fetched separately
+section_outline:
+- Implementation
+- UI Details
+- Scope Limits
+- Notes
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/29-spec-ui-integration.md
+- When reading context for 29 Spec Ui Integration
+tags:
+- architecture
+- 29-spec-ui-integration
+updated: '2026-08-08'
+---
+
 Integrate spec generation results into the editor so users can view, preview, and download specs from the existing ai sidebar specs tab.
 
 ### Implementation

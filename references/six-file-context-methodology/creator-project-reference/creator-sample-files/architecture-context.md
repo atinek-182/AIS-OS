@@ -1,3 +1,47 @@
+---
+title: Architecture Context
+domain: architecture
+summary: 'title: Architecture Context summary: ''| Layer            | Technology              | Role                                                           |'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Architecture Context
+- Stack
+- System Boundaries
+- Storage Model
+- Auth and Collaboration Model
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/architecture-context.md
+- When reading context for Architecture Context
+tags:
+- architecture
+- architecture-context
+updated: '2026-08-08'
+---
+
+---
+title: Architecture Context
+domain: architecture
+summary: '| Layer            | Technology              | Role                                                           |
+  | ---------------- | ----------------------- | --------------------------------------------------------------
+  |'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Architecture Context
+- Stack
+- System Boundaries
+- Storage Model
+- Auth and Collaboration Model
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/architecture-context.md
+- When reading context for Architecture Context
+tags:
+- architecture
+- architecture-context
+updated: '2026-08-08'
+---
+
 # Architecture Context
 
 ## Stack

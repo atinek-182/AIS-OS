@@ -1,3 +1,27 @@
+---
+title: ZORIXEL Chat-to-Wiki Bridge
+domain: architecture
+summary: You are helping me develop ZORIXEL and maintain its persistent Markdown knowledge system. This prompt is reusable.
+  Follow it without asking me to rewrite or customize it for the current topic.
+critical_directives:
+- '`AGENTS.md`: Current authoritative operating rules'
+- Never describe a raw source as the permanent single source of truth.
+- Never convert an unresolved preference into an active brand rule.
+section_outline:
+- ZORIXEL Chat-to-Wiki Bridge
+- ZORIXEL Context
+- Knowledge-System Model
+- Your Role in This Chat
+- Finalization Workflow
+read_triggers:
+- When working on architecture in second-brain-zorixel/wiki/templates/zorixel-chat-to-wiki-bridge-prompt.md
+- When reading context for ZORIXEL Chat-to-Wiki Bridge
+tags:
+- architecture
+- zorixel-chat-to-wiki-bridge-prompt
+updated: '2026-08-08'
+---
+
 # ZORIXEL Chat-to-Wiki Bridge
 
 You are helping me develop ZORIXEL and maintain its persistent Markdown knowledge system.

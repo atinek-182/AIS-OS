@@ -1,3 +1,25 @@
+---
+title: 'Vashishthya Research, IJORAR & MJAP: Client Pitch & Pilot Production Master Plan'
+domain: audit
+summary: '**Client Vault:** `clients/001-vashishthya-research-edu/` **Status:** Ingested & Blueprint Finalized (Awaiting Sister''s
+  Inputs for Placeholders)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Executive Summary & Strategic Positioning
+- 🛠️ Notion + Google Sheets Agentic Workflow Blueprint
+- 1. Database Architecture (Single Source of Truth)
+- 'View A: "Call Intake Desk" (Prashant Sir & Pooja Mam Phone/Desktop View)'
+- 'View B: "My Work Queue" (Employee Personal Board)'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/02-notion-and-automation-specs/NOTION_WORKFLOW_MASTER_PLAN.md
+- 'When reading context for Vashishthya Research, IJORAR & MJAP: Client Pitch & Pilot Production Master Plan'
+tags:
+- audit
+- NOTION_WORKFLOW_MASTER_PLAN
+updated: '2026-08-08'
+---
+
 # Vashishthya Research, IJORAR & MJAP: Client Pitch & Pilot Production Master Plan
 **Client Vault:** `clients/001-vashishthya-research-edu/`  
 **Date:** 2026-08-03  

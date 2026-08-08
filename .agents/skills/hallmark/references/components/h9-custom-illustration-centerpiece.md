@@ -1,3 +1,22 @@
+---
+title: H9 Custom Illustration Centerpiece
+domain: skill
+summary: A single hand-built SVG (Tier B in the enrichment hierarchy — or pure CSS at Tier A for simpler shapes) sitting on
+  the hero as one illustrative element. The bakery loaf, the studio's mascot, the workflow diagram. *Use when:* the brand
+  has a *thing* t
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- H9 · Custom Illustration Centerpiece
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/h9-custom-illustration-centerpiece.md
+- When reading context for H9 Custom Illustration Centerpiece
+tags:
+- skill
+- h9-custom-illustration-centerpiece
+updated: '2026-08-08'
+---
+
 ### H9 · Custom Illustration Centerpiece
 A single hand-built SVG (Tier B in the enrichment hierarchy — or pure CSS at Tier A for simpler shapes) sitting on the hero as one illustrative element. The bakery loaf, the studio's mascot, the workflow diagram.
 *Use when:* the brand has a *thing* that benefits from being drawn — a craft, a character, a process.

@@ -1,11 +1,28 @@
 ---
+title: Autoresearch Loop Targets Manager
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/autoresearch-manage [add|remove]
+  [target-name]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Autoresearch Loop Targets Manager
+- Invocation & Tri-Mode Routing
+- How it works
+- Instructions
+- 'Step 1: Parse Arguments'
+read_triggers:
+- When working on skill in .agents/skills/autoresearch-manage/SKILL.md
+- When reading context for Autoresearch Loop Targets Manager
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: autoresearch-manage
-description: Use when managing Autoresearch loop targets — adding new optimization
-  trials, removing obsolete ones, or registering folders. Invokable directly via /autoresearch-manage.
+description: Use when managing Autoresearch loop targets — adding new optimization trials, removing obsolete ones, or registering
+  folders. Invokable directly via /autoresearch-manage.
 argument-hint: '[add|remove] [target-name]'
 ---
-
-
 
 # Autoresearch Loop Targets Manager
 

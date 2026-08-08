@@ -1,6 +1,28 @@
 ---
+title: Source-Driven Development
+domain: skill
+summary: Every framework-specific code decision must be backed by official documentation. Don't implement from memory — verify,
+  cite, and let the user see your sources. Training data goes stale, APIs get deprecated, best practices evolve. This skill
+  ensures t
+critical_directives:
+- Not authoritative — never cite as primary sources:**
+- Citation rules:**
+section_outline:
+- Source-Driven Development
+- Overview
+- When to Use
+- The Process
+- 'Step 1: Detect Stack and Versions'
+read_triggers:
+- When working on skill in .agents/skills/source-driven-development/SKILL.md
+- When reading context for Source-Driven Development
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: source-driven-development
-description: Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.
+description: Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited
+  code free from outdated patterns. Use when building with any framework or library where correctness matters.
 ---
 
 # Source-Driven Development

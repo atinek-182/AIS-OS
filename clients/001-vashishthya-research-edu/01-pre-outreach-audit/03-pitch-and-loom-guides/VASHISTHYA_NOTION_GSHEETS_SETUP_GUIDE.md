@@ -1,3 +1,25 @@
+---
+title: Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
+domain: audit
+summary: '**Client:** Vashishthya Research Education Foundation **System:** Operational Notion OS + 100% Free Google Workspace
+  Sync Engine'
+critical_directives:
+- Adding a New Column:** Add any new column in Notion or Google Sheets. The system uses **Dynamic Column Mapping**, so exi
+section_outline:
+- Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
+- '📌 STEP 1: Duplicate Notion Master OS Template (2 Minutes)'
+- '📊 STEP 2: Create Master Google Drive Workspace Folder (2 Minutes)'
+- '⚡ STEP 3: Connect Google Apps Script (3 Minutes — 100% Free Cloud Sync)'
+- 🎯 How Staff & Founders Work Daily
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/VASHISTHYA_NOTION_GSHEETS_SETUP_GUIDE.md
+- When reading context for Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
+tags:
+- audit
+- VASHISTHYA_NOTION_GSHEETS_SETUP_GUIDE
+updated: '2026-08-08'
+---
+
 # Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
 
 **Client:** Vashishthya Research Education Foundation  

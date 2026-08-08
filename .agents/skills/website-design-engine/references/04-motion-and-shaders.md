@@ -1,3 +1,26 @@
+---
+title: 'Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)'
+domain: skill
+summary: 'Motion intensity is established in Phase 0 Q&A. Every animation must serve a clear purpose (hierarchy, tactile feedback,
+  spatial transition, narrative sequence): - **Dial 0–3 (Airy / Minimalist)**: Clean CSS hover transitions (`duration-200
+  ease-out`'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)'
+- Motion Dialing Matrix (Dial 0 to 10)
+- Lenis Smooth Momentum Scroll & RAF Sync
+- Native CSS View Timeline Animation Offloading
+- Interactive Radiant Shader HTML Protocol (`pbakaus/radiant`)
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/04-motion-and-shaders.md
+- 'When reading context for Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)'
+tags:
+- skill
+- 04-motion-and-shaders
+updated: '2026-08-08'
+---
+
 # Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)
 
 ## Motion Dialing Matrix (Dial 0 to 10)

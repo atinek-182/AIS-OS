@@ -1,3 +1,25 @@
+---
+title: 'Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide'
+domain: audit
+summary: '**Target Operator:** Atinek Maurya **System:** Notion Master Database -> Google Apps Script -> Google Sheets Live
+  Sync'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide'
+- '📌 STEP 1: GET YOUR NOTION INTEGRATION TOKEN (1 MINUTE)'
+- '🔗 STEP 2: CONNECT THE INTEGRATION TO YOUR NOTION DATABASE (CRITICAL!)'
+- '🆔 STEP 3: GET YOUR NOTION DATABASE ID (30 SECONDS)'
+- '📊 STEP 4: PASTE & RUN THE SCRIPT IN GOOGLE SHEETS (2 MINUTES)'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/NOTION_TO_GSHEETS_INTEGRATION_STEP_BY_STEP.md
+- 'When reading context for Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide'
+tags:
+- audit
+- NOTION_TO_GSHEETS_INTEGRATION_STEP_BY_STEP
+updated: '2026-08-08'
+---
+
 # Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide
 
 **Target Operator:** Atinek Maurya  

@@ -1,3 +1,24 @@
+---
+title: 'Issue tracker: Local Markdown'
+domain: architecture
+summary: 'Issues and specs for this repo live as markdown files in `.scratch/`. - One feature per directory: `.scratch/<feature-slug>/`'
+critical_directives:
+- Implementation issues are one file per ticket at `.scratch/<feature-slug>/issues/<NN>-<slug>.md`, nu
+section_outline:
+- 'Issue tracker: Local Markdown'
+- Conventions
+- When a skill says "publish to the issue tracker"
+- When a skill says "fetch the relevant ticket"
+- Wayfinding operations
+read_triggers:
+- When working on architecture in docs/agents/issue-tracker.md
+- 'When reading context for Issue tracker: Local Markdown'
+tags:
+- architecture
+- issue-tracker
+updated: '2026-08-08'
+---
+
 # Issue tracker: Local Markdown
 
 Issues and specs for this repo live as markdown files in `.scratch/`.

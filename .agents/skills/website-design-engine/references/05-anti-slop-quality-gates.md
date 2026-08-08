@@ -1,3 +1,28 @@
+---
+title: 'Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)'
+domain: skill
+summary: 'Before finalizing frontend output, score the page across 6 design axes (1-5 scale) and stamp a CSS critique header
+  at the top of the stylesheet or root component: /* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */'
+critical_directives:
+- 'Gate #58 (Boxy Grid Container Ban):** Never default to sharp 90-degree 1px square grid containers (`rounded-none`). Alwa'
+- 'Gate #60 (Nuqun Logo Rule):** Always render the official `Nuqun` font vector logo mark (`zorixel`) in navigation headers'
+- 'Gate #61 (Lenis + GSAP Requirement):** Web applications MUST integrate `Lenis` smooth inertia scroll + `GSAP ScrollTrigg'
+- 'Gate #62 (Animated Accordion Rule):** FAQ accordions MUST use Motion/React `AnimatePresence` for smooth height expansion'
+section_outline:
+- 'Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)'
+- Hallmark Pre-Emit Critique Stamp
+- Fullstack Code Quality Audit (`/jsmastery-audit`)
+- Technical SEO & GEO (Generative Engine Optimization) Engine
+- Vibesec Security Hygiene & WCAG AA Accessibility
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/05-anti-slop-quality-gates.md
+- 'When reading context for Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)'
+tags:
+- skill
+- 05-anti-slop-quality-gates
+updated: '2026-08-08'
+---
+
 # Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)
 
 ## Hallmark Pre-Emit Critique Stamp

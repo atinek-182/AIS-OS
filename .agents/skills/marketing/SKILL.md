@@ -1,12 +1,28 @@
 ---
+title: Marketing & Copywriting Router Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/marketing [optional parameters]`
+  in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Marketing & Copywriting Router Skill
+- Invocation & Tri-Mode Routing
+- Step-by-Step Execution Workflow
+- 1. Identify the Task Category & VoC Research Integration
+- 2. Read the Reference Skill File
+read_triggers:
+- When working on skill in .agents/skills/marketing/SKILL.md
+- When reading context for Marketing & Copywriting Router Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: marketing
-description: Use when copywriting, writing or improving marketing copy, headlines,
-  CTAs, landing page copy, value propositions, taglines, email sequences, or drafting
-  Instagram reels/captions. Invokable directly via /marketing.
+description: Use when copywriting, writing or improving marketing copy, headlines, CTAs, landing page copy, value propositions,
+  taglines, email sequences, or drafting Instagram reels/captions. Invokable directly via /marketing.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Marketing & Copywriting Router Skill
 

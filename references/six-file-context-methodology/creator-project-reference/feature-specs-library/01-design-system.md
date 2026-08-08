@@ -1,3 +1,20 @@
+---
+title: 01 Design System
+domain: architecture
+summary: Read `AGENTS.md` and `context/ui-context.md` before starting. We're adding the design system and UI primitive components.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Check when done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/01-design-system.md
+- When reading context for 01 Design System
+tags:
+- architecture
+- 01-design-system
+updated: '2026-08-08'
+---
+
 Read `AGENTS.md` and `context/ui-context.md` before starting.
 
 We're adding the design system and UI primitive components.

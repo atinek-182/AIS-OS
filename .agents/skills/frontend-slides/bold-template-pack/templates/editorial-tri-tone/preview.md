@@ -1,3 +1,28 @@
+---
+title: Editorial Tri-Tone Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/editorial-tri-tone/design.md`'
+critical_directives:
+- 'Tagline: Three-color editorial system: dusty pink, mustard cream, and deep burgundy, set in Bricolage + Instrument Serif'
+- 'Signature move: The em tag within Bricolage Grotesque headlines always triggers a switch to Instrument Serif italic — th'
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+section_outline:
+- Editorial Tri-Tone Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/editorial-tri-tone/preview.md
+- When reading context for Editorial Tri-Tone Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Editorial Tri-Tone Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

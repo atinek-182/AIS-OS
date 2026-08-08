@@ -1,270 +1,300 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Single warm cream surface (`{colors.paper}`) across every slide; pastels appear only as card fills, never as the slide b
+- Page chrome is italic serif (page numerals and footers) plus plain sans (eyebrows) — never mono, never uppercase.
+- 'Paper** (`{colors.paper}` — #F2EEDF): The cream page. The default slide background, the constant across the deck. Warm
+  a'
+- 'Paper Alt** (`{colors.paper-2}` — #ECE6D2): A slightly cooler cream reserved for adjacent-surface separation. Used spari'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/soft-editorial/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Soft Editorial
-description: A warm magazine spread aesthetic — the kind of layout a small print quarterly with field-notes pretensions would commission. Cormorant Garamond carries every headline and ornamental moment with mixed roman and italic; Work Sans recedes into supporting body. The palette is cream paper with a quartet of pastel candy accents (dusty pink, chartreuse lemon, soft peach blush, sage green, lilac) used as colored card backgrounds. Generous rounded cards (24–36px radius) float on translucent white over the cream field. The mood is editorial calm with a sprinkling of riso-print color — closer to a literary research notebook than a corporate deck.
-
+description: A warm magazine spread aesthetic — the kind of layout a small print quarterly with field-notes pretensions would
+  commission. Cormorant Garamond carries every headline and ornamental moment with mixed roman and italic; Work Sans recedes
+  into supporting body. The palette is cream paper with a quartet of pastel candy accents (dusty pink, chartreuse lemon, soft
+  peach blush, sage green, lilac) used as colored card backgrounds. Generous rounded cards (24–36px radius) float on translucent
+  white over the cream field. The mood is editorial calm with a sprinkling of riso-print color — closer to a literary research
+  notebook than a corporate deck.
 colors:
-  paper: "#F2EEDF"
-  paper-2: "#ECE6D2"
-  ink: "#2A241B"
-  ink-soft: "#5C5345"
-  pink: "#E1A4C2"
-  lemon: "#D6DD63"
-  blush: "#E8C9B6"
-  sage: "#B7C7A8"
-  lilac: "#C9BEDC"
-  card-fill: "rgba(255,255,255,0.55)"
-  rule-soft: "rgba(42,36,27,0.18)"
-  rule-medium: "rgba(42,36,27,0.35)"
-
+  paper: '#F2EEDF'
+  paper-2: '#ECE6D2'
+  ink: '#2A241B'
+  ink-soft: '#5C5345'
+  pink: '#E1A4C2'
+  lemon: '#D6DD63'
+  blush: '#E8C9B6'
+  sage: '#B7C7A8'
+  lilac: '#C9BEDC'
+  card-fill: rgba(255,255,255,0.55)
+  rule-soft: rgba(42,36,27,0.18)
+  rule-medium: rgba(42,36,27,0.35)
 color-aliases:
   background: paper
   text-primary: ink
   text-secondary: ink-soft
-
 typography:
   display:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 232px
     fontWeight: 500
     lineHeight: 0.92
     letterSpacing: -0.02em
   title:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 188px
     fontWeight: 500
     lineHeight: 0.95
     letterSpacing: -0.015em
   closer:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 168px
     fontWeight: 500
     lineHeight: 0.95
     letterSpacing: -0.015em
   numeral-hero:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 320px
     fontWeight: 500
     lineHeight: 0.9
     letterSpacing: -0.02em
   numeral-lg:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 200px
     fontWeight: 500
     lineHeight: 0.9
     letterSpacing: -0.02em
   panel-headline:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 124px
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: -0.01em
   section-headline:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 96px
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: -0.01em
   page-headline:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 88px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: -0.01em
   quote-text:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 88px
     fontWeight: 500
     lineHeight: 1.05
     letterSpacing: -0.01em
   quote-mark:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 220px
     fontWeight: 500
     lineHeight: 0.7
     fontStyle: italic
   card-headline:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 72px
     fontWeight: 500
     lineHeight: 1
     letterSpacing: -0.01em
   drop-cap:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 132px
     fontWeight: 500
     lineHeight: 0.85
   opener:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 56px
     fontWeight: 500
     fontStyle: italic
     lineHeight: 1.1
   numeral-step:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 92px
     fontWeight: 500
     fontStyle: italic
     lineHeight: 0.9
   numeral-card:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 64px
     fontWeight: 500
     fontStyle: italic
     lineHeight: 1
   subhead-lg:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 56px
     fontWeight: 500
     fontStyle: italic
     lineHeight: 1.1
   subhead-md:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 44px
     fontWeight: 500
     lineHeight: 1.05
   subhead-sm:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 38px
     fontWeight: 500
     lineHeight: 1.05
   kicker:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 38px
     fontWeight: 400
     fontStyle: italic
     lineHeight: 1.2
   marker:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 32px
     fontWeight: 400
     fontStyle: italic
     lineHeight: 1.3
   card-sub:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 32px
     fontWeight: 500
     lineHeight: 1.1
   eyebrow:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 28px
     fontWeight: 400
     letterSpacing: -0.005em
   page-marker:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 26px
     fontWeight: 400
     fontStyle: italic
   footer:
-    fontFamily: "Cormorant Garamond, Garamond, serif"
+    fontFamily: Cormorant Garamond, Garamond, serif
     fontSize: 26px
     fontWeight: 400
     fontStyle: italic
   body:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 26px
     fontWeight: 400
     lineHeight: 1.5
   body-md:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.5
   attr:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 24px
     fontWeight: 500
     lineHeight: 1.3
   swatch-label:
-    fontFamily: "Work Sans, sans-serif"
+    fontFamily: Work Sans, sans-serif
     fontSize: 11px
     fontWeight: 400
     letterSpacing: 0.06em
     textTransform: uppercase
-
 spacing:
   pad-outer: 80px
   pad-top: 60px
   pad-bottom: 50px
-  card-pad-lg: "64px 48px"
-  card-pad-md: "48px 52px"
-  card-pad-sm: "28px 30px"
+  card-pad-lg: 64px 48px
+  card-pad-md: 48px 52px
+  card-pad-sm: 28px 30px
   gap-cards: 28px
   gap-cards-lg: 36px
   gap-stack: 36px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   card-soft:
-    background: "{colors.card-fill}"
-    borderRadius: "24px to 36px"
-    padding: "{spacing.card-pad-sm} to {spacing.card-pad-lg}"
-    description: "Translucent white card floating on the cream field. The system's default container — used for stats, columns, panels, content blocks."
+    background: '{colors.card-fill}'
+    borderRadius: 24px to 36px
+    padding: '{spacing.card-pad-sm} to {spacing.card-pad-lg}'
+    description: Translucent white card floating on the cream field. The system's default container — used for stats, columns,
+      panels, content blocks.
   card-color:
-    background: "any of pink, lemon, blush, sage, lilac"
-    borderRadius: "22px to 36px"
-    padding: "{spacing.card-pad-sm}"
-    description: "Saturated pastel card containing numerals, step content, or featured items. Text stays ink/ink-soft on every accent fill — never inverted."
+    background: any of pink, lemon, blush, sage, lilac
+    borderRadius: 22px to 36px
+    padding: '{spacing.card-pad-sm}'
+    description: Saturated pastel card containing numerals, step content, or featured items. Text stays ink/ink-soft on every
+      accent fill — never inverted.
   pill:
-    borderRadius: "999px"
-    padding: "4px 14px"
+    borderRadius: 999px
+    padding: 4px 14px
     fontWeight: 500
-    description: "Status pill in a pastel fill (lemon=yes, blush=partial, pink=no) or translucent white with a soft border for notes."
+    description: Status pill in a pastel fill (lemon=yes, blush=partial, pink=no) or translucent white with a soft border
+      for notes.
   swatch-dot:
     width: 56px
     height: 56px
-    borderRadius: "50%"
-    description: "Circular accent disc shown in a row at the top of cover slides — the visual signature of the system's color palette."
+    borderRadius: 50%
+    description: Circular accent disc shown in a row at the top of cover slides — the visual signature of the system's color
+      palette.
   swatch-tile:
-    aspectRatio: "1/1.2"
-    borderRadius: "16px"
-    description: "Rounded rectangle paint chip used in palette displays and design-system layouts."
+    aspectRatio: 1/1.2
+    borderRadius: 16px
+    description: Rounded rectangle paint chip used in palette displays and design-system layouts.
   rule-dashed:
-    borderColor: "{colors.rule-soft}"
-    borderStyle: "dashed"
-    borderWidth: "1px"
-    description: "1px dashed warm-ink hairline used inside matrix tables, panel dividers, and any subdivision that wants to read softer than a solid rule."
+    borderColor: '{colors.rule-soft}'
+    borderStyle: dashed
+    borderWidth: 1px
+    description: 1px dashed warm-ink hairline used inside matrix tables, panel dividers, and any subdivision that wants to
+      read softer than a solid rule.
   rule-solid:
-    borderColor: "{colors.rule-medium}"
-    borderStyle: "solid"
-    borderWidth: "1.5px"
-    description: "Slightly heavier hairline for major dividers inside cards (head-row underlines, column rules)."
+    borderColor: '{colors.rule-medium}'
+    borderStyle: solid
+    borderWidth: 1.5px
+    description: Slightly heavier hairline for major dividers inside cards (head-row underlines, column rules).
   drop-cap:
-    typography: "{typography.drop-cap}"
-    float: "left"
-    description: "First letter of an opener paragraph floats left at ~132px, line-height 0.85, with 8px 14px 0 0 padding. The visible signature of editorial reads."
+    typography: '{typography.drop-cap}'
+    float: left
+    description: First letter of an opener paragraph floats left at ~132px, line-height 0.85, with 8px 14px 0 0 padding. The
+      visible signature of editorial reads.
   legend-bar:
     width: 28px
     height: 12px
-    borderRadius: "6px"
-    description: "Rounded color bar used as a chart legend swatch."
+    borderRadius: 6px
+    description: Rounded color bar used as a chart legend swatch.
   marker-rule:
-    width: "auto"
-    borderTop: "1px dashed {colors.rule-soft}"
-    description: "Dashed top-rule used to mark source attributions or sign-offs beneath content."
+    width: auto
+    borderTop: 1px dashed {colors.rule-soft}
+    description: Dashed top-rule used to mark source attributions or sign-offs beneath content.
   action-bar:
-    background: "{colors.lemon}"
-    borderRadius: "24px"
-    padding: "24px 36px"
-    description: "Lemon-yellow action band running near the top of a slide, containing a tag separator and a serif headline — used for important CTAs or callouts."
+    background: '{colors.lemon}'
+    borderRadius: 24px
+    padding: 24px 36px
+    description: Lemon-yellow action band running near the top of a slide, containing a tag separator and a serif headline
+      — used for important CTAs or callouts.
   chrome-eyebrow:
-    position: "absolute top-left at 60px / 80px"
-    typography: "{typography.eyebrow}"
-    color: "{colors.ink}"
-    description: "Section name in plain sans, sits at the top-left corner of standard slides."
+    position: absolute top-left at 60px / 80px
+    typography: '{typography.eyebrow}'
+    color: '{colors.ink}'
+    description: Section name in plain sans, sits at the top-left corner of standard slides.
   chrome-pagedot:
-    position: "absolute top-right at 60px / 80px"
-    typography: "{typography.page-marker}"
-    color: "{colors.ink-soft}"
-    description: "Roman or arabic page numeral in italic serif at the top-right corner."
+    position: absolute top-right at 60px / 80px
+    typography: '{typography.page-marker}'
+    color: '{colors.ink-soft}'
+    description: Roman or arabic page numeral in italic serif at the top-right corner.
   chrome-footer:
-    position: "absolute bottom at 50px"
-    typography: "{typography.footer}"
-    color: "{colors.ink-soft}"
-    description: "Two-column italic serif footer running across the bottom — date left, publication name right."
+    position: absolute bottom at 50px
+    typography: '{typography.footer}'
+    color: '{colors.ink-soft}'
+    description: Two-column italic serif footer running across the bottom — date left, publication name right.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

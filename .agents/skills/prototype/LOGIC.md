@@ -1,3 +1,26 @@
+---
+title: Logic Prototype
+domain: skill
+summary: A single, self-contained HTML file — a **shareable demo** — that lets anyone drive a state model by clicking buttons.
+  Use this when the question is about **business logic, state transitions, or data shape** — the kind of thing that looks
+  reasonable o
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Logic Prototype
+- When this is the right shape
+- Process
+- 1. State the question
+- 2. Isolate the logic in a portable module
+read_triggers:
+- When working on skill in .agents/skills/prototype/LOGIC.md
+- When reading context for Logic Prototype
+tags:
+- skill
+- LOGIC
+updated: '2026-08-08'
+---
+
 # Logic Prototype
 
 A single, self-contained HTML file — a **shareable demo** — that lets anyone drive a state model by clicking buttons. Use this when the question is about **business logic, state transitions, or data shape** — the kind of thing that looks reasonable on paper but only feels wrong once you push it through real cases.

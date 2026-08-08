@@ -1,4 +1,29 @@
 ---
+title: 'Humanizer: Remove AI Writing Patterns'
+domain: skill
+summary: 'description: | Remove signs of AI-generated writing from text. Use when editing, reviewing, writing responses, copy,
+  headings, emails, or docs to sound natural and human.'
+critical_directives:
+- Fix:** Always use straight quotes (`"..."` and `'...'`), never smart/curly quotes (`“...”` and `‘...’`).
+- '"It is important to note that" → (delete)'
+- Fix:** Never follow a heading with a fluff one-liner that simply restates the heading before real content begins.
+- Fix:** Avoid stacking short declarative sentence fragments to fake drama (*"The old rules were gone."*).
+section_outline:
+- 'Humanizer: Remove AI Writing Patterns'
+- Your Task
+- Voice Calibration
+- PERSONALITY AND SOUL
+- CONTENT PATTERNS
+read_triggers:
+- When working on skill in .agents/skills/humanizer/SKILL.md
+- 'When reading context for Humanizer: Remove AI Writing Patterns'
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
+---
+
+---
 name: humanizer
 description: | Remove signs of AI-generated writing from text. Use when editing, reviewing,
   writing responses, copy, headings, emails, or docs to sound natural and human.

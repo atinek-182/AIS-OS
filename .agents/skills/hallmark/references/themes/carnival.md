@@ -1,3 +1,29 @@
+---
+title: Theme — Carnival
+domain: skill
+summary: Loud-maximalist editorial. **Duo-tone accent system across six named palette drops** (each its own mood), chunky
+  variable display, decorative ornaments, hard-offset shadows, tinted paper. The loud sibling to Riso / Manifesto / Brutal
+  — but **decorati
+critical_directives:
+- '`--color-rule: oklch(40% 0.18 25)` — oxblood rules (decorative)'
+- '`--color-accent: oklch(86% 0.18 95)` — mustard'
+- '`--color-rule: oklch(28% 0.28 350)` — deep magenta rules'
+- '`--color-rule: oklch(30% 0.16 250)` — navy rules'
+section_outline:
+- Theme — Carnival
+- Axes (diversification)
+- Palette drops
+- Drop 01 · Cold Snap *(default)*
+- Drop 02 · Citrus Riot
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/themes/carnival.md
+- When reading context for Theme — Carnival
+tags:
+- skill
+- carnival
+updated: '2026-08-08'
+---
+
 # Theme — Carnival
 
 Loud-maximalist editorial. **Duo-tone accent system across six named palette drops** (each its own mood), chunky variable display, decorative ornaments, hard-offset shadows, tinted paper. The loud sibling to Riso / Manifesto / Brutal — but **decorative, not raw**.

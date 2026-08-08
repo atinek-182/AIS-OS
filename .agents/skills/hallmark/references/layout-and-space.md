@@ -1,3 +1,29 @@
+---
+title: Layout and space
+domain: skill
+summary: 'Layout is where "AI-generated" gets caught. Equal columns, everything centred, every card identical — these are
+  the tells. - A layout has a **primary axis**. Left-biased, right-biased, top-heavy, or bottom-weighted. Centre-biased is
+  a default, not a '
+critical_directives:
+- Break the grid on purpose.** A page with one element crossing the grid is stronger than a page that never does.
+- Use `margin` only for optical adjustments or breaking out of the flow. Never `margin` for a list of siblings.
+- Wide left margin.** Treat the left as a permanent negative space — narrow column of labels, wide column of content. **La
+- 'Grid-breaks.** One element that deliberately extends past a column boundary: a pull-quote, a photograph, a rule, a numbe'
+section_outline:
+- Layout and space
+- Principles
+- The spacing scale
+- Grids
+- Asymmetry techniques
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/layout-and-space.md
+- When reading context for Layout and space
+tags:
+- skill
+- layout-and-space
+updated: '2026-08-08'
+---
+
 # Layout and space
 
 Layout is where "AI-generated" gets caught. Equal columns, everything centred, every card identical — these are the tells.

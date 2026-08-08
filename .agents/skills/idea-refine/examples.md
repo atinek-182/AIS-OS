@@ -1,3 +1,26 @@
+---
+title: Ideation Session Examples
+domain: skill
+summary: These examples demonstrate what good ideation sessions look like across different kinds of ideas. Study the rhythm,
+  tone, and structure — not just the content. The skill should feel equally at home with a vague startup concept, a feature
+  for an exist
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ideation Session Examples
+- 'Example 1: Vague Early-Stage Concept (Full 3-Phase Session)'
+- 'Phase 1: Understand & Expand'
+- 'Phase 2: Evaluate & Converge'
+- 'Phase 3: Sharpen & Ship'
+read_triggers:
+- When working on skill in .agents/skills/idea-refine/examples.md
+- When reading context for Ideation Session Examples
+tags:
+- skill
+- examples
+updated: '2026-08-08'
+---
+
 # Ideation Session Examples
 
 These examples demonstrate what good ideation sessions look like across different kinds of ideas. Study the rhythm, tone, and structure — not just the content. The skill should feel equally at home with a vague startup concept, a feature for an existing product, or a process improvement.

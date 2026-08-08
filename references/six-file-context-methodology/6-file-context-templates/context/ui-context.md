@@ -1,3 +1,24 @@
+---
+title: UI Context
+domain: architecture
+summary: '[Describe the overall visual language — e.g. Dark only. No light mode. The design language is a dark technical'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- UI Context
+- Theme
+- Colors
+- Typography
+- Border Radius
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/6-file-context-templates/context/ui-context.md
+- When reading context for UI Context
+tags:
+- architecture
+- ui-context
+updated: '2026-08-08'
+---
+
 # UI Context
 
 ## Theme

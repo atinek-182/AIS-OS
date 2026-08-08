@@ -1,3 +1,22 @@
+---
+title: 19 Presence Avatars Cursors
+domain: architecture
+summary: Show active room participants inside the editor canvas view, without changing the editor home navbar.
+critical_directives:
+- render cursors for other participants only, never the
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/19-presence-avatars-cursors.md
+- When reading context for 19 Presence Avatars Cursors
+tags:
+- architecture
+- 19-presence-avatars-cursors
+updated: '2026-08-08'
+---
+
 Show active room participants inside the editor canvas view,
 without changing the editor home navbar.
 

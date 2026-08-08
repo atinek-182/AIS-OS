@@ -1,3 +1,26 @@
+---
+title: Client-Conversion AI Design Studio Showcase Implementation Plan
+domain: architecture
+summary: '> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans
+  to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking. **Goal:** Build a breathtak'
+critical_directives:
+- '**Design Rules:** Solid OKLCH surfaces (`oklch(0.12 0.01 260)` background, `oklch(0.16 0.015 260)` s'
+- '[ ] **Step 2: Configure `src/index.css` with OKLCH tokens & display font face rules**'
+section_outline:
+- Client-Conversion AI Design Studio Showcase Implementation Plan
+- Global Constraints
+- 'Task 1: Scaffold Showcase Application & Design Tokens Setup'
+- 'Task 2: Build Minimal Status Navigation Dock'
+- 'Task 3: Build Monolithic Kinetic Hero & Bento Stage'
+read_triggers:
+- When working on architecture in docs/superpowers/plans/2026-07-25-client-showcase-website-plan.md
+- When reading context for Client-Conversion AI Design Studio Showcase Implementation Plan
+tags:
+- architecture
+- 2026-07-25-client-showcase-website-plan
+updated: '2026-08-08'
+---
+
 # Client-Conversion AI Design Studio Showcase Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

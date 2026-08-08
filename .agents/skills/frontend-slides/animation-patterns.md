@@ -1,3 +1,25 @@
+---
+title: Animation Patterns Reference
+domain: skill
+summary: Use this reference when generating presentations. Match animations to the intended feeling. | Feeling | Animations
+  | Visual Cues |
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Animation Patterns Reference
+- Effect-to-Feeling Guide
+- Entrance Animations
+- Background Effects
+- Interactive Effects
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/animation-patterns.md
+- When reading context for Animation Patterns Reference
+tags:
+- skill
+- animation-patterns
+updated: '2026-08-08'
+---
+
 # Animation Patterns Reference
 
 Use this reference when generating presentations. Match animations to the intended feeling.

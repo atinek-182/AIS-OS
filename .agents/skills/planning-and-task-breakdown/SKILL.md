@@ -1,6 +1,27 @@
 ---
+title: Planning and Task Breakdown
+domain: skill
+summary: Decompose work into small, verifiable tasks with explicit acceptance criteria. Good task breakdown is the difference
+  between an agent that completes work reliably and one that produces a tangled mess. Every task should be small enough to
+  implement, t
+critical_directives:
+- Must be sequential:** Database migrations, shared state changes, dependency chains
+section_outline:
+- Planning and Task Breakdown
+- Overview
+- When to Use
+- The Planning Process
+- 'Step 1: Enter Plan Mode'
+read_triggers:
+- When working on skill in .agents/skills/planning-and-task-breakdown/SKILL.md
+- When reading context for Planning and Task Breakdown
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: planning-and-task-breakdown
-description: Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.
+description: Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable
+  tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.
 ---
 
 # Planning and Task Breakdown

@@ -1,3 +1,22 @@
+---
+title: 07 Manifesto
+domain: skill
+summary: Polemical large type. Declaration energy. The page tells the reader what to believe before it tells them what to
+  buy. Often political-poster aesthetic. - **Heading:** all-caps display tilted slightly (`-2°` to `-4°`), or stacked colour-block
+  highligh
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 07 · Manifesto
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/07-manifesto.md
+- When reading context for 07 Manifesto
+tags:
+- skill
+- 07-manifesto
+updated: '2026-08-08'
+---
+
 ## 07 · Manifesto
 
 Polemical large type. Declaration energy. The page tells the reader what to believe before it tells them what to buy. Often political-poster aesthetic.

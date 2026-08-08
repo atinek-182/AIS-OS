@@ -1,241 +1,277 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Default drop-cap color**: `{colors.green}`. Drop caps are the editorial fingerprint and they are always green.'
+- Every editorial paragraph that opens a column may carry a drop cap.** The drop cap is always `{components.drop-cap}` — g
+- 2px solid `{colors.black}`** — used for editorial column rules, RSVP-field underlines, ed-header bottoms, and the stamp-
+- Tape** (`{components.tape}`) — Translucent white rectangle layered at random angle over collage pieces to suggest physic
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/retro-zine/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Retro Zine
-description: "A risograph-zine editorial system on warm khaki paper with a deep forest-green accent and ink-black structure. Display type runs in Bebas Neue (condensed industrial sans, uppercase, generously tracked); body type runs in Space Grotesk at weight 300–500; handwritten emphasis runs in Caveat. A subtle SVG grain overlay sits over every slide, reinforcing the printed-paper feel. The aesthetic borrows from independent press, mid-century activist posters, and DIY zine culture: slightly rotated stamp marks, masking-tape pieces in collage layouts, drop caps, and offset paper-on-paper shadows. The effect is hand-printed editorial — warm but disciplined, confident but tactile."
-
+description: 'A risograph-zine editorial system on warm khaki paper with a deep forest-green accent and ink-black structure.
+  Display type runs in Bebas Neue (condensed industrial sans, uppercase, generously tracked); body type runs in Space Grotesk
+  at weight 300–500; handwritten emphasis runs in Caveat. A subtle SVG grain overlay sits over every slide, reinforcing the
+  printed-paper feel. The aesthetic borrows from independent press, mid-century activist posters, and DIY zine culture: slightly
+  rotated stamp marks, masking-tape pieces in collage layouts, drop caps, and offset paper-on-paper shadows. The effect is
+  hand-printed editorial — warm but disciplined, confident but tactile.'
 colors:
-  bg: "#C8B99A"
-  bg-dark: "#B8A98A"
-  green: "#008F4D"
-  green-light: "#00A85D"
-  black: "#1A1A1A"
-  white: "#F4EFE6"
-
+  bg: '#C8B99A'
+  bg-dark: '#B8A98A'
+  green: '#008F4D'
+  green-light: '#00A85D'
+  black: '#1A1A1A'
+  white: '#F4EFE6'
 color-aliases:
   line: black
-
 typography:
   display-hero:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(56px, 10vw, 160px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(56px, 10vw, 160px)
     fontWeight: 400
     lineHeight: 0.85
     letterSpacing: 0.04em
     textTransform: uppercase
   display-cover:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(48px, 10vw, 140px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(48px, 10vw, 140px)
     fontWeight: 400
     lineHeight: 0.88
     letterSpacing: 0.04em
     textTransform: uppercase
   display:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(48px, 8vw, 120px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(48px, 8vw, 120px)
     fontWeight: 400
     lineHeight: 0.9
     letterSpacing: 0.04em
     textTransform: uppercase
   headline:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(42px, 6vw, 90px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(42px, 6vw, 90px)
     fontWeight: 400
     lineHeight: 0.95
     letterSpacing: 0.03em
     textTransform: uppercase
   headline-md:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(36px, 5vw, 72px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(36px, 5vw, 72px)
     fontWeight: 400
     lineHeight: 0.95
     letterSpacing: 0.03em
     textTransform: uppercase
   statement:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(36px, 6vw, 90px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(36px, 6vw, 90px)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
     textTransform: uppercase
   title:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(24px, 3vw, 42px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(24px, 3vw, 42px)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.04em
     textTransform: uppercase
   number-hero:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(80px, 12vw, 160px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(80px, 12vw, 160px)
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.02em
   number-md:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(44px, 6vw, 80px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(44px, 6vw, 80px)
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.02em
   drop-cap:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "clamp(48px, 6vw, 80px)"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: clamp(48px, 6vw, 80px)
     fontWeight: 400
     lineHeight: 0.8
     letterSpacing: 0.02em
   body:
-    fontFamily: "'Space Grotesk', sans-serif"
-    fontSize: "clamp(13px, 1.2vw, 16px)"
+    fontFamily: '''Space Grotesk'', sans-serif'
+    fontSize: clamp(13px, 1.2vw, 16px)
     fontWeight: 400
     lineHeight: 1.7
   body-md:
-    fontFamily: "'Space Grotesk', sans-serif"
-    fontSize: "clamp(14px, 1.3vw, 18px)"
+    fontFamily: '''Space Grotesk'', sans-serif'
+    fontSize: clamp(14px, 1.3vw, 18px)
     fontWeight: 400
     lineHeight: 1.6
   label-eyebrow:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "14–18px"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: 14–18px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0.2em
     textTransform: uppercase
   label-spaced:
-    fontFamily: "'Space Grotesk', sans-serif"
-    fontSize: "12–14px"
+    fontFamily: '''Space Grotesk'', sans-serif'
+    fontSize: 12–14px
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: 0.25em
     textTransform: uppercase
   caption-feature:
-    fontFamily: "'Bebas Neue', sans-serif"
-    fontSize: "13–15px"
+    fontFamily: '''Bebas Neue'', sans-serif'
+    fontSize: 13–15px
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0.2em
     textTransform: uppercase
   hand-script:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(22px, 3vw, 36px)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(22px, 3vw, 36px)
     fontWeight: 600
     lineHeight: 1.3
   hand-script-sm:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(16px, 2vw, 22px)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(16px, 2vw, 22px)
     fontWeight: 400
     lineHeight: 1.3
   hand-script-lg:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(24px, 3vw, 36px)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(24px, 3vw, 36px)
     fontWeight: 600
     lineHeight: 1.3
-
 spacing:
   slide-pad: 60px
-  slide-pad-wide: "60px 80px"
+  slide-pad-wide: 60px 80px
   card-pad-lg: 48px
   card-pad-md: 32px
   card-pad-sm: 24px
   gap-lg: 60px
   gap-md: 40px
   gap-sm: 24px
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   grain-overlay:
-    backgroundImage: "SVG fractal-noise filter, base 200×200 tile"
+    backgroundImage: SVG fractal-noise filter, base 200×200 tile
     opacity: 0.07
     zIndex: 9999
-    description: "Fixed, full-viewport SVG grain overlay sitting above all content. Imitates the print-grain texture of a risograph or letterpress page. Pointer-events disabled. Required on every slide."
+    description: Fixed, full-viewport SVG grain overlay sitting above all content. Imitates the print-grain texture of a risograph
+      or letterpress page. Pointer-events disabled. Required on every slide.
   line-box:
-    border: "3px solid {colors.black}"
-    description: "Generic outlined card with 3px solid black border on khaki background. The system's default content container."
+    border: 3px solid {colors.black}
+    description: Generic outlined card with 3px solid black border on khaki background. The system's default content container.
   line-divider:
-    border: "3px solid {colors.black}"
-    description: "Strict 3px black rule used as a region divider. May be top, bottom, left, or right of a region; meets adjacent borders without gap."
+    border: 3px solid {colors.black}
+    description: Strict 3px black rule used as a region divider. May be top, bottom, left, or right of a region; meets adjacent
+      borders without gap.
   line-thin:
-    border: "2px solid {colors.black}"
-    description: "2px black rule used inside a section for sub-region division (editorial column rule, ed-header bottom rule)."
+    border: 2px solid {colors.black}
+    description: 2px black rule used inside a section for sub-region division (editorial column rule, ed-header bottom rule).
   line-fine:
-    border: "1.5px solid {colors.black}"
-    description: "1.5px black rule used inside grid containers for cell separation (sub-cells inside a 3px-bordered grid)."
+    border: 1.5px solid {colors.black}
+    description: 1.5px black rule used inside grid containers for cell separation (sub-cells inside a 3px-bordered grid).
   stamp:
-    transform: "rotate(-8deg) or rotate(6deg)"
+    transform: rotate(-8deg) or rotate(6deg)
     display: inline-block
-    description: "Any element may be rotated -8deg (stamp) or 6deg (stamp-alt) to read as a hand-pressed ink stamp or applied label. Reserve for badges, callouts, and decorative overlays."
+    description: Any element may be rotated -8deg (stamp) or 6deg (stamp-alt) to read as a hand-pressed ink stamp or applied
+      label. Reserve for badges, callouts, and decorative overlays.
   stamp-mark:
-    background: "{colors.black}"
-    color: "{colors.green}"
-    fontFamily: "'Bebas Neue', sans-serif"
-    padding: "10px 24px"
-    border: "2px solid {colors.green}"
-    transform: "rotate(-8deg)"
+    background: '{colors.black}'
+    color: '{colors.green}'
+    fontFamily: '''Bebas Neue'', sans-serif'
+    padding: 10px 24px
+    border: 2px solid {colors.green}
+    transform: rotate(-8deg)
     fontSize: 18px
     letterSpacing: 0.1em
-    description: "Approval / status stamp — black background, green text, green 2px border, rotated -8deg. Used as a 'stamp of authenticity' callout."
+    description: Approval / status stamp — black background, green text, green 2px border, rotated -8deg. Used as a 'stamp
+      of authenticity' callout.
   ribbon-bar:
-    background: "{colors.green}"
-    color: "{colors.white}"
-    padding: "4–8px 12–20px"
-    description: "Solid green color-block that contains light cream text — used as section labels, accent strips, and inline highlight bars."
+    background: '{colors.green}'
+    color: '{colors.white}'
+    padding: 4–8px 12–20px
+    description: Solid green color-block that contains light cream text — used as section labels, accent strips, and inline
+      highlight bars.
   inline-highlight:
-    background: "{colors.black}"
-    color: "{colors.bg}"
-    padding: "2px 8px"
+    background: '{colors.black}'
+    color: '{colors.bg}'
+    padding: 2px 8px
     fontWeight: 600
-    description: "Black-on-khaki marker highlight applied inline inside body paragraphs to lift a phrase. The print equivalent of a marker pen swipe."
+    description: Black-on-khaki marker highlight applied inline inside body paragraphs to lift a phrase. The print equivalent
+      of a marker pen swipe.
   drop-cap:
     float: left
-    fontSize: "clamp(48px, 6vw, 80px)"
-    fontFamily: "'Bebas Neue', sans-serif"
-    color: "{colors.green}"
+    fontSize: clamp(48px, 6vw, 80px)
+    fontFamily: '''Bebas Neue'', sans-serif'
+    color: '{colors.green}'
     lineHeight: 0.8
     marginRight: 12px
-    description: "Oversized green initial cap at the start of an editorial paragraph. Bebas Neue, line-height 0.8, floated left so body text wraps around."
+    description: Oversized green initial cap at the start of an editorial paragraph. Bebas Neue, line-height 0.8, floated
+      left so body text wraps around.
   card-offset:
-    background: "{colors.white}"
-    border: "3px solid {colors.black}"
+    background: '{colors.white}'
+    border: 3px solid {colors.black}
     positionBefore:
-      offset: "12px down, 12px right"
-      background: "{colors.green}"
+      offset: 12px down, 12px right
+      background: '{colors.green}'
       zIndex: -1
-    description: "Card with a paper-on-paper offset effect — a solid green slab sits 12px behind the card, offset down-and-right. Reads as a colored shadow without using box-shadow."
+    description: Card with a paper-on-paper offset effect — a solid green slab sits 12px behind the card, offset down-and-right.
+      Reads as a colored shadow without using box-shadow.
   collage-piece:
-    border: "3px solid {colors.black}"
+    border: 3px solid {colors.black}
     padding: 24px
     position: absolute
-    transform: "rotate(-5deg to 5deg)"
-    description: "Free-positioned collage panel with a 3px black border and small rotation. Backgrounds vary across pieces — white, khaki-dark, green, or black-with-inversion. Used in scatter-on-page compositions."
+    transform: rotate(-5deg to 5deg)
+    description: Free-positioned collage panel with a 3px black border and small rotation. Backgrounds vary across pieces
+      — white, khaki-dark, green, or black-with-inversion. Used in scatter-on-page compositions.
   tape:
     width: 80px
     height: 24px
-    background: "rgba(255,255,255,0.4)"
-    border: "1px solid rgba(0,0,0,0.1)"
-    transform: "rotate(-40deg to 35deg)"
-    description: "Translucent masking-tape rectangle layered at random angles over a collage to suggest physically taped-down pieces. Positioned absolutely; 1px hairline border. Always semi-transparent white."
+    background: rgba(255,255,255,0.4)
+    border: 1px solid rgba(0,0,0,0.1)
+    transform: rotate(-40deg to 35deg)
+    description: Translucent masking-tape rectangle layered at random angles over a collage to suggest physically taped-down
+      pieces. Positioned absolutely; 1px hairline border. Always semi-transparent white.
   divider-stub:
     width: 60–80px
     height: 4px
-    background: "{colors.white} or {colors.green}"
-    description: "Short solid horizontal rule used as a centered visual breath above/below a statement or closing title. 4px tall."
+    background: '{colors.white} or {colors.green}'
+    description: Short solid horizontal rule used as a centered visual breath above/below a statement or closing title. 4px
+      tall.
   rsvp-field:
-    borderBottom: "2px solid {colors.black}"
+    borderBottom: 2px solid {colors.black}
     paddingBottom: 8px
-    description: "Form-field row pattern: small Bebas Neue green label, hand-script value drawn over a 2px black underline. Mimics a written form."
+    description: 'Form-field row pattern: small Bebas Neue green label, hand-script value drawn over a 2px black underline.
+      Mimics a written form.'
   ledger-row:
-    borderBottom: "1.5px solid {colors.black} (header) or 1px solid rgba(black, 0.22) (body)"
-    padding: "10–18px 0"
-    description: "Horizontal data row pattern: date | title | edition | track | nr. Header row has stronger bottom border; body rows have hairline dividers."
+    borderBottom: 1.5px solid {colors.black} (header) or 1px solid rgba(black, 0.22) (body)
+    padding: 10–18px 0
+    description: 'Horizontal data row pattern: date | title | edition | track | nr. Header row has stronger bottom border;
+      body rows have hairline dividers.'
   chip:
-    padding: "4px 10px"
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "11–12px"
-    color: "{colors.white}"
+    padding: 4px 10px
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: 11–12px
+    color: '{colors.white}'
     textTransform: uppercase
     letterSpacing: 0.06em
-    description: "Mono-font color chip used inline in tabular ledger rows to tag a row's category. Fill pulls from green / red-stamp / orange / pink / blue as a categorical palette extension."
+    description: Mono-font color chip used inline in tabular ledger rows to tag a row's category. Fill pulls from green /
+      red-stamp / orange / pink / blue as a categorical palette extension.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

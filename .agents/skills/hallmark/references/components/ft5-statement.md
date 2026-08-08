@@ -1,3 +1,22 @@
+---
+title: Ft5 Statement
+domain: skill
+summary: One large display sentence dominates the footer — a closing line, not a sitemap. Wordmark, minimal links, copyright
+  sit beneath in muted small type. Stripe (older), Mailchimp pre-rebrand, agency portfolio closers. *Use when:* the page wants
+  a *closin
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ft5 · Statement
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft5-statement.md
+- When reading context for Ft5 Statement
+tags:
+- skill
+- ft5-statement
+updated: '2026-08-08'
+---
+
 ### Ft5 · Statement
 One large display sentence dominates the footer — a closing line, not a sitemap. Wordmark, minimal links, copyright sit beneath in muted small type. Stripe (older), Mailchimp pre-rebrand, agency portfolio closers.
 *Use when:* the page wants a *closing line* — editorial, manifesto, atmospheric. The sentence pairs with the page's argument.

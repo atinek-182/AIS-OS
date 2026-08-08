@@ -1,3 +1,26 @@
+---
+title: 'Issue tracker: GitLab'
+domain: skill
+summary: 'Issues and specs for this repo live as GitLab issues. Use the [`glab`](https://gitlab.com/gitlab-org/cli) CLI for
+  all operations. - **Create an issue**: `glab issue create --title "..." --description "..."`. Use a heredoc for multi-line
+  descriptions.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Issue tracker: GitLab'
+- Conventions
+- Merge requests as a triage surface
+- When a skill says "publish to the issue tracker"
+- When a skill says "fetch the relevant ticket"
+read_triggers:
+- When working on skill in .agents/skills/setup-matt-pocock-skills/issue-tracker-gitlab.md
+- 'When reading context for Issue tracker: GitLab'
+tags:
+- skill
+- issue-tracker-gitlab
+updated: '2026-08-08'
+---
+
 # Issue tracker: GitLab
 
 Issues and specs for this repo live as GitLab issues. Use the [`glab`](https://gitlab.com/gitlab-org/cli) CLI for all operations.

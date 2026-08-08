@@ -1,3 +1,28 @@
+---
+title: ZORIXEL AIOS Session Post-Mortem Audit & System Evolution Report
+domain: skill
+summary: 'Date: 2026-08-08 · Operator: Atinek Maurya · System Target: Skill Workflows & Master Scenario Mapping Engine (Option
+  A 10 Playbooks + Option B 7-Stage Agency Engine) - **Category**: Shell & Execution / Path & Binary'
+critical_directives:
+- 'Mandatory Pre-Execution Rule (Rule 1.2 & 1.20)**: Always resolve CLI binaries via direct `node` script execution with `s'
+- 'Mandatory Pre-Execution Rule (Rule 1.7)**: Standardize all terminal logs to ASCII tags (`[OK]`, `[SUCCESS]`, `[ERROR]`) '
+- 'Mandatory Pre-Execution Rule**: Use single-term keywords or Graphify AST runner for multi-context queries.'
+- 'Mandatory Pre-Execution Rule (Rule 1.9)**: Enforce defensive null guards on 100% of Notion Formula 2.0 properties across'
+section_outline:
+- ZORIXEL AIOS Session Post-Mortem Audit & System Evolution Report
+- 'SECTION 1: COMPREHENSIVE TERMINAL, SYNTAX, API & ENVIRONMENT ERROR CATALOG'
+- Error 1.1 — Subprocess CLI Binary Resolution (`WinError 2`) on Windows OS
+- Error 1.2 — Windows Standard Output Codepage `cp1252` Encoding Exception
+- Error 1.3 — Deep Search CLI Exact Match Null Return on Multi-Word Phrases
+read_triggers:
+- When working on skill in errors-and-lessons/SESSION_POSTMORTEM_2026-08-08_SKILL_WORKFLOWS_ENGINE.md
+- When reading context for ZORIXEL AIOS Session Post-Mortem Audit & System Evolution Report
+tags:
+- skill
+- SESSION_POSTMORTEM_2026-08-08_SKILL_WORKFLOWS_ENGINE
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS Session Post-Mortem Audit & System Evolution Report
 Date: 2026-08-08 · Operator: Atinek Maurya · System Target: Skill Workflows & Master Scenario Mapping Engine (Option A 10 Playbooks + Option B 7-Stage Agency Engine)
 

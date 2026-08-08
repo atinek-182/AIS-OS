@@ -1,3 +1,26 @@
+---
+title: UI Prototype
+domain: skill
+summary: Generate **several radically different UI variations** on a single route, switchable from a floating bottom bar.
+  The user flips between variants in the browser, picks one (or steals bits from each), then throws the rest away. If the
+  question is about
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- UI Prototype
+- When this is the right shape
+- Two sub-shapes — strongly prefer sub-shape A
+- Sub-shape A — adjustment to an existing page (preferred)
+- Sub-shape B — a new page (last resort)
+read_triggers:
+- When working on skill in .agents/skills/prototype/UI.md
+- When reading context for UI Prototype
+tags:
+- skill
+- UI
+updated: '2026-08-08'
+---
+
 # UI Prototype
 
 Generate **several radically different UI variations** on a single route, switchable from a floating bottom bar. The user flips between variants in the browser, picks one (or steals bits from each), then throws the rest away.

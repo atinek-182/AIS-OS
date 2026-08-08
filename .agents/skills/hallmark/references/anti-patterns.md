@@ -1,3 +1,30 @@
+---
+title: Anti-patterns — the named tells
+domain: skill
+summary: 'The `hallmark audit` verb flags these by name. Every one of these is a signature of AI-generated UI. Seeing one
+  is a problem; seeing two in the same view is a confirmation. Each entry: the tell, why it reads as AI-generated, and the
+  fix.'
+critical_directives:
+- 'Fix.** Use a hairline border all around, or no border, or a small accent square beside the heading. Never an asymmetric '
+- 'Fix.** Before writing code, look in the project''s CSS for a `/* Hallmark · macrostructure: <name> · ... */` stamp. If
+  on'
+- Fix.** Pick from the routing table in [`component-cookbook.md`](component-cookbook.md) § Footers. Default to Ft1 Mast-he
+- Fix.** `<video autoplay muted loop playsinline>` — always all four. A separate audio toggle button if sound is genuinely
+section_outline:
+- Anti-patterns — the named tells
+- Critical (ships as slop)
+- The purple-gradient hero
+- Inter-everywhere
+- The 3-column feature grid
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/anti-patterns.md
+- When reading context for Anti-patterns — the named tells
+tags:
+- skill
+- anti-patterns
+updated: '2026-08-08'
+---
+
 # Anti-patterns — the named tells
 
 The `hallmark audit` verb flags these by name. Every one of these is a signature of AI-generated UI. Seeing one is a problem; seeing two in the same view is a confirmation.

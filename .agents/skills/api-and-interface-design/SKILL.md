@@ -1,6 +1,28 @@
 ---
+title: API and Interface Design
+domain: skill
+summary: 'Design stable, well-documented interfaces that are hard to misuse. Good interfaces make the right thing easy and
+  the wrong thing hard. This applies to REST APIs, GraphQL schemas, module boundaries, component props, and any surface where
+  one piece of '
+critical_directives:
+- External service response parsing (third-party data -- **always treat as untrusted**)
+section_outline:
+- API and Interface Design
+- Overview
+- When to Use
+- Core Principles
+- Hyrum's Law
+read_triggers:
+- When working on skill in .agents/skills/api-and-interface-design/SKILL.md
+- When reading context for API and Interface Design
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: api-and-interface-design
-description: Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.
+description: Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface.
+  Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between
+  frontend and backend.
 ---
 
 # API and Interface Design

@@ -1,3 +1,22 @@
+---
+title: 12 Shape Panel
+domain: architecture
+summary: Add a bottom shape panel so users can drag shapes onto the canvas and create new nodes. 1. Add a floating pill-shaped
+  toolbar at the bottom-center of the canvas.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/12-shape-panel.md
+- When reading context for 12 Shape Panel
+tags:
+- architecture
+- 12-shape-panel
+updated: '2026-08-08'
+---
+
 Add a bottom shape panel so users can drag shapes onto the canvas and create new nodes.
 
 ## Implementation

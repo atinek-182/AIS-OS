@@ -1,3 +1,23 @@
+---
+title: 07 Wire Editor Home
+domain: architecture
+summary: Wire the editor home sidebar and dialogs to the real project API. The editor home page is a server component.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Data Fetching
+- '`useProjectActions`'
+- Wiring
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/07-wire-editor-home.md
+- When reading context for 07 Wire Editor Home
+tags:
+- architecture
+- 07-wire-editor-home
+updated: '2026-08-08'
+---
+
 Wire the editor home sidebar and dialogs to the real project API.
 
 ### Data Fetching

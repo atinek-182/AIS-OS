@@ -1,3 +1,26 @@
+---
+title: AIS-OS Intake
+domain: architecture
+summary: This is the source-of-truth file for your AIOS. Fill it in by typing, voice-pasting (Wispr Flow / OS dictation),
+  or running `/onboard` for a guided conversation. Whichever mode, this file is what `/onboard` reads to scaffold your Day-1
+  setup. I am At
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- AIS-OS Intake
+- Q1 — Who are you, what do you sell, who do you sell it to?
+- Q2 — Paste 1-2 things you've written recently. Don't edit them.
+- Q3 — What are your 2-3 biggest priorities for the next 90 days?
+- Q4 — Where does revenue actually land, and where is it tracked?
+read_triggers:
+- When working on architecture in context/aios-intake.md
+- When reading context for AIS-OS Intake
+tags:
+- architecture
+- aios-intake
+updated: '2026-08-08'
+---
+
 # AIS-OS Intake
 
 This is the source-of-truth file for your AIOS. Fill it in by typing, voice-pasting (Wispr Flow / OS dictation), or running `/onboard` for a guided conversation. Whichever mode, this file is what `/onboard` reads to scaffold your Day-1 setup.

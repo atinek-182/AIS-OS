@@ -1,3 +1,30 @@
+---
+title: ZORIXEL AIOS Comprehensive Session Post-Mortem Audit Report
+domain: skill
+summary: 'Date: 2026-08-07 · Operator: Atinek Maurya · System Target: AIOS Skill Architecture, Roast Engine, Script Stdio,
+  & Website Design Engine v4.0 - **Category**: Shell & Execution / Encoding'
+critical_directives:
+- 'Mandatory Pre-Execution Rule (Rule 1.7)**: Added `sys.stdout.reconfigure(encoding=''utf-8'', errors=''replace'')` to Rule
+  1.'
+- 'Mandatory Pre-Execution Rule**: Before calling workspace wrapper scripts, inspect `parser.add_argument` definitions or
+  u'
+- 'Mandatory Pre-Execution Rule**: Always pass registered hub identifier keys (`root`) rather than raw filesystem paths whe'
+- 'Iteration Count**: 1 attempt (Delivered full 5-persona council audit identifying rule non-compliance, lack of disk persi'
+section_outline:
+- ZORIXEL AIOS Comprehensive Session Post-Mortem Audit Report
+- 'SECTION 1: COMPREHENSIVE TERMINAL, SYNTAX, API & ENVIRONMENT ERROR CATALOG'
+- Error 1.1 — Windows Console Codepage UnicodeEncodeError in CLI Scripts
+- Error 1.2 — Graphify Runner Invalid Command Argument (`update`)
+- Error 1.3 — Graphify Runner Hub Path Argument Mismatch (`.`)
+read_triggers:
+- When working on skill in errors-and-lessons/SESSION_POSTMORTEM_ERRORS_LESSONS_AND_SKILLS.md
+- When reading context for ZORIXEL AIOS Comprehensive Session Post-Mortem Audit Report
+tags:
+- skill
+- SESSION_POSTMORTEM_ERRORS_LESSONS_AND_SKILLS
+updated: '2026-08-08'
+---
+
 # ZORIXEL AIOS Comprehensive Session Post-Mortem Audit Report
 Date: 2026-08-07 · Operator: Atinek Maurya · System Target: AIOS Skill Architecture, Roast Engine, Script Stdio, & Website Design Engine v4.0
 

@@ -1,3 +1,21 @@
+---
+title: 17 Type Specimen
+domain: skill
+summary: The typeface IS the design. Foundry homepage or design-system marketing where a custom typeface is the brand's proof.
+  - **Heading:** the typeface set at multiple sizes, demonstrating what it does.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 17 · Type Specimen
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/17-type-specimen.md
+- When reading context for 17 Type Specimen
+tags:
+- skill
+- 17-type-specimen
+updated: '2026-08-08'
+---
+
 ## 17 · Type Specimen
 
 The typeface IS the design. Foundry homepage or design-system marketing where a custom typeface is the brand's proof.

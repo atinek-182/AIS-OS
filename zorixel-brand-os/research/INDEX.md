@@ -1,3 +1,25 @@
+---
+title: 📚 ZORIXEL Brand OS — Master Research & Frameworks Index
+domain: brand
+summary: Welcome to the central research index of the **ZORIXEL Brand Operating System**. This document links all ingested
+  transcripts, field manuals, and deep framework guides. 1. [01-10k-claude-ai-side-hustle.md](file:///D:/ZORIXEL-BRAND-OS/research/youtube
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 📚 ZORIXEL Brand OS — Master Research & Frameworks Index
+- 📺 YouTube Video Ingestion Vault (`research/youtube-transcripts/`)
+- 📖 Field Manuals & PDF Ingestions (`research/`)
+- 🧠 Deep Framework Manuals (`research/frameworks/`)
+- 🎯 Master Strategy & Operating Playbooks (`strategy/` & `deliverables/`)
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/INDEX.md
+- When reading context for 📚 ZORIXEL Brand OS — Master Research & Frameworks Index
+tags:
+- brand
+- INDEX
+updated: '2026-08-08'
+---
+
 # 📚 ZORIXEL Brand OS — Master Research & Frameworks Index
 
 Welcome to the central research index of the **ZORIXEL Brand Operating System**. This document links all ingested transcripts, field manuals, and deep framework guides.

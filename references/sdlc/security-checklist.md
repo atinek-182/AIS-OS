@@ -1,3 +1,27 @@
+---
+title: Security Checklist
+domain: task
+summary: Quick reference for web application security. Use alongside the `security-and-hardening` skill. - [Threat Modeling
+  (Start Here)](#threat-modeling-start-here)
+critical_directives:
+- '[ ] Exactly one authoritative lockfile per project/workspace root is committed and CI never rewrites'
+- '[ ] Forced audit remediation (`npm audit fix --force` or equivalent) is never automatic; remediation'
+- '[ ] Model output treated as untrusted — never into `eval`/SQL/shell/`innerHTML`/file paths'
+section_outline:
+- Security Checklist
+- Table of Contents
+- Threat Modeling (Start Here)
+- Pre-Commit Checks
+- Authentication
+read_triggers:
+- When working on task in references/sdlc/security-checklist.md
+- When reading context for Security Checklist
+tags:
+- task
+- security-checklist
+updated: '2026-08-08'
+---
+
 # Security Checklist
 
 Quick reference for web application security. Use alongside the `security-and-hardening` skill.

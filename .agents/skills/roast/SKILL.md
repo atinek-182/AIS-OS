@@ -1,6 +1,30 @@
 ---
+title: ZORIXEL AIOS Universal Adversarial Roast Council (`/roast`)
+domain: skill
+summary: 'This skill is the non-negotiable validation gate across all AIOS workflows. It convenes an adversarial multi-agent
+  red-teaming council to stress-test any proposal, architecture, design mockup, pricing model, marketing campaign, or AI workflow
+  before '
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL AIOS Universal Adversarial Roast Council (`/roast`)
+- Overview & Tri-Mode Execution
+- Flags & Execution Parameters
+- Universal Domain Adapters
+- Smart Trigger Recommendations
+read_triggers:
+- When working on skill in .agents/skills/roast/SKILL.md
+- When reading context for ZORIXEL AIOS Universal Adversarial Roast Council (`/roast`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: roast
-description: Adversarial multi-agent red-teaming engine tailored for Atinek Maurya. Universal, domain-agnostic, zero-emoji, persistent red-teaming council that pressure-tests business ideas, feature designs, web app architectures, marketing copy, AI workflows, or technical plans from every angle before writing code. Supports domain adapters, baseline 5-persona council + 6th/7th specialized personas, multi-turn attack & patch loops (--deep), risk matrix scoring, and disk artifact persistence (--save). Invokable via /roast or naturally when validating ideas.
+description: Adversarial multi-agent red-teaming engine tailored for Atinek Maurya. Universal, domain-agnostic, zero-emoji,
+  persistent red-teaming council that pressure-tests business ideas, feature designs, web app architectures, marketing copy,
+  AI workflows, or technical plans from every angle before writing code. Supports domain adapters, baseline 5-persona council
+  + 6th/7th specialized personas, multi-turn attack & patch loops (--deep), risk matrix scoring, and disk artifact persistence
+  (--save). Invokable via /roast or naturally when validating ideas.
 argument-hint: '[idea_or_plan_to_roast] [--domain code|offer|copy|workflow|strategy] [--deep] [--save]'
 ---
 

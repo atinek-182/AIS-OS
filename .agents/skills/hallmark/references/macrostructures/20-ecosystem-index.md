@@ -1,3 +1,21 @@
+---
+title: 20 Ecosystem Index
+domain: skill
+summary: Multiple discovery surfaces — featured / latest / by category / by people. The platform's value is emergence and
+  browsing, not declaration. - **Heading:** brief positioning paragraph; no display.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 20 · Ecosystem Index
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/20-ecosystem-index.md
+- When reading context for 20 Ecosystem Index
+tags:
+- skill
+- 20-ecosystem-index
+updated: '2026-08-08'
+---
+
 ## 20 · Ecosystem Index
 
 Multiple discovery surfaces — featured / latest / by category / by people. The platform's value is emergence and browsing, not declaration.

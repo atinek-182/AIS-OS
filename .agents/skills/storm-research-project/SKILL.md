@@ -1,6 +1,28 @@
 ---
+title: Storm Research Project (`/storm-research-project`)
+domain: skill
+summary: 'This skill supports Tri-Mode Flexible Execution: - Slash Command: Explicitly run `/storm-research-project [topic]
+  [--domain general|tech|design|content|audit]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Storm Research Project (`/storm-research-project`)
+- Invocation & Tri-Mode Routing
+- What this does
+- Domain Persona Presets (7-Lens Expanded Suite)
+- Execution Pipeline
+read_triggers:
+- When working on skill in .agents/skills/storm-research-project/SKILL.md
+- When reading context for Storm Research Project (`/storm-research-project`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: storm-research-project
-description: Run Stanford's STORM multi-perspective research method for project architecture. Spawns 7 expert lenses (Systems Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product/SaaS Economist, AI/LLM Integration Specialist, Developer Ergonomics & Token Footprint Auditor) -> contradiction map -> self-contained verified HTML report -> persistent brain logging. Invokable directly via /storm-research-project.
+description: Run Stanford's STORM multi-perspective research method for project architecture. Spawns 7 expert lenses (Systems
+  Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product/SaaS Economist, AI/LLM Integration
+  Specialist, Developer Ergonomics & Token Footprint Auditor) -> contradiction map -> self-contained verified HTML report
+  -> persistent brain logging. Invokable directly via /storm-research-project.
 argument-hint: '[topic to research] [--domain tech|design|content|audit|general]'
 ---
 

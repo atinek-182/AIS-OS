@@ -1,131 +1,154 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 4px solid black borders on primary cards, 3px on secondary chrome — never thinner.
+- 'Default border color**: `{colors.black}` — always. There are no colored borders anywhere except the 4px white border on '
+- Inter** (weights 400-900) is the display, body, headline, and stat face. Used at weight 900 for hero/close titles and qu
+- 'Default size for a hero or cover title**: `{typography.heading-xl}` (48–96px). Always uppercase, always weight 900, alwa'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/block-frame/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: BlockFrame
-description: "A maximalist neobrutalist presentation system built on 4px solid black borders, 8px hard offset shadows, and a high-key candy palette of five saturated pastels plus cream and off-white. Display type runs Inter at weight 800-900 in tight uppercase; secondary chrome uses Space Grotesk as a quasi-monospace label face. Tilted decorative shapes (rotated stars, rectangles, badges) puncture the borders and break the grid intentionally. Pastels are paired loudly: pink + blue + green + yellow + cream cycle through every region with deliberate juxtaposition. The aesthetic borrows from zine layout, 1990s-revival sticker books, and contemporary toy packaging — bold, joyful, slightly chaotic, never timid."
-
+description: 'A maximalist neobrutalist presentation system built on 4px solid black borders, 8px hard offset shadows, and
+  a high-key candy palette of five saturated pastels plus cream and off-white. Display type runs Inter at weight 800-900 in
+  tight uppercase; secondary chrome uses Space Grotesk as a quasi-monospace label face. Tilted decorative shapes (rotated
+  stars, rectangles, badges) puncture the borders and break the grid intentionally. Pastels are paired loudly: pink + blue
+  + green + yellow + cream cycle through every region with deliberate juxtaposition. The aesthetic borrows from zine layout,
+  1990s-revival sticker books, and contemporary toy packaging — bold, joyful, slightly chaotic, never timid.'
 colors:
-  black: "#000000"
-  white: "#FFFFFF"
-  offwhite: "#FFFDF5"
-  pink: "#FE90E8"
-  blue: "#C0F7FE"
-  green: "#99E885"
-  yellow: "#F7CB46"
-  cream: "#FFDC8B"
-
+  black: '#000000'
+  white: '#FFFFFF'
+  offwhite: '#FFFDF5'
+  pink: '#FE90E8'
+  blue: '#C0F7FE'
+  green: '#99E885'
+  yellow: '#F7CB46'
+  cream: '#FFDC8B'
 borders:
-  primary: "4px solid {colors.black}"
-  thin: "3px solid {colors.black}"
-
+  primary: 4px solid {colors.black}
+  thin: 3px solid {colors.black}
 shadows:
-  default: "8px 8px 0px {colors.black}"
-  small: "4px 4px 0px {colors.black}"
-  hover: "6px 6px 0px {colors.black}"
-  close-yellow: "12px 12px 0px {colors.yellow}"
-  close-white: "6px 6px 0px {colors.white}"
-
+  default: 8px 8px 0px {colors.black}
+  small: 4px 4px 0px {colors.black}
+  hover: 6px 6px 0px {colors.black}
+  close-yellow: 12px 12px 0px {colors.yellow}
+  close-white: 6px 6px 0px {colors.white}
 typography:
   heading-xl:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
-    fontSize: "clamp(48px, 6vw, 96px)"
+    fontSize: clamp(48px, 6vw, 96px)
     lineHeight: 0.95
     letterSpacing: -0.03em
     textTransform: uppercase
   heading-lg:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 800
-    fontSize: "clamp(32px, 4vw, 64px)"
+    fontSize: clamp(32px, 4vw, 64px)
     lineHeight: 1
     letterSpacing: -0.02em
     textTransform: uppercase
   heading-md:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 700
-    fontSize: "clamp(24px, 2.5vw, 40px)"
+    fontSize: clamp(24px, 2.5vw, 40px)
     lineHeight: 1.1
     letterSpacing: -0.01em
   close-title:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
-    fontSize: "clamp(40px, 5vw, 80px)"
+    fontSize: clamp(40px, 5vw, 80px)
     lineHeight: 0.95
     letterSpacing: -0.03em
     textTransform: uppercase
   quote-text:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
-    fontSize: "clamp(28px, 3.5vw, 52px)"
+    fontSize: clamp(28px, 3.5vw, 52px)
     lineHeight: 1.15
     letterSpacing: -0.02em
     textTransform: uppercase
   stat-number:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
-    fontSize: "clamp(36px, 4vw, 64px)"
+    fontSize: clamp(36px, 4vw, 64px)
     lineHeight: 1
   card-title:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 700
     fontSize: 22px
     lineHeight: 1.2
     textTransform: uppercase
   step-num:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
     fontSize: 48px
     lineHeight: 1
   body:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 500
-    fontSize: "clamp(16px, 1.2vw, 20px)"
+    fontSize: clamp(16px, 1.2vw, 20px)
     lineHeight: 1.6
   body-card:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 500
     fontSize: 15px
     lineHeight: 1.6
   list-body:
-    fontFamily: "'Inter', sans-serif"
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 500
     fontSize: 16px
     lineHeight: 1.5
   label:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 600
     fontSize: 13px
     lineHeight: 1
     letterSpacing: 0.08em
     textTransform: uppercase
   mono-tag:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 600
     fontSize: 14px
     lineHeight: 1
     letterSpacing: 0.05em
     textTransform: uppercase
   mono-meta:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 500
     fontSize: 15px
     letterSpacing: 0.02em
   subtitle-mono:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 500
     fontSize: 18px
     lineHeight: 1.5
   counter:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 700
     fontSize: 14px
     lineHeight: 1
     letterSpacing: 0.1em
     textTransform: uppercase
   legend-item:
-    fontFamily: "'Space Grotesk', monospace"
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 600
     fontSize: 13px
-
 spacing:
   slide-pad: 60px
   card-pad-lg: 60px
@@ -137,119 +160,127 @@ spacing:
   gap-sm: 24px
   gap-xs: 16px
   pad-bottom-clearance: 110px
-
 canvas:
   width: 100vw
   height: 100vh
-  default-background: "{colors.offwhite}"
-
+  default-background: '{colors.offwhite}'
 components:
   card-elevated:
-    border: "4px solid {colors.black}"
-    background: "{colors.white}"
-    boxShadow: "{shadows.default}"
-    description: "Primary elevated card. 4px ink border + 8px ink offset shadow. Background is white by default; on darker surfaces background may shift to offwhite or to a colored fill."
+    border: 4px solid {colors.black}
+    background: '{colors.white}'
+    boxShadow: '{shadows.default}'
+    description: Primary elevated card. 4px ink border + 8px ink offset shadow. Background is white by default; on darker
+      surfaces background may shift to offwhite or to a colored fill.
   card-flat:
-    border: "4px solid {colors.black}"
-    background: "{colors.white}"
-    description: "Bordered card without elevation shadow. Used for secondary content cells inside multi-card grids where the shadow would compound."
+    border: 4px solid {colors.black}
+    background: '{colors.white}'
+    description: Bordered card without elevation shadow. Used for secondary content cells inside multi-card grids where the
+      shadow would compound.
   card-small:
-    border: "3px solid {colors.black}"
-    background: "{colors.white}"
-    boxShadow: "{shadows.small}"
-    description: "Compact card with thinner border + smaller offset shadow. Used for intro-cards, stat-cards, team-cards, and timeline-steps."
+    border: 3px solid {colors.black}
+    background: '{colors.white}'
+    boxShadow: '{shadows.small}'
+    description: Compact card with thinner border + smaller offset shadow. Used for intro-cards, stat-cards, team-cards, and
+      timeline-steps.
   label-pill:
-    border: "3px solid {colors.black}"
-    padding: "6px 16px"
-    fontFamily: "'Space Grotesk', monospace"
+    border: 3px solid {colors.black}
+    padding: 6px 16px
+    fontFamily: '''Space Grotesk'', monospace'
     fontSize: 13px
     fontWeight: 600
     letterSpacing: 0.08em
     textTransform: uppercase
-    background: "{colors.white}"
-    boxShadow: "{shadows.small}"
-    description: "Universal section eyebrow. White base by default; pink, blue, green, yellow, cream variants swap background. Always sits on a 3px black border with a 4px hard offset shadow."
+    background: '{colors.white}'
+    boxShadow: '{shadows.small}'
+    description: Universal section eyebrow. White base by default; pink, blue, green, yellow, cream variants swap background.
+      Always sits on a 3px black border with a 4px hard offset shadow.
   button-primary:
-    border: "3px solid {colors.black}"
-    background: "{colors.yellow}"
-    color: "{colors.black}"
-    padding: "14px 32px"
-    fontFamily: "'Inter', sans-serif"
+    border: 3px solid {colors.black}
+    background: '{colors.yellow}'
+    color: '{colors.black}'
+    padding: 14px 32px
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 700
     fontSize: 16px
-    boxShadow: "{shadows.small}"
-    description: "Primary CTA. Yellow fill with black text, 3px black border, 4px offset shadow. Hover lifts the button -2/-2 and grows shadow to 6px."
+    boxShadow: '{shadows.small}'
+    description: Primary CTA. Yellow fill with black text, 3px black border, 4px offset shadow. Hover lifts the button -2/-2
+      and grows shadow to 6px.
   corner-bracket:
     width: 24px
     height: 24px
-    border: "3px solid {colors.black}"
-    description: "Two L-shaped brackets at opposite corners of a card or frame (tl + br + tr + bl pattern available). Sits inside the card edge as a decorative frame-within-frame."
+    border: 3px solid {colors.black}
+    description: Two L-shaped brackets at opposite corners of a card or frame (tl + br + tr + bl pattern available). Sits
+      inside the card edge as a decorative frame-within-frame.
   icon-square:
     width: 64px
     height: 64px
-    border: "3px solid {colors.black}"
-    description: "Solid pastel square (pink/blue/green) holding a single uppercase letter glyph at weight 700 / 28px. Used as feature-card icons."
+    border: 3px solid {colors.black}
+    description: Solid pastel square (pink/blue/green) holding a single uppercase letter glyph at weight 700 / 28px. Used
+      as feature-card icons.
   feature-deco:
     width: 48px
     height: 48px
-    border: "3px solid {colors.black}"
-    background: "{colors.yellow}"
-    position: "absolute top -12px right 24px"
-    description: "Yellow square notch that protrudes from the top edge of a feature card, breaking the card's top border line."
+    border: 3px solid {colors.black}
+    background: '{colors.yellow}'
+    position: absolute top -12px right 24px
+    description: Yellow square notch that protrudes from the top edge of a feature card, breaking the card's top border line.
   stat-deco-dot:
     width: 12px
     height: 12px
     borderRadius: 50%
-    border: "2px solid {colors.black}"
-    description: "Small black-bordered colored circle pinned to the top-right of a stat card. The only round shape used on cards. Fill cycles through the pastel palette."
+    border: 2px solid {colors.black}
+    description: Small black-bordered colored circle pinned to the top-right of a stat card. The only round shape used on
+      cards. Fill cycles through the pastel palette.
   avatar-square:
     width: 72px
     height: 72px
-    border: "3px solid {colors.black}"
-    background: "{colors.pink}"
-    fontFamily: "'Inter', sans-serif"
+    border: 3px solid {colors.black}
+    background: '{colors.pink}'
+    fontFamily: '''Inter'', sans-serif'
     fontWeight: 900
     fontSize: 28px
     textTransform: uppercase
-    description: "Square avatar with two-letter initials, used in team grids. Fill cycles through the pastel palette."
+    description: Square avatar with two-letter initials, used in team grids. Fill cycles through the pastel palette.
   list-number:
     width: 36px
     height: 36px
-    border: "3px solid {colors.black}"
-    background: "{colors.yellow}"
-    fontFamily: "'Space Grotesk', monospace"
+    border: 3px solid {colors.black}
+    background: '{colors.yellow}'
+    fontFamily: '''Space Grotesk'', monospace'
     fontWeight: 700
     fontSize: 14px
-    description: "Square numerical bullet pinned to the left of each list item. Black border, yellow fill, mono numeral."
+    description: Square numerical bullet pinned to the left of each list item. Black border, yellow fill, mono numeral.
   star-burst:
-    clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"
-    border: "3px solid"
-    background: "{colors.pink}"
-    description: "10-point star clipped via CSS clip-path with a 3px border. Decorative attention-grabber pinned to corners of close-frames and feature cards."
+    clipPath: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+    border: 3px solid
+    background: '{colors.pink}'
+    description: 10-point star clipped via CSS clip-path with a 3px border. Decorative attention-grabber pinned to corners
+      of close-frames and feature cards.
   stripe-block:
-    background: "repeating-linear-gradient(45deg, {colors.black}, {colors.black} 4px, {colors.green} 4px, {colors.green} 12px)"
-    border: "3px solid {colors.black}"
-    description: "Black-and-color diagonal stripe panel used as decorative attention block on poster-class surfaces."
+    background: repeating-linear-gradient(45deg, {colors.black}, {colors.black} 4px, {colors.green} 4px, {colors.green} 12px)
+    border: 3px solid {colors.black}
+    description: Black-and-color diagonal stripe panel used as decorative attention block on poster-class surfaces.
   bg-dot-grid:
-    backgroundImage: "radial-gradient(circle, {colors.black} 1.2px, transparent 1.2px)"
-    backgroundSize: "24px 24px"
-    description: "Faint dot-grid background pattern used as an overlay on light surfaces or as decoration in corners of cards."
+    backgroundImage: radial-gradient(circle, {colors.black} 1.2px, transparent 1.2px)
+    backgroundSize: 24px 24px
+    description: Faint dot-grid background pattern used as an overlay on light surfaces or as decoration in corners of cards.
   tilt-card:
-    transform: "rotate(±2deg) or rotate(±8deg)"
-    description: "Card with intentional tilt. Stat cards alternate -2deg / +2deg; decorative rectangles tilt up to ±12deg. The tilt is the system's playful structural signature."
+    transform: rotate(±2deg) or rotate(±8deg)
+    description: Card with intentional tilt. Stat cards alternate -2deg / +2deg; decorative rectangles tilt up to ±12deg.
+      The tilt is the system's playful structural signature.
   nav-btn:
     width: 48px
     height: 48px
-    border: "3px solid {colors.black}"
-    background: "{colors.white}"
-    boxShadow: "{shadows.small}"
-    description: "Square nav arrow button. Hover translates -2/-2 and grows shadow; active translates 2/2 and shrinks shadow."
+    border: 3px solid {colors.black}
+    background: '{colors.white}'
+    boxShadow: '{shadows.small}'
+    description: Square nav arrow button. Hover translates -2/-2 and grows shadow; active translates 2/2 and shrinks shadow.
   slide-counter:
-    border: "3px solid {colors.black}"
-    background: "{colors.white}"
-    padding: "10px 18px"
-    boxShadow: "{shadows.small}"
-    description: "Persistent slide counter pill at bottom-left. Space Grotesk uppercase NN / NN format."
+    border: 3px solid {colors.black}
+    background: '{colors.white}'
+    padding: 10px 18px
+    boxShadow: '{shadows.small}'
+    description: Persistent slide counter pill at bottom-left. Space Grotesk uppercase NN / NN format.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

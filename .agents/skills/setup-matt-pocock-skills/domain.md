@@ -1,3 +1,25 @@
+---
+title: Domain Docs
+domain: skill
+summary: How the engineering skills should consume this repo's domain documentation when exploring the codebase. - **`CONTEXT.md`**
+  at the repo root, or
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Domain Docs
+- Before exploring, read these
+- File structure
+- Use the glossary's vocabulary
+- Flag ADR conflicts
+read_triggers:
+- When working on skill in .agents/skills/setup-matt-pocock-skills/domain.md
+- When reading context for Domain Docs
+tags:
+- skill
+- domain
+updated: '2026-08-08'
+---
+
 # Domain Docs
 
 How the engineering skills should consume this repo's domain documentation when exploring the codebase.

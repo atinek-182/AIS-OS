@@ -1,3 +1,22 @@
+---
+title: 03 Marquee Hero
+domain: skill
+summary: The hero IS the page above the fold. A single bold statement or visual fills the viewport. No subhead, no CTA in
+  fold. Below the fold the page becomes something else (a list, a grid, prose). - **Heading:** display fills the fold — 8–14
+  vw type, huggi
+critical_directives:
+- Divider:** a thick rule between hero and below-fold, OR a hard colour change.
+section_outline:
+- 03 · Marquee Hero
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/03-marquee-hero.md
+- When reading context for 03 Marquee Hero
+tags:
+- skill
+- 03-marquee-hero
+updated: '2026-08-08'
+---
+
 ## 03 · Marquee Hero
 
 The hero IS the page above the fold. A single bold statement or visual fills the viewport. No subhead, no CTA in fold. Below the fold the page becomes something else (a list, a grid, prose).

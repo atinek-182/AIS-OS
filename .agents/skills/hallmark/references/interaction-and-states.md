@@ -1,3 +1,28 @@
+---
+title: Interaction and states
+domain: skill
+summary: Every interactive element has eight states. Most AI-generated UI styles two (default, hover) and forgets the rest.
+  That's where interfaces break. | State | When | Treatment |
+critical_directives:
+- 'Never `outline: none` without a replacement. `outline: none` with no other focus style is the most common accessibility '
+- Labels above inputs. Visible. Never placeholder-as-label.
+- Required fields marked with `aria-required`, never with colour alone.
+- Disable the submit button only when the form is in a known-invalid or in-flight state. Never on idle.
+section_outline:
+- Interaction and states
+- The eight states
+- Focus rings
+- Hit targets
+- Forms
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/interaction-and-states.md
+- When reading context for Interaction and states
+tags:
+- skill
+- interaction-and-states
+updated: '2026-08-08'
+---
+
 # Interaction and states
 
 Every interactive element has eight states. Most AI-generated UI styles two (default, hover) and forgets the rest. That's where interfaces break.

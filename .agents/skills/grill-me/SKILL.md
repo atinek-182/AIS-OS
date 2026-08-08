@@ -1,6 +1,30 @@
 ---
+title: ZORIXEL AIOS Discovery & Socratic Grilling Engine (`/grill-me`)
+domain: skill
+summary: This skill is the primary discovery gate for Atinek Maurya's AIOS (`AI-OS`). It combines Matt Pocock's Socratic grilling
+  (`grilling`, `grill-with-docs`), domain modeling (`domain-modeling`), and JS Mastery's option evaluation (`architect`) into
+  a rel
+critical_directives:
+- 'INFER**: Framework details, dependencies, and file layout derived from codebase (never ask what code reveals).'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL AIOS Discovery & Socratic Grilling Engine (`/grill-me`)
+- Overview & Tri-Mode Execution
+- When & Why to Use `/grill-me`
+- Non-Negotiable Core Execution Rules
+- 1. Global Zero-Hurry & Rigor Mandate
+read_triggers:
+- When working on skill in .agents/skills/grill-me/SKILL.md
+- When reading context for ZORIXEL AIOS Discovery & Socratic Grilling Engine (`/grill-me`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: grill-me
-description: Deep Socratic discovery and grilling engine tailored for Atinek Maurya. Relentlessly interviews the user about a plan, feature design, business idea, content carousel, or tech stack, explaining concepts before asking questions, presenting structured options, and logging answers to brainstorm capture files. Invokable via /grill-me or naturally when starting any discovery session.
+description: Deep Socratic discovery and grilling engine tailored for Atinek Maurya. Relentlessly interviews the user about
+  a plan, feature design, business idea, content carousel, or tech stack, explaining concepts before asking questions, presenting
+  structured options, and logging answers to brainstorm capture files. Invokable via /grill-me or naturally when starting
+  any discovery session.
 argument-hint: '[topic_or_idea] [optional focus]'
 ---
 

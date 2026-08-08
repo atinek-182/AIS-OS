@@ -1,12 +1,31 @@
 ---
+title: System Self-Improvement, Security Audit & Deployment Workflow
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/improve-system [optional
+  focus or specific file]` in chat.'
+critical_directives:
+- 'Rules & Memory Diffs**: Proposed additions to `AGENTS.md` and `MEMORY.md`.'
+- Update workspace rules in `AGENTS.md` and persistent memory in `MEMORY.md`.
+- '[Rule Name]:** [Concrete guideline to prevent this issue.]'
+- '[Security Rule Name]:** [Secrets hygiene or application security rule.]'
+section_outline:
+- System Self-Improvement, Security Audit & Deployment Workflow
+- Invocation & Tri-Mode Routing
+- Triggering Rules
+- Execution Workflow
+- 'Step 1: Ingest Session Logs & Deep Transcript Pattern Analysis'
+read_triggers:
+- When working on skill in .agents/skills/improve-system/SKILL.md
+- When reading context for System Self-Improvement, Security Audit & Deployment Workflow
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: improve-system
-description: Analyze the current session transcript to update skill instructions,
-  save lessons, update memory, audit web/code security, prune stale configurations,
-  and push all changes to main branch. Invokable directly via /improve-system.
+description: Analyze the current session transcript to update skill instructions, save lessons, update memory, audit web/code
+  security, prune stale configurations, and push all changes to main branch. Invokable directly via /improve-system.
 argument-hint: '[optional focus or specific file]'
 ---
-
-
 
 # System Self-Improvement, Security Audit & Deployment Workflow
 

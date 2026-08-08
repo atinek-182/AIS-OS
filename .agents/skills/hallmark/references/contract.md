@@ -1,3 +1,23 @@
+---
+title: Output contract & scope
+domain: skill
+summary: 'Loaded once per build, at handoff time. When producing new work:'
+critical_directives:
+- An existing global stylesheet is append-only.** If the project already ships one (`app/globals.css`, `src/index.css`, `s
+- Build logic — state management, data fetching, business rules. It is a visual / interaction layer only.
+section_outline:
+- Output contract & scope
+- Output contract
+- Scope and limits
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/contract.md
+- When reading context for Output contract & scope
+tags:
+- skill
+- contract
+updated: '2026-08-08'
+---
+
 # Output contract & scope
 
 Loaded once per build, at handoff time.

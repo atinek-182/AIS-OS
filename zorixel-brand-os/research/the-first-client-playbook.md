@@ -1,3 +1,24 @@
+---
+title: 'Ingested PDF Playbook: The First Client Playbook'
+domain: brand
+summary: '- **Source File**: `The-First-Client-Playbook.pdf` - **Total Pages**: 40'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Ingested PDF Playbook: The First Client Playbook'
+- Extracted Contents
+- Page 1
+- Page 2
+- Page 3
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/the-first-client-playbook.md
+- 'When reading context for Ingested PDF Playbook: The First Client Playbook'
+tags:
+- brand
+- the-first-client-playbook
+updated: '2026-08-08'
+---
+
 # Ingested PDF Playbook: The First Client Playbook
 
 - **Source File**: `The-First-Client-Playbook.pdf`

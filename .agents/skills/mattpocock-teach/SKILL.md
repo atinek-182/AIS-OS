@@ -1,6 +1,29 @@
 ---
+title: Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)
+domain: skill
+summary: 'Adapted from TypeScript educator Matt Pocock''s signature teaching methodology. Teaches complex TypeScript, React,
+  Next.js, and web engineering concepts through clear mental models, zero fluff, and interactive exercises. - **Slash Command**:
+  `/mattpoc'
+critical_directives:
+- 'Concept Explanation**: Used during Phase 0 discovery by **`/grill-me`** whenever introducing unfamiliar concepts before '
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)
+- Overview & Tri-Mode Routing
+- 🎓 The 4-Step Teaching Structure
+- 1. The Core Mental Model (The "Aha!" Moment)
+- 2. Concrete Code Comparison
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-teach/SKILL.md
+- When reading context for Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-teach
-description: Socratic teaching and mental model builder for TypeScript and web development. Breaks down complex types, frameworks, and patterns into clear analogies, code snippets, and interactive missions. Triggered via /mattpocock-teach or naturally when asking for explanation of complex code.
+description: Socratic teaching and mental model builder for TypeScript and web development. Breaks down complex types, frameworks,
+  and patterns into clear analogies, code snippets, and interactive missions. Triggered via /mattpocock-teach or naturally
+  when asking for explanation of complex code.
 argument-hint: '[topic_or_concept]'
 ---
 

@@ -1,14 +1,30 @@
 ---
+title: Frontend Slides Generator
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/frontend-slides [optional
+  parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Frontend Slides Generator
+- Invocation & Tri-Mode Routing
+- Core Principles
+- Operating Instructions
+- 'Phase 1: Content Gathering'
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/SKILL.md
+- When reading context for Frontend Slides Generator
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: frontend-slides
-description: This skill should be used when the user asks to "create HTML slides",
-  "generate a presentation", "convert a PPT to HTML slides", "design slide deck",
-  "make web slides", or "convert PPTX to web slides". Supports fixed-stage 16:9 layouts,
+description: This skill should be used when the user asks to "create HTML slides", "generate a presentation", "convert a PPT
+  to HTML slides", "design slide deck", "make web slides", or "convert PPTX to web slides". Supports fixed-stage 16:9 layouts,
   custom styles, and Windows CLI scripts. Invokable directly via /frontend-slides.
 version: 1.0.0
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Frontend Slides Generator
 

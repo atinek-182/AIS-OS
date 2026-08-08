@@ -1,3 +1,23 @@
+---
+title: Voice
+domain: architecture
+summary: Match this register when drafting; don't fake voice on external content without showing me first. **Context:** A
+  message written while testing rtrvr.ai and exploring content research automation.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Voice
+- Sample 1
+- Sample 2
+read_triggers:
+- When working on architecture in references/voice.md
+- When reading context for Voice
+tags:
+- architecture
+- voice
+updated: '2026-08-08'
+---
+
 # Voice
 
 Match this register when drafting; don't fake voice on external content without showing me first.

@@ -1,6 +1,29 @@
 ---
+title: ZORIXEL AI Solution Pricing Engine (`/ai-pricing-engine`)
+domain: skill
+summary: 'This skill is the definitive pricing, proposal, and ROI calculator for ZORIXEL AI agency engagements. Built directly
+  from Nate Herk''s *How to Price AI Solutions: The Complete Masterclass*, it converts raw client discovery numbers into a
+  mathematical,'
+critical_directives:
+- 'The Single Golden Rule**: Never state a price before getting the client to state what the problem costs the business. Co'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- ZORIXEL AI Solution Pricing Engine (`/ai-pricing-engine`)
+- Overview & Tri-Mode Execution
+- 'Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price"'
+- Step-by-Step 8-Phase Pricing Protocol
+- 'Phase 1: Baseline Capture (Time Lens & Income Lens)'
+read_triggers:
+- When working on skill in .agents/skills/ai-pricing-engine/SKILL.md
+- When reading context for ZORIXEL AI Solution Pricing Engine (`/ai-pricing-engine`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: ai-pricing-engine
-description: AI Solution Pricing Calculator & Proposal Compiler based on Nate Herk's Masterclass. Calculates client-stated value ceiling, delivery cost floor, defensible price corridor (10%-20%), 10X ROI check, 3-option micro-service proof architecture, objective milestone breakdown, and maintenance retainers. Invokable via /ai-pricing-engine or natural language.
+description: AI Solution Pricing Calculator & Proposal Compiler based on Nate Herk's Masterclass. Calculates client-stated
+  value ceiling, delivery cost floor, defensible price corridor (10%-20%), 10X ROI check, 3-option micro-service proof architecture,
+  objective milestone breakdown, and maintenance retainers. Invokable via /ai-pricing-engine or natural language.
 argument-hint: '[client_name_or_niche] [optional_workflow]'
 ---
 

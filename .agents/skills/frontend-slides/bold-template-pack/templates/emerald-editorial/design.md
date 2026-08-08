@@ -1,276 +1,308 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: medium-full and centered.** Most slides carry one display headline at scale (92–200px) plus 3–4 supp'
+- Double-rule ornament with centered serif word is the signature decorative device.
+- 4px ink horizontal rules separate every stacked section, every list row, every chart border. The 4px weight is the syste
+- No shadows, no gradients, no blur. Depth is color-block inversion + 4px rules.
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/emerald-editorial/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Emerald Editorial
-description: "A bold display-serif editorial system in the register of a fashion masthead or vintage magazine cover. Bodoni Moda runs at weight 900 across a wide scale (44–460px), set against a saturated emerald-green canvas with deep navy ink and oat-paper accents. The signature treatment is a stacked double-rule ornament that brackets centered display words like a 19th-century theatrical playbill. The aesthetic borrows from Harper's Bazaar / Vogue / Wallpaper covers: confident, theatrical, paper-and-ink committed, with a tight three-color palette and zero gradients or shadows."
-
+description: 'A bold display-serif editorial system in the register of a fashion masthead or vintage magazine cover. Bodoni
+  Moda runs at weight 900 across a wide scale (44–460px), set against a saturated emerald-green canvas with deep navy ink
+  and oat-paper accents. The signature treatment is a stacked double-rule ornament that brackets centered display words like
+  a 19th-century theatrical playbill. The aesthetic borrows from Harper''s Bazaar / Vogue / Wallpaper covers: confident, theatrical,
+  paper-and-ink committed, with a tight three-color palette and zero gradients or shadows.'
 colors:
-  bg: "#3CD896"
-  bg-2: "#2DC684"
-  bg-3: "#25B377"
-  ink: "#0F1A5C"
-  ink-2: "#1B2774"
-  ink-3: "#3A4593"
-  paper: "#F1E9D6"
-  rule: "rgba(15, 26, 92, 0.22)"
-  rule-strong: "rgba(15, 26, 92, 0.85)"
-
+  bg: '#3CD896'
+  bg-2: '#2DC684'
+  bg-3: '#25B377'
+  ink: '#0F1A5C'
+  ink-2: '#1B2774'
+  ink-3: '#3A4593'
+  paper: '#F1E9D6'
+  rule: rgba(15, 26, 92, 0.22)
+  rule-strong: rgba(15, 26, 92, 0.85)
 typography:
   numeral-jumbo:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 460
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.04em
   display-section:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 200
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.015em
   display-cover:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 184
     fontWeight: 900
     lineHeight: 0.92
     letterSpacing: -0.01em
   display:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 130
     fontWeight: 900
     lineHeight: 0.96
     letterSpacing: -0.015em
   display-md:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 128
     fontWeight: 900
     lineHeight: 0.95
     letterSpacing: -0.015em
   display-sm:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 120
     fontWeight: 900
     lineHeight: 0.95
     letterSpacing: -0.015em
   headline-xl:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 104
     fontWeight: 900
     lineHeight: 0.95
     letterSpacing: -0.015em
   headline:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 92
     fontWeight: 900
     lineHeight: 1
     letterSpacing: -0.02em
   ornament-word-lg:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 84
     fontWeight: 800
     lineHeight: 1
   ornament-word:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 76
     fontWeight: 800
     lineHeight: 1
   ornament-word-sm:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 68
     fontWeight: 800
     lineHeight: 1
   title-card-lg:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 64
     fontWeight: 800
     lineHeight: 1
     letterSpacing: -0.005em
   title-card:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 48
     fontWeight: 800
     lineHeight: 1
     letterSpacing: -0.005em
   title-card-sm:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 44
     fontWeight: 800
     lineHeight: 1.05
     letterSpacing: -0.005em
   step-numeral:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 80
     fontWeight: 900
     lineHeight: 1
   step-title:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 40
     fontWeight: 800
     lineHeight: 1
     letterSpacing: -0.005em
   kpi-figure:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 144
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.03em
   kpi-figure-unit:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 60
     fontWeight: 800
   stat-figure:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 92
     fontWeight: 900
     lineHeight: 1
     letterSpacing: -0.02em
   stat-figure-unit:
-    fontFamily: "'Bodoni Moda', serif"
+    fontFamily: '''Bodoni Moda'', serif'
     fontSize: 48
     fontWeight: 900
   eyebrow:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 28
     fontWeight: 800
     letterSpacing: 0.18em
     textTransform: uppercase
   label:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 26
     fontWeight: 700
     letterSpacing: 0.08em
     textTransform: uppercase
   label-tight:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 26
     fontWeight: 700
     letterSpacing: 0.05em
     textTransform: uppercase
   tag:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 24
     fontWeight: 800
     letterSpacing: 0.12em
     textTransform: uppercase
   caption:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 24
     fontWeight: 700
     letterSpacing: 0.1em
     textTransform: uppercase
   body-lg:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 28
     fontWeight: 500
     lineHeight: 1.5
   body:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 26
     fontWeight: 500
     lineHeight: 1.5
   body-sm:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 24
     fontWeight: 500
     lineHeight: 1.45
   credit:
-    fontFamily: "'Manrope', sans-serif"
+    fontFamily: '''Manrope'', sans-serif'
     fontSize: 28
     fontWeight: 700
     letterSpacing: 0.18em
     textTransform: uppercase
-
 spacing:
-  pad-default: "110px 110px 70px"
-  pad-cover: "56px 110px"
-  pad-closing: "80px 110px"
-  pad-statement: "110px 110px 70px"
-  masthead-inset: "56px 80px"
-  rule-thick: "4px"
-  rule-thicker: "5px"
-  rule-thin: "2px"
-
+  pad-default: 110px 110px 70px
+  pad-cover: 56px 110px
+  pad-closing: 80px 110px
+  pad-statement: 110px 110px 70px
+  masthead-inset: 56px 80px
+  rule-thick: 4px
+  rule-thicker: 5px
+  rule-thin: 2px
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   ornament-double-rule:
-    description: "The system's signature treatment. A centered serif word framed by two stacked 4px horizontal rules on each side. The rules sit 3px apart on top and 3px apart on bottom, giving a 19th-century playbill / theatrical-poster bracket effect. Configurable via :root[data-ornament] to switch between double (default), single, or none."
-    ruleHeight: "4px"
-    ruleGap: "3px"
+    description: The system's signature treatment. A centered serif word framed by two stacked 4px horizontal rules on each
+      side. The rules sit 3px apart on top and 3px apart on bottom, giving a 19th-century playbill / theatrical-poster bracket
+      effect. Configurable via :root[data-ornament] to switch between double (default), single, or none.
+    ruleHeight: 4px
+    ruleGap: 3px
     wordWeight: 800
-    wordFamily: "'Bodoni Moda', serif"
+    wordFamily: '''Bodoni Moda'', serif'
   ornament-vertical:
-    description: "An inline horizontal pair of stacked rules (each 4px tall, 8px apart) on either side of a small serif word. Used as a side bracket around connector words like prepositions."
-    ruleHeight: "4px"
-    ruleGap: "8px"
-    barWidth: "64px"
+    description: An inline horizontal pair of stacked rules (each 4px tall, 8px apart) on either side of a small serif word.
+      Used as a side bracket around connector words like prepositions.
+    ruleHeight: 4px
+    ruleGap: 8px
+    barWidth: 64px
   masthead:
-    position: "absolute"
-    placement: "top: 56px, full-width between 80px side padding"
-    layout: "flex space-between"
-    typography: "{typography.label-tight}"
-    color: "{colors.ink}"
+    position: absolute
+    placement: 'top: 56px, full-width between 80px side padding'
+    layout: flex space-between
+    typography: '{typography.label-tight}'
+    color: '{colors.ink}'
   footline:
-    position: "absolute"
-    placement: "bottom: 56px, full-width between 80px side padding"
-    layout: "flex space-between"
-    typography: "{typography.label-tight}"
-    color: "{colors.ink}"
+    position: absolute
+    placement: 'bottom: 56px, full-width between 80px side padding'
+    layout: flex space-between
+    typography: '{typography.label-tight}'
+    color: '{colors.ink}'
   rule-h-thick:
-    height: "4px"
-    background: "{colors.ink}"
-    description: "Universal 4px horizontal rule used as section separator and tile/row border. The system's standard rule weight."
+    height: 4px
+    background: '{colors.ink}'
+    description: Universal 4px horizontal rule used as section separator and tile/row border. The system's standard rule weight.
   agenda-row:
-    description: "A three-column grid row (130px / 1fr / 320px) with 4px ink top borders. Holds a serif ordinal, serif name, and sans-serif kind label. The last row in a list also carries a 4px bottom border, sealing the list."
-    rowPad: "26px 0"
-    topBorder: "4px solid {colors.ink}"
+    description: A three-column grid row (130px / 1fr / 320px) with 4px ink top borders. Holds a serif ordinal, serif name,
+      and sans-serif kind label. The last row in a list also carries a 4px bottom border, sealing the list.
+    rowPad: 26px 0
+    topBorder: 4px solid {colors.ink}
   inverse-tile:
-    description: "A solid {colors.ink} rectangle holding {colors.bg} text. Used for chart-card containers, kpi tiles, process steps, section-opener panels. Carries no corner radius and no shadow."
-    background: "{colors.ink}"
-    color: "{colors.bg}"
-    padding: "32px to 36px"
+    description: A solid {colors.ink} rectangle holding {colors.bg} text. Used for chart-card containers, kpi tiles, process
+      steps, section-opener panels. Carries no corner radius and no shadow.
+    background: '{colors.ink}'
+    color: '{colors.bg}'
+    padding: 32px to 36px
   paper-tile:
-    description: "A solid {colors.paper} rectangle holding {colors.ink} text. The alt variant of inverse-tile — used in rotation across a row of process steps or kpi tiles to break the monotony of ink fills."
-    background: "{colors.paper}"
-    color: "{colors.ink}"
+    description: A solid {colors.paper} rectangle holding {colors.ink} text. The alt variant of inverse-tile — used in rotation
+      across a row of process steps or kpi tiles to break the monotony of ink fills.
+    background: '{colors.paper}'
+    color: '{colors.ink}'
   mark-pill:
-    background: "{colors.ink}"
-    color: "{colors.bg}"
-    padding: "10px 22px"
+    background: '{colors.ink}'
+    color: '{colors.bg}'
+    padding: 10px 22px
     fontWeight: 700
     letterSpacing: 0.1em
     fontSize: 24
     textTransform: uppercase
-    description: "A small ink-on-bg pill used as a category mark or section tag. No border-radius — strict rectangle."
+    description: A small ink-on-bg pill used as a category mark or section tag. No border-radius — strict rectangle.
   tag-pill:
-    background: "{colors.ink}"
-    color: "{colors.bg}"
-    padding: "8px 20px"
+    background: '{colors.ink}'
+    color: '{colors.bg}'
+    padding: 8px 20px
     fontWeight: 700
     letterSpacing: 0.12em
     fontSize: 24
     textTransform: uppercase
   delta-pill:
-    background: "{colors.bg}"
-    color: "{colors.ink}"
-    padding: "6px 16px"
+    background: '{colors.bg}'
+    color: '{colors.ink}'
+    padding: 6px 16px
     fontWeight: 800
     letterSpacing: 0.08em
     fontSize: 24
     textTransform: uppercase
-    description: "A small bg-on-ink delta indicator placed inside an inverse kpi tile to show change direction. Inverted to ink-on-bg when inside a paper-tile."
+    description: A small bg-on-ink delta indicator placed inside an inverse kpi tile to show change direction. Inverted to
+      ink-on-bg when inside a paper-tile.
   bar:
-    description: "A vertical rectangular chart bar in bg (primary), paper (alt). Value label printed above bar in Bodoni 30px. No corner radius."
-    background: "{colors.bg} or {colors.paper}"
+    description: A vertical rectangular chart bar in bg (primary), paper (alt). Value label printed above bar in Bodoni 30px.
+      No corner radius.
+    background: '{colors.bg} or {colors.paper}'
   chart-card:
-    background: "{colors.ink}"
-    color: "{colors.bg}"
-    padding: "36px 50px 30px"
-    gridLineColor: "rgba(60, 216, 150, 0.22)"
-    description: "An ink container framing a bar chart on bg. Y-axis labels are Bodoni 26px on the left; x-axis labels are Manrope 24px. Grid lines are 2px at 22% bg-on-ink."
+    background: '{colors.ink}'
+    color: '{colors.bg}'
+    padding: 36px 50px 30px
+    gridLineColor: rgba(60, 216, 150, 0.22)
+    description: An ink container framing a bar chart on bg. Y-axis labels are Bodoni 26px on the left; x-axis labels are
+      Manrope 24px. Grid lines are 2px at 22% bg-on-ink.
   ornament-numeral-panel:
-    description: "A full-bleed inverse panel (ink background) holding a single oversized Bodoni numeral (~460px weight 900) centered. Used as a section-opener device. Topbar / footline strings sit absolutely positioned in the panel corners."
+    description: A full-bleed inverse panel (ink background) holding a single oversized Bodoni numeral (~460px weight 900)
+      centered. Used as a section-opener device. Topbar / footline strings sit absolutely positioned in the panel corners.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

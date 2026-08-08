@@ -1,3 +1,28 @@
+---
+title: The Three Ms of AI™ — Mindset, Method, Machine
+domain: architecture
+summary: '> *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.* > *The Three Ms of AI™ is a trademark
+  of Nate Herk.*'
+critical_directives:
+- '*Eliminate first.** *"What happens if we just stop doing this?"* You''d be surprised how many process'
+- '*Automate second.** Apply the **60/30/10 Golden Rule:**'
+- '*Rule:** *if you can''t explain it to a person, you can''t explain it to an AI.* The map forces clarit'
+- '**Own identity.** Its own email, accounts, credentials. Never yours.'
+section_outline:
+- The Three Ms of AI™ — Mindset, Method, Machine
+- Why this is in your kit
+- Layer 1 — MINDSET (How to Think)
+- 1. The Default Shift
+- 2. The Function Breakdown
+read_triggers:
+- When working on architecture in references/3ms-framework.md
+- When reading context for The Three Ms of AI™ — Mindset, Method, Machine
+tags:
+- architecture
+- 3ms-framework
+updated: '2026-08-08'
+---
+
 # The Three Ms of AI™ — Mindset, Method, Machine
 
 > *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.*

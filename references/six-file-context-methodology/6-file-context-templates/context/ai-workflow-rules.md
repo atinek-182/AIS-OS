@@ -1,3 +1,24 @@
+---
+title: AI Workflow Rules
+domain: architecture
+summary: '[Describe the overall development approach — e.g. Build this project incrementally using a spec-driven workflow.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- AI Workflow Rules
+- Approach
+- Scoping Rules
+- When to Split Work
+- Handling Missing Requirements
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/6-file-context-templates/context/ai-workflow-rules.md
+- When reading context for AI Workflow Rules
+tags:
+- architecture
+- ai-workflow-rules
+updated: '2026-08-08'
+---
+
 # AI Workflow Rules
 
 ## Approach

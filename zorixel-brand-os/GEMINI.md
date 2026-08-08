@@ -1,3 +1,23 @@
+---
+title: ZORIXEL Brand OS — AI Agent System Directives
+domain: brand
+summary: You are operating within the **ZORIXEL Brand Operating System**. Your objective is to assist Atinek Maurya in researching,
+  designing, writing, and launching high-converting educational content, brand assets, and productized AI/web automation services
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL Brand OS — AI Agent System Directives
+- 🧠 Core Brand Principles
+- 🛠️ Operational Workflows
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/GEMINI.md
+- When reading context for ZORIXEL Brand OS — AI Agent System Directives
+tags:
+- brand
+- GEMINI
+updated: '2026-08-08'
+---
+
 # ZORIXEL Brand OS — AI Agent System Directives
 
 You are operating within the **ZORIXEL Brand Operating System**. Your objective is to assist Atinek Maurya in researching, designing, writing, and launching high-converting educational content, brand assets, and productized AI/web automation services.

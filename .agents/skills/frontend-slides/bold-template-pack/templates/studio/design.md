@@ -1,20 +1,46 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Body and chrome opacity-tuned versions of the same color (yellow at 58%/32%, near-black at 62%/35%) — never a separate g
+- 'Text on Dark 2** (`{colors.text-on-dark-2}` — rgba(245,210,0,0.58)): Secondary text on dark — yellow at 58% opacity. The'
+- 'Default headline color**: surface accent — yellow on dark, near-black on yellow. Never any other color.'
+- Headlines are always rendered in the surface accent color** — yellow on dark, near-black on yellow. Never a muted opacit
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/studio/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Studio
-description: "A \"Boring Studios\" agency presentation system — type-as-graphic-mass in the spirit of contemporary design-studio decks (Pentagram, Anti, Order). The entire system runs on Barlow at weight 900 uppercase, with type so heavy at display scale that it stops being type and starts being a shape. The palette is binary plus one: near-black field (#1C1C1C), acid yellow type (#F5D200), and the same yellow as a full slide background. IBM Plex Mono carries every footer metadata, slide counter, and three-column lockup. No drop shadows, no rounded corners, no accent colors — the headline IS the design, and the only chromatic decision per slide is dark-yellow-on-near-black or near-black-on-acid-yellow."
-
+description: 'A "Boring Studios" agency presentation system — type-as-graphic-mass in the spirit of contemporary design-studio
+  decks (Pentagram, Anti, Order). The entire system runs on Barlow at weight 900 uppercase, with type so heavy at display
+  scale that it stops being type and starts being a shape. The palette is binary plus one: near-black field (#1C1C1C), acid
+  yellow type (#F5D200), and the same yellow as a full slide background. IBM Plex Mono carries every footer metadata, slide
+  counter, and three-column lockup. No drop shadows, no rounded corners, no accent colors — the headline IS the design, and
+  the only chromatic decision per slide is dark-yellow-on-near-black or near-black-on-acid-yellow.'
 colors:
-  near-black: "#1C1C1C"
-  near-black-alt: "#242422"
-  acid-yellow: "#F5D200"
-  acid-yellow-alt: "#F0CC00"
-  text-on-dark-2: "rgba(245,210,0,0.58)"
-  text-on-dark-3: "rgba(245,210,0,0.32)"
-  text-on-light-2: "rgba(28,28,28,0.62)"
-  text-on-light-3: "rgba(28,28,28,0.35)"
-  border-dark: "#2E2E2C"
-  border-light: "rgba(28,28,28,0.18)"
-
+  near-black: '#1C1C1C'
+  near-black-alt: '#242422'
+  acid-yellow: '#F5D200'
+  acid-yellow-alt: '#F0CC00'
+  text-on-dark-2: rgba(245,210,0,0.58)
+  text-on-dark-3: rgba(245,210,0,0.32)
+  text-on-light-2: rgba(28,28,28,0.62)
+  text-on-light-3: rgba(28,28,28,0.35)
+  border-dark: '#2E2E2C'
+  border-light: rgba(28,28,28,0.18)
 color-aliases:
   c-bg: near-black
   c-bg-alt: near-black-alt
@@ -27,125 +53,125 @@ color-aliases:
   c-fg-3: text-on-dark-3
   c-fg-light-2: text-on-light-2
   c-fg-light-3: text-on-light-3
-
 typography:
   display:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 12vw
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.02em
     textTransform: uppercase
   h1:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 7.5vw
     fontWeight: 900
     lineHeight: 0.92
     letterSpacing: -0.02em
     textTransform: uppercase
   h2:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 4.8vw
     fontWeight: 900
     lineHeight: 0.95
     letterSpacing: -0.01em
     textTransform: uppercase
   h3:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 2.8vw
     fontWeight: 700
     lineHeight: 1.1
     textTransform: uppercase
   quote-text:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 3.8vw
     fontWeight: 900
     lineHeight: 1.05
     letterSpacing: -0.02em
     textTransform: uppercase
   stat-value:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
     fontSize: 5.5vw
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.03em
     textTransform: uppercase
   lead:
-    fontFamily: "Barlow, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.6vw
     fontWeight: 500
     lineHeight: 1.45
   body:
-    fontFamily: "Barlow, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, system-ui, sans-serif
     fontSize: 1.15vw
     fontWeight: 400
     lineHeight: 1.6
   caption:
-    fontFamily: "Barlow, Noto Sans SC, system-ui, sans-serif"
+    fontFamily: Barlow, Noto Sans SC, system-ui, sans-serif
     fontSize: 0.85vw
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "IBM Plex Mono, monospace"
+    fontFamily: IBM Plex Mono, monospace
     fontSize: 0.72vw
     fontWeight: 500
     letterSpacing: 0.06em
-
 spacing:
   pad-x: 5vw
   pad-y: 5vh
   gap-lg: 3.5vh
   gap-md: 2vh
   gap-sm: 1vh
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   chrome-bar:
-    borderBottom: "1px solid {colors.border-dark} (or {colors.border-light} on yellow)"
-    paddingBottom: "{spacing.gap-sm}"
-    marginBottom: "{spacing.gap-md}"
-    description: "Top chrome bar — mono label left, mono counter right, hairline rule beneath."
+    borderBottom: 1px solid {colors.border-dark} (or {colors.border-light} on yellow)
+    paddingBottom: '{spacing.gap-sm}'
+    marginBottom: '{spacing.gap-md}'
+    description: Top chrome bar — mono label left, mono counter right, hairline rule beneath.
   foot-bar:
-    borderTop: "1px solid {colors.border-dark} (or {colors.border-light} on yellow)"
-    paddingTop: "{spacing.gap-sm}"
-    marginTop: "{spacing.gap-md}"
-    description: "Bottom chrome bar — mirror of chrome-bar."
+    borderTop: 1px solid {colors.border-dark} (or {colors.border-light} on yellow)
+    paddingTop: '{spacing.gap-sm}'
+    marginTop: '{spacing.gap-md}'
+    description: Bottom chrome bar — mirror of chrome-bar.
   cover-meta:
-    display: "grid 1fr 1fr 1fr"
-    borderTop: "1px solid rgba(245,210,0,0.25)"
-    description: "Three-column mono metadata footer over the cover image: studio × client + date, presentation title (center), studio name (right). The signature 'Boring Studios' lockup."
+    display: grid 1fr 1fr 1fr
+    borderTop: 1px solid rgba(245,210,0,0.25)
+    description: 'Three-column mono metadata footer over the cover image: studio × client + date, presentation title (center),
+      studio name (right). The signature ''Boring Studios'' lockup.'
   stat-card:
-    borderTop: "2px solid (acid-yellow on dark, near-black on yellow)"
-    padding: "{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0"
-    description: "Stat tile with a 2px top rule. Value at 5.5vw weight 900 in the surface's foreground color; label and mono note beneath."
+    borderTop: 2px solid (acid-yellow on dark, near-black on yellow)
+    padding: '{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0'
+    description: Stat tile with a 2px top rule. Value at 5.5vw weight 900 in the surface's foreground color; label and mono
+      note beneath.
   bullet-marker:
-    content: "—"
-    color: "acid-yellow on dark, near-black on yellow"
-    fontFamily: "{typography.body.fontFamily}"
-    description: "Em-dash bullet prefix on every list item; color follows the surface accent."
+    content: —
+    color: acid-yellow on dark, near-black on yellow
+    fontFamily: '{typography.body.fontFamily}'
+    description: Em-dash bullet prefix on every list item; color follows the surface accent.
   compare-divider:
-    borderRight: "2px solid (near-black on yellow, dark-text-3 on dark)"
-    description: "Single vertical 2px rule separating two compare panels."
+    borderRight: 2px solid (near-black on yellow, dark-text-3 on dark)
+    description: Single vertical 2px rule separating two compare panels.
   bar-fill-default:
-    background: "muted text-on-surface (dark-text-3 or light-text-3)"
-    description: "Default chart bar fill — muted version of the surface text color."
+    background: muted text-on-surface (dark-text-3 or light-text-3)
+    description: Default chart bar fill — muted version of the surface text color.
   bar-fill-accent:
-    background: "acid-yellow on dark, near-black on yellow"
-    description: "Highlighted chart bar — the surface's primary foreground color."
+    background: acid-yellow on dark, near-black on yellow
+    description: Highlighted chart bar — the surface's primary foreground color.
   chart-baseline:
-    height: "2px"
-    background: "muted accent (dark-text-3 or border-light)"
-    description: "Heavier 2px baseline beneath chart bars — Studio uses thicker rules than Signal."
+    height: 2px
+    background: muted accent (dark-text-3 or border-light)
+    description: Heavier 2px baseline beneath chart bars — Studio uses thicker rules than Signal.
   cover-img-area:
-    position: "absolute inset 0"
-    background: "{colors.near-black-alt}"
-    description: "Cover image placeholder filling the entire slide behind the cover-type and cover-meta. Image-or-placeholder occupies the whole canvas; type sits on top."
+    position: absolute inset 0
+    background: '{colors.near-black-alt}'
+    description: Cover image placeholder filling the entire slide behind the cover-type and cover-meta. Image-or-placeholder
+      occupies the whole canvas; type sits on top.
   img-placeholder:
-    background: "near-black-alt on dark, acid-yellow-alt on yellow"
-    description: "Warm-toned rectangular placeholder for images, centered mono label inside, no border on dark / hairline border on yellow."
+    background: near-black-alt on dark, acid-yellow-alt on yellow
+    description: Warm-toned rectangular placeholder for images, centered mono label inside, no border on dark / hairline border
+      on yellow.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

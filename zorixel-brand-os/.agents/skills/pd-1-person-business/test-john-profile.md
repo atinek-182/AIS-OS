@@ -1,3 +1,26 @@
+---
+title: John Test Profile — Demo Input for /pd-1-person-business
+domain: skill
+summary: 'Use this as the paste-in input when demoing the skill in the PD #26 video. John is a fresh persona built from Brian''s
+  archetype but focused on **100% AI-only UGC for new-age CPG brands** (energy drinks, creatine gummies, supplements) — the
+  perfect an'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- John Test Profile — Demo Input for /pd-1-person-business
+- Quick paste version (for video demo)
+- Expected skill output (the conclusion John should land on)
+- Video demo flow (how to use this on screen)
+- Notes on differences from Brian's profile
+read_triggers:
+- When working on skill in second-brain-zorixel/zorixel-brand-os/.agents/skills/pd-1-person-business/test-john-profile.md
+- When reading context for John Test Profile — Demo Input for /pd-1-person-business
+tags:
+- skill
+- test-john-profile
+updated: '2026-08-08'
+---
+
 # John Test Profile — Demo Input for /pd-1-person-business
 
 Use this as the paste-in input when demoing the skill in the PD #26 video.

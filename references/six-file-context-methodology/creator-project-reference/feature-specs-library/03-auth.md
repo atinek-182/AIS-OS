@@ -1,3 +1,24 @@
+---
+title: 03 Auth
+domain: architecture
+summary: 'Clerk is already installed and connected. Wire it into the Next.js app: provider, auth pages, redirects, route protection,
+  and user menu. Use Clerk’s `dark` theme from `@clerk/ui/themes` as the base.'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Design
+- Implementation
+- Dependencies
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/03-auth.md
+- When reading context for 03 Auth
+tags:
+- architecture
+- 03-auth
+updated: '2026-08-08'
+---
+
 Clerk is already installed and connected. Wire it into the Next.js app: provider, auth pages, redirects, route protection, and user menu.
 
 ## Design

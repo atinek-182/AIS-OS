@@ -1,6 +1,29 @@
 ---
+title: Shipping and Launch
+domain: skill
+summary: Ship with confidence. The goal is not just to deploy — it's to deploy safely, with monitoring in place, a rollback
+  plan ready, and a clear understanding of what success looks like. Every launch should be reversible, observable, and incremental.
+  - Dep
+critical_directives:
+- '[ ] Build succeeds with no warnings'
+- '[ ] No accessibility warnings in axe-core or Lighthouse'
+- For the project-wide Definition of Done that every change must clear before this checklist, see `../../references/sdlc/d
+section_outline:
+- Shipping and Launch
+- Overview
+- When to Use
+- The Pre-Launch Checklist
+- Code Quality
+read_triggers:
+- When working on skill in .agents/skills/shipping-and-launch/SKILL.md
+- When reading context for Shipping and Launch
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: shipping-and-launch
-description: Prepares production launches. Use when preparing to deploy to production. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.
+description: Prepares production launches. Use when preparing to deploy to production. Use when you need a pre-launch checklist,
+  when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.
 ---
 
 # Shipping and Launch

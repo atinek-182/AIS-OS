@@ -1,6 +1,31 @@
 ---
+title: Code Review and Quality
+domain: skill
+summary: 'Multi-dimensional code review with quality gates. Every change gets reviewed before merge — no exceptions. Review
+  covers five axes: correctness, readability, architecture, security, and performance. **The approval standard:** Approve
+  a change when it'
+critical_directives:
+- 'Does this refactor reduce complexity or just relocate it?** Count the concepts a reader must hold to follow the change. '
+- First line:** Short, imperative, standalone. "Delete the FizzBuzz RPC" not "Deleting the FizzBuzz RPC." Must be informat
+- Rule:** Prefer standard library and existing utilities over new dependencies. Every dependency is a liability.
+- '[ ] **Request changes** — Issues must be addressed'
+section_outline:
+- Code Review and Quality
+- Overview
+- When to Use
+- The Five-Axis Review
+- 1. Correctness
+read_triggers:
+- When working on skill in .agents/skills/code-review-and-quality/SKILL.md
+- When reading context for Code Review and Quality
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: code-review-and-quality
-description: Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch.
+description: Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself,
+  another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main
+  branch.
 ---
 
 # Code Review and Quality

@@ -1,3 +1,22 @@
+---
+title: 06 Project Apis
+domain: architecture
+summary: 'The database schema is ready. Build the backend project API routes only. Create REST endpoints for:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Routes
+- Rules
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/06-project-apis.md
+- When reading context for 06 Project Apis
+tags:
+- architecture
+- 06-project-apis
+updated: '2026-08-08'
+---
+
 The database schema is ready. Build the backend project API routes only.
 
 ## Routes

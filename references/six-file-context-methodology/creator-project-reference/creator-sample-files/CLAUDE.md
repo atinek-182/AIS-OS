@@ -1,3 +1,20 @@
+---
+title: Claude
+domain: architecture
+summary: 'Read the following files in order before implementing or making any architectural decision:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Application Building Context
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/CLAUDE.md
+- When reading context for Claude
+tags:
+- architecture
+- CLAUDE
+updated: '2026-08-08'
+---
+
 ## Application Building Context
 
 Read the following files in order before implementing

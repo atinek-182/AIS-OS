@@ -1,3 +1,25 @@
+---
+title: 08 Editor Workspace Shell
+domain: architecture
+summary: Build the `/editor/[roomId]` workspace shell with server-side access checks. No canvas logic yet. `/editor/[roomId]`
+  must be a server component.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Access
+- Access Helpers
+- Layout
+- Scope
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/08-editor-workspace-shell.md
+- When reading context for 08 Editor Workspace Shell
+tags:
+- architecture
+- 08-editor-workspace-shell
+updated: '2026-08-08'
+---
+
 Build the `/editor/[roomId]` workspace shell with server-side access checks. No canvas logic yet.
 
 ## Access

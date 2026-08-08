@@ -1,3 +1,29 @@
+---
+title: Grove Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/grove/design.md`'
+critical_directives:
+- 'Signature move: Playfair Display at weight 400 carries every headline, every quote, every stat figure, and every waterma'
+- 'Signature move: JetBrains Mono at weight 300 carries every label, kicker, footline, slide counter, and stat caption. Alw'
+- 'Signature move: Playfair Display at weight 400 — never bold — for every serif moment. Italic in {colors.accent} is the
+  h'
+- The rendered preview must look like a real first slide, not a template-selection card.
+section_outline:
+- Grove Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/grove/preview.md
+- When reading context for Grove Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Grove Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

@@ -1,6 +1,29 @@
 ---
+title: JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)
+domain: skill
+summary: This skill provides fullstack JavaScript and Next.js architectural discipline adapted from JavaScript Mastery Pro.
+  Use it when making load-bearing technical decisions, choosing tech stacks, designing Next.js App Router architectures, or
+  defining data
+critical_directives:
+- 'Next.js 15 App Router Standard**: All route params and searchParams are Promises (`const { id } = await params`, `const '
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)
+- Overview & Tri-Mode Routing
+- 🏗️ The 4 Architectural Modes
+- 📋 Architectural Workflow
+- 'Step 1: Pre-Flight & Workspace Inspection'
+read_triggers:
+- When working on skill in .agents/skills/jsmastery-architect/SKILL.md
+- When reading context for JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: jsmastery-architect
-description: Fullstack JavaScript & Next.js architecture design engine. Use when choosing tech stacks, designing complex features, selecting state/database patterns, or writing load-bearing build specs. Triggered via /jsmastery-architect or naturally when planning fullstack JS/TS apps.
+description: Fullstack JavaScript & Next.js architecture design engine. Use when choosing tech stacks, designing complex features,
+  selecting state/database patterns, or writing load-bearing build specs. Triggered via /jsmastery-architect or naturally
+  when planning fullstack JS/TS apps.
 argument-hint: '[feature_or_system_name] [optional focus]'
 ---
 

@@ -1,310 +1,343 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Seven-color accent palette (`{colors.sienna}`, `{colors.magenta}`, `{colors.orange}`, `{colors.teal}`, `{colors.blue}`, '
+- 'Mustard** (`{colors.mustard}` — #D8A93B): Saturated yellow-orange. Action bars, stat cards, matrix "partial" pills.'
+- 'Default text color on each accent**: ink on sienna, magenta, orange, mustard, olive, paper (warm or mid-tone accents sta'
+- 'Default accent for callout / action bar**: `{colors.mustard}`.'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/stencil-tablet/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Stencil & Tablet
-description: A West Coast skate-poster meets municipal stencil signage system. Stardos Stencil carries every headline, numeral, and chunky display moment with its characteristic ink-break gaps; Barlow Condensed runs all metadata and uppercase chrome at extra-heavy weights; Inter handles body. The palette is bone (#E2DCC9) and black, energized by a saturated retro-print accent set — sienna, magenta, orange, teal, blue, mustard, olive. Soft rounded "tablet" cards (22–26px radius) tile across slides in colored blocks. Type runs huge and uppercase, numerals dominate at 160–540px, and color blocks act as the layout. The mood is industrial poster, vintage workshop sign, and music festival lineup all at once.
-
+description: A West Coast skate-poster meets municipal stencil signage system. Stardos Stencil carries every headline, numeral,
+  and chunky display moment with its characteristic ink-break gaps; Barlow Condensed runs all metadata and uppercase chrome
+  at extra-heavy weights; Inter handles body. The palette is bone (#E2DCC9) and black, energized by a saturated retro-print
+  accent set — sienna, magenta, orange, teal, blue, mustard, olive. Soft rounded "tablet" cards (22–26px radius) tile across
+  slides in colored blocks. Type runs huge and uppercase, numerals dominate at 160–540px, and color blocks act as the layout.
+  The mood is industrial poster, vintage workshop sign, and music festival lineup all at once.
 colors:
-  bone: "#E2DCC9"
-  black: "#000000"
-  ink: "#0A0A0A"
-  paper: "#F4EFE0"
-  sienna: "#A06A3C"
-  magenta: "#C73B7A"
-  orange: "#EE7A2E"
-  teal: "#2D7E73"
-  blue: "#3F73B7"
-  mustard: "#D8A93B"
-  olive: "#6F7A2E"
-
+  bone: '#E2DCC9'
+  black: '#000000'
+  ink: '#0A0A0A'
+  paper: '#F4EFE0'
+  sienna: '#A06A3C'
+  magenta: '#C73B7A'
+  orange: '#EE7A2E'
+  teal: '#2D7E73'
+  blue: '#3F73B7'
+  mustard: '#D8A93B'
+  olive: '#6F7A2E'
 typography:
   cover-hero:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 220px
     fontWeight: 700
     lineHeight: 0.82
     letterSpacing: -0.015em
     textTransform: uppercase
   numeral-mega:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 540px
     fontWeight: 700
     lineHeight: 0.8
   numeral-card-xl:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 240px
     fontWeight: 700
     lineHeight: 0.85
     letterSpacing: -0.02em
   numeral-tablet:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 220px
     fontWeight: 700
     lineHeight: 0.9
     letterSpacing: -0.02em
   numeral-stat:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 160px
     fontWeight: 700
     lineHeight: 0.85
     letterSpacing: -0.02em
   section-headline:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 120px
     fontWeight: 700
     lineHeight: 0.92
     letterSpacing: -0.005em
     textTransform: uppercase
   chart-headline:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 110px
     fontWeight: 700
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   page-headline:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 92px
     fontWeight: 700
     lineHeight: 0.92
     letterSpacing: -0.01em
     textTransform: uppercase
   quote-text:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 60px
     fontWeight: 400
     lineHeight: 1.05
     letterSpacing: -0.005em
   quote-mark:
-    fontFamily: "Bowlby One, Stardos Stencil, serif"
+    fontFamily: Bowlby One, Stardos Stencil, serif
     fontSize: 320px
     fontWeight: 700
     lineHeight: 0.8
   numeral-process:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 64px
     fontWeight: 700
     lineHeight: 0.9
   date-mark:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 36px
     fontWeight: 700
     textTransform: uppercase
   card-headline:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 34px
     fontWeight: 700
     lineHeight: 1.15
     textTransform: uppercase
     letterSpacing: -0.005em
   meta-headline:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 32px
     fontWeight: 700
     lineHeight: 1.1
   card-h3:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 30px
     fontWeight: 700
     lineHeight: 1.05
     textTransform: uppercase
     letterSpacing: 0.02em
   matrix-row:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 26px
     fontWeight: 700
     lineHeight: 1.1
     textTransform: uppercase
     letterSpacing: 0.01em
   matrix-head:
-    fontFamily: "Stardos Stencil, serif"
+    fontFamily: Stardos Stencil, serif
     fontSize: 24px
     fontWeight: 700
     textTransform: uppercase
     letterSpacing: 0.02em
   topbar:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 32px
     fontWeight: 800
     letterSpacing: 0.04em
     textTransform: uppercase
     lineHeight: 1
   super:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 28px
     fontWeight: 800
     letterSpacing: 0.12em
     textTransform: uppercase
   who-name:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 30px
     fontWeight: 700
     letterSpacing: 0.04em
     textTransform: uppercase
   attribution:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 26px
     fontWeight: 800
     letterSpacing: 0.08em
     textTransform: uppercase
   meta:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 24px
     fontWeight: 600
     letterSpacing: 0.06em
   section-eyebrow:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 24px
     fontWeight: 800
     letterSpacing: 0.14em
     textTransform: uppercase
   footer:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 22px
     fontWeight: 600
     letterSpacing: 0.08em
     textTransform: uppercase
   process-sub:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 22px
     fontWeight: 600
     letterSpacing: 0.06em
     textTransform: uppercase
   timeline-marker:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 20px
     fontWeight: 700
     letterSpacing: 0.08em
     textTransform: uppercase
   legend:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 22px
     fontWeight: 700
     letterSpacing: 0.06em
     textTransform: uppercase
   pill:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 18px
     fontWeight: 700
     letterSpacing: 0.08em
     textTransform: uppercase
   chart-axis:
-    fontFamily: "Barlow Condensed, sans-serif"
+    fontFamily: Barlow Condensed, sans-serif
     fontSize: 18px
     fontWeight: 600
     letterSpacing: 0.06em
   body-lg:
-    fontFamily: "Inter, sans-serif"
+    fontFamily: Inter, sans-serif
     fontSize: 24px
     fontWeight: 400
     lineHeight: 1.4
   body:
-    fontFamily: "Inter, sans-serif"
+    fontFamily: Inter, sans-serif
     fontSize: 22px
     fontWeight: 400
     lineHeight: 1.4
   body-sm:
-    fontFamily: "Inter, sans-serif"
+    fontFamily: Inter, sans-serif
     fontSize: 20px
     fontWeight: 400
     lineHeight: 1.45
   body-xs:
-    fontFamily: "Inter, sans-serif"
+    fontFamily: Inter, sans-serif
     fontSize: 18px
     fontWeight: 400
     lineHeight: 1.4
-
 spacing:
   pad-outer: 64px
   pad-top: 48px
   pad-bottom: 36px
-  card-pad: "24px 22px to 38px 32px"
-  gap-card: "22px to 28px"
+  card-pad: 24px 22px to 38px 32px
+  gap-card: 22px to 28px
   radius-card: 22px
   radius-card-lg: 26px
   radius-action: 22px
   radius-pill: 999px
   radius-mark: 14px
   radius-timeline: 18px
-
 canvas:
   width: 1920px
   height: 1080px
-
 components:
   tablet:
     borderRadius: 26px
-    padding: "38px 32px 32px"
-    background: "any palette accent or {colors.bone}"
-    color: "{colors.ink} on light fills, {colors.bone} on dark fills"
-    description: "The system's namesake container — a rounded rectangle holding a giant stencil numeral above a stencil headline and Inter body. Numerals run to 220px+ inside."
+    padding: 38px 32px 32px
+    background: any palette accent or {colors.bone}
+    color: '{colors.ink} on light fills, {colors.bone} on dark fills'
+    description: The system's namesake container — a rounded rectangle holding a giant stencil numeral above a stencil headline
+      and Inter body. Numerals run to 220px+ inside.
   card-color:
     borderRadius: 22px
-    padding: "{spacing.card-pad}"
-    description: "Generic color-block card in any palette accent (sienna, magenta, orange, teal, blue, mustard, olive, paper)."
+    padding: '{spacing.card-pad}'
+    description: Generic color-block card in any palette accent (sienna, magenta, orange, teal, blue, mustard, olive, paper).
   pill-status:
-    borderRadius: "{spacing.radius-pill}"
-    padding: "6px 16px"
-    typography: "{typography.pill}"
-    description: "Uppercase Barlow Condensed pill used as a matrix cell value. teal=yes, mustard=partial, magenta=no, paper-with-ink-border=note."
+    borderRadius: '{spacing.radius-pill}'
+    padding: 6px 16px
+    typography: '{typography.pill}'
+    description: Uppercase Barlow Condensed pill used as a matrix cell value. teal=yes, mustard=partial, magenta=no, paper-with-ink-border=note.
   action-bar:
-    background: "{colors.mustard}"
+    background: '{colors.mustard}'
     borderRadius: 22px
-    padding: "24px 32px"
-    description: "Mustard-yellow callout bar running across the top of a slide, containing a tag separator and a stencil headline. Used for important section openers."
+    padding: 24px 32px
+    description: Mustard-yellow callout bar running across the top of a slide, containing a tag separator and a stencil headline.
+      Used for important section openers.
   num-mega:
-    typography: "{typography.numeral-mega}"
-    color: "{colors.orange} (default) or any saturated accent"
-    description: "Giant 540px stencil numeral used as a section divider — the number IS the layout. Sits absolute top-left while the section headline runs bottom-right."
+    typography: '{typography.numeral-mega}'
+    color: '{colors.orange} (default) or any saturated accent'
+    description: Giant 540px stencil numeral used as a section divider — the number IS the layout. Sits absolute top-left
+      while the section headline runs bottom-right.
   num-tablet:
-    typography: "{typography.numeral-tablet}"
-    description: "220px stencil numeral inside a tablet card, paired with a stencil headline and Inter body underneath."
+    typography: '{typography.numeral-tablet}'
+    description: 220px stencil numeral inside a tablet card, paired with a stencil headline and Inter body underneath.
   num-stat:
-    typography: "{typography.numeral-stat}"
-    suffix: "{typography.attribution}"
-    description: "160px stencil stat numeral with optional small-caps Barlow suffix (e.g., '%') at vertical-align top, 40px."
+    typography: '{typography.numeral-stat}'
+    suffix: '{typography.attribution}'
+    description: 160px stencil stat numeral with optional small-caps Barlow suffix (e.g., '%') at vertical-align top, 40px.
   cover-lockup:
-    description: "Cover-bottom row containing a small rounded mark (56px square, 14px radius, accent fill), an uppercase Barlow name with small subtitle, and a stencil date."
+    description: Cover-bottom row containing a small rounded mark (56px square, 14px radius, accent fill), an uppercase Barlow
+      name with small subtitle, and a stencil date.
   cover-mark:
     width: 56px
     height: 56px
     borderRadius: 14px
-    background: "any accent (default orange)"
-    description: "Small rounded square 'logo' tile in the cover lockup."
+    background: any accent (default orange)
+    description: Small rounded square 'logo' tile in the cover lockup.
   section-num-block:
-    description: "Section divider where a 540px stencil numeral fills the left side, a small Barlow eyebrow sits top-right, and a 120px stencil headline runs bottom-right."
+    description: Section divider where a 540px stencil numeral fills the left side, a small Barlow eyebrow sits top-right,
+      and a 120px stencil headline runs bottom-right.
   process-node:
     borderRadius: 22px
-    padding: "24px 22px 22px"
-    description: "Process step card with a 64px stencil ordinal at top, an uppercase stencil h3, and small Inter body. Each step takes a different accent fill."
+    padding: 24px 22px 22px
+    description: Process step card with a 64px stencil ordinal at top, an uppercase stencil h3, and small Inter body. Each
+      step takes a different accent fill.
   timeline-bar:
-    background: "{colors.paper}"
+    background: '{colors.paper}'
     borderRadius: 14px
-    padding: "0 28px"
+    padding: 0 28px
     height: 50px
-    description: "Paper-fill horizontal bar at the bottom of process diagrams, containing uppercase Barlow timeline markers spread evenly."
+    description: Paper-fill horizontal bar at the bottom of process diagrams, containing uppercase Barlow timeline markers
+      spread evenly.
   matrix-cell:
-    border: "1.5px solid rgba(10,10,10,0.35)"
-    padding: "18px 22px"
-    description: "Matrix table cell with a single warm-ink hairline border. Head row inverts to black fill with bone text. Last row drops bottom border."
+    border: 1.5px solid rgba(10,10,10,0.35)
+    padding: 18px 22px
+    description: Matrix table cell with a single warm-ink hairline border. Head row inverts to black fill with bone text.
+      Last row drops bottom border.
   legend-bar:
     width: 32px
     height: 6px
-    description: "Flat horizontal bar (no border-radius) used as a chart legend swatch."
+    description: Flat horizontal bar (no border-radius) used as a chart legend swatch.
   quote-panel:
-    background: "{colors.magenta} (or any saturated accent)"
+    background: '{colors.magenta} (or any saturated accent)'
     borderRadius: 26px
-    padding: "60px 80px"
-    description: "Large rounded panel filling most of the slide, containing a 320px Bowlby One quote mark beside a 60px stencil quote text."
+    padding: 60px 80px
+    description: Large rounded panel filling most of the slide, containing a 320px Bowlby One quote mark beside a 60px stencil
+      quote text.
   organic-shape:
-    description: "Decorative organic blob (SVG) sitting behind agenda items on the dark agenda layout, in any accent color. The shape is the background, the number and label float on top."
+    description: Decorative organic blob (SVG) sitting behind agenda items on the dark agenda layout, in any accent color.
+      The shape is the background, the number and label float on top.
   topbar:
-    position: "absolute top 48px, left/right 64px"
-    typography: "{typography.topbar}"
-    description: "Top chrome strip with section name left and meta columns right. Uppercase Barlow Condensed 800."
+    position: absolute top 48px, left/right 64px
+    typography: '{typography.topbar}'
+    description: Top chrome strip with section name left and meta columns right. Uppercase Barlow Condensed 800.
   footer-chrome:
-    position: "absolute bottom 36px, left/right 64px"
-    typography: "{typography.footer}"
-    description: "Bottom chrome strip with date left and deck name right. Uppercase Barlow Condensed 600 at 0.75 opacity."
+    position: absolute bottom 36px, left/right 64px
+    typography: '{typography.footer}'
+    description: Bottom chrome strip with date left and deck name right. Uppercase Barlow Condensed 600 at 0.75 opacity.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

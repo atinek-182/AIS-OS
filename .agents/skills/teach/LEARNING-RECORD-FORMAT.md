@@ -1,3 +1,26 @@
+---
+title: Learning Record Format
+domain: skill
+summary: 'Learning records live in `./learning-records/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc.
+  Create the directory lazily — only when the first record is written. They are the teaching equivalent of ADRs: they capture
+  non-obvious '
+critical_directives:
+- Implications** — what this unlocks or rules out for future sessions. Worth recording when non-obvious.
+section_outline:
+- Learning Record Format
+- Template
+- '{Short title of what was learned or established}'
+- Optional sections
+- Numbering
+read_triggers:
+- When working on skill in .agents/skills/teach/LEARNING-RECORD-FORMAT.md
+- When reading context for Learning Record Format
+tags:
+- skill
+- LEARNING-RECORD-FORMAT
+updated: '2026-08-08'
+---
+
 # Learning Record Format
 
 Learning records live in `./learning-records/` and use sequential numbering: `0001-slug.md`, `0002-slug.md`, etc. Create the directory lazily — only when the first record is written.

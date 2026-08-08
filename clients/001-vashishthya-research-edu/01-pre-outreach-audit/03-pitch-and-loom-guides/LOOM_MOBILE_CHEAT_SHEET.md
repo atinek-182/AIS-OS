@@ -1,3 +1,25 @@
+---
+title: 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
+domain: audit
+summary: '**Client:** Dr. Prashant Singh & Dr. Pooja Singh (Vashishthya Research / IJORAR / MJAP) **Target Duration:** 4 to
+  5 Minutes'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
+- '🕒 0:00 - 0:45 | STAGE 1: THE RESPECTFUL HOOK'
+- '🕒 0:45 - 2:00 | STAGE 2: THE REAL PAIN POINT (MENTAL PEACE & TIME)'
+- '🕒 2:00 - 3:30 | STAGE 3: LIVE NOTION CALL INTAKE TOOL DEMO'
+- '🕒 3:30 - 4:15 | STAGE 4: WEBSITE & GOOGLE SCHOLAR INDEXING GAPS'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/LOOM_MOBILE_CHEAT_SHEET.md
+- When reading context for 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
+tags:
+- audit
+- LOOM_MOBILE_CHEAT_SHEET
+updated: '2026-08-08'
+---
+
 # 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
 **Client:** Dr. Prashant Singh & Dr. Pooja Singh (Vashishthya Research / IJORAR / MJAP)  
 **Target Duration:** 4 to 5 Minutes  

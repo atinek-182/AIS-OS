@@ -1,3 +1,26 @@
+---
+title: 'ChatGPT Deep Research Prompt: Vashishthya Research, IJORAR & MJAP'
+domain: audit
+summary: Use this prompt in ChatGPT (or ChatGPT Deep Research / Claude / Perplexity) to generate an empirical, evidence-backed
+  forensic audit with concrete proofs, website flaws, SEO errors, and operational bottlenecks to present to Dr. Prashant Singh
+  & Dr. P
+critical_directives:
+- Summarize the top 5 "Must-Fix" problems in 5 bullet points with clear, non-offensive business language.
+section_outline:
+- 'ChatGPT Deep Research Prompt: Vashishthya Research, IJORAR & MJAP'
+- '1. TARGET ENTITIES & WEBSITES TO AUDIT:'
+- '2. REQUIRED OUTPUT SECTIONS & EVIDENCE MANDATE:'
+- 'SECTION 1: Forensic Technical & Web Architecture Audit (With Specific Proofs)'
+- 'SECTION 2: SEO, Google Scholar & Indexing Audit (With Specific Proofs)'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/01-research-and-audits/CHATGPT_DEEP_RESEARCH_PROMPT.md
+- 'When reading context for ChatGPT Deep Research Prompt: Vashishthya Research, IJORAR & MJAP'
+tags:
+- audit
+- CHATGPT_DEEP_RESEARCH_PROMPT
+updated: '2026-08-08'
+---
+
 # ChatGPT Deep Research Prompt: Vashishthya Research, IJORAR & MJAP
 
 Use this prompt in ChatGPT (or ChatGPT Deep Research / Claude / Perplexity) to generate an empirical, evidence-backed forensic audit with concrete proofs, website flaws, SEO errors, and operational bottlenecks to present to Dr. Prashant Singh & Dr. Pooja Singh.

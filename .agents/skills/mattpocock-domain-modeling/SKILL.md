@@ -1,6 +1,28 @@
 ---
+title: Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`)
+domain: skill
+summary: 'This skill provides TypeScript-driven domain modeling, ubiquitous language sharpening, and Architectural Decision
+  Record (ADR) management, directly adapted from Matt Pocock''s engineering practices. - **Slash Command**: `/mattpocock-domain-modeling
+  [c'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`)
+- Overview & Tri-Mode Routing
+- Domain Modeling Principles
+- 1. Challenge Against Glossary (`CONTEXT.md`)
+- 2. Type-Driven Domain Design
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-domain-modeling/SKILL.md
+- When reading context for Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-domain-modeling
-description: TypeScript domain modeling and ubiquitous language engine. Sharpen domain terms, define discriminated unions, prevent domain ambiguity, and record Architectural Decision Records (ADRs). Triggered via /mattpocock-domain-modeling or naturally when modeling domain types.
+description: TypeScript domain modeling and ubiquitous language engine. Sharpen domain terms, define discriminated unions,
+  prevent domain ambiguity, and record Architectural Decision Records (ADRs). Triggered via /mattpocock-domain-modeling or
+  naturally when modeling domain types.
 argument-hint: '[domain_concept_or_feature]'
 ---
 

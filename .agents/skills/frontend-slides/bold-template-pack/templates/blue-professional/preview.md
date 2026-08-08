@@ -1,3 +1,28 @@
+---
+title: Blue Professional Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/blue-professional/design.md`'
+critical_directives:
+- 'Best for: Anything that should feel modern-considered and lightly authoritative: B2B SaaS pitches, consulting deliverabl'
+- 'Signature move: Warm cream ground ({colors.bg}) on every surface — never pure white, never gray.'
+- 'Signature move: Space Grotesk (display + chrome) + Inter (body) — never substitute either.'
+- The rendered preview must look like a real first slide, not a template-selection card.
+section_outline:
+- Blue Professional Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/blue-professional/preview.md
+- When reading context for Blue Professional Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Blue Professional Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

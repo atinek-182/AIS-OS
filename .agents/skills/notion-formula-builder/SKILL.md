@@ -1,6 +1,30 @@
 ---
+title: Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
+domain: skill
+summary: This skill designs, validates, and compiles production-ready Notion Formula 2.0 expressions for database properties.
+  It guarantees 100% crash-free formula execution on blank/empty database rows, converts text properties dynamically for URL
+  parameters
+critical_directives:
+- NEVER** output browser Web APIs (`encodeURIComponent()`, `decodeURIComponent()`, `window`, `fetch`, `console.log`).
+- ALWAYS** wrap EVERY property reference in a defensive `if(empty(prop("Property Name")), fallback_value, active_value)` g
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
+- Overview & Tri-Mode Execution
+- Core Rules & Architectural Safeguards
+- 📋 Standard Production Formula Blueprints
+- 1. 1-Click WhatsApp Link Generator Blueprint
+read_triggers:
+- When working on skill in .agents/skills/notion-formula-builder/SKILL.md
+- When reading context for Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: notion-formula-builder
-description: Compiles bulletproof Notion Formula 2.0 expressions with empty-property null guards, native URL encoding, progress bars, WhatsApp link generators, and financial calculations. Validates syntax locally via scripts/test_notion_formula.py. Use when building or editing Notion database formulas.
+description: Compiles bulletproof Notion Formula 2.0 expressions with empty-property null guards, native URL encoding, progress
+  bars, WhatsApp link generators, and financial calculations. Validates syntax locally via scripts/test_notion_formula.py.
+  Use when building or editing Notion database formulas.
 argument-hint: '[formula_type] [property_names...]'
 ---
 

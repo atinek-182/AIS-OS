@@ -1,3 +1,25 @@
+---
+title: ZORIXEL Content Pillars & Brand Positioning
+domain: brand
+summary: 'ZORIXEL structures its educational topics around three high-converting content pillars designed to attract high-value
+  agency buyers, freelancers, and vibe coders. - **Focus**: Showing how to build high-end UI components, GSAP/WebGL animations,
+  and OK'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- ZORIXEL Content Pillars & Brand Positioning
+- '🏛️ Pillar 1: AI Web Engineering & Micro-Interactions'
+- '⚙️ Pillar 2: AIOS Workflows & Solopreneur Automations'
+- '💰 Pillar 3: Productized Service & Freelancer Systems'
+read_triggers:
+- When working on brand in zorixel-brand-os/strategy/content-pillars.md
+- When reading context for ZORIXEL Content Pillars & Brand Positioning
+tags:
+- brand
+- content-pillars
+updated: '2026-08-08'
+---
+
 # ZORIXEL Content Pillars & Brand Positioning
 
 ZORIXEL structures its educational topics around three high-converting content pillars designed to attract high-value agency buyers, freelancers, and vibe coders.

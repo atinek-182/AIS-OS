@@ -1,3 +1,21 @@
+---
+title: Ft3 Index Style Category List
+domain: skill
+summary: Three or four short columns, each headed by a category in small caps, holding 4–6 links each. *Use when:* the page
+  is a hub or a documentation root.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ft3 · Index-style category list
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft3-index-style-category-list.md
+- When reading context for Ft3 Index Style Category List
+tags:
+- skill
+- ft3-index-style-category-list
+updated: '2026-08-08'
+---
+
 ### Ft3 · Index-style category list
 Three or four short columns, each headed by a category in small caps, holding 4–6 links each.
 *Use when:* the page is a hub or a documentation root.

@@ -1,3 +1,29 @@
+---
+title: Structure
+domain: skill
+summary: 'Most AI-generated UIs are visually distinct but structurally identical: hero → three features → CTA → footer. Same
+  heading positions, same column counts, same component vocabulary. **Structural sameness is the AI fingerprint, not visual
+  sameness.** H'
+critical_directives:
+- Hairline rule.** 0.5–1px line, inset or full-bleed. Hallmark's default; modernist.
+- Negative space.** No rule at all — the gap *is* the divider. Apple, Coral, modern minimalism.
+- Double rule / typographic mark.** Top + bottom line tight together; signals masthead in Newsprint.
+- Typographic-only.** A word in a specific weight/size/colour, no rule, no box. Looks like a headline that happens to be c
+section_outline:
+- Structure
+- The six axes
+- 1. Section-heading placement
+- 2. Body composition
+- 3. Divider language
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/structure.md
+- When reading context for Structure
+tags:
+- skill
+- structure
+updated: '2026-08-08'
+---
+
 # Structure
 
 Most AI-generated UIs are visually distinct but structurally identical: hero → three features → CTA → footer. Same heading positions, same column counts, same component vocabulary. **Structural sameness is the AI fingerprint, not visual sameness.** Hallmark's job is to break it.

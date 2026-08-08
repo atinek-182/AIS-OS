@@ -1,6 +1,33 @@
 ---
+title: ZORIXEL AIOS Session Post-Mortem & System Evolution Engine (`/session-postmortem-audit`)
+domain: skill
+summary: This skill automates the complete post-mortem audit, system self-improvement, and skill auto-evolution cycle for
+  Atinek Maurya's AIOS. It converts session friction, terminal bugs, prompt iterations, and successful patterns into permanent
+  pre-flight s
+critical_directives:
+- CRITICAL REQUIREMENT:** The generated report MUST NOT be brief, summarized, or condensed into a few superficial bullet p
+- 'Mandatory Pre-Execution Rule**: Formulate a strict rule (e.g., `Rule 1.X`) to be added to workspace rules or pre-flight '
+- 'AIOS First-Try Rule**: Formulate the exact execution policy so AIOS delivers the output on the FIRST attempt in future
+  s'
+- 'System Prompt Rules**: Provide exact rule snippets to be appended to `AGENTS.md` or `.agents/rules/`.'
+section_outline:
+- Overview & Tri-Mode Execution
+- 3-Phase Execution Architecture
+- 📏 MANDATORY DEPTH & LENGTH CONSTRAINT (400 TO 1000+ LINES)
+- '📑 PHASE 1: TRANSCRIPT ANALYSIS & REPORT GENERATION'
+- 'Section 1: Comprehensive Terminal, Syntax, API & Environment Error Catalog'
+read_triggers:
+- When working on skill in .agents/skills/session-postmortem-audit/SKILL.md
+- When reading context for ZORIXEL AIOS Session Post-Mortem & System Evolution Engine (`/session-postmortem-audit`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: session-postmortem-audit
-description: Autonomous 3-phase self-evolving post-mortem engine. Analyzes the current chat transcript, terminal errors, and user delivery iterations, writes an exhaustive 400 to 1000+ line report, runs an adversarial 5-persona /roast council audit, generates permanent pre-flight scripts, and automatically upgrades its own skill logic. Invokable via /session-postmortem-audit or naturally at session end.
+description: Autonomous 3-phase self-evolving post-mortem engine. Analyzes the current chat transcript, terminal errors, and
+  user delivery iterations, writes an exhaustive 400 to 1000+ line report, runs an adversarial 5-persona /roast council audit,
+  generates permanent pre-flight scripts, and automatically upgrades its own skill logic. Invokable via /session-postmortem-audit
+  or naturally at session end.
 argument-hint: '[optional_target_directory] [optional_focus_area]'
 ---
 

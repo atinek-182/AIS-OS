@@ -1,6 +1,24 @@
 ---
+title: Prototype
+domain: skill
+summary: 'A prototype is **throwaway code that answers a question**. The question decides the shape. Identify which question
+  is being answered — from the user''s prompt, the surrounding code, or by asking if the user is around:'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Prototype
+- Pick a branch
+- Rules that apply to both
+read_triggers:
+- When working on skill in .agents/skills/prototype/SKILL.md
+- When reading context for Prototype
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: prototype
-description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.
+description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state
+  model or logic feels right, or explore what a UI should look like.
 ---
 
 # Prototype

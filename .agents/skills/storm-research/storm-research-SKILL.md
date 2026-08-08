@@ -1,4 +1,30 @@
 ---
+title: Storm Research
+domain: skill
+summary: 'description: Use when someone asks to run Storm Research, use the storm-research skill, run the STORM method on
+  a topic, says "storm research this" / "storm report on X" / "give me a STORM briefing on X", or wants a multi-perspective,
+  citation-verifi'
+critical_directives:
+- 5 key findings, ranked by reliability** — most important things now known, highest reliability first. Each carries a 1-1
+- 'Real research only.** Every lens and every citation must trace to a real, fetched source. No invented studies, numbers, '
+- The panel is author-built.** Always disclose this in the report. Agreement across lenses is a strong hypothesis, not ind
+- 'Verification is mandatory.** A report delivered without Phase 4 is not a Storm Research report. The verification banner '
+section_outline:
+- Storm Research
+- What this does
+- Portability
+- 'Phase 0: Scope the topic'
+- 'Phase 1: Five expert lenses (parallel agents)'
+read_triggers:
+- When working on skill in .agents/skills/storm-research/storm-research-SKILL.md
+- When reading context for Storm Research
+tags:
+- skill
+- storm-research-SKILL
+updated: '2026-08-08'
+---
+
+---
 name: storm-research
 description: Use when someone asks to run Storm Research, use the storm-research skill, run the STORM method on a topic, says "storm research this" / "storm report on X" / "give me a STORM briefing on X", or wants a multi-perspective, citation-verified HTML research briefing on a topic. Runs a 4-phase pipeline: five expert lenses (Practitioner, Academic, Skeptic, Economist, Historian) -> contradiction map -> synthesized HTML report -> adversarial peer review + primary-source verification. Best for topics where multiple viewpoints and fact-checked claims matter; overkill for a simple factual lookup.
 argument-hint: "[topic to research]"

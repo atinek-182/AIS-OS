@@ -1,3 +1,25 @@
+---
+title: Upstash Context7 API Guide
+domain: architecture
+summary: Upstash Context7 is a service that fetches up-to-date, version-specific documentation and code examples directly
+  into the AI agent's context, reducing hallucinations and outdated code generation. *   **Remote MCP URL:** `https://mcp.context7.com/mcp`
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Upstash Context7 API Guide
+- Endpoints
+- Authentication
+- MCP Tools
+- '`context7/resolve-library-id`'
+read_triggers:
+- When working on architecture in references/context7-api.md
+- When reading context for Upstash Context7 API Guide
+tags:
+- architecture
+- context7-api
+updated: '2026-08-08'
+---
+
 # Upstash Context7 API Guide
 
 Upstash Context7 is a service that fetches up-to-date, version-specific documentation and code examples directly into the AI agent's context, reducing hallucinations and outdated code generation.

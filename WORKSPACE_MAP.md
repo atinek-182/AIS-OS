@@ -13,6 +13,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [AGENTS.md](file:///d:/AI-OS/AGENTS.md) | File | Primary workspace system prompt rules loaded on every chat startup. | Operator / AIOS |
 | [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) | File | This map. Centralized index of configurations, scripts, and logs. | AIOS (Immediate updates) |
 | [scripts/sync_global_rules.py](file:///d:/AI-OS/scripts/sync_global_rules.py) | File | Automated script synchronizing living error rules into AGENTS.md and GEMINI.md system prompts. | AIOS |
+| [scripts/aios_frontmatter_standardizer.py](file:///d:/AI-OS/scripts/aios_frontmatter_standardizer.py) | File | Automated script standardizing Rich YAML Frontmatter headers across 792 workspace Markdown files. | AIOS |
+| [scripts/validate_yaml_frontmatter.py](file:///d:/AI-OS/scripts/validate_yaml_frontmatter.py) | File | Audit script verifying 100% YAML Frontmatter schema compliance across all workspace Markdown files. | AIOS |
+| [errors-and-lessons/2026-08-08-session-postmortem-audit.md](file:///d:/AI-OS/errors-and-lessons/2026-08-08-session-postmortem-audit.md) | File | Exhaustive post-mortem report auditing session execution, regex backtracking, Windows directory junction recursion, frontmatter standardization, and pre-flight health script automation. | AIOS |
 | [scripts/auto_evolve_all_skills.py](file:///d:/AI-OS/scripts/auto_evolve_all_skills.py) | File | Automated script injecting the /roast gate and auto-evolution loop across all 65+ workspace skills. | AIOS |
 | [.vscode/settings.json](file:///d:/AI-OS/.vscode/settings.json) | File | VS Code workspace configuration, setting default Python interpreter to trials/.venv. | AIOS |
 | [diagrams/](file:///d:/AI-OS/diagrams/) | Folder | Dedicated directory organizing all Excalidraw design and workflow diagrams. | AIOS |

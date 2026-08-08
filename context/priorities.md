@@ -1,3 +1,22 @@
+---
+title: Priorities (Next 90 Days)
+domain: architecture
+summary: '1. **ZORIXEL AI Agency Launch**: Launch YouTube long-form technical build channel, set up multi-platform syndication
+  (LinkedIn, X, Reddit, IG), and deploy zorixel.com dual-market intake portal with an interactive bottleneck ROI calculator.
+  2. **Domes'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Priorities (Next 90 Days)
+read_triggers:
+- When working on architecture in context/priorities.md
+- When reading context for Priorities (Next 90 Days)
+tags:
+- architecture
+- priorities
+updated: '2026-08-08'
+---
+
 # Priorities (Next 90 Days)
 
 1. **ZORIXEL AI Agency Launch**: Launch YouTube long-form technical build channel, set up multi-platform syndication (LinkedIn, X, Reddit, IG), and deploy zorixel.com dual-market intake portal with an interactive bottleneck ROI calculator.

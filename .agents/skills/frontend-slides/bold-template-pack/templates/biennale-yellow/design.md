@@ -1,226 +1,262 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Warm parchment ground (`{colors.paper}`) on every surface; never white, never gray.
+- Single ink color (`{colors.ink}`) for all text and all rules — no secondary text colors.
+- 1px hairline rules in `{colors.ink}` are the only border treatment — used for header bands, ledger rows, footer columns,
+- 'Paper** (`{colors.paper}` — `#E9E5DB`): The warm parchment canvas. The default and near-universal background. Reads as
+  a'
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/biennale-yellow/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Biennale Yellow
-description: "A literary-editorial presentation system in the visual register of an art biennale catalogue or quiet exhibition poster. The aesthetic is built on warm parchment grounds (`#E9E5DB`) flooded with soft solar yellow (`#F1EE2E`) radial blooms, set against a single deep indigo navy ink color. Display type is Instrument Serif — a contemporary high-contrast serif with tall ascenders and elegant italics — paired with Archivo for sans-serif chrome and JetBrains Mono for numerical and metadata callouts. No drop shadows, no rounded corners, no bordered cards: the only structural lines are hairline 1px rules in ink. The mood sits between a folded museum brochure, a slow-reading literary quarterly, and a Mediterranean exhibition poster — confident, atmospheric, and deeply restrained."
-
+description: 'A literary-editorial presentation system in the visual register of an art biennale catalogue or quiet exhibition
+  poster. The aesthetic is built on warm parchment grounds (`#E9E5DB`) flooded with soft solar yellow (`#F1EE2E`) radial blooms,
+  set against a single deep indigo navy ink color. Display type is Instrument Serif — a contemporary high-contrast serif with
+  tall ascenders and elegant italics — paired with Archivo for sans-serif chrome and JetBrains Mono for numerical and metadata
+  callouts. No drop shadows, no rounded corners, no bordered cards: the only structural lines are hairline 1px rules in ink.
+  The mood sits between a folded museum brochure, a slow-reading literary quarterly, and a Mediterranean exhibition poster
+  — confident, atmospheric, and deeply restrained.'
 colors:
-  paper: "#E9E5DB"
-  paper-deep: "#DCD6C4"
-  sun: "#F1EE2E"
-  sun-soft: "#F8F39B"
-  haze: "#F0DA7C"
-  ink: "#1B2566"
-  ember: "#E26B4A"
-
+  paper: '#E9E5DB'
+  paper-deep: '#DCD6C4'
+  sun: '#F1EE2E'
+  sun-soft: '#F8F39B'
+  haze: '#F0DA7C'
+  ink: '#1B2566'
+  ember: '#E26B4A'
 color-aliases:
   line: ink
-
 typography:
   display:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(120px, min(14.6vw, 22vh), 240px)"
+    fontSize: clamp(120px, min(14.6vw, 22vh), 240px)
     lineHeight: 0.86
     letterSpacing: -0.018em
   display-md:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(80px, min(10vw, 16vh), 200px)"
+    fontSize: clamp(80px, min(10vw, 16vh), 200px)
     lineHeight: 0.86
     letterSpacing: -0.018em
   display-sm:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(110px, min(11vw, 18vh), 200px)"
+    fontSize: clamp(110px, min(11vw, 18vh), 200px)
     lineHeight: 0.86
     letterSpacing: -0.018em
   display-it:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
     fontStyle: italic
-    fontSize: "clamp(56px, min(7vw, 11vh), 120px)"
+    fontSize: clamp(56px, min(7vw, 11vh), 120px)
     lineHeight: 1.04
     letterSpacing: -0.005em
   numeral-jumbo:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(220px, min(28vw, 64vh), 720px)"
+    fontSize: clamp(220px, min(28vw, 64vh), 720px)
     lineHeight: 0.84
     letterSpacing: -0.04em
   numeral-lg:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(120px, min(15vw, 22vh), 280px)"
+    fontSize: clamp(120px, min(15vw, 22vh), 280px)
     lineHeight: 0.9
     letterSpacing: -0.04em
   numeral-md:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(72px, min(7vw, 12vh), 144px)"
+    fontSize: clamp(72px, min(7vw, 12vh), 144px)
     lineHeight: 0.92
     letterSpacing: -0.01em
   headline:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(40px, min(4.6vw, 7vh), 88px)"
+    fontSize: clamp(40px, min(4.6vw, 7vh), 88px)
     lineHeight: 1.06
     letterSpacing: -0.005em
   headline-sm:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(32px, min(3.6vw, 6vh), 56px)"
+    fontSize: clamp(32px, min(3.6vw, 6vh), 56px)
     lineHeight: 1
   date-rail:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(48px, min(5.2vw, 9vh), 96px)"
+    fontSize: clamp(48px, min(5.2vw, 9vh), 96px)
     lineHeight: 0.96
     letterSpacing: -0.005em
   ledger-title:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(20px, 1.6vw, 30px)"
+    fontSize: clamp(20px, 1.6vw, 30px)
     lineHeight: 1.15
   strand-title:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(22px, 1.7vw, 32px)"
+    fontSize: clamp(22px, 1.7vw, 32px)
     lineHeight: 1.1
   strand-num:
-    fontFamily: "'Instrument Serif', Georgia, serif"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
     fontWeight: 400
-    fontSize: "clamp(28px, 2vw, 38px)"
+    fontSize: clamp(28px, 2vw, 38px)
     lineHeight: 1
   body-lede:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(15px, 1.05vw, 18px)"
+    fontSize: clamp(15px, 1.05vw, 18px)
     lineHeight: 1.55
   body:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(14px, 0.95vw, 16px)"
+    fontSize: clamp(14px, 0.95vw, 16px)
     lineHeight: 1.5
   body-sm:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 400
-    fontSize: "clamp(11px, 0.78vw, 13px)"
+    fontSize: clamp(11px, 0.78vw, 13px)
     lineHeight: 1.5
   micro-label:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(11px, 0.85vw, 14px)"
+    fontSize: clamp(11px, 0.85vw, 14px)
     lineHeight: 1.2
     letterSpacing: 0.18em
     textTransform: uppercase
   micro-label-tight:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(10px, 0.72vw, 12px)"
+    fontSize: clamp(10px, 0.72vw, 12px)
     lineHeight: 1.2
     letterSpacing: 0.16em
     textTransform: uppercase
   rail-label:
-    fontFamily: "'Archivo', sans-serif"
+    fontFamily: '''Archivo'', sans-serif'
     fontWeight: 600
-    fontSize: "clamp(11px, 0.85vw, 13px)"
+    fontSize: clamp(11px, 0.85vw, 13px)
     lineHeight: 1
     letterSpacing: 0.32em
     textTransform: uppercase
   mono-data:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
     fontWeight: 400
-    fontSize: "clamp(12px, 0.85vw, 14px)"
+    fontSize: clamp(12px, 0.85vw, 14px)
     lineHeight: 1.4
     letterSpacing: 0.04em
   mono-date:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
     fontWeight: 400
-    fontSize: "clamp(13px, 0.95vw, 16px)"
+    fontSize: clamp(13px, 0.95vw, 16px)
     lineHeight: 1.4
     letterSpacing: 0.02em
   pagenum:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
     fontWeight: 400
-    fontSize: "clamp(11px, 0.85vw, 13px)"
+    fontSize: clamp(11px, 0.85vw, 13px)
     lineHeight: 1
     letterSpacing: 0.08em
-
 spacing:
-  pad-edge: "clamp(40px, 4vw, 76px)"
-  pad-region: "clamp(40px, 4.2vw, 80px)"
-  pad-foot: "clamp(56px, 5vh, 88px)"
-  pad-strand-y: "clamp(12px, 1.6vh, 22px)"
-  gap-region: "clamp(20px, 2.5vw, 48px)"
-  gap-strand: "clamp(14px, 1.8vh, 22px)"
-  gap-footer-col: "clamp(20px, 2.4vw, 44px)"
-  pagenum-bottom: "clamp(22px, 2.4vh, 42px)"
-  pagenum-right: "clamp(24px, 2.4vw, 48px)"
-
+  pad-edge: clamp(40px, 4vw, 76px)
+  pad-region: clamp(40px, 4.2vw, 80px)
+  pad-foot: clamp(56px, 5vh, 88px)
+  pad-strand-y: clamp(12px, 1.6vh, 22px)
+  gap-region: clamp(20px, 2.5vw, 48px)
+  gap-strand: clamp(14px, 1.8vh, 22px)
+  gap-footer-col: clamp(20px, 2.4vw, 44px)
+  pagenum-bottom: clamp(22px, 2.4vh, 42px)
+  pagenum-right: clamp(24px, 2.4vw, 48px)
 canvas:
   width: 100vw
   height: 100vh
-  background: "{colors.paper}"
-
+  background: '{colors.paper}'
 components:
   pagenum:
-    position: "absolute, right + bottom"
-    color: "{colors.ink}"
+    position: absolute, right + bottom
+    color: '{colors.ink}'
     opacity: 0.75
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "clamp(11px, 0.85vw, 13px)"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: clamp(11px, 0.85vw, 13px)
     letterSpacing: 0.08em
-    description: "Single mono pagenum NN / NN pinned to bottom-right of every slide at 75% opacity. The only persistent chrome on every surface."
+    description: Single mono pagenum NN / NN pinned to bottom-right of every slide at 75% opacity. The only persistent chrome
+      on every surface.
   hairline-rule:
-    border: "1px solid {colors.ink}"
-    description: "1px solid ink horizontal or vertical rule. The system's only border treatment — separates header bands from content, footer columns from each other, ledger rows from each other. No thicker rule exists."
+    border: 1px solid {colors.ink}
+    description: 1px solid ink horizontal or vertical rule. The system's only border treatment — separates header bands from
+      content, footer columns from each other, ledger rows from each other. No thicker rule exists.
   hairline-rule-soft:
-    border: "1px solid rgba(27, 37, 102, 0.18-0.2)"
-    description: "1px ink at 18-20% opacity. Used for between-row separators inside dense ledger or strand lists where a full-weight rule would feel oppressive."
+    border: 1px solid rgba(27, 37, 102, 0.18-0.2)
+    description: 1px ink at 18-20% opacity. Used for between-row separators inside dense ledger or strand lists where a full-weight
+      rule would feel oppressive.
   sun-bloom:
-    background: "radial-gradient using {colors.sun} {colors.sun-soft} {colors.haze} blending to transparent on {colors.paper}"
-    description: "Large soft radial bloom of solar yellow placed off-center or behind a focal element. The system's primary atmospheric layer. Sized 42-70% of viewport in the larger axis."
+    background: radial-gradient using {colors.sun} {colors.sun-soft} {colors.haze} blending to transparent on {colors.paper}
+    description: Large soft radial bloom of solar yellow placed off-center or behind a focal element. The system's primary
+      atmospheric layer. Sized 42-70% of viewport in the larger axis.
   ember-bloom:
-    background: "radial-gradient using {colors.ember} at 15-22% opacity blending to transparent"
-    description: "Small warm peach bloom used as a counter-temperature accent in a corner opposite the sun bloom. Always subordinate; never dominant."
+    background: radial-gradient using {colors.ember} at 15-22% opacity blending to transparent
+    description: Small warm peach bloom used as a counter-temperature accent in a corner opposite the sun bloom. Always subordinate;
+      never dominant.
   block-tile:
-    background: "{colors.sun} at 40-70% opacity"
-    description: "Geometric blocks of translucent solar yellow placed on an 8-row × 4-column grid behind cover or colophon surfaces. Suggests a layered poster underprint."
+    background: '{colors.sun} at 40-70% opacity'
+    description: Geometric blocks of translucent solar yellow placed on an 8-row × 4-column grid behind cover or colophon
+      surfaces. Suggests a layered poster underprint.
   yellow-panel:
-    background: "{colors.sun}"
-    color: "{colors.ink}"
-    description: "Full-bleed yellow panel covering a column or third of the slide. The strongest possible color statement — used when a region needs to read as poster-fill, not paper."
+    background: '{colors.sun}'
+    color: '{colors.ink}'
+    description: Full-bleed yellow panel covering a column or third of the slide. The strongest possible color statement —
+      used when a region needs to read as poster-fill, not paper.
   bar-ink:
-    background: "{colors.ink}"
-    height: "clamp(14px, 1.6vh, 22px)"
-    description: "Solid ink horizontal bar for data charts. Width carries the data value."
+    background: '{colors.ink}'
+    height: clamp(14px, 1.6vh, 22px)
+    description: Solid ink horizontal bar for data charts. Width carries the data value.
   bar-lit:
-    background: "{colors.sun}"
-    border: "1px solid {colors.ink}"
-    height: "clamp(14px, 1.6vh, 22px)"
-    description: "Highlighted variant of bar-ink — yellow fill with 1px ink stroke. Used to mark the current or featured row in a series."
+    background: '{colors.sun}'
+    border: 1px solid {colors.ink}
+    height: clamp(14px, 1.6vh, 22px)
+    description: Highlighted variant of bar-ink — yellow fill with 1px ink stroke. Used to mark the current or featured row
+      in a series.
   strand-row:
-    layout: "grid 56px 1fr, gap clamp(14px, 1.4vw, 24px), border-bottom hairline-soft, padding-bottom clamp(12px, 1.6vh, 22px)"
-    description: "Numbered editorial list row — numeral cell + content cell separated by hairline-soft. Used for programmes, agendas, and curated lists."
+    layout: grid 56px 1fr, gap clamp(14px, 1.4vw, 24px), border-bottom hairline-soft, padding-bottom clamp(12px, 1.6vh, 22px)
+    description: Numbered editorial list row — numeral cell + content cell separated by hairline-soft. Used for programmes,
+      agendas, and curated lists.
   ledger-row:
-    layout: "grid 92px 1.6fr 0.9fr 80px, gap clamp(14px, 1.4vw, 28px), border-bottom hairline-soft, padding clamp(10px, 1.3vh, 18px) 0"
-    description: "Four-column tabular row for calendars and itineraries. Date column is mono, title is serif, venue is sans, duration is mono right-aligned."
+    layout: grid 92px 1.6fr 0.9fr 80px, gap clamp(14px, 1.4vw, 28px), border-bottom hairline-soft, padding clamp(10px, 1.3vh,
+      18px) 0
+    description: Four-column tabular row for calendars and itineraries. Date column is mono, title is serif, venue is sans,
+      duration is mono right-aligned.
   footer-band:
-    layout: "grid 4-column with hairline-rule top border on each cell, gap clamp(20px, 2.4vw, 44px)"
-    description: "Four-column metadata strip pinned to the bottom of cover and colophon surfaces. Each cell has a tiny uppercase tag + a brief plain-English statement."
+    layout: grid 4-column with hairline-rule top border on each cell, gap clamp(20px, 2.4vw, 44px)
+    description: Four-column metadata strip pinned to the bottom of cover and colophon surfaces. Each cell has a tiny uppercase
+      tag + a brief plain-English statement.
   vertical-rail:
-    transform: "rotate(-90deg) translateY(-50%) at left edge"
-    fontFamily: "'Archivo', sans-serif"
-    fontSize: "clamp(11px, 0.85vw, 13px)"
+    transform: rotate(-90deg) translateY(-50%) at left edge
+    fontFamily: '''Archivo'', sans-serif'
+    fontSize: clamp(11px, 0.85vw, 13px)
     letterSpacing: 0.32em
     textTransform: uppercase
-    description: "Rotated vertical text label running up the left edge. Used on chapter/divider surfaces as a section marker."
+    description: Rotated vertical text label running up the left edge. Used on chapter/divider surfaces as a section marker.
   date-rail-stack:
-    fontFamily: "'Instrument Serif', Georgia, serif"
-    fontSize: "clamp(48px, min(5.2vw, 9vh), 96px)"
+    fontFamily: '''Instrument Serif'', Georgia, serif'
+    fontSize: clamp(48px, min(5.2vw, 9vh), 96px)
     lineHeight: 0.96
     textAlign: right
-    description: "Large serif date or date-range stacked at top-right of cover surfaces. Uses an en-dash to indicate spans."
+    description: Large serif date or date-range stacked at top-right of cover surfaces. Uses an en-dash to indicate spans.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

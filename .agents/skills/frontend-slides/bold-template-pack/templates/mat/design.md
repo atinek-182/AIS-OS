@@ -1,158 +1,183 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Bricolage Grotesque display type is **always mixed case** — never uppercase. Uppercase is reserved for DM Mono labels.
+- Bullet lists use an em-dash prefix in warm orange via DM Mono — never a dot, never a check.
+- Thin 1px hairline rules in low-opacity cream are the only divider language. No heavy borders, no shadows.
+- 'The system has one light slide variant (cream background with dark green text) used as a tonal inversion within a deck, '
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/mat/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Mat
-description: A warm, material-tactile presentation system inspired by a high-end product landing page. Dark forest green is the dominant environment, warmed by a low atmospheric wood-brown glow from the bottom-right corner of every dark slide. Cream type floats directly on the field; warm orange acts as the single accent. The typeface stack pairs Bricolage Grotesque (a heavy, rounded grotesque) for display with DM Sans for body and DM Mono for labels — the result reads as industrial-design portfolio meets boutique product launch, never tech demo.
-
+description: A warm, material-tactile presentation system inspired by a high-end product landing page. Dark forest green is
+  the dominant environment, warmed by a low atmospheric wood-brown glow from the bottom-right corner of every dark slide.
+  Cream type floats directly on the field; warm orange acts as the single accent. The typeface stack pairs Bricolage Grotesque
+  (a heavy, rounded grotesque) for display with DM Sans for body and DM Mono for labels — the result reads as industrial-design
+  portfolio meets boutique product launch, never tech demo.
 colors:
-  bg-dark: "#232E26"
-  bg-dark-alt: "#2E3D30"
-  bg-cream: "#EDE6D0"
-  bg-cream-alt: "#E4DAC4"
-  ink-cream: "#F0E8D2"
-  ink-cream-2: "rgba(240, 232, 210, 0.58)"
-  ink-cream-3: "rgba(240, 232, 210, 0.3)"
-  ink-dark: "#1E2820"
-  ink-dark-2: "rgba(30, 40, 32, 0.6)"
-  ink-dark-3: "rgba(30, 40, 32, 0.3)"
-  accent-orange: "#C07030"
-  border-on-dark: "rgba(240, 232, 210, 0.12)"
-  border-on-cream: "rgba(30, 40, 32, 0.14)"
-  wood-glow: "#7A4E24"
-
+  bg-dark: '#232E26'
+  bg-dark-alt: '#2E3D30'
+  bg-cream: '#EDE6D0'
+  bg-cream-alt: '#E4DAC4'
+  ink-cream: '#F0E8D2'
+  ink-cream-2: rgba(240, 232, 210, 0.58)
+  ink-cream-3: rgba(240, 232, 210, 0.3)
+  ink-dark: '#1E2820'
+  ink-dark-2: rgba(30, 40, 32, 0.6)
+  ink-dark-3: rgba(30, 40, 32, 0.3)
+  accent-orange: '#C07030'
+  border-on-dark: rgba(240, 232, 210, 0.12)
+  border-on-cream: rgba(30, 40, 32, 0.14)
+  wood-glow: '#7A4E24'
 color-aliases:
   c-fg: ink-cream
   c-fg-light: ink-dark
   c-bg: bg-dark
   c-bg-light: bg-cream
   c-accent: accent-orange
-
 typography:
   display:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 12vw
     fontWeight: 800
     lineHeight: 0.88
     letterSpacing: -0.03em
   h1:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 7vw
     fontWeight: 800
     lineHeight: 0.92
     letterSpacing: -0.025em
   h2:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 4vw
     fontWeight: 700
     lineHeight: 1.0
     letterSpacing: -0.02em
   h3:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 2.4vw
     fontWeight: 600
     lineHeight: 1.1
     letterSpacing: -0.01em
   lead:
-    fontFamily: "DM Sans, Noto Sans SC, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, sans-serif
     fontSize: 1.5vw
     fontWeight: 400
     lineHeight: 1.55
   body:
-    fontFamily: "DM Sans, Noto Sans SC, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, sans-serif
     fontSize: 1.05vw
     fontWeight: 400
     lineHeight: 1.65
   caption:
-    fontFamily: "DM Sans, Noto Sans SC, sans-serif"
+    fontFamily: DM Sans, Noto Sans SC, sans-serif
     fontSize: 0.82vw
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "DM Mono, monospace"
+    fontFamily: DM Mono, monospace
     fontSize: 0.7vw
     fontWeight: 400
     letterSpacing: 0.12em
     textTransform: uppercase
   stat-value:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 5.5vw
     fontWeight: 800
     lineHeight: 1.0
     letterSpacing: -0.025em
   quote-text:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 3.4vw
     fontWeight: 600
     lineHeight: 1.2
     letterSpacing: -0.02em
   quote-mark:
-    fontFamily: "Bricolage Grotesque, Noto Sans SC, sans-serif"
+    fontFamily: Bricolage Grotesque, Noto Sans SC, sans-serif
     fontSize: 8vw
     fontWeight: 800
     lineHeight: 0.6
-
 spacing:
   pad-x: 5.5vw
   pad-y: 5.5vh
   gap-lg: 4.5vh
   gap-md: 2.8vh
   gap-sm: 1.4vh
-
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   kicker:
-    fontFamily: "{typography.label.fontFamily}"
-    fontSize: "{typography.label.fontSize}"
+    fontFamily: '{typography.label.fontFamily}'
+    fontSize: '{typography.label.fontSize}'
     letterSpacing: 0.12em
     textTransform: uppercase
-    color: "{colors.accent-orange}"
+    color: '{colors.accent-orange}'
   rule:
     width: 32px
     height: 1px
-    background: "{colors.accent-orange}"
+    background: '{colors.accent-orange}'
   bullet-marker:
-    content: "—"
-    color: "{colors.accent-orange}"
-    fontFamily: "{typography.label.fontFamily}"
-    description: "Em-dash prefix in warm orange; emerges in mono face. The system's standard list mark; never a bullet, never a checkmark."
+    content: —
+    color: '{colors.accent-orange}'
+    fontFamily: '{typography.label.fontFamily}'
+    description: Em-dash prefix in warm orange; emerges in mono face. The system's standard list mark; never a bullet, never
+      a checkmark.
   info-card:
-    background: "{colors.bg-cream}"
-    color: "{colors.ink-dark}"
-    padding: "{spacing.gap-md} calc({spacing.pad-x} * 0.8)"
+    background: '{colors.bg-cream}'
+    color: '{colors.ink-dark}'
+    padding: '{spacing.gap-md} calc({spacing.pad-x} * 0.8)'
     maxWidth: 28vw
-    description: "Cream inset box embedded on a dark green field. The signature material-contrast component; carries a heading and a body block, no border, no shadow."
+    description: Cream inset box embedded on a dark green field. The signature material-contrast component; carries a heading
+      and a body block, no border, no shadow.
   chrome-band:
-    borderBottom: "1px solid {colors.border-on-dark}"
-    paddingBottom: "{spacing.gap-sm}"
-    description: "Label-pair on top of a 1px rule; suppressed on cover/quote/end slide types."
+    borderBottom: 1px solid {colors.border-on-dark}
+    paddingBottom: '{spacing.gap-sm}'
+    description: Label-pair on top of a 1px rule; suppressed on cover/quote/end slide types.
   foot-band:
-    borderTop: "1px solid {colors.border-on-dark}"
-    paddingTop: "{spacing.gap-sm}"
-    description: "Label-pair under a 1px rule; mirrors the chrome band."
+    borderTop: 1px solid {colors.border-on-dark}
+    paddingTop: '{spacing.gap-sm}'
+    description: Label-pair under a 1px rule; mirrors the chrome band.
   stat-cell:
-    borderRight: "1px solid {colors.border-on-dark}"
-    padding: "{spacing.gap-md} {spacing.pad-x} {spacing.gap-md} 0"
-    description: "A vertically-divided cell containing a large numerical value (with optional inline orange-emphasis em-span) and a one-line label. Last cell has no right border."
+    borderRight: 1px solid {colors.border-on-dark}
+    padding: '{spacing.gap-md} {spacing.pad-x} {spacing.gap-md} 0'
+    description: A vertically-divided cell containing a large numerical value (with optional inline orange-emphasis em-span)
+      and a one-line label. Last cell has no right border.
   bar-fill:
-    width: "100%"
-    background: "{colors.ink-cream-3}"
-    description: "Vertical bar in muted cream; gets the orange accent (.accent variant) when it's the highlighted data point."
+    width: 100%
+    background: '{colors.ink-cream-3}'
+    description: Vertical bar in muted cream; gets the orange accent (.accent variant) when it's the highlighted data point.
   compare-divider:
     width: 1px
-    background: "{colors.border-on-dark}"
-    description: "A 1px-wide vertical column (not a border) used to split a before/after comparison; subtle, not loud."
+    background: '{colors.border-on-dark}'
+    description: A 1px-wide vertical column (not a border) used to split a before/after comparison; subtle, not loud.
   image-placeholder:
-    background: "rgba(240, 232, 210, 0.06)"
-    border: "1px solid {colors.border-on-dark}"
-    color: "{colors.ink-cream-3}"
-    description: "Hairline-bordered void with centered mono label until photography is available."
+    background: rgba(240, 232, 210, 0.06)
+    border: 1px solid {colors.border-on-dark}
+    color: '{colors.ink-cream-3}'
+    description: Hairline-bordered void with centered mono label until photography is available.
   atmospheric-glow:
-    selector: ".slide.dark::before"
-    position: "bottom-right ellipse, 55% wide × 70% tall"
-    gradient: "radial-gradient(ellipse at 70% 80%, rgba(122, 78, 36, 0.28) 0%, rgba(80, 50, 20, 0.14) 40%, transparent 70%)"
-    description: "The wood-brown atmospheric glow that lives on every dark slide via ::before. Non-optional on dark surfaces; defines the warmth of the system."
+    selector: .slide.dark::before
+    position: bottom-right ellipse, 55% wide × 70% tall
+    gradient: radial-gradient(ellipse at 70% 80%, rgba(122, 78, 36, 0.28) 0%, rgba(80, 50, 20, 0.14) 40%, transparent 70%)
+    description: The wood-brown atmospheric glow that lives on every dark slide via ::before. Non-optional on dark surfaces;
+      defines the warmth of the system.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

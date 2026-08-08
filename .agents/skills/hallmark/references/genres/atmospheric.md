@@ -1,3 +1,28 @@
+---
+title: Genre — atmospheric
+domain: skill
+summary: For the AI-creative product page. Dark canvas with warm radial blooms, confident sans display, expressive but plain-English
+  copy, single warm accent. The aesthetic of a tool you'd actually want to use after dark — generative music, video, image,
+  voic
+critical_directives:
+- 'Accent** — single warm hue (orange / amber / red / pink). Used in radial-gradient blooms on the canvas, on focus rings, '
+- Italic in headers** — banned globally (a top AI tell). Atmospheric display is roman; Lumen ships Instrument Serif as a *
+- '"Built to think in real time."* — Lumen voice; the verb is the landmark via accent colour + underline, never italics.'
+section_outline:
+- Genre — atmospheric
+- When to pick it
+- Themes that belong
+- Voice
+- What this genre allows
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/genres/atmospheric.md
+- When reading context for Genre — atmospheric
+tags:
+- skill
+- atmospheric
+updated: '2026-08-08'
+---
+
 # Genre — atmospheric
 
 For the AI-creative product page. Dark canvas with warm radial blooms, confident sans display, expressive but plain-English copy, single warm accent. The aesthetic of a tool you'd actually want to use after dark — generative music, video, image, voice.

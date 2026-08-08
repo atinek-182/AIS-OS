@@ -1,3 +1,22 @@
+---
+title: 02 Long Document
+domain: skill
+summary: Reads like a memo, a letter, or a journal entry. No marketing structure. Continuous prose with inline section heads.
+  The page is *literature* about the product. - **Heading:** inline with body — section heads emerge from the paragraph flow
+  as small c
+critical_directives:
+- Image:** inline, sized to text measure; never full-bleed.
+section_outline:
+- 02 · Long Document
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/02-long-document.md
+- When reading context for 02 Long Document
+tags:
+- skill
+- 02-long-document
+updated: '2026-08-08'
+---
+
 ## 02 · Long Document
 
 Reads like a memo, a letter, or a journal entry. No marketing structure. Continuous prose with inline section heads. The page is *literature* about the product.

@@ -1,3 +1,24 @@
+---
+title: N1B Saas Three Section
+domain: skill
+summary: 'Wordmark hard-left · a centred cluster of 4–6 links (some opening hover dropdowns) · a sign-in text link + filled
+  CTA hard-right. The dominant marketing-nav of 2024–26 (Stripe, Linear, Vercel, Figma, Notion, PostHog). The structural opposite
+  of N1''s '
+critical_directives:
+- Knobs** — *Centre links:* 3 · 4 · 5–6 · *Dropdowns:* none · 1 · 2 · *Scroll state:* frost-on-scroll (default) · always-s
+- Scroll behaviour (default):* transparent at rest over the hero, frosts (blur backdrop + hairline border + soft shadow) p
+- Anti-pattern:* don't let the centre cluster collide with brand/CTA — if it can't sit centred with breathing room, drop t
+section_outline:
+- N1b · Canonical SaaS three-section
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n1b-saas-three-section.md
+- When reading context for N1B Saas Three Section
+tags:
+- skill
+- n1b-saas-three-section
+updated: '2026-08-08'
+---
+
 ### N1b · Canonical SaaS three-section
 Wordmark hard-left · a centred cluster of 4–6 links (some opening hover dropdowns) · a sign-in text link + filled CTA hard-right. The dominant marketing-nav of 2024–26 (Stripe, Linear, Vercel, Figma, Notion, PostHog). The structural opposite of N1's *minimal* two-link variant — this one is dense and balanced.
 *Use when:* a SaaS / product / dev-tool page with several real destinations and a clear primary action. The default reach for modern-minimal and (Hum-styled) playful product pages.

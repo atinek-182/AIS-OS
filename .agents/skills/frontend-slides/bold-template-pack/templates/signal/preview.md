@@ -1,3 +1,28 @@
+---
+title: Signal Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/signal/design.md`'
+critical_directives:
+- 'Signature move: Source Serif 4 carries every headline with a roman/italic mix mid-sentence; italics in headlines are alw'
+- 'Signature move: Dual surfaces — {colors.navy} (dark) and {colors.cream} (light) — used interchangeably, never blended in'
+- 'Signature move: Antique gold ({colors.gold}) is the only accent. It marks rules, italic emphasis, and numerical figures,'
+- The rendered preview must look like a real first slide, not a template-selection card.
+section_outline:
+- Signal Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/signal/preview.md
+- When reading context for Signal Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Signal Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

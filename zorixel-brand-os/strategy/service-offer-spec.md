@@ -1,3 +1,24 @@
+---
+title: 'ZORIXEL Flagship Service Specification: DFY AI Engineering Build Sprint'
+domain: brand
+summary: '- **Offer Name**: Done-For-You (DFY) AI Engineering Build Sprint - **Target Price**: $1,500 – $5,000+ USD (International)
+  / Tailored INR Pricing (Domestic India)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'ZORIXEL Flagship Service Specification: DFY AI Engineering Build Sprint'
+- 1. Executive Summary
+- 2. Package Scope & Deliverables
+- 3. Payment & Dual-Market Terms
+read_triggers:
+- When working on brand in zorixel-brand-os/strategy/service-offer-spec.md
+- 'When reading context for ZORIXEL Flagship Service Specification: DFY AI Engineering Build Sprint'
+tags:
+- brand
+- service-offer-spec
+updated: '2026-08-08'
+---
+
 # ZORIXEL Flagship Service Specification: DFY AI Engineering Build Sprint
 
 ## 1. Executive Summary

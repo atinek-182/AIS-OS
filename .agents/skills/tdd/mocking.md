@@ -1,3 +1,21 @@
+---
+title: When to Mock
+domain: skill
+summary: 'Mock at **system boundaries** only: - External APIs (payment, email, etc.)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- When to Mock
+- Designing for Mockability
+read_triggers:
+- When working on skill in .agents/skills/tdd/mocking.md
+- When reading context for When to Mock
+tags:
+- skill
+- mocking
+updated: '2026-08-08'
+---
+
 # When to Mock
 
 Mock at **system boundaries** only:

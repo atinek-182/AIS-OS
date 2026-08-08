@@ -1,3 +1,25 @@
+---
+title: 'Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)'
+domain: skill
+summary: 'Select ONE macrostructure archetype that fits the brief''s subject matter. Do not default to standard hero -> 3-column
+  feature -> CTA: 1. **Asymmetric Editorial**: Off-center hero, wide display typography, generous whitespace, staggered content
+  blocks'
+critical_directives:
+- 'Safety Rule (Rule 1.14)**: Headlines larger than `64px` in `Havock` REQUIRE explicit `line-height: 1.28` and minimum `ma'
+section_outline:
+- 'Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)'
+- 21 Hallmark Macrostructure Archetypes
+- Design Token Extraction & OKLCH Theme Architecture
+- Brand Typography Safety Rules
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/01-macrostructures-and-brand.md
+- 'When reading context for Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)'
+tags:
+- skill
+- 01-macrostructures-and-brand
+updated: '2026-08-08'
+---
+
 # Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)
 
 ## 21 Hallmark Macrostructure Archetypes

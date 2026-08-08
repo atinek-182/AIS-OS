@@ -1,12 +1,29 @@
 ---
+title: Set context (personal or brand) and invoke GWS Gmail drafts create
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/draft-message [''recipient
+  and context'']` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Steps
+- Set context (personal or brand) and invoke GWS Gmail drafts create
+- Inter-Skill Connections & Handoff Pipeline
+read_triggers:
+- When working on skill in .agents/skills/draft-message/SKILL.md
+- When reading context for Set context (personal or brand) and invoke GWS Gmail drafts create
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: draft-message
-description: Use when the user wants to draft an Instagram DM, reply to an email,
-  or write comments/replies using the ZORIXEL brand voice. Invokable directly via
-  /draft-message.
+description: Use when the user wants to draft an Instagram DM, reply to an email, or write comments/replies using the ZORIXEL
+  brand voice. Invokable directly via /draft-message.
 argument-hint:
 - recipient and context
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

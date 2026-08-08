@@ -1,6 +1,28 @@
 ---
+title: Skill
+domain: skill
+summary: 'A loose idea has arrived — too big for one agent session, and wrapped in fog: the way from here to the **destination**
+  isn''t visible yet. Wayfinding is about finding that way, not charging at the destination. This skill charts the way as
+  a **shared m'
+critical_directives:
+- 'Grilling** (HITL): Conversation. The default case. Always invoke the /grilling and /domain-modeling skills.'
+- 'Task** (HITL or AFK): Manual work that must happen before a _decision_ can be made — nothing to decide, prototype, or re'
+section_outline:
+- Plan, don't do
+- Refer by name
+- The Map
+- The map body
+- Destination
+read_triggers:
+- When working on skill in .agents/skills/wayfinder/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: wayfinder
-description: Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.
+description: Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on your
+  issue tracker, and resolve them one at a time until the way to the destination is clear.
 disable-model-invocation: true
 ---
 

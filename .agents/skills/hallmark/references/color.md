@@ -1,3 +1,29 @@
+---
+title: Colour
+domain: skill
+summary: Most AI-generated UI fails on colour. It picks blue. It uses pure black. It draws a gradient from purple to cyan.
+  It leaves accents on 30% of the page. Fix all of this. - **OKLCH only.** Perceptually uniform; predictable lightness; consistent
+  hue acr
+critical_directives:
+- No pure extremes.** No `#000`, no `#fff`. Always tint with a trace of chroma toward the palette's anchor hue.
+- 'color-rule:     oklch(82%  0.010 80);'
+- 'color-rule:     oklch(30%  0.008 40);'
+- Never switch the hue between modes. Keep the anchor. Only lightness and chroma move.
+section_outline:
+- Colour
+- Principles
+- Palette construction
+- Contrast
+- Dark mode recipe
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/color.md
+- When reading context for Colour
+tags:
+- skill
+- color
+updated: '2026-08-08'
+---
+
 # Colour
 
 Most AI-generated UI fails on colour. It picks blue. It uses pure black. It draws a gradient from purple to cyan. It leaves accents on 30% of the page. Fix all of this.

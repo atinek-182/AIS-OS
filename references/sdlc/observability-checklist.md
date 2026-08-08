@@ -1,3 +1,26 @@
+---
+title: Observability Checklist
+domain: task
+summary: Quick reference for instrumenting production code. Use alongside the `observability-and-instrumentation` skill. -
+  [On-Call Questions (Start Here)](#on-call-questions-start-here)
+critical_directives:
+- '[ ] No secrets, tokens, passwords, or unredacted PII in any log line (hard rule from `security-and-h'
+- '[ ] Latency is a histogram; p50/p95/p99 queryable — never an average'
+section_outline:
+- Observability Checklist
+- Table of Contents
+- On-Call Questions (Start Here)
+- Structured Logging
+- Metrics
+read_triggers:
+- When working on task in references/sdlc/observability-checklist.md
+- When reading context for Observability Checklist
+tags:
+- task
+- observability-checklist
+updated: '2026-08-08'
+---
+
 # Observability Checklist
 
 Quick reference for instrumenting production code. Use alongside the `observability-and-instrumentation` skill.

@@ -1,6 +1,30 @@
 ---
+title: Performance Optimization
+domain: skill
+summary: Measure before optimizing. Performance work without measurement is guessing — and guessing leads to premature optimization
+  that adds complexity without improving what matters. Profile first, identify the actual bottleneck, fix it, measure again.
+  Opti
+critical_directives:
+- Change one thing at a time.** Three optimizations landed together produce one number, and you cannot attribute it. If th
+- '"Neutral" is a revert, not a keep.** This is the step teams skip: the change is already written, throwing it away feels '
+- Correctness gates the metric.** The suite stays green *and* the number moves. An "optimization" that wins by dropping wo
+section_outline:
+- Performance Optimization
+- Overview
+- When to Use
+- Core Web Vitals Targets
+- The Optimization Workflow
+read_triggers:
+- When working on skill in .agents/skills/performance-optimization/SKILL.md
+- When reading context for Performance Optimization
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: performance-optimization
-description: Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.
+description: Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements
+  exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns
+  need fixing, or when profiling reveals bottlenecks.
 ---
 
 # Performance Optimization

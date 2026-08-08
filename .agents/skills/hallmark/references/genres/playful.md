@@ -1,3 +1,28 @@
+---
+title: Genre — playful
+domain: skill
+summary: 'For the consumer / friendly / onboarding-led page. Soft surfaces, mild colour, motion that responds to hover, friendlier
+  voice. Closer to Notion''s marketing or Figma''s onboarding than to Stripe''s API docs. Brief mentions any of: *fun, consumer,
+  casua'
+critical_directives:
+- Accent** — soft indigo, warm coral, or muted rose at low chroma. Always low — never the saturated consumer-app pop.
+- Soft accent colours** — `oklch(50% 0.13 282)` (indigo) and similar, never above 0.16 chroma.
+- Emoji-as-decoration** — emoji can appear in copy ("we built X 🌱") but never as visual ornament replacing iconography.
+section_outline:
+- Genre — playful
+- When to pick it
+- Themes that belong
+- Voice
+- What this genre allows
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/genres/playful.md
+- When reading context for Genre — playful
+tags:
+- skill
+- playful
+updated: '2026-08-08'
+---
+
 # Genre — playful
 
 For the consumer / friendly / onboarding-led page. Soft surfaces, mild colour, motion that responds to hover, friendlier voice. Closer to Notion's marketing or Figma's onboarding than to Stripe's API docs.

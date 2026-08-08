@@ -1,3 +1,23 @@
+---
+title: 13 Node Shape
+domain: architecture
+summary: Replace the placeholder node renderer with proper shape rendering and a drag preview. 1. Replace the placeholder
+  node shape rendering.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/13-node-shape.md
+- When reading context for 13 Node Shape
+tags:
+- architecture
+- 13-node-shape
+updated: '2026-08-08'
+---
+
 Replace the placeholder node renderer with proper shape rendering and a drag preview.
 
 ## Implementation

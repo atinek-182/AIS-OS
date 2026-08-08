@@ -1,3 +1,28 @@
+---
+title: Custom craft — how to hand-build hero artwork
+domain: skill
+summary: This file is loaded only when an enrichment archetype requires construction (Tier A or B in [`hero-enrichment.md`](hero-enrichment.md)).
+  It tells you *which technique* to reach for at *which complexity tier* — and what each looks like done well. **Th
+critical_directives:
+- 'No reduced-motion fallback.** Every animation must have a `@media (prefers-reduced-motion: reduce)` block.'
+- Shipping the raw Figma export.** Always run SVGOMG. Untouched exports carry hundreds of bytes of metadata, unused `<defs
+- The decision rule:**
+- Scroll-fade-everything.** Every section fading in on scroll. The page never settles. Pick one orchestrated entrance on f
+section_outline:
+- Custom craft — how to hand-build hero artwork
+- Tier A · Pure CSS art
+- The CSS-art toolkit (2026)
+- A worked example — the bakery loaf as a single div
+- Anti-patterns of CSS art
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/custom-craft.md
+- When reading context for Custom craft — how to hand-build hero artwork
+tags:
+- skill
+- custom-craft
+updated: '2026-08-08'
+---
+
 # Custom craft — how to hand-build hero artwork
 
 This file is loaded only when an enrichment archetype requires construction (Tier A or B in [`hero-enrichment.md`](hero-enrichment.md)). It tells you *which technique* to reach for at *which complexity tier* — and what each looks like done well.

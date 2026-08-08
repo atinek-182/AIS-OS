@@ -1,275 +1,316 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- Catalogue product cards with colored topstrip + name + description + dashed-rule + mono spec rows.
+- 'Ink** (`{colors.ink}` — #3A2516): Deep warm-brown ink. The structural color — all body text, all borders, all dividers, '
+- 'Yellow** (`{colors.yellow}` — #F0BC2A): A mustard-warm yellow. Used as a petal color, ribbon-band color. Reserved as a
+  c'
+- 'Big Shoulders Display** (display): Condensed industrial sans-serif at weight 700 and 900. Used for every display moment '
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/sakura-chroma/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Sakura Chroma
-description: "A cassette-package editorial system on warm cream paper with a six-color primary palette and warm-brown ink. Display type runs in Big Shoulders Display (condensed industrial display sans at weight 900); body in Albert Sans; tabular and tag content in JetBrains Mono; occasional Japanese accents in Noto Sans JP. The aesthetic borrows from 1970s consumer cassette packaging, Japanese print catalogues, and lo-fi product zines: petal-cluster blob clusters, diagonal multi-color ribbon bands, 12-point starburst seals, red rectangular stamps, and tracked uppercase micro-labels. The effect is hand-curated industrial editorial — warm but disciplined, playful but tightly typeset, with the cassette as its visual metaphor."
-
+description: 'A cassette-package editorial system on warm cream paper with a six-color primary palette and warm-brown ink.
+  Display type runs in Big Shoulders Display (condensed industrial display sans at weight 900); body in Albert Sans; tabular
+  and tag content in JetBrains Mono; occasional Japanese accents in Noto Sans JP. The aesthetic borrows from 1970s consumer
+  cassette packaging, Japanese print catalogues, and lo-fi product zines: petal-cluster blob clusters, diagonal multi-color
+  ribbon bands, 12-point starburst seals, red rectangular stamps, and tracked uppercase micro-labels. The effect is hand-curated
+  industrial editorial — warm but disciplined, playful but tightly typeset, with the cassette as its visual metaphor.'
 colors:
-  paper: "#F1E6CB"
-  paper-dk: "#E5D6B0"
-  ink: "#3A2516"
-  red: "#E5392A"
-  pink: "#E54489"
-  orange: "#F09131"
-  green: "#3D9F47"
-  blue: "#3F8BC4"
-  yellow: "#F0BC2A"
-
+  paper: '#F1E6CB'
+  paper-dk: '#E5D6B0'
+  ink: '#3A2516'
+  red: '#E5392A'
+  pink: '#E54489'
+  orange: '#F09131'
+  green: '#3D9F47'
+  blue: '#3F8BC4'
+  yellow: '#F0BC2A'
 color-aliases:
   line: ink
-
 typography:
   disp-hero:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(120px, min(14vw, 22vh), 280px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(120px, min(14vw, 22vh), 280px)
     fontWeight: 900
     lineHeight: 0.84
     letterSpacing: -0.025em
   disp-statement:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(70px, min(8.4vw, 14vh), 168px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(70px, min(8.4vw, 14vh), 168px)
     fontWeight: 900
     lineHeight: 0.86
     letterSpacing: -0.022em
   disp-title:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(80px, min(9vw, 14vh), 180px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(80px, min(9vw, 14vh), 180px)
     fontWeight: 900
     lineHeight: 0.86
     letterSpacing: -0.022em
   disp-lockup:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(56px, min(7vw, 11vh), 130px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(56px, min(7vw, 11vh), 130px)
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.015em
   disp-section:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(52px, min(5.6vw, 9vh), 100px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(52px, min(5.6vw, 9vh), 100px)
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.018em
   disp-quote:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(48px, min(5.4vw, 9vh), 110px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(48px, min(5.4vw, 9vh), 110px)
     fontWeight: 900
     lineHeight: 0.92
     letterSpacing: -0.018em
   disp-quote-lg:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(56px, min(6.4vw, 10.5vh), 130px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(56px, min(6.4vw, 10.5vh), 130px)
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.018em
   disp-brand:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(32px, min(3.4vw, 5.4vh), 56px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(32px, min(3.4vw, 5.4vh), 56px)
     fontWeight: 900
     lineHeight: 0.92
     letterSpacing: -0.02em
   disp-card-name:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(28px, min(2.6vw, 4.6vh), 48px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(28px, min(2.6vw, 4.6vh), 48px)
     fontWeight: 900
     lineHeight: 0.94
     letterSpacing: -0.012em
   num-hero:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(110px, min(11vw, 18vh), 240px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(110px, min(11vw, 18vh), 240px)
     fontWeight: 900
     lineHeight: 0.86
     letterSpacing: -0.025em
   num-md:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(70px, min(7vw, 11vh), 150px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(70px, min(7vw, 11vh), 150px)
     fontWeight: 900
     lineHeight: 0.86
     letterSpacing: -0.02em
   ttl-row:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(22px, 1.7vw, 30px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(22px, 1.7vw, 30px)
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: -0.005em
   body:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(14px, 1vw, 17px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(14px, 1vw, 17px)
     fontWeight: 400
     lineHeight: 1.5
   body-md:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(14px, 0.95vw, 15px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(14px, 0.95vw, 15px)
     fontWeight: 400
     lineHeight: 1.4
   body-emphasis:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(15px, 1.1vw, 20px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(15px, 1.1vw, 20px)
     fontWeight: 600
     lineHeight: 1.4
   micro:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(12px, 0.9vw, 14px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(12px, 0.9vw, 14px)
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: 0.16em
     textTransform: uppercase
   micro-lg:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(12px, 0.9vw, 14px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(12px, 0.9vw, 14px)
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: 0.2em
     textTransform: uppercase
   micro-xl:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(12px, 0.92vw, 14px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(12px, 0.92vw, 14px)
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: 0.32em
     textTransform: uppercase
   micro-spec:
-    fontFamily: "'Albert Sans', sans-serif"
-    fontSize: "clamp(14px, 1.1vw, 20px)"
+    fontFamily: '''Albert Sans'', sans-serif'
+    fontSize: clamp(14px, 1.1vw, 20px)
     fontWeight: 700
     lineHeight: 1.2
     letterSpacing: 0.04em
   mono:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "clamp(11px, 0.78vw, 12px)"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: clamp(11px, 0.78vw, 12px)
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: 0.02em
   mono-md:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "clamp(14px, 0.95vw, 16px)"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: clamp(14px, 0.95vw, 16px)
     fontWeight: 400
     lineHeight: 1.3
     letterSpacing: 0.02em
   mono-tag:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "clamp(12px, 0.85vw, 14px)"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: clamp(12px, 0.85vw, 14px)
     fontWeight: 400
     lineHeight: 1.0
     letterSpacing: 0.04em
   jp:
-    fontFamily: "'Noto Sans JP', sans-serif"
-    fontSize: "inherit"
+    fontFamily: '''Noto Sans JP'', sans-serif'
+    fontSize: inherit
     fontWeight: 500
     lineHeight: inherit
   stamp-text:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(20px, 1.6vw, 28px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(20px, 1.6vw, 28px)
     fontWeight: 900
     lineHeight: 1.0
     letterSpacing: 0.02em
   seal-text:
-    fontFamily: "'Big Shoulders Display', sans-serif"
-    fontSize: "clamp(22px, 2vw, 38px)"
+    fontFamily: '''Big Shoulders Display'', sans-serif'
+    fontSize: clamp(22px, 2vw, 38px)
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.01em
-
 spacing:
-  frame-inset: "clamp(36px, 3.6vw, 72px)"
-  frame-inset-bottom: "clamp(72px, 7vh, 110px)"
-  topbar-gap: "clamp(12px, 1.4vh, 22px)"
-  card-pad-x: "clamp(14px, 1.4vw, 20px)"
-  card-pad-y: "clamp(16px, 1.7vw, 24px)"
-  grid-gap: "clamp(16px, 1.6vw, 26px)"
-  col-gap: "clamp(28px, 3vw, 56px)"
-  pagenum-inset: "clamp(20px, 2.2vh, 36px) clamp(24px, 2.2vw, 44px)"
-
+  frame-inset: clamp(36px, 3.6vw, 72px)
+  frame-inset-bottom: clamp(72px, 7vh, 110px)
+  topbar-gap: clamp(12px, 1.4vh, 22px)
+  card-pad-x: clamp(14px, 1.4vw, 20px)
+  card-pad-y: clamp(16px, 1.7vw, 24px)
+  grid-gap: clamp(16px, 1.6vw, 26px)
+  col-gap: clamp(28px, 3vw, 56px)
+  pagenum-inset: clamp(20px, 2.2vh, 36px) clamp(24px, 2.2vw, 44px)
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   paper-texture:
-    backgroundImage: "radial-gradient(circle at 1px 1px, rgba(58,37,22,0.55) 1px, transparent 1.6px)"
-    backgroundSize: "4px 4px"
+    backgroundImage: radial-gradient(circle at 1px 1px, rgba(58,37,22,0.55) 1px, transparent 1.6px)
+    backgroundSize: 4px 4px
     opacity: 0.16
     zIndex: 1
-    description: "Subtle 4px-period halftone-dot paper texture sitting over every slide stage at 16% opacity. Drawn as a 1px-period radial-gradient. Required — it is the paper-grain that anchors every flat color block in the print register."
+    description: Subtle 4px-period halftone-dot paper texture sitting over every slide stage at 16% opacity. Drawn as a 1px-period
+      radial-gradient. Required — it is the paper-grain that anchors every flat color block in the print register.
   petals-cluster:
-    description: "A decorative cluster of 4–5 overlapping perfect circles (each `aspect-ratio: 1/1, border-radius: 50%`) in the primary palette colors. Circles overlap and tile within a bounded container. Used as a brand mark, decorative anchor in slide corners, or quote-page ornament."
+    description: 'A decorative cluster of 4–5 overlapping perfect circles (each `aspect-ratio: 1/1, border-radius: 50%`) in
+      the primary palette colors. Circles overlap and tile within a bounded container. Used as a brand mark, decorative anchor
+      in slide corners, or quote-page ornament.'
   ribbon-band:
-    height: "clamp(40px, 6vh, 96px)"
-    width: "160% (oversize so rotation clears the frame)"
-    transform: "rotate(-22deg) or rotate(22deg)"
-    description: "A bundle of 5 stacked solid-color horizontal bars (pink, orange, yellow, green, blue) rotated -22° or +22° to sweep diagonally across a region. Echoes the cassette-label color-stripe motif. Anchored to one edge of the slide and bleeds off the opposite edge."
+    height: clamp(40px, 6vh, 96px)
+    width: 160% (oversize so rotation clears the frame)
+    transform: rotate(-22deg) or rotate(22deg)
+    description: A bundle of 5 stacked solid-color horizontal bars (pink, orange, yellow, green, blue) rotated -22° or +22°
+      to sweep diagonally across a region. Echoes the cassette-label color-stripe motif. Anchored to one edge of the slide
+      and bleeds off the opposite edge.
   ribbon-single:
-    height: "16–18%"
-    width: "160%"
-    transform: "rotate(±22deg)"
-    description: "A single solid-color ribbon in a multi-color stack; each ribbon is positioned with its own top/bottom percentage so the stack reads as parallel rays."
+    height: 16–18%
+    width: 160%
+    transform: rotate(±22deg)
+    description: A single solid-color ribbon in a multi-color stack; each ribbon is positioned with its own top/bottom percentage
+      so the stack reads as parallel rays.
   rosette-seal:
-    width: "clamp(60px, 6vw, 110px)"
-    aspectRatio: "1 / 1"
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    clipPath: "32-point starburst polygon"
-    description: "12+ point starburst clip-path shape filled ink with cream text. Used as an authority seal or volume marker. Always carries a 1–4 character glyph (a number, two-letter abbreviation, or short word) in Big Shoulders 900."
+    width: clamp(60px, 6vw, 110px)
+    aspectRatio: 1 / 1
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    clipPath: 32-point starburst polygon
+    description: 12+ point starburst clip-path shape filled ink with cream text. Used as an authority seal or volume marker.
+      Always carries a 1–4 character glyph (a number, two-letter abbreviation, or short word) in Big Shoulders 900.
   red-stamp:
-    background: "{colors.red}"
-    color: "{colors.paper}"
-    padding: "clamp(8px, 1vh, 14px) clamp(12px, 1.4vw, 22px)"
-    transform: "rotate(-3deg) or rotate(0)"
-    fontFamily: "'Big Shoulders Display', sans-serif"
+    background: '{colors.red}'
+    color: '{colors.paper}'
+    padding: clamp(8px, 1vh, 14px) clamp(12px, 1.4vw, 22px)
+    transform: rotate(-3deg) or rotate(0)
+    fontFamily: '''Big Shoulders Display'', sans-serif'
     fontWeight: 900
-    description: "Red rectangular stamp with cream text, optionally rotated -3°. Used for status badges (COMPLETE, AS SEEN ON, LIMITED) and product callouts."
+    description: Red rectangular stamp with cream text, optionally rotated -3°. Used for status badges (COMPLETE, AS SEEN
+      ON, LIMITED) and product callouts.
   card-product:
-    border: "1.5px solid {colors.ink}"
-    background: "{colors.paper}"
+    border: 1.5px solid {colors.ink}
+    background: '{colors.paper}'
     overflow: hidden
-    description: "Vertical product card with a 1.5px ink border, a colored topstrip header band, and a stacked body of name + description + extras + monospaced spec rows. The catalogue grid's primary unit."
+    description: Vertical product card with a 1.5px ink border, a colored topstrip header band, and a stacked body of name
+      + description + extras + monospaced spec rows. The catalogue grid's primary unit.
   card-topstrip:
-    height: "clamp(18px, 2vh, 32px)"
-    description: "Colored horizontal band running the full width of a product card's top — fills in red, pink, orange, or blue depending on the card variant. Reads as a Pantone color tab."
+    height: clamp(18px, 2vh, 32px)
+    description: Colored horizontal band running the full width of a product card's top — fills in red, pink, orange, or blue
+      depending on the card variant. Reads as a Pantone color tab.
   spec-checklist:
-    description: "Vertical column of inline rows with a 14–20px square ink-bordered box (filled or empty) followed by a small caps label (COLOR, LO-FI, STEREO, LP). Echoes the cassette package's feature-spec checklist."
+    description: Vertical column of inline rows with a 14–20px square ink-bordered box (filled or empty) followed by a small
+      caps label (COLOR, LO-FI, STEREO, LP). Echoes the cassette package's feature-spec checklist.
   bar-eq:
-    bgUntint: "rgba(58, 37, 22, 0.10)"
-    borderUntint: "rgba(58, 37, 22, 0.22)"
-    description: "Equalizer-style bar chart. Each column is a stack of 6 equal-height tiles (segments). 'On' segments fill with one of the primary colors (red, pink, orange, yellow, green, blue) per column; 'off' segments fill with a translucent ink tint. column-reverse stacking means on-segments stack from the bottom up, like a VU meter."
+    bgUntint: rgba(58, 37, 22, 0.10)
+    borderUntint: rgba(58, 37, 22, 0.22)
+    description: Equalizer-style bar chart. Each column is a stack of 6 equal-height tiles (segments). 'On' segments fill
+      with one of the primary colors (red, pink, orange, yellow, green, blue) per column; 'off' segments fill with a translucent
+      ink tint. column-reverse stacking means on-segments stack from the bottom up, like a VU meter.
   ledger-row:
-    gridColumns: "96px 1.4fr 0.9fr 0.6fr 64px"
-    paddingY: "clamp(10px, 1.2vh, 18px)"
-    borderBottom: "1px solid rgba(58,37,22,0.22)"
-    description: "5-column tabular row pattern: date | title | edition | chip | nr indicator. Header row uses a 1.5px ink border-bottom; body rows use 1px hairline ink-alpha dividers."
+    gridColumns: 96px 1.4fr 0.9fr 0.6fr 64px
+    paddingY: clamp(10px, 1.2vh, 18px)
+    borderBottom: 1px solid rgba(58,37,22,0.22)
+    description: '5-column tabular row pattern: date | title | edition | chip | nr indicator. Header row uses a 1.5px ink
+      border-bottom; body rows use 1px hairline ink-alpha dividers.'
   chip:
-    padding: "4px 10px"
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "11–12px"
-    color: "{colors.paper}"
+    padding: 4px 10px
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: 11–12px
+    color: '{colors.paper}'
     textTransform: uppercase
     letterSpacing: 0.06em
-    description: "Mono-font color chip tagging a ledger row's category. Background pulls from red, pink, orange, blue, or green."
+    description: Mono-font color chip tagging a ledger row's category. Background pulls from red, pink, orange, blue, or green.
   topbar-rule:
-    borderBottom: "1.5px solid {colors.ink}"
-    paddingBottom: "clamp(12px, 1.4vh, 22px)"
-    description: "Section header underline pattern. A title (Big Shoulders 900 with optional red em-emphasis) on the left aligned-end with a tracked-caps label on the right, separated from the body by a 1.5px ink rule."
+    borderBottom: 1.5px solid {colors.ink}
+    paddingBottom: clamp(12px, 1.4vh, 22px)
+    description: Section header underline pattern. A title (Big Shoulders 900 with optional red em-emphasis) on the left aligned-end
+      with a tracked-caps label on the right, separated from the body by a 1.5px ink rule.
   qbody-box:
-    background: "{colors.paper}"
-    border: "1.5px solid {colors.ink}"
-    boxShadow: "8px 8px 0 {colors.ink}"
-    padding: "clamp(20px, 2.4vh, 40px) clamp(28px, 2.6vw, 48px)"
-    description: "Quote body container with a 1.5px ink border and a hard 8px ink offset shadow. Sits on top of diagonal ribbons as a paper-on-ribbons callout."
+    background: '{colors.paper}'
+    border: 1.5px solid {colors.ink}
+    boxShadow: 8px 8px 0 {colors.ink}
+    padding: clamp(20px, 2.4vh, 40px) clamp(28px, 2.6vw, 48px)
+    description: Quote body container with a 1.5px ink border and a hard 8px ink offset shadow. Sits on top of diagonal ribbons
+      as a paper-on-ribbons callout.
   petal:
-    aspectRatio: "1 / 1"
-    borderRadius: "50%"
-    description: "A single perfect circle in one of the primary colors. The atomic unit of petal-clusters and scattered blobs. Always perfectly round — never an ellipse."
+    aspectRatio: 1 / 1
+    borderRadius: 50%
+    description: A single perfect circle in one of the primary colors. The atomic unit of petal-clusters and scattered blobs.
+      Always perfectly round — never an ellipse.
   pagenum:
-    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
-    fontSize: "clamp(11px, 0.82vw, 13px)"
-    color: "{colors.ink}"
+    fontFamily: '''JetBrains Mono'', ui-monospace, monospace'
+    fontSize: clamp(11px, 0.82vw, 13px)
+    color: '{colors.ink}'
     letterSpacing: 0.06em
-    description: "Bottom-right page indicator — mono font, formatted NN / TT. Required on every content slide."
+    description: Bottom-right page indicator — mono font, formatted NN / TT. Required on every content slide.
   nb-checkbox:
-    width: "clamp(14px, 1.1vw, 20px)"
-    aspectRatio: "1 / 1"
-    border: "2px solid {colors.ink}"
-    checkedFill: "{colors.ink}"
-    checkedMarker: "× (cream-colored multiplication sign in Big Shoulders 900)"
-    description: "Ink-bordered square checkbox used in spec-checklists and the cover footer. Checked state fills ink and centers a cream multiplication-sign glyph (not a checkmark)."
+    width: clamp(14px, 1.1vw, 20px)
+    aspectRatio: 1 / 1
+    border: 2px solid {colors.ink}
+    checkedFill: '{colors.ink}'
+    checkedMarker: × (cream-colored multiplication sign in Big Shoulders 900)
+    description: Ink-bordered square checkbox used in spec-checklists and the cover footer. Checked state fills ink and centers
+      a cream multiplication-sign glyph (not a checkmark).
 ---
 
 ## Frontend Slides Fixed-Stage Policy

@@ -1,6 +1,26 @@
 ---
+title: YouTube Full Skill (`/youtube-full`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/youtube-full [transcript|search|playlist]
+  [parameters]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- YouTube Full Skill (`/youtube-full`)
+- Invocation & Tri-Mode Routing
+- Architecture & Dual-Backend Fallback Routing
+- Capabilities & Usage Guide
+- 1. Extract Video Transcript & Subtitles
+read_triggers:
+- When working on skill in .agents/skills/youtube-full/SKILL.md
+- When reading context for YouTube Full Skill (`/youtube-full`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: youtube-full
-description: YouTube transcript extraction, video search, channel video browsing, and playlist extraction using local yt-dlp (Primary, 100% free) and TranscriptAPI.com (Fallback). Invokable directly via /youtube-full.
+description: YouTube transcript extraction, video search, channel video browsing, and playlist extraction using local yt-dlp
+  (Primary, 100% free) and TranscriptAPI.com (Fallback). Invokable directly via /youtube-full.
 argument-hint: '[transcript|search|playlist] [--url <URL>] [--query <text>]'
 ---
 

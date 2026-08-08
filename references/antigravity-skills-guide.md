@@ -1,3 +1,26 @@
+---
+title: Antigravity Skills & Plugins Guide
+domain: skill
+summary: This reference guide summarizes the core skills and plugins referenced in Nate Herk's AIOS guides, mapped to their
+  GitHub repositories, documentation, and installation instructions for the **Antigravity** platform. *   **Purpose:** Forces
+  a structure
+critical_directives:
+- '**Purpose:** Injects styling guidelines and assets so that generated user interfaces use premium vis'
+section_outline:
+- Antigravity Skills & Plugins Guide
+- 🚀 1. Superpowers (`superpowers`)
+- 🛠️ 2. Skill Creator (`skill-creator`)
+- 🧠 3. Antigravity Memory (`antigravity-mem`)
+- 📦 4. Context Mode (`context-mode`)
+read_triggers:
+- When working on skill in references/antigravity-skills-guide.md
+- When reading context for Antigravity Skills & Plugins Guide
+tags:
+- skill
+- antigravity-skills-guide
+updated: '2026-08-08'
+---
+
 # Antigravity Skills & Plugins Guide
 
 This reference guide summarizes the core skills and plugins referenced in Nate Herk's AIOS guides, mapped to their GitHub repositories, documentation, and installation instructions for the **Antigravity** platform.

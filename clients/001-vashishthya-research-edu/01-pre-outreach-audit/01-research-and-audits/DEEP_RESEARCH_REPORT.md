@@ -1,3 +1,29 @@
+---
+title: 'SECTION 1: Forensic Technical & Web Architecture Audit'
+domain: audit
+summary: '- **Outdated/Unoptimized Assets:** The sites appear to be hand-coded static HTML/PHP with no modern framework or
+  asset pipeline. For example, both journal sites include a DOI logo as a large PNG file with an embedded timestamp in its
+  filename (e.g. `'
+critical_directives:
+- Broken Links & UI Glitches:** Both journals’ homepages have broken or misleading links. Notably, the “Join As Board” and
+- Mobile & Accessibility Issues:** The sites do not appear optimized for mobile devices. We did not find a `<meta name="vi
+- Missing Scholarly Meta Tags:** None of the pages includes Google Scholar’s required `<meta>` tags. According to Google S
+- Poor Crawlability & Indexing:** The sites lack a proper article-browse interface for crawlers. Both journals hide articl
+section_outline:
+- 'SECTION 1: Forensic Technical & Web Architecture Audit'
+- 'SECTION 2: SEO, Google Scholar & Indexing Audit'
+- 'SECTION 3: Operations & Manuscript Workflow Bottlenecks'
+- 'SECTION 4: Quantification of Wasted Time & Revenue Leakage'
+- 'SECTION 5: 50-Capability AI Transformation Roadmap'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/01-research-and-audits/DEEP_RESEARCH_REPORT.md
+- 'When reading context for SECTION 1: Forensic Technical & Web Architecture Audit'
+tags:
+- audit
+- DEEP_RESEARCH_REPORT
+updated: '2026-08-08'
+---
+
 # SECTION 1: Forensic Technical & Web Architecture Audit  
 - **Outdated/Unoptimized Assets:** The sites appear to be hand-coded static HTML/PHP with no modern framework or asset pipeline. For example, both journal sites include a DOI logo as a large PNG file with an embedded timestamp in its filename (e.g. `2026-04-14-11-44-33-DOI_logo.svg.png`). This image renders at 768×768px and scales to 1024px, rather than using a compact SVG or properly sized image. Similarly, MJAP’s homepage shows a PNG DOI logo at 768×768 (scaled 768×768). Repeated use of full-size raster logos bloats page load time. Many images lack meaningful `alt` attributes (e.g. generic `<Image>` placeholders in the HTML with no alt text). The Vashisthya site’s UI also uses multiple unminified icons and raw HTML elements (e.g. heavy font/icon loads) without apparent compression.  
 - **Broken Links & UI Glitches:** Both journals’ homepages have broken or misleading links. Notably, the “Join As Board” and “Submit Manuscript” prompts link to an unrelated site (ijariie.com), which is clearly an error (the anchor text suggests an internal function but the URL is external). On Vashisthya, some pages fail to load (the “About Us” link returns a server error). Inside the UI, we observed a testimonial slider that never loads content – it simply shows “Loading…” with blank name/org fields. Spelling and HTML errors appear as well (e.g. “Standardes” instead of “Standards”).  

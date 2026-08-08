@@ -1,3 +1,26 @@
+---
+title: Ghost AI
+domain: architecture
+summary: Ghost AI is a real-time collaborative system design workspace. Users describe a system in plain English, an AI agent
+  maps that system onto a shared canvas, collaborators refine the architecture, and the app generates a technical specification
+  from th
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Ghost AI
+- Overview
+- Goals
+- Core User Flow
+- Features
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/project-overview.md
+- When reading context for Ghost AI
+tags:
+- architecture
+- project-overview
+updated: '2026-08-08'
+---
+
 # Ghost AI
 
 ## Overview

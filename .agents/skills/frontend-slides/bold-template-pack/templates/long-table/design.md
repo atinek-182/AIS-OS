@@ -1,246 +1,280 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: rich-but-curated.** Long Table reads as authoritative when slides carry substantive content — a cove'
+- 'Ink / Warm Rust Terracotta** (`{colors.ink}` — #B53D2A): The single ink color. Every text run, every border, every rule,'
+- 'Rule** (`{colors.rule}` — #B53D2A): An alias for `{colors.ink}` — same hex, used semantically when referring to a rule
+  l'
+- The edition badge (`{components.ed-badge}`) is always paired with an italic edition label** — the circle ordinal and the
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/long-table/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Long Table
-description: A warm, single-ink editorial system in the register of a supper-club poster, a small-batch zine, or a Risograph-printed program. The entire system runs in one ink color — a warm rust terracotta (#B53D2A) — on a buttery cream paper ground (#FAF1E2), with a subtle 4px radial-dot texture overlay giving the surface its "printed paper" quality. Display type runs in Bricolage Grotesque at weight 700–800 in uppercase; body and metadata run in Fraunces serif at weight 400–600 with optical-size axis engaged. Pill buttons, outlined edition badges, italic-edition numerals, and dashed/solid 1.5px borders complete the printed-program vocabulary.
-
+description: A warm, single-ink editorial system in the register of a supper-club poster, a small-batch zine, or a Risograph-printed
+  program. The entire system runs in one ink color — a warm rust terracotta (#B53D2A) — on a buttery cream paper ground (#FAF1E2),
+  with a subtle 4px radial-dot texture overlay giving the surface its "printed paper" quality. Display type runs in Bricolage
+  Grotesque at weight 700–800 in uppercase; body and metadata run in Fraunces serif at weight 400–600 with optical-size axis
+  engaged. Pill buttons, outlined edition badges, italic-edition numerals, and dashed/solid 1.5px borders complete the printed-program
+  vocabulary.
 colors:
-  paper: "#FAF1E2"
-  paper-d: "#F2E5CF"
-  paper-vd: "#E8D7B6"
-  ink: "#B53D2A"
-  ink-dp: "#8E2D1F"
-  rule: "#B53D2A"
-  ink-32: "rgba(181, 61, 42, 0.32)"
-  ink-78: "rgba(181, 61, 42, 0.78)"
-  ink-50: "rgba(181, 61, 42, 0.5)"
-
+  paper: '#FAF1E2'
+  paper-d: '#F2E5CF'
+  paper-vd: '#E8D7B6'
+  ink: '#B53D2A'
+  ink-dp: '#8E2D1F'
+  rule: '#B53D2A'
+  ink-32: rgba(181, 61, 42, 0.32)
+  ink-78: rgba(181, 61, 42, 0.78)
+  ink-50: rgba(181, 61, 42, 0.5)
 color-aliases:
   rule: ink
-  ink-32-canonical: "Same ink #B53D2A at 32% opacity, used for dashed dividers and subtle internal rules"
-  ink-78-canonical: "Same ink #B53D2A at 78% opacity, used for de-emphasized metadata"
-
+  ink-32-canonical: 'Same ink #B53D2A at 32% opacity, used for dashed dividers and subtle internal rules'
+  ink-78-canonical: 'Same ink #B53D2A at 78% opacity, used for de-emphasized metadata'
 typography:
   display-jumbo-numeral:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(180px, min(22vw, 38vh), 480px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(180px, min(22vw, 38vh), 480px)
     fontWeight: 400
     lineHeight: 0.86
     letterSpacing: -0.02em
     fontStyle: italic
   display-cover:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(82px, min(8.8vw, 15vh), 180px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(82px, min(8.8vw, 15vh), 180px)
     fontWeight: 800
     lineHeight: 0.92
     letterSpacing: -0.012em
     textTransform: uppercase
   display:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(72px, min(7.6vw, 13vh), 160px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(72px, min(7.6vw, 13vh), 160px)
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: -0.012em
     textTransform: uppercase
   headline-xl:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(60px, min(6.4vw, 10.5vh), 140px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(60px, min(6.4vw, 10.5vh), 140px)
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: -0.012em
     textTransform: uppercase
   headline:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(56px, min(6vw, 10vh), 120px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(56px, min(6vw, 10vh), 120px)
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: -0.012em
     textTransform: uppercase
   headline-md:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(48px, min(5vw, 8.4vh), 100px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(48px, min(5vw, 8.4vh), 100px)
     fontWeight: 800
     lineHeight: 0.92
     letterSpacing: -0.012em
     textTransform: uppercase
   quote:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(40px, min(4.4vw, 7.4vh), 96px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(40px, min(4.4vw, 7.4vh), 96px)
     fontWeight: 700
     lineHeight: 0.95
     letterSpacing: -0.012em
     textTransform: uppercase
   card-title:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(28px, 2.4vw, 44px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(28px, 2.4vw, 44px)
     fontWeight: 800
     lineHeight: 0.95
     letterSpacing: -0.008em
     textTransform: uppercase
   course-name:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(20px, 1.5vw, 28px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(20px, 1.5vw, 28px)
     fontWeight: 700
     lineHeight: 1.05
     letterSpacing: -0.005em
     textTransform: uppercase
   info-value:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(20px, 1.6vw, 28px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(20px, 1.6vw, 28px)
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: -0.005em
     textTransform: uppercase
   edition-label-tracked:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(15px, 1.1vw, 18px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(15px, 1.1vw, 18px)
     fontWeight: 700
     letterSpacing: 0.18em
     textTransform: uppercase
   who-tag:
-    fontFamily: "'Bricolage Grotesque', sans-serif"
-    fontSize: "clamp(15px, 1.05vw, 18px)"
+    fontFamily: '''Bricolage Grotesque'', sans-serif'
+    fontSize: clamp(15px, 1.05vw, 18px)
     fontWeight: 700
     letterSpacing: -0.005em
     textTransform: uppercase
   body-serif-italic-lg:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(20px, 1.5vw, 28px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(20px, 1.5vw, 28px)
     fontWeight: 400
     lineHeight: 1.45
     fontStyle: italic
   body-serif-italic:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(17px, 1.2vw, 22px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(17px, 1.2vw, 22px)
     fontWeight: 400
     lineHeight: 1.5
     fontStyle: italic
   body-roman:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(15px, 1vw, 17px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(15px, 1vw, 17px)
     fontWeight: 400
     lineHeight: 1.45
   edition-label:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(20px, 1.6vw, 30px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(20px, 1.6vw, 30px)
     fontWeight: 400
     lineHeight: 1
     fontStyle: italic
   tagline:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(18px, 1.4vw, 26px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(18px, 1.4vw, 26px)
     fontWeight: 400
     lineHeight: 1.35
     fontStyle: italic
   stats:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(17px, 1.2vw, 22px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(17px, 1.2vw, 22px)
     fontWeight: 400
     lineHeight: 1.4
     fontStyle: italic
   pill-text:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(15px, 1.1vw, 20px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(15px, 1.1vw, 20px)
     fontWeight: 400
     lineHeight: 1
     fontStyle: italic
   meta-tag:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(14px, 0.95vw, 16px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(14px, 0.95vw, 16px)
     fontWeight: 400
     lineHeight: 1.4
     fontStyle: italic
   info-key:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(14px, 0.95vw, 16px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(14px, 0.95vw, 16px)
     fontWeight: 400
     letterSpacing: 0.16em
     textTransform: uppercase
     fontStyle: italic
   pagenum:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(14px, 0.95vw, 16px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(14px, 0.95vw, 16px)
     fontWeight: 400
     letterSpacing: 0.02em
     fontStyle: italic
   nav-hint:
-    fontFamily: "'Fraunces', Georgia, serif"
-    fontSize: "clamp(11px, 0.78vw, 13px)"
+    fontFamily: '''Fraunces'', Georgia, serif'
+    fontSize: clamp(11px, 0.78vw, 13px)
     fontWeight: 400
     letterSpacing: 0.02em
     fontStyle: italic
-
 spacing:
-  slide-pad-h-default: "clamp(60px, 5vw, 110px)"
-  slide-pad-h-wide: "clamp(80px, 7vw, 160px)"
-  slide-pad-h-narrow: "clamp(120px, 12vw, 280px)"
-  slide-pad-top-default: "clamp(96px, 10vh, 160px)"
-  slide-pad-top-cover: "clamp(60px, 6vh, 100px)"
-  slide-pad-bottom-default: "clamp(110px, 11vh, 170px)"
-  slide-pad-bottom-wide: "clamp(150px, 14vh, 220px)"
-  gap-section: "clamp(28px, 3vh, 50px)"
-  gap-content: "clamp(18px, 2vh, 32px)"
-  gap-row: "clamp(14px, 1.6vh, 24px)"
-  gap-tight: "clamp(10px, 1.2vh, 18px)"
-  border-weight: "1.5px"
-  rule-dashed-color: "{colors.ink-32}"
-
+  slide-pad-h-default: clamp(60px, 5vw, 110px)
+  slide-pad-h-wide: clamp(80px, 7vw, 160px)
+  slide-pad-h-narrow: clamp(120px, 12vw, 280px)
+  slide-pad-top-default: clamp(96px, 10vh, 160px)
+  slide-pad-top-cover: clamp(60px, 6vh, 100px)
+  slide-pad-bottom-default: clamp(110px, 11vh, 170px)
+  slide-pad-bottom-wide: clamp(150px, 14vh, 220px)
+  gap-section: clamp(28px, 3vh, 50px)
+  gap-content: clamp(18px, 2vh, 32px)
+  gap-row: clamp(14px, 1.6vh, 24px)
+  gap-tight: clamp(10px, 1.2vh, 18px)
+  border-weight: 1.5px
+  rule-dashed-color: '{colors.ink-32}'
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   pill:
-    description: "Outlined rounded-rectangle (border-radius 999px → fully pill) holding short italic Fraunces text. The system's CTA / action button. Border is 1.5px solid {colors.ink}; padding is generous (~12px / 28px); text-color is {colors.ink}."
-    border: "1.5px solid {colors.ink}"
-    borderRadius: "999px"
-    padding: "clamp(8px, 1vh, 14px) clamp(20px, 2vw, 32px)"
-    typography: "{typography.pill-text}"
+    description: Outlined rounded-rectangle (border-radius 999px → fully pill) holding short italic Fraunces text. The system's
+      CTA / action button. Border is 1.5px solid {colors.ink}; padding is generous (~12px / 28px); text-color is {colors.ink}.
+    border: 1.5px solid {colors.ink}
+    borderRadius: 999px
+    padding: clamp(8px, 1vh, 14px) clamp(20px, 2vw, 32px)
+    typography: '{typography.pill-text}'
   pill-divider:
-    typography: "{typography.pill-text}"
+    typography: '{typography.pill-text}'
     opacity: 0.7
-    description: "A small italic Fraunces divider character (typically · or /) used inline between adjacent pills."
+    description: A small italic Fraunces divider character (typically · or /) used inline between adjacent pills.
   ed-badge:
-    description: "A small circular outlined badge (~38px) holding a single italic Fraunces digit. The edition / chapter ordinal marker. Border is 1.5px solid {colors.ink}; background is transparent."
-    width: "clamp(34px, 2.6vw, 44px)"
-    height: "clamp(34px, 2.6vw, 44px)"
-    border: "1.5px solid {colors.ink}"
-    borderRadius: "50%"
+    description: A small circular outlined badge (~38px) holding a single italic Fraunces digit. The edition / chapter ordinal
+      marker. Border is 1.5px solid {colors.ink}; background is transparent.
+    width: clamp(34px, 2.6vw, 44px)
+    height: clamp(34px, 2.6vw, 44px)
+    border: 1.5px solid {colors.ink}
+    borderRadius: 50%
   rect-tag:
-    description: "Outlined rectangular tag — like the pill but with sharp corners. Holds short italic Fraunces text. Used as a category / status / metadata chip when the pill's roundness isn't appropriate."
-    border: "1.5px solid {colors.ink}"
-    padding: "clamp(7px, 0.9vh, 12px) clamp(14px, 1.4vw, 22px)"
-    typography: "{typography.pill-text}"
+    description: Outlined rectangular tag — like the pill but with sharp corners. Holds short italic Fraunces text. Used as
+      a category / status / metadata chip when the pill's roundness isn't appropriate.
+    border: 1.5px solid {colors.ink}
+    padding: clamp(7px, 0.9vh, 12px) clamp(14px, 1.4vw, 22px)
+    typography: '{typography.pill-text}'
   card-outlined:
-    description: "A 1.5px ink-outlined rectangular content card. Holds a card-top metadata row (separated below by a 1px @ 32%-opacity rule), a Bricolage card-name, a Fraunces body description, and a meta-row at the bottom (separated above by a 1px dashed @ 32%-opacity rule). The system's primary content card pattern."
-    border: "1.5px solid {colors.ink}"
-    padding: "clamp(20px, 2vh, 32px) clamp(20px, 1.8vw, 30px)"
-    internalDivider-solid: "1px solid {colors.ink-32}"
-    internalDivider-dashed: "1px dashed {colors.ink-32}"
+    description: A 1.5px ink-outlined rectangular content card. Holds a card-top metadata row (separated below by a 1px @
+      32%-opacity rule), a Bricolage card-name, a Fraunces body description, and a meta-row at the bottom (separated above
+      by a 1px dashed @ 32%-opacity rule). The system's primary content card pattern.
+    border: 1.5px solid {colors.ink}
+    padding: clamp(20px, 2vh, 32px) clamp(20px, 1.8vw, 30px)
+    internalDivider-solid: 1px solid {colors.ink-32}
+    internalDivider-dashed: 1px dashed {colors.ink-32}
   paper-texture:
-    description: "Subtle radial-dot texture overlay on the stage. A 4px-tile background-image of 0.5px radial-gradient dots in {colors.ink-50} at 10% opacity. Sits absolutely on the stage with pointer-events disabled, giving the paper its Risograph / printed-stock quality. This is on every slide."
-    backgroundImage: "radial-gradient(circle at 1px 1px, {colors.ink-50} 0.5px, transparent 1px)"
-    backgroundSize: "4px 4px"
+    description: Subtle radial-dot texture overlay on the stage. A 4px-tile background-image of 0.5px radial-gradient dots
+      in {colors.ink-50} at 10% opacity. Sits absolutely on the stage with pointer-events disabled, giving the paper its Risograph
+      / printed-stock quality. This is on every slide.
+    backgroundImage: radial-gradient(circle at 1px 1px, {colors.ink-50} 0.5px, transparent 1px)
+    backgroundSize: 4px 4px
     opacity: 0.1
   topbar-divider:
-    description: "A 1.5px ink solid border-bottom under a slide topbar (where a Bricolage headline sits beside a small Fraunces label). The horizontal rule beneath the topbar is the system's universal page-divider device."
-    borderBottom: "1.5px solid {colors.ink}"
+    description: A 1.5px ink solid border-bottom under a slide topbar (where a Bricolage headline sits beside a small Fraunces
+      label). The horizontal rule beneath the topbar is the system's universal page-divider device.
+    borderBottom: 1.5px solid {colors.ink}
   pagenum:
-    position: "absolute"
-    placement: "right: clamp(36px, 3.6vw, 80px); bottom: clamp(40px, 4vh, 64px)"
-    typography: "{typography.pagenum}"
-    color: "{colors.ink}"
-    description: "Italic Fraunces page number at the bottom-right of every slide."
+    position: absolute
+    placement: 'right: clamp(36px, 3.6vw, 80px); bottom: clamp(40px, 4vh, 64px)'
+    typography: '{typography.pagenum}'
+    color: '{colors.ink}'
+    description: Italic Fraunces page number at the bottom-right of every slide.
   nav-hint:
-    position: "fixed"
-    placement: "left: clamp(36px, 3.6vw, 80px); bottom: clamp(40px, 4vh, 64px)"
-    typography: "{typography.nav-hint}"
-    color: "{colors.ink}"
+    position: fixed
+    placement: 'left: clamp(36px, 3.6vw, 80px); bottom: clamp(40px, 4vh, 64px)'
+    typography: '{typography.nav-hint}'
+    color: '{colors.ink}'
     opacity: 0.45
-    description: "A faint italic Fraunces hint string at the bottom-left of the viewport (e.g. '← → to navigate'). Bonus interactivity affordance."
+    description: A faint italic Fraunces hint string at the bottom-left of the viewport (e.g. '← → to navigate'). Bonus interactivity
+      affordance.
   ledger-row:
-    description: "A horizontal ledger-style row in a calendar/schedule context. Multi-column grid (typical: 80px / 130px / 1.6fr / 0.9fr / auto) with a 1px @ 32%-opacity ink border-bottom. Each cell is a tag, label, or pill. Reads as a guestbook / restaurant-reservation log."
-    rowPad: "clamp(11px, 1.3vh, 18px) 0"
-    borderBottom: "1px solid {colors.ink-32}"
+    description: 'A horizontal ledger-style row in a calendar/schedule context. Multi-column grid (typical: 80px / 130px /
+      1.6fr / 0.9fr / auto) with a 1px @ 32%-opacity ink border-bottom. Each cell is a tag, label, or pill. Reads as a guestbook
+      / restaurant-reservation log.'
+    rowPad: clamp(11px, 1.3vh, 18px) 0
+    borderBottom: 1px solid {colors.ink-32}
 ---
 
 ## Frontend Slides Fixed-Stage Policy

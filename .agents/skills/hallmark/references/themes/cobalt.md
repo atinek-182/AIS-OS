@@ -1,3 +1,26 @@
+---
+title: Theme — Cobalt
+domain: skill
+summary: Modern-minimal, dev-tool register. The page for an **API, an SDK, a CLI, a docs home, a developer platform** — the
+  GitBook / Firecrawl / Vercel school, executed in **cool cobalt-on-light, not orange**. A calm cool-white ground, ruler-drawn
+  hairlines,
+critical_directives:
+- Accent hue** — **electric cobalt** (`oklch(58% 0.20 256)`). High-chroma true blue — reads "API-live," sits clear of Midn
+section_outline:
+- Theme — Cobalt
+- Axes (diversification)
+- Reference register
+- Required dependencies
+- The signature moves
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/themes/cobalt.md
+- When reading context for Theme — Cobalt
+tags:
+- skill
+- cobalt
+updated: '2026-08-08'
+---
+
 # Theme — Cobalt
 
 Modern-minimal, dev-tool register. The page for an **API, an SDK, a CLI, a docs home, a developer platform** — the GitBook / Firecrawl / Vercel school, executed in **cool cobalt-on-light, not orange**. A calm cool-white ground, ruler-drawn hairlines, exactly ONE electric cobalt signal accent, and **code as the hero**. It reads like good infrastructure: calm, precise, fast.

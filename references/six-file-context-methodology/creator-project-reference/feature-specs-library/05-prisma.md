@@ -1,3 +1,24 @@
+---
+title: Prisma Schema And Data Layer
+domain: architecture
+summary: Prisma is already installed. Add the project data models, Prisma client singleton, and first migration. Create `prisma/models/project.prisma`.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Prisma Schema And Data Layer
+- Goal
+- Models
+- Prisma Client
+- Migration
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/05-prisma.md
+- When reading context for Prisma Schema And Data Layer
+tags:
+- architecture
+- 05-prisma
+updated: '2026-08-08'
+---
+
 # Prisma Schema And Data Layer
 
 ## Goal

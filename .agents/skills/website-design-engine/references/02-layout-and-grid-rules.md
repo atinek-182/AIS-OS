@@ -1,3 +1,28 @@
+---
+title: 'Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0)'
+domain: skill
+summary: '1. **Canon 1: Strict Column Alignment**: Every section must anchor to the same 12-column or asymmetric grid system.
+  No rogue margin offsets (`ml-[17px]`). 2. **Canon 2: Obys Spatial Rhythm Ratios**:'
+critical_directives:
+- Initial viewport load MUST remain focused on 1 headline, 1 value prop, and 1 primary CTA stack.
+- 'Viewport Fit**: Hero MUST fit within initial viewport height (`min-h-[100dvh]`). Never use `h-screen` (causes mobile bro'
+- 'Cell Count Match**: A bento grid must have EXACTLY as many cells as there are items (3 items = 3 cells in asymmetric 1+2'
+- 'Bento Background Diversity**: A bento section cannot have 6 white-on-white text cards. At least 2 tiles MUST feature rea'
+section_outline:
+- 'Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0)'
+- Obys Grid Canons & Obys Spatial Rhythm Ratios
+- UX Design Psychology & Lead Conversion Mechanics
+- Hard Layout Rules & Anti-Pattern Bans
+- Hero Section Discipline
+read_triggers:
+- When working on skill in .agents/skills/website-design-engine/references/02-layout-and-grid-rules.md
+- 'When reading context for Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0)'
+tags:
+- skill
+- 02-layout-and-grid-rules
+updated: '2026-08-08'
+---
+
 # Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0)
 
 ## Obys Grid Canons & Obys Spatial Rhythm Ratios

@@ -1,6 +1,31 @@
 ---
+title: Google Workspace CLI Automation Engine (`/gws-automation-engine`)
+domain: skill
+summary: This skill manages Google Workspace CLI (`gws`) subprocess operations on Windows OS across Google Drive, Google Sheets,
+  Gmail, and Google Calendar. It eliminates Windows batch file resolution errors (`WinError 2`), prevents `cmd.exe` stringified
+  JSON
+critical_directives:
+- NEVER** invoke `gws` through `cmd.exe` or set `shell=True` in Python subprocess calls on Windows OS.
+- 'ALWAYS** invoke Node directly targeting the explicit `run.js` entry point:'
+- 'Always pass python dictionaries serialized with `json.dumps(payload)` directly in the argument array with `shell=False`:'
+- Always set `GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE` in process environment before subprocess execution.
+section_outline:
+- Google Workspace CLI Automation Engine (`/gws-automation-engine`)
+- Overview & Tri-Mode Execution
+- Core Rules & Windows Execution Safeguards
+- 🐍 Standard Python Subprocess Execution Boilerplate
+- 🧪 Pre-Flight Environment Verification Protocol
+read_triggers:
+- When working on skill in .agents/skills/gws-automation-engine/SKILL.md
+- When reading context for Google Workspace CLI Automation Engine (`/gws-automation-engine`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: gws-automation-engine
-description: Executes Google Workspace CLI (gws) operations for Drive, Sheets, Gmail, and Calendar on Windows OS. Prevents cmd.exe quote mangling, manages OAuth refresh tokens, and intercepts GCP API enablement HTTP 403 blocks. Validates environment via scripts/aios_gws_health_check.py.
+description: Executes Google Workspace CLI (gws) operations for Drive, Sheets, Gmail, and Calendar on Windows OS. Prevents
+  cmd.exe quote mangling, manages OAuth refresh tokens, and intercepts GCP API enablement HTTP 403 blocks. Validates environment
+  via scripts/aios_gws_health_check.py.
 argument-hint: '[resource] [action] [params]'
 ---
 

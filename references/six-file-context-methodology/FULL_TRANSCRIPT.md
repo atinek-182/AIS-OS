@@ -1,3 +1,25 @@
+---
+title: 'Full Video Transcript: How Senior Engineers Actually Build With AI in 2026'
+domain: architecture
+summary: '**Video Title**: How Senior Engineers Actually Build With AI in 2026 | Build a Full Stack Systems Architecture App
+  **Uploader**: JavaScript Mastery (Adrian Hajdin)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- 'Full Video Transcript: How Senior Engineers Actually Build With AI in 2026'
+- 'Chapter 01: Introduction (00:00:00)'
+- 'Chapter 02: Crash Course (00:03:15)'
+- 'Chapter 03: Project Setup (00:14:31)'
+- 'Chapter 04: Preparing Context (00:21:43)'
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/FULL_TRANSCRIPT.md
+- 'When reading context for Full Video Transcript: How Senior Engineers Actually Build With AI in 2026'
+tags:
+- architecture
+- FULL_TRANSCRIPT
+updated: '2026-08-08'
+---
+
 # Full Video Transcript: How Senior Engineers Actually Build With AI in 2026
 
 **Video Title**: How Senior Engineers Actually Build With AI in 2026 | Build a Full Stack Systems Architecture App

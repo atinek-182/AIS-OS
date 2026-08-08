@@ -1,3 +1,21 @@
+---
+title: Triage Labels
+domain: architecture
+summary: The skills speak in terms of five canonical triage roles. This file maps those roles to the actual label strings
+  used in this repo's issue tracker. | Label in mattpocock/skills | Label in our tracker | Meaning                                  |
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Triage Labels
+read_triggers:
+- When working on architecture in docs/agents/triage-labels.md
+- When reading context for Triage Labels
+tags:
+- architecture
+- triage-labels
+updated: '2026-08-08'
+---
+
 # Triage Labels
 
 The skills speak in terms of five canonical triage roles. This file maps those roles to the actual label strings used in this repo's issue tracker.

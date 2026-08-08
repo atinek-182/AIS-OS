@@ -1,3 +1,26 @@
+---
+title: Deepening
+domain: skill
+summary: How to deepen a cluster of shallow modules safely, given its dependencies. Assumes the vocabulary in [SKILL.md](SKILL.md)
+  — **module**, **interface**, **seam**, **adapter**. When assessing a candidate for deepening, classify its dependencies.
+  The cat
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Deepening
+- Dependency categories
+- 1. In-process
+- 2. Local-substitutable
+- 3. Remote but owned (Ports & Adapters)
+read_triggers:
+- When working on skill in .agents/skills/codebase-design/DEEPENING.md
+- When reading context for Deepening
+tags:
+- skill
+- DEEPENING
+updated: '2026-08-08'
+---
+
 # Deepening
 
 How to deepen a cluster of shallow modules safely, given its dependencies. Assumes the vocabulary in [SKILL.md](SKILL.md) — **module**, **interface**, **seam**, **adapter**.

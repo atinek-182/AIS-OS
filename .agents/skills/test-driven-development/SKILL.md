@@ -1,6 +1,27 @@
 ---
+title: Test-Driven Development
+domain: skill
+summary: Write a failing test before writing the code that makes it pass. For bug fixes, reproduce the bug with a test before
+  attempting a fix. Tests are proof — "seems right" is not done. A codebase with good tests is an AI agent's superpower; a
+  codebase wit
+critical_directives:
+- The Beyonce Rule:** If you liked it, you should have put a test on it. Infrastructure changes, refactoring, and migratio
+section_outline:
+- Test-Driven Development
+- Overview
+- When to Use
+- Discover the Stack First
+- The TDD Cycle
+read_triggers:
+- When working on skill in .agents/skills/test-driven-development/SKILL.md
+- When reading context for Test-Driven Development
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: test-driven-development
-description: Drives development with tests. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.
+description: Drives development with tests. Use when implementing any logic, fixing any bug, or changing any behavior. Use
+  when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.
 ---
 
 # Test-Driven Development

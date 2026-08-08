@@ -1,6 +1,26 @@
 ---
+title: Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)
+domain: skill
+summary: 'Converts technical design contracts (`SPEC.md` or build specs) into atomic, independent engineering tickets ready
+  for developer execution, based on Matt Pocock''s workflow. - **Slash Command**: `/mattpocock-to-tickets [spec_path]`'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)
+- Overview & Tri-Mode Routing
+- 🎟️ Ticket Decomposition Rules
+- Ticket Template Output
+- 'Ticket [ID]: [Title]'
+read_triggers:
+- When working on skill in .agents/skills/mattpocock-to-tickets/SKILL.md
+- When reading context for Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: mattpocock-to-tickets
-description: Decompose technical specs into atomic execution tickets. Creates independent, verifiable developer tasks with clear Definition of Done (DoD). Triggered via /mattpocock-to-tickets or naturally when breaking down specs into tasks.
+description: Decompose technical specs into atomic execution tickets. Creates independent, verifiable developer tasks with
+  clear Definition of Done (DoD). Triggered via /mattpocock-to-tickets or naturally when breaking down specs into tasks.
 argument-hint: '[spec_file_or_path]'
 ---
 

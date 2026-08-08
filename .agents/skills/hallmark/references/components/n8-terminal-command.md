@@ -1,3 +1,22 @@
+---
+title: N8 Terminal Command
+domain: skill
+summary: 'A nav formatted as a CLI prompt: `> studio --catalog --voice --get▮`. The "links" are command flags. The blinking
+  cursor (`▮`) is allowed *only here* (it has purpose — signals "you''d type next"); never standalone elsewhere on the page.
+  Reads as Verce'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- N8 · Terminal command
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n8-terminal-command.md
+- When reading context for N8 Terminal Command
+tags:
+- skill
+- n8-terminal-command
+updated: '2026-08-08'
+---
+
 ### N8 · Terminal command
 A nav formatted as a CLI prompt: `> studio --catalog --voice --get▮`. The "links" are command flags. The blinking cursor (`▮`) is allowed *only here* (it has purpose — signals "you'd type next"); never standalone elsewhere on the page. Reads as Vercel CLI docs landing, Charm, Mitchell Hashimoto's site.
 *Use when:* the page is a CLI tool, dev-tool docs, or carries the Terminal theme.

@@ -1,3 +1,21 @@
+---
+title: Ft8 Marquee Scroll
+domain: skill
+summary: 'A horizontal infinite-scroll line of repeating tagline + dot separator: `STUDIO · 2026 · STUDIO · 2026 · STUDIO
+  · 2026 ·`. Sport-genre sites, fashion lookbooks, brand-forward agencies. *Use when:* the brand voice is loud, kinetic, sport-or-manifesto.'
+critical_directives:
+- Anti-pattern:* using Ft8 on editorial / quiet contexts — the motion reads as loud. Pair only with playful / sport / mani
+section_outline:
+- Ft8 · Marquee scroll
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/ft8-marquee-scroll.md
+- When reading context for Ft8 Marquee Scroll
+tags:
+- skill
+- ft8-marquee-scroll
+updated: '2026-08-08'
+---
+
 ### Ft8 · Marquee scroll
 A horizontal infinite-scroll line of repeating tagline + dot separator: `STUDIO · 2026 · STUDIO · 2026 · STUDIO · 2026 ·`. Sport-genre sites, fashion lookbooks, brand-forward agencies.
 *Use when:* the brand voice is loud, kinetic, sport-or-manifesto.

@@ -1,9 +1,27 @@
 ---
-title: "Universal Content Brief Template"
+title: Universal Content Brief Template
+domain: architecture
+summary: Use this template to plan and draft individual pieces of ZORIXEL content. - **Working Title:** [e.g., How to build
+  a layout in 5 mins]
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Universal Content Brief Template
+- 1. Metadata and Context
+- 2. Hook and Core Outline
+- 3. Data & Resource Verification
+- 4. Platform Expansion & Cross-Reference
+read_triggers:
+- When working on architecture in second-brain-zorixel/wiki/templates/content-brief-template.md
+- When reading context for Universal Content Brief Template
+tags:
+- template
+- planning
+updated: '2026-08-08'
 type: Template
 status: Active
-tags: [template, planning]
-sources: [../../raw/zorixel-content-formats-2026-07-12.md]
+sources:
+- ../../raw/zorixel-content-formats-2026-07-12.md
 last_updated: 2026-07-12
 ---
 

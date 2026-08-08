@@ -1,6 +1,31 @@
 ---
+title: Security and Hardening
+domain: skill
+summary: Security-first development practices for web applications. Treat every external input as hostile, every secret as
+  sacred, and every authorization check as mandatory. Security isn't a phase — it's a constraint on every line of code that
+  touches user d
+critical_directives:
+- Parameterize all database queries** — never concatenate user input into SQL
+- Hash passwords** with bcrypt/scrypt/argon2 (never store plaintext)
+- Never commit secrets** to version control (API keys, passwords, tokens)
+- Never log sensitive data** (passwords, tokens, full credit card numbers)
+section_outline:
+- Security and Hardening
+- Overview
+- When to Use
+- 'Process: Threat Model First'
+- The Three-Tier Boundary System
+read_triggers:
+- When working on skill in .agents/skills/security-and-hardening/SKILL.md
+- When reading context for Security and Hardening
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: security-and-hardening
-description: Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services.
+description: Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external
+  integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party
+  services.
 ---
 
 # Security and Hardening

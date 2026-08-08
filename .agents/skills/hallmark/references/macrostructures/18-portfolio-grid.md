@@ -1,3 +1,21 @@
+---
+title: 18 Portfolio Grid
+domain: skill
+summary: Filterable cards of projects. Studio or designer homepages where the work is the product. - **Heading:** short tagline
+  above the grid; no display.
+critical_directives:
+- Divider:** filter bar above the grid; no internal rules.
+section_outline:
+- 18 · Portfolio Grid
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/18-portfolio-grid.md
+- When reading context for 18 Portfolio Grid
+tags:
+- skill
+- 18-portfolio-grid
+updated: '2026-08-08'
+---
+
 ## 18 · Portfolio Grid
 
 Filterable cards of projects. Studio or designer homepages where the work is the product.

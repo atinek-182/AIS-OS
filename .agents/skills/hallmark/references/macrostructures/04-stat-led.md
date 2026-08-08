@@ -1,3 +1,24 @@
+---
+title: 04 Stat Led
+domain: skill
+summary: The hero is a giant number — a metric, a count, a percentage. Everything that follows supports or qualifies it. Data
+  is the narrative. - **Heading:** a large numeric display (8–12 rem, tabular figures) **paired with a worded headline** —
+  the figure i
+critical_directives:
+- Heading:** a large numeric display (8–12 rem, tabular figures) **paired with a worded headline** — the figure is the big
+- Divider:** hairline rules between stat blocks; tabular-nums everywhere.
+- The hero header always contains words.** The lead figure never stands alone as the headline — pair it with a worded line
+section_outline:
+- 04 · Stat-Led
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/04-stat-led.md
+- When reading context for 04 Stat Led
+tags:
+- skill
+- 04-stat-led
+updated: '2026-08-08'
+---
+
 ## 04 · Stat-Led
 
 The hero is a giant number — a metric, a count, a percentage. Everything that follows supports or qualifies it. Data is the narrative.

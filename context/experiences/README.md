@@ -1,3 +1,23 @@
+---
+title: System Experience Learning Index
+domain: architecture
+summary: '- **2026-07-23**: [2026-07-23-hyper-detailed-visual-wireframe-pipeline.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-hyper-detailed-visual-wireframe-pipeline.md)
+  — Hyper-Detailed Visual UI/UX Wireframe Blueprint & 3D Media Extraction En'
+critical_directives:
+- '**2026-07-25**: [2026-07-25-mandatory-deep-planning-multi-page-architecture.md](file:///d:/AI-OS/bra'
+- '**2026-08-03**: [2026-08-03-vashishthya-notion-intake-and-vault-rule.md](file:///d:/AI-OS/brain-aios'
+- '**2026-08-08**: [2026-08-08-zero-cost-boundary-and-paid-api-purge.md](file:///d:/AI-OS/brain-aios/wi'
+section_outline:
+- System Experience Learning Index
+read_triggers:
+- When working on architecture in context/experiences/README.md
+- When reading context for System Experience Learning Index
+tags:
+- architecture
+- README
+updated: '2026-08-08'
+---
+
 # System Experience Learning Index
 
 - **2026-07-23**: [2026-07-23-hyper-detailed-visual-wireframe-pipeline.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-07-23-hyper-detailed-visual-wireframe-pipeline.md) — Hyper-Detailed Visual UI/UX Wireframe Blueprint & 3D Media Extraction Engine.

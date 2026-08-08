@@ -1,6 +1,27 @@
 ---
+title: Composio Skill (`/composio`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/composio [search|link|execute|whoami]
+  [parameters]` in chat.'
+critical_directives:
+- Use **`/composio`** whenever integrating 3rd-party platforms without native local CLIs (e.g. HubSpot, Salesforce, Linear
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Composio Skill (`/composio`)
+- Invocation & Tri-Mode Routing
+- Capabilities & Usage Guide
+- 1. Search 1000+ App Tools by Natural Language
+- 2. Connect an Account via Managed OAuth Link
+read_triggers:
+- When working on skill in .agents/skills/composio/SKILL.md
+- When reading context for Composio Skill (`/composio`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: composio
-description: Connect and execute actions across 1000+ external SaaS apps (HubSpot, Linear, Salesforce, Stripe, Shopify, Slack, Zoom, Jira, Gmail) via Composio Tool Router and CLI. Invokable directly via /composio.
+description: Connect and execute actions across 1000+ external SaaS apps (HubSpot, Linear, Salesforce, Stripe, Shopify, Slack,
+  Zoom, Jira, Gmail) via Composio Tool Router and CLI. Invokable directly via /composio.
 argument-hint: '[search|link|execute|whoami] [--query <text>] [--app <name>] [--tool <ID>]'
 ---
 

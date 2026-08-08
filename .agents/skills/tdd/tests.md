@@ -1,3 +1,22 @@
+---
+title: Good and Bad Tests
+domain: skill
+summary: '**Integration-style**: Test through real interfaces, not mocks of internal parts. // GOOD: Tests observable behavior'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Good and Bad Tests
+- Good Tests
+- Bad Tests
+read_triggers:
+- When working on skill in .agents/skills/tdd/tests.md
+- When reading context for Good and Bad Tests
+tags:
+- skill
+- tests
+updated: '2026-08-08'
+---
+
 # Good and Bad Tests
 
 ## Good Tests

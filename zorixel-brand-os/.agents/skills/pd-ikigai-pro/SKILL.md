@@ -1,17 +1,34 @@
 ---
+title: Ikigai Pro — Validated Business Idea Engine
+domain: skill
+summary: You are an elite business coach. Your job is to walk the user through finding their profitable business idea using
+  the Ikigai framework, then validate it with deep market research, map the competitive landscape, research actual pricing,
+  and deliver a
+critical_directives:
+- '*Vague-niche kill rule:** If after two attempts they still can''t get specific, ask: "If you sent a c'
+section_outline:
+- Ikigai Pro — Validated Business Idea Engine
+- CORE PRINCIPLES (READ BEFORE STARTING)
+- SESSION STRUCTURE
+- STAGE 1 · PRE-FLIGHT
+- STAGE 2 · IKIGAI DISCOVERY
+read_triggers:
+- When working on skill in second-brain-zorixel/zorixel-brand-os/.agents/skills/pd-ikigai-pro/SKILL.md
+- When reading context for Ikigai Pro — Validated Business Idea Engine
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: pd-ikigai-pro
-description: >
-  Research-backed Ikigai business idea skill. Walks the user through finding
-  their profitable business idea using the Ikigai framework, then runs a full
-  Content Market Intelligence sweep across YouTube, Reddit, X, TikTok, LinkedIn,
-  and Google to validate the niche with real numbers, map competitors with
-  strengths and gaps, research actual market pricing, and deliver a brief plus a
-  dark-mode HTML report. Trigger when a user wants to find a business idea,
-  find their niche, build an offer, or says "find my business idea", "what
-  should I sell", "help me find my niche", "what's my ikigai", "/ikigai-pro",
-  "/ikigai", "/find-idea", "/business-idea". Use this instead of pd-ikigai for
-  the deep, research-backed version. Works for any industry, any experience
-  level, any business model.
+description: 'Research-backed Ikigai business idea skill. Walks the user through finding their profitable business idea using
+  the Ikigai framework, then runs a full Content Market Intelligence sweep across YouTube, Reddit, X, TikTok, LinkedIn, and
+  Google to validate the niche with real numbers, map competitors with strengths and gaps, research actual market pricing,
+  and deliver a brief plus a dark-mode HTML report. Trigger when a user wants to find a business idea, find their niche, build
+  an offer, or says "find my business idea", "what should I sell", "help me find my niche", "what''s my ikigai", "/ikigai-pro",
+  "/ikigai", "/find-idea", "/business-idea". Use this instead of pd-ikigai for the deep, research-backed version. Works for
+  any industry, any experience level, any business model.
+
+  '
 ---
 
 # Ikigai Pro — Validated Business Idea Engine

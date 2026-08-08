@@ -1,6 +1,30 @@
 ---
+title: Context Engineering
+domain: skill
+summary: 'Feed agents the right information at the right time. Context is the single biggest lever for agent output quality
+  — too little and the agent hallucinates, too much and it loses focus. Context engineering is the practice of deliberately
+  curating what '
+critical_directives:
+- Never commit .env files or secrets
+- Never add dependencies without checking bundle size impact
+- Always run tests before committing
+- '`.cursorrules` or `.cursor/rules/*.md` (Cursor)'
+section_outline:
+- Context Engineering
+- Overview
+- When to Use
+- The Context Hierarchy
+- 'Level 1: Rules Files'
+read_triggers:
+- When working on skill in .agents/skills/context-engineering/SKILL.md
+- When reading context for Context Engineering
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: context-engineering
-description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.
+description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching
+  between tasks, or when you need to configure rules files and context for a project.
 ---
 
 # Context Engineering

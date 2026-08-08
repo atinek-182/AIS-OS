@@ -1,11 +1,29 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/excalidraw-diagram [optional
+  parameters]` in chat.'
+critical_directives:
+- Padding rules:**
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- Workflow
+- 'Step 1: Understand the request'
+- 'Step 2: Research if needed'
+- 'Step 3: Plan the layout'
+read_triggers:
+- When working on skill in .agents/skills/excalidraw-diagram/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: excalidraw-diagram
-description: Use when someone asks to draw a diagram, make an Excalidraw diagram,
-  or build an editable diagram. Default for all diagram requests. Invokable directly
-  via /excalidraw-diagram.
+description: Use when someone asks to draw a diagram, make an Excalidraw diagram, or build an editable diagram. Default for
+  all diagram requests. Invokable directly via /excalidraw-diagram.
 argument-hint: '[optional parameters]'
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

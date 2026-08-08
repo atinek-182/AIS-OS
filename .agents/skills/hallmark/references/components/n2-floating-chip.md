@@ -1,3 +1,21 @@
+---
+title: N2 Floating Chip
+domain: skill
+summary: A small fixed chip in a corner — wordmark + a single action ("Try it"). Doesn't sit in document flow. *Use when:*
+  the page is fold-heavy and traditional nav would fight the content.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- N2 · Floating chip
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n2-floating-chip.md
+- When reading context for N2 Floating Chip
+tags:
+- skill
+- n2-floating-chip
+updated: '2026-08-08'
+---
+
 ### N2 · Floating chip
 A small fixed chip in a corner — wordmark + a single action ("Try it"). Doesn't sit in document flow.
 *Use when:* the page is fold-heavy and traditional nav would fight the content.

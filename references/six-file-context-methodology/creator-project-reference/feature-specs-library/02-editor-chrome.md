@@ -1,3 +1,24 @@
+---
+title: 02 Editor Chrome
+domain: architecture
+summary: we need the base chrome components that frame every editor screen — the top navbar and the left sidebar shell. These
+  will be reused and extended in every chapter that follows. Create `components/editor/editor-navbar.tsx`.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Editor Navbar
+- Project Sidebar
+- Dialog Pattern
+- Check when done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/02-editor-chrome.md
+- When reading context for 02 Editor Chrome
+tags:
+- architecture
+- 02-editor-chrome
+updated: '2026-08-08'
+---
+
 we need the base chrome components that frame every editor screen — the top navbar and the left sidebar shell. These will be reused and extended in every chapter that follows.
 
 ### Editor Navbar

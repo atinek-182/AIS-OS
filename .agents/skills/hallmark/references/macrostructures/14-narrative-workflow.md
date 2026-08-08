@@ -1,3 +1,21 @@
+---
+title: 14 Narrative Workflow
+domain: skill
+summary: Numbered stages tell the story of how the user uses the product over time. Each section is a phase (1.0 → 2.0 → 3.0
+  → 4.0). The page is a process timeline. - **Heading:** large numbered stage labels (`1.0 INTAKE`, `2.0 PLAN`).
+critical_directives:
+- Divider:** thick numbered rule between stages.
+section_outline:
+- 14 · Narrative Workflow
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/14-narrative-workflow.md
+- When reading context for 14 Narrative Workflow
+tags:
+- skill
+- 14-narrative-workflow
+updated: '2026-08-08'
+---
+
 ## 14 · Narrative Workflow
 
 Numbered stages tell the story of how the user uses the product over time. Each section is a phase (1.0 → 2.0 → 3.0 → 4.0). The page is a process timeline.

@@ -1,221 +1,262 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'White** (`#fff`): A bordered white sticky used in timelines and comparisons where a "plain" or "neutral" note is needed.'
+- Post-it** (`{components.post-it}`) — Colored sticky-note in one of seven variants (yellow, blue, pink, green, orange, pu
+- Don't assign semantic meaning to post-it colors (yellow = warning, green = good). The colors are categorical only.
+- The 0.02em positive tracking on Shrikhand display must drop to 0** on ZCOOL KuaiLe. Tracked Chinese display characters l
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Palette
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/scatterbrain/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Scatterbrain
-description: "A Post-it-note-and-cork-board presentation system. Every content block is a colored sticky note on a textured paper or cork surface, layered with red thumbtacks, masking tape, and decorative doodles. Display type runs in Shrikhand (a chunky decorative display serif) on every headline; body type runs in Zilla Slab (a friendly slab serif); handwritten emphasis runs in Caveat. The palette is pastel sticky-note colors (yellow, blue, pink, green, orange, purple) on cream paper / cork / warm gradient backgrounds. The aesthetic borrows from creative-workshop wall art, brainstorming boards, and indie-studio mood boards: scattered slight rotations, multiple background texture variants per slide, pin / tape / drop-shadow combinations. The effect is warmth, play, and tactile creative-process energy."
-
+description: 'A Post-it-note-and-cork-board presentation system. Every content block is a colored sticky note on a textured
+  paper or cork surface, layered with red thumbtacks, masking tape, and decorative doodles. Display type runs in Shrikhand
+  (a chunky decorative display serif) on every headline; body type runs in Zilla Slab (a friendly slab serif); handwritten
+  emphasis runs in Caveat. The palette is pastel sticky-note colors (yellow, blue, pink, green, orange, purple) on cream paper
+  / cork / warm gradient backgrounds. The aesthetic borrows from creative-workshop wall art, brainstorming boards, and indie-studio
+  mood boards: scattered slight rotations, multiple background texture variants per slide, pin / tape / drop-shadow combinations.
+  The effect is warmth, play, and tactile creative-process energy.'
 colors:
-  yellow: "#ffe066"
-  yellow-deep: "#ffd43b"
-  blue: "#a5d8ff"
-  blue-deep: "#74c0fc"
-  pink: "#ffc9c9"
-  pink-deep: "#ff9f9f"
-  green: "#b2f2bb"
-  green-deep: "#8ce99a"
-  orange: "#ffcc80"
-  purple: "#d0bfff"
-  cream: "#faf8f3"
-  paper: "#f7f5f0"
-  ink: "#2d2a26"
-  ink-light: "#5c5750"
-  shadow: "rgba(45, 42, 38, 0.15)"
-  shadow-deep: "rgba(45, 42, 38, 0.25)"
-
+  yellow: '#ffe066'
+  yellow-deep: '#ffd43b'
+  blue: '#a5d8ff'
+  blue-deep: '#74c0fc'
+  pink: '#ffc9c9'
+  pink-deep: '#ff9f9f'
+  green: '#b2f2bb'
+  green-deep: '#8ce99a'
+  orange: '#ffcc80'
+  purple: '#d0bfff'
+  cream: '#faf8f3'
+  paper: '#f7f5f0'
+  ink: '#2d2a26'
+  ink-light: '#5c5750'
+  shadow: rgba(45, 42, 38, 0.15)
+  shadow-deep: rgba(45, 42, 38, 0.25)
 typography:
   display-hero:
-    fontFamily: "'Shrikhand', cursive"
-    fontSize: "clamp(2.5rem, 5vw, 4.5rem)"
+    fontFamily: '''Shrikhand'', cursive'
+    fontSize: clamp(2.5rem, 5vw, 4.5rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   statement:
-    fontFamily: "'Shrikhand', cursive"
-    fontSize: "clamp(2rem, 4vw, 3.5rem)"
+    fontFamily: '''Shrikhand'', cursive'
+    fontSize: clamp(2rem, 4vw, 3.5rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   headline:
-    fontFamily: "'Shrikhand', cursive"
-    fontSize: "clamp(1.8rem, 3.5vw, 3rem)"
+    fontFamily: '''Shrikhand'', cursive'
+    fontSize: clamp(1.8rem, 3.5vw, 3rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   title:
-    fontFamily: "'Shrikhand', cursive"
-    fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)"
+    fontFamily: '''Shrikhand'', cursive'
+    fontSize: clamp(1.3rem, 2.5vw, 1.8rem)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 0.02em
   body:
-    fontFamily: "'Zilla Slab', serif"
-    fontSize: "clamp(1rem, 1.5vw, 1.25rem)"
+    fontFamily: '''Zilla Slab'', serif'
+    fontSize: clamp(1rem, 1.5vw, 1.25rem)
     fontWeight: 400
     lineHeight: 1.7
   list-item:
-    fontFamily: "'Zilla Slab', serif"
-    fontSize: "1.1rem"
+    fontFamily: '''Zilla Slab'', serif'
+    fontSize: 1.1rem
     fontWeight: 400
     lineHeight: 1.6
   handwritten:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(1.2rem, 2vw, 1.6rem)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(1.2rem, 2vw, 1.6rem)
     fontWeight: 400
     lineHeight: 1.4
   handwritten-lg:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(1.4rem, 2.5vw, 2rem)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(1.4rem, 2.5vw, 2rem)
     fontWeight: 600
     lineHeight: 1.3
   handwritten-sm:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "clamp(1.2rem, 1.5vw, 1.4rem)"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: clamp(1.2rem, 1.5vw, 1.4rem)
     fontWeight: 500
     lineHeight: 1.3
   label-script:
-    fontFamily: "'Caveat', cursive"
-    fontSize: "0.9rem"
+    fontFamily: '''Caveat'', cursive'
+    fontSize: 0.9rem
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: 0.15em
     textTransform: uppercase
   stat-value:
-    fontFamily: "'Shrikhand', cursive"
-    fontSize: "1.8rem"
+    fontFamily: '''Shrikhand'', cursive'
+    fontSize: 1.8rem
     fontWeight: 400
     lineHeight: 1.1
   caption-subtitle:
-    fontFamily: "'Zilla Slab', serif"
-    fontSize: "1.3rem"
+    fontFamily: '''Zilla Slab'', serif'
+    fontSize: 1.3rem
     fontWeight: 400
     lineHeight: 1.6
-
 spacing:
   slide-pad: 3rem
-  post-it-pad-lg: "3rem 4rem"
-  post-it-pad-md: "2.5rem"
-  post-it-pad-sm: "1.5rem"
-  post-it-pad-statement: "3.5rem 4rem"
-  gap-lg: "3rem"
-  gap-md: "2.5rem"
-  gap-sm: "2rem"
-
+  post-it-pad-lg: 3rem 4rem
+  post-it-pad-md: 2.5rem
+  post-it-pad-sm: 1.5rem
+  post-it-pad-statement: 3.5rem 4rem
+  gap-lg: 3rem
+  gap-md: 2.5rem
+  gap-sm: 2rem
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   bg-cork:
-    backgroundLayers: "radial-gradient ellipse + linear-gradient (warm browns) + SVG plus-sign pattern at 15% opacity"
-    description: "Cork-board background variant. Warm tan/brown tonal gradient with a faint pattern of small plus-sign marks suggesting cork texture. Used on slides that feel like 'a wall of pinned notes.'"
+    backgroundLayers: radial-gradient ellipse + linear-gradient (warm browns) + SVG plus-sign pattern at 15% opacity
+    description: Cork-board background variant. Warm tan/brown tonal gradient with a faint pattern of small plus-sign marks
+      suggesting cork texture. Used on slides that feel like 'a wall of pinned notes.'
   bg-paper:
-    backgroundLayers: "linear-gradient (cream) + 40px grid lines at 8% opacity"
-    description: "Desk-paper background variant. Cream gradient with a faint 40px grid overlay suggesting graph or notebook paper. Used on slides that feel like 'notes arranged on a desk.'"
+    backgroundLayers: linear-gradient (cream) + 40px grid lines at 8% opacity
+    description: Desk-paper background variant. Cream gradient with a faint 40px grid overlay suggesting graph or notebook
+      paper. Used on slides that feel like 'notes arranged on a desk.'
   bg-warm:
-    backgroundLayers: "multiple radial-gradients (yellow/blue/pink soft glows) + linear-gradient cream base"
-    description: "Warm gradient background variant. Cream base with soft-glow ellipses of yellow, blue, and pink suggesting morning light. Used on slides that need a softer, less-textured atmosphere."
+    backgroundLayers: multiple radial-gradients (yellow/blue/pink soft glows) + linear-gradient cream base
+    description: Warm gradient background variant. Cream base with soft-glow ellipses of yellow, blue, and pink suggesting
+      morning light. Used on slides that need a softer, less-textured atmosphere.
   grain-overlay:
-    backgroundImage: "SVG fractal-noise filter, 256×256 tile"
+    backgroundImage: SVG fractal-noise filter, 256×256 tile
     opacity: 0.04
     zIndex: 9999
-    description: "Fixed full-viewport SVG grain texture above all content at 4% opacity. Reinforces the paper-and-cork tactile register. Always present."
+    description: Fixed full-viewport SVG grain texture above all content at 4% opacity. Reinforces the paper-and-cork tactile
+      register. Always present.
   post-it:
-    padding: "2rem"
-    boxShadow: "2px 3px 15px {colors.shadow}, 0 1px 3px {colors.shadow-deep}"
-    description: "Generic colored sticky-note base. Soft drop-shadow simulates the note's slight lift off the surface. Always carries a background color from the post-it palette (yellow, blue, pink, green, orange, purple, or white)."
+    padding: 2rem
+    boxShadow: 2px 3px 15px {colors.shadow}, 0 1px 3px {colors.shadow-deep}
+    description: Generic colored sticky-note base. Soft drop-shadow simulates the note's slight lift off the surface. Always
+      carries a background color from the post-it palette (yellow, blue, pink, green, orange, purple, or white).
   post-it-yellow:
-    background: "linear-gradient(135deg, {colors.yellow} 0%, {colors.yellow-deep} 100%)"
-    description: "Yellow sticky variant. Soft 135° gradient from light to deep yellow."
+    background: linear-gradient(135deg, {colors.yellow} 0%, {colors.yellow-deep} 100%)
+    description: Yellow sticky variant. Soft 135° gradient from light to deep yellow.
   post-it-blue:
-    background: "linear-gradient(135deg, {colors.blue} 0%, {colors.blue-deep} 100%)"
-    description: "Blue sticky variant."
+    background: linear-gradient(135deg, {colors.blue} 0%, {colors.blue-deep} 100%)
+    description: Blue sticky variant.
   post-it-pink:
-    background: "linear-gradient(135deg, {colors.pink} 0%, {colors.pink-deep} 100%)"
-    description: "Pink sticky variant."
+    background: linear-gradient(135deg, {colors.pink} 0%, {colors.pink-deep} 100%)
+    description: Pink sticky variant.
   post-it-green:
-    background: "linear-gradient(135deg, {colors.green} 0%, {colors.green-deep} 100%)"
-    description: "Green sticky variant."
+    background: linear-gradient(135deg, {colors.green} 0%, {colors.green-deep} 100%)
+    description: Green sticky variant.
   post-it-orange:
-    background: "{colors.orange}"
-    description: "Orange sticky variant. Flat fill (no gradient) — the only post-it that ships flat."
+    background: '{colors.orange}'
+    description: Orange sticky variant. Flat fill (no gradient) — the only post-it that ships flat.
   post-it-purple:
-    background: "{colors.purple}"
-    description: "Purple sticky variant. Flat fill."
+    background: '{colors.purple}'
+    description: Purple sticky variant. Flat fill.
   post-it-white:
-    background: "#fff"
-    border: "2px solid {colors.ink}"
-    description: "White note variant. Carries a 2px ink border (because pure white otherwise disappears into cream/paper backgrounds). Used as a 'plain note' in timelines or comparisons."
+    background: '#fff'
+    border: 2px solid {colors.ink}
+    description: White note variant. Carries a 2px ink border (because pure white otherwise disappears into cream/paper backgrounds).
+      Used as a 'plain note' in timelines or comparisons.
   pin:
     width: 16px
     height: 16px
-    position: "::before, top: -12px, centered"
-    background: "radial-gradient(circle at 30% 30%, #ff6b6b, #c92a2a)"
-    boxShadow: "0 2px 4px {colors.shadow-deep}, inset -2px -2px 4px rgba(0,0,0,0.2)"
-    description: "Red thumbtack mark sitting at the top-center of a post-it via ::before. Radial-gradient gives it a 3D bead-shaped highlight; inset shadow adds dimension. The default pin color."
+    position: '::before, top: -12px, centered'
+    background: 'radial-gradient(circle at 30% 30%, #ff6b6b, #c92a2a)'
+    boxShadow: 0 2px 4px {colors.shadow-deep}, inset -2px -2px 4px rgba(0,0,0,0.2)
+    description: Red thumbtack mark sitting at the top-center of a post-it via ::before. Radial-gradient gives it a 3D bead-shaped
+      highlight; inset shadow adds dimension. The default pin color.
   pin-blue:
-    background: "radial-gradient(circle at 30% 30%, #4dabf7, #1864ab)"
-    description: "Blue thumbtack variant."
+    background: 'radial-gradient(circle at 30% 30%, #4dabf7, #1864ab)'
+    description: Blue thumbtack variant.
   pin-green:
-    background: "radial-gradient(circle at 30% 30%, #69db7c, #2f9e44)"
-    description: "Green thumbtack variant."
+    background: 'radial-gradient(circle at 30% 30%, #69db7c, #2f9e44)'
+    description: Green thumbtack variant.
   pin-gold:
-    background: "radial-gradient(circle at 30% 30%, #ffd43b, #f59f00)"
-    description: "Gold thumbtack variant."
+    background: 'radial-gradient(circle at 30% 30%, #ffd43b, #f59f00)'
+    description: Gold thumbtack variant.
   tape:
     width: 80px
     height: 25px
-    position: "::after, top: -15px, centered, rotate(-2deg)"
-    background: "rgba(255, 255, 255, 0.4)"
-    border: "1px solid rgba(255, 255, 255, 0.3)"
-    description: "Masking-tape mark across the top-center of a post-it via ::after. Translucent white, slightly rotated. Often combined with .pin so a single note has both tape and a tack."
+    position: '::after, top: -15px, centered, rotate(-2deg)'
+    background: rgba(255, 255, 255, 0.4)
+    border: 1px solid rgba(255, 255, 255, 0.3)
+    description: Masking-tape mark across the top-center of a post-it via ::after. Translucent white, slightly rotated. Often
+      combined with .pin so a single note has both tape and a tack.
   card-rotation:
-    rotation: "±1° to ±15°"
-    description: "Every post-it carries a small rotation. Statement and feature cards: ±1° to ±3°. Accent / floating notes: ±5° to ±15° (more dramatic to read as 'casually applied'). Rotations alternate direction across adjacent notes."
+    rotation: ±1° to ±15°
+    description: 'Every post-it carries a small rotation. Statement and feature cards: ±1° to ±3°. Accent / floating notes:
+      ±5° to ±15° (more dramatic to read as ''casually applied''). Rotations alternate direction across adjacent notes.'
   feature-icon:
     width: 60px
     height: 60px
-    border: "3px solid {colors.ink}"
-    borderRadius: "50%"
-    fontFamily: "'Shrikhand', cursive"
+    border: 3px solid {colors.ink}
+    borderRadius: 50%
+    fontFamily: '''Shrikhand'', cursive'
     fontSize: 1.5rem
-    description: "Round ink-bordered icon containing a single character (letter, number, or symbol) in Shrikhand display. Used as a category marker at the top of feature post-its."
+    description: Round ink-bordered icon containing a single character (letter, number, or symbol) in Shrikhand display. Used
+      as a category marker at the top of feature post-its.
   versus-circle:
     width: 60px
     height: 60px
-    background: "{colors.ink}"
-    color: "{colors.paper}"
-    borderRadius: "50%"
-    fontFamily: "'Shrikhand', cursive"
+    background: '{colors.ink}'
+    color: '{colors.paper}'
+    borderRadius: 50%
+    fontFamily: '''Shrikhand'', cursive'
     fontSize: 1.2rem
-    boxShadow: "0 2px 8px {colors.shadow-deep}"
-    description: "Ink-filled circle with cream text used between two compare-cards. Centered between the two cards with absolute positioning; reads as a 'vs' / 'and' connector."
+    boxShadow: 0 2px 8px {colors.shadow-deep}
+    description: Ink-filled circle with cream text used between two compare-cards. Centered between the two cards with absolute
+      positioning; reads as a 'vs' / 'and' connector.
   photo-frame:
-    background: "#fff"
-    padding: "1rem"
-    boxShadow: "2px 3px 15px {colors.shadow}"
-    rotation: "±1° to ±2°"
-    description: "Polaroid-style image frame. White paper with 1rem padding around the inner image area; same drop shadow as post-its; small rotation. The inner image area has a 4:3 aspect ratio."
+    background: '#fff'
+    padding: 1rem
+    boxShadow: 2px 3px 15px {colors.shadow}
+    rotation: ±1° to ±2°
+    description: Polaroid-style image frame. White paper with 1rem padding around the inner image area; same drop shadow as
+      post-its; small rotation. The inner image area has a 4:3 aspect ratio.
   chart-canvas:
-    background: "#fff"
-    padding: "2.5rem"
-    boxShadow: "2px 3px 15px {colors.shadow}"
-    rotation: "±1°"
-    description: "White paper card hosting an inline SVG chart. Same drop shadow as post-its and photo-frames; small rotation. Charts use the post-it color palette for fills."
+    background: '#fff'
+    padding: 2.5rem
+    boxShadow: 2px 3px 15px {colors.shadow}
+    rotation: ±1°
+    description: White paper card hosting an inline SVG chart. Same drop shadow as post-its and photo-frames; small rotation.
+      Charts use the post-it color palette for fills.
   stat-row:
-    borderBottom: "1px dashed rgba(45, 42, 38, 0.2)"
-    padding: "1rem 0"
-    description: "A label-and-value row inside a stat post-it. Label in Zilla Slab body color; value in Shrikhand stat-value. Bottom-divider is a dashed ink-alpha hairline."
+    borderBottom: 1px dashed rgba(45, 42, 38, 0.2)
+    padding: 1rem 0
+    description: A label-and-value row inside a stat post-it. Label in Zilla Slab body color; value in Shrikhand stat-value.
+      Bottom-divider is a dashed ink-alpha hairline.
   doodle:
     opacity: 0.15
-    stroke: "{colors.ink}"
+    stroke: '{colors.ink}'
     strokeWidth: 3
-    description: "Decorative SVG mark placed absolutely in slide corners — a circle, squiggle, triangle, line, or X+ pair. All at 0.15 opacity, all in 3px ink stroke. Slides have 0–2 doodles each."
+    description: Decorative SVG mark placed absolutely in slide corners — a circle, squiggle, triangle, line, or X+ pair.
+      All at 0.15 opacity, all in 3px ink stroke. Slides have 0–2 doodles each.
   timeline-connector:
     height: 60px
-    pathStyle: "Q (quadratic) bezier curve at 0.3 opacity, stroke-dasharray '8 4', polygon arrowhead at end"
-    description: "Dashed quadratic-bezier line between timeline nodes. Curve direction alternates row to row (concave up, concave down). Always ends with a triangle arrowhead."
+    pathStyle: Q (quadratic) bezier curve at 0.3 opacity, stroke-dasharray '8 4', polygon arrowhead at end
+    description: Dashed quadratic-bezier line between timeline nodes. Curve direction alternates row to row (concave up, concave
+      down). Always ends with a triangle arrowhead.
   custom-cursor:
-    cursor: "URL data-svg red-and-white thumbtack, 24×24, hotspot 12×12"
-    description: "Browser cursor replaced with a tiny SVG thumbtack circle (red outer, white center) when hovering over any slide. Reinforces the 'pinning ideas to a board' metaphor."
+    cursor: URL data-svg red-and-white thumbtack, 24×24, hotspot 12×12
+    description: Browser cursor replaced with a tiny SVG thumbtack circle (red outer, white center) when hovering over any
+      slide. Reinforces the 'pinning ideas to a board' metaphor.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

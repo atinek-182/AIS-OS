@@ -1,3 +1,23 @@
+---
+title: This is NOT the Next.js you know
+domain: architecture
+summary: <!-- BEGIN:nextjs-agent-rules --> This version has breaking changes — APIs, conventions, and file structure may all
+  differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed
+  deprecation no
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- This is NOT the Next.js you know
+- Application Building Context
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/AGENTS.md
+- When reading context for This is NOT the Next.js you know
+tags:
+- architecture
+- AGENTS
+updated: '2026-08-08'
+---
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

@@ -1,9 +1,25 @@
 ---
-title: "How I'd Start a 1-Person Business With Claude AI in 30 Days"
-video_id: "gRcBu8LyfGo"
-url: "https://youtu.be/gRcBu8LyfGo"
-channel: "Patrick Dang"
-skills: ["pd-ikigai-pro"]
+title: How I'd Start a 1-Person Business With Claude AI in 30 Days
+domain: brand
+summary: '- **Channel:** Patrick Dang - **Video Link:** [https://youtu.be/gRcBu8LyfGo](https://youtu.be/gRcBu8LyfGo)'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- '📺 YouTube Research: How I''d Start a 1-Person Business With Claude AI in 30 Days'
+- 🎯 Executive Summary & Frameworks
+- 📝 Full Transcript
+read_triggers:
+- When working on brand in second-brain-zorixel/zorixel-brand-os/research/youtube-transcripts/02-1-person-business-claude-30-days.md
+- When reading context for How I'd Start a 1-Person Business With Claude AI in 30 Days
+tags:
+- brand
+- 02-1-person-business-claude-30-days
+updated: '2026-08-08'
+video_id: gRcBu8LyfGo
+url: https://youtu.be/gRcBu8LyfGo
+channel: Patrick Dang
+skills:
+- pd-ikigai-pro
 type: youtube-transcript
 date_ingested: 2026-07-30
 ---

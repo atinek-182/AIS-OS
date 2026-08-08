@@ -1,205 +1,228 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Density philosophy: low to medium.** Broadside is built for negative space. A correctly composed slide pairs one massive'
+- Massive Barlow display type at weight 900 in **lowercase** — never uppercase on display elements.
+- '`{colors.fire-orange}` is both accent (on dark) and environment (on orange) — never a secondary color, always *the* colo'
+- Mono kickers, mono tags, mono catalogue numbers — the chrome voice is always IBM Plex Mono uppercase.
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- The Two Registers
+- Palette
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/broadside/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Broadside
-description: A protest-poster editorial system built on massive Barlow type and a single fire-orange environment color. The aesthetic is "ink on fire" — dark slides for documentation, orange slides for declaration. Display type is enormous (13vw, roughly 187px at 1440 width) in weight 900 lowercase, treating words as graphic elements rather than reading copy. The cultural reference is broadside printing, SPACE10 reports, and Wim Crouwel grids reinterpreted with one loud color and zero decoration.
-
+description: A protest-poster editorial system built on massive Barlow type and a single fire-orange environment color. The
+  aesthetic is "ink on fire" — dark slides for documentation, orange slides for declaration. Display type is enormous (13vw,
+  roughly 187px at 1440 width) in weight 900 lowercase, treating words as graphic elements rather than reading copy. The cultural
+  reference is broadside printing, SPACE10 reports, and Wim Crouwel grids reinterpreted with one loud color and zero decoration.
 colors:
-  ink-black: "#111111"
-  ink-black-alt: "#1A1A18"
-  fire-orange: "#E85D26"
-  cream: "#F0ECE5"
-  cream-muted: "#888880"
-  cream-hint: "#505048"
-  border-dark: "#282826"
-  ink-on-orange-muted: "rgba(17, 17, 17, 0.75)"
-  ink-on-orange-hint: "rgba(17, 17, 17, 0.55)"
-  ink-on-orange-faint: "rgba(17, 17, 17, 0.40)"
-  ink-on-orange-border: "rgba(17, 17, 17, 0.20)"
-
+  ink-black: '#111111'
+  ink-black-alt: '#1A1A18'
+  fire-orange: '#E85D26'
+  cream: '#F0ECE5'
+  cream-muted: '#888880'
+  cream-hint: '#505048'
+  border-dark: '#282826'
+  ink-on-orange-muted: rgba(17, 17, 17, 0.75)
+  ink-on-orange-hint: rgba(17, 17, 17, 0.55)
+  ink-on-orange-faint: rgba(17, 17, 17, 0.40)
+  ink-on-orange-border: rgba(17, 17, 17, 0.20)
 color-aliases:
   c-bg: ink-black
   c-bg-alt: ink-black-alt
-  c-bg-light: ink-black            # Broadside collapses "light" → dark; there are no cream slides
+  c-bg-light: ink-black
   c-bg-orange: fire-orange
   c-fg: cream
   c-fg-2: cream-muted
   c-fg-3: cream-hint
   c-accent: fire-orange
   c-border: border-dark
-
 typography:
   display:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "13vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 13vw
     fontWeight: 900
     lineHeight: 0.88
     letterSpacing: -0.04em
   h1:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "7.5vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 7.5vw
     fontWeight: 800
     lineHeight: 0.9
     letterSpacing: -0.03em
   h2:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "4.5vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 4.5vw
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: -0.02em
   h3:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "2.8vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 2.8vw
     fontWeight: 600
     lineHeight: 1.2
   lead:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "1.6vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 1.6vw
     fontWeight: 400
     lineHeight: 1.5
   body:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "1.2vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 1.2vw
     fontWeight: 400
     lineHeight: 1.6
   caption:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "0.9vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 0.9vw
     fontWeight: 400
     lineHeight: 1.5
   label:
-    fontFamily: "IBM Plex Mono, monospace"
-    fontSize: "0.72vw"
+    fontFamily: IBM Plex Mono, monospace
+    fontSize: 0.72vw
     fontWeight: 500
     lineHeight: 1
     letterSpacing: 0.14em
     textTransform: uppercase
   stat-value:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "5.5vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 5.5vw
     fontWeight: 900
     lineHeight: 1
     letterSpacing: -0.04em
   quote-mark:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "10vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 10vw
     fontWeight: 900
     lineHeight: 0.6
   quote-text:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "3.8vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 3.8vw
     fontWeight: 700
     lineHeight: 1.15
     letterSpacing: -0.02em
   fadelist-item:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "7.5vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 7.5vw
     fontWeight: 900
     lineHeight: 1
     letterSpacing: -0.03em
   fadelist-title:
-    fontFamily: "Barlow, Noto Sans SC, sans-serif"
-    fontSize: "10.5vw"
+    fontFamily: Barlow, Noto Sans SC, sans-serif
+    fontSize: 10.5vw
     fontWeight: 900
     lineHeight: 0.9
     letterSpacing: -0.04em
-
 spacing:
-  pad-x: "5.5vw"
-  pad-y: "5.5vh"
-  gap-lg: "3.5vh"
-  gap-md: "2vh"
-  gap-sm: "1vh"
-
+  pad-x: 5.5vw
+  pad-y: 5.5vh
+  gap-lg: 3.5vh
+  gap-md: 2vh
+  gap-sm: 1vh
 canvas:
   width: 100vw
   height: 100vh
-
 motion:
-  ease-slide: "cubic-bezier(0.77, 0, 0.175, 1)"
-  dur-slide: "0.8s"
-  ease-enter: "cubic-bezier(0.16, 1, 0.3, 1)"
-  dur-enter: "0.5s"
-
+  ease-slide: cubic-bezier(0.77, 0, 0.175, 1)
+  dur-slide: 0.8s
+  ease-enter: cubic-bezier(0.16, 1, 0.3, 1)
+  dur-enter: 0.5s
 components:
   slide-chrome:
-    layout: "flex row, justify space-between"
-    paddingBottom: "{spacing.gap-sm}"
-    borderBottom: "1px solid {colors.border-dark}"
-    marginBottom: "{spacing.gap-md}"
-    description: "Top chrome bar carrying section label on left, slide number/meta on right. Suppressed on cover, chapter, quote, and end slides."
+    layout: flex row, justify space-between
+    paddingBottom: '{spacing.gap-sm}'
+    borderBottom: 1px solid {colors.border-dark}
+    marginBottom: '{spacing.gap-md}'
+    description: Top chrome bar carrying section label on left, slide number/meta on right. Suppressed on cover, chapter,
+      quote, and end slides.
   slide-foot:
-    layout: "flex row, justify space-between"
-    paddingTop: "{spacing.gap-sm}"
-    borderTop: "1px solid {colors.border-dark}"
-    marginTop: "{spacing.gap-md}"
-    description: "Bottom chrome bar, mirrors top chrome. Same suppression rules."
+    layout: flex row, justify space-between
+    paddingTop: '{spacing.gap-sm}'
+    borderTop: 1px solid {colors.border-dark}
+    marginTop: '{spacing.gap-md}'
+    description: Bottom chrome bar, mirrors top chrome. Same suppression rules.
   rule:
     width: 36px
     height: 2px
-    background: "{colors.fire-orange}"
-    description: "Stub accent rule. On orange slides this flips to {colors.ink-black}."
+    background: '{colors.fire-orange}'
+    description: Stub accent rule. On orange slides this flips to {colors.ink-black}.
   rule-full:
-    width: "100%"
+    width: 100%
     height: 2px
-    background: "{colors.border-dark}"
+    background: '{colors.border-dark}'
   kicker:
-    fontFamily: "{typography.label.fontFamily}"
-    fontSize: "{typography.label.fontSize}"
+    fontFamily: '{typography.label.fontFamily}'
+    fontSize: '{typography.label.fontSize}'
     letterSpacing: 0.14em
     textTransform: uppercase
-    color: "{colors.fire-orange}"
-    description: "Eyebrow above headlines. Orange on dark; dark-ink-at-55%-opacity on orange."
+    color: '{colors.fire-orange}'
+    description: Eyebrow above headlines. Orange on dark; dark-ink-at-55%-opacity on orange.
   tag:
-    fontFamily: "{typography.label.fontFamily}"
-    fontSize: "{typography.label.fontSize}"
+    fontFamily: '{typography.label.fontFamily}'
+    fontSize: '{typography.label.fontSize}'
     letterSpacing: 0.14em
     textTransform: uppercase
-    color: "{colors.fire-orange}"
-    border: "1px solid {colors.fire-orange}"
-    padding: "0.3em 0.8em"
-    description: "Bordered mono tag. On orange slides flips to dark ink with 40%-opacity dark border."
+    color: '{colors.fire-orange}'
+    border: 1px solid {colors.fire-orange}
+    padding: 0.3em 0.8em
+    description: Bordered mono tag. On orange slides flips to dark ink with 40%-opacity dark border.
   broadside-num:
-    fontFamily: "IBM Plex Mono, monospace"
-    fontSize: "1.1vw"
+    fontFamily: IBM Plex Mono, monospace
+    fontSize: 1.1vw
     fontWeight: 500
     letterSpacing: 0.1em
-    color: "rgba(17, 17, 17, 0.45)"
-    description: "Catalogue-style slide number, typically anchored top-left on orange slides. On dark slides, color shifts to {colors.cream-hint}."
+    color: rgba(17, 17, 17, 0.45)
+    description: Catalogue-style slide number, typically anchored top-left on orange slides. On dark slides, color shifts
+      to {colors.cream-hint}.
   stat-card:
-    borderTop: "1px solid {colors.border-dark}"
-    padding: "{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0"
-    description: "Top-border-only data card. Big orange numeral above body label above mono note."
+    borderTop: 1px solid {colors.border-dark}
+    padding: '{spacing.gap-md} {spacing.gap-md} {spacing.gap-md} 0'
+    description: Top-border-only data card. Big orange numeral above body label above mono note.
   bullet-marker:
-    content: "/"
-    color: "{colors.fire-orange}"
-    fontFamily: "IBM Plex Mono, monospace"
+    content: /
+    color: '{colors.fire-orange}'
+    fontFamily: IBM Plex Mono, monospace
     fontWeight: 700
-    description: "Slash glyph rendered via ::before on every bullet item. Orange on dark, dark-at-45%-opacity on orange."
+    description: Slash glyph rendered via ::before on every bullet item. Orange on dark, dark-at-45%-opacity on orange.
   compare-panel-left:
-    paddingRight: "calc({spacing.pad-x} * 0.55)"
-    borderRight: "1px solid {colors.border-dark}"
+    paddingRight: calc({spacing.pad-x} * 0.55)
+    borderRight: 1px solid {colors.border-dark}
   compare-panel-right:
-    paddingLeft: "calc({spacing.pad-x} * 0.55)"
+    paddingLeft: calc({spacing.pad-x} * 0.55)
   compare-panel-orange:
-    background: "{colors.fire-orange}"
-    description: "Right-half panel filled with fire orange — the 'after' or payoff side in compare layouts."
+    background: '{colors.fire-orange}'
+    description: Right-half panel filled with fire orange — the 'after' or payoff side in compare layouts.
   bar-track:
-    height: "30vh"
-    borderLeft: "1px solid {colors.border-dark}"
-    description: "Vertical bar chart container. Bars are cream-hint by default; one bar per chart gets the .accent class for fire orange."
+    height: 30vh
+    borderLeft: 1px solid {colors.border-dark}
+    description: Vertical bar chart container. Bars are cream-hint by default; one bar per chart gets the .accent class for
+      fire orange.
   bar-fill:
-    background: "{colors.cream-hint}"
+    background: '{colors.cream-hint}'
   bar-fill-accent:
-    background: "{colors.fire-orange}"
+    background: '{colors.fire-orange}'
   img-placeholder:
-    height: "55vh"
-    background: "rgba(255, 255, 255, 0.04)"
-    border: "1px dashed {colors.border-dark}"
+    height: 55vh
+    background: rgba(255, 255, 255, 0.04)
+    border: 1px dashed {colors.border-dark}
     textTransform: uppercase
     letterSpacing: 0.12em
-    description: "Dashed-border placeholder shown when no image is wired. Same 55vh footprint as a real img."
+    description: Dashed-border placeholder shown when no image is wired. Same 55vh footprint as a real img.
   fadelist-stack:
-    description: "Vertical stack of three display-weight words, opacities 1.0 / 0.5 / 0.22 top-to-bottom. The SPACE10 'before/during/after' treatment."
+    description: Vertical stack of three display-weight words, opacities 1.0 / 0.5 / 0.22 top-to-bottom. The SPACE10 'before/during/after'
+      treatment.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

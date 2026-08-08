@@ -1,261 +1,297 @@
 ---
+title: Design
+domain: skill
+summary: When this design system is used by the `frontend-slides` skill, generate the final deck as a **fixed 1920×1080 stage**
+  that scales uniformly to the browser viewport. The deck should preserve a 16:9 slide canvas on every screen, including phones;
+  it m
+critical_directives:
+- 'Black** (`{colors.black}` — #1A1A1A): Near-black ink. Used as headline color on cream surfaces, as the full-background
+  i'
+- 'Default headline color on coral surfaces**: `{colors.black}` — ink-on-fire. Bebas on coral is always ink, never white.'
+- Every Bebas Neue element is set in its native uppercase.** Bebas Neue in sentence case does not exist — the typeface its
+- 'Every Bebas headline is rendered in `{colors.black}`, `{colors.cream}`, or `{colors.coral}`** based on surface contrast '
+section_outline:
+- Frontend Slides Fixed-Stage Policy
+- Overview
+- Colors
+- Three-Surface System
+- Defaults
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/coral/design.md
+- When reading context for Design
+tags:
+- skill
+- design
+updated: '2026-08-08'
 version: alpha
 name: Coral
-description: "A bold magazine-poster system that runs on three surface registers — coral fire, ink black, and warm cream — animated by Bebas Neue display caps and a constant 45° diagonal hatch pattern. Inter handles body copy; Bebas Neue handles every headline, stat, title, and meta-figure at heavy letter-spacing. The cultural reference is mid-century travel posters, Saul Bass film titles, and modern editorial sport magazines: solid color planes meeting at hard edges, oversized condensed caps as architectural elements, and a single coral hue used both as accent and as full-slide environment."
-
+description: 'A bold magazine-poster system that runs on three surface registers — coral fire, ink black, and warm cream —
+  animated by Bebas Neue display caps and a constant 45° diagonal hatch pattern. Inter handles body copy; Bebas Neue handles
+  every headline, stat, title, and meta-figure at heavy letter-spacing. The cultural reference is mid-century travel posters,
+  Saul Bass film titles, and modern editorial sport magazines: solid color planes meeting at hard edges, oversized condensed
+  caps as architectural elements, and a single coral hue used both as accent and as full-slide environment.'
 colors:
-  coral: "#E85D5D"
-  coral-dark: "#D44A4A"
-  cream: "#F5F0E8"
-  cream-dark: "#E8E0D4"
-  black: "#1A1A1A"
-  gray: "#6B6B6B"
-  light-gray: "#B0B0B0"
-  white: "#FFFFFF"
-
+  coral: '#E85D5D'
+  coral-dark: '#D44A4A'
+  cream: '#F5F0E8'
+  cream-dark: '#E8E0D4'
+  black: '#1A1A1A'
+  gray: '#6B6B6B'
+  light-gray: '#B0B0B0'
+  white: '#FFFFFF'
 color-aliases:
   bg: cream
   ink: black
-
 typography:
   hero-title:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "min(120px, 9vw, 13vh)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: min(120px, 9vw, 13vh)
     fontWeight: 400
     lineHeight: 0.9
     letterSpacing: 4px
   jumbo-feature:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(80px, 15vw, 200px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(80px, 15vw, 200px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 12px
   display-statement:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(42px, 7vw, 100px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(42px, 7vw, 100px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   section-headline:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(40px, 6vw, 80px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(40px, 6vw, 80px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   column-title:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(36px, 5vw, 72px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(36px, 5vw, 72px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   stat-numeral:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(48px, 7vw, 96px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(48px, 7vw, 96px)
     fontWeight: 400
     lineHeight: 1
   card-stat:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(36px, 4vw, 56px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(36px, 4vw, 56px)
     fontWeight: 400
     lineHeight: 1
   sidebar-value:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(28px, 3vw, 48px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(28px, 3vw, 48px)
     fontWeight: 400
     lineHeight: 1
   card-title:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(24px, 2.5vw, 36px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(24px, 2.5vw, 36px)
     fontWeight: 400
     lineHeight: 1.1
     letterSpacing: 1px
   bar-title:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(28px, 4vw, 56px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(28px, 4vw, 56px)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   meta-figure:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "min(44px, 3.5vw, 5.5vh)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: min(44px, 3.5vw, 5.5vh)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   meta-date:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "min(38px, 3vw, 4.8vh)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: min(38px, 3vw, 4.8vh)
     fontWeight: 400
     lineHeight: 1
     letterSpacing: 2px
   background-numeral:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(100px, 15vw, 200px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(100px, 15vw, 200px)
     fontWeight: 400
     lineHeight: 1
-    description: "Decorative oversized numeral placed inside a coral region at rgba(0,0,0,0.12) — wallpaper opacity. Sits behind the actual column title at full opacity."
+    description: Decorative oversized numeral placed inside a coral region at rgba(0,0,0,0.12) — wallpaper opacity. Sits behind
+      the actual column title at full opacity.
   giant-mark:
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "clamp(140px, 20vw, 280px)"
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: clamp(140px, 20vw, 280px)
     fontWeight: 400
     lineHeight: 1
-    description: "Oversized quote mark or single character placed inside a coral region at opacity 0.35 — half-decorative, half-content."
+    description: Oversized quote mark or single character placed inside a coral region at opacity 0.35 — half-decorative,
+      half-content.
   body:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(15px, 1.4vw, 20px)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(15px, 1.4vw, 20px)
     fontWeight: 400
     lineHeight: 1.7
   body-sm:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(13px, 1.1vw, 16px)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(13px, 1.1vw, 16px)
     fontWeight: 400
     lineHeight: 1.6
   body-light:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(20px, 2.5vw, 36px)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(20px, 2.5vw, 36px)
     fontWeight: 300
     lineHeight: 1.5
-    description: "Lighter-weight Inter for pull quotes — weight 300 to contrast against the Bebas Neue dominant voice."
+    description: Lighter-weight Inter for pull quotes — weight 300 to contrast against the Bebas Neue dominant voice.
   item-text:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(14px, 1.2vw, 18px)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(14px, 1.2vw, 18px)
     fontWeight: 400
     lineHeight: 1.6
   card-text:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "clamp(13px, 1.1vw, 16px)"
+    fontFamily: Inter, sans-serif
+    fontSize: clamp(13px, 1.1vw, 16px)
     fontWeight: 400
     lineHeight: 1.6
   bar-meta:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "12px"
+    fontFamily: Inter, sans-serif
+    fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 2px
     textTransform: uppercase
   section-label:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "12px"
+    fontFamily: Inter, sans-serif
+    fontSize: 12px
     fontWeight: 700
     lineHeight: 1
     letterSpacing: 4px
     textTransform: uppercase
   item-label:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "11px"
+    fontFamily: Inter, sans-serif
+    fontSize: 11px
     fontWeight: 700
     lineHeight: 1
     letterSpacing: 3px
     textTransform: uppercase
   meta-label:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "11px"
+    fontFamily: Inter, sans-serif
+    fontSize: 11px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 3px
     textTransform: uppercase
   sidebar-label:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "12px"
+    fontFamily: Inter, sans-serif
+    fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 1px
   quote-attribution:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "14px"
+    fontFamily: Inter, sans-serif
+    fontSize: 14px
     fontWeight: 600
     lineHeight: 1
     letterSpacing: 3px
     textTransform: uppercase
   quote-role:
-    fontFamily: "Inter, sans-serif"
-    fontSize: "12px"
+    fontFamily: Inter, sans-serif
+    fontSize: 12px
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 1px
-
 spacing:
-  pad-y: "clamp(40px, 6vh, 80px)"
-  pad-x: "clamp(40px, 8vw, 100px)"
-  pad-y-tight: "clamp(28px, 4.5vh, 60px)"
-  pad-col: "clamp(32px, 4vw, 60px)"
-  gap-grid: "32px"
-  gap-md: "40px"
-  card-pad: "clamp(24px, 3vh, 40px)"
-  bar-pad: "clamp(24px, 4vh, 40px)"
-
+  pad-y: clamp(40px, 6vh, 80px)
+  pad-x: clamp(40px, 8vw, 100px)
+  pad-y-tight: clamp(28px, 4.5vh, 60px)
+  pad-col: clamp(32px, 4vw, 60px)
+  gap-grid: 32px
+  gap-md: 40px
+  card-pad: clamp(24px, 3vh, 40px)
+  bar-pad: clamp(24px, 4vh, 40px)
 canvas:
   width: 100vw
   height: 100vh
-
 components:
   diagonal-hatch:
-    background: "repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.06) 20px, rgba(0,0,0,0.06) 40px)"
-    description: "Signature 45° diagonal hatch pattern in 6%-opacity black. Applied as a pseudo-element overlay on coral regions to provide texture without changing the surface color. Variant: -45° hatch on coral quote-left, with 30/60px stride. Variant: 90° vertical hatch in 10%-opacity black on coral gradient regions, with 60/62px stride. The hatch is a per-region atmospheric treatment, not a slide-level overlay."
+    background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.06) 20px, rgba(0,0,0,0.06) 40px)
+    description: 'Signature 45° diagonal hatch pattern in 6%-opacity black. Applied as a pseudo-element overlay on coral regions
+      to provide texture without changing the surface color. Variant: -45° hatch on coral quote-left, with 30/60px stride.
+      Variant: 90° vertical hatch in 10%-opacity black on coral gradient regions, with 60/62px stride. The hatch is a per-region
+      atmospheric treatment, not a slide-level overlay.'
   accent-line:
-    width: "80px"
-    height: "4px"
-    background: "{colors.coral}"
-    description: "Solid 80×4 coral rectangle used as a sub-headline accent rule. Closing or section-divider variant uses 60×4."
+    width: 80px
+    height: 4px
+    background: '{colors.coral}'
+    description: Solid 80×4 coral rectangle used as a sub-headline accent rule. Closing or section-divider variant uses 60×4.
   quote-accent:
-    width: "60px"
-    height: "4px"
-    background: "{colors.coral}"
-    description: "60×4 coral rectangle placed above a quote attribution as a terminal accent."
+    width: 60px
+    height: 4px
+    background: '{colors.coral}'
+    description: 60×4 coral rectangle placed above a quote attribution as a terminal accent.
   title-rule:
-    width: "100%"
-    height: "3px"
-    background: "{colors.black}"
+    width: 100%
+    height: 3px
+    background: '{colors.black}'
     opacity: 0.15
-    description: "Full-width 3px ink rule at 15% opacity used as a subtle horizontal divider beneath the hero title on the cover composition."
+    description: Full-width 3px ink rule at 15% opacity used as a subtle horizontal divider beneath the hero title on the
+      cover composition.
   card:
-    background: "{colors.white}"
-    padding: "{spacing.card-pad}"
-    borderTop: "5px solid {colors.coral}"
-    description: "Column card — white surface with a 5px solid coral top border as the only border on the element. No shadow, no radius."
+    background: '{colors.white}'
+    padding: '{spacing.card-pad}'
+    borderTop: 5px solid {colors.coral}
+    description: Column card — white surface with a 5px solid coral top border as the only border on the element. No shadow,
+      no radius.
   sidebar-item:
-    background: "{colors.white}"
-    padding: "20px 24px"
-    borderLeft: "4px solid {colors.coral}"
-    description: "Compact data tile — white surface with a 4px solid coral left border. Holds a Bebas value and an Inter label."
+    background: '{colors.white}'
+    padding: 20px 24px
+    borderLeft: 4px solid {colors.coral}
+    description: Compact data tile — white surface with a 4px solid coral left border. Holds a Bebas value and an Inter label.
   card-icon:
-    width: "48px"
-    height: "48px"
-    background: "{colors.coral}"
-    fontFamily: "Bebas Neue, sans-serif"
-    fontSize: "24px"
-    color: "{colors.white}"
-    description: "48px solid coral square (no radius) containing a 1-character Bebas Neue glyph in white. Used as a card mark."
+    width: 48px
+    height: 48px
+    background: '{colors.coral}'
+    fontFamily: Bebas Neue, sans-serif
+    fontSize: 24px
+    color: '{colors.white}'
+    description: 48px solid coral square (no radius) containing a 1-character Bebas Neue glyph in white. Used as a card mark.
   timeline-line:
-    height: "4px"
-    background: "{colors.black}"
-    description: "Horizontal 4px solid ink line spanning the timeline width. A ::after pseudo overlays a repeating linear-gradient (20px ink + 10px transparent) to create a dashed effect. The dashed pattern is rendered through the gradient, not the border-style."
+    height: 4px
+    background: '{colors.black}'
+    description: Horizontal 4px solid ink line spanning the timeline width. A ::after pseudo overlays a repeating linear-gradient
+      (20px ink + 10px transparent) to create a dashed effect. The dashed pattern is rendered through the gradient, not the
+      border-style.
   t-point-dot:
-    width: "20px"
-    height: "20px"
-    borderRadius: "50%"
-    background: "{colors.coral}"
-    border: "4px solid {colors.cream}"
-    description: "Timeline node — 20px coral circle with a 4px cream halo, sitting on the timeline-line."
+    width: 20px
+    height: 20px
+    borderRadius: 50%
+    background: '{colors.coral}'
+    border: 4px solid {colors.cream}
+    description: Timeline node — 20px coral circle with a 4px cream halo, sitting on the timeline-line.
   nav-dot:
-    width: "10px"
-    height: "10px"
-    borderRadius: "50%"
-    background: "rgba(255, 255, 255, 0.3)"
-    border: "2px solid rgba(255, 255, 255, 0.5)"
-    description: "Small 10px nav indicator. White-translucent default on dark/coral surfaces; ink-translucent .dark variant on cream surfaces. Active state fills with coral."
+    width: 10px
+    height: 10px
+    borderRadius: 50%
+    background: rgba(255, 255, 255, 0.3)
+    border: 2px solid rgba(255, 255, 255, 0.5)
+    description: Small 10px nav indicator. White-translucent default on dark/coral surfaces; ink-translucent .dark variant
+      on cream surfaces. Active state fills with coral.
   nav-arrow:
-    width: "44px"
-    height: "44px"
-    borderRadius: "50%"
-    background: "rgba(255, 255, 255, 0.1)"
-    border: "2px solid rgba(255, 255, 255, 0.3)"
-    description: "44px circular nav button with translucent fill and 2px translucent border. .dark variant for cream surfaces. Hover state fills with coral."
+    width: 44px
+    height: 44px
+    borderRadius: 50%
+    background: rgba(255, 255, 255, 0.1)
+    border: 2px solid rgba(255, 255, 255, 0.3)
+    description: 44px circular nav button with translucent fill and 2px translucent border. .dark variant for cream surfaces.
+      Hover state fills with coral.
   zigzag-layer:
-    description: "SVG zigzag pattern overlay used decoratively on the cover's coral top-section. Renders as a thin black zigzag line at low opacity behind the title."
+    description: SVG zigzag pattern overlay used decoratively on the cover's coral top-section. Renders as a thin black zigzag
+      line at low opacity behind the title.
   pattern-overlay:
-    description: "Decorative repeating-pattern overlay applied to feature regions — typically 90° vertical hatch in ink at 10% opacity on coral gradient backgrounds. Separate from the 45° diagonal-hatch which is the system's primary texture."
+    description: Decorative repeating-pattern overlay applied to feature regions — typically 90° vertical hatch in ink at
+      10% opacity on coral gradient backgrounds. Separate from the 45° diagonal-hatch which is the system's primary texture.
   bar-fill:
-    description: "Chart.js horizontal bar fills use solid coral (#E85D5D) as the primary series color, with a darker coral (#D44A4A) for comparison or secondary series."
+    description: Chart.js horizontal bar fills use solid coral (#E85D5D) as the primary series color, with a darker coral
+      (#D44A4A) for comparison or secondary series.
 ---
 
 ## Frontend Slides Fixed-Stage Policy

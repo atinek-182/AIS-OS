@@ -1,3 +1,29 @@
+---
+title: Motion
+domain: skill
+summary: Most AI-generated motion is scattered — hover lifts on every card, fade-in on every scroll, bouncing icons. Quiet
+  it. One orchestrated moment beats ten small ones. - **Animate only `transform` and `opacity`.** These are GPU-composited;
+  they don't tri
+critical_directives:
+- Use IntersectionObserver, **never** `scroll` event listeners.
+- Every scroll-triggered motion must have a reduced-motion fallback.
+- 'Button hover / active: micro duration, `--ease-out`, `transform: translateY(-1px)` on hover, `translateY(0)` on active. '
+- Infinite loops (other than functional loaders) — they pull the eye and never let go.
+section_outline:
+- Motion
+- Principles
+- Easings
+- Durations
+- Page-load orchestration
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/motion.md
+- When reading context for Motion
+tags:
+- skill
+- motion
+updated: '2026-08-08'
+---
+
 # Motion
 
 Most AI-generated motion is scattered — hover lifts on every card, fade-in on every scroll, bouncing icons. Quiet it. One orchestrated moment beats ten small ones.

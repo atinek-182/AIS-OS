@@ -1,6 +1,28 @@
 ---
+title: Setup Matt Pocock's Skills
+domain: skill
+summary: 'Scaffold the per-repo configuration that the engineering skills assume: - **Issue tracker** — where issues live
+  (GitHub by default; local markdown is also supported out of the box)'
+critical_directives:
+- Domain docs** — where `CONTEXT.md` and ADRs live, and the consumer rules for reading them
+- The `## Agent skills` block to add to whichever of `CLAUDE.md` / `AGENTS.md` is being edited (see step 4 for selection r
+- '[domain.md](./domain.md) — domain doc consumer rules + layout'
+section_outline:
+- Setup Matt Pocock's Skills
+- Process
+- 1. Explore
+- 2. Present findings and ask
+- 3. Confirm and edit
+read_triggers:
+- When working on skill in .agents/skills/setup-matt-pocock-skills/SKILL.md
+- When reading context for Setup Matt Pocock's Skills
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: setup-matt-pocock-skills
-description: Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.
+description: Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain
+  doc layout. Run once before first use of the other engineering skills.
 disable-model-invocation: true
 ---
 

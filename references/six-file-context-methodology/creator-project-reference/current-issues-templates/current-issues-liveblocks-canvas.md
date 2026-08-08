@@ -1,3 +1,22 @@
+---
+title: Current Issues Liveblocks Canvas
+domain: architecture
+summary: Review the editor canvas implementation and fix the visual issues. The canvas currently looks like it's floating
+  above the background inside a border box, instead of feeling like a real design canvas. Check `/context/screenshots/image.png`
+  for the cu
+critical_directives:
+- 'Sidebars must use position: fixed or position: absolute with a higher z-index so the canvas extends '
+section_outline:
+- Current Issues Liveblocks Canvas
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/current-issues-templates/current-issues-liveblocks-canvas.md
+- When reading context for Current Issues Liveblocks Canvas
+tags:
+- architecture
+- current-issues-liveblocks-canvas
+updated: '2026-08-08'
+---
+
 Review the editor canvas implementation and fix the visual issues. The canvas currently looks like it's floating above the background inside a border box, instead of feeling like a real design canvas. Check `/context/screenshots/image.png` for the current broken state.
 
 Read the current canvas component code in `components/editor`

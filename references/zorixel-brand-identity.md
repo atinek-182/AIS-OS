@@ -1,3 +1,25 @@
+---
+title: ZORIXEL Master Brand Identity v3.0 Reference Manual
+domain: brand
+summary: '- **Obsidian Midnight** (`#0D0E12`): Primary dark canvas background. - **Warm Linen Cream** (`#FAF8F5`): Primary
+  light canvas background.'
+critical_directives:
+- '`Nuqun-Regular`: Official Logotype / Logo Mark ONLY (`projects/font-showcase/zorixel_logo_solid_whit'
+- Fills must be solid, crisp, and flat.
+section_outline:
+- ZORIXEL Master Brand Identity v3.0 Reference Manual
+- Core Brand Palette
+- Typography Hierarchy
+- Zero-Gradient & Zero-Glassmorphism Rule
+read_triggers:
+- When working on brand in references/zorixel-brand-identity.md
+- When reading context for ZORIXEL Master Brand Identity v3.0 Reference Manual
+tags:
+- brand
+- zorixel-brand-identity
+updated: '2026-08-08'
+---
+
 # ZORIXEL Master Brand Identity v3.0 Reference Manual
 
 ## Core Brand Palette

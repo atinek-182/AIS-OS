@@ -1,3 +1,23 @@
+---
+title: 25 Sidebar Chat Feed
+domain: architecture
+summary: Add real-time room chat to the AI sidebar using a separate Liveblocks `ai-chat` feed. This is only for chat messages.
+  Keep it separate from `ai-status-feed`, which handles AI progress and presence updates.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/25-sidebar-chat-feed.md
+- When reading context for 25 Sidebar Chat Feed
+tags:
+- architecture
+- 25-sidebar-chat-feed
+updated: '2026-08-08'
+---
+
 Add real-time room chat to the AI sidebar using a separate Liveblocks `ai-chat` feed.
 
 This is only for chat messages. Keep it separate from `ai-status-feed`, which handles AI progress and presence updates.

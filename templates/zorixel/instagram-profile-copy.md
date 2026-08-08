@@ -1,9 +1,28 @@
 ---
-title: "Instagram Profile Copy"
+title: Instagram Profile Copy
+domain: architecture
+summary: This template contains the active working copy for ZORIXEL's Instagram profile. - **Confirmed Handle:** `@zorixel`
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Instagram Profile Copy
+- 1. Profile Core Details
+- Username
+- Display Name Options
+- 2. Bio Copy Options
+read_triggers:
+- When working on architecture in second-brain-zorixel/wiki/templates/instagram-profile-copy.md
+- When reading context for Instagram Profile Copy
+tags:
+- instagram
+- templates
+- ai-agency
+updated: '2026-08-08'
 type: Template
 status: Active
-tags: [instagram, templates, ai-agency]
-sources: [decisions/log.md, GEMINI.md]
+sources:
+- decisions/log.md
+- GEMINI.md
 last_updated: 2026-08-01
 ---
 

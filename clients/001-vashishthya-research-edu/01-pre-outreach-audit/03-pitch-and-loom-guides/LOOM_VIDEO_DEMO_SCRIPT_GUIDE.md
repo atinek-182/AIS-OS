@@ -1,3 +1,27 @@
+---
+title: Vashishthya Client Demo & Loom Video Presentation Guide
+domain: audit
+summary: '**Target Client:** Dr. Prashant Singh & Dr. Pooja Singh (Vashishthya Research Education Foundation) **Goal:** Pre-Recording
+  System Verification + Line-by-Line Interactive Loom Video Pitch Blueprint'
+critical_directives:
+- Whenever a scholar calls your team, anyone on your staff opens this clean Call Intake Form on their phone or laptop.
+- 'Your staff can also check off workflow tasks as they complete research steps, and this visual progress bar updates live '
+- '"Now, you never have to worry about losing data, file corruption, or training staff on complicated software.'
+section_outline:
+- Vashishthya Client Demo & Loom Video Presentation Guide
+- 'PART 1: PRE-RECORDING TAB SETUP (BEFORE PRESSING RECORD)'
+- 'Pre-Record Checklist:'
+- 'PART 2: STRATEGIC AUDIT & RECORDING RULES (WHAT NOT TO DO)'
+- 'PART 3: FULL WORD-FOR-WORD LOOM VIDEO SCRIPT & SCREEN CHOREOGRAPHY'
+read_triggers:
+- When working on audit in clients/001-vashishthya-research-edu/01-pre-outreach-audit/03-pitch-and-loom-guides/LOOM_VIDEO_DEMO_SCRIPT_GUIDE.md
+- When reading context for Vashishthya Client Demo & Loom Video Presentation Guide
+tags:
+- audit
+- LOOM_VIDEO_DEMO_SCRIPT_GUIDE
+updated: '2026-08-08'
+---
+
 # Vashishthya Client Demo & Loom Video Presentation Guide
 
 **Target Client:** Dr. Prashant Singh & Dr. Pooja Singh (Vashishthya Research Education Foundation)  

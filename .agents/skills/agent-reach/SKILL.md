@@ -1,12 +1,28 @@
 ---
+title: Agent Reach Skill (`/agent-reach`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/agent-reach [command|doctor|url|platform
+  query]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Agent Reach Skill (`/agent-reach`)
+- Invocation & Tri-Mode Routing
+- Capabilities & Usage Guide
+- 1. Diagnostics & Health Check
+- 2. Supported Platforms & Quick Commands
+read_triggers:
+- When working on skill in .agents/skills/agent-reach/SKILL.md
+- When reading context for Agent Reach Skill (`/agent-reach`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: agent-reach
-description: Give your AI Agent eyes to see the entire internet. Search + read 10+
-  social & web platforms (YouTube, Bilibili, V2EX, GitHub, Twitter, Reddit, RSS, Xueqiu).
-  Invokable directly via /agent-reach.
+description: Give your AI Agent eyes to see the entire internet. Search + read 10+ social & web platforms (YouTube, Bilibili,
+  V2EX, GitHub, Twitter, Reddit, RSS, Xueqiu). Invokable directly via /agent-reach.
 argument-hint: '[command|doctor|url|platform query]'
 ---
-
-
 
 # Agent Reach Skill (`/agent-reach`)
 

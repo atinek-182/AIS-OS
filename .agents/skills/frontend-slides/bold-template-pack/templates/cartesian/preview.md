@@ -1,3 +1,28 @@
+---
+title: Cartesian Preview Card
+domain: skill
+summary: 'Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.
+  - Full design doc: `bold-template-pack/templates/cartesian/design.md`'
+critical_directives:
+- The rendered preview must look like a real first slide, not a template-selection card.
+- 'Never place internal workflow text on the slide: no `preview`, `generated from`, `preview.md`, `template`, `preset`, `st'
+- Never place the template name or slug on the slide itself; mention it only in the chat message.
+- Never place user requirement notes such as desired vibe, audience, or internal-use labels on the slide unless the user e
+section_outline:
+- Cartesian Preview Card
+- Files
+- Selection Metadata
+- Visual Snapshot
+- Preview Ingredients
+read_triggers:
+- When working on skill in .agents/skills/frontend-slides/bold-template-pack/templates/cartesian/preview.md
+- When reading context for Cartesian Preview Card
+tags:
+- skill
+- preview
+updated: '2026-08-08'
+---
+
 # Cartesian Preview Card
 
 Use this small file for title-slide previews only. For final deck generation, read the full design doc listed below.

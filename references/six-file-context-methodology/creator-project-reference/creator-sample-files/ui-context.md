@@ -1,3 +1,26 @@
+---
+title: UI Context
+domain: architecture
+summary: Dark only. No light mode. The visual language is a dark technical workspace — near-black backgrounds, layered surfaces,
+  and vivid accent colors for interactive elements. All colors are defined as CSS custom properties in `globals.css` and mapped
+  to T
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- UI Context
+- Theme
+- Typography
+- Border Radius
+- Canvas
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/creator-sample-files/ui-context.md
+- When reading context for UI Context
+tags:
+- architecture
+- ui-context
+updated: '2026-08-08'
+---
+
 # UI Context
 
 ## Theme

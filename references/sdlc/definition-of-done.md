@@ -1,3 +1,26 @@
+---
+title: Definition of Done
+domain: architecture
+summary: A standing, project-wide bar that every change must clear before it counts as done. Unlike acceptance criteria, which
+  vary per task and answer "did we build the right thing?", the Definition of Done is the same every time and answers "is
+  this finishe
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Definition of Done
+- Definition of Done vs. Acceptance Criteria
+- The Standing Checklist
+- Correctness
+- Quality
+read_triggers:
+- When working on architecture in references/sdlc/definition-of-done.md
+- When reading context for Definition of Done
+tags:
+- architecture
+- definition-of-done
+updated: '2026-08-08'
+---
+
 # Definition of Done
 
 A standing, project-wide bar that every change must clear before it counts as done. Unlike acceptance criteria, which vary per task and answer "did we build the right thing?", the Definition of Done is the same every time and answers "is this finished to our standard?". Use it as the final gate in `planning-and-task-breakdown`, `incremental-implementation`, and `shipping-and-launch`.

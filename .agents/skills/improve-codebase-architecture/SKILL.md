@@ -1,6 +1,27 @@
 ---
+title: Improve Codebase Architecture
+domain: skill
+summary: Surface architectural friction and propose **deepening opportunities** — refactors that turn shallow modules into
+  deep ones. The aim is testability and AI-navigability. This command is _informed_ by the project's domain model and built
+  on a shared de
+critical_directives:
+- 'ADR conflicts**: if a candidate contradicts an existing ADR, only surface it when the friction is real enough to warrant'
+section_outline:
+- Improve Codebase Architecture
+- Process
+- 1. Explore
+- 2. Present candidates as an HTML report
+- 3. Grilling loop
+read_triggers:
+- When working on skill in .agents/skills/improve-codebase-architecture/SKILL.md
+- When reading context for Improve Codebase Architecture
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: improve-codebase-architecture
-description: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
+description: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever
+  one you pick.
 disable-model-invocation: true
 ---
 

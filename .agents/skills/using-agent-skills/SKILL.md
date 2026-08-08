@@ -1,6 +1,27 @@
 ---
+title: Using Agent Skills
+domain: skill
+summary: Agent Skills is a collection of engineering workflow skills organized by development phase. Each skill encodes a
+  specific process that senior engineers follow. This meta-skill helps you discover and apply the right skill for your current
+  task. When a
+critical_directives:
+- Synchronize global living error prevention rules into system prompts (`AGENTS.md` & `GEMINI.md`).
+section_outline:
+- Using Agent Skills
+- Overview
+- Skill Discovery
+- Core Operating Behaviors
+- 1. Surface Assumptions
+read_triggers:
+- When working on skill in .agents/skills/using-agent-skills/SKILL.md
+- When reading context for Using Agent Skills
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: using-agent-skills
-description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.
+description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies
+  to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.
 ---
 
 # Using Agent Skills

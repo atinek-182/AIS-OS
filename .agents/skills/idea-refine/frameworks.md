@@ -1,3 +1,27 @@
+---
+title: Ideation Frameworks Reference
+domain: skill
+summary: Use these frameworks selectively. Pick the lens that fits the idea — don't mechanically run every framework. The
+  goal is to unlock thinking, not to follow a checklist. A structured way to transform an existing idea by applying seven
+  different operati
+critical_directives:
+- Key insight:** People don't buy products — they hire them to do a job. The competing product isn't always in the same ca
+- Audience constraint:** "What if your user had never used a computer before?"
+section_outline:
+- Ideation Frameworks Reference
+- SCAMPER
+- How Might We (HMW)
+- First Principles Thinking
+- Jobs to Be Done (JTBD)
+read_triggers:
+- When working on skill in .agents/skills/idea-refine/frameworks.md
+- When reading context for Ideation Frameworks Reference
+tags:
+- skill
+- frameworks
+updated: '2026-08-08'
+---
+
 # Ideation Frameworks Reference
 
 Use these frameworks selectively. Pick the lens that fits the idea — don't mechanically run every framework. The goal is to unlock thinking, not to follow a checklist.

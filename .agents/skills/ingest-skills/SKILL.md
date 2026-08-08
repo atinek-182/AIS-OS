@@ -1,11 +1,31 @@
 ---
+title: Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/ingest-skills [repo_url]
+  [optional focus or instructions]` in chat.'
+critical_directives:
+- Build Tier 1 native skills with mandatory dual slash + natural language dynamic triggering in `.agents/skills/`.
+- Embed newly ingested features, dynamic rules, quality gates, and runner commands directly into all relevant existing wor
+- 'System Rules**: Update `.agents/AGENTS.md` and `references/GLOBAL_ERROR_PREVENTION_RULES.md` (`sync_global_rules.py`).'
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
+- Invocation & Tri-Mode Routing
+- The Upgraded Ingestion & Dynamic Adaptation Workflow
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/ingest-skills/SKILL.md
+- When reading context for Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: ingest-skills
-description: Upgraded alias & dynamic repository ingestion engine routing directly
-  to /ingest-repo. Invokable directly via /ingest-skills.
+description: Upgraded alias & dynamic repository ingestion engine routing directly to /ingest-repo. Invokable directly via
+  /ingest-skills.
 argument-hint: '[repo_url] [optional focus or instructions]'
 ---
-
-
 
 # Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
 

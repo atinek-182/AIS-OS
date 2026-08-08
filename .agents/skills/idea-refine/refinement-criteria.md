@@ -1,3 +1,26 @@
+---
+title: Refinement & Evaluation Criteria
+domain: skill
+summary: Use this rubric during Phase 2 (Evaluate & Converge) to stress-test idea directions. Not every criterion applies
+  to every idea — use judgment about which dimensions matter most for the specific context. The most important dimension.
+  If the value isn'
+critical_directives:
+- What are they doing today instead? (The real competitor is always the current workaround.)
+section_outline:
+- Refinement & Evaluation Criteria
+- Core Evaluation Dimensions
+- 1. User Value
+- 2. Feasibility
+- 3. Differentiation
+read_triggers:
+- When working on skill in .agents/skills/idea-refine/refinement-criteria.md
+- When reading context for Refinement & Evaluation Criteria
+tags:
+- skill
+- refinement-criteria
+updated: '2026-08-08'
+---
+
 # Refinement & Evaluation Criteria
 
 Use this rubric during Phase 2 (Evaluate & Converge) to stress-test idea directions. Not every criterion applies to every idea — use judgment about which dimensions matter most for the specific context.

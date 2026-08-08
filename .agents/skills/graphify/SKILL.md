@@ -1,6 +1,26 @@
 ---
+title: Graphify Multi-Vault Knowledge Graph Engine (`/graphify`)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/graphify [build|query|explain|path|status]
+  [--hub hub_name]` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Graphify Multi-Vault Knowledge Graph Engine (`/graphify`)
+- Invocation & Tri-Mode Routing
+- Primary Capabilities & Output Files
+- 🛠 Command Usage
+- 1. Build or Rebuild Knowledge Graph
+read_triggers:
+- When working on skill in .agents/skills/graphify/SKILL.md
+- When reading context for Graphify Multi-Vault Knowledge Graph Engine (`/graphify`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: graphify
-description: Build, query, explain, and trace paths across codebase and vault knowledge graphs (AIOS root, brain-aios, second-brain-zorixel, premium-frontend-experience-system) without brute-force file grepping. Invokable directly via /graphify.
+description: Build, query, explain, and trace paths across codebase and vault knowledge graphs (AIOS root, brain-aios, second-brain-zorixel,
+  premium-frontend-experience-system) without brute-force file grepping. Invokable directly via /graphify.
 argument-hint: '[build|query <term>|explain <concept>|path <A> <B>|status] [--hub root|brain|zorixel|frontend]'
 ---
 

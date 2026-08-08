@@ -1,3 +1,22 @@
+---
+title: Connections
+domain: architecture
+summary: 'Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 answers; expanded over time as you
+  wire new tools. `/audit` checks this file for domain coverage and freshness. | # | Domain | Tool | Mechanism | Auth | Last
+  checked |'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Connections
+read_triggers:
+- When working on architecture in context/connections.md
+- When reading context for Connections
+tags:
+- architecture
+- connections
+updated: '2026-08-08'
+---
+
 # Connections
 
 Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 answers; expanded over time as you wire new tools. `/audit` checks this file for domain coverage and freshness.

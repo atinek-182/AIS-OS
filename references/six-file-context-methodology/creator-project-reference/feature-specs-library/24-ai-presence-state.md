@@ -1,3 +1,24 @@
+---
+title: 24 Ai Presence State
+domain: architecture
+summary: Add shared AI activity indicators so everyone in the room can see when generation is in progress. This unit is only
+  for UI, presence, and realtime status signals. Do not add the actual AI generation flow yet. 1. Add AI thinking state to
+  the sidebar.
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Implementation
+- Scope Limits
+- Check When Done
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/creator-project-reference/feature-specs-library/24-ai-presence-state.md
+- When reading context for 24 Ai Presence State
+tags:
+- architecture
+- 24-ai-presence-state
+updated: '2026-08-08'
+---
+
 Add shared AI activity indicators so everyone in the room can see when generation is in progress. This unit is only for UI, presence, and realtime status signals. Do not add the actual AI generation flow yet.
 
 ## Implementation

@@ -1,3 +1,24 @@
+---
+title: Progress Tracker
+domain: architecture
+summary: Update this file after every meaningful implementation - [e.g. Not started / In progress / Complete]
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Progress Tracker
+- Current Phase
+- Current Goal
+- Completed
+- In Progress
+read_triggers:
+- When working on architecture in references/six-file-context-methodology/6-file-context-templates/context/progress-tracker.md
+- When reading context for Progress Tracker
+tags:
+- architecture
+- progress-tracker
+updated: '2026-08-08'
+---
+
 # Progress Tracker
 
 Update this file after every meaningful implementation

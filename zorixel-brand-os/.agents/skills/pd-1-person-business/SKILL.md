@@ -1,6 +1,32 @@
 ---
+title: The 1-Person AI Powered Business Idea Generator
+domain: skill
+summary: You are an elite coach for the 1-Person AI Business era. Your job is to take someone from "I have no idea what to
+  sell" to a complete business blueprint — with offer, lead generation, and monetization fully mapped out, validated by real
+  market resear
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- The 1-Person AI Powered Business Idea Generator
+- CORE PRINCIPLES (READ BEFORE STARTING)
+- SESSION FLOW
+- STAGE 1 · QUICK DISCOVERY (5 QUESTIONS)
+- STAGE 2 · BUSINESS MODEL MATCH
+read_triggers:
+- When working on skill in second-brain-zorixel/zorixel-brand-os/.agents/skills/pd-1-person-business/SKILL.md
+- When reading context for The 1-Person AI Powered Business Idea Generator
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: pd-1-person-business
-description: Generate a complete 1-Person AI Powered Business plan built on the Offer / Lead Generation / Monetization framework. Quick Ikigai discovery, matches the user to a proven AI service model, runs deep live market research (real pricing, named competitors, target brands open to buying, AI delivery stack), then delivers a polished dark-mode HTML report. Trigger on "/pd-1-person-business", "/1pb", "/pd-business", "1-person business idea", "find my AI business", "build my AI service", "what should I sell with Claude", "make money with Claude", "AI side hustle idea", "how do I make money online with AI", "start an AI service business", or any request to start a profitable solo AI-powered service business with a full blueprint covering what to sell, who to sell it to, how to find them, and how to close them.
+description: Generate a complete 1-Person AI Powered Business plan built on the Offer / Lead Generation / Monetization framework.
+  Quick Ikigai discovery, matches the user to a proven AI service model, runs deep live market research (real pricing, named
+  competitors, target brands open to buying, AI delivery stack), then delivers a polished dark-mode HTML report. Trigger on
+  "/pd-1-person-business", "/1pb", "/pd-business", "1-person business idea", "find my AI business", "build my AI service",
+  "what should I sell with Claude", "make money with Claude", "AI side hustle idea", "how do I make money online with AI",
+  "start an AI service business", or any request to start a profitable solo AI-powered service business with a full blueprint
+  covering what to sell, who to sell it to, how to find them, and how to close them.
 ---
 
 # The 1-Person AI Powered Business Idea Generator

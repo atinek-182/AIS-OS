@@ -1,16 +1,34 @@
 ---
+title: Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/scrape-reference [''website
+  URL'']` in chat.'
+critical_directives:
+- '`code-extracts/components/` — Standalone React + TypeScript (`.tsx`) components organized by UX pattern subfolders (`nav'
+- Examples Are Non-Exhaustive Samples:** Any example list provided in instructions (e.g., "nav, hero, buttons, GSAP, Lenis
+- Proactive Site Exploration:** Every website has its own unique tech stack, custom components, novel scripts, canvas shad
+- 'The 10 mandatory pillars are:'
+section_outline:
+- Invocation & Tri-Mode Routing
+- Mandatory Operational Rules
+- 📂 Output Directory Architecture
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/scrape-reference/SKILL.md
+- When reading context for Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: scrape-reference
-description: Ultimate site DNA ingestion, full-code mirroring, dot-to-dot web analysis,
-  and vault reference indexing engine. Intercepts and mirrors full site source (HTML,
-  CSS, JS bundles, fonts, videos, GLSL shaders), extracts raw GSAP/animation code
-  (.js), synthesizes drop-in React components (.tsx), records visual WebP session
-  videos, and creates dot-to-dot 14-category master reference manuals in vault-references/.
-  Invokable directly via /scrape-reference.
+description: Ultimate site DNA ingestion, full-code mirroring, dot-to-dot web analysis, and vault reference indexing engine.
+  Intercepts and mirrors full site source (HTML, CSS, JS bundles, fonts, videos, GLSL shaders), extracts raw GSAP/animation
+  code (.js), synthesizes drop-in React components (.tsx), records visual WebP session videos, and creates dot-to-dot 14-category
+  master reference manuals in vault-references/. Invokable directly via /scrape-reference.
 argument-hint:
 - website URL
 ---
-
-
 
 # Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
 

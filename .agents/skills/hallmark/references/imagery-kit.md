@@ -1,3 +1,25 @@
+---
+title: Imagery kit — curated abstract assets, hosted, ready
+domain: skill
+summary: 'A small set of pre-generated abstract / decorative imagery that any Hallmark output can pull from when a brief allows
+  non-photographic imagery. The kit lives at: https://www.usehallmark.com/imagery/<category>/<file>'
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- Imagery kit — curated abstract assets, hosted, ready
+- Categories
+- Manifest (placeholder until generation pass ships)
+- Usage patterns — how a senior engineer would compose these
+- Layered hero composition (the masterclass move)
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/imagery-kit.md
+- When reading context for Imagery kit — curated abstract assets, hosted, ready
+tags:
+- skill
+- imagery-kit
+updated: '2026-08-08'
+---
+
 # Imagery kit — curated abstract assets, hosted, ready
 
 A small set of pre-generated abstract / decorative imagery that any Hallmark output can pull from when a brief allows non-photographic imagery. The kit lives at:

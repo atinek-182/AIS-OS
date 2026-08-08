@@ -1,16 +1,16 @@
 # Graph Report - AI-OS  (2026-08-08)
 
 ## Corpus Check
-- 661 files · ~2,152,554 words
+- 656 files · ~2,147,750 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 6647 nodes · 6381 edges · 570 communities (532 shown, 38 thin omitted)
+- 6582 nodes · 6308 edges · 566 communities (528 shown, 38 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a0eb6e78`
+- Built from commit: `b6f9280c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - skill-optimizer/prepare.py
 - FILLER AND HEDGING
 - Step-by-Step 8-Phase Pricing Protocol
-- Macrostructures
+- Cross-Site Request Forgery (CSRF)
 - 👥 5-Persona Council Audits
 - ZORIXEL Agency Positioning & Strategy: Socratic Discovery & Brainstorm Notes
 - Client Vault & Directory Architecture: Discovery & Brainstorm Notes
@@ -138,7 +138,6 @@
 - 👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features
 - Q&A Log
 - Custom theme — protocol
-- Resemble Detect — Deepfake Detection & Media Safety
 - Issue tracker: GitHub
 - SESSION_POSTMORTEM_2026-08-08_DEFUDDLE_YOUTUBE_COMPOSIO_SKILLS.md
 - Triage
@@ -208,11 +207,9 @@
 - Hero enrichment — when, what, and how much
 - Theme — Carnival
 - Observability Checklist
-- resemble_detect_runner.py
 - Capabilities & Usage Guide
 - YouTube Full Skill (`/youtube-full`)
 - Ideation Frameworks Reference
-- Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`)
 - to-spec/SKILL.md
 - SDLC & AIOS Unified Workflows, Skills, Scripts & Automations Integration
 - 👥 5-Persona Adversarial Audit Breakdown
@@ -227,7 +224,6 @@
 - Domain Docs
 - Issue tracker: Local Markdown
 - test_ingested_skills_health.py
-- Discovery Capture: Ingesting `resemble-ai/detect-skill`
 - skill_workflow_evolver_runner.py
 - hitl-loop.template.sh
 - GLOSSARY.md Format
@@ -529,7 +525,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (570 total, 38 thin omitted)
+## Communities (566 total, 38 thin omitted)
 
 ### Community 0 - "hallmark/SKILL.md"
 Cohesion: 0.19
@@ -559,9 +555,9 @@ Nodes (44): 10. Rule of Three Overuse, 11. Elegant Variation (Synonym Cycling), 
 Cohesion: 0.12
 Nodes (16): Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price", Inter-Skill Connections, Output Artifact Format (`proposals/pricing-{client-slug}.md`), Overview & Tri-Mode Execution, Phase 1: Baseline Capture (Time Lens & Income Lens), Phase 2: Calculate Delivery Cost Floor, Phase 3: Calculate Defensible Price Corridor & 10X Check, Phase 4: Staged Micro-Service Proof & Option Architecture (+8 more)
 
-### Community 7 - "Macrostructures"
-Cohesion: 0.29
-Nodes (7): Diversification rule (mandatory), Hero polish patterns, How to pick, Macrostructures, Nav and footer voice, SaaS page sequence, The 21 macrostructures — index
+### Community 7 - "Cross-Site Request Forgery (CSRF)"
+Cohesion: 0.40
+Nodes (5): Cross-Site Request Forgery (CSRF), Edge Cases and Common Mistakes, Endpoints Requiring CSRF Protection, Protection Mechanisms, Verification Checklist
 
 ### Community 8 - "👥 5-Persona Council Audits"
 Cohesion: 0.17
@@ -660,8 +656,8 @@ Cohesion: 0.20
 Nodes (9): Executive Summary & Key Decisions, Q1 — Universal Domain Adapters & Dynamic Context Injection, Q2 — Multi-Turn Adversarial Red-Teaming Loop ("Attack & Patch" Mode), Q3 — Disk Persistence & Handoff Artifacts, Q4 — Persona Count & Extended Council (Baseline 5 Personas + Specialized 6th/7th Roles), Q5 — Automated `--deep` Trigger Recommendations, Q6 — Quantitative Risk Matrix & Refinement Ticket (`ROAST_REFINEMENT_SPEC`), Q&A Log (+1 more)
 
 ### Community 34 - "macrostructures.md"
-Cohesion: 0.05
-Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+13 more)
+Cohesion: 0.04
+Nodes (28): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+20 more)
 
 ### Community 35 - "Deep Search Context Engine: 5-Persona `/roast` Council Audit"
 Cohesion: 0.22
@@ -975,10 +971,6 @@ Nodes (5): Executive Summary & Key Decisions, Q1 — Next.js 15 App Router & Tai
 Cohesion: 0.07
 Nodes (29): § A · The one follow-up question, B.1 · Anchor accent first, B.2 · Paper, B.3 · Ink, B.4 · Supporting greys, B.5 · Focus, B.6 · Accent-ink (overlay text colour on accent), B.7 · Verification (+21 more)
 
-### Community 148 - "Resemble Detect — Deepfake Detection & Media Safety"
-Cohesion: 0.05
-Nodes (38): Compatible Agents, Direct API Usage, Example Prompts, How It Works, Install, License, Links, Optional: Pair With the Resemble MCP Server for Docs (+30 more)
-
 ### Community 149 - "Issue tracker: GitHub"
 Cohesion: 0.06
 Nodes (30): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary, Conventions, Issue tracker: GitHub, Pull requests as a triage surface (+22 more)
@@ -1255,10 +1247,6 @@ Nodes (22): Anti-patterns (theme-specific), Axes (diversification), Build hint, 
 Cohesion: 0.18
 Nodes (10): Alerting, Dashboards, Distributed Tracing, Metrics, Observability Checklist, On-Call Questions (Start Here), Pre-Launch Gate, Structured Logging (+2 more)
 
-### Community 219 - "resemble_detect_runner.py"
-Cohesion: 0.40
-Nodes (10): ask_detect_intelligence(), get_auth_header(), get_detect(), main(), make_request(), poll_detect(), Upload large or private file via secure_uploads endpoint using multipart/form-…, submit_detect() (+2 more)
-
 ### Community 220 - "Capabilities & Usage Guide"
 Cohesion: 0.20
 Nodes (9): 1. Search 1000+ App Tools by Natural Language, 2. Connect an Account via Managed OAuth Link, 3. Execute a Tool Action with JSON Data, 4. Verify Authentication & User Context, Capabilities & Usage Guide, Composio Skill (`/composio`), Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
@@ -1270,10 +1258,6 @@ Nodes (9): 1. Extract Video Transcript & Subtitles, 2. Search YouTube Videos by 
 ### Community 222 - "Ideation Frameworks Reference"
 Cohesion: 0.22
 Nodes (8): Analogous Inspiration, Constraint-Based Ideation, First Principles Thinking, How Might We (HMW), Ideation Frameworks Reference, Jobs to Be Done (JTBD), Pre-mortem, SCAMPER
-
-### Community 223 - "Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`)"
-Cohesion: 0.22
-Nodes (8): 🧭 Capability Decision Tree, ⚡ Core Principle — THE IRON LAW, 🔗 Inter-Skill Connections, 🛡️ Operational Safeguards & Red Flags, 🛠️ Requirements & Setup, Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`), 📊 Score & Result Interpretation, 🎯 When to Use
 
 ### Community 224 - "to-spec/SKILL.md"
 Cohesion: 0.22
@@ -1330,10 +1314,6 @@ Nodes (5): Conventions, Issue tracker: Local Markdown, Wayfinding operations, Wh
 ### Community 237 - "test_ingested_skills_health.py"
 Cohesion: 0.60
 Nodes (5): check_composio_runner(), check_rules(), check_youtube_runner(), check_ytdlp(), main()
-
-### Community 238 - "Discovery Capture: Ingesting `resemble-ai/detect-skill`"
-Cohesion: 0.40
-Nodes (4): 5-Persona Roast Council Evaluation, Discovery Capture: Ingesting `resemble-ai/detect-skill`, Next Step, Stage 1 Deep Analysis Summary
 
 ### Community 239 - "skill_workflow_evolver_runner.py"
 Cohesion: 0.70
@@ -1412,8 +1392,8 @@ Cohesion: 0.12
 Nodes (15): 1. Global Zero-Hurry & Rigor Mandate, 2. Concept Explanation BEFORE Every Question, 3. Proactive Web Research & Documentation Sourcing, 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND), 5. Checkpoint to Disk After Every Single Response, 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`), 7. Mandatory Pre-Write `/roast` Council Gate, 8. Pre-Coding Backstop Check (+7 more)
 
 ### Community 307 - "Client-Side Bugs"
-Cohesion: 0.12
-Nodes (16): Bypass Techniques to Block, Client-Side Bugs, Cross-Site Request Forgery (CSRF), Cross-Site Scripting (XSS), Edge Cases and Common Mistakes, Endpoints Requiring CSRF Protection, IDN Homograph Attack Protection, Input Sources to Protect (+8 more)
+Cohesion: 0.18
+Nodes (11): Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Open Redirect, Password Requirements, Password Security (+3 more)
 
 ### Community 311 - "Ghost AI"
 Cohesion: 0.13
@@ -2356,7 +2336,7 @@ Cohesion: 0.40
 Nodes (4): Active Context & Strategic Baseline, Immediate Next Actions, Verified Pre-Flight Health Scripts, ZORIXEL AIOS Hot Cache & Handoff State
 
 ## Knowledge Gaps
-- **4668 isolated node(s):** `idea-refine.sh script`, `{ chromium }`, `fs`, `path`, `OUTPUT_FILE` (+4663 more)
+- **4625 isolated node(s):** `idea-refine.sh script`, `{ chromium }`, `fs`, `path`, `OUTPUT_FILE` (+4620 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2365,15 +2345,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Anti-patterns — the named tells` connect `Minor (small taste issues)` to `hallmark/SKILL.md`, `Microinteraction tells`, `Major (looks AI-generated)`, `Critical (ships as slop)`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Assets — sourcing canon for icons, logos, illustrations, photography, video` connect `Assets — sourcing canon for icons, logos, illustrations, photography, video` to `hallmark/SKILL.md`?**
+- **Why does `Microinteractions` connect `Recipes` to `hallmark/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `Hallmark` connect `Hallmark` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `idea-refine.sh script`, `{ chromium }`, `fs` to the rest of the system?**
-  _4668 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _4625 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FILLER AND HEDGING` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Step-by-Step 8-Phase Pricing Protocol` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `component-cookbook.md` be split into smaller, more focused modules?**
   _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._
+- **Should `Vashishthya Notion OS & Google Sheets Automated Infrastructure: Discovery & Setup Blueprint` be split into smaller, more focused modules?**
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

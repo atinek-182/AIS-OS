@@ -1,11 +1,29 @@
 ---
+title: Carousel Render Engine
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/carousel-render [optional
+  parameters]` in chat.'
+critical_directives:
+- 'Base64 Data URIs:** Always base64-encode local font files and inject them directly as Data URIs in the `@font-face` URL '
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Carousel Render Engine
+- Invocation & Tri-Mode Routing
+- Playwright Execution Protocol
+- Local Font & Asset Rendering Rules
+- Inter-Skill Connections & Handoff Pipeline
+read_triggers:
+- When working on skill in .agents/skills/carousel-render/SKILL.md
+- When reading context for Carousel Render Engine
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: carousel-render
-description: Programmatically render slide HTML files into final PNG images using
-  Playwright browser capture. Invokable directly via /carousel-render.
+description: Programmatically render slide HTML files into final PNG images using Playwright browser capture. Invokable directly
+  via /carousel-render.
 argument-hint: '[optional parameters]'
 ---
-
-
 
 # Carousel Render Engine
 

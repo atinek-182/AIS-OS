@@ -1,6 +1,27 @@
 ---
+title: Test-Driven Development
+domain: skill
+summary: 'TDD is the red → green loop. This skill is the reference that makes that loop produce tests worth keeping: what
+  a good test is, where tests go, the anti-patterns, and the rules of the loop. Every section applies on every cycle — consult
+  them before a'
+critical_directives:
+- Tautological** — the assertion recomputes the expected value the way the code does (`expect(add(a, b)).toBe(a + b)`, a s
+section_outline:
+- Test-Driven Development
+- What a good test is
+- Seams — where tests go
+- Anti-patterns
+- Rules of the loop
+read_triggers:
+- When working on skill in .agents/skills/tdd/SKILL.md
+- When reading context for Test-Driven Development
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: tdd
-description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
+description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor",
+  or wants integration tests.
 ---
 
 # Test-Driven Development

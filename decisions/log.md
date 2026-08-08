@@ -1,6 +1,41 @@
+---
+title: Decisions Log
+domain: decision
+summary: Append-only record of meaningful decisions and why they were made. `/level-up` Phase 2 (Method interview) writes
+  scoped automation specs here. You can also append manually whenever you decide something worth remembering. **Format per
+  entry:**
+critical_directives:
+- Alternatives considered:** Passive manual doc lookups or locking security rules to a single platform.
+- Decision:** Enforced **Rule 1.23 (Zero-Fee & Zero-Subscription Mandate)** and established `scripts/test_zero_cost_bounda
+- 'Rule 1.23 Mandate**: Default all workspace tools, skills, CLI scripts, and agency client deliverables to 100% zero-subsc'
+- Why:** Gives AIOS instant execution capabilities across 1000+ external SaaS platforms and multi-tenant managed OAuth web
+section_outline:
+- Decisions Log
+- YYYY-MM-DD — Short title
+- 2026-08-08 — YouTube Full Skill & Dual-Backend Media Engine (`/youtube-full`)
+- 2026-08-08 — Master SDLC & AIOS Workflow Engine Unification & Master CLI Runner
+- 2026-08-08 — Defuddle Web Article Cleaning & Content Ingestion Standard
+read_triggers:
+- When working on decision in decisions/log.md
+- When reading context for Decisions Log
+tags:
+- decision
+- log
+updated: '2026-08-08'
+---
+
 # Decisions Log
 
 Append-only record of meaningful decisions and why they were made. `/level-up` Phase 2 (Method interview) writes scoped automation specs here. You can also append manually whenever you decide something worth remembering.
+
+## 2026-08-08 — Rich YAML Frontmatter Workspace Standardization & Agent Routing Directive
+
+**Decision:** Standardized Rich YAML Frontmatter headers (`title`, `domain`, `summary`, `critical_directives`, `section_outline`, `read_triggers`, `tags`, `updated`) across 792 Markdown files in AI-OS (all 8 vaults, projects, skills, and system docs). Appended mandatory frontmatter routing rule to `AGENTS.md` and `GEMINI.md`.
+
+**Why:** Grants AI agents zero-token Stage 1 routing while guaranteeing 100% content safety against skipped Markdown rules or code details via mandatory `read_triggers` and structural outlines.
+
+**Alternatives considered:** Pure `.yaml` document conversion (rejected due to token inflation, loss of Markdown prose readability, and syntax fragility).
+
 
 **Format per entry:**
 

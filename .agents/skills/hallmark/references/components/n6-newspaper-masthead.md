@@ -1,3 +1,22 @@
+---
+title: N6 Newspaper Masthead
+domain: skill
+summary: Full-width header, large centred wordmark on the top row, thin issue/date line above or below in serif small caps,
+  optional inline link row beneath, double-rule below the whole thing. Reads as editorial, broadsheet — NYT, FT, Vogue. *Use
+  when:* the p
+critical_directives:
+- Follow document guidance without bypassing established safeguards.
+section_outline:
+- N6 · Newspaper masthead
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/components/n6-newspaper-masthead.md
+- When reading context for N6 Newspaper Masthead
+tags:
+- skill
+- n6-newspaper-masthead
+updated: '2026-08-08'
+---
+
 ### N6 · Newspaper masthead
 Full-width header, large centred wordmark on the top row, thin issue/date line above or below in serif small caps, optional inline link row beneath, double-rule below the whole thing. Reads as editorial, broadsheet — NYT, FT, Vogue.
 *Use when:* the page is editorial, magazine-shaped, or framed as an issue / edition.

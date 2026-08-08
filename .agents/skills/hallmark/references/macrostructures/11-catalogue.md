@@ -1,3 +1,21 @@
+---
+title: 11 Catalogue
+domain: skill
+summary: Uniform grid of variations of the same thing — typefaces, colour palettes, product SKUs. The page is a visual index
+  of inventory. - **Heading:** brand mark + tagline only; no big display.
+critical_directives:
+- Divider:** hairline rules between rows; sometimes a category label band.
+section_outline:
+- 11 · Catalogue
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/11-catalogue.md
+- When reading context for 11 Catalogue
+tags:
+- skill
+- 11-catalogue
+updated: '2026-08-08'
+---
+
 ## 11 · Catalogue
 
 Uniform grid of variations of the same thing — typefaces, colour palettes, product SKUs. The page is a visual index of inventory.

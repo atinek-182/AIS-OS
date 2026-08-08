@@ -1,3 +1,25 @@
+---
+title: Performance Checklist
+domain: task
+summary: Quick reference checklist for web application performance. Use alongside the `performance-optimization` skill. -
+  [Core Web Vitals Targets](#core-web-vitals-targets)
+critical_directives:
+- '[ ] List endpoints paginated (never `SELECT * FROM table`)'
+section_outline:
+- Performance Checklist
+- Table of Contents
+- Core Web Vitals Targets
+- TTFB Diagnosis
+- Frontend Checklist
+read_triggers:
+- When working on task in references/sdlc/performance-checklist.md
+- When reading context for Performance Checklist
+tags:
+- task
+- performance-checklist
+updated: '2026-08-08'
+---
+
 # Performance Checklist
 
 Quick reference checklist for web application performance. Use alongside the `performance-optimization` skill.

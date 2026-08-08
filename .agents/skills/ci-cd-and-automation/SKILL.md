@@ -1,6 +1,28 @@
 ---
+title: CI/CD and Automation
+domain: skill
+summary: Automate quality gates so that no change reaches production without passing tests, lint, type checking, and build.
+  CI/CD is the enforcement mechanism for every other skill — it catches what humans and agents miss, and it does so consistently
+  on every
+critical_directives:
+- No gate can be skipped.** If lint fails, fix lint — don't disable the rule. If a test fails, fix the code — don't skip t
+- Required status checks:** CI must pass before merge
+section_outline:
+- CI/CD and Automation
+- Overview
+- When to Use
+- The Quality Gate Pipeline
+- GitHub Actions Configuration
+read_triggers:
+- When working on skill in .agents/skills/ci-cd-and-automation/SKILL.md
+- When reading context for CI/CD and Automation
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: ci-cd-and-automation
-description: Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.
+description: Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you
+  need to automate quality gates, configure test runners in CI, or establish deployment strategies.
 ---
 
 # CI/CD and Automation

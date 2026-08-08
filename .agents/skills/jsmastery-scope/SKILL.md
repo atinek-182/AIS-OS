@@ -1,6 +1,28 @@
 ---
+title: JS Mastery Feature Scoping Engine (`/jsmastery-scope`)
+domain: skill
+summary: 'This skill converts high-level project ideas or complex feature requests into disciplined, structured scopes with
+  clear MVP boundaries and vertical slices, derived from JS Mastery Pro workflows. - **Slash Command**: `/jsmastery-scope
+  [idea_descriptio'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- JS Mastery Feature Scoping Engine (`/jsmastery-scope`)
+- Overview & Tri-Mode Routing
+- Scoping Discipline & Rules
+- Scope File Format (`docs/scope/NNNN-[slug].md`)
+- 'Scope: [Epic / Feature Name]'
+read_triggers:
+- When working on skill in .agents/skills/jsmastery-scope/SKILL.md
+- When reading context for JS Mastery Feature Scoping Engine (`/jsmastery-scope`)
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: jsmastery-scope
-description: Project scoping and feature breakdown engine. Scopes complex project ideas into MVP milestones, user stories, tracer-bullet vertical slices, and actionable task tables. Triggered via /jsmastery-scope or naturally when scoping new features.
+description: Project scoping and feature breakdown engine. Scopes complex project ideas into MVP milestones, user stories,
+  tracer-bullet vertical slices, and actionable task tables. Triggered via /jsmastery-scope or naturally when scoping new
+  features.
 argument-hint: '[project_or_feature_idea]'
 ---
 

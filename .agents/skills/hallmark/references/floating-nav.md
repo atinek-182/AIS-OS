@@ -1,3 +1,26 @@
+---
+title: Floating nav on scroll — the cross-fade morph
+domain: skill
+summary: The recipe for **N10 · Floating-on-scroll morph** (see [`component-cookbook.md` § Navigation](component-cookbook.md)).
+  One DOM, two visual modes, single class toggle, one timing curve. AI defaults botch every one of the four laws below — which
+  is why
+critical_directives:
+- '2. Visible offset uses `transform: translateY()`, never `padding`/`margin`.** The pill should sit detached from the view'
+section_outline:
+- Floating nav on scroll — the cross-fade morph
+- The structure
+- The four laws — non-negotiable
+- The property morph (10 properties, one curve)
+- The scroll handler
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/floating-nav.md
+- When reading context for Floating nav on scroll — the cross-fade morph
+tags:
+- skill
+- floating-nav
+updated: '2026-08-08'
+---
+
 # Floating nav on scroll — the cross-fade morph
 
 The recipe for **N10 · Floating-on-scroll morph** (see [`component-cookbook.md` § Navigation](component-cookbook.md)). One DOM, two visual modes, single class toggle, one timing curve. AI defaults botch every one of the four laws below — which is why N10 is the most demanding nav in the cookbook.

@@ -1,14 +1,31 @@
 ---
+title: Skill
+domain: skill
+summary: 'This skill supports **Tri-Mode Flexible Execution**: - **Slash Command**: Explicitly run `/scrape-competitor [''competitor
+  url'', ''handle'', ''or topic'']` in chat.'
+critical_directives:
+- If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.m
+section_outline:
+- Invocation & Tri-Mode Routing
+- What This Skill Does
+- Multi-Platform Routing Pipeline
+- Inter-Skill Connections & Handoff Pipeline
+- Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+read_triggers:
+- When working on skill in .agents/skills/scrape-competitor/SKILL.md
+- When reading context for Skill
+tags:
+- skill
+- SKILL
+updated: '2026-08-08'
 name: scrape-competitor
-description: Use when the user wants to scrape a competitor's profile, run competitor
-  content research, or parse scraped reels/posts across YouTube, Bilibili, Twitter,
-  Reddit, V2EX, or web pages. Invokable directly via /scrape-competitor.
+description: Use when the user wants to scrape a competitor's profile, run competitor content research, or parse scraped reels/posts
+  across YouTube, Bilibili, Twitter, Reddit, V2EX, or web pages. Invokable directly via /scrape-competitor.
 argument-hint:
 - competitor url
 - handle
 - or topic
 ---
-
 
 ## Invocation & Tri-Mode Routing
 

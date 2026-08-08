@@ -1,3 +1,21 @@
+---
+title: 21 Component Playground
+domain: skill
+summary: Interactive code-and-preview blocks are the page's primary content. Each block previews a thing and shows how to
+  copy-paste it. - **Heading:** category labels (`Buttons`, `Forms`, `Cards`, `Layouts`).
+critical_directives:
+- Divider:** category bands; horizontal rules between examples.
+section_outline:
+- 21 · Component Playground
+read_triggers:
+- When working on skill in .agents/skills/hallmark/references/macrostructures/21-component-playground.md
+- When reading context for 21 Component Playground
+tags:
+- skill
+- 21-component-playground
+updated: '2026-08-08'
+---
+
 ## 21 · Component Playground
 
 Interactive code-and-preview blocks are the page's primary content. Each block previews a thing and shows how to copy-paste it.
