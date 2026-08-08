@@ -401,6 +401,4 @@ When budget and timeline force a shortcut and even Tier C is overkill.
 | A textured background | CSS gradient + SVG grain | Mesh Gradient Generator |
 | A character animation | Custom Lottie commission | LottieFiles community + customise |
 | A loading spinner | CSS conic-gradient | (don't reach for Lottie) |
-| A checkmark draw on confirm | SVG `stroke-dasharray` | (don't reach for Lottie) |
-
-When in doubt: build it. The path of least resistance and the path of least-AI-tell are the same path in 2026.
+| A checkmark draw on confirm | SVG `stroke-dasharray` | (don't reach for Lottie) | When in doubt: build it. The path of least resistance and the path of least-AI-tell are the same path in 2026.

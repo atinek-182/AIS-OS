@@ -22,6 +22,9 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [context/connections.md](file:///d:/AI-OS/context/connections.md) | File | Registry of all active external system API integrations. | Operator / AIOS |
 | [audits/os-audit-2026-08-01-brand-pivot.md](file:///d:/AI-OS/audits/os-audit-2026-08-01-brand-pivot.md) | File | Audit report documenting 100% workspace-wide deep alignment purge for ZORIXEL AI Agency pivot. | AIOS |
 | [decisions/log.md](file:///d:/AI-OS/decisions/log.md) | File | Append-only log recording architectural modifications to the root workspace. | AIOS |
+| [docs/agents/issue-tracker.md](file:///d:/AI-OS/docs/agents/issue-tracker.md) | File | Issue tracker configuration for Matt Pocock engineering skills (Local Markdown). | AIOS |
+| [docs/agents/triage-labels.md](file:///d:/AI-OS/docs/agents/triage-labels.md) | File | Canonical triage label mapping table for Matt Pocock engineering skills. | AIOS |
+| [docs/agents/domain.md](file:///d:/AI-OS/docs/agents/domain.md) | File | Domain docs consumption rules and layout (Multi-context CONTEXT-MAP.md). | AIOS |
 | [MEMORY.md](file:///d:/AI-OS/MEMORY.md) | File | Persistent memory documenting cross-session learnings and preferences. | AIOS (Auto-update) |
 | [EXPANSIONS.md](file:///d:/AI-OS/EXPANSIONS.md) | File | AIOS expansion roadmap outlining future workflows and system targets. | AIOS |
 | [context/aios-intake.md](file:///d:/AI-OS/context/aios-intake.md) | File | Setup Intake Form answers detailing the user's business objectives and stack. | Operator |
@@ -32,6 +35,20 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [archives/fonts/](file:///d:/AI-OS/archives/fonts/) | Folder | Zip files of font candidates downloaded from Fontex. | Operator |
 | [brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md](file:///d:/AI-OS/brainstorms/2026-07-27-ingest-jsmastery-and-mattpocock-skills.md) | File | Ingestion discovery capture file for JS Mastery Pro and Matt Pocock skills. | AIOS |
 | [brainstorms/2026-07-31-zorixel-six-file-context-upgrade.md](file:///d:/AI-OS/brainstorms/2026-07-31-zorixel-six-file-context-upgrade.md) | File | Socratic discovery capture file for Zorixel Six-File Context Methodology v3.2 upgrade. | AIOS |
+| [brainstorms/2026-08-07-roast-skill-upgrade.md](file:///d:/AI-OS/brainstorms/2026-08-07-roast-skill-upgrade.md) | File | Socratic discovery capture file for universal multi-agent roast skill upgrade. | AIOS |
+| [brainstorms/roast_2026-08-07_skill_system_upgrade.md](file:///d:/AI-OS/brainstorms/roast_2026-08-07_skill_system_upgrade.md) | File | Universal roast report auditing and upgrading 65+ workspace skills across .agents/skills/. | AIOS |
+| [brainstorms/roast_2026-08-07_skills_research_and_reform_audit.md](file:///d:/AI-OS/brainstorms/roast_2026-08-07_skills_research_and_reform_audit.md) | File | Universal roast report executing research and structural reform across 5 core skill clusters. | AIOS |
+| [brainstorms/storm_research_awwwards_aios_training_master.md](file:///d:/AI-OS/brainstorms/storm_research_awwwards_aios_training_master.md) | File | Master 7-agent STORM research briefing training AIOS for Awwwards-level web creation & skill-library integration. | AIOS |
+| [brainstorms/2026-08-08-skill-workflow-evolver-skill.md](file:///d:/AI-OS/brainstorms/2026-08-08-skill-workflow-evolver-skill.md) | File | Socratic discovery capture file for new skill-workflow-evolver skill. | AIOS |
+| [brainstorms/roast_2026-08-08_skill_workflow_evolver.md](file:///d:/AI-OS/brainstorms/roast_2026-08-08_skill_workflow_evolver.md) | File | Universal roast audit report for skill-workflow-evolver. | AIOS |
+| [.agents/skills/skill-workflow-evolver/SKILL.md](file:///d:/AI-OS/.agents/skills/skill-workflow-evolver/SKILL.md) | File | Tier 1 native skill for autonomous skill workflow evolution and playbook compilation. | AIOS |
+| [scripts/skill_workflow_evolver_runner.py](file:///d:/AI-OS/scripts/skill_workflow_evolver_runner.py) | File | Dynamic regex & AST runner script classifying skills into 5 domains and updating master scenario maps. | AIOS |
+| [brainstorms/2026-08-08-skill-workflows-and-scenario-mapping.md](file:///d:/AI-OS/brainstorms/2026-08-08-skill-workflows-and-scenario-mapping.md) | File | Master capture file for Skill Workflows & Scenario Mapping Engine (Option A 10 Playbooks + Option B 7-Stage Complete AI Agency Engine). | AIOS |
+| [brainstorms/roast_2026-08-08_skill_workflows.md](file:///d:/AI-OS/brainstorms/roast_2026-08-08_skill_workflows.md) | File | Universal roast audit report for Skill Workflows Engine and Skill Plug-and-Play Protocol. | AIOS |
+| [errors-and-lessons/SESSION_POSTMORTEM_2026-08-08_SKILL_WORKFLOWS_ENGINE.md](file:///d:/AI-OS/errors-and-lessons/SESSION_POSTMORTEM_2026-08-08_SKILL_WORKFLOWS_ENGINE.md) | File | Comprehensive session post-mortem audit report logging Skill Workflows Engine upgrades and 100% reusable code templates. | AIOS |
+| [scripts/test_skill_workflows_health.py](file:///d:/AI-OS/scripts/test_skill_workflows_health.py) | File | Automated pre-flight health check script verifying Skill Workflows capture file, roast audit, and hot.md context. | AIOS |
+| [errors-and-lessons/SESSION_POSTMORTEM_ERRORS_LESSONS_AND_SKILLS.md](file:///d:/AI-OS/errors-and-lessons/SESSION_POSTMORTEM_ERRORS_LESSONS_AND_SKILLS.md) | File | Comprehensive session post-mortem audit report logging all errors, user prompt iterations, and system upgrades. | AIOS |
+| [scripts/test_script_health.py](file:///d:/AI-OS/scripts/test_script_health.py) | File | Pre-flight script health validator auditing UTF-8 stdio configuration across all 60 workspace python scripts. | AIOS |
 | [graphify-out/](file:///d:/AI-OS/graphify-out/) | Folder | Output directory containing AST Knowledge Graph files (graph.json, graph.html, GRAPH_REPORT.md). | Graphify / AIOS |
 | [brain-aios/graphify-out/](file:///d:/AI-OS/brain-aios/graphify-out/) | Folder | Output directory containing Brain AIOS Vault Knowledge Graph files. | Graphify / AIOS |
 | [second-brain-zorixel/graphify-out/](file:///d:/AI-OS/second-brain-zorixel/graphify-out/) | Folder | Output directory containing Second Brain Zorixel Vault Knowledge Graph files. | Graphify / AIOS |
@@ -57,7 +74,31 @@ This document serves as the centralized directory and file index for Atinek Maur
 
 | [brain-aios/wiki/research/skills-library/jsmastery-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/jsmastery-skills/) | Folder | Ingested reference vault for JS Mastery Pro skills repo. | AIOS |
 
-| [brain-aios/wiki/research/skills-library/mattpocock-skills/](file:///d:/AI-OS/brain-aios/wiki/research/skills-library/mattpocock-skills/) | Folder | Ingested reference vault for Matt Pocock skills repo. | AIOS |
+| [skills-lock.json](file:///d:/AI-OS/skills-lock.json) | File | Lockfile tracking installed skills and versions. | AIOS |
+| [.agents/skills/ask-matt/SKILL.md](file:///d:/AI-OS/.agents/skills/ask-matt/SKILL.md) | File | Tier 1 router skill over Matt Pocock engineering and productivity skills. | AIOS |
+| [.agents/skills/setup-matt-pocock-skills/SKILL.md](file:///d:/AI-OS/.agents/skills/setup-matt-pocock-skills/SKILL.md) | File | Tier 1 setup skill configuring repo issue tracker, triage labels, and domain docs layout. | AIOS |
+| [.agents/skills/grill-with-docs/SKILL.md](file:///d:/AI-OS/.agents/skills/grill-with-docs/SKILL.md) | File | Tier 1 skill for grilling sessions that build domain model, CONTEXT.md, and ADRs. | AIOS |
+| [.agents/skills/grilling/SKILL.md](file:///d:/AI-OS/.agents/skills/grilling/SKILL.md) | File | Tier 1 grilling primitive engine underlying grill-me and grill-with-docs. | AIOS |
+| [.agents/skills/to-spec/SKILL.md](file:///d:/AI-OS/.agents/skills/to-spec/SKILL.md) | File | Tier 1 skill synthesizing thread context into a technical spec document. | AIOS |
+| [.agents/skills/to-tickets/SKILL.md](file:///d:/AI-OS/.agents/skills/to-tickets/SKILL.md) | File | Tier 1 skill breaking specs into tracer-bullet tickets under .scratch/<feature>/issues/. | AIOS |
+| [.agents/skills/implement/SKILL.md](file:///d:/AI-OS/.agents/skills/implement/SKILL.md) | File | Tier 1 skill building tickets via /tdd and closing with /code-review. | AIOS |
+| [.agents/skills/tdd/SKILL.md](file:///d:/AI-OS/.agents/skills/tdd/SKILL.md) | File | Tier 1 TDD skill enforcing red-green-refactor testing loops. | AIOS |
+| [.agents/skills/diagnosing-bugs/SKILL.md](file:///d:/AI-OS/.agents/skills/diagnosing-bugs/SKILL.md) | File | Tier 1 systematic bug diagnosis loop (reproduce -> minimize -> hypothesize -> fix). | AIOS |
+| [.agents/skills/improve-codebase-architecture/SKILL.md](file:///d:/AI-OS/.agents/skills/improve-codebase-architecture/SKILL.md) | File | Tier 1 skill scanning codebases for deep-module opportunities and generating HTML reports. | AIOS |
+| [.agents/skills/domain-modeling/SKILL.md](file:///d:/AI-OS/.agents/skills/domain-modeling/SKILL.md) | File | Tier 1 skill building/sharpening domain glossary and CONTEXT.md. | AIOS |
+| [.agents/skills/codebase-design/SKILL.md](file:///d:/AI-OS/.agents/skills/codebase-design/SKILL.md) | File | Tier 1 skill enforcing deep-module design principles and vocabulary. | AIOS |
+| [.agents/skills/code-review/SKILL.md](file:///d:/AI-OS/.agents/skills/code-review/SKILL.md) | File | Tier 1 2-axis code review skill (Standards + Spec diff audit). | AIOS |
+| [.agents/skills/wayfinder/SKILL.md](file:///d:/AI-OS/.agents/skills/wayfinder/SKILL.md) | File | Tier 1 skill mapping foggy multi-session projects into decision tickets. | AIOS |
+| [.agents/skills/teach/SKILL.md](file:///d:/AI-OS/.agents/skills/teach/SKILL.md) | File | Tier 1 multi-session stateful interactive teaching skill. | AIOS |
+| [.agents/skills/handoff/SKILL.md](file:///d:/AI-OS/.agents/skills/handoff/SKILL.md) | File | Tier 1 conversation compacting & handoff file generator. | AIOS |
+| [.agents/skills/prototype/SKILL.md](file:///d:/AI-OS/.agents/skills/prototype/SKILL.md) | File | Tier 1 throwaway prototype generator for UI/logic exploration. | AIOS |
+| [.agents/skills/research/SKILL.md](file:///d:/AI-OS/.agents/skills/research/SKILL.md) | File | Tier 1 background research skill querying primary sources. | AIOS |
+| [.agents/skills/resolving-merge-conflicts/SKILL.md](file:///d:/AI-OS/.agents/skills/resolving-merge-conflicts/SKILL.md) | File | Tier 1 intent-traced git merge and rebase conflict resolution skill. | AIOS |
+| [.agents/skills/to-questionnaire/SKILL.md](file:///d:/AI-OS/.agents/skills/to-questionnaire/SKILL.md) | File | Tier 1 questionnaire generator for stakeholder input gaps. | AIOS |
+| [.agents/skills/triage/SKILL.md](file:///d:/AI-OS/.agents/skills/triage/SKILL.md) | File | Tier 1 issue triage state machine manager. | AIOS |
+| [.agents/skills/wizard/SKILL.md](file:///d:/AI-OS/.agents/skills/wizard/SKILL.md) | File | Tier 1 interactive bash/human wizard script generator for credential setup. | AIOS |
+| [.agents/skills/wait-what/SKILL.md](file:///d:/AI-OS/.agents/skills/wait-what/SKILL.md) | File | Tier 1 plain-English re-pitch skill for complex jargon explanations. | AIOS |
+| [.agents/skills/writing-for-agents/SKILL.md](file:///d:/AI-OS/.agents/skills/writing-for-agents/SKILL.md) | File | Tier 1 authoring guidelines skill for writing agent-readable documents. | AIOS |
 | [config/](file:///d:/AI-OS/config/) | Folder | Local tool configuration directory (mcporter MCP endpoints config). | AIOS |
 | [.playwright-mcp/](file:///d:/AI-OS/.playwright-mcp/) | Folder | Temporary cache folder for Playwright MCP server screenshots and logs. | Playwright / AIOS |
 | [projects/](file:///d:/AI-OS/projects/) | Junctions | Ignored folder containing junctions to external active project directories (Websites, Zorixel brand, For AIOS, My advisors, Products, Learning, Sandbox). | Operator / AIOS |
@@ -66,6 +107,8 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [docs/](file:///d:/AI-OS/docs/) | Folder | Workspace documentation folder. | AIOS |
 | [docs/daily-plans/2026-07-30-master-plan.md](file:///d:/AI-OS/docs/daily-plans/2026-07-30-master-plan.md) | File | Master sprint plan for 30 July 2026 covering 4 phases and Higgsfield trial. | AIOS |
 | [New Fonts/](file:///d:/AI-OS/New Fonts/) | Folder | Display font archives folder containing Queensides, Pavot, Kosmolet, Van Arkel, and Aicon fonts. | Operator / AIOS |
+| [references/zorixel-brand-identity.md](file:///d:/AI-OS/references/zorixel-brand-identity.md) | File | ZORIXEL Master Brand Identity v3.0 reference manual (colors, font hierarchy, logo rules). | AIOS |
+| [references/aios-architecture-guide.md](file:///d:/AI-OS/references/aios-architecture-guide.md) | File | AIOS system structure, vault guidelines, and 5 Master Graphify operating patterns. | AIOS |
 | [projects/Websites/client-showcase/](file:///d:/AI-OS/projects/Websites/client-showcase/) | Standalone Repo | ZORIXEL Client-Conversion Showcase Web Application (Vite + React + Tailwind v4 + OKLCH). | AIOS |
 
 | [projects/font-showcase/colors_presentation.html](file:///d:/AI-OS/projects/font-showcase/colors_presentation.html) | File | Interactive color exploration slides showcase page. | AIOS |
@@ -104,6 +147,11 @@ This document serves as the centralized directory and file index for Atinek Maur
 | [scripts/build_component_registry.py](file:///d:/AI-OS/scripts/build_component_registry.py) | File | Parser script building JSON registry and Markdown catalog from raw component specs. | AIOS |
 | [scripts/component_registry_cli.py](file:///d:/AI-OS/scripts/component_registry_cli.py) | File | CLI helper script for searching, filtering favorites, and fetching component commands. | AIOS |
 | [scripts/design_asset_engine.py](file:///d:/AI-OS/scripts/design_asset_engine.py) | File | Design asset engine helper script for automated asset processing. | AIOS |
+| [scripts/aios_deep_search.py](file:///d:/AI-OS/scripts/aios_deep_search.py) | File | 2-Stage Universal Multi-Vault Deep Search Engine across 8 vaults and Graphify AST hubs. | AIOS |
+| [scripts/aios_bootup_context.py](file:///d:/AI-OS/scripts/aios_bootup_context.py) | File | Automated Chat Bootup Context Aggregator script for instant session context pre-fetching. | AIOS |
+| [scripts/aios_gws_health_check.py](file:///d:/AI-OS/scripts/aios_gws_health_check.py) | File | Pre-flight GWS OAuth credential & GCP service API self-healing health guard. | AIOS |
+| [scripts/aios_memory_compact.py](file:///d:/AI-OS/scripts/aios_memory_compact.py) | File | Decision Log & Memory Auto-Compactor engine for quarterly archiving. | AIOS |
+| [scripts/verify_design_milestone.py](file:///d:/AI-OS/scripts/verify_design_milestone.py) | File | Universal 5-Viewport Playwright Visual QA and CSS auto-fix engine. | AIOS |
 
 | [brainstorms/2026-07-16-jordan-watkins-brand-reference.md](file:///d:/AI-OS/brainstorms/2026-07-16-jordan-watkins-brand-reference.md) | File | Brainstorm capture for Jordan Watkins brand reference. | AIOS |
 | [brainstorms/2026-07-16-premium-frontend-design-system.md](file:///d:/AI-OS/brainstorms/2026-07-16-premium-frontend-design-system.md) | File | Strategy for premium frontend design system. | AIOS |

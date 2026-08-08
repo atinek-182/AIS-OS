@@ -451,9 +451,7 @@ The chart card (slide 6) achieves its "lifted" feeling through border-radius 32p
 | 32px | Chart card (slide 6) |
 | 28px | Value cards (slide 3) |
 | 4px | SVG chart bars (rx="4") |
-| 0px | Section headlines, grid cells (no rounding) |
-
-The system has a strong binary: either fully rounded (pills, circles) or square (content blocks). The exception is the chart card (32px) and value cards (28px) — large enough radius to feel "soft" but geometric rather than circular.
+| 0px | Section headlines, grid cells (no rounding) | The system has a strong binary: either fully rounded (pills, circles) or square (content blocks). The exception is the chart card (32px) and value cards (28px) — large enough radius to feel "soft" but geometric rather than circular.
 
 ### Pill System
 Pills are the universal label/tag component. Three size variants:

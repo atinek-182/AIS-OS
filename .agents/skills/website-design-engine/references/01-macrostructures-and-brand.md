@@ -1,6 +1,6 @@
-# 🏛️ Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems
+# Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)
 
-## 1. 21 Hallmark Macrostructure Archetypes
+## 21 Hallmark Macrostructure Archetypes
 
 Select ONE macrostructure archetype that fits the brief's subject matter. Do not default to standard hero -> 3-column feature -> CTA:
 
@@ -28,57 +28,39 @@ Select ONE macrostructure archetype that fits the brief's subject matter. Do not
 
 ---
 
-## 2. Automated Design Token Extraction (`hallmark study` / `scrape-reference`)
+## Design Token Extraction & OKLCH Theme Architecture
 
-When a reference URL or screenshot is provided during initial discovery:
-1. **Extract Visual DNA**: Inspect reference styles to capture the primary color accent, background tone, font stack, and border radius.
-2. **Generate Token Variables**: Automatically map findings into CSS custom properties in `index.css`:
+Map all visual DNA into Tailwind CSS v4 `@theme` custom properties in `index.css`:
 
 ```css
 @theme {
-  --color-bg-primary: oklch(0.14 0.01 260);
-  --color-bg-surface: oklch(0.18 0.02 260);
-  --color-border: oklch(0.25 0.02 260);
-  --color-text-main: oklch(0.95 0.01 260);
-  --color-text-muted: oklch(0.65 0.02 260);
-  --color-accent: oklch(0.65 0.22 140); /* Emerald Pop */
+  --color-bg-primary: oklch(0.12 0.01 250);     /* Deep Obsidian Ink */
+  --color-bg-surface: oklch(0.18 0.015 250 / 0.8); /* Glass Surface Layer */
+  --color-border: oklch(0.25 0.02 250);
+  --color-text-main: oklch(0.98 0.005 250);
+  --color-text-muted: oklch(0.65 0.01 250);
+  --color-accent-emerald: oklch(0.78 0.18 145);  /* Vibrant Emerald Pop */
+  --color-accent-indigo: oklch(0.72 0.19 250);   /* Electric Indigo Glow */
   --font-logo: "Nuqun", sans-serif;
-  --font-display: "Rosehot", sans-serif;
+  --font-display-hero: "Havock", sans-serif;
+  --font-display-sub: "Rosehot", sans-serif;
   --font-body: "Outfit", sans-serif;
   --font-mono: "Geist Mono", monospace;
+}
+
+/* 3% SVG Noise Overlay Texture */
+.noise-bg {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
 }
 ```
 
 ---
 
-## 3. Brand Typography Discipline
+## Brand Typography Safety Rules
 
 - **Nuqun**: Signature brandmark logo typeface.
-- **Rosehot**: Display typography for hero headlines, major titles, and section headers.
-- **Outfit**: Body text for paragraphs, feature descriptions, and UI labels.
+- **Havock**: Primary display typography for hero headlines and big middle titles.
+  - **Safety Rule (Rule 1.14)**: Headlines larger than `64px` in `Havock` REQUIRE explicit `line-height: 1.28` and minimum `margin-bottom: 28px` to prevent multi-line text collisions.
+- **Rosehot**: Editorial display typography for subheadings and section titles.
+- **Outfit**: Primary body text for paragraphs, descriptions, and UI labels.
 - **Geist Mono / JetBrains Mono**: Monospace font for telemetry, metrics, code, and structural tags.
-
-### Typography Rules:
-- **Hero Headline**: `text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none`.
-- **Body Paragraphs**: `text-base text-zinc-400 leading-relaxed max-w-[65ch]`.
-- **No Mixed-Family Emphasis**: Use italic/bold of the SAME font family for emphasis. Never inject a random serif word into a sans headline.
-- **Italic Descender Clearance**: When italic display text contains `y g j p q`, set minimum `leading-[1.1]` and `pb-1` to prevent clipping.
-
----
-
-## 4. OKLCH Color Math & AI Slop Ban
-
-Always use locked CSS OKLCH tokens. Max 1 accent color per page.
-
-### ⛔ BANNED AI SLOP GRADIENTS & STEREOTYPES:
-- **BANNED**: Generic purple/blue gradient backgrounds (`bg-gradient-to-r from-purple-500 to-indigo-600` or `#8b5cf6` glows over `#09090b`).
-- **BANNED**: Floating blurred color blobs (`blur-3xl opacity-30 bg-purple-500`).
-- **BANNED**: Fake invented statistics cards ("+47% conversion", "50,000+ teams").
-- **BANNED**: Un-tokenized raw Hex strings in inline styles.
-
-### Rotational OKLCH Palette Families:
-1. **Pure Dark Pop**: Off-black (`oklch(0.12 0.01 260)`) + stark white + 1 Emerald or Cyan accent.
-2. **Cold Luxury**: Silver-grey (`oklch(0.92 0.005 240)`) + smoke + chrome accent.
-3. **Forest Studio**: Deep forest (`oklch(0.20 0.04 150)`) + bone + amber accent.
-4. **Cobalt + Cream**: Deep saturated cobalt pop against cool neutral.
-5. **Slate + Terracotta**: Rust accent against slate-grey structure.

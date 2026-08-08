@@ -10,7 +10,7 @@ New here? This beginner-friendly video walks you through the whole thing, start 
   <img src="https://img.youtube.com/vi/372Iksaz8b0/maxresdefault.jpg" alt="Watch the Frontend Slides walkthrough and tutorial on YouTube" width="100%" />
 </a>
 
-> ▶️ **[Watch on YouTube →](https://www.youtube.com/watch?v=372Iksaz8b0)** (beginner-friendly walkthrough and tutorial)
+>  **[Watch on YouTube →](https://www.youtube.com/watch?v=372Iksaz8b0)** (beginner-friendly walkthrough and tutorial)
 
 ## What This Does
 
@@ -522,9 +522,7 @@ This skill uses **progressive disclosure** — the main `SKILL.md` is a workflow
 | `animation-patterns.md`   | CSS/JS animation reference     | Phase 3 (generation)      |
 | `scripts/extract-pptx.py` | PPT content extraction         | Phase 4 (conversion)      |
 | `scripts/deploy.sh`       | Deploy to Vercel               | Phase 6 (sharing)         |
-| `scripts/export-pdf.sh`   | Export slides to PDF           | Phase 6 (sharing)         |
-
-Maintenance-only source metadata and regeneration helpers live outside the
+| `scripts/export-pdf.sh`   | Export slides to PDF           | Phase 6 (sharing)         | Maintenance-only source metadata and regeneration helpers live outside the
 user-facing skill package. Normal users do not need them.
 
 This design follows agent-skill best practices: give the agent a map first,

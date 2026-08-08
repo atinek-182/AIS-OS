@@ -9,7 +9,7 @@ argument-hint: '[add|remove] [target-name]'
 
 # Autoresearch Loop Targets Manager
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/autoresearch-manage [add|remove] [target-name]` in chat.
@@ -57,13 +57,13 @@ This automatically:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Optimization Pipeline**: Integrates with Karpathy's closed-loop Autoresearch runner scripts in scripts/.
 - **System Quality**: Hands off prompt & skill optimizations to **/skill-builder** and **/improve-system**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

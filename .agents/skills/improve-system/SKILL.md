@@ -10,7 +10,7 @@ argument-hint: '[optional focus or specific file]'
 
 # System Self-Improvement, Security Audit & Deployment Workflow
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/improve-system [optional focus or specific file]` in chat.
@@ -118,13 +118,13 @@ Files created in `brain-aios/wiki/experiences/` must follow this format:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Self-Improvement Loop**: Triggered after major milestones, skill updates, or user corrections.
 - **System Maintenance**: Updates skill files, persists lessons into MEMORY.md, and optimizes workspace instructions.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

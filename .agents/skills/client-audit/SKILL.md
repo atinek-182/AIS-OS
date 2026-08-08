@@ -6,7 +6,7 @@ argument-hint: '[Client Name] [Website URL] [optional: lead channel / context no
 
 # ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill automates Stage 1 client lead discovery, web scraping, vulnerability auditing, forensic research prompt generation, 7-agent STORM research, Mobile Loom Cheat Sheet creation, Notion Operational OS blueprinting, and 5-persona `/roast` validation in **one single command**.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 📌 Generic 1-Line Execution Pipeline
+## Generic 1-Line Execution Pipeline
 
 When invoked with any client (e.g. `/client-audit "[Client Name]" [Website URL] [context]`):
 
@@ -66,7 +66,7 @@ When invoked with any client (e.g. `/client-audit "[Client Name]" [Website URL] 
 
 ---
 
-## 🔗 Inter-Skill Connections
+## Inter-Skill Connections
 - **Lead Scaffolding**: Calls `/new-client`.
 - **Adversarial Audit**: Calls `/roast`.
 - **Deep Research**: Calls `/storm-research-project`.
@@ -75,7 +75,7 @@ When invoked with any client (e.g. `/client-audit "[Client Name]" [Website URL] 
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

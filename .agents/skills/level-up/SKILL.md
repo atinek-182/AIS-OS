@@ -8,7 +8,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/level-up [optional parameters]` in chat.
@@ -126,8 +126,7 @@ Once chosen, route to the appropriate scaffolder:
 ```markdown
 ---
 bike-method-phase: 1  # Phase 1 — Training wheels. Run manually first.
-three-ms-attribution: |
-  Adapted from The Three Ms of AI™ © 2026 Nate Herk.
+three-ms-attribution: | Adapted from The Three Ms of AI™ © 2026 Nate Herk.
 ---
 ```
 
@@ -170,14 +169,14 @@ Every `/level-up` run produces:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Weekly 3Ms Interview**: Scopes one high-leverage AI automation per week (Mindset, Method, Machine framework).
 - **Task Scraping**: Evaluates manual overhead logged during **/daily-review-day**.
 - **Decision Logging**: Appends automation specs to decisions/log.md.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

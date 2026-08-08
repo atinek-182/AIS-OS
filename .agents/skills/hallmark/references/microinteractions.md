@@ -62,9 +62,7 @@ Pick from these durations. Do not invent new ones.
 | **150–200 ms** | Hover state transitions, focus rings appearing, single-property fades, tooltip appears (with delay before — see below). |
 | **250–300 ms** | Modal / dropdown / sheet opens, content fades in, validation icon scales in, tab content crossfade. |
 | **400–500 ms** | Toast slides in, page-load section reveal, complex multi-property transitions, accordion open. |
-| **0 ms** | The right answer surprisingly often. Focus state, keyboard navigation, error appearance — many things should not animate at all. |
-
-Exit durations are 60–75% of the corresponding entrance. A 300ms enter pairs with a 200ms exit. Never the reverse.
+| **0 ms** | The right answer surprisingly often. Focus state, keyboard navigation, error appearance — many things should not animate at all. | Exit durations are 60–75% of the corresponding entrance. A 300ms enter pairs with a 200ms exit. Never the reverse.
 
 ## The easing canon
 
@@ -235,9 +233,7 @@ Microinteractions adapt to the theme. The same button press is louder in Brutal 
 | Terminal | 0× | none, except caret blink *inside* a typed command (N8 nav, install code) | Print + monospace metaphor. **No standalone blinking cursor** — see the Caret blink row above. The caret only blinks where the user would type. |
 | Manifesto | 0.7× | `--ease-out` (sharp) | Snap into place. |
 | Almanac | 0.85× | `--ease-out` | Functional, like a reference book. |
-| Sport | 0.7× | `--ease-out` (sharp) | Quick, italic-energy. |
-
-If the theme has duration scale `0×`, you do not animate. The page does not move. That is a deliberate design choice; it is not broken.
+| Sport | 0.7× | `--ease-out` (sharp) | Quick, italic-energy. | If the theme has duration scale `0×`, you do not animate. The page does not move. That is a deliberate design choice; it is not broken.
 
 ## Accessibility ground truth
 

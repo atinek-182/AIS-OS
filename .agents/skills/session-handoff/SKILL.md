@@ -6,14 +6,14 @@ argument-hint: '[optional: specific topic or milestone focus]'
 
 # Session Handoff — Clear Context, Preserve State
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/session-handoff` in chat.
 - **Dynamic Intent Matching**: Triggered automatically when the user asks to summarize the session, prepare a handoff, or wrap up work.
 - **Inter-Skill & AIOS Calling**: Invokable by parent skills or subagents.
 
-## 🎯 Purpose
+## Purpose
 
 When a session grows long or a major milestone completes, generate a structured handoff note summarizing context, completed work, active decisions, and immediate next actions.
 
@@ -41,7 +41,7 @@ When a session grows long or a major milestone completes, generate a structured 
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

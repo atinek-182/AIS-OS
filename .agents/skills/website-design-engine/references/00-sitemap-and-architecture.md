@@ -1,8 +1,27 @@
-# Phase 0.5 Reference: Sitemap & Shared Architecture Scaffolding
+# Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)
 
-## 🗺️ Multi-Page Sitemap Specification
+## Phase 0 & Phase 0.1 Verification Protocol
 
-Before writing individual page components, establish a clean site tree:
+Before writing individual page components or route handlers:
+
+1. **Phase 0 Stack Inquiry (`/grill-me`)**:
+   - Inquire: *"Do you need Fullstack (Next.js 15 App Router with `await params` + React 19 + Server Actions) or a Lightweight SPA (Vite + React + Tailwind v4)?"*
+   - Establish Motion Dial (0-10) and primary lead conversion path.
+
+2. **Phase 0.1 Document & Complete Project Sweep**:
+   - Inspect Six-File Context files (`TECH_STACK.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `PROJECT.md`, `ROADMAP.md`, `STATE.md`).
+   - Read project root config files (`package.json`, `drizzle.config.ts`, `prisma/schema.prisma`, `.env.example`).
+   - Execute `python scripts/graphify_runner.py query "<project-topic>"` and `python scripts/aios_deep_search.py "<project-topic>"` to extract AST node connections across all 8 workspace vaults.
+   - Solicit clarification for underspecified context BEFORE making design/code decisions.
+
+3. **Phase 0.2 Adversarial Pre-Build Audit (`/roast`)**:
+   - Convene `/roast --domain code --save` to stress-test proposed architecture, routes, and risk matrix.
+
+---
+
+## Multi-Page Sitemap Specification
+
+Establish a clean site tree with conversion routing:
 
 ```json
 {
@@ -13,13 +32,13 @@ Before writing individual page components, establish a clean site tree:
       "path": "/",
       "name": "Home",
       "layout": "RootLayout",
-      "purpose": "Hero narrative, core value proposition, key feature highlights, CTA"
+      "purpose": "Hero narrative, custom bottleneck text field, key feature highlights, CTA"
     },
     {
       "path": "/about",
       "name": "About / Story",
       "layout": "RootLayout",
-      "purpose": "Brand story, team/origin narrative, philosophy, visual timeline"
+      "purpose": "Brand story, team narrative, philosophy, visual timeline"
     },
     {
       "path": "/features",
@@ -29,15 +48,15 @@ Before writing individual page components, establish a clean site tree:
     },
     {
       "path": "/pricing",
-      "name": "Pricing / Plans",
+      "name": "Pricing / Value Lock",
       "layout": "RootLayout",
-      "purpose": "Tiered pricing cards, feature toggle (monthly/annual), FAQ accordion"
+      "purpose": "Nate Herk value-first price delay, 3-tier card comparison, FAQ accordion"
     },
     {
       "path": "/contact",
-      "name": "Contact / Demo",
+      "name": "Contact / Audit",
       "layout": "RootLayout",
-      "purpose": "Interactive booking form, direct channels, office location visual"
+      "purpose": "Interactive bottleneck form, Google Sheets CRM auto-sync, office location visual"
     }
   ]
 }
@@ -45,12 +64,12 @@ Before writing individual page components, establish a clean site tree:
 
 ---
 
-## 🏗️ Master `RootLayout` Standards
+## Master RootLayout Standards
 
 Every multi-page site generated MUST use a shared master `RootLayout` component wrapping child pages:
 
 1. **Persistent Header Navigation (`<Navbar>`)**:
-   - Logo anchor on top-left (Nuqun brand font or clean geometric SVG).
+   - Logo anchor on top-left (Nuqun brand font or clean geometric vector).
    - Centered route navigation links with active state indicator styling (`aria-current="page"`).
    - Primary action CTA button on top-right ("Get Started", "Book Demo").
    - Responsive Mobile Hamburger menu overlay with smooth fade/slide transitions.
@@ -62,4 +81,5 @@ Every multi-page site generated MUST use a shared master `RootLayout` component 
    - Social links & legal policy anchors.
 
 3. **SEO Meta Inheritance**:
-   - Each sub-page inherits `<title>` and `<meta name="description">` overrides dynamically via route props or Next.js metadata API.
+   - Next.js 15: Export metadata via `generateMetadata()` or static `metadata` object.
+   - Vite React SPA: Use dynamic document title updates.

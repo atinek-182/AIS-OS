@@ -336,9 +336,7 @@ Vellum targets `100vw × 100vh` — full viewport. Each `.slide` flexes to fill 
 | `{spacing.pad-y}` | 6vh | Vertical slide padding |
 | `{spacing.gap-lg}` | 5vh | Between major content sections |
 | `{spacing.gap-md}` | 3vh | Between related elements |
-| `{spacing.gap-sm}` | 1.5vh | Between tightly coupled elements |
-
-Quote slides use 1.2× pad-y and 1.4× pad-x to give the centered quote extra breathing room. Compare layouts override slide padding to 0 because each panel carries its own internal padding.
+| `{spacing.gap-sm}` | 1.5vh | Between tightly coupled elements | Quote slides use 1.2× pad-y and 1.4× pad-x to give the centered quote extra breathing room. Compare layouts override slide padding to 0 because each panel carries its own internal padding.
 
 ### Chrome Frame
 
@@ -370,9 +368,7 @@ The system is intentionally still. There is no motion (slide and entrance animat
 | Value | Use |
 |---|---|
 | 0 | Everything except navigation dots |
-| 50% (circle) | Nav dots (deck-stage chrome only, not slide content) |
-
-Vellum has **no rounded chrome**. Cards, panels, stat tiles, image placeholders, compare panels — all strict rectangles. The only round shapes are the deck navigation dots, which are part of the deck-stage UI rather than slide content.
+| 50% (circle) | Nav dots (deck-stage chrome only, not slide content) | Vellum has **no rounded chrome**. Cards, panels, stat tiles, image placeholders, compare panels — all strict rectangles. The only round shapes are the deck navigation dots, which are part of the deck-stage UI rather than slide content.
 
 ### Border Weights
 

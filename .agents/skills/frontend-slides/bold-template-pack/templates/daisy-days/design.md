@@ -337,9 +337,7 @@ The system targets full viewport — every `.slide` is `100vw × 100vh` with `pa
 | `{spacing.radius}` | 20px | Standard cards, day-cards, timeline cards |
 | `{spacing.radius-lg}` | 28px | Featured cards (chart container, welcome frame, quote box) |
 | `{spacing.radius-pill}` | 50px | Badges, slide counter |
-| `{spacing.radius-round}` | 50% | All circles (avatars, bullet dots, marker dots, step circles, icons) |
-
-Every visible region carries some radius. There are zero square corners in this system besides the SVG decorations themselves.
+| `{spacing.radius-round}` | 50% | All circles (avatars, bullet dots, marker dots, step circles, icons) | Every visible region carries some radius. There are zero square corners in this system besides the SVG decorations themselves.
 
 ### Content Centering
 Slide content is flex-centered both vertically and horizontally inside the slide padding. The main content container has a max-width that varies by composition (typically 700–1100px) and never spans the full slide width — there is always margin between content and slide edge for the decorations to occupy.

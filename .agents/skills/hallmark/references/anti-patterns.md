@@ -192,7 +192,7 @@ Every section fades in when it enters the viewport. Every list staggers. The pag
 
 ### Mismatched icon sets
 
-Material Icons in the navbar, Heroicons in the feature cards, Lucide in the footer, an emoji "✨" in a hero badge. Each library has its own stroke voice; mixing them is the icon-set tell.
+Material Icons in the navbar, Heroicons in the feature cards, Lucide in the footer, an emoji "" in a hero badge. Each library has its own stroke voice; mixing them is the icon-set tell.
 
 **Why it fails.** Icons are typography. You wouldn't ship a page with three different body fonts; don't ship one with three different icon strokes.
 
@@ -216,7 +216,7 @@ A stat-led layout, comparison row, or proof bar carrying numbers the user never 
 
 ### Generic emoji as feature icon
 
-A feature card, value prop, step number, or pricing tier with `✨` `🚀` `⚡` `🔥` `🎯` `✅` rendered as the primary icon. The "sparkle hero" badge with a `✨` glyph beside the eyebrow. Emoji standing in for an icon library because the model didn't pick one.
+A feature card, value prop, step number, or pricing tier with `` `` `` `` `` `` rendered as the primary icon. The "sparkle hero" badge with a `` glyph beside the eyebrow. Emoji standing in for an icon library because the model didn't pick one.
 
 **Why it fails.** Emoji are typography of a sort, but they are not part of the page's typographic system — they're rendered by the OS and look different on every device, they break the icon's stroke voice (you've now mixed a Phosphor-style line icon with a Twemoji blob), and the choice is recognisably the AI default. Sparkle-emoji-as-AI-shortcut is the cliché of the 2024–2025 era.
 

@@ -7,7 +7,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/agent-adapt [optional parameters]` in chat.
@@ -68,14 +68,14 @@ This skill coordinates the migration and adaptation of legacy coding plugins, cu
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Repository Ingestion**: Invoked by **`/ingest-repo`** during Phase 6 to adapt Claude Code skill references into Antigravity standards.
 - **Skill Quality Audit**: Hands off newly adapted skills to **`/skill-builder`** to run the No-Op test and dual-trigger frontmatter validation.
 - **System Rules Update**: Updates registered skill paths in **`GEMINI.md`** and **`WORKSPACE_MAP.md`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

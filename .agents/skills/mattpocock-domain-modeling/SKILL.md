@@ -6,7 +6,7 @@ argument-hint: '[domain_concept_or_feature]'
 
 # Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 This skill provides TypeScript-driven domain modeling, ubiquitous language sharpening, and Architectural Decision Record (ADR) management, directly adapted from Matt Pocock's engineering practices.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🧠 Domain Modeling Principles
+## Domain Modeling Principles
 
 ### 1. Challenge Against Glossary (`CONTEXT.md`)
 When domain terms are ambiguous or conflicting, challenge them immediately:
@@ -44,7 +44,7 @@ Create Architectural Decision Records (`docs/adr/0001-title.md`) ONLY when ALL 3
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Discovery Engine**: Called during Phase 0 discovery by **`/grill-me`**.
 - **Macro Planning**: Used by **`/mattpocock-wayfinder`** to name destinations and resolve ticket vocabularies.
 - **Spec Compilation**: Feeds type definitions into **`/mattpocock-to-spec`** and **`/jsmastery-architect`**.
@@ -52,7 +52,7 @@ Create Architectural Decision Records (`docs/adr/0001-title.md`) ONLY when ALL 3
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

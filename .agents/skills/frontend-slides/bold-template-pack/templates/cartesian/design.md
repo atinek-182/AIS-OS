@@ -326,9 +326,7 @@ The canvas is `100vw × 100vh` — full viewport with hidden overflow. Each `.sl
 | `{spacing.gap-lg}` | 5vw | Standard two-column or grid gutter |
 | `{spacing.gap-md}` | 3vw | Card-grid gutter |
 | `{spacing.gap-sm}` | 2vh | Agenda row vertical padding, attribution spacing |
-| `{spacing.card-pad}` | 4vh 2vw | Internal padding for content cards |
-
-Headlines typically carry a 2–3vh margin-bottom from labels above and a 2vh margin-bottom from body below. Section headers above 3-card or 4-team grids carry a 6vh margin-bottom from the grid (significant breathing room).
+| `{spacing.card-pad}` | 4vh 2vw | Internal padding for content cards | Headlines typically carry a 2–3vh margin-bottom from labels above and a 2vh margin-bottom from body below. Section headers above 3-card or 4-team grids carry a 6vh margin-bottom from the grid (significant breathing room).
 
 ### Decorative Geometry Layer
 Cartesian's signature is its **drafting-paper geometric decoration**. Every slide may layer one or more of:
@@ -367,9 +365,7 @@ Introducing a `box-shadow`, an elevated card, or a soft gradient breaks the rest
 | Value | Use |
 |---|---|
 | 50% (circle) | Every circular element: `card-icon` (40px), `team-photo` (12vw), `nav-dot` (8px), `geo-circle`, `geo-arc`, `geo-decoration`, `geo-ring` |
-| 0 | Everything else: cards, image-placeholders, nav-arrows, agenda rows, timeline, stat-blocks, chart container |
-
-The system uses **only two radius values**: 50% (true circle) or 0 (sharp rectangle). Soft-rounded corners do not exist.
+| 0 | Everything else: cards, image-placeholders, nav-arrows, agenda rows, timeline, stat-blocks, chart container | The system uses **only two radius values**: 50% (true circle) or 0 (sharp rectangle). Soft-rounded corners do not exist.
 
 ### Border Weights
 - **1px solid `{colors.line}`** — the universal structural border. Used on every card, image-placeholder, team-photo ring, nav-arrow, agenda row bottom, timeline rule, stats top, geo-circle, geo-decoration.

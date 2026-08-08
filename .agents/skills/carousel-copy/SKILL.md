@@ -6,7 +6,7 @@ argument-hint: '[topic_or_idea]'
 
 # ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill converts a topic, prompt, or concept into a viral Instagram carousel copy plan following ZORIXEL brand rules and adarshxdesign visual contracts.
 
@@ -17,13 +17,13 @@ Invokable via:
 
 ---
 
-## 🎯 Specific Use Cases & Target Audience
+## Specific Use Cases & Target Audience
 - **ZORIXEL Educational Carousels**: Create high-converting 5-10 slide carousels teaching UI/UX design, web creation, AI tools, or vibe coding to freelancers and designers.
 - **Micro-Offer / Product Launches**: Generate scroll-stopping carousels promoting digital products or AI tools (target: ₹1,00,000 revenue goal).
 
 ---
 
-## 🚀 Execution Workflow
+## Execution Workflow
 
 ### Step 1: Phase 0 Socratic Discovery (`/grill-me`)
 If the topic is vague, run `/grill-me` on:
@@ -66,7 +66,7 @@ Select slide layouts matching our stylesheet presets:
 
 ---
 
-## 📄 Target Markdown File Schema (`d:\AI-OS\brainstorms\temp_carousel\copy.md`)
+## Target Markdown File Schema (`d:\AI-OS\brainstorms\temp_carousel\copy.md`)
 
 Always write the output plan to `d:\AI-OS\brainstorms\temp_carousel\copy.md` in this exact format:
 
@@ -100,14 +100,14 @@ ButtonText: GET THE TEMPLATE
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Next Step**: Once `copy.md` is generated, run **`/carousel-render`** to compile HTML slides and capture final PNG images using Playwright headless browser rendering.
 - **Design Tuning**: If custom color swatches or contrast audits are needed, run **`/brand-colors`**.
 - **Reference Ingestion**: If extracting copy outlines from a reference Instagram carousel URL, run **`/scrape-carousel [url]`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

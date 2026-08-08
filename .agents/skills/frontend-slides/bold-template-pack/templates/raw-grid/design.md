@@ -337,9 +337,7 @@ A signature treatment: oversized numerals placed inside a card at very low opaci
 | Value | Use |
 |---|---|
 | 0px | Everything except circles |
-| 50% (circle) | Donut chart shapes only |
-
-The system has **no rounded corners**. Cards, buttons, labels, icon boxes, stat tiles, table cells, image frames — all strict rectangles or squares. The only round shape is the SVG donut chart, which is a circle by geometric necessity.
+| 50% (circle) | Donut chart shapes only | The system has **no rounded corners**. Cards, buttons, labels, icon boxes, stat tiles, table cells, image frames — all strict rectangles or squares. The only round shape is the SVG donut chart, which is a circle by geometric necessity.
 
 ### Border Weights
 - **3px solid `{colors.black}`** — the universal border. Used on every structural division: region separators, card outlines, table cells, icon boxes, connector nodes, swatches, bar tracks, stat tile borders. Never thinner, never thicker, never colored, never dashed.

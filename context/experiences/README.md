@@ -23,6 +23,10 @@
 - **2026-08-02**: [2026-08-02-value-based-pricing-and-micro-service-proof-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-02-value-based-pricing-and-micro-service-proof-architecture.md) — Value-Based AI Solution Pricing, Nate Herk Masterclass Ingestion & Micro-Service Proof Architecture.
 - **2026-08-03**: [2026-08-03-vashishthya-notion-intake-and-vault-rule.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-03-vashishthya-notion-intake-and-vault-rule.md) — Notion Operational OS Teardown, Mobile Loom Cheat Sheet Pattern & Client Vault Placement Mandate.
 - **2026-08-05**: [2026-08-05-gws-windows-subprocess-and-notion-formula2-safeguards.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-05-gws-windows-subprocess-and-notion-formula2-safeguards.md) — GWS Windows Direct Node Subprocess Routing, Notion Formula 2.0 Null Safeguards & Pre-Flight Automation Scripts.
+- **2026-08-07**: [2026-08-07-universal-roast-upgrade-and-awwwards-web-design-engine-v4.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-07-universal-roast-upgrade-and-awwwards-web-design-engine-v4.md) — Universal Multi-Agent Roast Engine v4.0, 65-Skill Emoji Purge, & Awwwards-Grade Website Design Engine v4.0.
+
+- **2026-08-07**: [2026-08-07-permanent-context-architecture-and-self-healing-upgrades.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-07-permanent-context-architecture-and-self-healing-upgrades.md) — Permanent AIOS Context Architecture, System Prompt Truncation Fix (<14KB), 2-Stage Deep Search Engine & Self-Healing Upgrades.
+- **2026-08-08**: [2026-08-08-skill-workflows-engine-and-reusable-agency-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-08-skill-workflows-engine-and-reusable-agency-architecture.md) — Skill Workflows Engine, Skill Plug-and-Play Protocol, & 7-Stage AI Agency Master Architecture.
 
 
 

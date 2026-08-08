@@ -13,9 +13,7 @@ Every interactive element has eight states. Most AI-generated UI styles two (def
 | Disabled | Not interactive | Reduced opacity (0.5) + `cursor: not-allowed` + `aria-disabled` |
 | Loading | Processing | Inline spinner or progress, label stays readable |
 | Error | Failed state | Red border, error icon, message, `aria-invalid` |
-| Success | Completed | Green check, confirmation, auto-dismiss |
-
-If any of these is missing on a production element, the element isn't finished.
+| Success | Completed | Green check, confirmation, auto-dismiss | If any of these is missing on a production element, the element isn't finished.
 
 ## Focus rings
 

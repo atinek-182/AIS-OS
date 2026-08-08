@@ -203,8 +203,8 @@ components:
   tree-item:
     fontSize: 14px
     indent: "24px per level"
-    folderGlyph: "📁 (U+1F4C1)"
-    fileGlyph: "📄 (U+1F4C4)"
+    folderGlyph: " (U+1F4C1)"
+    fileGlyph: " (U+1F4C4)"
     expandedMarker: "-"
     collapsedMarker: "+"
     description: "Explorer-style hierarchical tree view. Each row carries an expand marker (+/−), a folder or file emoji glyph, and the label text. Indentation steps by 24px per nesting level."
@@ -267,7 +267,7 @@ Depth is achieved through **bevel illusions** — every surface is either raised
 - The font stack is MS Sans Serif / Segoe UI / Tahoma fallback, with Press Start 2P and VT323 as nostalgic accents.
 - Status colors (green / red / yellow / cyan) carry semantic meaning: green = OK, red = warning, yellow = moderate, cyan = tertiary data.
 - Navy `{colors.blue-navy}` is the primary data color — progress bars, chart bars, key headlines, active nav dots.
-- Lists use a navy `>` chevron prefix; checkboxes use a literal `x` character; tree views use `📁` / `📄` emoji glyphs.
+- Lists use a navy `>` chevron prefix; checkboxes use a literal `x` character; tree views use `` / `` emoji glyphs.
 - Window title text reads as filenames in uppercase with extensions (`AGENDA.TXT`, `METRICS.LOG`, `EXPLORER.EXE`).
 
 ## Colors
@@ -442,7 +442,7 @@ Borders are never colored (no navy borders, no green borders); the bevel two-ton
 
 **Retro check** (`{components.retro-check}`) — A 16px sunken-bevel white square containing a literal lowercase `x` character when checked. The bevel is inverted relative to buttons (black on top/left, white on bottom/right).
 
-**Tree view** (`{components.tree-item}`) — Explorer-style hierarchical list. Each row carries an expand marker (+/−), a folder (`📁`) or file (`📄`) emoji glyph, and the label. 24px indentation per nesting level.
+**Tree view** (`{components.tree-item}`) — Explorer-style hierarchical list. Each row carries an expand marker (+/−), a folder (``) or file (``) emoji glyph, and the label. 24px indentation per nesting level.
 
 **KPI tile (group-box variant)** — A square group-box with a title label (`Revenue`, `Customers`, `Retention`, `NPS Score`), a large 30px navy metric, a green delta line (`▲ +18.3%`), and a 12px gray context line (`vs previous quarter`). Used in 4-up rows for dashboards.
 
@@ -573,6 +573,6 @@ The two nostalgic accent fonts (Press Start 2P, VT323) are fundamentally Latin-o
 - The CRT scanline overlay is a stylistic choice that does not match presenter-projector output well — on actual projection screens, the overlay can read as image noise rather than as nostalgic texture. Consider toggling the overlay off when projecting.
 - The Win9x bevel illusion depends on rendering at the right zoom level — bevels are 1–2px wide and can appear as solid borders or disappear entirely at extreme zoom levels or on very high-DPI displays without browser sub-pixel rendering.
 - Hover states are absent by design (the aesthetic predates universal hover). Modern audiences expecting hover affordances may find the deck unresponsive-feeling on mouse interaction.
-- The retro-list `>` chevron, retro-check `x`, and tree-view emoji glyphs are character-based, not vector — they will render with whatever default font metrics the runtime provides for `>`, `x`, `📁`, `📄`.
+- The retro-list `>` chevron, retro-check `x`, and tree-view emoji glyphs are character-based, not vector — they will render with whatever default font metrics the runtime provides for `>`, `x`, ``, ``.
 - The marquee animation runs continuously and cannot be paused. Some accessibility audits will flag this as a `prefers-reduced-motion` violation.
 - The `lib-cabinets` is set in `bgImage`-derived inline SVG noise / hatching patterns inside CSS — these are inlined data URIs and the rendered look will vary slightly across browsers.

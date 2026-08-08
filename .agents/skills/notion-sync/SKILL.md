@@ -6,7 +6,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/notion-sync [optional parameters]` in chat.
@@ -29,12 +29,12 @@ Enables the AIOS to sync decision logs, checklists, or competitor research detai
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Remote Vault Sync**: Syncs local decisions, content calendars, and task lists from rain-aios/ and second-brain-zorixel/ to Notion.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -1,7 +1,6 @@
 ---
 name: humanizer
-description: |
-  Remove signs of AI-generated writing from text. Use when editing, reviewing,
+description: | Remove signs of AI-generated writing from text. Use when editing, reviewing,
   writing responses, copy, headings, emails, or docs to sound natural and human.
   Based on Wikipedia's comprehensive "Signs of AI writing" guide. Detects and fixes
   33 patterns including: inflated symbolism, promotional language, em dash overuse,
@@ -178,7 +177,7 @@ Apply this section only when the content and the author's voice call for it: blo
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

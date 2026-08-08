@@ -6,7 +6,7 @@ argument-hint: '[system_name] [target_audience] [output_directory]'
 
 # Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill compiles dual-layer operator documentation for client handoffs, team onboarding, and AIOS system deployments. It outputs both a structured Executive SOP Markdown document and an Interactive HTML Setup Dashboard featuring 1-click copy code blocks, dynamic tabbed sections, visual schema diagrams, and test checklists.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 📦 Required Output Deliverables Contract
+## Required Output Deliverables Contract
 
 Every invocation MUST generate exactly TWO artifacts:
 
@@ -31,7 +31,7 @@ Every invocation MUST generate exactly TWO artifacts:
 
 ---
 
-## 🎨 HTML Dashboard Design System & Styling Tokens
+## HTML Dashboard Design System & Styling Tokens
 
 Strict adherence to ZORIXEL Master Brand Identity v3.0 (Option 1 Palette):
 
@@ -103,7 +103,7 @@ Strict adherence to ZORIXEL Master Brand Identity v3.0 (Option 1 Palette):
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

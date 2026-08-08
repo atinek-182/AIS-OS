@@ -407,9 +407,7 @@ The QR-block's 1.5px paper-color outset is the *only* shadow-like effect in the 
 | Value | Use |
 |---|---|
 | 0 | Every structural element — frames, cards, ledger rows, QR cells, pixel-glitch rectangles, charts, tables |
-| 50% (circle) | None — Cobalt Grid has no circular elements |
-
-The system uses **zero rounded corners**. Every shape is a strict rectangle. This is unusual for editorial systems and is part of the trend-report identity.
+| 50% (circle) | None — Cobalt Grid has no circular elements | The system uses **zero rounded corners**. Every shape is a strict rectangle. This is unusual for editorial systems and is part of the trend-report identity.
 
 ### Border Weights
 - **1.5px solid `{colors.ink}`** — primary structural rules: top/bottom slide hairlines, topbar bottom rule, table head row bottom border, chart baseline rule.

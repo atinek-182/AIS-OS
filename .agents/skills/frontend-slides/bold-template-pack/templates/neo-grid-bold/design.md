@@ -401,9 +401,7 @@ No other elements carry borders. Cards are borderless and rely on fill contrast.
 
 | Value | Use |
 |---|---|
-| 0px | Every element — cards, pills, tags, page numbers, table cells, chart bars, blockmarks |
-
-The system has **zero border-radius** on any element. Every shape is a strict rectangle or square. The block-stamp and corner-mark glyphs are composed of right-angle squares.
+| 0px | Every element — cards, pills, tags, page numbers, table cells, chart bars, blockmarks | The system has **zero border-radius** on any element. Every shape is a strict rectangle or square. The block-stamp and corner-mark glyphs are composed of right-angle squares.
 
 ### Border Weights
 

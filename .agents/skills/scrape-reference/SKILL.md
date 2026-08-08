@@ -14,7 +14,7 @@ argument-hint:
 
 # Ultimate Scrape Reference Skill (Full-Code Mirroring & Dot-to-Dot Vault Reference Engine)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/scrape-reference ['website URL']` in chat.
@@ -28,7 +28,7 @@ For complete technical specifications, network interceptor schemas, and deep arc
 
 ---
 
-## 🔒 Mandatory Operational Rules
+## Mandatory Operational Rules
 
 1. **Strict Sequential Execution Guard (One-by-One Only):**
    - When processing a list of URLs (e.g. 18-site queue), process **EXACTLY ONE SITE AT A TIME**.
@@ -120,13 +120,13 @@ For target site `[site-slug]`:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Site DNA Ingestion**: Full 10-stage reference ingestion pipeline (Scrapling fetch, Playwright multi-viewport audit, 5-layer DNA extraction).
 - **Vault Archival**: Saves manuals into premium-frontend-experience-system/vault-references/ and code into code-extracts/.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

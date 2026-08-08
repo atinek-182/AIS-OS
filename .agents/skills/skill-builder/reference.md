@@ -50,9 +50,7 @@ How `disable-model-invocation` and `user-invocable` interact:
 |-------------|------------------|--------------------|--------------------------|
 | (default -- both omitted) | Yes | Yes | Description always in context. Full skill loads when invoked. |
 | `disable-model-invocation: true` | Yes | No | Description NOT in context. Full skill loads when user invokes. |
-| `user-invocable: false` | No | Yes | Description always in context. Full skill loads when Antigravity invokes. |
-
-Key nuances:
+| `user-invocable: false` | No | Yes | Description always in context. Full skill loads when Antigravity invokes. | Key nuances:
 - `user-invocable` only controls `/` menu visibility, NOT the Skill tool. To block programmatic invocation, use `disable-model-invocation: true`.
 - `disable-model-invocation: true` is the strongest restriction. It removes the skill from Antigravity's context entirely AND prevents Skill tool access.
 
@@ -97,9 +95,7 @@ Where you store a skill determines who can use it:
 | Enterprise | Managed settings | All users in org | Highest |
 | Personal | `~/.agents/skills/<name>/SKILL.md` | All your projects | High |
 | Project | `.agents/skills/<name>/SKILL.md` | This project only | Medium |
-| Plugin | `<plugin>/skills/<name>/SKILL.md` | Where plugin enabled | Lowest |
-
-When skills share the same name across levels, higher-priority locations win. Plugin skills use `plugin-name:skill-name` namespace so they cannot conflict.
+| Plugin | `<plugin>/skills/<name>/SKILL.md` | Where plugin enabled | Lowest | When skills share the same name across levels, higher-priority locations win. Plugin skills use `plugin-name:skill-name` namespace so they cannot conflict.
 
 **Monorepo support:** When editing files in subdirectories, Antigravity auto-discovers skills from nested `.agents/skills/` directories (e.g., `packages/frontend/.agents/skills/`).
 
@@ -277,9 +273,7 @@ hooks:
 |-------|---------------|---------------|
 | `PreToolUse` | Tool name | Before the skill uses a tool |
 | `PostToolUse` | Tool name | After the skill uses a tool |
-| `Stop` | (none) | When the skill finishes (converted to SubagentStop at runtime) |
-
-Hook commands receive JSON input via stdin with the tool context. Exit code 0 = allow, exit code 2 = block.
+| `Stop` | (none) | When the skill finishes (converted to SubagentStop at runtime) | Hook commands receive JSON input via stdin with the tool context. Exit code 0 = allow, exit code 2 = block.
 
 ### Visual Output (Bundled Scripts)
 

@@ -1,159 +1,150 @@
 ---
 name: website-design-engine
-description: Master 10-Phase Web Creation Engine v3.0. Synthesizes project-local reference/ priority vault (#1 source of truth), Six-File Context layout specifications (zero auto-wireframes), categorized favorite component precedence, interactive Radiant Shaders (pbakaus/radiant) HTML extraction protocol, Obys grid math, Hallmark anti-slop gates, /jsmastery-audit App Router audits, and 5-viewport Playwright visual QA into a zero-rush execution framework. Invokable via /website-design-engine.
+description: Master 10-Phase Web Creation Engine v4.0 (Awwwards-Grade Architecture). Synthesizes official Awwwards judging criteria (40% Design, 30% Usability, 20% Creativity, 10% Content), 23-Sites Master Design Matrix, UX psychology, Lenis inertia scroll, GSAP ScrollTrigger scrollytelling, Radiant WebGL Shaders (pbakaus/radiant), OKLCH color math, Obys grid math, Nate Herk lead conversion mechanics, Phase 0.1 Complete Project & Graphify Sweep, Phase 0.2 Adversarial /roast Gate, /jsmastery-audit App Router audits, and 5-viewport Playwright visual QA with base64 font inlining into a zero-rush execution framework. Invokable via /website-design-engine.
 argument-hint: '[optional parameters or target URL/brief]'
 ---
 
-# 🚀 Website Design Engine (Master Web Creation Skill v3.0)
+# Website Design Engine (Master Web Creation Skill v4.0)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Overview & Tri-Mode Execution
 
-This skill builds distinctive, non-templated, world-class multi-page websites from scratch by orchestrating project-local `reference/` assets, categorized favorite UI components, Obys grid math, interactive WebGL shaders (`radiant-shaders`), and Playwright multi-viewport visual QA.
+This skill builds distinctive, non-templated, world-class multi-page websites and web applications from scratch by orchestrating project-local `reference/` assets, Six-File Context specifications, 23-Sites Awwwards design matrixes, interactive WebGL shaders (`radiant-shaders`), Lenis smooth momentum scroll, GSAP ScrollTrigger scrollytelling, Nate Herk lead conversion mechanics, and Playwright 5-viewport visual QA.
 
 Invokable via:
 - **Slash Command**: `/website-design-engine [brief_or_url]`
 - **Dynamic Intent**: Triggered automatically when creating web applications, landing pages, agency sites, or digital product UIs.
-- **Inter-Skill & AIOS Calling**: Programmatically invokable by parent skills (`/new-project`, `/gstack`, `/six-file-context-methodology`) or subagents.
+- **Programmatic Inter-Skill Calling**: Programmatically invokable by parent skills (`/new-project`, `/gstack`, `/six-file-context-methodology`) or subagents.
 
 ---
 
-## 🎯 Specific Use Cases
-- **ZORIXEL Product Landing Pages & Web Apps**: Create high-converting Next.js / Vite React applications featuring `Nuqun` logo typography, `Lenis` smooth inertia scroll, OKLCH color math, and custom scrollytelling.
-- **Client Conversion Flagships**: Build full multi-page applications (`/`, `/work`, `/about`, `/pricing`, `/contact`) driven by local `reference/` assets and 5-viewport visual QA verification.
+## Specific Use Cases
+- **ZORIXEL Agency Flagships & AI SaaS Applications**: Build high-converting Next.js 15 App Router (`await params`) or Vite React applications featuring `Nuqun` logo typography, `Havock` display headlines, `Rosehot` editorial subheadings, OKLCH dopamine-monochromatic color math, Lenis smooth inertia scroll, and interactive WebGL canvas stages.
+- **Client Lead Conversion Platforms**: Build client applications driven by Nate Herk lead conversion mechanics: (1) Custom Bottleneck Text Field, (2) Value-First Price Delay, (3) Automated Google Sheets Lead CRM Sync, and (4) 100% Client SaaS Zero-Fee Mandate (GAS + Notion Native Engine).
 
 ---
 
-## ⛔ Non-Negotiable Core Mandates
+## Non-Negotiable Core Mandates
 
 1. **Global Zero-Hurry & Methodical Step-by-Step Mandate**:  
    Never rush execution or build everything in a single un-checked step. Quality, deep option-based Q&A (`/grill-me`), pre-write `/roast` council audit, and Playwright visual QA take absolute precedence. If there is even the slightest doubt, stop and ask the user.
-2. **Project-Local `reference/` Priority Vault Protocol (#1 Source of Truth)**:  
-   Inside every project directory, the `reference/` (or `references/`) folder is the **#1 Priority Source of Truth**. Before selecting components or generating styles, the AI MUST scan `reference/` for screenshots (`.png`, `.jpg`, `.webp`), screen recordings (`.mp4`), HTML gallery files, TSX/CSS component code, and design briefs. Local reference assets ALWAYS take precedence over generic catalog entries.
+2. **Top Priority Source-of-Truth Hierarchy**:  
+   Inside every project directory, the source of truth follows a strict 4-level precedence hierarchy:
+   - **Priority 1 [TOP PRIORITY]**: **Six-File Context, Complete Project Files & Graphify AST Context** (`TECH_STACK.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `PROJECT.md`, `package.json`, configs, existing components, `graphify_runner.py query`, `aios_deep_search.py`).
+   - **Priority 2**: Project-Local Visual Assets (`reference/*.png`, `reference/*.html`, `reference/*.mp4`).
+   - **Priority 3**: Operator Favorite Components (`component_registry_cli.py search` with `is_favorite: true`).
+   - **Priority 4**: 300+ Component Catalog.
 3. **Six-File Layout Control (No Auto-Wireframe Generation)**:  
    Do NOT generate standalone automatic wireframes. Wireframes, component layouts, and route structures are explicitly defined in project context files via the **Six-File Context Methodology** (`six-file-context-methodology`).
-4. **Categorized Favorite Component Precedence**:  
-   When sourcing components beyond local `reference/` files, prioritize operator favorite components (`is_favorite: true`) within each category (hero, navigation, bento, pricing, cards, scrollytelling, footers) via `component_registry_cli.py search`.
-5. **Interactive Radiant Shader HTML Protocol (`pbakaus/radiant`)**:  
+4. **Interactive Radiant Shader HTML Protocol (`pbakaus/radiant`)**:  
    Never auto-generate `.tsx` shader components blindly. When a WebGL background or generative graphic is considered in Phase 4, the AI MUST explicitly ask the user: *"Would you like a WebGL shader background here? If yes, which shader from radiant-shaders.com gallery?"* The user will place the HTML file into `reference/`, and the AI will extract and adapt the WebGL shader code directly from that HTML file.
-6. **Just-In-Time (JIT) Phase Reference Loading**:  
+5. **Just-In-Time (JIT) Phase Reference Loading**:  
    To prevent context bloat and "skill blindness", load ONLY the specific 1-page reference file listed for the active phase (`references/00-06.md`).
-7. **Strict AI Slop & Generic Gradient Ban**:  
+6. **Strict AI Slop & Generic Gradient Ban**:  
    Ban generic purple/blue gradients (`bg-gradient-to-r from-purple-500 to-indigo-600`), floating blurred color blobs (`blur-3xl opacity-30 bg-purple-500`), invented fake metric cards ("+47% conversion", "50,000+ teams"), un-tokenized Hex/HSL strings, and default rounded-2xl cards. Enforce OKLCH color math, stark typography, and Hallmark pre-emit critique headers.
 
 ---
 
-## 🧭 10-Phase Execution Architecture (v3.0)
+## 10-Phase Execution Architecture (v4.0)
 
 ```
-[Phase 0: Socratic Intent Discovery]       ──► /grill-me (Audience, Vibe, Motion Dial 0-10)
-[Phase 0.2: Adversarial Pre-Build Audit]   ──► /roast (5-persona council: Contrarian, Bull, Logician, Researcher, Buyer)
-[Phase 0.5: Six-File Architecture Specs]   ──► /six-file-context-methodology & /jsmastery-architect (Layouts from Six-File)
-[Phase 1: Local Reference Vault & Tokens]  ──► AUTOMATICALLY scans project reference/ folder + OKLCH brand tokens
-[Phase 2: Grid Canons & Obys Math]         ──► AUTOMATICALLY reads brain-aios/wiki/sops/grid-systems-sop.md & 23-SITES matrix
-[Phase 3: Priority Component Sourcing]    ──► Local reference/ code -> Categorized Favorites -> 300+ Component Catalog
-[Phase 4: Motion & Radiant Shader Protocol] ──► Interactive Q&A for Radiant Shaders (extract from reference/*.html)
-[Phase 4.5: Zero-Cost Asset Pipeline]      ──► Free Nano Banana/Veo OR Unsplash Fallback URLs
-[Phase 5: Pre-Emit Anti-Slop & Code Audit] ──► /jsmastery-audit (App Router, Security, Types) & hallmark_runner.py
-[Phase 6: Playwright 5-Viewport Visual QA] ──► verify_design_milestone.py (320px to 1920px 0-regression check)
+[Phase 0: Socratic Intent & Stack Discovery]  ──► /grill-me (Fullstack Next.js 15 vs Vite SPA inquiry, Motion Dial 0-10)
+[Phase 0.1: Document & Complete Project Sweep] ──► Inspects Six-File Context, project codebase, configs, & Graphify AST
+[Phase 0.2: Adversarial Pre-Build Audit]   ──► /roast (5-Persona + Extended Roles: Contrarian, Bull, Logician, Researcher, Buyer)
+[Phase 1: Local Reference Vault & OKLCH]    ──► Local reference/ visual assets -> OKLCH brand color math & SVG noise
+[Phase 2: 23-Sites Awwwards Matrix & Obys]  ──► Obys Spatial Rhythm (120px padding), Progressive Disclosure, UX Psychology
+[Phase 3: Priority Component Sourcing]    ──► Local reference/ code -> Operator Favorites -> 300+ Catalog
+[Phase 4: Motion Stack & Radiant Shaders]   ──► Lenis Inertia Scroll + GSAP ScrollTrigger + Radiant WebGL Shaders
+[Phase 4.5: Zero-Cost Asset Pipeline]      ──► Free Unsplash / SVG asset URLs
+[Phase 5: Pre-Emit Anti-Slop & Security]   ──► /jsmastery-audit (App Router, Security, Types) & hallmark_runner.py
+[Phase 6: Playwright 5-Viewport Visual QA] ──► verify_design_milestone.py (Base64 font inlining, 320px to 1920px QA)
 [Phase 7: Auto-Evolution & Six-File Sync]  ──► Syncs learnings to references/ & triggers /six-file-context-methodology sync
 ```
 
 ---
 
-## 📋 Step-by-Step Phase Instructions
+## Phase-by-Phase Execution Details
 
-### Phase 0: Socratic Intent Discovery (`/grill-me`)
-1. Run `/grill-me` on core project requirements:
-   - Target Audience & Job: Who is this site for, and what is its primary CTA?
-   - Vibe Archetype: Linear-Clean, Awwwards-Experimental, Editorial, Brutalist, Premium Consumer, or Dark Tech?
-   - Motion & Shader Intensity (Motion Dial 0–10): Static/Airy (Dial 0-3) vs Kinetic/GSAP (Dial 4-6) vs WebGL Canvas (Dial 7-10)?
-   - Domain Vocabulary: Resolve key terms using `/mattpocock-domain-modeling`.
-2. Output a 1-line **Design Read**: *"Reading this as: [Page Kind] for [Audience], with [Vibe] language, Motion Dial [X], using [Macrostructure Archetype]."*
+### Phase 0: Socratic Intent & Stack Discovery (`/grill-me`)
+1. Run `/grill-me` with the operator to establish core requirements using **INFER / ASK / RECOMMEND**:
+   - **Stack Inquiry**: *"Do you need Fullstack (Next.js 15 App Router with `await params` + React 19 + Server Actions) or a Lightweight SPA (Vite + React + Tailwind v4)?"*
+   - **Motion Dial**: Set Motion Intensity (0-10 scale).
+   - **Conversion Goal**: Define lead capture mechanics and primary CTA paths.
 
-### Phase 0.2: Adversarial Roast Council Audit (`/roast`)
-Run `/roast` on visual concepts, layout plans, and business targets before touching code. Obtain a **GO / RESHAPE** verdict.
+### Phase 0.1: Comprehensive Project Files & Graphify Context Verification Gate
+1. Inspect all Six-File Context files (`TECH_STACK.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `PROJECT.md`, `ROADMAP.md`, `STATE.md`).
+2. Read project root configuration files (`package.json`, `drizzle.config.ts`, `prisma/schema.prisma`, `.env.example`).
+3. Run `python scripts/graphify_runner.py query "<project-topic>"` and `python scripts/aios_deep_search.py "<project-topic>"` to extract AST node connections and hidden notes across all 8 workspace vaults.
+4. Solicit clarification for any underspecified requirements with the operator or subagent **BEFORE** making design or technical decisions.
 
-### Phase 0.5: Six-File Architecture & Build Spec (`/six-file-context-methodology`)
-1. Read `references/00-sitemap-and-architecture.md` and project context files in `context/`.
-2. Do NOT generate automatic wireframe images/HTML. Use the layout specifications defined in `context/ui-context.md` and `context/specs/`.
-3. Scaffold `RootLayout` with persistent responsive navigation, route indicator state, and shared global footer.
+### Phase 0.2: Adversarial Pre-Build Audit (`/roast`)
+1. Convene `/roast --domain code --save` to stress-test proposed architecture, routes, and component choices.
+2. Calculate 4-axis risk matrix (Security/Failure Risk, Implementation Friction, Value & ROI, System Simplicity).
+3. Verify that verdict is `GO` before proceeding to Phase 1. If `RESHAPE`, execute the `ROAST_REFINEMENT_SPEC` fix checklist.
 
-### Phase 1: Local `reference/` Vault Scanning & Brand Tokens
-1. **AUTOMATIC MANDATORY STEP — Local Reference Scan**:
-   - Inspect project-local `reference/` (or `references/`) folder.
-   - Parse screenshots (`.png`, `.jpg`), screen recordings (`.mp4`), HTML gallery files, TSX/CSS snippets, and markdown briefs. Extract exact visual rules, color cues, and custom component layout instructions.
-2. **AUTOMATIC MANDATORY STEP — Visual DNA Master Ingestion**:
-   - For Grid/Agency layouts: `premium-frontend-experience-system/vault-references/grids-obys-agency-granularity-master.md`
-   - For Editorial/Studio layouts: `premium-frontend-experience-system/vault-references/sondaven-granularity-master.md`
-   - For Dark Tech/SaaS layouts: `premium-frontend-experience-system/vault-references/oryzo-ai-granularity-master.md`
-   - For Portfolio/Creative layouts: `premium-frontend-experience-system/vault-references/the-shift-tokyo-granularity-master.md`
-3. Read `references/01-macrostructures-and-brand.md`. Select 1 of 21 Hallmark macrostructure archetypes.
-4. Lock OKLCH color tokens in `index.css` (1 primary accent, stark neutrals, zero un-tokenized hex codes).
+### Phase 1: Local Reference Vault & OKLCH Theme Architecture
+1. Scan project `reference/` (or `references/`) folder for screenshots, videos, and HTML gallery files.
+2. Define OKLCH dopamine-monochromatic color tokens:
+   - Deep Obsidian Ink: `oklch(0.12 0.01 250)`
+   - Subtle Glass Layer: `oklch(0.18 0.015 250 / 0.8)`
+   - Vibrant Primary Accent: `oklch(0.78 0.18 145)`
+   - Electric Secondary Accent: `oklch(0.72 0.19 250)`
+   - Pure Text Primary: `oklch(0.98 0.005 250)`
+3. Apply 3% SVG noise texture overlay (`feTurbulence baseFrequency="0.8" numOctaves="3"`).
 
-### Phase 2: Grid Canons & Obys Layout Math
-1. **AUTOMATIC MANDATORY STEP**: Call `view_file` on `brain-aios/wiki/sops/grid-systems-sop.md`.
-2. Read `references/02-layout-and-grid-rules.md`.
-3. Apply Obys 4 Grid Canons & Vertical Rhythm ($\text{fontSize} \times \text{lineHeight}$, `leading-none`, `max-w-[65ch]`, grid baseline alignment).
-4. Enforce Hero Stack Discipline (max 4 text elements; hero must fit in `100dvh` without forced scroll).
+### Phase 2: 23-Sites Awwwards Matrix & Spatial Choreography
+1. Read `references/23-SITES-MASTER-DESIGN-MATRIX.md` and `references/23-SITES-PSYCHOLOGY-AND-CHOREOGRAPHY.md`.
+2. Enforce Obys Spatial Rhythm Ratios:
+   - Desktop Section Vertical Padding: `120px` to `160px`.
+   - Mobile Section Vertical Padding: `64px` to `80px`.
+   - Card Internal Spacing: `24px` to `32px`.
+   - Grid Element Gaps: `16px` to `24px`.
+3. Apply Progressive Disclosure: 1 hero headline, 1 value prop, and dual CTAs on initial screen load; secondary features organized into tabbed bentos or accordions.
+4. Apply Tension & Release Scroll Rhythm: Alternating visual weights between high-density 3D/bento sections and clean typography manifesto sections.
 
-### Phase 3: Priority Component Sourcing (Local Reference -> Favorites -> 300+ Catalog)
-1. Read `references/03-component-catalog-guide.md` and `premium-frontend-experience-system/references/component-vault/INDEX.md`.
-2. Check priority sources in order:
-   - **Level 1**: Code snippets / HTML / TSX supplied in local project `reference/` folder.
-   - **Level 2**: Search operator favorite components (`is_favorite: true`) in `component_registry_cli.py search-pattern <category>`.
-   - **Level 3**: Search full 300+ Component Catalog across 11 registries.
-3. Select matching components for each layout section. Never write generic placeholder divs.
+### Phase 3: Priority Component Sourcing
+1. Source components following the strict precedence hierarchy:
+   - Priority 1: Local `reference/` code & Six-File Context definitions.
+   - Priority 2: Operator Favorites (`component_registry_cli.py search` with `is_favorite: true`).
+   - Priority 3: 300+ Component Catalog (`references/23-sites-matrix.json`).
+2. Convert all inline SVG `style="..."` string attributes into camelCase JSX style objects (`style={{...}}`). Filter out invisible background placeholders (`if not child.get("visible", True): continue`).
 
-### Phase 4: Motion, Pure Skills & Interactive Radiant Shader Protocol
-1. Read `references/04-motion-and-shaders.md` and `premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md`.
-2. **AUTOMATIC MANDATORY STEP**: If Motion Dial > 3, call `view_file` on:
-   - For Dedicated GLSL Shaders & Physics: `premium-frontend-experience-system/references/shader-canvas-vault/INDEX.md`
-   - For GSAP/ScrollTrigger: `brain-aios/wiki/research/skills-library/gsap-skills/SKILL.md`
-   - For Three.js/WebGL: `brain-aios/wiki/research/skills-library/threejs-skills/SKILL.md`
-3. **Interactive Radiant Shaders Check**:
-   - Ask user if a WebGL shader background is desired.
-   - User places the HTML file from `radiant-shaders.com` gallery into `reference/`.
-   - Extract raw WebGL shader code cleanly from the user-provided HTML file into a React/Vite canvas wrapper.
-4. **Mandatory WebGL Fallback Guard**: Wrap canvas elements with automatic CSS/2D canvas fallback wrappers (`SafeCanvas`).
+### Phase 4: Motion Stack & Radiant Shader Protocol
+1. **Lenis Inertia Scroll**: Initialize Lenis smooth momentum scrolling and sync RAF loop with GSAP and WebGL canvas rendering.
+2. **GSAP ScrollTrigger**: Apply GSAP for pinned section reveals, split-text character reveals, horizontal canvas stage scrolling, and magnetic cursor hover triggers (`scale(1.03)` with `cubic-bezier(0.16, 1, 0.3, 1)` easing).
+3. **CSS Scroll-Driven Animations**: Offload basic element reveals to native CSS View Timeline API to maintain Core Web Vitals (INP < 200ms, 60fps).
+4. **Radiant WebGL Shader Protocol**: Ask user for Radiant Shader selection (`pbakaus/radiant`), extract code from operator `reference/*.html` file, and embed in canvas stage.
 
-### Phase 4.5: Zero-Cost Asset Generation & Unsplash Fallback Pipeline
-1. **Zero-Cost Audit**: Verify media generation is 100% free under subscription allocations. If any cost occurs, immediately switch to Unsplash.
-2. **Image Assets**: Generate hero visuals via Nano Banana (`generate_image`). If unavailable or paid, use high-resolution Unsplash URLs (`https://images.unsplash.com/photo-...`).
+### Phase 4.5: Zero-Cost Asset Pipeline & Typography Safety
+1. Sourcing Visual Assets: Use free Unsplash asset URLs or inline SVG vectors.
+2. Brand Typography Safety:
+   - `Havock` Display Headline: Require explicit `line-height: 1.28` and minimum `margin-bottom: 28px` for font sizes > 64px.
+   - `Rosehot` Editorial Subheadings & `Nuqun` Logo Mark.
 
-### Phase 5: Pre-Emit Anti-Slop & Fullstack Code Audit (`/jsmastery-audit` + `/hallmark`)
-1. Read `references/05-anti-slop-quality-gates.md`.
-2. Execute `/jsmastery-audit` checking Server Action inputs (Zod), `'use client'` boundaries, and type safety.
-3. Run `python scripts/hallmark_runner.py audit <project-dir>`. Ensure pre-emit self-critique score header is stamped (`/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`).
+### Phase 5: Pre-Emit Anti-Slop & Security Audit (`/jsmastery-audit` & `hallmark`)
+1. Run `/jsmastery-audit` to verify Next.js 15 App Router Promise-based parameters (`await params`), Zod input validation, strict TypeScript types (zero `any`), and security headers.
+2. Run `python scripts/hallmark_runner.py audit <target-dir>` to verify compliance with 57 anti-slop quality gates. Stamp pre-emit critique header (`/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`).
 
-### Phase 6: Playwright 5-Viewport Visual QA
-1. Read `references/06-visual-qa-verification.md`.
-2. Run `python scripts/verify_design_milestone.py` across 5 viewports (320px, 375px, 768px, 1024px, 1920px).
-3. Inspect compiled screenshots side-by-side to guarantee visual parity with designs, and confirm 0 text wrapping or scaling regressions.
+### Phase 6: Playwright 5-Viewport Visual QA (`verify_design_milestone.py`)
+1. Execute 5-viewport visual regression sweep across Mobile Small (`375x667`), Mobile Large (`414x896`), Tablet (`768x1024`), Desktop (`1280x800`), and Large Display (`1920x1080`).
+2. **Base64 Font Data URI Inlining (Rule 1.13 & 1.18)**: Confirm custom fonts (`Havock`, `Rosehot`, `Nuqun`) are inlined as Base64 Data URIs (`data:font/opentype;base64,...`) inside `@font-face` blocks for 100% deterministic visual rendering in headless Playwright Chromium.
 
-### Phase 7: Auto-Evolution, Memory & Six-File Handoff
-1. Persist design lessons into `references/`.
-2. Sync workflow updates with `/six-file-context-methodology`.
-3. Suggest running `/improve-system`.
+### Phase 7: Post-Execution Auto-Evolution & Six-File Sync
+1. Append new design learnings to `references/GLOBAL_ERROR_PREVENTION_RULES.md` and run `python scripts/sync_global_rules.py`.
+2. Trigger `/six-file-context-methodology` to update `STATE.md` and `ROADMAP.md`.
+3. Log milestone upgrades in `WORKSPACE_MAP.md` and `decisions/log.md`.
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
-- **Project Setup & Context**: Started by **`/new-project`** and **`/six-file-context-methodology`**.
-- **Discovery & Validation**: Driven by **`/grill-me`** and **`/roast`**.
-- **Architecture, Macro Planning & Scoping**: Guided by **`/jsmastery-architect`**, **`/mattpocock-wayfinder`**, **`/jsmastery-scope`**, and **`/mattpocock-to-spec`**.
-- **Component & Motion Sourcing**: Uses project `reference/` folder, `scripts/component_registry_cli.py`, `radiant-shaders` HTML files, `shader-canvas-vault`, and `skills-library/gsap-skills/`.
-- **Verification & QA**: Executed by **`/verify-design`**, **`/jsmastery-audit`**, **`/gstack`**, and `scripts/verify_design_milestone.py`.
+## Inter-Skill Connections & Handoff Pipeline
+- **Phase 0 Discovery & Audit Gates**: Driven by `/grill-me` (Phase 0), Phase 0.1 Document Sweep, and `/roast` (Phase 0.2).
+- **Code & Security Quality**: Driven by `/jsmastery-audit` (Phase 5) and `/vibesec`.
+- **Anti-Slop & Visual QA**: Driven by `/hallmark` (Phase 5) and `verify_design_milestone.py` (Phase 6).
+- **Multi-Session Project Roadmap**: Driven by `/six-file-context-methodology`, `/mattpocock-wayfinder`, and `/gstack`.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Skill Maintenance
 
 At the completion of every execution of this skill:
-
-1. **Adversarial `/roast` Council Review**: Convene the 5-Persona ZORIXEL AIOS Roast Council (`/roast`) to stress-test the output, code edits, or strategy generated by this skill. Red-team for missing edge cases, terminal shell bugs, token leaks, or optimization gaps.
-2. **Autonomous Tool, Script & Skill Auto-Upgrade Loop**:
-   - If new error patterns or execution safeguards are discovered, append them to `references/GLOBAL_ERROR_PREVENTION_RULES.md` and execute `python scripts/sync_global_rules.py` via `run_command` so system prompts (`AGENTS.md` and `GEMINI.md`) auto-update inline.
-   - Run pre-flight health checks (`aios_gws_health_check.py`, `test_notion_formula.py`, `graphify_runner.py`).
-   - Self-upgrade this `SKILL.md` instruction file with newly learned edge cases using `replace_file_content` or `write_to_file`.
-3. **Register & Log**: Log milestone upgrades in [WORKSPACE_MAP.md](file:///d:/AI-OS/WORKSPACE_MAP.md) and [decisions/log.md](file:///d:/AI-OS/decisions/log.md).
-
+1. **Auto-Upgrade Rule Registry**: If new security vulnerabilities, font rendering issues, or layout bugs are discovered, log them into `references/GLOBAL_ERROR_PREVENTION_RULES.md` and run `python scripts/sync_global_rules.py`.
+2. **Workspace Mapping**: Log major website creation milestones in `WORKSPACE_MAP.md` and `decisions/log.md`.

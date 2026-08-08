@@ -10,7 +10,7 @@ argument-hint: '[optional parameters]'
 
 # Scrape Component Skill
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/scrape-component [optional parameters]` in chat.
@@ -73,13 +73,13 @@ Use this skill when the user likes a specific component, effect, or animation on
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Component Extraction**: Extracts specific UI components, animations, or styles from website URLs.
 - **Vault Integration**: Saves extracted .tsx components into premium-frontend-experience-system/references/component-vault/.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

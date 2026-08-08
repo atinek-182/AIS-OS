@@ -6,7 +6,7 @@ argument-hint: '[client-name | accept client-id | evolve]'
 
 # ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill automates the lifecycle of client directories for ZORIXEL AI Agency. It manages an **8-Phase Gated Client Vault** split into two sequential stages:
 
@@ -20,7 +20,7 @@ Invokable via:
 
 ---
 
-## 🎯 Usage & Command Syntax
+## Usage & Command Syntax
 
 | Command | Action | Output Directories / Artifacts |
 |---|---|---|
@@ -30,7 +30,7 @@ Invokable via:
 
 ---
 
-## 📌 Workflow Instructions
+## Workflow Instructions
 
 ### Phase 1: Lead Scaffolding (Stage 1)
 When creating a new lead:
@@ -47,7 +47,7 @@ When an offer is accepted:
 
 ---
 
-## 🔄 Auto-Evolution Engine
+## Auto-Evolution Engine
 
 This skill includes an embedded continuous improvement protocol. Whenever a client engagement or sprint finishes:
 
@@ -64,7 +64,7 @@ This skill includes an embedded continuous improvement protocol. Whenever a clie
 
 ---
 
-## 🔗 Inter-Skill Connections
+## Inter-Skill Connections
 - **Proposal Generation**: Feeds into `/ai-pricing-engine` for 3-option proposals.
 - **Deep Research**: Calls `/storm-research-project` for complex technical teardowns.
 - **Security QA**: Triggered during Phase 05 build via `/vibesec`.
@@ -72,7 +72,7 @@ This skill includes an embedded continuous improvement protocol. Whenever a clie
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

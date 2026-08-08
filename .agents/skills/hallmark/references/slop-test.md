@@ -19,9 +19,7 @@ Two passes is normal. Three is a sign the brief is wrong, not the design — re-
 | **C** | **Execution** | Are the details (rule weight, accent footprint, text-wrap, focus rings, contrast) all in spec, or is there sloppiness even if the bones are right? |
 | **D** | **Specificity** | Does this look like *this brief* — or does it look like a generic "page that could be anyone"? |
 | **E** | **Restraint** | Have you removed everything that isn't earning its place? Decoration, redundancy, padding-for-padding's-sake? |
-| **F** | **Variety** | Does this output share a structural fingerprint with a previous Hallmark output in the project? Score by structural distance, not visual distance — colour-swaps don't count as variety. |
-
-Record the six scores in a one-line stamp comment at the top of the file: `/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`. Future runs should be able to find this and avoid repeating the same weakness.
+| **F** | **Variety** | Does this output share a structural fingerprint with a previous Hallmark output in the project? Score by structural distance, not visual distance — colour-swaps don't count as variety. | Record the six scores in a one-line stamp comment at the top of the file: `/* Hallmark · pre-emit critique: P5 H4 E5 S4 R5 V5 */`. Future runs should be able to find this and avoid repeating the same weakness.
 
 ---
 
@@ -73,7 +71,7 @@ Record the six scores in a one-line stamp comment at the top of the file: `/* Ha
 
 28. If the page has a demo video, does it autoplay with sound, lack a `poster`, lack `fetchpriority="high"`, or use `loading="lazy"` on the LCP element? (LCP-killers fail this gate.)
 29. If the page has an abstract background, is it more than one accent colour, more than ~5 % footprint, or animating mesh-gradient on the whole page? (Aurora blobs and mesh-on-everything fail this gate.) *Genre note: atmospheric allows up to two warm-toned radial blooms covering ~20–30 % of the canvas, fixed-attached, no animation.*
-30. **Icon tells.** Does the page (a) mix two or more icon libraries (Material + Heroicons + Lucide on the same page), OR (b) use an emoji glyph (✨ 🚀 ⚡ 🔥 🎯 ✅) as a feature-card / value-prop / step / pricing-tier icon? Either is an AI-default tell. Pick one icon library (Lucide / Phosphor / Heroicons — see [assets.md](assets.md)), build a custom SVG, or drop the icon and lead with typography.
+30. **Icon tells.** Does the page (a) mix two or more icon libraries (Material + Heroicons + Lucide on the same page), OR (b) use an emoji glyph (     ) as a feature-card / value-prop / step / pricing-tier icon? Either is an AI-default tell. Pick one icon library (Lucide / Phosphor / Heroicons — see [assets.md](assets.md)), build a custom SVG, or drop the icon and lead with typography.
 31. If the page has illustration, did I default to a Lottie library when a hand-built SVG or pure-CSS shape would have worked? (Lottie is last resort, not the default.)
 
 ## Diversification gates

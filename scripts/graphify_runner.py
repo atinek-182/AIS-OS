@@ -10,6 +10,13 @@ import subprocess
 import argparse
 from pathlib import Path
 
+# Enforce UTF-8 console output encoding on Windows OS
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
+
 # Hub directory registry
 WORKSPACE_ROOT = Path(__file__).resolve().parent.parent
 

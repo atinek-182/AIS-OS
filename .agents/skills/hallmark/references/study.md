@@ -20,9 +20,7 @@ The two modes share the schema, the refusal heuristics, and the diagnosis-report
 | 2 Type | *roles only* — "italic editorial serif" | roles **plus exact font names** when the page declares them via `@font-face`, Google Fonts `<link>`, `next/font`, or hard-coded `font-family` |
 | 3 Structure | inferred from visible regions | inferred from real DOM (`<nav>`, `<section>`, `<main>`, `<footer>`, semantic tags) |
 | 4 Motion | usually "not visible — assuming default reveals" | observable — read from `<script src>` tags (framer-motion, gsap, lottie-web, lenis, motion) and CSS `@keyframes` / `transition` declarations |
-| 5 Rhythm | observable directly from the visual gestalt | **not observable** — HTML alone can't tell you density / asymmetry / pacing. Mark this as a known blind spot in the diagnosis. |
-
-URL mode trades the rhythm pass for everything else getting more accurate. If rhythm is what the user wants extracted, they should attach a screenshot instead — or alongside the URL, but Hallmark still defaults to one source at a time (see the "One screenshot, one diagnosis" rule in § Limits).
+| 5 Rhythm | observable directly from the visual gestalt | **not observable** — HTML alone can't tell you density / asymmetry / pacing. Mark this as a known blind spot in the diagnosis. | URL mode trades the rhythm pass for everything else getting more accurate. If rhythm is what the user wants extracted, they should attach a screenshot instead — or alongside the URL, but Hallmark still defaults to one source at a time (see the "One screenshot, one diagnosis" rule in § Limits).
 
 ### URL mode — fetch pipeline
 
@@ -97,9 +95,7 @@ In URL mode, run this **before** WebFetch fires — don't even fetch the page. I
 | `framer.com/templates/*`, `*.framer.website` (Framer marketplace + template demos), `webflow.com/templates/*` (Webflow templates) | Refuse same as above — these are the marketplace ecosystem by another name. |
 | `gumroad.com/*` where the page is selling a UI kit or template (heuristic: `og:type=product` plus *template*, *UI kit*, *starter*, *bundle* in the title) | Refuse. |
 | `dribbble.com/shots/*`, `behance.net/gallery/*` (designer presentation work) | Soft-refuse. *"These are individual designers' presentation pieces — I'll extract DNA only, not reproduce signature choices. If a specific designer's voice resonates, tell me what about it does."* |
-| Anything ambiguous (an unfamiliar agency page, a personal portfolio, an unknown SaaS) | **Ask once:** *"Is this your own site, a public reference you admire, or someone else's live site? If it's a marketplace template, I'll skip the build and give you the diagnosis only."* |
-
-The image-mode refusal rules above still apply by analogy in URL mode — if the page reads as signature work from a known designer, soft-refuse the same way.
+| Anything ambiguous (an unfamiliar agency page, a personal portfolio, an unknown SaaS) | **Ask once:** *"Is this your own site, a public reference you admire, or someone else's live site? If it's a marketplace template, I'll skip the build and give you the diagnosis only."* | The image-mode refusal rules above still apply by analogy in URL mode — if the page reads as signature work from a known designer, soft-refuse the same way.
 
 ---
 
@@ -259,9 +255,7 @@ After the schema is filled, map the source to one of Hallmark's named themes —
 | `paper_band: light cool`, `font: mono labels`, `density: dense`, `tabular numbers` | **Almanac** |
 | `display: italic display`, `accent: red`, `tabular numbers`, `motion: horizontal sweep` | **Sport** |
 | `display: ornamental script`, `paper: cream`, `density: medium-generous` | **Garden** |
-| Anything else | **Specimen** *(only if the brief is editorial)* — otherwise propose one of the eight that's closest by *paper hue + display role*, and note the mismatch. |
-
-If two themes are equally close, pick whichever is more *categorically distant* from any previous Hallmark output for this user (read the existing CSS for a `/* Hallmark · macrostructure: ... */` stamp and avoid that theme's family).
+| Anything else | **Specimen** *(only if the brief is editorial)* — otherwise propose one of the eight that's closest by *paper hue + display role*, and note the mismatch. | If two themes are equally close, pick whichever is more *categorically distant* from any previous Hallmark output for this user (read the existing CSS for a `/* Hallmark · macrostructure: ... */` stamp and avoid that theme's family).
 
 ---
 
@@ -470,9 +464,7 @@ Then dispatch on the answer:
 | --- | --- |
 | (a) "my own site" | Emit. Note in the file's `## Provenance` block: *"Extracted from `<URL>` — user-owned source, <date>."* |
 | (b) "public reference for own brand" | Emit, but include a `## Provenance` block: *"Extracted from `<URL>` as a public reference for the user's brand on <date>. The DNA is structural; specific tokens may need to be regenerated to match the user's brand identity rather than the source's."* |
-| (c) "something else" | **Refuse.** *"I won't emit a `design.md` from a third-party site I'm not authorised to extract from. The diagnosis is yours — that's a learning tool. The portable spec needs a source you can attest authorship of, or a public reference for your own brand. If you want a design.md anyway, take a screenshot of your own moodboard or your own existing site, and I'll study that instead."* |
-
-If the user has already disclosed source attribution earlier in the conversation (e.g., during the initial "is this your own work / public reference / someone else's site" check, they answered "my own site"), do not re-ask — carry that attestation forward. The ask is only needed when status is unknown.
+| (c) "something else" | **Refuse.** *"I won't emit a `design.md` from a third-party site I'm not authorised to extract from. The diagnosis is yours — that's a learning tool. The portable spec needs a source you can attest authorship of, or a public reference for your own brand. If you want a design.md anyway, take a screenshot of your own moodboard or your own existing site, and I'll study that instead."* | If the user has already disclosed source attribution earlier in the conversation (e.g., during the initial "is this your own work / public reference / someone else's site" check, they answered "my own site"), do not re-ask — carry that attestation forward. The ask is only needed when status is unknown.
 
 The image-mode refusal table at the top of this file still applies in both modes. A source that already failed the diagnosis refusal (paid template, soft-refused signature work) is auto-refused at emission — do not re-ask.
 

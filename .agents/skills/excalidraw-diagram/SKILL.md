@@ -7,7 +7,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/excalidraw-diagram [optional parameters]` in chat.
@@ -131,9 +131,7 @@ Section C: x=450, w=600  -> right edge = 1050
 | Green | Output, containers, success | `#2f9e44` | `#d3f9d8` |
 | Purple | Shared layers, infrastructure | `#862e9c` | `#f3d9fa` |
 | Red | Host OS, warnings, errors | `#c92a2a` | `#ffe3e3` |
-| Gray | Hardware, neutral containers | `#495057` | `#f8f9fa` |
-
-For nested elements, vary the fill intensity:
+| Gray | Hardware, neutral containers | `#495057` | `#f8f9fa` | For nested elements, vary the fill intensity:
 - Outer: lightest (e.g., `#d3f9d8`)
 - Inner: medium (e.g., `#8ce99a`)
 - Deep inner: light-medium (e.g., `#b2f2bb`)
@@ -149,9 +147,7 @@ For nested elements, vary the fill intensity:
 | Element label | 16-18 | 1 |
 | Annotation | 14-15 | 1 |
 | Small note | 12-13 | 1 |
-| Code label | 14-16 | 3 (Cascadia) |
-
-Text width = parent box width. Text x/y offset ~8-10px from box x/y for padding.
+| Code label | 14-16 | 3 (Cascadia) | Text width = parent box width. Text x/y offset ~8-10px from box x/y for padding.
 
 ---
 
@@ -264,13 +260,13 @@ Every diagram uses this shell:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Visual Architecture**: Generates system architecture diagrams for **/jsmastery-architect**, **/mattpocock-to-spec**, and **/mattpocock-wayfinder**.
 - **Diagram Vault Storage**: Saves diagrams into diagrams/ directory.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

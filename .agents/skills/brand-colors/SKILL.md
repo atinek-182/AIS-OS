@@ -9,7 +9,7 @@ argument-hint: '[optional action or theme context]'
 
 # Brand Colors & Contrast Audit Skill
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/brand-colors [optional action or theme context]` in chat.
@@ -46,13 +46,13 @@ When this skill is invoked via `/brand-colors` or triggered:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Design System Integration**: Supplies OKLCH and HSL color token swatches to **/website-design-engine**, **/new-project**, and **/design-direction**.
 - **Visual Verification**: Hands off generated prototype swatch HTML pages to **/verify-design** for Playwright visual contrast audits.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -6,7 +6,7 @@ argument-hint: '[spec_file_or_path]'
 
 # Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 Converts technical design contracts (`SPEC.md` or build specs) into atomic, independent engineering tickets ready for developer execution, based on Matt Pocock's workflow.
 
@@ -25,7 +25,7 @@ Invokable via:
 
 ---
 
-## 📄 Ticket Template Output
+## Ticket Template Output
 
 ```markdown
 ### Ticket [ID]: [Title]
@@ -40,13 +40,13 @@ Invokable via:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Upstream Specs**: Receives technical contracts from **`/mattpocock-to-spec`**, **`/jsmastery-architect`**, and **`/jsmastery-scope`**.
 - **Execution & Testing**: Hands off task items to **`/do`**, **`/test-driven-development`**, and **`/verify-design`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

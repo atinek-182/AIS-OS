@@ -6,7 +6,7 @@ argument-hint: '[project_or_feature_idea]'
 
 # JS Mastery Feature Scoping Engine (`/jsmastery-scope`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 This skill converts high-level project ideas or complex feature requests into disciplined, structured scopes with clear MVP boundaries and vertical slices, derived from JS Mastery Pro workflows.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🎯 Scoping Discipline & Rules
+## Scoping Discipline & Rules
 
 1. **Tracer Bullet Slices**: Break work into thin end-to-end vertical slices (DB -> API -> UI -> Verification) rather than horizontal layer dumps.
 2. **Strict MVP Discipline**: Separate core must-haves from nice-to-have bloat. Keep initial releases minimal and ship-ready.
@@ -25,15 +25,15 @@ Invokable via:
 
 ---
 
-## 📝 Scope File Format (`docs/scope/NNNN-[slug].md`)
+## Scope File Format (`docs/scope/NNNN-[slug].md`)
 
 ```markdown
 # Scope: [Epic / Feature Name]
 
-## 🎯 High-Level Goal
+## High-Level Goal
 Brief description of user outcome and business value.
 
-## 🚀 Delivery Strategy
+## Delivery Strategy
 - **Approach**: Tracer Bullet / Skateboard / Facade / Journey
 - **MVP Target Date**: [Target]
 
@@ -47,7 +47,7 @@ Brief description of user outcome and business value.
 ## 🚫 Out of Scope for MVP
 Explicitly listed features deferred to Phase 2 to protect timeline and prevent bloat.
 
-## 🛠️ Definition of Done (DoD)
+## Definition of Done (DoD)
 - [ ] Automated tests pass
 - [ ] TypeScript zero errors
 - [ ] 5-viewport visual QA verified
@@ -55,14 +55,14 @@ Explicitly listed features deferred to Phase 2 to protect timeline and prevent b
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Upstream Spec Engine**: Receives build specs from **`/jsmastery-architect`** and **`/mattpocock-to-spec`**.
 - **Downstream Ticket Engine**: Hands off task tables to **`/mattpocock-to-tickets`** to generate atomic developer tickets.
 - **Macro Planning**: Feeds vertical slices into **`/mattpocock-wayfinder`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

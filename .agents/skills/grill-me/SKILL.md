@@ -6,7 +6,7 @@ argument-hint: '[topic_or_idea] [optional focus]'
 
 # ZORIXEL AIOS Discovery & Socratic Grilling Engine (`/grill-me`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill is the primary discovery gate for Atinek Maurya's AIOS (`AI-OS`). It combines Matt Pocock's Socratic grilling (`grilling`, `grill-with-docs`), domain modeling (`domain-modeling`), and JS Mastery's option evaluation (`architect`) into a relentless, structured discovery workflow.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🎯 When & Why to Use `/grill-me`
+## When & Why to Use `/grill-me`
 
 | Scenario / Goal | Specific Use Case | Key Output |
 |---|---|---|
@@ -28,7 +28,7 @@ Invokable via:
 
 ---
 
-## 📌 Non-Negotiable Core Execution Rules
+## Non-Negotiable Core Execution Rules
 
 ### 1. Global Zero-Hurry & Rigor Mandate
 Never rush discovery. Quality, deep option-based Q&A, web research, and architectural rigor take absolute precedence over speed.
@@ -60,7 +60,7 @@ Before concluding the interview or proceeding to implementation, ask:
 
 ---
 
-## 📝 Capture File Structure (`brainstorms/{date}-{slug}.md`)
+## Capture File Structure (`brainstorms/{date}-{slug}.md`)
 
 ```markdown
 # {Topic}: Discovery & Brainstorm Notes
@@ -86,7 +86,7 @@ Date: {date} · Goal: {one-line summary} · Operator: Atinek Maurya
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Phase 0 Discovery Engine**: Called as Gate 1 discovery by **`/new-project`**, **`/website-design-engine`**, **`/ingest-repo`**, **`/carousel-copy`**, and **`/design-direction`**.
 - **Adversarial Audit**: Hands off captured decisions to **`/roast`** (Gate 2 5-persona council audit).
 - **Domain Modeling**: Updates **`CONTEXT.md`** vocabulary via **`/mattpocock-domain-modeling`**.
@@ -94,7 +94,7 @@ Date: {date} · Goal: {one-line summary} · Operator: Atinek Maurya
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -410,9 +410,7 @@ The three background variants (`bg-cork`, `bg-paper`, `bg-warm`) and the full-vi
 | 0px | All post-its, chart-cards, photo-frames, diagram-canvases, compare-cards |
 | 50% (circle) | Feature-icon round border, versus-circle, thumbtack pins |
 | 3px | Chart bar `<rect>` corner radius (inline SVG) |
-| Custom (no fixed token) | Photo-frame inner image area follows the polaroid aspect ratio 4:3 |
-
-Most surfaces are strict rectangles. Round shapes are reserved for icons, pins, and the versus-marker. The chart bars carry a subtle 3px round corner (inside SVG) for friendliness.
+| Custom (no fixed token) | Photo-frame inner image area follows the polaroid aspect ratio 4:3 | Most surfaces are strict rectangles. Round shapes are reserved for icons, pins, and the versus-marker. The chart bars carry a subtle 3px round corner (inside SVG) for friendliness.
 
 ### Border Weights
 - **2px solid `{colors.ink}`** — used on the white-note border and on chart SVG `<rect>` strokes.

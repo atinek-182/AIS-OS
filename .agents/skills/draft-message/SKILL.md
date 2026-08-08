@@ -8,7 +8,7 @@ argument-hint:
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/draft-message ['recipient and context']` in chat.
@@ -41,14 +41,14 @@ Automates the drafting of emails, DMs, and community replies. It loads the brand
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Humanizer Anti-Slop Filter**: Automatically passes all drafts through **/humanizer** to scrub em dashes, sycophancy, AI filler words, and promotional puffery.
 - **Brand Voice & Copywriting**: Leverages **/marketing** copywriting patterns and ZORIXEL brand voice guidelines.
 - **Client & Audience Outreach**: Formats messages for Instagram DMs, emails, and YouTube comments.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

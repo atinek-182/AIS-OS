@@ -4,7 +4,7 @@ This document provides the technical reference specification for the Ultimate Si
 
 ---
 
-## 🔒 Core Operational Principles
+## Core Operational Principles
 
 1. **Strict One-by-One Sequential Execution Guard:**
    - Process **EXACTLY ONE SITE AT A TIME**.
@@ -77,7 +77,7 @@ For every site, generate `premium-frontend-experience-system/vault-references/[s
 
 All site extractions are registered in the centralized vault index:
 
-📄 **[`premium-frontend-experience-system/vault-references/INDEX.md`](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/INDEX.md)**
+ **[`premium-frontend-experience-system/vault-references/INDEX.md`](file:///d:/AI-OS/premium-frontend-experience-system/vault-references/INDEX.md)**
 
 ---
 

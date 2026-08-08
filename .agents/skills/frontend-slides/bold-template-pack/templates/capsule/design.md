@@ -416,9 +416,7 @@ Decorative floating pills and radial glows are flat — they cast no shadow. The
 | 2rem (32px) | Larger cards: pillar-cards, stat-pills, chart container, visual frame |
 | 1.5rem (24px) | Inner dashed frame inside the visual frame |
 | 50% (circle) | Circular pills: card-icon (60px), step-node (56px), orbit-center (160px), nav dots (10px) |
-| 0 | The grain overlay; the slide itself; the candy-color gradient regions inside a visual frame |
-
-The system has **no sharp-cornered text containers**. Every container that holds text or icon content is rounded.
+| 0 | The grain overlay; the slide itself; the candy-color gradient regions inside a visual frame | The system has **no sharp-cornered text containers**. Every container that holds text or icon content is rounded.
 
 ### Border Weights
 - **2px solid `{colors.outline}`** — the universal stroke. Used on every pill, card, icon, frame, bar track, nav dot.

@@ -487,9 +487,7 @@ Three typefaces; each occupies a completely non-overlapping register:
 | Token | Size | Use |
 |---|---|---|
 | `{typography.script-lg}` | 96px | Prominent handwritten accent — transition word, emotional opener |
-| `{typography.script-md}` | 64px | Smaller handwritten annotation — subtitle callout, sub-label |
-
-Both script tokens are always lowercase and always applied with a rotation between -2deg and -5deg. Never use Caveat Brush without rotation.
+| `{typography.script-md}` | 64px | Smaller handwritten annotation — subtitle callout, sub-label | Both script tokens are always lowercase and always applied with a rotation between -2deg and -5deg. Never use Caveat Brush without rotation.
 
 ### Body and Label Scale
 
@@ -543,9 +541,7 @@ The system's signature. Display text casts layered offset shadows in the same di
 | Small | `3px 3px 0 {colors.red}` | — | Items below 72px |
 | Medium | `5px–6px 5px–6px 0 {colors.red}` | — | 72px–140px display |
 | Large | `10px 10px 0 {colors.red}, 20px 20px 0 {colors.red-deep}` | | 140px–260px display |
-| Jumbo | `12px 12px 0 {colors.red}, 24px 24px 0 {colors.red-deep}` | | 260px+ stat figures |
-
-The orange display text is the "face" layer; red is the "body"; red-deep is the "foot." The illusion is of a letterform with physical thickness.
+| Jumbo | `12px 12px 0 {colors.red}, 24px 24px 0 {colors.red-deep}` | | 260px+ stat figures | The orange display text is the "face" layer; red is the "body"; red-deep is the "foot." The illusion is of a letterform with physical thickness.
 
 ### Box-Shadow (Secondary Technique)
 Interactive and decorative elements (stamps, avatars, CTA buttons, KPI cards) use the same offset logic in box-shadow form: `6px 6px 0 {colors.red}` or `8px 8px 0 {colors.red}`. This unifies the depth system: all elements in the deck cast shadows in the same direction at the same apparent light angle.
@@ -564,9 +560,7 @@ DM Mono labels, ink section rules, body text, and grid lines are completely flat
 | 999px (pill) | Meta label pills in topbar/header areas |
 | 50% (circle) | Avatar elements, timeline milestone dots, circular stamp |
 | 4px | Diamond bullet pseudo-elements (rotated 45deg to form a diamond) |
-| 0px | All structural elements: columns, cards, topbars, frames, ribbons, KPI cards, stamps |
-
-The system is almost entirely square. The only soft shapes are the pill (for metadata chips), the circle (for avatars, dots, the closing stamp), and the diamond bullet. The squareness of structural elements reinforces the printed/constructed aesthetic.
+| 0px | All structural elements: columns, cards, topbars, frames, ribbons, KPI cards, stamps | The system is almost entirely square. The only soft shapes are the pill (for metadata chips), the circle (for avatars, dots, the closing stamp), and the diamond bullet. The squareness of structural elements reinforces the printed/constructed aesthetic.
 
 ### Border Weights
 - **6px solid `{colors.ink}`** — Primary structural borders: section dividers, column separators, topbar bottom edges, inset frames, KPI card borders, CTA button border.

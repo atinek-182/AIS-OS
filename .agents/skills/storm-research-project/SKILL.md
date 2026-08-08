@@ -56,7 +56,7 @@ When running `/storm-research-project`, specify `--domain` or use the default 7-
 ### Phase 1: Seven Expert Lenses (Parallel Research Subagents)
 Spawn 7 parallel background research agents with surgical context boundaries.
 Each agent executes live web research seeking concrete data, benchmarks, primary documentation, and operational metrics.
-Token Efficiency Rule: Each subagent is capped at 2 execution steps with strict prompt scope limits to prevent token burn.
+Token Efficiency Rule: Each subagent is capped at 2 execution steps with strict prompt scope limits to prevent token burn. When fetching long-form tech blogs or documentation, subagents may pipe fetched content through `npx defuddle parse <URL> --markdown --frontmatter` to strip nav/footer clutter and minimize context token usage.
 
 ### Phase 2: Map the Contradictions
 Analyze briefs inline to extract:
@@ -93,7 +93,7 @@ Analyze briefs inline to extract:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

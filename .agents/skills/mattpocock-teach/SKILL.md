@@ -6,7 +6,7 @@ argument-hint: '[topic_or_concept]'
 
 # Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 Adapted from TypeScript educator Matt Pocock's signature teaching methodology. Teaches complex TypeScript, React, Next.js, and web engineering concepts through clear mental models, zero fluff, and interactive exercises.
 
@@ -26,7 +26,7 @@ Start with a high-leverage 2-sentence analogy or physical mental model. Avoid ja
 Show a **Before (Naive / Broken)** vs **After (Idiomatic / Professional)** code block.
 
 ```typescript
-// ❌ Naive Approach: Bloated interface with impossible state combinations
+//  Naive Approach: Bloated interface with impossible state combinations
 interface State {
   isLoading: boolean;
   isError: boolean;
@@ -34,7 +34,7 @@ interface State {
   data?: User;
 }
 
-// ✅ Matt Pocock Discriminated Union: Impossible states made type-level impossible
+//  Matt Pocock Discriminated Union: Impossible states made type-level impossible
 type State =
   | { status: 'idle' }
   | { status: 'loading' }
@@ -50,13 +50,13 @@ Highlight 1-2 real-world edge cases to watch out for when using this pattern in 
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Concept Explanation**: Used during Phase 0 discovery by **`/grill-me`** whenever introducing unfamiliar concepts before asking questions.
 - **Domain Training**: Connects with **`/mattpocock-domain-modeling`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

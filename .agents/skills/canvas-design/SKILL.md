@@ -10,7 +10,7 @@ argument-hint: '[optional parameters]'
 
 # Canvas Design Router Skill
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/canvas-design [optional parameters]` in chat.
@@ -75,13 +75,13 @@ Return the path to the final image: `d:/AI-OS/brainstorms/canvas_output.png`. Sh
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Social Media & Carousel Graphics**: Pairs with **/carousel-copy** and **/carousel-render** to generate visual slide layouts.
 - **Brand Identity**: Integrates with **/brand-colors** for locked OKLCH color palettes and custom typography.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

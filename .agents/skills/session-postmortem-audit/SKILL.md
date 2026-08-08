@@ -6,7 +6,7 @@ argument-hint: '[optional_target_directory] [optional_focus_area]'
 
 # ZORIXEL AIOS Session Post-Mortem & System Evolution Engine (`/session-postmortem-audit`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill automates the complete post-mortem audit, system self-improvement, and skill auto-evolution cycle for Atinek Maurya's AIOS. It converts session friction, terminal bugs, prompt iterations, and successful patterns into permanent pre-flight scripts, hardened system rules, copy-pasteable reusable skill specifications, and self-upgrading agent instructions.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🎯 3-Phase Execution Architecture
+## 3-Phase Execution Architecture
 
 ```mermaid
 graph TD
@@ -63,7 +63,7 @@ Identify every repeatable workflow pattern discovered during the session (e.g., 
 
 ---
 
-## 🔥 PHASE 2: ADVERSARIAL `/roast` COUNCIL AUDIT & BLUEPRINT EXPANSION
+## PHASE 2: ADVERSARIAL `/roast` COUNCIL AUDIT & BLUEPRINT EXPANSION
 
 Convene the ZORIXEL AIOS 5-Persona Roast Council (`/roast`) to stress-test the Phase 1 report and transcript:
 
@@ -82,7 +82,7 @@ Expand the report to include Section 4:
 
 ---
 
-## 🔄 PHASE 3: AUTONOMOUS SKILL & AIOS AUTO-UPGRADE LOOP
+## PHASE 3: AUTONOMOUS SKILL & AIOS AUTO-UPGRADE LOOP
 
 After completing Phase 1 and Phase 2, execute the self-evolution loop to make AIOS smarter with every run:
 
@@ -97,7 +97,7 @@ After completing Phase 1 and Phase 2, execute the self-evolution loop to make AI
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

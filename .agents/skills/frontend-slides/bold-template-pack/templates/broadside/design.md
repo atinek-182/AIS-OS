@@ -329,9 +329,7 @@ The canvas is `100vw × 100vh` — full viewport with hidden overflow. Slides si
 | `{spacing.pad-y}` | 5.5vh | Outer vertical padding on every slide |
 | `{spacing.gap-lg}` | 3.5vh | Large vertical spacing between major blocks |
 | `{spacing.gap-md}` | 2vh | Standard spacing between sibling elements |
-| `{spacing.gap-sm}` | 1vh | Tight spacing — kicker to headline, chrome bar inner gap |
-
-The padding is deliberately tighter than a generic editorial system. Broadside's massive type needs the slide's edge to feel close, not distant — the type is supposed to crowd the frame.
+| `{spacing.gap-sm}` | 1vh | Tight spacing — kicker to headline, chrome bar inner gap | The padding is deliberately tighter than a generic editorial system. Broadside's massive type needs the slide's edge to feel close, not distant — the type is supposed to crowd the frame.
 
 ### Chrome Frame
 The system has an optional chrome frame consisting of two horizontal hairline bars: a top `slide-chrome` bar (label left, slide number right) and a bottom `slide-foot` bar (mirror). Both are 1px solid borders in `{colors.border-dark}` on dark slides, or `rgba(17, 17, 17, 0.2)` on orange. Internal padding/margin uses `{spacing.gap-sm}` and `{spacing.gap-md}`.

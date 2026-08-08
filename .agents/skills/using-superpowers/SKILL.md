@@ -7,7 +7,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/using-superpowers [optional parameters]` in chat.
@@ -71,12 +71,12 @@ User instructions (GEMINI.md, AGENTS.md, direct requests) take precedence over s
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Workflow Enforcer**: Mandates scanning workspace skills and invoking appropriate skills BEFORE writing code or taking action.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -6,7 +6,7 @@ argument-hint: '[repo_url] [optional focus or instructions]'
 
 # Repository Ingestion & Deep Skill Adaptation Engine (`/ingest-repo`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/ingest-repo [repo_url] [optional focus or instructions]` in chat.
@@ -15,7 +15,7 @@ This skill supports **Tri-Mode Flexible Execution**:
 
 ---
 
-## 🎯 Specific Use Cases & Purpose
+## Specific Use Cases & Purpose
 - **Ingesting Community Skill Packs**: Ingest external skill repositories (e.g. `jsmastery-pro/skills`, `mattpocock/skills`, `hallmark`, `gstack`, `agent-reach`), security audit them, archive full sources into `brain-aios/wiki/research/skills-library/`, and synthesize Tier 1 native skills into `.agents/skills/`.
 - **Ingesting Frontend Design & UI Repos**: Extract components, CSS tokens, and WebGL shaders into `premium-frontend-experience-system/` vaults.
 
@@ -95,14 +95,18 @@ This skill supports **Tri-Mode Flexible Execution**:
    - **Logs & Indexes**: Update `decisions/log.md`, `brain-aios/wiki/log.md`, `brain-aios/wiki/index.md`, and `second-brain-zorixel/wiki/index.md`.
 
 ### Phase 8: Empirical Verification, Cleanup & Self-Improvement
-1. **Mandatory Scratch Cleanup**: Force-delete temporary folder `scratch/ingest-{repo-slug}/` to prevent workspace pollution and token leaks.
+1. **Mandatory Scratch Cleanup**: Force-delete temporary folder `scratch/ingest-{repo-slug}/` to prevent workspace pollution and token leaks:
+   ```powershell
+   Remove-Item -Recurse -Force scratch/ingest-{repo-slug}
+   ```
 2. **Map Validation**: Run `python scripts/validate_workspace_map.py` to confirm 0 map drift.
 3. **Automated Verification**: Execute unit tests or runner verifiers to confirm 100% pass rate.
 4. **System Self-Improvement**: Suggest running `/improve-system` to persist learnings.
 
+
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Socratic Discovery & Audit Gates**: Driven by **`/grill-me`** (Phase 1) and **`/roast`** (Phase 5 5-persona council).
 - **Skill Adaptation**: Uses **`/agent-adapt`** to convert Claude Code instructions into Antigravity standards.
 - **Quality Control**: Applies **`/skill-builder`** and Matt Pocock's `writing-great-skills` quality discipline.
@@ -110,7 +114,7 @@ This skill supports **Tri-Mode Flexible Execution**:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -8,7 +8,7 @@ argument-hint: '[url] [--mode fast|dynamic|stealth] [--css selector]'
 
 # Scrape Web Skill (Scrapling Engine)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/scrape-web [optional parameters]` in chat.
@@ -51,6 +51,17 @@ python scripts/scrapling_runner.py --url "https://target-spa-app.com" --mode dyn
 python scripts/scrapling_runner.py --url "https://protected-site.com" --mode stealth --output "second-brain-zorixel/wiki/research/scraped-data.json"
 ```
 
+### 5. High-Precision Article & Technical Content Cleaning (Defuddle Standard)
+When scraping long-form articles, tech blogs, or documentation where raw HTML contains clutter (navbars, ads, popups, sidebars, footer noise), use the `defuddle` CLI for noise removal, metadata extraction, and clean Markdown generation:
+```bash
+# Parse live web URL directly to clean Markdown with YAML frontmatter metadata
+npx defuddle parse https://example.com/article --markdown --frontmatter
+
+# Convert raw HTML file or stdin to clean Markdown with JSON metadata
+cat page.html | npx defuddle parse --markdown --json
+```
+*Note: Use `defuddle` when high-fidelity code blocks, tables, footnotes, and LaTeX math formulas must be preserved cleanly for LLM ingestion.*
+
 ---
 
 ## Integration with AIOS Vaults & Workflows
@@ -68,13 +79,13 @@ python scripts/scrapling_runner.py --url "https://protected-site.com" --mode ste
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Stealth Scraping Engine**: Powered by scripts/scrapling_runner.py for anti-bot DOM extraction.
 - **Internet Eyes**: Serves as the web fetch backend for **/agent-reach** and **/ingest-repo**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

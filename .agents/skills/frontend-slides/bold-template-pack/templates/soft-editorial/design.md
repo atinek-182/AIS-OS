@@ -462,9 +462,7 @@ There is no second tier of elevation. Cards do not stack on cards. If a layout n
 | 16px | Palette swatch tiles |
 | 14px | Smallest decorative chips inside design-system grids |
 | 6px | Chart legend swatch (a flat rounded bar) |
-| 50% (circle) | Cover swatch dots |
-
-There are **no square corners in the system**. Every container is at least 14px rounded; cards are 22–36px rounded; pills are fully rounded.
+| 50% (circle) | Cover swatch dots | There are **no square corners in the system**. Every container is at least 14px rounded; cards are 22–36px rounded; pills are fully rounded.
 
 ### Border Weights
 

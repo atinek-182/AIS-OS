@@ -6,7 +6,7 @@ argument-hint: '[client_name] [service_type] [features...]'
 
 # Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill designs and deploys enterprise-grade client management hubs, student desk OS systems, and operational workflow engines that operate **100% free forever** without recurring monthly SaaS subscriptions (Make.com, n8n cloud, Zapier). It pairs Notion Master Databases (free plan) as the front-end intake UI with Google Apps Script (`Code.gs`) as the serverless 24/7 backend engine, Google Sheets as the ledger, and native email/WhatsApp triggers.
 
@@ -34,7 +34,7 @@ graph TD
 
 ---
 
-## 🛡️ Dynamic Header Mapping Pattern (Google Apps Script)
+## Dynamic Header Mapping Pattern (Google Apps Script)
 
 > **CRITICAL RULE:** Never hardcode column indices (e.g. `sheet.getRange(row, 3)`) in Google Apps Script! Reordering or adding columns in Google Sheets will silently corrupt data. ALWAYS resolve headers dynamically at runtime using `getHeaderMap()`.
 
@@ -98,7 +98,7 @@ function syncNotionRecordToSheet(sheet, recordData) {
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

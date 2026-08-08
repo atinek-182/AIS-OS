@@ -139,7 +139,7 @@ Print directly in chat (Markdown). Format:
 ```
 # AIOS Audit — {date}
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/audit [optional parameters]` in chat.
@@ -195,14 +195,14 @@ After printing, ask: "Save this audit to `audits/audit-{date}.md` so you can tra
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Structural Audit**: Complements **`/os-audit`** (read-only drift & freshness check) and **`/level-up`** (capability & automation roadmap).
 - **System Improvement**: Hands off top-leverage structural fixes to **`/improve-system`** and **`/skill-builder`**.
 - **Codebase Audits**: Pairs with **`/jsmastery-audit`** (fullstack code quality) and **`/vibesec`** (security vulnerability scanning).
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

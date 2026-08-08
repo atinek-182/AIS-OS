@@ -8,6 +8,8 @@
 ## ⚡ Core Operational Guidelines
 
 - **Be Direct, Concise, and Clear**: Lead with what needs action, not fluff or repetitive restatements.
+- **Mandatory Chat Bootup Context**: On task startup, inspect [context/00_MASTER_INDEX.md](file:///d:/AI-OS/context/00_MASTER_INDEX.md) or run `python scripts/aios_bootup_context.py` to pre-fetch active focus ([hot.md](file:///d:/AI-OS/hot.md)) and persistent memory ([MEMORY.md](file:///d:/AI-OS/MEMORY.md)).
+- **Mandatory Multi-Vault Deep Search Before Building**: Whenever asked to design, build, or research a feature or topic, ALWAYS execute `python scripts/aios_deep_search.py "<query>"` FIRST. This performs a 2-stage sweep across all 8 workspace vaults and Graphify AST hubs, capturing important notes even if saved in obscure or scratch files without burning token budget.
 - **Empirical Verification Before Completion Assertions**: Never claim a task is fixed or complete without running runtime tests or verification scripts and inspecting exact output logs.
 - **Security-First Mandate**: Strictly enforce `/vibesec` rules (IDOR prevention, tenant isolation, JWT `httpOnly` cookies, Zod mass assignment validation, SSRF private IP blocking).
 - **Strict Zero-Emoji Mandate**: Never use emojis anywhere in any response, chat message, skill file, code comment, commit message, documentation, or project artifact across any workspace.
@@ -36,7 +38,7 @@
 | **Rule 1.4** | **OAuth Auth** | High | **Pre-Flight OAuth Verification**: Google Workspace CLI refresh tokens expire after inactivity. ALWAYS execute `python scripts/aios_gws_health_check.py` to verify authentication state before running GWS batch automations. If `invalid_grant` occurs, trigger `node run.js auth login`. |
 | **Rule 1.5** | **Argument Passing** | High | **Windows `cmd.exe` JSON Quote Safety**: Windows `cmd.exe` strips outer quotes when `shell=True` is used, corrupting stringified `--json` payloads. ALWAYS execute Node directly with `shell=False` passing Python `json.dumps(payload)` via `subprocess.run([...], shell=False)`. |
 | **Rule 1.6** | **GCP Platform** | High | **GCP API Enablement Link Handling**: Newly initialized GCP projects have individual service APIs turned off by default. When an HTTP 403 `accessNotConfigured` or `has not been used` error occurs, intercept the response and present direct console enable URLs (e.g. `https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=zorixel-aios`). |
-| **Rule 1.7** | **Encoding** | Low | **Windows Standard Output UTF-8 Encoding**: Windows console defaults to legacy ANSI codepage `cp1252`, causing `UnicodeEncodeError` when printing unicode symbols like `✓`. ALWAYS use standard ASCII tags (`[OK]`, `[SUCCESS]`, `[ERROR]`) in terminal output and set `encoding='utf-8', errors='replace'` in Python subprocess reads. |
+| **Rule 1.7** | **Encoding** | Low | **Windows Standard Output UTF-8 Encoding**: Windows console defaults to legacy ANSI codepage `cp1252`, causing `UnicodeEncodeError` when printing unicode symbols like `✓`. ALWAYS use standard ASCII tags (`[OK]`, `[SUCCESS]`, `[ERROR]`) in terminal output, add `sys.stdout.reconfigure(encoding='utf-8', errors='replace')` at the top of Python CLI scripts, and set `PYTHONIOENCODING=utf-8` or `python -X utf8`. |
 | **Rule 1.8** | **Formula Engine** | High | **Notion Formula 2.0 Browser Web API Ban**: Notion Formula 2.0 does NOT contain JavaScript browser Web APIs (`encodeURIComponent()`, `window`, `fetch`). ALWAYS pre-encode URL strings using `%20` (space) and `%0A` (newline) and replace spaces dynamically using `replaceAll(prop("Column"), " ", "%20")`. |
 | **Rule 1.9** | **Formula Engine** | High | **Notion Formula 2.0 Defensive Null Guards**: Direct string concatenation or math on empty/null database properties crashes on blank rows. ALWAYS wrap every property reference in defensive `if(empty(prop("Column")), fallback, value)` guards. |
 | **Rule 1.10** | **Web Endpoint** | Low | **Notion Developer Portal Endpoint Rules**: Notion updated developer dashboard routes from `/my-integrations` to `https://app.notion.com/developers/connections`. Use updated endpoints in all guides and link checks. |
@@ -64,6 +66,7 @@ To eliminate delivery iterations and ensure AIOS succeeds on the FIRST attempt:
 5. **Notion AI Prompt Standard**: Provide a single, copyable Notion AI Master Prompt alongside manual property schema tables so operators can build databases in 1 click.
 6. **WhatsApp Formula Standard**: All auto-generated WhatsApp click links MUST use pre-encoded `%20` / `%0A` formatting, dynamic regex phone sanitization `replaceAll(prop("Phone"), "[^0-9]", "")`, and defensive `if(empty(...))` wrappers for name, status, and financial balances.
 7. **Google Workspace Provisioning Standard**: Run all `gws` CLI operations via direct Node execution (`shell=False`) in Python scripts to guarantee 100% deterministic sheet creation, tab formatting, and permission sharing.
+8. **Web Article Ingestion & Defuddle Standard**: When ingesting web articles, technical blog posts, or documentation into AIOS research vaults or LLM context, use `npx defuddle parse <source> --markdown --frontmatter` to strip DOM clutter, preserve code blocks and math formulas, and prepend structured YAML metadata.
 
 ---
 
@@ -74,3 +77,29 @@ To eliminate delivery iterations and ensure AIOS succeeds on the FIRST attempt:
 3. **Graphify-First Context Discovery**: ALWAYS run `python scripts/graphify_runner.py` or inspect graphify AST context at task startup before making plans or edits.
 4. **Empirical Verification Before Completion Assertions**: Never claim a task is fixed or complete without running runtime tests or verification scripts and inspecting exact output logs.
 <!-- END INLINE GLOBAL ERROR PREVENTION RULES -->
+
+---
+
+## Agent skills
+
+### Issue tracker
+
+Local markdown files under `.scratch/<feature-slug>/`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Standard 5-role triage vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Multi-context layout using `CONTEXT-MAP.md` at root pointing to per-package `CONTEXT.md` files. See `docs/agents/domain.md`.
+
+### ⚡ 5 Multi-Workflow Integration Matrices
+
+1. **ZORIXEL Client Sprints**: `/grill-with-docs` (Domain in `CONTEXT.md`) -> `/to-spec` -> `/to-tickets` (`.scratch/<sprint>/issues/`) -> `/implement` + `/website-design-engine` + `/hallmark` -> `/code-review`.
+2. **Superpowers Parallel Subagents**: `/to-tickets` (generates `Blocked by: NN` graphs) -> `subagent-driven-development` launches subagents per ticket -> `/tdd` red-green loop -> `verification-before-completion`.
+3. **GStack Executive Matrix**: `/gstack ceo` -> `/grill-with-docs` -> `/gstack eng` (Enforces `/codebase-design` deep modules) -> `/implement` -> `/gstack qa` + `/code-review`.
+4. **Fullstack UI Architecture**: `/jsmastery-architect` (Server Actions & Zod) -> `/prototype` (Throwaway UI state) -> `/to-spec` -> `/implement` + `/hallmark` (OKLCH math & anti-slop).
+5. **Incident Response & Debugging**: `/diagnosing-bugs` (6-step feedback loop) -> `/improve-codebase-architecture` -> `/vibesec` security gate.
+
+

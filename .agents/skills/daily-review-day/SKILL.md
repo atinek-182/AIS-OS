@@ -6,7 +6,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/daily-review-day [optional parameters]` in chat.
@@ -36,14 +36,14 @@ Automates the evening reflection routine. It gathers completed tasks, audits man
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Evening Ritual**: Reviews completed items from **/daily-plan-day** and logs accomplishments.
 - **Manual Overhead Auditing**: Identifies repetitive tasks done 3+ times and flags them for **/level-up** automation scoping.
 - **Vault Sync**: Updates rain-aios/wiki/log.md and decisions/log.md.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

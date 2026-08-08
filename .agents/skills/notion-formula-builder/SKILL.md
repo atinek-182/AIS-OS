@@ -6,7 +6,7 @@ argument-hint: '[formula_type] [property_names...]'
 
 # Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill designs, validates, and compiles production-ready Notion Formula 2.0 expressions for database properties. It guarantees 100% crash-free formula execution on blank/empty database rows, converts text properties dynamically for URL parameters, and enforces native Notion Formula 2.0 syntax rules.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🎯 Core Rules & Architectural Safeguards
+## Core Rules & Architectural Safeguards
 
 1. **Zero Browser JavaScript Web API Ban**:
    - **NEVER** output browser Web APIs (`encodeURIComponent()`, `decodeURIComponent()`, `window`, `fetch`, `console.log`).
@@ -113,7 +113,7 @@ Before outputting or pasting Notion formulas:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

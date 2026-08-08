@@ -289,9 +289,7 @@ def resize_max(input_path, output_path, max_dim=1200):
 |-----------|-----------|
 | Square logo on rounded aesthetic | `crop_circle()` |
 | Image > 1MB | `resize_max(max_dim=1200)` |
-| Wrong aspect ratio | Manual crop with `img.crop()` |
-
-Save processed images with `_processed` suffix. Never overwrite originals.
+| Wrong aspect ratio | Manual crop with `img.crop()` | Save processed images with `_processed` suffix. Never overwrite originals.
 
 ### Image Placement
 

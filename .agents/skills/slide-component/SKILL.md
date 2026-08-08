@@ -12,7 +12,7 @@ argument-hint: '[optional parameters]'
 
 # Slide Component Generator
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/slide-component [optional parameters]` in chat.
@@ -92,12 +92,12 @@ Surgically inject the approved HTML/CSS/JS block into the target slide container
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Slide Layout Elements**: Injects Vengeance UI-inspired layouts (Bento grids, terminals, pipelines) into **/frontend-slides**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

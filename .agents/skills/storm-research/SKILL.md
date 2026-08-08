@@ -1,23 +1,24 @@
 ---
 name: storm-research
-description: Run Stanford's STORM multi-perspective research method on a topic. Spawns 5 expert lenses (Practitioner, Academic, Skeptic, Economist, Historian - or domain-customized personas) -> contradiction map -> self-contained verified HTML report -> primary-source verification subagents. Invokable directly via /storm-research.
+description: Run Stanford's STORM multi-perspective research method on a topic using the mandatory 7-agent suite (Systems Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product/SaaS Economist, AI/LLM Specialist, Developer Ergonomics Auditor). Spawns 7 expert lenses -> contradiction map -> self-contained verified HTML report -> primary-source verification subagents. Invokable directly via /storm-research.
 argument-hint: "[topic to research] [--domain tech|design|content|audit|general]"
 ---
 
-# ⚡ Storm Research (`/storm-research`)
+# Storm Research (`/storm-research`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/storm-research [topic] [--domain general|tech|design|content|audit]` in chat.
 - **Dynamic Intent Matching**: Triggered automatically when someone asks for deep multi-perspective research, a STORM briefing, or fact-checked research report.
-- **Inter-Skill & AIOS Programmatic Calling**: Programmatically invokable by parent skills (e.g. `/six-file-context-methodology`, `/website-design-engine`, `/ingest-repo`, `/carousel-copy`) via `/storm-research` or reading `SKILL.md` directly.
+- **Inter-Skill & AIOS Programmatic Calling**: Programmatically invokable by parent skills (e.g. `/six-file-context-methodology`, `/website-design-engine`, `/ingest-repo`, `/carousel-copy`) via `/storm-research` or reading `SKILL.md` directly. Automatically delegates to the mandatory 7-agent system (`storm-research-project`).
 
 ---
 
-## 📌 What this does
+## What this does
 
-Turns a topic or architectural decision into a verified, multi-perspective HTML briefing. It simulates five expert lenses on the topic, maps where they contradict each other, synthesizes everything into a single self-contained HTML report, then adversarially peer-reviews its own output and verifies every citation against primary sources before delivering. The output is a self-contained HTML file in `storm-reports/` with zero blind spots and zero unverified claims.
+Turns a topic or architectural decision into a verified, 7-perspective HTML briefing. It simulates seven expert lenses on the topic (Systems Architect, Vibesec Security Pen-Tester, DB/Scaling Specialist, Frontend UX Lead, Product Economist, AI/LLM Specialist, Developer Ergonomics Auditor), maps where they contradict each other, synthesizes everything into a single self-contained HTML report, then adversarially peer-reviews its own output and verifies every citation against primary sources before delivering. The output is a self-contained HTML file in `storm-reports/` with zero blind spots and zero unverified claims.
+
 
 ---
 
@@ -33,7 +34,7 @@ When running `/storm-research`, specify `--domain` or let the AI select the best
 
 ---
 
-## 🛠️ Execution Pipeline
+## Execution Pipeline
 
 ### Phase 0: Scope & Reader Identification
 1. Extract topic and `--domain` preset from arguments.
@@ -70,7 +71,7 @@ Analyze briefs inline to extract:
 
 ---
 
-## 🔗 Inter-Skill Connections
+## Inter-Skill Connections
 - **`six-file-context-methodology`**: Supplies evidence-backed architecture research before generating feature specs.
 - **`website-design-engine`**: Supplies design council insights and anti-slop benchmarks.
 - **`agent-reach` / `scrape-web`**: Enhances Phase 1 & Phase 4 primary-source retrieval.
@@ -78,7 +79,7 @@ Analyze briefs inline to extract:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

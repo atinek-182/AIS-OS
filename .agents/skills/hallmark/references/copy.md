@@ -177,6 +177,4 @@ These phrases appear across distribution-default LLM copy and reach for none of 
 | *"Innovative solutions"* | Meaningless; every product claims innovation |
 | *"Seamless integration"* | "Seamless" has no antonym; signals non-specificity |
 | *"In today's digital landscape"* | Temporal hand-wave; assumes the reader needs orientation |
-| *"Next-generation"* | Implies predecessor inadequacy; offers no differentiation |
-
-If the brief gives you nothing to work with for an opening line, *say so to the user* and ask one question that elicits a specific noun, verb, or place. The user knows their product; the model is not allowed to invent specificity.
+| *"Next-generation"* | Implies predecessor inadequacy; offers no differentiation | If the brief gives you nothing to work with for an opening line, *say so to the user* and ask one question that elicits a specific noun, verb, or place. The user knows their product; the model is not allowed to invent specificity.

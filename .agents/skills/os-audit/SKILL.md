@@ -14,7 +14,7 @@ argument-hint: '[optional: a subfolder to scope the audit to]'
 
 # OS Audit — is your AIOS still true?
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/os-audit [optional: a subfolder to scope the audit to]` in chat.
@@ -185,13 +185,13 @@ Exposure rules: a mode is HIGH when a RED finding feeds it, MED when only YELLOW
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Read-Only AIOS Audit**: Evaluates operating context drift, freshness, index truth, and file placement.
 - **System Health**: Complements **/audit** (Four Cs audit) and **/level-up**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

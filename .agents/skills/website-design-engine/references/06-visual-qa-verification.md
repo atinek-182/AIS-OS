@@ -1,11 +1,11 @@
-# 📸 Phase 6 Reference: Automated Playwright Visual QA & Verification
+# Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)
 
 ## 1. Pre-Emit Anti-Slop Audit Execution
 
 Run the Hallmark runner script to execute static checks on the codebase:
 
 ```bash
-python scripts/hallmark_runner.py
+python scripts/hallmark_runner.py audit <target-dir>
 ```
 
 This verifies:
@@ -32,7 +32,15 @@ python scripts/verify_design_milestone.py
 
 ---
 
-## 3. Zero-Tolerance Console & Layout Verification Rules
+## 3. Base64 Font Data URI Inlining Requirement (Rule 1.13 & Rule 1.18)
+
+When rendering custom fonts (`Havock`, `Rosehot`, `Nuqun`) inside temporary HTML files for Playwright headless Chromium screenshots:
+- **Mandatory Base64 Data URIs**: ALWAYS inline `.otf`/`.ttf` font files as Base64 Data URIs (`data:font/opentype;base64,...`) inside CSS `@font-face` blocks.
+- **Banned Local Paths**: NEVER use `file:///` local font paths in Playwright HTML templates as headless Chromium fails to resolve local OS font files on Windows.
+
+---
+
+## 4. Zero-Tolerance Console & Layout Verification Rules
 
 Before declaring any website build complete:
 1. **0 JavaScript Console Errors**: Confirm 0 runtime errors or unhandled exceptions in Playwright browser logs.

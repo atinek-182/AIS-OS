@@ -10,7 +10,7 @@ argument-hint: '[optional parameters]'
 
 # SEO Audit & GEO Router Skill
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/seo-audit [optional parameters]` in chat.
@@ -58,13 +58,13 @@ Present a structured report outlining:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Technical SEO Router**: References Daniel Agrici's SEO library for schema, sitemaps, GEO/AEO, and page speed checks.
 - **Web Verification**: Integrated into Phase 5 of **/website-design-engine** and **/verify-design**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

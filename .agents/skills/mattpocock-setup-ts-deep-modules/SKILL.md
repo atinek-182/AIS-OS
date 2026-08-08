@@ -6,7 +6,7 @@ argument-hint: '[optional_target_directory]'
 
 # Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 Adapted from Matt Pocock's package structure tooling. Configures strict module boundaries, `exports` fields in `package.json`, and dependency-cruiser configs to enforce clean separation of concerns in TypeScript monorepos and multi-module apps.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🛡️ Package Isolation Rules
+## Package Isolation Rules
 
 1. **Explicit Entrypoints**: Prevent internal file imports (`import { x } from 'pkg/dist/internal/x'`) by defining strict `exports` maps in `package.json`.
 2. **Dependency Cruiser Safeguards**: Inject `dependency-cruiser.config.cjs` to enforce architectural layers (e.g. `domain` cannot import `ui`, `utils` cannot import `services`).
@@ -25,13 +25,13 @@ Invokable via:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Architecture Design**: Used during system setup by **`/jsmastery-architect`** and **`/new-project`**.
 - **Code Audits**: Audited during release checks by **`/jsmastery-audit`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -344,9 +344,7 @@ The system uses **no `box-shadow` blur values, no `drop-shadow`, no rgba shadows
 | 0px | Cards, blocks, tags, image frames, table cells |
 | 50% | Round avatar placeholders, step-node circles, doodle circles |
 | Asymmetric organic (e.g. `40% 60% 70% 30% / 40% 50% 60% 50%`) | Blob frames and blob fills only |
-| Pebble-asymmetric (e.g. `255px 15px 225px 15px / 15px 225px 15px 255px`) | Pebble-shaped frames only |
-
-The system avoids smooth medium radii (4px, 8px, 12px) — corners are either sharp, perfectly round, or organically blob-shaped. The middle ground reads as a generic web app, which is the wrong signal.
+| Pebble-asymmetric (e.g. `255px 15px 225px 15px / 15px 225px 15px 255px`) | Pebble-shaped frames only | The system avoids smooth medium radii (4px, 8px, 12px) — corners are either sharp, perfectly round, or organically blob-shaped. The middle ground reads as a generic web app, which is the wrong signal.
 
 ### Border Weights
 - **3px solid `{colors.text}`** — the standard outlined-card and blob-frame border weight.

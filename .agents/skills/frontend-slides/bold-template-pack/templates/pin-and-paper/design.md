@@ -456,9 +456,7 @@ Most slides use **absolute positioning** with edge-anchored elements (`left: 64p
 | `pad-bottom` | 90px | Bottom inset for content (above the 36px footer chrome) |
 | `grid-gap-sm` | 22px | Process card gap |
 | `grid-gap-md` | 28px | Notice / stats card gap |
-| `grid-gap-lg` | 32px | Notecard grid gap |
-
-Cards typically use `28px–36px` internal padding on the top and `22px–28px` on the sides, with `22px–28px` on the bottom.
+| `grid-gap-lg` | 32px | Notecard grid gap | Cards typically use `28px–36px` internal padding on the top and `22px–28px` on the sides, with `22px–28px` on the bottom.
 
 ### Chrome Frame
 
@@ -494,9 +492,7 @@ Some card variants (`{components.pinned-card-alt2}`) carry a slight rotation (`t
 |---|---|
 | 0px | Stamp, pin glyphs, page numbers |
 | 4px | Cards, panels, table containers, image wrappers — the system's micro-radius |
-| 999px | Pills only |
-
-The system uses a **4px micro-radius** on every card — small enough to read as "printed corner with slight bleed" rather than rounded UI. Pills are the only round shape; pills with the unusual treatment of Caveat handwritten letterforms inside.
+| 999px | Pills only | The system uses a **4px micro-radius** on every card — small enough to read as "printed corner with slight bleed" rather than rounded UI. Pills are the only round shape; pills with the unusual treatment of Caveat handwritten letterforms inside.
 
 ### Border Weights
 

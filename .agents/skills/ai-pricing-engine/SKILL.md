@@ -6,7 +6,7 @@ argument-hint: '[client_name_or_niche] [optional_workflow]'
 
 # ZORIXEL AI Solution Pricing Engine (`/ai-pricing-engine`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill is the definitive pricing, proposal, and ROI calculator for ZORIXEL AI agency engagements. Built directly from Nate Herk's *How to Price AI Solutions: The Complete Masterclass*, it converts raw client discovery numbers into a mathematical, defensible price corridor, 10X ROI proof, and a staged 3-option micro-service proposal.
 
@@ -17,26 +17,26 @@ Invokable via:
 
 ---
 
-## 💎 Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price"
+## Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price"
 
 > **The Single Golden Rule**: Never state a price before getting the client to state what the problem costs the business. Cost is your floor, Value is the client's ceiling, and Price lives between them.
 
 ```
 +-----------------------------------------------------------------------+
-|  VALUE CEILING  (Client-Stated First-Year Economic Impact)            |
+| VALUE CEILING  (Client-Stated First-Year Economic Impact)            |
 |  • Annual Labor Saved + Error Costs Avoided + Revenue Capacity        |
 +-----------------------------------------------------------------------+
                                   ▲
                                   │  Price Corridor (10% - 20% of Value)
                                   ▼
 +-----------------------------------------------------------------------+
-|  COST FLOOR  (Delivery Labor + Testing + Infra + Margin)               |
+| COST FLOOR  (Delivery Labor + Testing + Infra + Margin)               |
 +-----------------------------------------------------------------------+
 ```
 
 ---
 
-## 🛠️ Step-by-Step 8-Phase Pricing Protocol
+## Step-by-Step 8-Phase Pricing Protocol
 
 ### Phase 1: Baseline Capture (Time Lens & Income Lens)
 
@@ -120,6 +120,20 @@ Separation of ongoing health from new feature development:
 
 ---
 
+### Phase 8: Mandatory Pre-Proposal Roast Gate (`/roast --domain offer --save`)
+
+Before finalizing any client proposal or price quote, run the `/roast` council to stress-test the offer:
+
+```powershell
+/roast proposal-[client-slug] --domain offer --save
+```
+
+- **Product Economist & Buyer Audit**: Verifies 10X ROI proof, checks defensible price corridor (10%-20%), and ensures zero recurring SaaS fees for non-tech clients.
+- **Risk Matrix Verification**: Requires Value & ROI score $\ge$ 8/10 and Security/Failure Risk $\le$ 3/10 before sending to client.
+
+
+---
+
 ### Phase 8: One-Minute Price Script Generator
 
 Generate the exact mathematical closing script for Atinek Maurya:
@@ -128,7 +142,7 @@ Generate the exact mathematical closing script for Atinek Maurya:
 
 ---
 
-## 📝 Output Artifact Format (`proposals/pricing-{client-slug}.md`)
+## Output Artifact Format (`proposals/pricing-{client-slug}.md`)
 
 When executing this skill, output a structured proposal pricing sheet containing:
 1. Client Baseline & Value Calculation Table
@@ -140,14 +154,14 @@ When executing this skill, output a structured proposal pricing sheet containing
 
 ---
 
-## 🔗 Inter-Skill Connections
+## Inter-Skill Connections
 - **Discovery Input**: Ingests client numbers from **`/grill-me`** and **`context/aios-intake.md`**.
 - **Spec Architecture**: Feeds pricing tiers into **`/mattpocock-to-spec`** and **`/jsmastery-scope`**.
 - **Audit Gate**: Passes proposed pricing and contract terms to **`/roast`** for margin validation.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -459,9 +459,7 @@ The system uses **no blurred `box-shadow`** (other than the single 8px hard offs
 |---|---|
 | 0px | All cards, all stamps, all topbars, all bodies, all chips, all ledger rows |
 | 50% | Petals (perfect circles) — used inside petal-clusters and scattered blobs only |
-| Polygon clip-path (32-point starburst) | Rosette seal — the only complex shape primitive |
-
-The system has **no rounded corner radii** other than perfect circles (petals) and the polygon-clipped starburst (seal). Every other shape is strict rectangular or square.
+| Polygon clip-path (32-point starburst) | Rosette seal — the only complex shape primitive | The system has **no rounded corner radii** other than perfect circles (petals) and the polygon-clipped starburst (seal). Every other shape is strict rectangular or square.
 
 ### Border Weights
 - **1.5px solid `{colors.ink}`** — the standard border weight on cards, topbar rules, ledger header rules, qbody-box, the cover frame's bottom rule, the cover footer's top rule.

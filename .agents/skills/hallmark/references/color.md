@@ -57,9 +57,7 @@ Use the APCA contrast check when you can; otherwise WCAG 2.1 ratios.
 | Body text | 4.5:1 | 7:1 |
 | Large text (≥ 18.66px bold or 24px) | 3:1 | 4.5:1 |
 | UI component boundaries | 3:1 | 4.5:1 |
-| Placeholder / helper text | 4.5:1 | 4.5:1 |
-
-Verify with the browser devtools vision-deficiency emulator before shipping.
+| Placeholder / helper text | 4.5:1 | 4.5:1 | Verify with the browser devtools vision-deficiency emulator before shipping.
 
 ## Dark mode recipe
 

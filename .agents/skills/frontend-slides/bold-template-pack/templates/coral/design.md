@@ -452,9 +452,7 @@ All hatches are subtle (6–10% opacity black). They provide texture without com
 | Value | Use |
 |---|---|
 | 50% (circle) | Circular elements only: `nav-dot` (10px), `nav-arrow` (44px), `t-point-dot` (20px timeline node) |
-| 0 | Everything else: every region, every card, every sidebar tile, every icon square, every chart, every accent line, every accent border |
-
-The system uses **only two radius values**: 50% (true circle) or 0 (sharp rectangle). Soft-rounded corners do not exist. Cards, icon squares, info-bars, and feature regions are all strict rectangles.
+| 0 | Everything else: every region, every card, every sidebar tile, every icon square, every chart, every accent line, every accent border | The system uses **only two radius values**: 50% (true circle) or 0 (sharp rectangle). Soft-rounded corners do not exist. Cards, icon squares, info-bars, and feature regions are all strict rectangles.
 
 ### Border Weights
 - **5px solid `{colors.coral}` (top)** — used on card top borders (column-card pattern).

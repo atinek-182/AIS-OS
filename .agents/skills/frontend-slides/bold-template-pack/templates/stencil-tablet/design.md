@@ -508,9 +508,7 @@ The single exception is the **organic-shape background** on the dark agenda layo
 | 22px | Standard cards, action bars, process nodes, matrix table, chart frames, consult columns, stats cards |
 | 18px | Decorative timeline bar |
 | 14px | Cover mark (small lockup square), timeline tablet |
-| 0 (square) | Chart plot box edges (the 2px solid black plot frame), legend bars, organic-shape SVG (which has no border-radius by definition) |
-
-Cards are uniformly 22–26px rounded. Square corners appear only on chart plot frames (where the geometry of the axis lines demands it) and on legend bars (flat 32×6px rectangles for chart legends).
+| 0 (square) | Chart plot box edges (the 2px solid black plot frame), legend bars, organic-shape SVG (which has no border-radius by definition) | Cards are uniformly 22–26px rounded. Square corners appear only on chart plot frames (where the geometry of the axis lines demands it) and on legend bars (flat 32×6px rectangles for chart legends).
 
 ### Border Weights
 

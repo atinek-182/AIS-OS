@@ -38,9 +38,7 @@ Every Hallmark output writes these tokens (or a subset, if the page doesn't use 
 | `--dur-micro` / `--dur-short` / `--dur-long` | time | `120ms` / `220ms` / `420ms` |
 | `--rule-hair` / `--rule-fine` | length | `1px` / `2px` |
 | `--radius-card` / `--radius-pill` / `--radius-input` | length | varies per theme |
-| `--shadow-card` | shadow | varies per theme |
-
-If the page introduces *additional* tokens, name them by role and add to `tokens.css`. Don't make up token names downstream that aren't in `tokens.css` — the source of truth is the source of truth.
+| `--shadow-card` | shadow | varies per theme | If the page introduces *additional* tokens, name them by role and add to `tokens.css`. Don't make up token names downstream that aren't in `tokens.css` — the source of truth is the source of truth.
 
 ---
 

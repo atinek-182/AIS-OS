@@ -287,9 +287,7 @@ Mat is **viewport-fluid by design**. All sizes use `vw` and `vh` units so the la
 | `{spacing.pad-y}` | 5.5vh | Slide vertical padding |
 | `{spacing.gap-lg}` | 4.5vh | Between major content sections |
 | `{spacing.gap-md}` | 2.8vh | Between related elements (headline → lead, stat → label) |
-| `{spacing.gap-sm}` | 1.4vh | Between tightly related elements (label pair in chrome band) |
-
-The horizontal padding is generous — content occupies roughly the middle 89% of the viewport. Pushing content closer to the edges breaks the system's editorial spaciousness.
+| `{spacing.gap-sm}` | 1.4vh | Between tightly related elements (label pair in chrome band) | The horizontal padding is generous — content occupies roughly the middle 89% of the viewport. Pushing content closer to the edges breaks the system's editorial spaciousness.
 
 ### Chrome Frame
 
@@ -320,9 +318,7 @@ There are no `box-shadow` declarations on any structural element. The info-card 
 | Value | Use |
 |---|---|
 | 0px | Every structural element — info-card, image placeholders, stat cells, compare panels, bars |
-| 50% | Nav-dot circles only |
-
-The system has **no rounded corners** on any composed content. Cards, panels, and image frames are all strict rectangles. The only round shapes are the navigation UI dots.
+| 50% | Nav-dot circles only | The system has **no rounded corners** on any composed content. Cards, panels, and image frames are all strict rectangles. The only round shapes are the navigation UI dots.
 
 ### Border Weights
 

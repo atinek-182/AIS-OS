@@ -6,7 +6,7 @@ argument-hint: '[target_dir_or_file]'
 
 # JS Mastery Fullstack Code Auditor (`/jsmastery-audit`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 This skill performs comprehensive static and architectural audits on fullstack JavaScript, TypeScript, and Next.js applications, following JS Mastery Pro standards.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🔍 The 6 Audit Gates
+## The 6 Audit Gates
 
 ### 1. Next.js App Router & Server/Client Boundary Gate
 - Verify `'use client'` is only used where client interactivity (state, hooks, DOM listeners) is required.
@@ -50,7 +50,7 @@ Invokable via:
 
 ---
 
-## 📊 Output Audit Report Format
+## Output Audit Report Format
 
 Generate a Markdown audit report containing:
 1. **Executive Summary & Overall Health Score (0-100)**
@@ -60,7 +60,7 @@ Generate a Markdown audit report containing:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Visual & Console Verification**: Runs as Phase 5 in **`/website-design-engine`** and Step 1 in **`/verify-design`**.
 - **Security Scans**: Aligns with **`/vibesec`**.
 - **Anti-Slop QA**: Pairs with `python scripts/hallmark_runner.py audit <path>`.
@@ -68,7 +68,7 @@ Generate a Markdown audit report containing:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

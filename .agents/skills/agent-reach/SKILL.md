@@ -10,7 +10,7 @@ argument-hint: '[command|doctor|url|platform query]'
 
 # Agent Reach Skill (`/agent-reach`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/agent-reach [command|doctor|url|platform query]` in chat.
@@ -36,8 +36,10 @@ agent-reach doctor
 
 ### 2. Supported Platforms & Quick Commands
 
-- 🌐 **Web Reading**: Fetch clean Markdown for any URL:
+- 🌐 **Web Reading & Article Cleaning**: Fetch clean Markdown for any URL:
   `curl https://r.jina.ai/<URL>`
+  Or run Defuddle for clutter-free Markdown + YAML frontmatter metadata:
+  `npx defuddle parse <URL> --markdown --frontmatter`
 
 - 📺 **YouTube Subtitles & Info**:
   `yt-dlp --write-sub --sub-lang en,zh-Hans --skip-download <URL>`
@@ -45,17 +47,17 @@ agent-reach doctor
 - 📺 **Bilibili Search & Details**:
   `bili search "<query>"` (Zero config, no login needed)
 
-- 💻 **V2EX Discussions**:
+-  **V2EX Discussions**:
   Query hot tech topics, node posts, and replies via V2EX API.
 
-- 📦 **GitHub Repositories**:
+-  **GitHub Repositories**:
   `gh repo view <owner/repo>`
   `gh search repos "<query>"`
 
 - 📡 **RSS / Atom Feeds**:
   Parse feeds via `feedparser`.
 
-- 🔍 **AI Web Search**:
+-  **AI Web Search**:
   Execute semantic web search via Exa / Jina.
 
 - 🐦 **Twitter / X**:
@@ -73,14 +75,14 @@ agent-reach doctor
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Research & Discovery**: Feeds live web research into **`/grill-me`**, **`/roast`** (Researcher persona), and **`/ingest-repo`**.
 - **SEO & Marketing**: Connects with **`/seo-audit`** and **`/marketing`**.
 - **Web Scraping**: Cascades to **`/scrape-web`** (Scrapling engine) and **`/scrape-reference`** for full offline visual cloning.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -9,7 +9,7 @@ argument-hint: '[repo_url] [optional focus or instructions]'
 
 # Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/ingest-skills [repo_url] [optional focus or instructions]` in chat.
@@ -45,12 +45,12 @@ When invoked, execute the complete workflow documented in [d:\AI-OS\.agents\skil
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Alias Routing**: Direct alias routing to **/ingest-repo** for 8-phase repository ingestion and skill adaptation.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

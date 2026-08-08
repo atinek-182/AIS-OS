@@ -9,7 +9,7 @@ argument-hint: '[project-name]'
 
 # Design Direction Generator
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/design-direction [project-name]` in chat.
@@ -62,14 +62,14 @@ Use this skill to compile a premium visual style guide and design concept before
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Socratic Discovery**: Driven by Phase 0 **/grill-me** visual requirement questions.
 - **Adversarial Critique**: Passes visual concepts through the **/roast** 5-persona council gate.
 - **Web Build Handoff**: Feeds locked tokens and layout directions directly into **/website-design-engine** and **/new-project**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -10,7 +10,7 @@ argument-hint: '[optional parameters]'
 
 # Marketing & Copywriting Router Skill
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/marketing [optional parameters]` in chat.
@@ -52,12 +52,12 @@ Apply the rules, style constraints (clear > clever, specific > vague, active voi
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Copywriting Router**: Connects Corey Haynes' copywriting library with **/carousel-copy**, **/draft-message**, and **/website-design-engine**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -147,9 +147,7 @@ Hum's motion stack is **the loudest in the catalog**. Almost every interactive e
 | Character mark | pulse at rest (4s gentle scale 1 → 1.04 → 1); star-burst on relevant CTA click |
 | Section headings | translateY(12px → 0) + opacity 0 → 1 on view-enter, 600ms, 80ms stagger |
 | Star-burst | 420ms, fires once on primary action complete |
-| Scroll | Lenis (`duration: 0.8, lerp: 0.10` — a soft, slightly elastic glide for the playful feel) |
-
-Available easings:
+| Scroll | Lenis (`duration: 0.8, lerp: 0.10` — a soft, slightly elastic glide for the playful feel) | Available easings:
 - `--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1)` (bouncy overshoot — the canonical Hum easing)
 - `--ease-snap: cubic-bezier(0.22, 1, 0.36, 1)` (easeOutExpo — for tick-ups and reveals)
 - `--ease-out`, `--ease-in-out` (standard fallbacks)
@@ -250,7 +248,7 @@ The fastest way Hum slides into AI-slop is **sameness**: many products sharing o
 
 ### The deadliest tells — forbidden by default
 - **The centred hero stack** (eyebrow/badge → centred H1 → two-line subhead → filled + ghost CTA, dead-centre). The single biggest tell. Default to an *off-centre* hero; only centre when one element deliberately breaks the grid.
-- **A badge-pill directly above the H1** ("✨ now with…"). Never.
+- **A badge-pill directly above the H1** (" now with…"). Never.
 - **The 3-identical-accent-cards row** (icon-tile on top → title → two grey lines, ×3, equal gap). Already banned in Anti-patterns — but it's the reflex unit, so it keeps reappearing. If you have three things to say, say them in a *different shape*: zig-zag text/art rows, one big + two small, a numbered list, a horizontal scroll-rail, a comparison table.
 - **Uniform radius + one shadow on everything.** Give each build its own card *physics* (see levers).
 - **An accent stripe on a card's top/left edge** — reads as AI almost as reliably as em-dashes.

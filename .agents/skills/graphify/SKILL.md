@@ -6,7 +6,7 @@ argument-hint: '[build|query <term>|explain <concept>|path <A> <B>|status] [--hu
 
 # Graphify Multi-Vault Knowledge Graph Engine (`/graphify`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/graphify [build|query|explain|path|status] [--hub hub_name]` in chat.
@@ -15,7 +15,7 @@ This skill supports **Tri-Mode Flexible Execution**:
 
 ---
 
-## 🎯 Primary Capabilities & Output Files
+## Primary Capabilities & Output Files
 
 Graphify builds deterministic, tree-sitter AST knowledge graphs across four primary AIOS hubs:
 1. **`root`**: `d:\AI-OS` (Main AIOS Codebase, Skills, and Engine)
@@ -61,14 +61,14 @@ python scripts/graphify_runner.py status
 
 ---
 
-## 🔗 Inter-Skill Connections & Workflow Integration
+## Inter-Skill Connections & Workflow Integration
 - **Ingestion Engine**: Triggered automatically post-ingestion by `/ingest-repo` and `/ingest-skills`.
 - **GStack Architecture Review**: Used during `/gstack eng` to audit call-trees and module dependencies.
 - **Fullstack Next.js Scoping**: Integrates with `/jsmastery-scope` and `/mattpocock-wayfinder` to trace domain models.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

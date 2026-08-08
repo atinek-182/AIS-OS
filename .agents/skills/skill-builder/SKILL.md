@@ -203,7 +203,7 @@ Takes raw meeting notes and produces a structured summary with action items.
 
 # Meeting: [title]
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/skill-builder [optional parameters]` in chat.
@@ -296,14 +296,14 @@ Adapt these to fit your project:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Quality Control Discipline**: Incorporates Matt Pocock's `writing-great-skills` guidelines (`GLOSSARY.md` rules: No-Op test, leading words, pruning discipline).
 - **Skill Ingestion & Adaptation**: Evaluates skills produced by **`/ingest-repo`** and **`/agent-adapt`**.
 - **System Improvement**: Hands off optimized skills to **`/improve-system`** for GEMINI.md and workspace registration.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -11,7 +11,7 @@ argument-hint: '[ceo | eng | design | qa | full] [optional target or plan]'
 
 # `gstack` — Garry Tan's AI Engineering Team Workflow
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/gstack [ceo | eng | design | qa | full] [optional target or plan]` in chat.
@@ -78,12 +78,12 @@ When `/gstack` is triggered:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Virtual Executive Team**: Integrates Garry Tan's 5 lenses (CEO strategy, EM architecture, UI/UX design, browser QA, release audit) across **/website-design-engine**, **/jsmastery-architect**, and **/verify-design**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

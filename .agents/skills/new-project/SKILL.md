@@ -6,7 +6,7 @@ argument-hint: '[project-name]'
 
 # New Project Initialization Engine (`/new-project`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill initializes brand-new website applications, client landing pages, or digital product MVPs.
 
@@ -17,13 +17,13 @@ Invokable via:
 
 ---
 
-## 🎯 Specific Use Cases & Goal Alignment
+## Specific Use Cases & Goal Alignment
 - **Client Conversion Portfolios / Agency Sites**: Rapidly scaffold multi-page React/Vite/Next.js projects with locked OKLCH tokens, Obys grid canons, and Hallmark anti-slop rules.
 - **Sellable AI SaaS / Micro-Products**: Scaffold fullstack Next.js App Router applications with Server Action boundaries, Zod validation, and Supabase/Clerk auth.
 
 ---
 
-## 🚀 Execution Workflow
+## Execution Workflow
 
 ### Step 1: Resolve Directory & Scaffold Structure
 1. Set project path: `projects/[project-name]`.
@@ -74,14 +74,14 @@ Execute `python scripts/hallmark_runner.py audit projects/[project-name]` and co
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Web Creation Hand-off**: Hands off to **`/website-design-engine`** for Phase 1-7 layout build and grid math execution.
 - **Architecture & Build Specs**: Leverages **`/jsmastery-architect`** and **`/mattpocock-to-spec`**.
 - **Verification & QA**: Hands off to **`/verify-design`** for 5-viewport visual QA screenshots.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

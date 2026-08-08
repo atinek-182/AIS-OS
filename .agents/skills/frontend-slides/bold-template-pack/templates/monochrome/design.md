@@ -308,9 +308,7 @@ The system targets a fluid `100vw × 100vh` viewport with all sizes in `vw`/`vh`
 | `{spacing.pad-y}` | 6vh | Slide vertical padding |
 | `{spacing.gap-lg}` | 5vh | Between major content sections |
 | `{spacing.gap-md}` | 3vh | Between related elements |
-| `{spacing.gap-sm}` | 1.5vh | Between tightly related elements |
-
-The slide container reserves an additional 3.5vw on the left for a vertical sidebar element (currently disabled in the source — see Known Gaps), so total left padding is ~11.5vw. Content sits inside this generous gutter system.
+| `{spacing.gap-sm}` | 1.5vh | Between tightly related elements | The slide container reserves an additional 3.5vw on the left for a vertical sidebar element (currently disabled in the source — see Known Gaps), so total left padding is ~11.5vw. Content sits inside this generous gutter system.
 
 ### Chrome Frame
 
@@ -343,9 +341,7 @@ There are no gradients, no glows, no textures, no grain overlays. Even the donut
 | 0px | Every structural element — image placeholders, stat cells, compare panels, tables, chart areas |
 | 16px | Insight cards only |
 | 50% (circle) | Pie/donut chart shape, timeline-dot small circles, vt-spine dot |
-| 999px (pill) | None — pills are not used |
-
-The system is dominantly square-cornered. The 16px rounded radius on insight cards is the only structural soft edge and is the visual signal that distinguishes a card from a region.
+| 999px (pill) | None — pills are not used | The system is dominantly square-cornered. The 16px rounded radius on insight cards is the only structural soft edge and is the visual signal that distinguishes a card from a region.
 
 ### Border Weights
 

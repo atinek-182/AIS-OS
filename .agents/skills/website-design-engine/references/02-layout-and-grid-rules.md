@@ -1,15 +1,41 @@
-# 📐 Phase 2 Reference: Layout, Grid Canons & Architecture Rules
+# Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0)
 
-## 1. Obys 4 Grid Canons & Vertical Rhythm Math
+## Obys Grid Canons & Obys Spatial Rhythm Ratios
 
 1. **Canon 1: Strict Column Alignment**: Every section must anchor to the same 12-column or asymmetric grid system. No rogue margin offsets (`ml-[17px]`).
-2. **Canon 2: Vertical Rhythm Baseline**: Spacing between elements must follow an 8px/16px/24px/32px/48px/64px/96px step scale.
+2. **Canon 2: Obys Spatial Rhythm Ratios**:
+   - Macro Section Vertical Padding: `120px` to `160px` on desktop, `64px` to `80px` on mobile.
+   - Card Internal Spacing: `24px` to `32px`.
+   - Grid Element Gaps: `16px` to `24px`.
 3. **Canon 3: Line-Length Cap**: Body paragraphs must cap at `max-w-[65ch]` to preserve reading comfort.
 4. **Canon 4: Section Transition Rhythm**: Alternate padding and background shade (`bg-zinc-950` vs `bg-zinc-900`) between adjacent sections to define clear boundaries.
 
 ---
 
-## 2. Hard Layout Rules & Anti-Pattern Bans
+## UX Design Psychology & Lead Conversion Mechanics
+
+1. **Progressive Disclosure & Cognitive Chunking**:
+   - Initial viewport load MUST remain focused on 1 headline, 1 value prop, and 1 primary CTA stack.
+   - Secondary technical features belong in expandable accordions, tabbed drawers, or asymmetric bento cards.
+
+2. **Micro-Copy Friction Reducers**:
+   - Place subtle micro-copy directly adjacent to primary CTA buttons (*"No credit card required"*, *"Takes 2 minutes"*, *"Client-Owned 0 SaaS Fees"*).
+
+3. **Nate Herk Lead Conversion Mechanics**:
+   - **Custom Bottleneck Freedom**: Provide an open-ended custom text input field giving prospects total freedom to type their specific business bottleneck.
+   - **Value-First Price Lock / Delay**: Show positive financial savings & hours saved on initial screens before showing price tags.
+   - **Google Sheets Lead CRM Sync**: Automatically sync lead inputs into a client-owned Google Sheet CRM tracker via Apps Script.
+
+4. **Tension & Release Scroll Flow**:
+   - Alternate visual weight across sequential sections:
+     - *Dense / Dark*: 3D Canvas / WebGL Hero Stage (High Tension).
+     - *Clean / Light*: Typography Manifesto Statement (Release).
+     - *Grid / Structured*: Asymmetric Bento Feature Grid (Tension).
+     - *Minimal / Clean*: Accordion FAQ & Testimonial Slider (Release).
+
+---
+
+## Hard Layout Rules & Anti-Pattern Bans
 
 ### Hero Section Discipline
 - **Viewport Fit**: Hero MUST fit within initial viewport height (`min-h-[100dvh]`). Never use `h-screen` (causes mobile browser bar jumps).
@@ -42,7 +68,7 @@
 
 ---
 
-## 3. CTA & Form Rules
+## CTA & Form Rules
 
 - **Button Text Single Line**: CTA labels must never wrap to 2 lines on desktop. Shorten label (max 3 words) or widen button.
 - **Single Intent CTA Lock**: Do not duplicate CTA intents on one page (e.g. don't mix "Get Started", "Start Free", "Sign Up" — pick ONE primary label and use it consistently).

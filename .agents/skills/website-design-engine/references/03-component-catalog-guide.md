@@ -1,8 +1,19 @@
-# 🧩 Phase 3 Reference: 147 Component Catalog & Sourcing Guide
+# Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)
 
-## 1. Mandatory Component Sourcing Rule
+## Top Priority Precedence Hierarchy
 
-When building UI sections, **do NOT invent generic placeholder divs from scratch**. You MUST query your local 147-component catalog using the CLI tool:
+When building UI components, follow the strict 4-level precedence hierarchy:
+
+1. **Priority 1 [TOP PRIORITY]**: **Six-File Context & Project Codebase Specs** (`TECH_STACK.md`, `REQUIREMENTS.md`, `ARCHITECTURE.md`, `PROJECT.md`, existing TSX components).
+2. **Priority 2**: **Project-Local Visual Assets** (`reference/*.png`, `reference/*.html`, `reference/*.mp4`).
+3. **Priority 3**: **Operator Favorite Components** (`component_registry_cli.py search "<keyword>" --favorite-only`).
+4. **Priority 4**: **300+ Component Catalog** (`references/23-sites-matrix.json` & `python scripts/design_synthesis_engine.py search-pattern <query>`).
+
+---
+
+## 300+ Component Catalog Search CLI
+
+Query your local component catalog using the CLI tool:
 
 ```bash
 python scripts/component_registry_cli.py search "<category or effect keyword>"
@@ -16,28 +27,28 @@ python scripts/component_registry_cli.py search "<category or effect keyword>"
 
 ---
 
-## 2. 147 Component Library Breakdown (21 Categories)
+## Catalog Library Breakdown (11 Libraries across 23 Reference Sites)
 
-### A. Aceternity UI (56 Components)
+### A. Aceternity UI & Animate UI React
 - **Backgrounds & FX**: Background Beams, Wavy Background, Aurora Background, Shooting Stars, Sparkles, Vortex, Canvas Reveal Effect.
 - **Card Components**: Card 3D, Focus Cards, Glowing Stars, Direction Aware Hover, Hover Effect, Evergreen Bento Grid.
 - **Hero & Navigation**: Hero Parallax, Floating Navbar, Navbar Menu, Container Scroll Animation, Sticky Scroll Reveal.
 - **Interactive Text**: Text Generate Effect, Typewriter Effect, Flip Words, Cover, Text Hover Effect.
 
-### B. Animate UI React (42 Components)
-- **Buttons & Controls**: Dynamic Action Buttons, Smooth Border Buttons, Magnetic Buttons.
-- **Text & Motion**: Morphing Text, Kinetic Word Reveal, Split Text Reveal, Counting Numbers.
-- **Layout & Overlays**: Smooth Accordions, Animated Tabs, Dynamic Tooltips, Glass Drawers.
-
-### C. Vengence UI (37 Components)
-- **Visual FX**: Ambient Glowing Cards, Gradient Border Wrappers, Glassmorphism Panels, Floating Navbars.
-
-### D. Forge UI (12 Components)
-- **App Containers**: Action Cards, Drawer Popovers, Modal Dialogs, Interactive Sliders.
+### B. 23-Sites Extracted Showroom (300+ TSX/CSS Components)
+- **Active Theory / Obys / Locomotive**: Custom GLSL shader stages, split-text kinetic typography, magnetic cursor triggers, full-page scrollytelling.
 
 ---
 
-## 3. Shadcn MCP Integration
+## Component JSX & SVG Geometry Safeguards
+
+1. **JSX SVG Style Object Conversion**: Convert inline SVG `style="..."` string attributes into camelCase JSX style objects (`style={{...}}`) during conversion to prevent React runtime rendering errors.
+2. **Invisible Placeholder Filter**: Filter out invisible background placeholders (`if not child.get("visible", True): continue`) during symbol extraction.
+3. **SVG Stroke Bleed Prevention (Rule 1.17)**: Never apply CSS/SVG `stroke` or `stroke-width` attributes to converted text path SVGs that contain inner counter holes ('o', 'e', 'a'). Enforce pure solid fills with `fill-rule="evenodd"`.
+
+---
+
+## Shadcn MCP Integration
 
 For standard primitive components (buttons, dialogs, dropdowns, inputs, tables), query the `shadcn` MCP server:
 1. `search_items_in_registries`: Search Shadcn registry items.

@@ -329,9 +329,7 @@ The system targets a fixed **1920×1080** canvas. Slides are `<section>` element
 | `{spacing.slide-pad-default}` | 96px 120px | Standard slide padding |
 | `{spacing.slide-pad-narrow}` | 100px 120px | Data, framework, stats slides — slightly taller top padding |
 | `{spacing.slide-pad-wide}` | 100px 140px | Cover, summary slides — extra side padding for hero headlines |
-| `{spacing.slide-pad-statement}` | 130px 160px | Statement slide — most generous padding for the display-quote moment |
-
-Pick the padding that matches the content gravity. Statement-class moments get the widest padding; everyday content slides use the default 96×120.
+| `{spacing.slide-pad-statement}` | 130px 160px | Statement slide — most generous padding for the display-quote moment | Pick the padding that matches the content gravity. Statement-class moments get the widest padding; everyday content slides use the default 96×120.
 
 ### Chrome Anatomy
 Every slide carries (at minimum) a **topbar** at the top edge — a flex-row with a JetBrains Mono `{typography.label}` on one side and either a `{components.monogram-circle}` or a mono counter / location string on the other. Heavier slides (cover, data, summary) also carry a **footline** absolutely positioned at `bottom: 60–80px` with a mono caption row spanning the slide width between the padding.
@@ -345,9 +343,7 @@ The topbar is the system's spine. Without it, a slide reads as untreated.
 | 3px 3px 0 0 | Top corners of bar-chart bars |
 | 6px | Topic tile (agenda-style grid) |
 | 8px | Step tile (framework-style grid) |
-| 50% | Monogram circle |
-
-Cards are subtly rounded — never sharp-cornered, never heavily-rounded. The 6–8px radius gives the system its paper-not-plastic feel.
+| 50% | Monogram circle | Cards are subtly rounded — never sharp-cornered, never heavily-rounded. The 6–8px radius gives the system its paper-not-plastic feel.
 
 ## Depth and Elevation
 

@@ -7,7 +7,7 @@ argument-hint:
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/file-search ['search query']` in chat.
@@ -35,13 +35,13 @@ Enables high-performance keyword search across both local Obsidian vaults (the A
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Vault Knowledge Retrieval**: Searches across rain-aios/, second-brain-zorixel/, and premium-frontend-experience-system/.
 - **Reference Library Search**: Integrates with rain-aios/wiki/research/skills-library/ for progressive disclosure lookup.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

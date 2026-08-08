@@ -1,16 +1,16 @@
-# Graph Report - AI-OS  (2026-08-03)
+# Graph Report - AI-OS  (2026-08-07)
 
 ## Corpus Check
-- 467 files · ~1,930,547 words
+- 543 files · ~2,035,323 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4705 nodes · 4520 edges · 403 communities (374 shown, 29 thin omitted)
+- 5223 nodes · 4978 edges · 477 communities (439 shown, 38 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3984beb2`
+- Built from commit: `12d6288b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,7 +21,7 @@
 - Floating nav on scroll — the cross-fade morph
 - skill-optimizer/prepare.py
 - FILLER AND HEDGING
-- 🛠️ Step-by-Step 8-Phase Pricing Protocol
+- Step-by-Step 8-Phase Pricing Protocol
 - Macrostructures
 - 👥 5-Persona Council Audits
 - ZORIXEL Agency Positioning & Strategy: Socratic Discovery & Brainstorm Notes
@@ -30,32 +30,68 @@
 - Phase 02: Proposal, Financial Calculations & Agreement
 - component-cookbook.md
 - Vashishthya Research, IJORAR & MJAP: Master AI Strategy & Pitch Discovery
-- Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown
+- Vashishthya Notion OS & Google Sheets Automated Infrastructure: Discovery & Setup Blueprint
 - log.md
 - new_client_runner.py
-- ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
-- h6-photographic-fold.md
-- n13-inline-cmdk-pill.md
-- CHATGPT_DEEP_RESEARCH_PROMPT.md
+- 📌 Generic 1-Line Execution Pipeline
+- ZORIXEL AIOS Session Post-Mortem & System Evolution Report
+- SECTION 2: USER INSTRUCTION-TO-DELIVERY & TWEAK ITERATION AUDIT
 - 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`)
+- ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)
 - 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`)
+- PART 3: FULL WORD-FOR-WORD LOOM VIDEO SCRIPT & SCREEN CHOREOGRAPHY
 - 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
-- 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
-- DEEP_RESEARCH_REPORT.md
+- ZORIXEL AIOS Session Post-Mortem & System Evolution Engine (`/session-postmortem-audit`)
+- Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown
+- Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)
+- 👥 The 5-Persona Council Audit on AIOS Next-Gen Upgrades
+- Service Catalog & Price Matrix
+- Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide
+- Q&A Log
 - macrostructures.md
+- Deep Search Context Engine: 5-Persona `/roast` Council Audit
+- ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+- Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
+- OS Audit & Permanent New-Chat Knowledge System: Discovery & Brainstorm Notes
+- 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
+- Google Workspace CLI Automation Engine (`/gws-automation-engine`)
+- Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
+- DEEP_RESEARCH_REPORT.md
+- Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide
+- Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
+- ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
+- Client Setup Guide Presentation: Discovery & Setup Notes
+- Notion to Google Sheets Sync: Discovery & Setup Notes
+- ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+- Client 1 Loom Video Presentation Deck: Discovery & Brainstorm Notes
+- Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch
+- ZORIXEL Master Brand Identity v3.0 Reference Manual
 - biennale-yellow/design.md
 - blue-professional/design.md
 - bold-poster/design.md
 - block-frame/design.md
+- aios_deep_search.py
+- AIOS System Architecture & Vault Guide
+- aios_gws_health_check.py
+- aios_memory_compact.py
+- sync_global_rules.py
+- improve_system_audit.py
 - 8-bit-orbit/design.md
 - Assets — sourcing canon for icons, logos, illustrations, photography, video
+- aios_bootup_context.py
+- auto_evolve_all_skills.py
+- build_loom_presentation.py
 - retro-windows/design.md
 - retro-zine/design.md
 - sakura-chroma/design.md
 - 🛠️ Part 1: Custom Workspace Skills
+- convert_script_to_pdf.py
+- create_sheet_via_gws.py
 - capsule/design.md
 - emerald-editorial/design.md
 - scatterbrain/design.md
+- create_vashishthya_gsheet.py
+- test_presentation_health.py
 - neo-grid-bold/design.md
 - raw-grid/design.md
 - cartesian/design.md
@@ -67,6 +103,8 @@
 - pin-and-paper/design.md
 - playful/design.md
 - Skill Builder Reference
+- CHATGPT_DEEP_RESEARCH_PROMPT.md
+- NOTION_AI_MASTER_GENERATION_PROMPT.md
 - broadside/design.md
 - cobalt-grid/design.md
 - creative-mode/design.md
@@ -85,10 +123,23 @@
 - Theme — Hum
 - From Idea to Product: The AI-Driven Developer's Playbook
 - design-optimizer/prepare.py
+- 👥 Persona Council Evaluations
+- 🎭 2. 7-Agent Perspective Breakdown & AIOS Training Mechanics
+- 🎭 7-Agent Perspective Breakdown
+- 👥 Persona Council Audit: website-design-engine v4.0 Proposal
+- 👥 Persona Council Audit: 65 Active Skills Research & Reform Sweep
+- 👥 Persona Council Audit: Workspace Utility Scripts & Core Memory State
+- Secret Keys and Sensitive Data Exposure
 - DeckStage
 - Custom craft — how to hand-build hero artwork
-- Design flow (default)
+- Hallmark
+- 👥 Persona Council Audit: Master Awwwards AIOS Training Blueprint
+- 👥 Persona Council Audit: Awwwards Design, Motion & UX Psychology Canons
+- 👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features
+- Q&A Log
 - Custom theme — protocol
+- ft2-inline-rule-single-line.md
+- h6-photographic-fold.md
 - Recipes
 - Study — extracting design DNA from a screenshot or URL
 - The Three Ms of AI™ — Mindset, Method, Machine
@@ -103,8 +154,8 @@
 - Major (looks AI-generated)
 - Full Video Transcript: How Senior Engineers Actually Build With AI in 2026
 - Slop test — 58 gates + pre-emit self-critique
-- 📋 Step-by-Step Phase Instructions
-- Atinek Maurya's AI Operating System
+- Phase-by-Phase Execution Details
+- Atinek Maurya's AI Operating System (`GEMINI.md`)
 - Copy
 - Critical (ships as slop)
 - Typography
@@ -136,10 +187,10 @@
 - Server-Side Bugs
 - Initial Analysis Details
 - Q&A log
-- 🚀 Execution Workflow
+- ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)
 - 🔍 The 6 Audit Gates
 - onboard/SKILL.md
-- 👥 The 5-Persona Council & Prompts
+- ZORIXEL AIOS Universal Adversarial Roast Council (`/roast`)
 - Scrape Web Skill (Scrapling Engine)
 - Q&A log
 - Q&A log
@@ -147,7 +198,7 @@
 - [Project Name]
 - runner.py
 - 🛠 Command Usage
-- The Virtual Engineering Team Roles
+- `gstack` — Garry Tan's AI Engineering Team Workflow
 - Minor (small taste issues)
 - Genre — atmospheric
 - Genre — modern-minimal
@@ -166,13 +217,13 @@
 - HTML Presentation Template
 - Genre — editorial (default)
 - § Multi-page flow — design.md first, then redesign
-- 📋 Architectural Workflow
+- JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)
 - 🧠 Domain Modeling Principles
 - Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
-- 🛠️ Verification Execution Steps
+- Verification Execution Steps
 - Secure Coding Guide for Web Applications
-- 2. Hard Layout Rules & Anti-Pattern Bans
-- 2. 147 Component Library Breakdown (21 Categories)
+- Hard Layout Rules & Anti-Pattern Bans
+- Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)
 - 🔒 Locked Business Blueprint for ZORIXEL
 - Q&A Log
 - 23-Sites Design Psychology, Sensory Feel, & Spatial Choreography Guide
@@ -183,11 +234,11 @@
 - Autoresearch Loop Targets Manager
 - Layout and space
 - Motion
-- Step-by-Step Execution Workflow
-- 🎓 The 4-Step Teaching Structure
-- 🛠️ The 4-Step Spec Compilation Process
-- Step-by-Step Execution Workflow
-- 🏛️ Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems
+- Marketing & Copywriting Router Skill
+- Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)
+- Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)
+- SEO Audit & GEO Router Skill
+- Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)
 - {{Your Name}}'s AI Operating System
 - Q&A log
 - Q&A log
@@ -240,7 +291,7 @@
 - design.md — opt-in portable design system
 - Export formats
 - Scrape Component Skill
-- ⚡ Phase 4 Reference: Motion Engineering, GSAP & WebGL Shaders
+- Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)
 - Jordan Watkins Brand Reference & Playwright Tools: Brainstorm / Discovery Notes
 - Branding Fonts: Brainstorm / Discovery Notes
 - UI Component Libraries & Raw Components Strategy: Brainstorm / Discovery Notes
@@ -270,8 +321,8 @@
 - JS Mastery Feature Scoping Engine (`/jsmastery-scope`)
 - Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)
 - Scoped Project Developer Agent
-- 🛡️ Phase 5 Reference: Anti-Slop Quality Gates, SEO/GEO & Security
-- 📸 Phase 6 Reference: Automated Playwright Visual QA & Verification
+- Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)
+- Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)
 - Repository Ingestion Capture: `gstack` by Garry Tan
 - Discovery Capture & Ingestion Report: `nutlope/hallmark`
 - Site Reference Ingestion & DNA Extraction Queue: Brainstorm / Discovery Notes
@@ -303,7 +354,6 @@
 - OWASP Top 10 for LLM & AI Applications
 - Access Control Issues
 - Insecure File Upload
-- Cross-Site Request Forgery (CSRF)
 - Unified AI OS Design System Engine: Brainstorm & Planning
 - ZORIXEL Brand Strategy & High-Ticket Service Offer: Discovery & Brainstorm Notes
 - 🚀 Next Chat Kickoff Brief: Component Extractor Refinement & Phase 2 Sweep
@@ -323,7 +373,7 @@
 - verify-component.py
 - Next.js 15 & React 19 Server Action Security
 - JWT Security
-- Phase 0.5 Reference: Sitemap & Shared Architecture Scaffolding
+- Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)
 - Discovery Capture: Ingestion of `jsmastery-pro/skills` & `mattpocock/skills`
 - ZORIXEL Brand: Personal Brand Positioning Session
 - Codegraph API Reference
@@ -370,7 +420,7 @@
 - context/connections.md
 - experiences/README.md
 - priorities.md
-- hot.md
+- ZORIXEL AIOS Hot Cache & Handoff State
 - 6-file-context-templates/AGENTS.md
 - 6-file-context-templates/CLAUDE.md
 - creator-sample-files/CLAUDE.md
@@ -396,7 +446,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (403 total, 29 thin omitted)
+## Communities (477 total, 38 thin omitted)
 
 ### Community 0 - "hallmark/SKILL.md"
 Cohesion: 0.19
@@ -411,20 +461,20 @@ Cohesion: 0.22
 Nodes (8): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Open Flags & Deferred Decisions, Q1 — Scope & Architectural Vision, Q2 — Local Reference Parsing, Categorized Favorites & Radiant Shaders Protocol, Q3 — Execution Order & Approval, Q&A Log, Upgrade Web Design Skill (`website-design-engine`): Socratic Discovery & Brainstorm Notes
 
 ### Community 3 - "Floating nav on scroll — the cross-fade morph"
-Cohesion: 0.22
-Nodes (7): N10 · Floating-on-scroll morph, Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
+Cohesion: 0.33
+Nodes (6): Anti-patterns Hallmark refuses, Floating nav on scroll — the cross-fade morph, The four laws — non-negotiable, The property morph (10 properties, one curve), The scroll handler, The structure
 
 ### Community 4 - "skill-optimizer/prepare.py"
 Cohesion: 0.70
 Nodes (4): evaluate_output(), load_test_cases(), main(), run_candidate()
 
 ### Community 5 - "FILLER AND HEDGING"
-Cohesion: 0.05
-Nodes (43): 10. Rule of Three Overuse, 11. Elegant Variation (Synonym Cycling), 12. False Ranges, 13. Passive Voice and Subjectless Fragments, 14. Em Dashes (and En Dashes): Cut Them, 15. Overuse of Boldface, 16. Inline-Header Vertical Lists, 17. Title Case in Headings (+35 more)
+Cohesion: 0.04
+Nodes (44): 10. Rule of Three Overuse, 11. Elegant Variation (Synonym Cycling), 12. False Ranges, 13. Passive Voice and Subjectless Fragments, 14. Em Dashes (and En Dashes): Cut Them, 15. Overuse of Boldface, 16. Inline-Header Vertical Lists, 17. Title Case in Headings (+36 more)
 
-### Community 6 - "🛠️ Step-by-Step 8-Phase Pricing Protocol"
-Cohesion: 0.13
-Nodes (14): 💎 Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price", 🔗 Inter-Skill Connections, 📝 Output Artifact Format (`proposals/pricing-{client-slug}.md`), ⚡ Overview & Tri-Mode Execution, Phase 1: Baseline Capture (Time Lens & Income Lens), Phase 2: Calculate Delivery Cost Floor, Phase 3: Calculate Defensible Price Corridor & 10X Check, Phase 4: Staged Micro-Service Proof & Option Architecture (+6 more)
+### Community 6 - "Step-by-Step 8-Phase Pricing Protocol"
+Cohesion: 0.12
+Nodes (16): Core Pricing Philosophy: "Cost Floor, Value Ceiling, Defensible Price", Inter-Skill Connections, Output Artifact Format (`proposals/pricing-{client-slug}.md`), Overview & Tri-Mode Execution, Phase 1: Baseline Capture (Time Lens & Income Lens), Phase 2: Calculate Delivery Cost Floor, Phase 3: Calculate Defensible Price Corridor & 10X Check, Phase 4: Staged Micro-Service Proof & Option Architecture (+8 more)
 
 ### Community 7 - "Macrostructures"
 Cohesion: 0.29
@@ -443,8 +493,8 @@ Cohesion: 0.20
 Nodes (9): Client Vault & Directory Architecture: Discovery & Brainstorm Notes, Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Final 8-Phase Gated Architecture Blueprint, Q1 — Folder Naming & Code Topology, Q2 — Cold Acquisition & Multi-Phase Pipeline Shift, Q3 — Sub-grouped Deliverables Structure, Q4 — Continuous Self-Improving Skill Engine (+1 more)
 
 ### Community 11 - "ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)"
-Cohesion: 0.22
-Nodes (8): 🔄 Auto-Evolution Engine, 🔗 Inter-Skill Connections, ⚡ Overview & Tri-Mode Execution, Phase 1: Lead Scaffolding (Stage 1), Phase 2: Deal Acceptance (Stage 2), 🎯 Usage & Command Syntax, 📌 Workflow Instructions, ZORIXEL Client Vault Scaffolding & Auto-Evolution Engine (`/new-client`)
+Cohesion: 0.20
+Nodes (9): Auto-Evolution Engine, Inter-Skill Connections, Overview & Tri-Mode Execution, Phase 1: Lead Scaffolding (Stage 1), Phase 2: Deal Acceptance (Stage 2), Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Usage & Command Syntax, Workflow Instructions (+1 more)
 
 ### Community 12 - "Phase 02: Proposal, Financial Calculations & Agreement"
 Cohesion: 0.22
@@ -452,47 +502,151 @@ Nodes (8): 1. Zero-Upfront Flagship Pilot Agreement (Phase 1), 2. Quantified ROI
 
 ### Community 13 - "component-cookbook.md"
 Cohesion: 0.02
-Nodes (45): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F4 · Step sequence (+37 more)
+Nodes (46): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F4 · Step sequence (+38 more)
 
 ### Community 14 - "Vashishthya Research, IJORAR & MJAP: Master AI Strategy & Pitch Discovery"
 Cohesion: 0.33
 Nodes (5): Comprehensive Research Prompt & Deep Teardown Matrix, Executive Summary & Target Profile, Interactive Socratic Questions for Atinek Maurya (`/grill-me`), 📋 MASTER DEEP RESEARCH PROMPT (For Custom Deep Analysis), Vashishthya Research, IJORAR & MJAP: Master AI Strategy & Pitch Discovery
 
-### Community 15 - "Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown"
-Cohesion: 0.14
-Nodes (13): (1) Intake & Scholar Screening AI, 1. Lead Acquisition & Metadata, (2) Editorial & Manuscript Processing AI, 2. Forensic Technical & Web Architecture Audit, (3) Peer-Review & Author Communication AI, 3. SEO, Google Scholar & Indexing Audit, (4) Journal SEO & Metadata AI, 4. Operational Bottlenecks & Manuscript Friction (+5 more)
+### Community 15 - "Vashishthya Notion OS & Google Sheets Automated Infrastructure: Discovery & Setup Blueprint"
+Cohesion: 0.11
+Nodes (18): 🚀 100% CLIENT-OWNED GOOGLE WORKSPACE & NOTION NATIVE ARCHITECTURE (NO N8N / NO SERVERS), 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence & Market Data), 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`), 5. The Buyer (Dr. Prashant Singh & Dr. Pooja Singh), Domain Vocabulary & Glossary (CONTEXT.md) (+10 more)
 
 ### Community 17 - "new_client_runner.py"
 Cohesion: 0.60
 Nodes (5): get_next_client_id(), read_template(), scaffold_stage1(), scaffold_stage2(), slugify()
 
-### Community 18 - "ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections, 📌 One-Line Execution Pipeline, ⚡ Overview & Tri-Mode Execution, ZORIXEL 1-Line Client Audit & Research Engine (`/client-audit`)
+### Community 18 - "📌 Generic 1-Line Execution Pipeline"
+Cohesion: 0.14
+Nodes (13): Generic 1-Line Execution Pipeline, Inter-Skill Connections, Overview & Tri-Mode Execution, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Client Vault Scaffolding & Placement Mandate, Step 2: Autonomous Web Scrape & Technical Inspection, Step 3: Pre-Outreach Vulnerability Audit (`AUDIT.md`), Step 4: Forensic Deep Research Prompt Generation (+5 more)
+
+### Community 20 - "ZORIXEL AIOS Session Post-Mortem & System Evolution Report"
+Cohesion: 0.11
+Nodes (17): 5-Persona Roast Council Verdict, Deployed Production Pre-Flight Scripts, Error 1: System Prompt Truncation via `GEMINI.md` Bloat, Error 2: Windows Console Standard Output UTF-8 Encoding (`UnicodeEncodeError`), Error 3: Node Module Dependency Resolution Failure (`MODULE_NOT_FOUND`), Error 4: Circular Directory Junction Path Recursion, Executive Summary, Reusable Skill Pattern: Universal Multi-Viewport Visual QA Engine (+9 more)
+
+### Community 21 - "SECTION 2: USER INSTRUCTION-TO-DELIVERY & TWEAK ITERATION AUDIT"
+Cohesion: 0.08
+Nodes (25): Automated Health Verification Script (`scripts/test_script_health.py`), Error 1.1 — Windows Console Codepage UnicodeEncodeError in CLI Scripts, Error 1.2 — Graphify Runner Invalid Command Argument (`update`), Error 1.3 — Graphify Runner Hub Path Argument Mismatch (`.`), Pattern 3.1 — Universal Stdio Reconfiguration in Python Utility Scripts, Pattern 3.2 — Batch Emoji Purging and Skill Standardization Engine, Pattern 3.3 — Universal 4-Axis Risk Matrix Verdict Engine (`/roast`), Prompt 10 — Upgrade Website Design Engine References Folder (+17 more)
+
+### Community 22 - "👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`)"
+Cohesion: 0.12
+Nodes (16): 1. Database Architecture (Single Source of Truth), 1. The Contrarian (Red Team), 2. Google Sheets Backup & Employee Sync Plan, 2. The Expansionist (Bull), 3. Remote Setup & Installation Plan (15-Minute Zoom Onboarding), 3. The Logician (First Principles), 4. The Researcher (Evidence & Market Data), 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`) (+8 more)
+
+### Community 23 - "ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)"
+Cohesion: 0.13
+Nodes (14): 3-Phase Execution Architecture, Inter-Skill Connections, Mode 1: Synchronize (`/global-rules sync`), Mode 2: Append New Rule (`/global-rules append "[Category]" "[Rule Text]"`), Mode 3: Audit Alignment (`/global-rules audit`), Mode 4: List Rules (`/global-rules list`), Non-Negotiable Error Rules Summary, Overview & Tri-Mode Execution (+6 more)
 
 ### Community 24 - "👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`)"
 Cohesion: 0.12
 Nodes (16): 1. Database Architecture (Single Source of Truth), 1. The Contrarian (Red Team), 2. Google Sheets Backup & Employee Sync Plan, 2. The Expansionist (Bull), 3. Remote Setup & Installation Plan (15-Minute Zoom Onboarding), 3. The Logician (First Principles), 4. The Researcher (Evidence & Market Data), 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`) (+8 more)
 
-### Community 25 - "👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`)"
-Cohesion: 0.12
-Nodes (16): 1. Database Architecture (Single Source of Truth), 1. The Contrarian (Red Team), 2. Google Sheets Backup & Employee Sync Plan, 2. The Expansionist (Bull), 3. Remote Setup & Installation Plan (15-Minute Zoom Onboarding), 3. The Logician (First Principles), 4. The Researcher (Evidence & Market Data), 👥 5-PERSONA ADVERSARIAL ROAST AUDIT (`/roast`) (+8 more)
+### Community 25 - "PART 3: FULL WORD-FOR-WORD LOOM VIDEO SCRIPT & SCREEN CHOREOGRAPHY"
+Cohesion: 0.13
+Nodes (14): PART 1: PRE-RECORDING TAB SETUP (BEFORE PRESSING RECORD), PART 2: STRATEGIC AUDIT & RECORDING RULES (WHAT NOT TO DO), PART 3: FULL WORD-FOR-WORD LOOM VIDEO SCRIPT & SCREEN CHOREOGRAPHY, PART 4: TECHNICAL RECORDING PRO-TIPS, Pre-Record Checklist:, STAGE 1: INTRO & HIGH-VALUE HOOK (0:00 - 0:45), STAGE 2: DAILY OPERATIONAL FRICTION & SAVED HOURS (0:45 - 1:30), STAGE 3: LIVE NOTION CALL INTAKE DEMO & AUTO BALANCE (1:30 - 2:45) (+6 more)
 
 ### Community 26 - "📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)"
 Cohesion: 0.25
 Nodes (7): 🕒 0:00 - 0:45 | STAGE 1: THE RESPECTFUL HOOK, 🕒 0:45 - 2:00 | STAGE 2: THE REAL PAIN POINT (MENTAL PEACE & TIME), 🕒 2:00 - 3:30 | STAGE 3: LIVE NOTION CALL INTAKE TOOL DEMO, 🕒 3:30 - 4:15 | STAGE 4: WEBSITE & GOOGLE SCHOLAR INDEXING GAPS, 🕒 4:15 - 5:00 | STAGE 5: CURIOSITY HOOK & 30-MIN ZOOM CTA, 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW), 💡 PRO-TIPS FOR LOOM RECORDING:
 
-### Community 27 - "📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)"
-Cohesion: 0.25
-Nodes (7): 🕒 0:00 - 0:45 | STAGE 1: THE RESPECTFUL HOOK, 🕒 0:45 - 2:00 | STAGE 2: THE REAL PAIN POINT (MENTAL PEACE & TIME), 🕒 2:00 - 3:30 | STAGE 3: LIVE NOTION CALL INTAKE TOOL DEMO, 🕒 3:30 - 4:15 | STAGE 4: WEBSITE & GOOGLE SCHOLAR INDEXING GAPS, 🕒 4:15 - 5:00 | STAGE 5: CURIOSITY HOOK & 30-MIN ZOOM CTA, 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW), 💡 PRO-TIPS FOR LOOM RECORDING:
+### Community 27 - "ZORIXEL AIOS Session Post-Mortem & System Evolution Engine (`/session-postmortem-audit`)"
+Cohesion: 0.14
+Nodes (13): 3-Phase Execution Architecture, 📏 MANDATORY DEPTH & LENGTH CONSTRAINT (400 TO 1000+ LINES), Overview & Tri-Mode Execution, 📑 PHASE 1: TRANSCRIPT ANALYSIS & REPORT GENERATION, PHASE 2: ADVERSARIAL `/roast` COUNCIL AUDIT & BLUEPRINT EXPANSION, PHASE 3: AUTONOMOUS SKILL & AIOS AUTO-UPGRADE LOOP, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Section 1: Comprehensive Terminal, Syntax, API & Environment Error Catalog (+5 more)
 
-### Community 28 - "DEEP_RESEARCH_REPORT.md"
-Cohesion: 0.29
-Nodes (6): SECTION 1: Forensic Technical & Web Architecture Audit, SECTION 2: SEO, Google Scholar & Indexing Audit, SECTION 3: Operations & Manuscript Workflow Bottlenecks, SECTION 4: Quantification of Wasted Time & Revenue Leakage, SECTION 5: 50-Capability AI Transformation Roadmap, SECTION 6: Executive Summary & Free Pilot Offer
+### Community 28 - "Phase 01: Pre-Outreach Vulnerability Audit & Deep Entity Teardown"
+Cohesion: 0.14
+Nodes (13): (1) Intake & Scholar Screening AI, 1. Lead Acquisition & Metadata, (2) Editorial & Manuscript Processing AI, 2. Forensic Technical & Web Architecture Audit, (3) Peer-Review & Author Communication AI, 3. SEO, Google Scholar & Indexing Audit, (4) Journal SEO & Metadata AI, 4. Operational Bottlenecks & Manuscript Friction (+5 more)
+
+### Community 29 - "Notion Formula 2.0 Builder Engine (`/notion-formula-builder`)"
+Cohesion: 0.18
+Nodes (10): 1. 1-Click WhatsApp Link Generator Blueprint, 2. 5-Step Checkbox Progress Bar Blueprint, 3. Financial Balance Due Blueprint, 4. Days Overdue / SLA Tracker Blueprint, Core Rules & Architectural Safeguards, Notion Formula 2.0 Builder Engine (`/notion-formula-builder`), Overview & Tri-Mode Execution, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+2 more)
+
+### Community 30 - "👥 The 5-Persona Council Audit on AIOS Next-Gen Upgrades"
+Cohesion: 0.18
+Nodes (10): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Atinek Maurya / Operator Lens), Candidate Upgrades Ranked by Leverage, System Context & Baseline, 👥 The 5-Persona Council Audit on AIOS Next-Gen Upgrades (+2 more)
+
+### Community 31 - "Service Catalog & Price Matrix"
+Cohesion: 0.18
+Nodes (10): 1. PHD Writing for All Disciplines, 2. PG Project & Dissertation Support, 3. Book Writing & Publication, 4. Paper Writing & Academic Assignments, 5. Academic Reports & Removals, 6. Patent Services (Publication & Grant), 7. Certificates & Awards for Academicians, Canonical Services & Pricing Catalog (+2 more)
+
+### Community 32 - "Vashishthya Notion OS: Customization, Permissions & Google Sheets Sync Guide"
+Cohesion: 0.18
+Nodes (10): 1. HOW TO CUSTOMIZE THE WHATSAPP MESSAGE IN NOTION, 2. HOW TO ADD 1-CLICK WHATSAPP LINK TO ANY NEW NOTION TABLE, 3. HOW EMPLOYEES UPDATE STATUS WITHOUT GETTING FULL ACCESS (PERMISSIONS & LOCKS), 4. HOW TO SYNC THESE FIELDS TO GOOGLE SHEETS AUTOMATICALLY, Advanced Native Notion Formula 2.0 WhatsApp Formula (Zero JS Error):, How to Modify the Text:, Method A: Notion Database View Lock (Zero Setup), Method B: Notion Member Access Control ("Can Edit Content") (+2 more)
+
+### Community 33 - "Q&A Log"
+Cohesion: 0.20
+Nodes (9): Executive Summary & Key Decisions, Q1 — Universal Domain Adapters & Dynamic Context Injection, Q2 — Multi-Turn Adversarial Red-Teaming Loop ("Attack & Patch" Mode), Q3 — Disk Persistence & Handoff Artifacts, Q4 — Persona Count & Extended Council (Baseline 5 Personas + Specialized 6th/7th Roles), Q5 — Automated `--deep` Trigger Recommendations, Q6 — Quantitative Risk Matrix & Refinement Ticket (`ROAST_REFINEMENT_SPEC`), Q&A Log (+1 more)
 
 ### Community 34 - "macrostructures.md"
 Cohesion: 0.05
 Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Stat-Led, 05 · Workbench, 06 · Conversational FAQ, 07 · Manifesto, 08 · Photographic (+13 more)
+
+### Community 35 - "Deep Search Context Engine: 5-Persona `/roast` Council Audit"
+Cohesion: 0.22
+Nodes (8): Candidate Architecture Evaluation, Candidate Option 1: Multi-Hub Graphify AST + Ripgrep Hybrid Engine (`scripts/aios_deep_search.py`), Candidate Option 2: Local SQLite FTS5 Database Indexer (`.planning/aios_context.db`), Candidate Option 3: Two-Pass Vector Embeddings / Heavy LLM Summarizer, Deep Search Context Engine: 5-Persona `/roast` Council Audit, System Objective, 👥 The 5-Persona `/roast` Council Audit, ⚖️ THE VERDICT: GO FOR OPTION 1 (Graphify + Ripgrep Real-Time Hybrid Engine)
+
+### Community 36 - "ZORIXEL AIOS Global Error Prevention & Execution Rules Registry"
+Cohesion: 0.25
+Nodes (7): ⚡ Core Operational Guidelines, Error Categorization Matrix & Execution Safeguards, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES, ZORIXEL AIOS Global Error Prevention & Execution Rules Registry, ZORIXEL AIOS Workspace Rules (`AGENTS.md`)
+
+### Community 37 - "Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)"
+Cohesion: 0.25
+Nodes (7): HTML Dashboard Design System & Styling Tokens, 📋 Interactive HTML Dashboard Boilerplate, Interactive Operator Guide Generator (`/interactive-operator-guide-generator`), Overview & Tri-Mode Execution, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Required Output Deliverables Contract, 🧪 Verification Protocol
+
+### Community 38 - "OS Audit & Permanent New-Chat Knowledge System: Discovery & Brainstorm Notes"
+Cohesion: 0.25
+Nodes (7): Executive Summary & Key Root Cause Findings, OS Audit & Permanent New-Chat Knowledge System: Discovery & Brainstorm Notes, Q1 — Rule File Truncation & System Prompt Optimization, Q2 — Permanent Bootup Context Fetcher Mechanism, Q&A Discovery Log & Options, The 5-Persona `/roast` Council Verdict on Permanent Solutions, **VERDICT: GO for Option D (Hybrid Master Architecture)**
+
+### Community 39 - "📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)"
+Cohesion: 0.25
+Nodes (7): 🕒 0:00 - 0:45 | STAGE 1: THE RESPECTFUL HOOK, 🕒 0:45 - 2:00 | STAGE 2: THE REAL PAIN POINT (MENTAL PEACE & TIME), 🕒 2:00 - 3:30 | STAGE 3: LIVE NOTION CALL INTAKE TOOL DEMO, 🕒 3:30 - 4:15 | STAGE 4: WEBSITE & GOOGLE SCHOLAR INDEXING GAPS, 🕒 4:15 - 5:00 | STAGE 5: CURIOSITY HOOK & 30-MIN ZOOM CTA, 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW), 💡 PRO-TIPS FOR LOOM RECORDING:
+
+### Community 40 - "Google Workspace CLI Automation Engine (`/gws-automation-engine`)"
+Cohesion: 0.29
+Nodes (6): Core Rules & Windows Execution Safeguards, Google Workspace CLI Automation Engine (`/gws-automation-engine`), Overview & Tri-Mode Execution, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, 🧪 Pre-Flight Environment Verification Protocol, 🐍 Standard Python Subprocess Execution Boilerplate
+
+### Community 41 - "Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)"
+Cohesion: 0.29
+Nodes (6): 🏗️ 4-Layer Zero-Cost Architecture Model, 📋 Client Deliverable Checklist, Dynamic Header Mapping Pattern (Google Apps Script), Overview & Tri-Mode Execution, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Zero-Paywall Client OS Architecture Engine (`/zero-paywall-client-os`)
+
+### Community 42 - "DEEP_RESEARCH_REPORT.md"
+Cohesion: 0.29
+Nodes (6): SECTION 1: Forensic Technical & Web Architecture Audit, SECTION 2: SEO, Google Scholar & Indexing Audit, SECTION 3: Operations & Manuscript Workflow Bottlenecks, SECTION 4: Quantification of Wasted Time & Revenue Leakage, SECTION 5: 50-Capability AI Transformation Roadmap, SECTION 6: Executive Summary & Free Pilot Offer
+
+### Community 43 - "Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide"
+Cohesion: 0.29
+Nodes (6): Notion to Google Sheets Live Sync: Complete Step-by-Step Setup Guide, 📌 STEP 1: GET YOUR NOTION INTEGRATION TOKEN (1 MINUTE), 🔗 STEP 2: CONNECT THE INTEGRATION TO YOUR NOTION DATABASE (CRITICAL!), 🆔 STEP 3: GET YOUR NOTION DATABASE ID (30 SECONDS), 📊 STEP 4: PASTE & RUN THE SCRIPT IN GOOGLE SHEETS (2 MINUTES), ⚡ STEP 5: SET 24/7 AUTOMATIC CLOUD SYNC TRIGGER (30 SECONDS)
+
+### Community 44 - "Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)"
+Cohesion: 0.29
+Nodes (6): 🎯 How Staff & Founders Work Daily, 💡 How to Add New Services or Columns in the Future Without Breaking Anything, 📌 STEP 1: Duplicate Notion Master OS Template (2 Minutes), 📊 STEP 2: Create Master Google Drive Workspace Folder (2 Minutes), ⚡ STEP 3: Connect Google Apps Script (3 Minutes — 100% Free Cloud Sync), Vashishthya Notion OS & Google Workspace Setup SOP (1-Page Guide)
+
+### Community 45 - "ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)"
+Cohesion: 0.29
+Nodes (6): 1. Primary Knowledge Vaults & Operating Manuals, 2. Brand Identity & Strategy Vaults, 3. Automation Scripts & Search Tools, 4. Frontend Experience & Component Registries, 5. Client Projects & Vaults, ZORIXEL AIOS Canonical Master Index (`00_MASTER_INDEX.md`)
+
+### Community 46 - "Client Setup Guide Presentation: Discovery & Setup Notes"
+Cohesion: 0.33
+Nodes (5): Client Setup Guide Presentation: Discovery & Setup Notes, Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Q2 — Reframing for Client Audience & Brand Typography, Q&A Log
+
+### Community 47 - "Notion to Google Sheets Sync: Discovery & Setup Notes"
+Cohesion: 0.33
+Nodes (5): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Notion to Google Sheets Sync: Discovery & Setup Notes, Q1 — Setup Guide & Code Review, Q&A Log
+
+### Community 48 - "ZORIXEL AIOS Global Error Prevention & Execution Rules Registry"
+Cohesion: 0.33
+Nodes (5): Error Categorization Matrix & Execution Safeguards, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES, ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+
+### Community 49 - "Client 1 Loom Video Presentation Deck: Discovery & Brainstorm Notes"
+Cohesion: 0.40
+Nodes (4): Client 1 Loom Video Presentation Deck: Discovery & Brainstorm Notes, Executive Summary & Key Decisions, Q1 — Presentation Slide Deck Architecture, Q&A Log
+
+### Community 50 - "Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch"
+Cohesion: 0.40
+Nodes (4): Operator Step-by-Step Setup Guide: Building Notion OS & Google Workspace Sync from Scratch, 📌 PART 1: BUILD THE NOTION DATABASE IN YOUR ACCOUNT (3 MINUTES), 📊 PART 2: BUILD GOOGLE SHEETS & APPS SCRIPT (3 MINUTES), 🎥 PART 3: RECORDING YOUR LOOM VIDEO DEMO
+
+### Community 51 - "ZORIXEL Master Brand Identity v3.0 Reference Manual"
+Cohesion: 0.40
+Nodes (4): Core Brand Palette, Typography Hierarchy, Zero-Gradient & Zero-Glassmorphism Rule, ZORIXEL Master Brand Identity v3.0 Reference Manual
 
 ### Community 52 - "biennale-yellow/design.md"
 Cohesion: 0.04
@@ -509,6 +663,26 @@ Nodes (45): Aesthetic Notes for This System, Border-as-Depth (Tabular Grid Signa
 ### Community 55 - "block-frame/design.md"
 Cohesion: 0.04
 Nodes (44): Aesthetic Notes for This System, Border-Based Depth, Border Radius, Border Weights, Canvas System, Card-on-Card Structure, CJK & International Content, Colors (+36 more)
+
+### Community 56 - "aios_deep_search.py"
+Cohesion: 0.70
+Nodes (4): deep_search(), main(), scan_file_for_query(), search_graphify()
+
+### Community 57 - "AIOS System Architecture & Vault Guide"
+Cohesion: 0.50
+Nodes (3): AIOS System Architecture & Vault Guide, Core Architectural Layout, Universal 5 Master Graphify Operating Patterns
+
+### Community 58 - "aios_gws_health_check.py"
+Cohesion: 0.83
+Nodes (3): check_file(), main(), run_gws_check()
+
+### Community 59 - "aios_memory_compact.py"
+Cohesion: 0.83
+Nodes (3): compact_decisions(), get_quarter(), parse_decisions()
+
+### Community 60 - "sync_global_rules.py"
+Cohesion: 0.83
+Nodes (3): load_rules_content(), sync_all(), update_file_with_rules()
 
 ### Community 62 - "8-bit-orbit/design.md"
 Cohesion: 0.05
@@ -588,7 +762,7 @@ Nodes (39): Aesthetic Notes for This System, Atmospheric Ghost-Blob, Border Radi
 
 ### Community 88 - "Skill Builder Reference"
 Cohesion: 0.05
-Nodes (38): Advanced Patterns, `allowed-tools` Syntax Guide, Antigravity doesn't see all skills, Arguments not being substituted, Dynamic Context Injection, Extended Thinking (Ultrathink), Frontmatter Field Reference, Hooks in Skills (+30 more)
+Nodes (39): Advanced Patterns, `allowed-tools` Syntax Guide, Antigravity doesn't see all skills, Arguments not being substituted, Dynamic Context Injection, Extended Thinking (Ultrathink), Frontmatter Field Reference, Hooks in Skills (+31 more)
 
 ### Community 93 - "broadside/design.md"
 Cohesion: 0.05
@@ -662,13 +836,57 @@ Nodes (31): ai-workflow-rules.md, architecture.md, By JavaScript Mastery, CLAUDE
 Cohesion: 0.47
 Nodes (4): evaluate_design_vision(), main(), SilentHTTPRequestHandler, start_server()
 
+### Community 133 - "👥 Persona Council Evaluations"
+Cohesion: 0.18
+Nodes (10): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Operator / User), 6. The Security & Friction Auditor (Extended Role), 👥 Persona Council Evaluations, ROAST_REFINEMENT_SPEC (+2 more)
+
+### Community 134 - "🎭 2. 7-Agent Perspective Breakdown & AIOS Training Mechanics"
+Cohesion: 0.17
+Nodes (11): 🏛️ 1. Official Awwwards Judging Rubric & Weighting (2026 Standard), 1. Systems Architect (AIOS Prompt & Skill Training Engine), 🎭 2. 7-Agent Perspective Breakdown & AIOS Training Mechanics, 2. Vibesec Security Pen-Tester (Defense & Isolation), 3. DB & Scaling Specialist (WebGPU / WebGL Performance), ⚡ 3. Unified 10-Phase Execution Pipeline for website-design-engine v4.0, 4. Frontend UX & Motion Lead (2026 Awwwards Aesthetics & Physics), 5. Product & SaaS Economist (Client Acquisition & ROI) (+3 more)
+
+### Community 135 - "🎭 7-Agent Perspective Breakdown"
+Cohesion: 0.17
+Nodes (11): 1. Systems Architect (Fullstack Modular Contracts), 2. Vibesec Security Pen-Tester (Defense & Isolation), 3. DB & Scaling Specialist (Performance & Edge Caching), 4. Frontend UX & Motion Lead (Visual Wow & 2026 Aesthetics), 5. Product & SaaS Economist (Client Acquisition & ROI), 6. AI / LLM Integration Specialist (Component Vault & Shader Protocols), 🎭 7-Agent Perspective Breakdown, 7-Agent STORM Research Briefing: Upgrading website-design-engine to v4.0 (+3 more)
+
+### Community 136 - "👥 Persona Council Audit: website-design-engine v4.0 Proposal"
+Cohesion: 0.18
+Nodes (10): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Client), 6. Extended Personas (Security Auditor, Product Economist, UX Specialist), 👥 Persona Council Audit: website-design-engine v4.0 Proposal, ROAST_REFINEMENT_SPEC (+2 more)
+
+### Community 137 - "👥 Persona Council Audit: 65 Active Skills Research & Reform Sweep"
+Cohesion: 0.20
+Nodes (9): 1. Category A: Research & Multi-Agent Intelligence Skills, 2. Category B: Fullstack Web & TypeScript Architecture Skills, 3. Category C: Ingestion & Repository Skill Engines, 4. Category D: Business Automation & Pricing Engines, 5. Category E: Frontend UI & Quality Gate Systems, 👥 Persona Council Audit: 65 Active Skills Research & Reform Sweep, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: RESHAPE (+1 more)
+
+### Community 138 - "👥 Persona Council Audit: Workspace Utility Scripts & Core Memory State"
+Cohesion: 0.20
+Nodes (9): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Operator / User), 👥 Persona Council Audit: Workspace Utility Scripts & Core Memory State, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: RESHAPE (+1 more)
+
+### Community 139 - "Secret Keys and Sensitive Data Exposure"
+Cohesion: 0.50
+Nodes (4): Best Practices, Never Expose in Client-Side Code, Secret Keys and Sensitive Data Exposure, Where Secrets Hide (Check These!)
+
 ### Community 141 - "Custom craft — how to hand-build hero artwork"
 Cohesion: 0.07
 Nodes (30): A hand-built SVG with declarative animation, A worked example — the bakery loaf as a single div, Animation choices for SVG in 2026, Anti-patterns of CSS art, Anti-patterns of declarative animation, Anti-patterns of generated stills, Anti-patterns of hand-built SVG, Anti-patterns of Three.js / WebGL (+22 more)
 
-### Community 142 - "Design flow (default)"
-Cohesion: 0.07
-Nodes (30): 0. Pre-flight scan, 1. Design-context gate, 2.5. Check project memory, 2.6. Theme route — studied-DNA, catalog, or custom, 2. Pick a macrostructure FIRST, 3. Load the visual ruleset, 4. Decide on hero enrichment, 5. Preview (+22 more)
+### Community 142 - "Hallmark"
+Cohesion: 0.06
+Nodes (31): 0. Pre-flight scan, 1. Design-context gate, 2.5. Check project memory, 2.6. Theme route — studied-DNA, catalog, or custom, 2. Pick a macrostructure FIRST, 3. Load the visual ruleset, 4. Decide on hero enrichment, 5. Preview (+23 more)
+
+### Community 143 - "👥 Persona Council Audit: Master Awwwards AIOS Training Blueprint"
+Cohesion: 0.20
+Nodes (9): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Client), 👥 Persona Council Audit: Master Awwwards AIOS Training Blueprint, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: GO (+1 more)
+
+### Community 144 - "👥 Persona Council Audit: Awwwards Design, Motion & UX Psychology Canons"
+Cohesion: 0.20
+Nodes (9): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Client), 👥 Persona Council Audit: Awwwards Design, Motion & UX Psychology Canons, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: GO (+1 more)
+
+### Community 145 - "👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features"
+Cohesion: 0.20
+Nodes (9): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Client), 👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features, ROAST_REFINEMENT_SPEC, ⚖️ THE VERDICT: GO (+1 more)
+
+### Community 146 - "Q&A Log"
+Cohesion: 0.33
+Nodes (5): Executive Summary & Key Decisions, Q1 — Next.js 15 App Router & Tailwind CSS v4 Tech Stack Baseline, Q3 — Awwwards Design, Motion & UX Psychology Master Integration, Q&A Log, Website Design Engine v4.0 Upgrade: Discovery & Brainstorm Notes
 
 ### Community 147 - "Custom theme — protocol"
 Cohesion: 0.07
@@ -696,7 +914,7 @@ Nodes (27): Adapting Skills to Antigravity & Gemini, Automatic Skill Evolution, 
 
 ### Community 177 - "excalidraw-diagram/SKILL.md"
 Cohesion: 0.08
-Nodes (24): Arrow fields (add to base), Arrow with label, Base fields (all types), Color System, Common Patterns, Critical Rule: Text Contrast, Design Principles, Element Schema (+16 more)
+Nodes (25): Arrow fields (add to base), Arrow with label, Base fields (all types), Color System, Common Patterns, Critical Rule: Text Contrast, Design Principles, Element Schema (+17 more)
 
 ### Community 216 - "Hero enrichment — when, what, and how much"
 Cohesion: 0.09
@@ -730,13 +948,13 @@ Nodes (19): Chapter 01: Introduction (00:00:00), Chapter 02: Crash Course (00:03
 Cohesion: 0.11
 Nodes (19): Contrast & readability, Diversification gates, Hero enrichment gates, Honest copy · no fabricated content, Implementation gates, Input-state gate, Layout-safety gates, Microinteractions (+11 more)
 
-### Community 262 - "📋 Step-by-Step Phase Instructions"
-Cohesion: 0.11
-Nodes (18): 🧭 10-Phase Execution Architecture (v3.0), 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, ⛔ Non-Negotiable Core Mandates, Phase 0.2: Adversarial Roast Council Audit (`/roast`), Phase 0.5: Six-File Architecture & Build Spec (`/six-file-context-methodology`), Phase 0: Socratic Intent Discovery (`/grill-me`), Phase 1: Local `reference/` Vault Scanning & Brand Tokens (+10 more)
+### Community 262 - "Phase-by-Phase Execution Details"
+Cohesion: 0.10
+Nodes (19): 10-Phase Execution Architecture (v4.0), Inter-Skill Connections & Handoff Pipeline, Non-Negotiable Core Mandates, Overview & Tri-Mode Execution, Phase 0.1: Comprehensive Project Files & Graphify Context Verification Gate, Phase 0.2: Adversarial Pre-Build Audit (`/roast`), Phase 0: Socratic Intent & Stack Discovery (`/grill-me`), Phase 1: Local Reference Vault & OKLCH Theme Architecture (+11 more)
 
-### Community 264 - "Atinek Maurya's AI Operating System"
-Cohesion: 0.11
-Nodes (18): 1. Brain for AIOS (`brain-aios/`), 1. Think Before Coding, 2. Second Brain for Zorixel (`second-brain-zorixel/`), 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Atinek Maurya's AI Operating System, Coding Behavior Guidelines (Karpathy-Inspired) (+10 more)
+### Community 264 - "Atinek Maurya's AI Operating System (`GEMINI.md`)"
+Cohesion: 0.17
+Nodes (11): Atinek Maurya's AI Operating System (`GEMINI.md`), 📌 Core Business & Brand Knowledge, Error Categorization Matrix & Execution Safeguards, 🛠️ How You Work With Me, ⚡ Mandatory Startup & Deep Search Directives, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES (+3 more)
 
 ### Community 273 - "Copy"
 Cohesion: 0.11
@@ -760,11 +978,11 @@ Nodes (16): 1. Business Objective & Strategy, 2. Design System & Aesthetic Found
 
 ### Community 288 - "audit/SKILL.md"
 Cohesion: 0.12
-Nodes (15): Cadence (25 pts), Capabilities (25 pts), Connections (25 pts) — domain-aware, mechanism-agnostic, Context (25 pts), Execution, 🔗 Inter-Skill Connections & Handoff Pipeline, Notes, Step 1: Discover the project shape (+7 more)
+Nodes (16): Cadence (25 pts), Capabilities (25 pts), Connections (25 pts) — domain-aware, mechanism-agnostic, Context (25 pts), Execution, Inter-Skill Connections & Handoff Pipeline, Notes, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+8 more)
 
 ### Community 289 - "OS Audit — is your AIOS still true?"
 Cohesion: 0.12
-Nodes (15): Check 1 — Routing integrity ("does everything it points to exist?"), Check 2 — Index truth ("do the indexes match the disk?"), Check 3 — Freshness ("are the data feeds current?"), Check 4 — Bloat, duplication, and organization ("does anything live twice, or in the wrong place, or for no reason?"), Check 5 — Hygiene and silent failures ("what's broken or exposed without anyone noticing?"), Check 6 — Context placement ("is everything on the right side of the expertise/situational line?"), Execution, 🔗 Inter-Skill Connections & Handoff Pipeline (+7 more)
+Nodes (16): Check 1 — Routing integrity ("does everything it points to exist?"), Check 2 — Index truth ("do the indexes match the disk?"), Check 3 — Freshness ("are the data feeds current?"), Check 4 — Bloat, duplication, and organization ("does anything live twice, or in the wrong place, or for no reason?"), Check 5 — Hygiene and silent failures ("what's broken or exposed without anyone noticing?"), Check 6 — Context placement ("is everything on the right side of the expertise/situational line?"), Execution, Inter-Skill Connections & Handoff Pipeline (+8 more)
 
 ### Community 291 - "Figma Micrographics Assets: Brainstorm / Discovery Notes"
 Cohesion: 0.12
@@ -775,20 +993,20 @@ Cohesion: 0.12
 Nodes (15): 1. The Contrarian (Red Team), 23-Site Design Learning & Synthesis Engine: Discovery & Brainstorm Notes, 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer — Atinek Maurya), 🥊 ADVERSARIAL 5-PERSONA COUNCIL ROAST (`/roast`), Domain Vocabulary & Glossary (CONTEXT.md candidates) (+7 more)
 
 ### Community 306 - "📌 Non-Negotiable Core Execution Rules"
-Cohesion: 0.13
-Nodes (14): 1. Global Zero-Hurry & Rigor Mandate, 2. Concept Explanation BEFORE Every Question, 3. Proactive Web Research & Documentation Sourcing, 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND), 5. Checkpoint to Disk After Every Single Response, 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`), 7. Mandatory Pre-Write `/roast` Council Gate, 8. Pre-Coding Backstop Check (+6 more)
+Cohesion: 0.12
+Nodes (15): 1. Global Zero-Hurry & Rigor Mandate, 2. Concept Explanation BEFORE Every Question, 3. Proactive Web Research & Documentation Sourcing, 4. Categorized Option-Based Inquiries (INFER / ASK / RECOMMEND), 5. Checkpoint to Disk After Every Single Response, 6. Domain Vocabulary & Ubiquitous Language Maintenance (`mattpocock-domain-modeling`), 7. Mandatory Pre-Write `/roast` Council Gate, 8. Pre-Coding Backstop Check (+7 more)
 
 ### Community 307 - "Client-Side Bugs"
-Cohesion: 0.13
-Nodes (15): Best Practices, Bypass Techniques to Block, Client-Side Bugs, Cross-Site Scripting (XSS), IDN Homograph Attack Protection, Input Sources to Protect, Never Expose in Client-Side Code, Open Redirect (+7 more)
+Cohesion: 0.12
+Nodes (16): Bypass Techniques to Block, Client-Side Bugs, Cross-Site Request Forgery (CSRF), Cross-Site Scripting (XSS), Edge Cases and Common Mistakes, Endpoints Requiring CSRF Protection, IDN Homograph Attack Protection, Input Sources to Protect (+8 more)
 
 ### Community 311 - "Ghost AI"
 Cohesion: 0.13
 Nodes (14): AI Architecture Generation, Authentication and Projects, Collaborative Canvas, Core User Flow, Features, Ghost AI, Goals, In Scope (+6 more)
 
 ### Community 320 - "Frontend Slides Generator"
-Cohesion: 0.14
-Nodes (13): 1. Export as PDF, 2. Deploy to Vercel, Brand Customization Guidelines (Zorixel Editorial), Core Principles, Frontend Slides Generator, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Operating Instructions (+5 more)
+Cohesion: 0.13
+Nodes (14): 1. Export as PDF, 2. Deploy to Vercel, Brand Customization Guidelines (Zorixel Editorial), Core Principles, Frontend Slides Generator, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Operating Instructions (+6 more)
 
 ### Community 321 - "Microinteraction tells"
 Cohesion: 0.14
@@ -803,16 +1021,16 @@ Cohesion: 0.14
 Nodes (13): Anti-patterns, Axes (diversification), Build hint, How Cobalt differs from neighbouring themes, Macrostructure affinity, Macrostructure rejection, Motion, Reference register (+5 more)
 
 ### Community 324 - "🧭 The 8-Phase Ingestion & Deep System Integration Workflow"
-Cohesion: 0.13
-Nodes (14): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Phase 1: Discovery Capture & Setup (`/grill-me` loop), Phase 2: Isolated Repository Clone & Structural Analysis, Phase 3: Web Research & Security Audit (Vibesec & Supply Chain), Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation, Phase 4: AIOS Workspace & Vault Comparison Analysis, Phase 5: Adversarial Roast Council Gate (`/roast`) (+6 more)
+Cohesion: 0.12
+Nodes (15): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Phase 1: Discovery Capture & Setup (`/grill-me` loop), Phase 2: Isolated Repository Clone & Structural Analysis, Phase 3: Web Research & Security Audit (Vibesec & Supply Chain), Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation, Phase 4: AIOS Workspace & Vault Comparison Analysis, Phase 5: Adversarial Roast Council Gate (`/roast`) (+7 more)
 
 ### Community 325 - "level-up/SKILL.md"
-Cohesion: 0.14
-Nodes (13): Critical implementation rules, Execution — three phases, Inputs the skill reads, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Output contract, Phase 1 — Mindset interview (find the candidate), Phase 2 — Method interview (scope one) (+5 more)
+Cohesion: 0.13
+Nodes (14): Critical implementation rules, Execution — three phases, Inputs the skill reads, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Output contract, Phase 1 — Mindset interview (find the candidate), Phase 2 — Method interview (scope one) (+6 more)
 
 ### Community 326 - "Commands & Workflow Guide"
-Cohesion: 0.13
-Nodes (14): 1. `/six-file-context-methodology init`, 2. `/six-file-context-methodology spec <feature-name>`, 3. `/six-file-context-methodology spec-all`, 4. `/six-file-context-methodology execute [ticket|wave|all]`, 5. `/six-file-context-methodology verify`, 6. `/six-file-context-methodology check`, 7. `/six-file-context-methodology resume`, Addressed Vulnerabilities & v3.2 System Upgrades (+6 more)
+Cohesion: 0.12
+Nodes (15): 1. `/six-file-context-methodology init`, 2. `/six-file-context-methodology spec <feature-name>`, 3. `/six-file-context-methodology spec-all`, 4. `/six-file-context-methodology execute [ticket|wave|all]`, 5. `/six-file-context-methodology verify`, 6. `/six-file-context-methodology check`, 7. `/six-file-context-methodology resume`, Addressed Vulnerabilities & v3.2 System Upgrades (+7 more)
 
 ### Community 329 - "UI Context"
 Cohesion: 0.14
@@ -835,20 +1053,20 @@ Cohesion: 0.15
 Nodes (13): 1. Section-heading placement, 2. Body composition, 3. Divider language, 4. Button voice, 5. Image treatment, 6. Reveal pattern, Anti-patterns of structural sameness, Domain → trio (offer these three; never default) (+5 more)
 
 ### Community 342 - "Execution Workflow"
-Cohesion: 0.15
-Nodes (12): Execution Workflow, Experience Document Template, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Step 1: Ingest Session Logs & Deep Transcript Pattern Analysis, Step 2: Integrated Security Audit (Vibesec & Secrets Hygiene), Step 3: Extract & Categorize System Insights, Step 4: Compile & Present System Improvement Proposal (+4 more)
+Cohesion: 0.14
+Nodes (13): Execution Workflow, Experience Document Template, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Ingest Session Logs & Deep Transcript Pattern Analysis, Step 2: Integrated Security Audit (Vibesec & Secrets Hygiene), Step 3: Extract & Categorize System Insights (+5 more)
 
 ### Community 343 - "Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification"
-Cohesion: 0.15
-Nodes (11): 1. Full Source & Media Mirroring Architecture (`mirror/`), 2. Dynamic Unbounded Master Reference Manual (15+ Categories), 3. Dedicated Master Vault Reference Indexing, 4. Ultra-Exhaustive 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`) Standard, 🔒 Core Operational Principles, Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing (+3 more)
+Cohesion: 0.14
+Nodes (12): 1. Full Source & Media Mirroring Architecture (`mirror/`), 2. Dynamic Unbounded Master Reference Manual (15+ Categories), 3. Dedicated Master Vault Reference Indexing, 4. Ultra-Exhaustive 10-Pillar Deep Analysis (`DEEP_ANALYSIS.md`) Standard, Core Operational Principles, Ultimate Site DNA & Full-Code Ingestion Engine Pipeline Specification, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing (+4 more)
 
 ### Community 344 - "Storm Research Project (`/storm-research-project`)"
-Cohesion: 0.15
-Nodes (12): Domain Persona Presets (7-Lens Expanded Suite), Execution Pipeline, Inter-Skill Connections, Invocation & Tri-Mode Routing, Phase 0: Scope & Reader Identification, Phase 1: Seven Expert Lenses (Parallel Research Subagents), Phase 2: Map the Contradictions, Phase 3: Synthesize HTML Report (+4 more)
+Cohesion: 0.14
+Nodes (13): Domain Persona Presets (7-Lens Expanded Suite), Execution Pipeline, Inter-Skill Connections, Invocation & Tri-Mode Routing, Phase 0: Scope & Reader Identification, Phase 1: Seven Expert Lenses (Parallel Research Subagents), Phase 2: Map the Contradictions, Phase 3: Synthesize HTML Report (+5 more)
 
 ### Community 345 - "🛠️ Execution Pipeline"
-Cohesion: 0.15
-Nodes (12): 🎭 Domain Persona Presets, 🛠️ Execution Pipeline, 🔗 Inter-Skill Connections, ⚡ Invocation & Tri-Mode Routing, Phase 0: Scope & Reader Identification, Phase 1: Five Expert Lenses (Parallel Research Subagents), Phase 2: Map the Contradictions, Phase 3: Synthesize HTML Report (+4 more)
+Cohesion: 0.14
+Nodes (13): 🎭 Domain Persona Presets, Execution Pipeline, Inter-Skill Connections, Invocation & Tri-Mode Routing, Phase 0: Scope & Reader Identification, Phase 1: Five Expert Lenses (Parallel Research Subagents), Phase 2: Map the Contradictions, Phase 3: Synthesize HTML Report (+5 more)
 
 ### Community 346 - "Server-Side Bugs"
 Cohesion: 0.15
@@ -862,25 +1080,25 @@ Nodes (12): 1. How It Benefits Us, 2. Can It Be Improved?, 3. Can It Improve Our
 Cohesion: 0.15
 Nodes (12): Open flags (pending input), Q1 — Primary Upgrade Roadmap Focus, Q2 — Component Registry & Taxonomy Architecture, Q3 — Candidate Source Selection (Phase 1), Q4 — Phase 2 Granularity Targets & Deconstruct Upgrade Sequence, Q5 — Deconstruction Engine Upgrade & Unbounded Component Extraction Rule, Q6 — Dedicated Shader & Canvas Physics Vault Architecture (Phase 3), Q7 — Structured Component Vault Creation (+4 more)
 
-### Community 361 - "🚀 Execution Workflow"
-Cohesion: 0.17
-Nodes (11): 🚀 Execution Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, 🎯 Specific Use Cases & Target Audience, Step 1: Phase 0 Socratic Discovery (`/grill-me`), Step 2: Adversarial Hook & Copy Roast Gate (`/roast`), Step 3: Rules of Viral Slides, Step 4: Available Presets & Layout Options (+3 more)
+### Community 361 - "ZORIXEL Viral Carousel Copywriter (`/carousel-copy`)"
+Cohesion: 0.15
+Nodes (12): Execution Workflow, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Specific Use Cases & Target Audience, Step 1: Phase 0 Socratic Discovery (`/grill-me`), Step 2: Adversarial Hook & Copy Roast Gate (`/roast`), Step 3: Rules of Viral Slides (+4 more)
 
 ### Community 362 - "🔍 The 6 Audit Gates"
-Cohesion: 0.17
-Nodes (11): 1. Next.js App Router & Server/Client Boundary Gate, 2. TypeScript & Type-Safety Gate, 3. Security & Vulnerability Gate (Vibesec Alignment), 4. Performance & Caching Gate, 5. UI/UX & Responsive Design Gate, 6. Error Handling & Resilience Gate, 🔗 Inter-Skill Connections & Handoff Pipeline, JS Mastery Fullstack Code Auditor (`/jsmastery-audit`) (+3 more)
+Cohesion: 0.15
+Nodes (12): 1. Next.js App Router & Server/Client Boundary Gate, 2. TypeScript & Type-Safety Gate, 3. Security & Vulnerability Gate (Vibesec Alignment), 4. Performance & Caching Gate, 5. UI/UX & Responsive Design Gate, 6. Error Handling & Resilience Gate, Inter-Skill Connections & Handoff Pipeline, JS Mastery Fullstack Code Auditor (`/jsmastery-audit`) (+4 more)
 
 ### Community 363 - "onboard/SKILL.md"
-Cohesion: 0.17
-Nodes (11): Critical implementation rules, Execution, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Step 1: Read the intake, Step 2: The interview (7 questions, hard cap), Step 3: Scaffold the Day-1 file set, Step 4: The closing screen (+3 more)
+Cohesion: 0.15
+Nodes (12): Critical implementation rules, Execution, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Read the intake, Step 2: The interview (7 questions, hard cap), Step 3: Scaffold the Day-1 file set (+4 more)
 
-### Community 364 - "👥 The 5-Persona Council & Prompts"
-Cohesion: 0.17
-Nodes (11): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / User), 🔗 Inter-Skill Connections & Handoff Pipeline, ⚖️ Output Verdict Format (The Judge), ⚡ Overview & Tri-Mode Execution (+3 more)
+### Community 364 - "ZORIXEL AIOS Universal Adversarial Roast Council (`/roast`)"
+Cohesion: 0.09
+Nodes (21): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4-Axis Quantitative Risk Matrix, 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Target User), 6. The Security Auditor (Code / Architecture / Workflow), 7. The Product Economist (SaaS / Pricing Offer) (+13 more)
 
 ### Community 365 - "Scrape Web Skill (Scrapling Engine)"
-Cohesion: 0.17
-Nodes (11): 1. Basic Web Extraction (Fast Mode), 2. Extract Specific Elements by CSS Selector, 3. Dynamic JavaScript Rendering, 4. Stealth Mode for Protected Sites, Engine Overview, Fetcher Modes:, Integration with AIOS Vaults & Workflows, 🔗 Inter-Skill Connections & Handoff Pipeline (+3 more)
+Cohesion: 0.15
+Nodes (12): 1. Basic Web Extraction (Fast Mode), 2. Extract Specific Elements by CSS Selector, 3. Dynamic JavaScript Rendering, 4. Stealth Mode for Protected Sites, Engine Overview, Fetcher Modes:, Integration with AIOS Vaults & Workflows, Inter-Skill Connections & Handoff Pipeline (+4 more)
 
 ### Community 366 - "Q&A log"
 Cohesion: 0.17
@@ -903,27 +1121,27 @@ Cohesion: 0.26
 Nodes (11): check_docker(), get_latest_score(), main(), mutate_candidate(), Mutate train.py using Gemini instructions in program.md and prior results., Check if Docker is available in the system PATH., Run prepare.py for the specified target inside Docker or locally., Retrieve the latest score from results.tsv. (+3 more)
 
 ### Community 383 - "🛠 Command Usage"
-Cohesion: 0.18
-Nodes (10): 1. Build or Rebuild Knowledge Graph, 2. Query Graph Instead of Grepping, 3. Explain Concept & Degree Connections, 4. Trace Connection Path Between Two Concepts, 5. Check Multi-Vault Graph Status, 🛠 Command Usage, Graphify Multi-Vault Knowledge Graph Engine (`/graphify`), 🔗 Inter-Skill Connections & Workflow Integration (+2 more)
+Cohesion: 0.17
+Nodes (11): 1. Build or Rebuild Knowledge Graph, 2. Query Graph Instead of Grepping, 3. Explain Concept & Degree Connections, 4. Trace Connection Path Between Two Concepts, 5. Check Multi-Vault Graph Status, 🛠 Command Usage, Graphify Multi-Vault Knowledge Graph Engine (`/graphify`), Inter-Skill Connections & Workflow Integration (+3 more)
 
-### Community 384 - "The Virtual Engineering Team Roles"
-Cohesion: 0.18
-Nodes (10): 1. CEO Product Review (`/gstack ceo`), 2. Engineering Manager Review (`/gstack eng`), 3. UI/UX Design Review (`/gstack design`), 4. Browser QA Audit (`/gstack qa`), 5. Full Executive Council Review (`/gstack full` or `/gstack`), Execution Workflow, `gstack` — Garry Tan's AI Engineering Team Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline (+2 more)
+### Community 384 - "`gstack` — Garry Tan's AI Engineering Team Workflow"
+Cohesion: 0.17
+Nodes (11): 1. CEO Product Review (`/gstack ceo`), 2. Engineering Manager Review (`/gstack eng`), 3. UI/UX Design Review (`/gstack design`), 4. Browser QA Audit (`/gstack qa`), 5. Full Executive Council Review (`/gstack full` or `/gstack`), Execution Workflow, `gstack` — Garry Tan's AI Engineering Team Workflow, Inter-Skill Connections & Handoff Pipeline (+3 more)
 
 ### Community 385 - "Minor (small taste issues)"
 Cohesion: 0.18
 Nodes (11): 100vw widths, Anti-patterns — the named tells, Double-hyphen dashes, Every section padded the same, How `hallmark audit` should report, Minor (small taste issues), Placeholder names, Startup-cliché product names (+3 more)
 
 ### Community 386 - "Genre — atmospheric"
-Cohesion: 0.18
+Cohesion: 0.20
 Nodes (10): Genre — atmospheric, Nav and footer voice, Reference register, Stamp signature, Themes that belong, Voice, Voice fixtures, What this genre allows (+2 more)
 
 ### Community 387 - "Genre — modern-minimal"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (10): Genre — modern-minimal, Nav and footer voice, Reference register (for the LLM, not credited to anyone), Stamp signature, Themes that belong, Voice, Voice fixtures, What this genre allows (+2 more)
 
 ### Community 388 - "Genre — playful"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (10): Genre — playful, Nav and footer voice, Reference register, Stamp signature, Themes that belong, Voice, Voice fixtures, What this genre allows (+2 more)
 
 ### Community 389 - "Imagery kit — curated abstract assets, hosted, ready"
@@ -931,12 +1149,12 @@ Cohesion: 0.18
 Nodes (11): Anti-patterns, Categories, Decoration, Empty state, Generation pipeline (out-of-band, one-time), Imagery kit — curated abstract assets, hosted, ready, Layered hero composition (the masterclass move), Manifest (placeholder until generation pass ships) (+3 more)
 
 ### Community 390 - "🚀 Execution Workflow"
-Cohesion: 0.18
-Nodes (10): 🚀 Execution Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, New Project Initialization Engine (`/new-project`), 🎯 Specific Use Cases & Goal Alignment, Step 1: Resolve Directory & Scaffold Structure, Step 2: Phase 0 Socratic Discovery (`/grill-me` + `/hallmark` + Design Intelligence), Step 3: Adversarial Pre-Build Roast Council Gate (`/roast`) (+2 more)
+Cohesion: 0.17
+Nodes (11): Execution Workflow, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, New Project Initialization Engine (`/new-project`), Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Specific Use Cases & Goal Alignment, Step 1: Resolve Directory & Scaffold Structure, Step 2: Phase 0 Socratic Discovery (`/grill-me` + `/hallmark` + Design Intelligence) (+3 more)
 
 ### Community 391 - "Operating Instructions"
-Cohesion: 0.18
-Nodes (10): Core Principles, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Operating Instructions, Slide Component Generator, Step 1: Identify Category & Copy, Step 2: Generate Code Block, Step 3: Run Playwright Verification (+2 more)
+Cohesion: 0.17
+Nodes (11): Core Principles, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Operating Instructions, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Slide Component Generator, Step 1: Identify Category & Copy, Step 2: Generate Code Block (+3 more)
 
 ### Community 392 - "Storm Research"
 Cohesion: 0.18
@@ -963,12 +1181,12 @@ Cohesion: 0.18
 Nodes (10): 1. Directory Structure Map, 2. Read/Write Policy & Log Alignment Table, 3. Maintenance and Drift Prevention, Global Systems & Vaults (External/Local), Maintenance Scripts (`scripts/`), Reference Manuals (`references/`), Workspace Root Core Configs & Indexes, Workspace-Scoped Agents (`.agents/agents/`) (+2 more)
 
 ### Community 416 - "Steps"
-Cohesion: 0.20
-Nodes (9): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Step 1: Pre-Migration Deduplication Check, Step 2: Extract & Inspect Claude-Specific References, Step 3: Web-Search and Map Equivalents, Step 4: Interactive Review & Diff Approval, Step 5: Post-Adaptation Verification, Steps (+1 more)
+Cohesion: 0.18
+Nodes (10): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Pre-Migration Deduplication Check, Step 2: Extract & Inspect Claude-Specific References, Step 3: Web-Search and Map Equivalents, Step 4: Interactive Review & Diff Approval, Step 5: Post-Adaptation Verification (+2 more)
 
 ### Community 417 - "Step-by-Step Execution Workflow"
-Cohesion: 0.20
-Nodes (9): 1. Settle Dimensions & Layout, 2. Compile HTML Preview, 3. Render and Capture PNG via Browser Subagent, 4. Visual Self-Correction Loop, 5. Deliver, Canvas Design Router Skill, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing (+1 more)
+Cohesion: 0.18
+Nodes (10): 1. Settle Dimensions & Layout, 2. Compile HTML Preview, 3. Render and Capture PNG via Browser Subagent, 4. Visual Self-Correction Loop, 5. Deliver, Canvas Design Router Skill, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing (+2 more)
 
 ### Community 418 - "HTML Presentation Template"
 Cohesion: 0.20
@@ -982,33 +1200,33 @@ Nodes (9): Genre — editorial (default), Nav and footer voice, Stamp signature,
 Cohesion: 0.20
 Nodes (10): 1. Read the project, then pause, 2. Produce `design.md` at the project root, 3. Redesign each page reading from `design.md`, 4. Diversification rule — INVERTED for multi-page, 5. When to amend `design.md` instead of overriding, `hallmark redesign`, § Multi-page flow — design.md first, then redesign, Non-destructive implementation rule (+2 more)
 
-### Community 421 - "📋 Architectural Workflow"
-Cohesion: 0.20
-Nodes (9): 📋 Architectural Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline, JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`), ⚡ Overview & Tri-Mode Routing, Step 1: Pre-Flight & Workspace Inspection, Step 2: Staged Discovery & Option Evaluation (`/grill-me` + `/roast`), Step 3: Spec Compilation & Domain Vocabulary (`/mattpocock-to-spec` & `/mattpocock-domain-modeling`), Step 4: Spec Handoff & Verification (`/jsmastery-scope` & `/jsmastery-audit`) (+1 more)
+### Community 421 - "JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)"
+Cohesion: 0.18
+Nodes (10): 📋 Architectural Workflow, Inter-Skill Connections & Handoff Pipeline, JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`), Overview & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Pre-Flight & Workspace Inspection, Step 2: Staged Discovery & Option Evaluation (`/grill-me` + `/roast`), Step 3: Spec Compilation & Domain Vocabulary (`/mattpocock-to-spec` & `/mattpocock-domain-modeling`) (+2 more)
 
 ### Community 422 - "🧠 Domain Modeling Principles"
-Cohesion: 0.20
-Nodes (9): 1. Challenge Against Glossary (`CONTEXT.md`), 2. Type-Driven Domain Design, 3. Concrete Edge-Case Scenario Testing, 4. Inline `CONTEXT.md` Glossary Maintenance, 5. Selective ADR Generation, 🧠 Domain Modeling Principles, 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`) (+1 more)
+Cohesion: 0.18
+Nodes (10): 1. Challenge Against Glossary (`CONTEXT.md`), 2. Type-Driven Domain Design, 3. Concrete Edge-Case Scenario Testing, 4. Inline `CONTEXT.md` Glossary Maintenance, 5. Selective ADR Generation, Domain Modeling Principles, Inter-Skill Connections & Handoff Pipeline, Matt Pocock TypeScript Domain Modeling Engine (`/mattpocock-domain-modeling`) (+2 more)
 
 ### Community 423 - "Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)"
-Cohesion: 0.20
-Nodes (9): 1. Map Structure (`docs/wayfinder/map.md` or tracker issue), 2. Ticket Types, 🔄 Execution Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`), Mode 1: Charting the Map, Mode 2: Working Through the Map, ⚡ Overview & Tri-Mode Routing (+1 more)
+Cohesion: 0.18
+Nodes (10): 1. Map Structure (`docs/wayfinder/map.md` or tracker issue), 2. Ticket Types, Execution Workflow, Inter-Skill Connections & Handoff Pipeline, Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`), Mode 1: Charting the Map, Mode 2: Working Through the Map, Overview & Tri-Mode Routing (+2 more)
 
-### Community 424 - "🛠️ Verification Execution Steps"
-Cohesion: 0.20
-Nodes (9): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, 🎯 Specific Use Cases, Step 1: Fullstack Code Quality Audit (`/jsmastery-audit`), Step 2: Hallmark Anti-Slop Audit (`/hallmark`), Step 3: Playwright 5-Viewport Visual Sweep, Step 4: Verification Report Output, 🛠️ Verification Execution Steps (+1 more)
+### Community 424 - "Verification Execution Steps"
+Cohesion: 0.17
+Nodes (11): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Specific Use Cases, Step 1: Fullstack Code Quality Audit (`/jsmastery-audit`), Step 2: Hallmark Anti-Slop Audit (`/hallmark`), Step 3: Playwright 5-Viewport Visual Sweep, Step 4: Base64 Font Data URI Verification (Rule 1.13 & Rule 1.18) (+3 more)
 
 ### Community 425 - "Secure Coding Guide for Web Applications"
-Cohesion: 0.20
-Nodes (9): API Security, General Security Principles, GraphQL, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Mass Assignment, Overview, Secure Coding Guide for Web Applications (+1 more)
+Cohesion: 0.18
+Nodes (10): API Security, General Security Principles, GraphQL, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Mass Assignment, Overview, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+2 more)
 
-### Community 426 - "2. Hard Layout Rules & Anti-Pattern Bans"
-Cohesion: 0.20
-Nodes (9): 1. Obys 4 Grid Canons & Vertical Rhythm Math, 2. Hard Layout Rules & Anti-Pattern Bans, 3. CTA & Form Rules, Bento Grid Cell Rules, Eyebrow Restraint Rule (Critical Anti-Slop), Hero Section Discipline, Navigation & Header Rules, 📐 Phase 2 Reference: Layout, Grid Canons & Architecture Rules (+1 more)
+### Community 426 - "Hard Layout Rules & Anti-Pattern Bans"
+Cohesion: 0.18
+Nodes (10): Bento Grid Cell Rules, CTA & Form Rules, Eyebrow Restraint Rule (Critical Anti-Slop), Hard Layout Rules & Anti-Pattern Bans, Hero Section Discipline, Navigation & Header Rules, Obys Grid Canons & Obys Spatial Rhythm Ratios, Phase 2 Reference: Layout, Grid Canons & UX Psychology Rules (v4.0) (+2 more)
 
-### Community 427 - "2. 147 Component Library Breakdown (21 Categories)"
+### Community 427 - "Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0)"
 Cohesion: 0.20
-Nodes (9): 1. Mandatory Component Sourcing Rule, 2. 147 Component Library Breakdown (21 Categories), 3. Shadcn MCP Integration, A. Aceternity UI (56 Components), B. Animate UI React (42 Components), C. Vengence UI (37 Components), D. Forge UI (12 Components), Example Commands: (+1 more)
+Nodes (9): 300+ Component Catalog Search CLI, A. Aceternity UI & Animate UI React, B. 23-Sites Extracted Showroom (300+ TSX/CSS Components), Catalog Library Breakdown (11 Libraries across 23 Reference Sites), Component JSX & SVG Geometry Safeguards, Example Commands:, Phase 3 Reference: 300+ Component Catalog & Sourcing Guide (v4.0), Shadcn MCP Integration (+1 more)
 
 ### Community 428 - "🔒 Locked Business Blueprint for ZORIXEL"
 Cohesion: 0.20
@@ -1039,8 +1257,8 @@ Cohesion: 0.27
 Nodes (6): Any, main(), run_scrape(), Test fast HTTP fetching mode on example.com, Test graceful error handling on invalid domain, TestScraplingRunner
 
 ### Community 446 - "Autoresearch Loop Targets Manager"
-Cohesion: 0.22
-Nodes (8): Autoresearch Loop Targets Manager, How it works, Instructions, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Step 1: Parse Arguments, Step 2: Add a Target, Step 3: Remove a Target
+Cohesion: 0.20
+Nodes (9): Autoresearch Loop Targets Manager, How it works, Instructions, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Parse Arguments, Step 2: Add a Target (+1 more)
 
 ### Community 447 - "Layout and space"
 Cohesion: 0.22
@@ -1050,25 +1268,25 @@ Nodes (9): Asymmetry techniques, Bans, Depth, Grids, Layout and space, Page-edge
 Cohesion: 0.22
 Nodes (9): Bans, Durations, Easings, Motion, Page-load orchestration, Principles, Reduced motion, Scroll-linked motion (+1 more)
 
-### Community 449 - "Step-by-Step Execution Workflow"
-Cohesion: 0.22
-Nodes (8): 1. Identify the Task Category & VoC Research Integration, 2. Read the Reference Skill File, 3. Check for Context Files, 4. Execute and Produce Output, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Marketing & Copywriting Router Skill, Step-by-Step Execution Workflow
+### Community 449 - "Marketing & Copywriting Router Skill"
+Cohesion: 0.20
+Nodes (9): 1. Identify the Task Category & VoC Research Integration, 2. Read the Reference Skill File, 3. Check for Context Files, 4. Execute and Produce Output, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Marketing & Copywriting Router Skill, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
 
-### Community 450 - "🎓 The 4-Step Teaching Structure"
-Cohesion: 0.22
-Nodes (8): 1. The Core Mental Model (The "Aha!" Moment), 2. Concrete Code Comparison, 3. Interactive Mission (Test Your Knowledge), 4. Production Gotchas & Pitfalls, 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`), ⚡ Overview & Tri-Mode Routing, 🎓 The 4-Step Teaching Structure
+### Community 450 - "Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`)"
+Cohesion: 0.20
+Nodes (9): 1. The Core Mental Model (The "Aha!" Moment), 2. Concrete Code Comparison, 3. Interactive Mission (Test Your Knowledge), 4. Production Gotchas & Pitfalls, Inter-Skill Connections & Handoff Pipeline, Matt Pocock Socratic Teaching Engine (`/mattpocock-teach`), Overview & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
 
-### Community 451 - "🛠️ The 4-Step Spec Compilation Process"
-Cohesion: 0.22
-Nodes (8): 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`), ⚡ Overview & Tri-Mode Routing, Step 1: Intent Extraction & Socratic Discovery (`/grill-me`), Step 2: System Boundary & Interface Definition (`/mattpocock-domain-modeling`), Step 3: Write Technical SPEC (`SPEC.md`), Step 4: Verification & Approval Checkpoint (`/roast`), 🛠️ The 4-Step Spec Compilation Process
+### Community 451 - "Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)"
+Cohesion: 0.20
+Nodes (9): Inter-Skill Connections & Handoff Pipeline, Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`), Overview & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Step 1: Intent Extraction & Socratic Discovery (`/grill-me`), Step 2: System Boundary & Interface Definition (`/mattpocock-domain-modeling`), Step 3: Write Technical SPEC (`SPEC.md`), Step 4: Verification & Approval Checkpoint (`/roast`) (+1 more)
 
-### Community 452 - "Step-by-Step Execution Workflow"
-Cohesion: 0.22
-Nodes (8): 1. Identify the Audit Category, 2. Read the Reference Guide, 3. Run Programmatic Audit Script (If Needed), 4. Output the SEO Report, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, SEO Audit & GEO Router Skill, Step-by-Step Execution Workflow
+### Community 452 - "SEO Audit & GEO Router Skill"
+Cohesion: 0.20
+Nodes (9): 1. Identify the Audit Category, 2. Read the Reference Guide, 3. Run Programmatic Audit Script (If Needed), 4. Output the SEO Report, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, SEO Audit & GEO Router Skill (+1 more)
 
-### Community 453 - "🏛️ Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems"
-Cohesion: 0.22
-Nodes (8): 1. 21 Hallmark Macrostructure Archetypes, 2. Automated Design Token Extraction (`hallmark study` / `scrape-reference`), 3. Brand Typography Discipline, 4. OKLCH Color Math & AI Slop Ban, ⛔ BANNED AI SLOP GRADIENTS & STEREOTYPES:, 🏛️ Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems, Rotational OKLCH Palette Families:, Typography Rules:
+### Community 453 - "Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)"
+Cohesion: 0.40
+Nodes (4): 21 Hallmark Macrostructure Archetypes, Brand Typography Safety Rules, Design Token Extraction & OKLCH Theme Architecture, Phase 1 Reference: Macrostructures, Token Extraction & Brand Systems (v4.0)
 
 ### Community 454 - "{{Your Name}}'s AI Operating System"
 Cohesion: 0.22
@@ -1127,8 +1345,8 @@ Cohesion: 0.33
 Nodes (8): main(), 23-Site AIOS Design Synthesis & Intelligence Engine Lightweight, zero-bloat CLI…, Searches the lightweight matrix index returning capped snippet results to…, Returns a recommended section sequence & design archetype synthesized from…, Scans all 23 sites in reference-inputs/sites and extracts design matrix data., recommend_layout(), scan_and_index_sites(), search_pattern()
 
 ### Community 515 - "Agent Reach Skill (`/agent-reach`)"
-Cohesion: 0.25
-Nodes (7): 1. Diagnostics & Health Check, 2. Supported Platforms & Quick Commands, Agent Reach Skill (`/agent-reach`), Architectural Principles, Capabilities & Usage Guide, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing
+Cohesion: 0.22
+Nodes (8): 1. Diagnostics & Health Check, 2. Supported Platforms & Quick Commands, Agent Reach Skill (`/agent-reach`), Architectural Principles, Capabilities & Usage Guide, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 ### Community 516 - "8-Bit Orbit Preview Card"
 Cohesion: 0.25
@@ -1275,12 +1493,12 @@ Cohesion: 0.25
 Nodes (7): Export formats, Format 1 — `tokens.css`, Format 2 — Tailwind v4 `@theme`, Format 3 — DTCG `tokens.json`, Format 4 — shadcn/ui CSS variables, Output rule, Token taxonomy — Hallmark's source of truth
 
 ### Community 552 - "Scrape Component Skill"
-Cohesion: 0.25
-Nodes (7): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Phase 1: Clarification & Targeted Q&A (Do FIRST), Phase 2: Isolated Extraction & Dependency Audit, Phase 3: Visual Verification & Auditing (Playwright Bypass), Phase 4: Analysis & System Adaptation, Scrape Component Skill
+Cohesion: 0.22
+Nodes (8): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Phase 1: Clarification & Targeted Q&A (Do FIRST), Phase 2: Isolated Extraction & Dependency Audit, Phase 3: Visual Verification & Auditing (Playwright Bypass), Phase 4: Analysis & System Adaptation, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Scrape Component Skill
 
-### Community 553 - "⚡ Phase 4 Reference: Motion Engineering, GSAP & WebGL Shaders"
-Cohesion: 0.25
-Nodes (7): 1. Motion Dialing Matrix (Dial 0 to 10), 2. AUTOMATIC MANDATORY PURE SKILLS INGESTION STEP, 3. GSAP ScrollTrigger Canonical Skeletons, 4. Motion Performance Rules & WebGL Canvas Fallbacks, A. Sticky-Stack Scroll (Card Stack Effect), B. Horizontal-Pan Track (Vertical Scroll -> Horizontal Travel), ⚡ Phase 4 Reference: Motion Engineering, GSAP & WebGL Shaders
+### Community 553 - "Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)"
+Cohesion: 0.22
+Nodes (8): A. Sticky-Stack Scroll (Card Stack Effect), B. Magnetic Hover Button Physics, GSAP ScrollTrigger Canonical Skeletons, Interactive Radiant Shader HTML Protocol (`pbakaus/radiant`), Lenis Smooth Momentum Scroll & RAF Sync, Motion Dialing Matrix (Dial 0 to 10), Native CSS View Timeline Animation Offloading, Phase 4 Reference: Motion Engineering, Lenis, GSAP & WebGL Shaders (v4.0)
 
 ### Community 554 - "Jordan Watkins Brand Reference & Playwright Tools: Brainstorm / Discovery Notes"
 Cohesion: 0.25
@@ -1315,8 +1533,8 @@ Cohesion: 0.54
 Nodes (6): get_asset_prompts(), list_sources(), load_db(), main(), render_brief(), search_references()
 
 ### Community 581 - "Design Direction Generator"
-Cohesion: 0.29
-Nodes (6): Context Optimization Rule, Design Direction Generator, Execution Steps, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Triggering Rules
+Cohesion: 0.25
+Nodes (7): Context Optimization Rule, Design Direction Generator, Execution Steps, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Triggering Rules
 
 ### Community 582 - "Animation Patterns Reference"
 Cohesion: 0.29
@@ -1327,8 +1545,8 @@ Cohesion: 0.29
 Nodes (7): Bans, Colour, Contrast, Dark mode recipe, Palette construction, Principles, Use of the accent
 
 ### Community 585 - "using-superpowers/SKILL.md"
-Cohesion: 0.29
-Nodes (6): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Red Flags, Skill Priority, The Rule, User Instructions
+Cohesion: 0.25
+Nodes (7): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Red Flags, Skill Priority, The Rule, User Instructions
 
 ### Community 586 - "Server-Side Request Forgery (SSRF)"
 Cohesion: 0.29
@@ -1371,12 +1589,12 @@ Cohesion: 0.33
 Nodes (6): downloadFile(), fs, path, RESOURCES, run(), TARGET_DIR
 
 ### Community 618 - "Brand Colors & Contrast Audit Skill"
-Cohesion: 0.33
-Nodes (5): Brand Colors & Contrast Audit Skill, Capabilities, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Rendering Swatch Page Rules
+Cohesion: 0.29
+Nodes (6): Brand Colors & Contrast Audit Skill, Capabilities, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Rendering Swatch Page Rules
 
 ### Community 619 - "Carousel Render Engine"
-Cohesion: 0.33
-Nodes (5): Carousel Render Engine, 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Local Font & Asset Rendering Rules, Playwright Execution Protocol
+Cohesion: 0.29
+Nodes (6): Carousel Render Engine, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Local Font & Asset Rendering Rules, Playwright Execution Protocol, Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 ### Community 620 - "deploy.sh"
 Cohesion: 0.60
@@ -1387,24 +1605,24 @@ Cohesion: 0.53
 Nodes (4): err(), info(), ok(), export-pdf.sh script
 
 ### Community 622 - "JS Mastery Feature Scoping Engine (`/jsmastery-scope`)"
-Cohesion: 0.33
-Nodes (5): 🔗 Inter-Skill Connections & Handoff Pipeline, JS Mastery Feature Scoping Engine (`/jsmastery-scope`), ⚡ Overview & Tri-Mode Routing, 📝 Scope File Format (`docs/scope/NNNN-[slug].md`), 🎯 Scoping Discipline & Rules
+Cohesion: 0.29
+Nodes (6): Inter-Skill Connections & Handoff Pipeline, JS Mastery Feature Scoping Engine (`/jsmastery-scope`), Overview & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Scope File Format (`docs/scope/NNNN-[slug].md`), Scoping Discipline & Rules
 
 ### Community 623 - "Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`)"
-Cohesion: 0.33
-Nodes (5): 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`), ⚡ Overview & Tri-Mode Routing, 🎟️ Ticket Decomposition Rules, 📄 Ticket Template Output
+Cohesion: 0.29
+Nodes (6): Inter-Skill Connections & Handoff Pipeline, Matt Pocock Spec-to-Tickets Engine (`/mattpocock-to-tickets`), Overview & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, 🎟️ Ticket Decomposition Rules, Ticket Template Output
 
 ### Community 624 - "Scoped Project Developer Agent"
-Cohesion: 0.33
-Nodes (5): Execution Workflow, 🔗 Inter-Skill Connections & Handoff Pipeline, Invocation Parameters, ⚡ Invocation & Tri-Mode Routing, Scoped Project Developer Agent
+Cohesion: 0.29
+Nodes (6): Execution Workflow, Inter-Skill Connections & Handoff Pipeline, Invocation Parameters, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Scoped Project Developer Agent
 
-### Community 625 - "🛡️ Phase 5 Reference: Anti-Slop Quality Gates, SEO/GEO & Security"
-Cohesion: 0.33
-Nodes (5): 1. Hallmark Pre-Emit Critique Stamp, 2. Technical SEO & GEO (Generative Engine Optimization) Engine, 3. Vibesec Security Hygiene & WCAG AA Accessibility, 4. User-Enforced Anti-Slop Quality Gates (#58-#63), 🛡️ Phase 5 Reference: Anti-Slop Quality Gates, SEO/GEO & Security
+### Community 625 - "Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0)"
+Cohesion: 0.29
+Nodes (6): Fullstack Code Quality Audit (`/jsmastery-audit`), Hallmark Pre-Emit Critique Stamp, Phase 5 Reference: Anti-Slop Quality Gates, Security & Fullstack Audits (v4.0), Technical SEO & GEO (Generative Engine Optimization) Engine, User-Enforced Anti-Slop Quality Gates (#58-#63), Vibesec Security Hygiene & WCAG AA Accessibility
 
-### Community 626 - "📸 Phase 6 Reference: Automated Playwright Visual QA & Verification"
-Cohesion: 0.33
-Nodes (5): 1. Pre-Emit Anti-Slop Audit Execution, 2. Playwright Multi-Viewport Visual QA Sweep, 3. Zero-Tolerance Console & Layout Verification Rules, 📸 Phase 6 Reference: Automated Playwright Visual QA & Verification, The 5 Viewport Audit Suite:
+### Community 626 - "Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0)"
+Cohesion: 0.29
+Nodes (6): 1. Pre-Emit Anti-Slop Audit Execution, 2. Playwright Multi-Viewport Visual QA Sweep, 3. Base64 Font Data URI Inlining Requirement (Rule 1.13 & Rule 1.18), 4. Zero-Tolerance Console & Layout Verification Rules, Phase 6 Reference: Automated Playwright Visual QA & Verification (v4.0), The 5 Viewport Audit Suite:
 
 ### Community 627 - "Repository Ingestion Capture: `gstack` by Garry Tan"
 Cohesion: 0.33
@@ -1458,10 +1676,6 @@ Nodes (5): fs, http, MIME_TYPES, path, server
 Cohesion: 0.47
 Nodes (5): check_file_links(), get_all_markdown_files(), main(), Scans a markdown file for relative links and Obsidian bracket links…, Returns a dictionary of all markdown files mapping their lowercase basename…
 
-### Community 688 - "verify_design_milestone.py"
-Cohesion: 0.60
-Nodes (5): detect_build_dir(), execute_playwright_audit(), main(), run_build(), start_static_server()
-
 ### Community 689 - "verify_skill_folder"
 Cohesion: 0.47
 Nodes (5): check_js_syntax(), main(), Verify JS/TS syntax without executing the script., Verify frontmatter of SKILL.md and run syntax checks on code files., verify_skill_folder()
@@ -1475,20 +1689,20 @@ Cohesion: 0.47
 Nodes (4): benchmark_page_load(), main(), SilentHTTPRequestHandler, start_server()
 
 ### Community 692 - "daily-plan-day/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Steps, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Steps, What This Skill Does
 
 ### Community 693 - "daily-review-day/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Steps, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Steps, What This Skill Does
 
 ### Community 694 - "draft-message/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Steps, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Steps, What This Skill Does
 
 ### Community 695 - "file-search/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Steps, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Steps, What This Skill Does
 
 ### Community 696 - "Bold Template Pack"
 Cohesion: 0.40
@@ -1499,24 +1713,24 @@ Cohesion: 0.40
 Nodes (5): Bold Template Pack, Dark Themes, Included Styles, Light Themes, Specialty
 
 ### Community 698 - "Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill)"
-Cohesion: 0.40
-Nodes (4): Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill), 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, The Upgraded Ingestion & Dynamic Adaptation Workflow
+Cohesion: 0.33
+Nodes (5): Ingest Community Skills & Repositories (Upgraded Engine & Dynamic Skill), Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, The Upgraded Ingestion & Dynamic Adaptation Workflow
 
 ### Community 699 - "Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`)"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`), ⚡ Overview & Tri-Mode Routing, 🛡️ Package Isolation Rules
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Matt Pocock TS Deep Modules & Boundary Engine (`/mattpocock-setup-ts-deep-modules`), Overview & Tri-Mode Routing, Package Isolation Rules, Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 ### Community 700 - "notion-sync/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Steps, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Steps, What This Skill Does
 
 ### Community 701 - "scrape-competitor/SKILL.md"
-Cohesion: 0.40
-Nodes (4): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Multi-Platform Routing Pipeline, What This Skill Does
+Cohesion: 0.33
+Nodes (5): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Multi-Platform Routing Pipeline, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, What This Skill Does
 
 ### Community 702 - "Session Handoff — Clear Context, Preserve State"
-Cohesion: 0.40
-Nodes (4): 📋 Handoff Workflow, ⚡ Invocation & Tri-Mode Routing, 🎯 Purpose, Session Handoff — Clear Context, Preserve State
+Cohesion: 0.33
+Nodes (5): 📋 Handoff Workflow, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Purpose, Session Handoff — Clear Context, Preserve State
 
 ### Community 703 - "OWASP Top 10 for LLM & AI Applications"
 Cohesion: 0.40
@@ -1529,10 +1743,6 @@ Nodes (5): Access Control Issues, Authorization Checks Checklist, Common Pitfall
 ### Community 705 - "Insecure File Upload"
 Cohesion: 0.40
 Nodes (5): Common Bypasses and Attacks, Insecure File Upload, Magic Bytes Reference, Secure Upload Handling, Validation Requirements
-
-### Community 706 - "Cross-Site Request Forgery (CSRF)"
-Cohesion: 0.40
-Nodes (5): Cross-Site Request Forgery (CSRF), Edge Cases and Common Mistakes, Endpoints Requiring CSRF Protection, Protection Mechanisms, Verification Checklist
 
 ### Community 707 - "Unified AI OS Design System Engine: Brainstorm & Planning"
 Cohesion: 0.40
@@ -1595,8 +1805,8 @@ Cohesion: 0.50
 Nodes (3): Output contract, Output contract & scope, Scope and limits
 
 ### Community 736 - "Scrape Carousel"
-Cohesion: 0.50
-Nodes (3): 🔗 Inter-Skill Connections & Handoff Pipeline, ⚡ Invocation & Tri-Mode Routing, Scrape Carousel
+Cohesion: 0.40
+Nodes (4): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate, Scrape Carousel
 
 ### Community 737 - "verify-component.py"
 Cohesion: 0.83
@@ -1610,9 +1820,9 @@ Nodes (4): 1. In-Function Authentication & Authorization, 2. Module Boundary Iso
 Cohesion: 0.50
 Nodes (4): JWT Checklist, JWT Security, Secure Implementation, Vulnerabilities
 
-### Community 740 - "Phase 0.5 Reference: Sitemap & Shared Architecture Scaffolding"
-Cohesion: 0.50
-Nodes (3): 🏗️ Master `RootLayout` Standards, 🗺️ Multi-Page Sitemap Specification, Phase 0.5 Reference: Sitemap & Shared Architecture Scaffolding
+### Community 740 - "Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)"
+Cohesion: 0.40
+Nodes (4): Master RootLayout Standards, Multi-Page Sitemap Specification, Phase 0 & Phase 0.1 Verification Protocol, Phase 0 Reference: Sitemap & Shared Architecture Scaffolding (v4.0)
 
 ### Community 741 - "Discovery Capture: Ingestion of `jsmastery-pro/skills` & `mattpocock/skills`"
 Cohesion: 0.50
@@ -1726,25 +1936,29 @@ Nodes (3): main(), minify_css(), minify_js()
 Cohesion: 0.67
 Nodes (3): Convert a PowerPoint, Create a New Presentation, Usage
 
+### Community 1119 - "ZORIXEL AIOS Hot Cache & Handoff State"
+Cohesion: 0.50
+Nodes (3): Active Context & Strategic Baseline, Immediate Next Actions, ZORIXEL AIOS Hot Cache & Handoff State
+
 ## Knowledge Gaps
-- **3350 isolated node(s):** `{ chromium }`, `fs`, `path`, `OUTPUT_FILE`, `fs` (+3345 more)
+- **3675 isolated node(s):** `{ chromium }`, `fs`, `path`, `OUTPUT_FILE`, `fs` (+3670 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Custom craft — how to hand-build hero artwork` connect `Custom craft — how to hand-build hero artwork` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Hallmark` connect `Design flow (default)` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `Assets — sourcing canon for icons, logos, illustrations, photography, video` connect `Assets — sourcing canon for icons, logos, illustrations, photography, video` to `hallmark/SKILL.md`?**
+- **Why does `Microinteractions` connect `Recipes` to `hallmark/SKILL.md`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Study — extracting design DNA from a screenshot or URL` connect `Study — extracting design DNA from a screenshot or URL` to `hallmark/SKILL.md`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Hero enrichment — when, what, and how much` connect `Hero enrichment — when, what, and how much` to `hallmark/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `{ chromium }`, `fs`, `path` to the rest of the system?**
-  _3350 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3675 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FILLER AND HEDGING` be split into smaller, more focused modules?**
-  _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
-- **Should `🛠️ Step-by-Step 8-Phase Pricing Protocol` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
+- **Should `Step-by-Step 8-Phase Pricing Protocol` be split into smaller, more focused modules?**
+  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `component-cookbook.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.021505376344086023 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.02127659574468085 - nodes in this community are weakly interconnected._

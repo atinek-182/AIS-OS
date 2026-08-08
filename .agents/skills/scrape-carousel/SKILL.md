@@ -9,7 +9,7 @@ argument-hint: '[optional parameters]'
 
 # Scrape Carousel
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/scrape-carousel [optional parameters]` in chat.
@@ -66,13 +66,13 @@ When this skill is invoked via `/scrape-carousel --url <url>`:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Social Media Scraping**: Scrapes design references and copy from Instagram carousel URLs.
 - **Copy & Render Handoff**: Feeds reference layouts into **/carousel-copy** and **/carousel-render**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

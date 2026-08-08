@@ -9,7 +9,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/onboard [optional parameters]` in chat.
@@ -119,13 +119,13 @@ The Default Shift question seeds the Mindset framework before `/level-up` formal
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Day-1 Onboarding**: Refreshes workspace context from context/aios-intake.md.
 - **System Setup**: Initializes identity, brand goals, and initial skill configurations.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

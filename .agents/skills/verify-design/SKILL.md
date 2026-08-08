@@ -6,7 +6,7 @@ argument-hint: '[optional_target_directory]'
 
 # ZORIXEL Visual & Fullstack Verification Engine (`/verify-design`)
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill automates fullstack code quality audits and 5-viewport visual QA using Playwright and static analysis tools.
 
@@ -16,13 +16,13 @@ Invokable via:
 
 ---
 
-## 🎯 Specific Use Cases
+## Specific Use Cases
 - **Web App Release QA**: Audit Next.js App Router code (`/jsmastery-audit`), test Server Action security, check console errors, and verify responsive design across 5 viewports before deployment.
 - **Micrographics & Component Library QA**: Execute visual regression sweeps across compiled cards, SVGs, and layouts to ensure 0 layout breakages.
 
 ---
 
-## 🛠️ Verification Execution Steps
+## Verification Execution Steps
 
 ### Step 1: Fullstack Code Quality Audit (`/jsmastery-audit`)
 1. Run `/jsmastery-audit` on the target project directory.
@@ -43,6 +43,17 @@ Run `python scripts/hallmark_runner.py audit <target-dir>` to verify compliance 
 
 ### Step 3: Playwright 5-Viewport Visual Sweep
 Run `python scripts/verify_design_milestone.py` across 5 viewports:
+- Mobile Small (`375x667`)
+- Mobile Large (`414x896`)
+- Tablet (`768x1024`)
+- Desktop (`1280x800`)
+- Large Display (`1920x1080`)
+
+### Step 4: Base64 Font Data URI Verification (Rule 1.13 & Rule 1.18)
+When capturing Playwright screenshots of temporary HTML pages:
+- Confirm local custom fonts (`Havock`, `Rosehot`, `Nuqun`) are inlined as Base64 Data URIs (`data:font/opentype;base64,...`) inside `@font-face` blocks.
+- Never use local `file:///` font paths in Playwright HTML templates as headless Chromium fails to resolve local OS font files.
+
 - Mobile Small (320px / 375px)
 - Mobile Large (414px)
 - Tablet (768px)
@@ -58,7 +69,7 @@ Generate a clean Markdown verification summary:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Web Creation QA**: Executed as Phase 6 in **`/website-design-engine`** and Milestone 4 in **`/new-project`**.
 - **Code Auditor**: Calls **`/jsmastery-audit`** for fullstack static code analysis.
 - **Anti-Slop & Quality Gates**: Invokes `python scripts/hallmark_runner.py` and **`/hallmark`**.
@@ -66,7 +77,7 @@ Generate a clean Markdown verification summary:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

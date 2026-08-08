@@ -431,9 +431,7 @@ The system has **no border-radius anywhere**. Cards, tiles, kpi panels, ornament
 | 2px | Chart grid lines (subtle, semi-transparent) |
 | 4px | Universal structural rule — section separators, list-row borders, tile top rules |
 | 5px | Cover ornament rules (slightly heavier so they hold weight next to the 184px display headline) |
-| 18px height (with 4px rule top + 4px rule bottom) | Double-rule ornament span |
-
-The 4px weight is the system's default; reach for it unless the moment specifically needs the cover's heavier 5px rules.
+| 18px height (with 4px rule top + 4px rule bottom) | Double-rule ornament span | The 4px weight is the system's default; reach for it unless the moment specifically needs the cover's heavier 5px rules.
 
 ## Depth and Elevation
 

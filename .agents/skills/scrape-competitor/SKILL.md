@@ -10,7 +10,7 @@ argument-hint:
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/scrape-competitor ['competitor url', 'handle', 'or topic']` in chat.
@@ -53,13 +53,13 @@ Automates multi-platform competitor content research. It routes requests through
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Competitor Ingestion**: Scrapes competitor reels/posts into second-brain-zorixel/wiki/research/.
 - **Content Pipeline**: Feeds insights into **/carousel-copy** and **/marketing**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

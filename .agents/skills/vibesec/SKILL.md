@@ -10,7 +10,7 @@ argument-hint: '[optional parameters]'
 
 # Secure Coding Guide for Web Applications
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/vibesec [optional parameters]` in chat.
@@ -802,13 +802,13 @@ When unsure, choose the more restrictive/secure option and document the security
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Security Guide & Scanner**: Enforces web application security rules (IDOR, tenant isolation, JWT httpOnly cookies, Zod validation, SSRF blocking).
 - **Code Audit**: Integrated into Phase 5 of **/website-design-engine** and **/jsmastery-audit**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

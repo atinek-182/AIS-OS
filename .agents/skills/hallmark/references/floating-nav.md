@@ -41,9 +41,7 @@ One `<header>` with an inner wrapper. The outer owns the **default bar** visuals
 | `.nav__inner` | `background-color` | `transparent` | dark/0.82 |
 | `.nav__inner` | `backdrop-filter` | `blur(0)` | `blur(18px)` |
 | `.nav__inner` | `box-shadow` | `none` | drop + tinted glow + inset hairline |
-| `.nav__inner` | `transform` | `translateY(0)` | `translateY(12px)` |
-
-Use `blur(0)` not `none` — `none` snaps, `blur(0)` transitions. `backdrop-filter` transitions are 2024+ baseline (Chrome 107+, Safari 14+, Firefox 103+).
+| `.nav__inner` | `transform` | `translateY(0)` | `translateY(12px)` | Use `blur(0)` not `none` — `none` snaps, `blur(0)` transitions. `backdrop-filter` transitions are 2024+ baseline (Chrome 107+, Safari 14+, Firefox 103+).
 
 ## The scroll handler
 

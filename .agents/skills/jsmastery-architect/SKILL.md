@@ -6,7 +6,7 @@ argument-hint: '[feature_or_system_name] [optional focus]'
 
 # JS Mastery Fullstack Architecture Engine (`/jsmastery-architect`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 This skill provides fullstack JavaScript and Next.js architectural discipline adapted from JavaScript Mastery Pro. Use it when making load-bearing technical decisions, choosing tech stacks, designing Next.js App Router architectures, or defining database/state/auth patterns.
 
@@ -47,9 +47,12 @@ Write the complete build spec using the standard structure:
 - `## Summary`: High-level goal.
 - `## Requirements`: Functional and technical requirements.
 - `## Stack & Components`: Components, routes, server actions, database schema, state management.
+  - **Next.js 15 App Router Standard**: All route params and searchParams are Promises (`const { id } = await params`, `const { query } = await searchParams`). Never dereference params synchronously.
+  - **Tailwind CSS v4 Standard**: Use CSS `@theme` directives instead of legacy Tailwind v3 `@apply` or `tailwind.config.js` theme blocks.
 - `## Options Considered`: Trade-offs and why the recommendation was selected.
 - `## Build Plan`: Sequential, verifiable implementation steps.
-- `## Security & Performance`: Authz, input validation (Zod), caching (revalidatePath/tags), and rate limiting.
+- `## Security & Performance`: Authz, input validation (Zod), caching (`revalidatePath`/`revalidateTag`), and rate limiting.
+
 
 ### Step 4: Spec Handoff & Verification (`/jsmastery-scope` & `/jsmastery-audit`)
 1. Save the spec file to `docs/specs/NNNN-[slug].md`.
@@ -58,7 +61,7 @@ Write the complete build spec using the standard structure:
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Discovery & Validation**: Uses **`/grill-me`** and **`/roast`**.
 - **Domain Modeling**: Uses **`/mattpocock-domain-modeling`** and **`/mattpocock-to-spec`**.
 - **Scoping & Tickets**: Hands off to **`/jsmastery-scope`** and **`/mattpocock-to-tickets`**.
@@ -66,7 +69,7 @@ Write the complete build spec using the standard structure:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

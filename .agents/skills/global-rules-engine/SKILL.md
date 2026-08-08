@@ -6,7 +6,7 @@ argument-hint: '[sync | append "rule_category" "rule_text" | audit | list]'
 
 # ZORIXEL AIOS Global Rules & Error Prevention Engine (`/global-rules`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill automates the management, appending, auditing, and multi-file synchronization of the ZORIXEL AIOS global error prevention rules. It incorporates an **Adversarial `/roast` Council Audit Gate** and an **Autonomous Script, Tool & Skill Auto-Upgrade Loop** to ensure that whenever new rules or error lessons are added, all workspace tools, health scripts, and active skills auto-upgrade in tandem.
 
@@ -19,7 +19,7 @@ Invokable via:
 
 ---
 
-## 🎯 3-Phase Execution Architecture
+## 3-Phase Execution Architecture
 
 ```mermaid
 graph TD
@@ -55,7 +55,7 @@ graph TD
 
 ---
 
-## 🔥 PHASE 2: ADVERSARIAL `/roast` COUNCIL AUDIT GATE
+## PHASE 2: ADVERSARIAL `/roast` COUNCIL AUDIT GATE
 
 Before finalizing any rule addition or system prompt edit, convene the 5-Persona ZORIXEL AIOS Roast Council (`/roast`):
 
@@ -67,7 +67,7 @@ Before finalizing any rule addition or system prompt edit, convene the 5-Persona
 
 ---
 
-## 🔄 PHASE 3: AUTONOMOUS SCRIPT, TOOL & SKILL AUTO-UPGRADE LOOP
+## PHASE 3: AUTONOMOUS SCRIPT, TOOL & SKILL AUTO-UPGRADE LOOP
 
 After completing Phase 1 and Phase 2, execute the autonomous auto-upgrade loop:
 
@@ -84,7 +84,7 @@ After completing Phase 1 and Phase 2, execute the autonomous auto-upgrade loop:
 
 ---
 
-## 🛡️ Non-Negotiable Error Rules Summary
+## Non-Negotiable Error Rules Summary
 
 | Category | Rule | Key Safeguard |
 |---|---|---|
@@ -122,7 +122,7 @@ def append_sync_and_upgrade(category, rule_title, rule_detail):
     rule_count = content.count("**Rule 1.") + 1
     new_rule_line = f"| **Rule 1.{rule_count}** | **{category}** | High | **{rule_title}**: {rule_detail} |\n"
     
-    table_end = content.find("\n---\n\n## 🎯 SECTION 2")
+    table_end = content.find("\n---\n\n##  SECTION 2")
     if table_end != -1:
         updated_content = content[:table_end] + new_rule_line + content[table_end:]
     else:
@@ -143,7 +143,7 @@ def append_sync_and_upgrade(category, rule_title, rule_detail):
 
 ---
 
-## 🔗 Inter-Skill Connections
+## Inter-Skill Connections
 - **Post-Mortem Auto-Updater**: Programmatically invoked by `/session-postmortem-audit` in Phase 3.
 - **System Improvement**: Programmatically invoked by `/improve-system` to merge learned error rules into permanent AIOS memory.
 - **System Audit**: Programmatically invoked by `/os-audit` to verify system prompt rule synchronization.
@@ -151,7 +151,7 @@ def append_sync_and_upgrade(category, rule_title, rule_detail):
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

@@ -6,7 +6,7 @@ argument-hint: '[destination_or_map_link]'
 
 # Matt Pocock Wayfinder Engine (`/mattpocock-wayfinder`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 Wayfinder is Matt Pocock's macro-planning skill for large, wrapped-in-fog efforts spanning multiple agent sessions. It charts the journey as a **shared map** of **decision tickets**, resolving decisions one at a time until the path to the destination is clear.
 
@@ -46,7 +46,7 @@ Work consciously ruled out of this effort.
 
 ---
 
-## 🔄 Execution Workflow
+## Execution Workflow
 
 ### Mode 1: Charting the Map
 1. **Name the Destination**: Lock in what "done" looks like using **`/grill-me`** and **`/mattpocock-domain-modeling`**.
@@ -63,14 +63,14 @@ Work consciously ruled out of this effort.
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Destination & Vocabulary**: Uses **`/grill-me`** and **`/mattpocock-domain-modeling`**.
 - **Ticket Audit & Risk**: Uses **`/roast`**.
 - **Spec & Slice Breakdown**: Hands off resolved tickets to **`/mattpocock-to-spec`**, **`/jsmastery-scope`**, and **`/mattpocock-to-tickets`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

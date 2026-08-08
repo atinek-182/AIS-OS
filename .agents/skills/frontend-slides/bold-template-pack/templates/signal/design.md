@@ -338,9 +338,7 @@ The system targets `100vw × 100vh` — full viewport. Each `.slide` flexes to f
 | `{spacing.pad-y}` | 5.5vh | Vertical slide padding |
 | `{spacing.gap-lg}` | 4vh | Between major content sections |
 | `{spacing.gap-md}` | 2.5vh | Between related elements |
-| `{spacing.gap-sm}` | 1.2vh | Between tightly coupled elements |
-
-Quote slides increase pad-x to 1.1× and pad-y to 1.2× to give the pull-quote extra breathing room. Compare layouts use `pad-x * 0.55` as inset padding on each panel.
+| `{spacing.gap-sm}` | 1.2vh | Between tightly coupled elements | Quote slides increase pad-x to 1.1× and pad-y to 1.2× to give the pull-quote extra breathing room. Compare layouts use `pad-x * 0.55` as inset padding on each panel.
 
 ### Chrome Frame
 
@@ -368,9 +366,7 @@ The single exception is the **fullbleed gradient scrim**: on fullbleed image sli
 |---|---|
 | 0 | Every shape in the system except donut charts and donut center wells |
 | 50% (circle) | Donut chart shapes, the 9px timeline dots, the 2px round-ended border on swatches |
-| 2px | Pie legend swatch (subtle softening only) |
-
-Signal has effectively **no rounded chrome**. Stat tiles, chrome bars, compare panels, image frames — all rectangular with sharp corners.
+| 2px | Pie legend swatch (subtle softening only) | Signal has effectively **no rounded chrome**. Stat tiles, chrome bars, compare panels, image frames — all rectangular with sharp corners.
 
 ### Border Weights
 

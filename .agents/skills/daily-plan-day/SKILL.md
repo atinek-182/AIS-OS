@@ -6,7 +6,7 @@ argument-hint: '[optional parameters]'
 ---
 
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/daily-plan-day [optional parameters]` in chat.
@@ -35,14 +35,14 @@ Automates the morning planning routine by pulling calendar events, checking prio
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Morning Ritual**: Pulls active priorities from rain-aios/wiki/checklists/master-task-list.md and hot.md.
 - **Evening Reflection**: Hands off day's progress tracking to **/daily-review-day**.
 - **Calendar & Task Sync**: Integrates with Google Workspace CLI (gws) and **/notion-sync**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

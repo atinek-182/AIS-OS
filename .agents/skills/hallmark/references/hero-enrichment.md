@@ -23,9 +23,7 @@ Before picking an enrichment tier, decide whether the brief actually wants image
 | SaaS landing, manifesto, agency, studio, atmospheric, slow-and-editorial | **Kit-led.** Use Hallmark imagery kit (washes, transparent abstracts, ornaments) — see [`assets.md` § Placeholder strategy](assets.md) and [`imagery-kit.md`](imagery-kit.md). |
 | API, docs, changelog, CLI, library, dev-tool, SDK, package | **No imagery.** Typography-only. Code blocks if needed. |
 | editorial, essay, letter, foundry, type-specimen, broadside | **No imagery.** Display typography is the design. |
-| (all other / vague / unspecified) | **Default: typography-only.** When in doubt, no images. |
-
-Rules:
+| (all other / vague / unspecified) | **Default: typography-only.** When in doubt, no images. | Rules:
 
 - When the user has attached an image asset (or `.hallmark/preflight.json` cached one), use it. Never overwrite with a placeholder.
 - When the brief is genuinely ambiguous between a "needs photos" row and a "no imagery" row, ask one short question: *"Will you have product photos, or should I leave swappable placeholders?"*

@@ -6,7 +6,7 @@ argument-hint: '[resource] [action] [params]'
 
 # Google Workspace CLI Automation Engine (`/gws-automation-engine`)
 
-## ⚡ Overview & Tri-Mode Execution
+## Overview & Tri-Mode Execution
 
 This skill manages Google Workspace CLI (`gws`) subprocess operations on Windows OS across Google Drive, Google Sheets, Gmail, and Google Calendar. It eliminates Windows batch file resolution errors (`WinError 2`), prevents `cmd.exe` stringified JSON payload quote stripping, handles OAuth refresh token expirations (`invalid_grant`), and automatically intercepts GCP API enablement blocks (`HTTP 403`).
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🛡️ Core Rules & Windows Execution Safeguards
+## Core Rules & Windows Execution Safeguards
 
 1. **Direct Node Entry Point Routing (Zero `cmd.exe` / `shell=False`)**:
    - **NEVER** invoke `gws` through `cmd.exe` or set `shell=True` in Python subprocess calls on Windows OS.
@@ -90,7 +90,7 @@ Before running complex Google Workspace automations:
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

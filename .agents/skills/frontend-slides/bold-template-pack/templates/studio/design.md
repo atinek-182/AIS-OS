@@ -291,9 +291,7 @@ Studio targets `100vw × 100vh` — full viewport. Each `.slide` flexes to fill 
 | `{spacing.pad-y}` | 5vh | Vertical slide padding |
 | `{spacing.gap-lg}` | 3.5vh | Between major content sections |
 | `{spacing.gap-md}` | 2vh | Between related elements |
-| `{spacing.gap-sm}` | 1vh | Between tightly coupled elements |
-
-Statement and chapter slides increase bottom padding to 1.5× pad-y so the headline drops to the lower portion of the slide with deliberate empty space above. The cover slide uses zero outer padding because the image area fills the entire canvas.
+| `{spacing.gap-sm}` | 1vh | Between tightly coupled elements | Statement and chapter slides increase bottom padding to 1.5× pad-y so the headline drops to the lower portion of the slide with deliberate empty space above. The cover slide uses zero outer padding because the image area fills the entire canvas.
 
 ### Chrome Frame
 
@@ -329,9 +327,7 @@ The system is intentionally severe. If a layout requires elevation to read corre
 | Value | Use |
 |---|---|
 | 0 | Everything in the system |
-| 50% (circle) | Nav dots and slide-counter UI only (not part of the slide content) |
-
-Studio has **no rounded chrome**. Cards, panels, stat tiles, chart frames, image placeholders, compare panels — all strict rectangles with sharp corners. The only round shapes are the navigation dots and the underlying slide counter UI, which are deck-stage chrome, not slide content.
+| 50% (circle) | Nav dots and slide-counter UI only (not part of the slide content) | Studio has **no rounded chrome**. Cards, panels, stat tiles, chart frames, image placeholders, compare panels — all strict rectangles with sharp corners. The only round shapes are the navigation dots and the underlying slide counter UI, which are deck-stage chrome, not slide content.
 
 ### Border Weights
 

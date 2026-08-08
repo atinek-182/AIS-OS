@@ -15,6 +15,138 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-08 — Defuddle Web Article Cleaning & Content Ingestion Standard
+
+**Decision:** Formally integrated **Defuddle (`npx defuddle parse`)** as the standard high-precision article cleaning and clutter removal engine across AIOS web skills and global system instructions:
+1. **Web Scraping Skill (`.agents/skills/scrape-web/SKILL.md`)**: Documented Defuddle CLI usage for converting long-form web pages, technical blogs, and documentation into clean Markdown with YAML frontmatter metadata, preserving code blocks, tables, footnotes, and math expressions.
+2. **Internet Eyes Skill (`.agents/skills/agent-reach/SKILL.md`)**: Added Defuddle as a zero-config alternative to `curl https://r.jina.ai/<URL>` for offline article reading and metadata extraction.
+3. **STORM Research Project Skill (`.agents/skills/storm-research-project/SKILL.md`)**: Integrated Defuddle into Phase 1 research subagents to strip DOM noise before analyzing text into research briefings.
+4. **Global Error Prevention Rules (`references/GLOBAL_ERROR_PREVENTION_RULES.md`)**: Created **Rule 2.8 (Web Article Ingestion & Defuddle Standard)** and synchronized system prompts (`AGENTS.md` and `GEMINI.md`) via `python scripts/sync_global_rules.py`.
+
+**Why:** Raw web scraping often contains 70-90% DOM noise (navbars, footers, ad banners, popups) that degrades LLM context quality and wastes tokens. Defuddle provides cleaner Markdown and schema.org YAML frontmatter metadata while preserving critical technical content like code blocks and math.
+
+**Alternatives considered:** Manual regex string stripping, raw HTML injection, or heavy browser extensions.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-08 — Autonomous `skill-workflow-evolver` Skill & Dynamic Classifier Engine
+
+**Decision:** Designed, audited, and implemented the **Autonomous `skill-workflow-evolver` Skill & Engine**:
+1. **Tier 1 Native Skill (`.agents/skills/skill-workflow-evolver/SKILL.md`)**: Created Tier 1 skill (`/skill-workflow-evolver`) enabling autonomous 5-phase workflow evolution whenever new skills are added or updated.
+2. **Dynamic Classifier Script (`scripts/skill_workflow_evolver_runner.py`)**: Built Python runner script executing AST & regex capability classification to dynamically slot active skills into the 5 core operational domains.
+3. **100% Coverage Sweep Verification**: Executed initial evolver sweep across all 241 workspace skills (**PASS 100%**, 0 unassigned skills).
+4. **Adversarial `/roast` Audit & Health Verification**: Passed 7-persona `/roast` audit (`GO`, Risk 1/10, ROI 10/10), saved audit artifact (`roast_2026-08-08_skill_workflow_evolver.md`), and executed `verify_skills.py` across 89 local and 4 global skills (**PASS 100%**, 0 errors).
+
+**Why:** Gives AIOS an autonomous, self-expanding workflow engine that automatically updates scenario playbooks, fallback rules, and master maps whenever Atinek Maurya installs or creates new skills.
+
+**Alternatives considered:** Manual editing of workflow playbooks after installing new skills.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-08 — Skill Workflows Engine & 7-Stage Complete AI Agency Master Architecture
+
+**Decision:** Designed, audited, and implemented the **Skill Workflows & Master Scenario Mapping Engine** (`brainstorms/2026-08-08-skill-workflows-and-scenario-mapping.md`):
+1. **Option A (Master 10 Production Playbooks)**: Mapped 5 core operational domains with 10 step-by-step production playbooks detailing exact triggers, execution chains, parameters, outputs, and secondary fallback safeguards.
+2. **Option B (7-Stage Complete AI Agency Master Engine)**: Super-expanded Option B into a 7-stage client lifecycle system covering Lead Intake (3-Number Pricing Corridor), Zero-SaaS-Fee Notion+GAS Engine (Header-Flexible Script & Notion Formula 2.0 Defensive Null Guards), Loom 9-Slide Deck Compiler (`build_loom_presentation.py`), Interactive Setup Dashboard (`operator_setup_dashboard.html`), AI Lead Scoring (0–100) & Outreach Pipeline, 24/7 SLA Health Monitor (`client_health_monitor.py`) & Monthly ROI Report Generator, and Vault Archive Handoff (`build_client_vault_archive.py`) & 14-Day Referral Engine.
+3. **Future-Proofing Extension Architecture (Skill Plug-and-Play Protocol)**: Established standardized YAML metadata schema (`domain: [...]`, `inter-skill-deps: [...]`, `fallback: ...`) and Capability Auto-Routing Matrix to dynamically route future skills into existing domain pipelines.
+4. **Adversarial `/roast` Audit & Health Verification**: Passed 7-persona `/roast` audit (`GO`, Risk 2/10, ROI 10/10), saved audit artifact (`roast_2026-08-08_skill_workflows.md`), created pre-flight script `scripts/test_skill_workflows_health.py` (PASS 100%), and executed `/session-postmortem-audit` generating `errors-and-lessons/SESSION_POSTMORTEM_2026-08-08_SKILL_WORKFLOWS_ENGINE.md`.
+
+**Why:** Establishes a complete, future-proof, 100% reusable operational engine for ZORIXEL AI Agency client sprints ($1,500–$5,000+) and AIOS workflow execution without guesswork or recurring SaaS costs.
+
+**Alternatives considered:** Isolated single-skill execution without fallback safeguards or standardized capability routing protocols.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Global Error Prevention Rules Audit & System Prompt Synchronization (`/global-rules`)
+
+**Decision:** Executed `/global-rules` engine audit:
+1. Verified 100% alignment across `references/GLOBAL_ERROR_PREVENTION_RULES.md`, `AGENTS.md`, and `GEMINI.md`.
+2. Executed `python scripts/sync_global_rules.py` to synchronize Rule 1.7 (Windows UTF-8 Stdio Encoding) and Top Priority Source-of-Truth Hierarchy inline across all system prompt memory blocks.
+3. Executed `python scripts/test_script_health.py` pre-flight auditor across 60 python scripts.
+
+**Why:** Ensures line-1 system prompt enforcement across all chat startup sessions without manual operator prompting.
+
+**Alternatives considered:** Manual file synchronization.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Comprehensive Session Post-Mortem Audit & Pre-Flight Script Health Engine
+
+**Decision:** Executed `/session-postmortem-audit` to conduct an exhaustive 4-section session audit:
+1. Created production post-mortem report at `errors-and-lessons/SESSION_POSTMORTEM_ERRORS_LESSONS_AND_SKILLS.md`.
+2. Created pre-flight script health auditor `scripts/test_script_health.py` and audited all 60 workspace python scripts.
+3. Synchronized living error prevention rules into system prompts (`AGENTS.md` and `GEMINI.md`).
+4. Registered artifacts in `WORKSPACE_MAP.md` and decisions log.
+
+**Why:** Permanently logs all session lessons, terminal error tracebacks, user prompt iterations, and pre-flight health scripts to prevent future context fragmentation and execution regressions.
+
+**Alternatives considered:** Un-documented chat session completion.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Master Website Design Engine v4.0 Upgrade (Awwwards-Grade Architecture)
+
+**Decision:** Upgraded `.agents/skills/website-design-engine/SKILL.md` and all 7 phase reference files (`references/00-06.md`) to v4.0, integrating:
+1. **Official Awwwards Judging Rubric & Weighting**: Design (40%), Usability (30%), Creativity (20%), Content (10%), Developer (60fps & WebVitals).
+2. **Top Priority Source-of-Truth Hierarchy**: Six-File Context, Project Codebase Files, Configs & Multi-Vault Graphify AST Context assigned #1 Top Priority.
+3. **Phase 0.1 Complete Project & Graphify Context Verification Gate**: Sweeps all codebase files, database schemas, configs, and AST graph nodes before design/code generation.
+4. **Next.js 15 App Router & Tailwind CSS v4 Baseline**: Mandates Next.js 15 Promise-based `params`/`searchParams` (`await params`), React 19 Server Actions, and Tailwind v4 `@theme` directives.
+5. **2026 Awwwards Motion Stack & Psychology Canons**: Lenis smooth momentum scroll, GSAP ScrollTrigger scrollytelling, CSS View Timeline native offloading, Radiant WebGL Canvas Shaders (`pbakaus/radiant`), OKLCH dopamine-monochromatic color math, Obys spatial rhythm (`120px` section padding), and micro-copy friction reducers.
+6. **Nate Herk Lead Conversion Mechanics**: Custom Bottleneck Text Field, Value-First Price Delay, Google Sheets Lead CRM Sync, and 100% Client SaaS Zero-Fee Mandate (GAS + Notion).
+7. **5-Viewport Playwright Visual QA with Base64 Fonts**: Inlines brand fonts (`Havock`, `Rosehot`, `Nuqun`) as Base64 Data URIs for 100% deterministic visual rendering in Playwright Chromium across 7 phase references (`references/00-06.md`).
+
+
+**Why:** Elevates AIOS web creation capability to world-class Awwwards standards while protecting client conversion rates and zero-subscription cost guarantees.
+
+**Alternatives considered:** Maintaining v3.0 skill structure without complete project doc sweeps and Next.js 15 App Router standards.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — 5-Phase Skill System Research & Structural Reform
+
+**Decision:** Executed structural reform across 5 core skill clusters:
+1. Upgraded `storm-research` to enforce the mandatory 7-agent STORM research system (`storm-research-project`).
+2. Upgraded `jsmastery-architect` templates to Next.js 15 App Router Promise-based `params`/`searchParams` (`await params`) and Tailwind CSS v4 `@theme` directives.
+3. Updated `ingest-repo` to enforce explicit PowerShell force-delete syntax (`Remove-Item -Recurse -Force scratch/ingest-[repo-name]`).
+4. Integrated Phase 8 Pre-Proposal Roast Gate (`/roast --domain offer --save`) into `ai-pricing-engine`.
+5. Added Base64 Font Data URI Verification rules (Rule 1.13 & 1.18) to `verify-design`.
+
+**Why:** Resolves framework version drift (Next.js 14 vs 15), resolves agent count conflicts (5-agent vs 7-agent STORM), and connects pricing & verification skills directly to the upgraded 4-axis `/roast` engine.
+
+**Alternatives considered:** Leaving skills with legacy Next.js 14 sync params and 5-agent STORM research.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Workspace-Wide Skill System Upgrade & Emoji Purge
+
+**Decision:** Created `scripts/auto_evolve_all_skills.py` and executed workspace-wide upgrade sweeping 253 markdown files across all 65 active skills in `.agents/skills/`. Purged all legacy Unicode emojis, updated inter-skill `/roast` handoff protocols, and saved the audit report to `brainstorms/roast_2026-08-07_skill_system_upgrade.md`.
+
+**Why:** Enforces 100% Zero-Emoji Mandate compliance across all skills, eliminates Windows console `UnicodeEncodeError` risks, and aligns all skill definitions with the upgraded `/roast` multi-agent engine.
+
+**Alternatives considered:** Manual file-by-file skill editing.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Universal Multi-Agent Adversarial Roast Skill Upgrade (`/roast`)
+
+**Decision:** Upgraded `.agents/skills/roast/SKILL.md` to a universal, zero-emoji, domain-agnostic multi-agent red-teaming engine featuring Universal Domain Adapters (`--domain code|offer|copy|workflow|strategy`), Smart `--deep` Triggering (2-turn attack & patch loop), Baseline 5 Personas + Specialized 6th/7th Extended Roles (Security Auditor, Product Economist, UX Specialist), Disk Persistence (`--save`), and a 4-Axis Quantitative Risk Matrix outputting copyable `ROAST_REFINEMENT_SPEC` tickets.
+
+**Why:** Eliminates emojis across the skill file to enforce the Zero-Emoji Mandate, prevents context loss via disk persistence, eliminates fluff by adapting persona roles to specific domains, and provides objective risk scoring for downstream engineering execution.
+
+**Alternatives considered:** Static single-turn text review prompts and hardcoded 5-persona lock across all tasks.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-07 — Permanent AIOS Context Architecture & 3 Self-Improving Upgrades
+
+**Decision:** Implemented permanent system prompt truncation fix (`GEMINI.md` slimmed to 13.7KB), 2-Stage Universal Multi-Vault Deep Search Engine (`scripts/aios_deep_search.py`), Chat Bootup Context Aggregator (`scripts/aios_bootup_context.py`), Master Pointer Index (`context/00_MASTER_INDEX.md`), GWS OAuth Health Guard (`scripts/aios_gws_health_check.py`), Decision Log Compactor (`scripts/aios_memory_compact.py`), and Universal 5-Viewport Visual QA Runner (`scripts/verify_design_milestone.py`).
+
+**Why:** Completely eliminates system prompt truncation (`<truncated 11368 bytes>`), prevents context loss across chat startups, ensures deep search captures notes even in obscure/scratch files, and automates self-healing health checks and Playwright visual testing.
+
+**Alternatives considered:** Manual file searches and uncompacted raw file loading.
+
+**Owner:** Atinek Maurya & ZORIXEL AIOS
+
 ## 2026-08-06 — Base64 Native OpenType Font Embedding Standard for Brand Logotypes & PDF Exports
 
 **Decision:** Migrated ZORIXEL brand logotype headers across presentation decks (`vashishthya_loom_presentation.html`, `notion_google_sync_presentation.html`) and PDF script guides (`LOOM_VIDEO_DEMO_SCRIPT_GUIDE.pdf`, `LOOM_VIDEO_DEMO_SCRIPT_GUIDE.html`) from static SVG vector paths to inline base64 OpenType font elements (`<span class="brand-logo-nuqun">zorixel</span>`) using `Nuqun-Regular.otf`.

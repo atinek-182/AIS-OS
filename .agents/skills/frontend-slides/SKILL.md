@@ -12,7 +12,7 @@ argument-hint: '[optional parameters]'
 
 # Frontend Slides Generator
 
-## ⚡ Invocation & Tri-Mode Routing
+## Invocation & Tri-Mode Routing
 
 This skill supports **Tri-Mode Flexible Execution**:
 - **Slash Command**: Explicitly run `/frontend-slides [optional parameters]` in chat.
@@ -121,13 +121,13 @@ To generate decks specifically branded for **Zorixel**, override standard templa
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Presentation Decks**: Programs 16:9 responsive HTML decks using **/slide-component** assets.
 - **Visual QA**: Verifies deck layouts via **/verify-design**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 

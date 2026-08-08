@@ -504,9 +504,7 @@ Never a 2px or thicker rule. Never a colored rule outside pink and paper.
 | Value | Use |
 |---|---|
 | 0px | Cards, panels, table cells, QR tiles, runner / footer text |
-| 999px | None — pills here are explicitly rectangular |
-
-The system has **zero border-radius** on any structural element. Pills are 0-radius rectangles (despite the "pill" naming convention). The only round element is the small chart-callout circle marker (an SVG `<circle>` element marking an inflection point).
+| 999px | None — pills here are explicitly rectangular | The system has **zero border-radius** on any structural element. Pills are 0-radius rectangles (despite the "pill" naming convention). The only round element is the small chart-callout circle marker (an SVG `<circle>` element marking an inflection point).
 
 ### Border Weights
 

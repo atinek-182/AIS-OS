@@ -26,9 +26,7 @@ The same `design.md` format is emitted from two different entry points. They dif
 | **Source of tokens** | The build's in-memory token state | The studied DNA — exact from CSS in URL mode, estimated from bands in image mode |
 | **Refusal layer** | None — the user owns the build they iterated on | Tighter — see [`study.md`](study.md) § Emission-refusal layer. URL mode requires attestation; third-party URLs are refused |
 | **`## Provenance` block** | Omitted (the system is the user's own work) | Required — records source mode, URL or "image", date, attestation answer, confidence note |
-| **`## Notes` block** | Optional — covers any decisions worth remembering | Required — carries the diagnosis's "anti-patterns to NOT carry over" list |
-
-Both paths produce a `design.md` Hallmark can read on subsequent runs; the file format is uniform once written.
+| **`## Notes` block** | Optional — covers any decisions worth remembering | Required — carries the diagnosis's "anti-patterns to NOT carry over" list | Both paths produce a `design.md` Hallmark can read on subsequent runs; the file format is uniform once written.
 
 ## Scope
 

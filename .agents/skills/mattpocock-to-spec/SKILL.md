@@ -6,7 +6,7 @@ argument-hint: '[loose_idea_or_requirement]'
 
 # Matt Pocock Prompt-to-SPEC Engine (`/mattpocock-to-spec`)
 
-## ⚡ Overview & Tri-Mode Routing
+## Overview & Tri-Mode Routing
 
 Adapted from Matt Pocock's engineering skills, this tool converts loose, high-level requests into rigorous, unambiguous technical specs before any code is touched.
 
@@ -17,7 +17,7 @@ Invokable via:
 
 ---
 
-## 🛠️ The 4-Step Spec Compilation Process
+## The 4-Step Spec Compilation Process
 
 ### Step 1: Intent Extraction & Socratic Discovery (`/grill-me`)
 If the request is ambiguous, run `/grill-me` with 1-3 crisp clarifying questions. Do NOT make silent assumptions about core data models, security boundaries, or library choices.
@@ -41,14 +41,14 @@ Run `/roast` on the spec summary to obtain a **GO / RESHAPE** verdict before pro
 
 ---
 
-## 🔗 Inter-Skill Connections & Handoff Pipeline
+## Inter-Skill Connections & Handoff Pipeline
 - **Upstream Discovery**: Driven by **`/grill-me`** and **`/mattpocock-domain-modeling`**.
 - **Adversarial Audit**: Verified by **`/roast`**.
 - **Downstream Ticket Decomposition**: Hands off compiled `SPEC.md` to **`/mattpocock-to-tickets`** and **`/jsmastery-scope`**.
 
 ---
 
-## 🔄 Post-Execution Auto-Evolution & Adversarial `/roast` Gate
+## Post-Execution Auto-Evolution & Adversarial `/roast` Gate
 
 At the completion of every execution of this skill:
 
