@@ -165,4 +165,14 @@ This reference guide summarizes the core skills and plugins referenced in Nate H
 *   **Reference Vault Archival:** `brain-aios/wiki/research/skills-library/mattpocock-skills/`
 *   **Dynamic Triggering:** Automatically triggers when modeling TS types, managing multi-session epics, compiling specs, decomposing tickets, or explaining complex engineering concepts.
 
+---
+
+## 🛡️ 19. Resemble AI Detect (`resemble-detect`)
+*   **Purpose:** Enterprise deepfake detection, audio source tracing (ElevenLabs vs Resemble vs human), and media safety across audio, video, and images via direct Resemble AI REST API v2 calls.
+*   **Repository:** [resemble-ai/detect-skill](https://github.com/resemble-ai/detect-skill)
+*   **Active Local Skill:** `.agents/skills/resemble-detect/SKILL.md` (`/resemble-detect`)
+*   **Runner Script:** `scripts/resemble_detect_runner.py`
+*   **Dynamic Triggering:** Automatically triggers when checking media authenticity, verifying audio/video deepfakes, tracing synthetic voice platforms, or performing media safety audits.
+
+
 

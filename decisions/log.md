@@ -15,6 +15,19 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-08 — Resemble AI Detect Deepfake & Media Safety Skill Ingestion (`/resemble-detect`)
+
+**Decision:** Ingested `resemble-ai/detect-skill` repository into AIOS as Tier 1 native skill `.agents/skills/resemble-detect/SKILL.md` supported by Python CLI runner `scripts/resemble_detect_runner.py` and Rule 1.23.
+- **Direct REST API Execution**: Operates via direct HTTP REST calls to Resemble AI v2 API (`https://app.resemble.ai/api/v2`).
+- **Core Capabilities**: Audio, Image, and Video synthetic manipulation detection, Audio Source Tracing (ElevenLabs vs Resemble vs human), Media Intelligence, and natural-language Q&A (Detect Intelligence).
+- **Rule 1.23 Iron Law**: Mandated that AI agents NEVER declare media as real or fake without a completed Resemble Detect job returning label, score (0.0-1.0), and status `"completed"`.
+
+**Why:** Equips ZORIXEL AI Agency with enterprise-grade deepfake detection, content provenance checking, and audio source verification for client media audits without local GPU model overhead.
+
+**Alternatives considered:** Heavy local model installation or manual web dashboard checking.
+
+**Owner:** Atinek Maurya
+
 ## 2026-08-08 — Streamlined 1-Line Repository Ingestion Engine & Selective Vault Policy (`/ingest-repo`, `/ingest-skills`)
 
 **Decision:** Upgraded **`/ingest-repo`** and **`/ingest-skills`** engines to enforce a 2-stage streamlined ingestion protocol and a selective vault ingestion policy:

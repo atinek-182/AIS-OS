@@ -84,6 +84,7 @@ Match `references/voice.md`. Casual, energetic, conversational. Uses words like 
 | **Rule 1.20** | **Process Execution** | High | **Windows Subprocess CLI Binary Resolution**: On Windows OS, CLI binaries resolved via `subprocess.run` MUST explicitly check `shutil.which` or invoke Node directly (`shell=False`) to prevent `WinError 2` file not found exceptions. |
 | **Rule 1.21** | **Repository Ingestion** | Medium | **Scratch Isolation & Vault Bloat Prevention**: When ingesting external repositories, clone strictly inside `scratch/ingest-[repo-slug]/` and force-delete the scratch folder post-ingestion. NEVER dump full unpruned git repositories into `skills-library/` unless explicitly requested. |
 | **Rule 1.22** | **SDLC & Quality** | High | **Unified SDLC Master Engine Enforcement**: Always route software lifecycle tasks through the 6-Phase SDLC Master Engine (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`). Never skip verification tests or anti-rationalization checks before asserting code completeness. |
+| **Rule 1.23** | **Media Safety** | High | **Deepfake & Media Authenticity Guardrail**: NEVER declare media (audio, video, image) as real or fake without a completed Resemble Detect job returning label, score (0.0-1.0), and status `"completed"`. Do not guess or speculate on authenticity based on visual or auditory inspection alone. |
 
 ---
 

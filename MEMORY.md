@@ -30,6 +30,7 @@ This file logs cross-session learnings, operational preferences, and recurring c
 ## 🛠️ Global Environment & Integrations
 - **Credentials Config:** Google Workspace CLI (`gws`) uses dual profiles. Personal context matches Personal json credentials; Brand context matches Brand json credentials.
 - **Ecosystem Focus:** The coding execution environment is strictly **Antigravity**. Verification, tests, and mockups must never be run or checked in the Claude CLI.
+- **Ingested Media Safety & Deepfake Detection Skill:** Native skill `/resemble-detect` (`.agents/skills/resemble-detect/SKILL.md`) and CLI runner `scripts/resemble_detect_runner.py` integrated into AIOS for Resemble AI v2 deepfake detection, audio source tracing, and media safety. Enforces Rule 1.23 Iron Law (never declare media real or fake without a completed job).
 - **Marketplaces Configured:** All global coding plugins (`superpowers`, `skill-creator`, `frontend-design`, `context-mode`) are uninstalled from the Claude CLI database and configured under the Antigravity customization path. Persistent memory (`claude-mem`) is installed natively for the Antigravity CLI (`agy`) with its worker daemon running at port 37777 and MCP tools (`search`, `timeline`, `get_observations`) registered.
 - **Bun Runtime Path:** Standard Bun executable is located at `C:\Users\HP\.bun\bin\bun.exe` and must be used as the runtime for memory worker tasks.
 
