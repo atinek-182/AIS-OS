@@ -41,8 +41,11 @@ agent-reach doctor
   Or run Defuddle for clutter-free Markdown + YAML frontmatter metadata:
   `npx defuddle parse <URL> --markdown --frontmatter`
 
-- 📺 **YouTube Subtitles & Info**:
-  `yt-dlp --write-sub --sub-lang en,zh-Hans --skip-download <URL>`
+- 📺 **YouTube Subtitles, Search & Playlists**:
+  Fetch transcripts, search videos, or extract playlists via `/youtube-full`:
+  `python scripts/youtube_skills_runner.py transcript --url <URL>`
+  `python scripts/youtube_skills_runner.py search --query "<query>"`
+  `python scripts/youtube_skills_runner.py playlist --url <URL>`
 
 - 📺 **Bilibili Search & Details**:
   `bili search "<query>"` (Zero config, no login needed)

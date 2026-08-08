@@ -28,20 +28,20 @@ When invoked, execute the complete workflow documented in [d:\AI-OS\.agents\skil
 1. **Discovery Capture & Setup (`/grill-me`)**: Create capture file at `brainstorms/{date}-ingest-[repo-slug].md`.
 2. **Isolated Repository Clone (`scratch/ingest-[repo-slug]`)**: Clone shallow repo into isolated scratch folder.
 3. **Web Research & Security Audit (Vibesec & Secret Hygiene)**: Verify 100% open-source license and secret safety.
-4. **AIOS Workspace & Vault Comparative Analysis**: Compare against existing tools; flag older/inferior logic for deprecation and categorize features into Tier 1 (Active AIOS) and Tier 2 (Skills Library Vault).
+4. **AIOS Comparative Analysis & 1-Line Protocol**:
+   - **Stage 1 (Deep Analysis First, Zero Setup)**: Analyze raw repo/README, present capabilities, trade-offs, and AIOS fit to operator without making code edits or executing setup commands. Wait for operator approval ("YES" / "go ahead").
+   - **Selective Vault Ingestion Policy**: Do **NOT** automatically copy full, unpruned git repos into `skills-library/`. Extract only surgical runner scripts (`scripts/`) and Tier 1 native skills (`.agents/skills/`).
 5. **Adversarial Roast Council Gate (`/roast`)**: Run 5-persona evaluation (Contrarian, Expansionist, Logician, Researcher, Buyer) for a Judge verdict.
-6. **Multi-Artifact Adaptation & Dual-Trigger Skill Generation**:
+6. **Stage 2 Single-Command Automated Adaptation & Skill Generation**:
    - Build clean Python/Node runner scripts under `scripts/`.
-   - Build skills with mandatory dual slash + natural language dynamic triggering capabilities in `.agents/skills/` and global config.
-7. **Deep Cross-System Integration & Mandatory Workspace Documentation Sweep ("Add these skills usage everywhere needed")**:
+   - Build Tier 1 native skills with mandatory dual slash + natural language dynamic triggering in `.agents/skills/`.
+7. **Deep Cross-System Integration & Mandatory Workspace Documentation Sweep**:
    - Embed newly ingested features, dynamic rules, quality gates, and runner commands directly into all relevant existing workspace assets:
-     - **System Rules**: Update `.agents/AGENTS.md` with explicit Dynamic Invocation Rules for the ingested skill.
-     - **Developer Subagent**: Update `.agents/agents/developer.md` adding the new skill's engine and quality checks to the lead developer prompt.
-     - **Existing Skills**: Integrate the new skill into relevant workflow skills in `.agents/skills/` (e.g., `new-project`, `design-direction`, `verify-design`, `carousel-copy`, etc.).
-     - **SOPs & Playbooks**: Update matching operational playbooks in `brain-aios/wiki/sops/` and `second-brain-zorixel/`.
-     - **Script & Function Replacement**: Replace older, inferior functions or scripts with the newly ingested engine.
-   - Update ALL handbooks: `references/aios-user-manual.md`, `references/antigravity-skills-guide.md`, `GEMINI.md`, `MEMORY.md`, `WORKSPACE_MAP.md`, `decisions/log.md`, `brain-aios/wiki/log.md`, `brain-aios/wiki/index.md`, `second-brain-zorixel/wiki/index.md`.
-8. **Empirical Verification, Scratch Cleanup & Self-Improvement**: Force-delete scratch folder, run `python scripts/validate_workspace_map.py`, and run unit/runner tests.
+     - **System Rules**: Update `.agents/AGENTS.md` and `references/GLOBAL_ERROR_PREVENTION_RULES.md` (`sync_global_rules.py`).
+     - **Auto-Evolution**: Run `python scripts/skill_workflow_evolver_runner.py` to auto-classify and update master scenario playbooks.
+     - **Existing Skills**: Integrate the new skill into relevant workflow skills in `.agents/skills/` (e.g., `agent-reach`, `storm-research-project`, `carousel-copy`, etc.).
+   - Update workspace tracking: `WORKSPACE_MAP.md`, `decisions/log.md`, `GEMINI.md`, `MEMORY.md`.
+8. **Empirical Verification, Scratch Cleanup & Self-Improvement**: Force-delete `scratch/ingest-[repo-slug]/` folder immediately post-ingestion to prevent workspace bloat, run `python scripts/validate_workspace_map.py`, and run `python scripts/verify_skills.py`.
 
 ---
 

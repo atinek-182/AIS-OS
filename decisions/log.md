@@ -15,6 +15,47 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
+## 2026-08-08 — Streamlined 1-Line Repository Ingestion Engine & Selective Vault Policy (`/ingest-repo`, `/ingest-skills`)
+
+**Decision:** Upgraded **`/ingest-repo`** and **`/ingest-skills`** engines to enforce a 2-stage streamlined ingestion protocol and a selective vault ingestion policy:
+1. **Stage 1 (Deep Analysis First, Zero Setup)**: AI agents automatically fetch raw repository specs/README, analyze trade-offs, and present a structured Stage 1 report without executing setup commands or making code modifications until operator approval ("YES" / "go ahead").
+2. **Stage 2 (Single-Command Automated Execution)**: Upon approval, AI agents execute runner script creation (`scripts/`), Tier 1 native skill synthesis (`.agents/skills/`), inter-skill updates, global rules injection (`sync_global_rules.py`), skill auto-evolution sweep (`skill_workflow_evolver_runner.py`), and map validation in 1 unified sequence.
+3. **Selective Vault Ingestion Policy ("No Bloated Vault Dumping")**: Enforced **Rule 1.21**. AI agents do NOT automatically dump full, unpruned external git repos into `skills-library/`. Repos are cloned inside temporary `scratch/ingest-[repo-slug]/` folders and force-deleted immediately post-ingestion to keep workspace light and prevent token leaks.
+
+**Why:** Streamlines external skill ingestion into a zero-friction 1-line workflow while keeping workspace storage clean and avoiding unnecessary token bloat.
+
+**Alternatives considered:** Uncontrolled automatic full-repo dumping into `skills-library/` or multi-prompt manual setup steps.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-08 — Composio Tool Router Skill & 1000+ App SaaS Connector (`/composio`)
+
+**Decision:** Formally integrated **Composio (`/composio`)** and `scripts/composio_runner.py` into AIOS as a Tier 1 native skill:
+1. **Tier 1 Native Skill (`.agents/skills/composio/SKILL.md`)**: Created `/composio` covering natural language tool search across 1000+ apps (`composio search`), managed OAuth user account linking (`composio link`), tool execution (`composio execute`), and session verification (`composio whoami`).
+2. **Python Runner (`scripts/composio_runner.py`)**: Built Python runner script executing `composio` CLI commands cleanly on Windows OS with JSON stdout parsing and safe subprocess invocation.
+3. **Zero-Fee Core Stack Boundary Policy**: Established zero-fee boundary policy preserving native `gws` (Google Workspace), `gh` (GitHub), and Notion API tools as the primary stack while utilizing `/composio` for complex 3rd-party SaaS integrations (HubSpot, Linear, Salesforce, Stripe, Shopify, Zoom).
+4. **Global Error Prevention Rules (`references/GLOBAL_ERROR_PREVENTION_RULES.md`)**: Created **Rule 2.10 (Composio SaaS Integration & Zero-Fee Boundary Standard)** and synchronized system prompts (`AGENTS.md` and `GEMINI.md`) via `python scripts/sync_global_rules.py`.
+
+**Why:** Gives AIOS instant execution capabilities across 1000+ external SaaS platforms and multi-tenant managed OAuth web links without managing raw app credentials or violating client zero-subscription-fee rules.
+
+**Alternatives considered:** Custom per-app API wrappers for every 3rd party service.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-08 — YouTube Full Skill & Dual-Backend Media Engine (`/youtube-full`)
+
+**Decision:** Formally integrated **YouTube Full (`/youtube-full`)** and `scripts/youtube_skills_runner.py` into AIOS as a Tier 1 native skill:
+1. **Tier 1 Native Skill (`.agents/skills/youtube-full/SKILL.md`)**: Created `/youtube-full` covering transcript extraction, video search, channel browsing, and playlist dumps.
+2. **Dual-Backend Runner (`scripts/youtube_skills_runner.py`)**: Built Python runner implementing ordered fallback: local `yt-dlp` (Primary: 100% free, unlimited, zero token cost) -> TranscriptAPI.com (`TRANSCRIPT_API_KEY`, Secondary fallback for anti-bot / cloud proxy execution).
+3. **Skill Cross-Integration**: Updated [agent-reach/SKILL.md](file:///d:/AI-OS/.agents/skills/agent-reach/SKILL.md) and research workflows to trigger `/youtube-full`.
+4. **Global Error Prevention Rules (`references/GLOBAL_ERROR_PREVENTION_RULES.md`)**: Created **Rule 2.9 (YouTube Transcript & Media Extraction Standard)** and synchronized system prompts (`AGENTS.md` and `GEMINI.md`) via `python scripts/sync_global_rules.py`.
+
+**Why:** Ensures reliable YouTube data extraction (transcripts, search, playlists) with 0 third-party API dependencies by default while maintaining automatic fallback capabilities when running cloud subagents.
+
+**Alternatives considered:** Direct browser scraping, reliance on expensive third-party APIs as primary backend.
+
+**Owner:** Atinek Maurya
+
 ## 2026-08-08 — Defuddle Web Article Cleaning & Content Ingestion Standard
 
 **Decision:** Formally integrated **Defuddle (`npx defuddle parse`)** as the standard high-precision article cleaning and clutter removal engine across AIOS web skills and global system instructions:

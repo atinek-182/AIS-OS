@@ -52,6 +52,7 @@
 | **Rule 1.18** | **Font Rendering** | High | **Native Base64 Font Logotype Standard**: For brand logotypes and text badges, prefer inline base64 `@font-face` web font rendering (`Nuqun-Regular.otf`) over converted static SVG path vectors to guarantee 100% vector accuracy and eliminate path coordinate corruptions. |
 | **Rule 1.19** | **PDF Compilation** | Low | **Dark-Mode PDF Background Enforcement**: When compiling dark-mode PDFs using Playwright headless browser, ALWAYS set `print_background=True` in script options and assign dark background styles directly to `body` and root containers to eliminate white margin bleed. |
 | **Rule 1.20** | **Process Execution** | High | **Windows Subprocess CLI Binary Resolution**: On Windows OS, CLI binaries resolved via `subprocess.run` MUST explicitly check `shutil.which` or invoke Node directly (`shell=False`) to prevent `WinError 2` file not found exceptions. |
+| **Rule 1.21** | **Repository Ingestion** | Medium | **Scratch Isolation & Vault Bloat Prevention**: When ingesting external repositories, clone strictly inside `scratch/ingest-[repo-slug]/` and force-delete the scratch folder post-ingestion. NEVER dump full unpruned git repositories into `skills-library/` unless explicitly requested. |
 
 ---
 
@@ -67,6 +68,8 @@ To eliminate delivery iterations and ensure AIOS succeeds on the FIRST attempt:
 6. **WhatsApp Formula Standard**: All auto-generated WhatsApp click links MUST use pre-encoded `%20` / `%0A` formatting, dynamic regex phone sanitization `replaceAll(prop("Phone"), "[^0-9]", "")`, and defensive `if(empty(...))` wrappers for name, status, and financial balances.
 7. **Google Workspace Provisioning Standard**: Run all `gws` CLI operations via direct Node execution (`shell=False`) in Python scripts to guarantee 100% deterministic sheet creation, tab formatting, and permission sharing.
 8. **Web Article Ingestion & Defuddle Standard**: When ingesting web articles, technical blog posts, or documentation into AIOS research vaults or LLM context, use `npx defuddle parse <source> --markdown --frontmatter` to strip DOM clutter, preserve code blocks and math formulas, and prepend structured YAML metadata.
+9. **YouTube Transcript & Media Extraction Standard**: Always default to local `yt-dlp` (via `python scripts/youtube_skills_runner.py transcript --url <URL>`) for 100% free, zero-token transcript extraction. Cascade automatically to TranscriptAPI (`TRANSCRIPT_API_KEY`) as a secondary fallback if cloud IP blocks or anti-bot restrictions occur.
+10. **Composio SaaS Integration & Zero-Fee Boundary Standard**: Default to native zero-fee tools (`gws`, `gh`, Notion MCP) for Google Workspace, GitHub, and Notion. Use `/composio` (`python scripts/composio_runner.py`) when integrating 3rd-party SaaS platforms (HubSpot, Linear, Salesforce, Stripe, Shopify, Zoom) or managed multi-tenant user OAuth links.
 
 ---
 

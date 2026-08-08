@@ -46,13 +46,14 @@ This skill supports **Tri-Mode Flexible Execution**:
    - Check secret hygiene: Ensure no hardcoded tokens/keys are committed.
    - Audit network calls & execution safety: Check for unverified remote code execution or internal SSRF risks.
 
-### Phase 4: AIOS Workspace & Vault Comparison Analysis
-1. Search AIOS directories (`.agents/skills/`, `scripts/`, `brain-aios/`, `second-brain-zorixel/`, `premium-frontend-experience-system/`) for existing features or overlapping tools.
-2. Perform comparative analysis:
-   - **Feature Superiority & Legacy Deprecation**: Is the new repo's engine cleaner, faster, or more resilient than an existing AIOS implementation? If superior, flag the older function/script for replacement.
-   - **Two-Tier Categorization**:
-     - **Tier 1 (Immediate AIOS Adaptation)**: High-leverage features for active goals -> build active scripts (`scripts/`), slash command skills (`.agents/skills/`), and workspace rules immediately.
-     - **Tier 2 (Future Vault Reference)**: Specs, manuals, and future-potential guides -> store in `brain-aios/wiki/research/skills-library/{repo-slug}/` for automatic retrieval.
+### Phase 4: AIOS Workspace Comparison & 1-Line 2-Stage Protocol
+1. **Stage 1 (Deep Analysis First, Zero Setup)**:
+   - Search AIOS directories (`.agents/skills/`, `scripts/`, `brain-aios/`) for existing features or overlapping tools.
+   - Perform comparative analysis (Capabilities, Trade-Offs, AIOS Fit, Cost/API limits).
+   - Present Stage 1 Analysis Report to operator and wait for approval ("YES" / "go ahead") without executing setup or modifying code files.
+2. **Selective Vault Ingestion Policy ("No Bloated Vault Dumping")**:
+   - Do **NOT** automatically copy full, unpruned external git repositories into `brain-aios/wiki/research/skills-library/` unless explicitly ordered by the operator.
+   - Extract only surgical runner scripts (`scripts/`) and Tier 1 native skill definitions (`.agents/skills/`).
 
 ### Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation
 1. **Repository AST Extraction**: Run `graphify update .` inside `scratch/ingest-{repo-slug}/` to extract tree-sitter AST nodes, confidence-tagged relationships (`[EXTRACTED]` vs `[INFERRED]`), and Leiden community clusters.
@@ -68,7 +69,7 @@ This skill supports **Tri-Mode Flexible Execution**:
 2. **Synthesize Judge Verdict (GO / RESHAPE / KILL)**:
    - Address and resolve **EVERY SINGLE OBJECTION** raised by the Contrarian and council before producing code.
 
-### Phase 6: Multi-Artifact Adaptation & Skill Quality Discipline (`writing-great-skills`)
+### Phase 6: Stage 2 Single-Command Automated Adaptation & Skill Quality Discipline
 1. **Runner Scripts**: Create or adapt clean Python/Node scripts in `scripts/` (e.g., `scripts/{repo-slug}_runner.py`).
 2. **Dual-Trigger Skills & Quality Discipline**: Create custom slash command skills in `.agents/skills/{skill-slug}/SKILL.md`.
    - **No-Op Test**: Ensure every line changes model behavior versus default behavior; avoid redundant restatements.
@@ -76,7 +77,7 @@ This skill supports **Tri-Mode Flexible Execution**:
    - **Mandatory Dual-Triggering**: Ensure YAML frontmatter `description` includes natural language trigger phrases.
    - **Explicit Purpose & Use Cases**: Clearly state when, why, and how to use the skill.
 3. **Platform Adaptation**: Dynamically adapt all Claude/Cursor platform-specific references to native Antigravity standards.
-4. **Reference Library**: Copy full manuals and guides to `brain-aios/wiki/research/skills-library/{repo-slug}/`.
+4. **Selective Reference Storage**: Store markdown SOPs or reference specs in `.agents/skills/{skill-slug}/` directly; do NOT dump full unpruned git repos into `skills-library/`.
 
 ### Phase 7: Deep Cross-System Integration & Mandatory Workspace Documentation Update
 1. **Mandatory Cross-System Skill Integration**:
