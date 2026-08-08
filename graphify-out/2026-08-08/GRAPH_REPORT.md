@@ -1,16 +1,16 @@
-# Graph Report - AI-OS  (2026-08-07)
+# Graph Report - AI-OS  (2026-08-08)
 
 ## Corpus Check
-- 543 files · ~2,035,323 words
+- 661 files · ~2,152,554 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5223 nodes · 4978 edges · 477 communities (439 shown, 38 thin omitted)
+- 6647 nodes · 6381 edges · 570 communities (532 shown, 38 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `12d6288b`
+- Built from commit: `a0eb6e78`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -50,7 +50,7 @@
 - Q&A Log
 - macrostructures.md
 - Deep Search Context Engine: 5-Persona `/roast` Council Audit
-- ZORIXEL AIOS Global Error Prevention & Execution Rules Registry
+- Agent skills
 - Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)
 - OS Audit & Permanent New-Chat Knowledge System: Discovery & Brainstorm Notes
 - 📱 LOOM VIDEO CHEAT SHEET (MOBILE VIEW)
@@ -138,20 +138,103 @@
 - 👥 Persona Council Audit: Doc-First & Fullstack Inquiry Features
 - Q&A Log
 - Custom theme — protocol
-- ft2-inline-rule-single-line.md
-- h6-photographic-fold.md
+- Resemble Detect — Deepfake Detection & Media Safety
+- Issue tracker: GitHub
+- SESSION_POSTMORTEM_2026-08-08_DEFUDDLE_YOUTUBE_COMPOSIO_SKILLS.md
+- Triage
+- Worked example: Agent Teams for competing-hypothesis debugging
+- Code Review and Quality
+- Security and Hardening
+- Test-Driven Development
+- teach/SKILL.md
+- 🚀 Option B: 7-Stage Complete AI Agency Master Engine
+- Process
 - Recipes
+- SECTION 2: USER INSTRUCTION-TO-DELIVERY & TWEAK ITERATION AUDIT
+- Git Workflow and Versioning
+- Browser Testing with DevTools
+- Shipping and Launch
+- API and Interface Design
+- CI/CD and Automation
+- Codebase Design
+- Deprecation and Migration
 - Study — extracting design DNA from a screenshot or URL
 - The Three Ms of AI™ — Mindset, Method, Machine
 - Masterclass Guide: How Senior AI Engineers Build With AI in 2026
+- Frontend UI Engineering
+- Context Engineering
+- Incremental Implementation
+- Performance Optimization
 - Workspace Rules
 - excalidraw-diagram/SKILL.md
+- Code Simplification
+- Debugging and Error Recovery
+- Documentation and ADRs
+- During the session
+- HTML Report Format
+- template.sh
+- Performance Checklist
+- ReOrder: Keep Your Regulars Ordering Direct
+- Interview Me
+- Planning and Task Breakdown
+- Comprehensive Session Post-Mortem & AIOS Auto-Evolution Audit Report
+- Accessibility Checklist
+- Security Checklist
+- Web Performance Auditor
+- Ask Matt
+- Doubt-Driven Development
+- Using Agent Skills
+- Diagnosing Bugs
+- Idea Refine
+- Process
+- 7-Persona Adversarial Council Audit
+- run_composio_cmd
+- 7-Persona Adversarial Council Audit
+- Testing Patterns Reference (JavaScript/TypeScript)
+- Review Scope
+- Spec-Driven Development
+- Test-Driven Development
+- Process
+- writing-for-agents/SKILL.md
+- 5 Multi-Workflow Integration Matrices
+- youtube_skills_runner.py
+- Review Framework
+- Refinement & Evaluation Criteria
+- 📑 Phase-by-Phase Execution Protocol
+- Source-Driven Development
+- wayfinder/SKILL.md
+- Approach
+- The Standing Checklist
 - Hero enrichment — when, what, and how much
 - Theme — Carnival
+- Observability Checklist
+- resemble_detect_runner.py
+- Capabilities & Usage Guide
+- YouTube Full Skill (`/youtube-full`)
+- Ideation Frameworks Reference
+- Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`)
+- to-spec/SKILL.md
+- SDLC & AIOS Unified Workflows, Skills, Scripts & Automations Integration
+- 👥 5-Persona Adversarial Audit Breakdown
+- aios_master_runner.py
+- Process
+- <Questionnaire title>
+- Process
+- Skill Workflow Evolver: Brainstorm / Discovery Notes
 - Style Presets Reference
 - Interaction and states
 - Antigravity Skills & Plugins Guide
+- Domain Docs
+- Issue tracker: Local Markdown
+- test_ingested_skills_health.py
+- Discovery Capture: Ingesting `resemble-ai/detect-skill`
+- skill_workflow_evolver_runner.py
+- hitl-loop.template.sh
+- GLOSSARY.md Format
+- agent_skills_runner.py
+- idea-refine.sh
 - Major (looks AI-generated)
+- agents/triage-labels.md
 - Full Video Transcript: How Senior Engineers Actually Build With AI in 2026
 - Slop test — 58 gates + pre-emit self-critique
 - Phase-by-Phase Execution Details
@@ -430,14 +513,14 @@
 ## God Nodes (most connected - your core abstractions)
 1. `Bold Template Gallery` - 35 edges
 2. `DeckStage` - 29 edges
-3. `Workspace Rules` - 27 edges
+3. `Workspace Rules` - 28 edges
 4. `🛠️ Part 1: Custom Workspace Skills` - 25 edges
 5. `Antigravity Skills & Plugins Guide` - 21 edges
 6. `Major (looks AI-generated)` - 20 edges
-7. `Slop test — 58 gates + pre-emit self-critique` - 19 edges
-8. `Full Video Transcript: How Senior Engineers Actually Build With AI in 2026` - 19 edges
-9. `Theme — Hum` - 18 edges
-10. `Critical (ships as slop)` - 17 edges
+7. `Code Review and Quality` - 19 edges
+8. `Slop test — 58 gates + pre-emit self-critique` - 19 edges
+9. `Full Video Transcript: How Senior Engineers Actually Build With AI in 2026` - 19 edges
+10. `Theme — Hum` - 18 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `mirror_site()` --calls--> `html_to_jsx()`  [INFERRED]
@@ -446,7 +529,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (477 total, 38 thin omitted)
+## Communities (570 total, 38 thin omitted)
 
 ### Community 0 - "hallmark/SKILL.md"
 Cohesion: 0.19
@@ -502,7 +585,7 @@ Nodes (8): 1. Zero-Upfront Flagship Pilot Agreement (Phase 1), 2. Quantified ROI
 
 ### Community 13 - "component-cookbook.md"
 Cohesion: 0.02
-Nodes (46): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F4 · Step sequence (+38 more)
+Nodes (48): C1 · Outlined chip, C2 · Inline form-as-CTA, C3 · Typographic link, C4 · Sticky bottom bar, F1 · Bento grid, F2 · Sticky-scroll stack, F3 · Tabular spec sheet, F4 · Step sequence (+40 more)
 
 ### Community 14 - "Vashishthya Research, IJORAR & MJAP: Master AI Strategy & Pitch Discovery"
 Cohesion: 0.33
@@ -584,9 +667,9 @@ Nodes (21): 01 · Bento Grid, 02 · Long Document, 03 · Marquee Hero, 04 · Sta
 Cohesion: 0.22
 Nodes (8): Candidate Architecture Evaluation, Candidate Option 1: Multi-Hub Graphify AST + Ripgrep Hybrid Engine (`scripts/aios_deep_search.py`), Candidate Option 2: Local SQLite FTS5 Database Indexer (`.planning/aios_context.db`), Candidate Option 3: Two-Pass Vector Embeddings / Heavy LLM Summarizer, Deep Search Context Engine: 5-Persona `/roast` Council Audit, System Objective, 👥 The 5-Persona `/roast` Council Audit, ⚖️ THE VERDICT: GO FOR OPTION 1 (Graphify + Ripgrep Real-Time Hybrid Engine)
 
-### Community 36 - "ZORIXEL AIOS Global Error Prevention & Execution Rules Registry"
-Cohesion: 0.25
-Nodes (7): ⚡ Core Operational Guidelines, Error Categorization Matrix & Execution Safeguards, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES, 🛡️ SECTION 3: UNIVERSAL NON-NEGOTIABLE BEHAVIORAL RULES, ZORIXEL AIOS Global Error Prevention & Execution Rules Registry, ZORIXEL AIOS Workspace Rules (`AGENTS.md`)
+### Community 36 - "Agent skills"
+Cohesion: 0.15
+Nodes (12): ⚡ 5 Multi-Workflow Integration Matrices, Agent skills, ⚡ Core Operational Guidelines, Domain docs, Error Categorization Matrix & Execution Safeguards, Issue tracker, ⚡ SECTION 1: PERMANENT TERMINAL, API, SHELL & OS ERROR PREVENTION RULES, 🎯 SECTION 2: USER INSTRUCTION-TO-DELIVERY FIRST-TRY POLICIES (+4 more)
 
 ### Community 37 - "Interactive Operator Guide Generator (`/interactive-operator-guide-generator`)"
 Cohesion: 0.25
@@ -892,9 +975,85 @@ Nodes (5): Executive Summary & Key Decisions, Q1 — Next.js 15 App Router & Tai
 Cohesion: 0.07
 Nodes (29): § A · The one follow-up question, B.1 · Anchor accent first, B.2 · Paper, B.3 · Ink, B.4 · Supporting greys, B.5 · Focus, B.6 · Accent-ink (overlay text colour on accent), B.7 · Verification (+21 more)
 
+### Community 148 - "Resemble Detect — Deepfake Detection & Media Safety"
+Cohesion: 0.05
+Nodes (38): Compatible Agents, Direct API Usage, Example Prompts, How It Works, Install, License, Links, Optional: Pair With the Resemble MCP Server for Docs (+30 more)
+
+### Community 149 - "Issue tracker: GitHub"
+Cohesion: 0.06
+Nodes (30): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary, Conventions, Issue tracker: GitHub, Pull requests as a triage surface (+22 more)
+
+### Community 151 - "SESSION_POSTMORTEM_2026-08-08_DEFUDDLE_YOUTUBE_COMPOSIO_SKILLS.md"
+Cohesion: 0.06
+Nodes (32): 1. Pre-Flight Script Execution, 2. Global Rules Synchronization, 3. Skill Workflow Auto-Evolution Sweep, 4. Workspace Map Alignment, 5-Persona Council Review, Connect an external app via managed OAuth link, Convert raw HTML file or stdin to clean Markdown with JSON metadata, Convert URL directly to clean Markdown with YAML frontmatter metadata (+24 more)
+
+### Community 152 - "Triage"
+Cohesion: 0.06
+Nodes (29): Bad agent brief, Behavioral, not procedural, Complete acceptance criteria, Durability over precision, Examples, Explicit scope boundaries, Good agent brief (bug), Good agent brief (enhancement) (+21 more)
+
+### Community 153 - "Worked example: Agent Teams for competing-hypothesis debugging"
+Cohesion: 0.06
+Nodes (31): 1. Direct invocation (no orchestration), 2. Single-persona slash command, 3. Parallel fan-out with merge, 4. Sequential pipeline as user-driven slash commands, 5. Research isolation (context preservation), A. Router persona ("meta-orchestrator"), Anti-pattern in this scenario, Anti-patterns (+23 more)
+
+### Community 154 - "Code Review and Quality"
+Cohesion: 0.07
+Nodes (29): 1. Correctness, 2. Readability & Simplicity, 3. Architecture, 4. Security, 5. Performance, Change Descriptions, Change Sizing, Code Review and Quality (+21 more)
+
+### Community 155 - "Security and Hardening"
+Cohesion: 0.07
+Nodes (29): Always Do (No Exceptions), Ask First (Requires Human Approval), Broken Access Control, Broken Authentication, Common Rationalizations, Cross-Site Scripting (XSS), File Upload Safety, Injection (SQL, NoSQL, OS Command) (+21 more)
+
+### Community 156 - "Test-Driven Development"
+Cohesion: 0.07
+Nodes (29): Browser Testing with DevTools, Common Rationalizations, DAMP Over DRY in Tests, Decision Guide, Discover the Stack First, Name Tests Descriptively, One Assertion Per Concept, Overview (+21 more)
+
+### Community 157 - "teach/SKILL.md"
+Cohesion: 0.07
+Nodes (25): Learning Record Format, Numbering, Optional sections, Supersession, Template, What does _not_ qualify, When to write a learning record, MISSION.md Format (+17 more)
+
+### Community 158 - "🚀 Option B: 7-Stage Complete AI Agency Master Engine"
+Cohesion: 0.07
+Nodes (28): 1. Skill Metadata Registration Standard, 2. Capability Auto-Routing Matrix, A. Reusable Google Workspace CLI Provisioner (`scripts/gws_client_provisioner.py`), B. Reusable Google Apps Script Live Sync Engine (Header-Flexible), C. Reusable Notion Formula 2.0 Defensive Null Guards & WhatsApp Click Link, 🏛️ Domain 1: AI Agency & Business Automation Pipeline, 💻 Domain 2: Fullstack JS / Next.js Engineering Architecture Pipeline, 🎨 Domain 3: Zero-Slop Visual UI/UX & Web Design Engine Pipeline (+20 more)
+
+### Community 159 - "Process"
+Cohesion: 0.07
+Nodes (25): 1. State the question, 2. Isolate the logic in a portable module, 3. Build the shareable HTML file, 4. Hand it over, 5. Capture the answer and the prototype, Anti-patterns, Logic Prototype, Process (+17 more)
+
 ### Community 160 - "Recipes"
 Cohesion: 0.07
 Nodes (27): Accessibility ground truth, Button press, Command palette navigation, Copy-to-clipboard, Drag handle, Dropdown / menu, Form validation, Hard rules for default-on motion (+19 more)
+
+### Community 161 - "SECTION 2: USER INSTRUCTION-TO-DELIVERY & TWEAK ITERATION AUDIT"
+Cohesion: 0.07
+Nodes (27): 1. 7-Persona Council Verdict & Score Summary, 2. Runnable Pre-Flight Python Health Script (`scripts/test_skill_workflows_health.py`), 3. System Prompt Rule Synchronizations, 4. Registered Workspace Assets & Decisions Log, Error 1.1 — Subprocess CLI Binary Resolution (`WinError 2`) on Windows OS, Error 1.2 — Windows Standard Output Codepage `cp1252` Encoding Exception, Error 1.3 — Deep Search CLI Exact Match Null Return on Multi-Word Phrases, Error 1.4 — Notion Formula 2.0 Null/Empty Property Runtime Concatenation Crash (+19 more)
+
+### Community 162 - "Git Workflow and Versioning"
+Cohesion: 0.07
+Nodes (26): 1. Commit Early, Commit Often, 2. Atomic Commits, 3. Descriptive Messages, 4. Keep Concerns Separate, 5. Size Your Changes, Branch Naming, Branching Strategy, Change Summaries (+18 more)
+
+### Community 163 - "Browser Testing with DevTools"
+Cohesion: 0.08
+Nodes (24): Accessibility Verification with DevTools, Available Tools, Browser Testing with DevTools, Clean Console Standard, Common Rationalizations, Console Analysis Patterns, Content Boundary Markers, For Network Issues (+16 more)
+
+### Community 164 - "Shipping and Launch"
+Cohesion: 0.08
+Nodes (24): Accessibility, Code Quality, Common Rationalizations, Documentation, Error Reporting, Feature Flag Strategy, Infrastructure, Monitoring and Observability (+16 more)
+
+### Community 165 - "API and Interface Design"
+Cohesion: 0.08
+Nodes (23): 1. Contract First, 2. Consistent Error Semantics, 3. Validate at Boundaries, 4. Prefer Addition Over Modification, 5. Predictable Naming, API and Interface Design, Common Rationalizations, Core Principles (+15 more)
+
+### Community 166 - "CI/CD and Automation"
+Cohesion: 0.08
+Nodes (23): Automation Beyond CI, Basic CI Pipeline, Build Cop Role, CI/CD and Automation, CI Optimization, Common Rationalizations, Dependabot / Renovate, Deployment Strategies (+15 more)
+
+### Community 167 - "Codebase Design"
+Cohesion: 0.09
+Nodes (21): 1. In-process, 2. Local-substitutable, 3. Remote but owned (Ports & Adapters), 4. True external (Mock), Deepening, Dependency categories, Seam discipline, Testing strategy: replace, don't layer (+13 more)
+
+### Community 168 - "Deprecation and Migration"
+Cohesion: 0.08
+Nodes (23): Adapter Pattern, Code Is a Liability, Common Rationalizations, Compulsory vs Advisory Deprecation, Core Principles, Database Schema Migrations (Expand/Contract), Deprecation and Migration, Deprecation Planning Starts at Design Time (+15 more)
 
 ### Community 169 - "Study — extracting design DNA from a screenshot or URL"
 Cohesion: 0.08
@@ -908,13 +1067,181 @@ Nodes (25): 1. Find the Constraint, 1. The Default Shift, 1. The Lego Principle,
 Cohesion: 0.08
 Nodes (25): 1. `AGENTS.md` / `CLAUDE.md` (System Entry Instructions), 1. Lite Mode vs. Pro Mode Project Selection, 2. Context Window & Token Optimization, 2. `project-overview.md` (Product Intent & Scope), 3. `architecture.md` (Stack & Invariants), 3. State Drift Sync Check, 4. `code-standards.md` (TypeScript & API Conventions), 5. `ui-context.md` (Design Tokens & Component Sourcing) (+17 more)
 
+### Community 172 - "Frontend UI Engineering"
+Cohesion: 0.08
+Nodes (23): Accessibility (WCAG 2.1 AA), ARIA Labels, Avoid the AI Aesthetic, Color, Common Rationalizations, Component Architecture, Component Patterns, Design System Adherence (+15 more)
+
+### Community 173 - "Context Engineering"
+Cohesion: 0.09
+Nodes (22): Anti-Patterns, Common Rationalizations, Confusion Management, Context Engineering, Context Packing Strategies, Level 1: Rules Files, Level 2: Specs and Architecture, Level 3: Relevant Source Files (+14 more)
+
+### Community 174 - "Incremental Implementation"
+Cohesion: 0.09
+Nodes (22): Common Rationalizations, Contract-First Slicing, Implementation Rules, Increment Checklist, Incremental Implementation, Overview, Red Flags, Risk-First Slicing (+14 more)
+
+### Community 175 - "Performance Optimization"
+Cohesion: 0.09
+Nodes (22): Common Rationalizations, Core Web Vitals Targets, Large Bundle Size, Log every attempt, including the reverted ones, Missing Caching (Backend), Missing Image Optimization (Frontend), N+1 Queries (Backend), Overview (+14 more)
+
 ### Community 176 - "Workspace Rules"
 Cohesion: 0.07
-Nodes (27): Adapting Skills to Antigravity & Gemini, Automatic Skill Evolution, Vault Promotion, & Continuous Upgrade Mandate, Automatic Skills-Library Search & Repository Ingestion Rules, Environment, Media, & Browser Bridge Integration Rules, Exhaustive Discovery & Non-Exhaustive Examples Rule, Figma Compiler & SVG Geometry Safeguards, GStack Virtual Engineering Team Dynamic Invocation Rules, Hallmark Anti-AI-Slop Dynamic Invocation Rules (+19 more)
+Nodes (28): Adapting Skills to Antigravity & Gemini, Automatic Skill Evolution, Vault Promotion, & Continuous Upgrade Mandate, Automatic Skills-Library Search & Repository Ingestion Rules, Environment, Media, & Browser Bridge Integration Rules, Exhaustive Discovery & Non-Exhaustive Examples Rule, Figma Compiler & SVG Geometry Safeguards, GStack Virtual Engineering Team Dynamic Invocation Rules, Hallmark Anti-AI-Slop Dynamic Invocation Rules (+20 more)
 
 ### Community 177 - "excalidraw-diagram/SKILL.md"
 Cohesion: 0.08
 Nodes (25): Arrow fields (add to base), Arrow with label, Base fields (all types), Color System, Common Patterns, Critical Rule: Text Contrast, Design Principles, Element Schema (+17 more)
+
+### Community 178 - "Code Simplification"
+Cohesion: 0.09
+Nodes (21): 1. Preserve Behavior Exactly, 2. Follow Project Conventions, 3. Prefer Clarity Over Cleverness, 4. Maintain Balance, 5. Scope to What Changed, Code Simplification, Common Rationalizations, Language-Specific Guidance (+13 more)
+
+### Community 179 - "Debugging and Error Recovery"
+Cohesion: 0.09
+Nodes (21): Build Failure Triage, Common Rationalizations, Debugging and Error Recovery, Error-Specific Patterns, Instrumentation Guidelines, Overview, Red Flags, Runtime Error Triage (+13 more)
+
+### Community 180 - "Documentation and ADRs"
+Cohesion: 0.09
+Nodes (21): ADR Lifecycle, ADR Template, API Documentation, Architecture Decision Records (ADRs), Changelog Maintenance, Common Rationalizations, Document Known Gotchas, Documentation and ADRs (+13 more)
+
+### Community 181 - "During the session"
+Cohesion: 0.09
+Nodes (19): ADR Format, Numbering, Optional sections, Template, What qualifies, When to offer an ADR, CONTEXT.md Format, Rules (+11 more)
+
+### Community 182 - "HTML Report Format"
+Cohesion: 0.10
+Nodes (18): Call-graph collapse, Candidate card, Cross-section (good for layered shallowness), Diagram patterns, Hand-built boxes-and-arrows (when Mermaid's layout fights you), Header, HTML Report Format, Mass diagram (good for "interface as wide as implementation") (+10 more)
+
+### Community 183 - "template.sh"
+Cohesion: 0.22
+Nodes (16): ask(), ask_secret(), banner(), _clear(), finish(), note(), open_url(), pause() (+8 more)
+
+### Community 184 - "Performance Checklist"
+Cohesion: 0.11
+Nodes (18): API, Backend Checklist, Common Anti-Patterns, Core Web Vitals Targets, CSS, Database, Fonts, Frontend Checklist (+10 more)
+
+### Community 185 - "ReOrder: Keep Your Regulars Ordering Direct"
+Cohesion: 0.11
+Nodes (17): Example 1: Vague Early-Stage Concept (Full 3-Phase Session), Example 2: Feature Idea Within an Existing Product (Codebase-Aware), Example 3: Process/Workflow Idea (Non-Product), Ideation Session Examples, Key Assumptions to Validate, MVP Scope, Not Doing (and Why), Open Questions (+9 more)
+
+### Community 186 - "Interview Me"
+Cohesion: 0.11
+Nodes (17): Common Rationalizations, Example, Interaction with Other Skills, Interview Me, Loading Constraints, Output, Overview, Red Flags (+9 more)
+
+### Community 187 - "Planning and Task Breakdown"
+Cohesion: 0.11
+Nodes (17): Common Rationalizations, Output Files, Overview, Parallelization Opportunities, Plan Document Template, Planning and Task Breakdown, Red Flags, See Also (+9 more)
+
+### Community 188 - "Comprehensive Session Post-Mortem & AIOS Auto-Evolution Audit Report"
+Cohesion: 0.11
+Nodes (17): 1.1 Error Case #1: CLI Argument Mismatch in `graphify_runner.py` Sub-Call, 1.2 Error Case #2: Unregistered Workspace Skills in `validate_workspace_map.py`, 2.1 Iteration Trace #1: Repository Ingestion Request, 2.2 Iteration Trace #2: Socratic Discovery (`/grill-me`), 2.3 Iteration Trace #3: Zero-Bloat, Deep Connectivity & Silent Auto-Upgrade Request, 3.1 Pattern 1: The Unified 6-Phase SDLC Master Engine, 3.2 Pattern 2: Silent Auto-Upgrade & Anti-Bloat Engine, 4.1 5-Persona Roast Council Verdict (+9 more)
+
+### Community 189 - "Accessibility Checklist"
+Cohesion: 0.12
+Nodes (16): Accessibility Checklist, Accessible Lists, ARIA Roles, Buttons vs. Links, Common Anti-Patterns, Common HTML Patterns, Content, Essential Checks (+8 more)
+
+### Community 190 - "Security Checklist"
+Cohesion: 0.12
+Nodes (16): AI / LLM Security, Authentication, Authorization, CORS Configuration, Data Protection, Dependency Security, Error Handling, Input Validation (+8 more)
+
+### Community 191 - "Web Performance Auditor"
+Cohesion: 0.12
+Nodes (15): 1. Core Web Vitals, 2. Loading, 3. Rendering / JavaScript, 4. Network, Composition, Deep mode (activated when tool artifacts or live measurement are available), Metric-Honesty Rule, Operating Modes (+7 more)
+
+### Community 192 - "Ask Matt"
+Cohesion: 0.12
+Nodes (14): Phase boundaries, Primary and secondary sources, The five options, The tree, These are judgement calls, Ask Matt, Codebase health, Context hygiene (+6 more)
+
+### Community 193 - "Doubt-Driven Development"
+Cohesion: 0.12
+Nodes (15): Common Rationalizations, Cross-model escalation, Doubt-Driven Development, Interaction with Other Skills, Loading Constraints, Overview, Red Flags, Step 1: CLAIM — Surface what stands (+7 more)
+
+### Community 194 - "Using Agent Skills"
+Cohesion: 0.12
+Nodes (15): 1. Surface Assumptions, 2. Manage Confusion Actively, 3. Push Back When Warranted, 4. Enforce Simplicity, 5. Maintain Scope Discipline, 6. Verify, Don't Assume, ⚡ Autonomous Silent Auto-Upgrade & Anti-Bloat Policy, Core Operating Behaviors (+7 more)
+
+### Community 195 - "Diagnosing Bugs"
+Cohesion: 0.13
+Nodes (14): Completion criterion — a tight loop that goes red, Diagnosing Bugs, Minimise, Non-deterministic bugs, Phase 1 — Build a feedback loop, Phase 2 — Reproduce + minimise, Phase 3 — Hypothesise, Phase 4 — Instrument (+6 more)
+
+### Community 196 - "Idea Refine"
+Cohesion: 0.13
+Nodes (14): Anti-patterns to Avoid, Detailed Instructions, How It Works, Idea Refine, Output, Phase 1: Understand & Expand (Divergent), Phase 2: Evaluate & Converge, Phase 3: Sharpen & Ship (+6 more)
+
+### Community 197 - "Process"
+Cohesion: 0.13
+Nodes (14): 1. Define "working" before instrumenting, 2. Pick the right signal for each question, 3. Structured logging, 4. Metrics, 5. Distributed tracing, 6. Alerting, 7. Verify the telemetry itself, Common Rationalizations (+6 more)
+
+### Community 198 - "7-Persona Adversarial Council Audit"
+Cohesion: 0.13
+Nodes (14): 1. The Contrarian (Red Team Attack), 2. The Expansionist (Bull Leverage), 3. The Logician (First Principles), 4-Axis Quantitative Risk Matrix, 4. The Researcher (Industry Benchmarks), 5. The Buyer (Voice of Customer / Operator), 6. The Security Auditor (Extended Persona), 7-Persona Adversarial Council Audit (+6 more)
+
+### Community 199 - "run_composio_cmd"
+Cohesion: 0.26
+Nodes (14): execute_tool(), link_app(), main(), Any, Verify Composio authentication status and user details., Resolve composio CLI executable binary path on Windows OS., Execute composio CLI command with JSON formatting and error handling., Search Composio 1000+ app tools by natural language query. (+6 more)
+
+### Community 200 - "7-Persona Adversarial Council Audit"
+Cohesion: 0.14
+Nodes (13): 1. The Contrarian (Red Team Attack), 2. The Expansionist (Bull Leverage), 3. The Logician (First Principles), 4-Axis Quantitative Risk Matrix, 4. The Researcher (Evidence), 5. The Buyer (Operator Usability), 6. The Security Auditor (Extended Persona), 7-Persona Adversarial Council Audit (+5 more)
+
+### Community 201 - "Testing Patterns Reference (JavaScript/TypeScript)"
+Cohesion: 0.14
+Nodes (13): API / Integration Testing, Common Assertions, E2E Testing (Playwright), Mock at Boundaries Only, Mock Functions, Mock Modules, Mocking Patterns, React/Component Testing (+5 more)
+
+### Community 202 - "Review Scope"
+Cohesion: 0.15
+Nodes (12): 1. Input Handling, 2. Authentication & Authorization, 3. Data Protection, 4. Infrastructure, 5. Third-Party Integrations, 6. AI / LLM Features (if present), Composition, Output Format (+4 more)
+
+### Community 203 - "Spec-Driven Development"
+Cohesion: 0.15
+Nodes (12): Common Rationalizations, Keeping the Spec Alive, Overview, Phase 1: Specify, Phase 2: Plan, Phase 3: Tasks, Phase 4: Implement, Red Flags (+4 more)
+
+### Community 204 - "Test-Driven Development"
+Cohesion: 0.15
+Nodes (10): Designing for Mockability, When to Mock, Anti-patterns, Rules of the loop, Seams — where tests go, Test-Driven Development, What a good test is, Bad Tests (+2 more)
+
+### Community 205 - "Process"
+Cohesion: 0.15
+Nodes (12): 1. Gather context, 2. Explore the codebase (optional), 3. Draft vertical slices, 4. Quiz the user, 5. Publish the tickets to the configured tracker, Acceptance criteria, Blocked by, <NN> — <Ticket title> (+4 more)
+
+### Community 206 - "writing-for-agents/SKILL.md"
+Cohesion: 0.15
+Nodes (11): Context pointers, Information hierarchy, Leading words, Invocation, Router skills, Skill mechanics, Splitting by invocation, Pruning (+3 more)
+
+### Community 207 - "5 Multi-Workflow Integration Matrices"
+Cohesion: 0.15
+Nodes (12): 1. ZORIXEL Client Acquisition & Web Sprints, 2. Superpowers Parallel Subagent System, 3. GStack Executive Team Matrix, 4. Fullstack Next.js & UI Architecture, 5. Incident Response & System Upkeep, 5 Multi-Workflow Integration Matrices, Adversarial /roast Council Report (Deep Multi-Workflow Integration), Matt Pocock Skills Unification & Skills-Library Vault Strategy (+4 more)
+
+### Community 208 - "youtube_skills_runner.py"
+Cohesion: 0.27
+Nodes (12): fetch_transcript_api(), fetch_transcript_ytdlp(), get_playlist_ytdlp(), get_transcript(), main(), Any, Search YouTube videos using yt-dlp search query., Extract playlist contents using yt-dlp. (+4 more)
+
+### Community 209 - "Review Framework"
+Cohesion: 0.17
+Nodes (11): 1. Correctness, 2. Readability, 3. Architecture, 4. Security, 5. Performance, Composition, Output Format, Review Framework (+3 more)
+
+### Community 210 - "Refinement & Evaluation Criteria"
+Cohesion: 0.17
+Nodes (11): 1. User Value, 2. Feasibility, 3. Differentiation, Assumption Audit, Core Evaluation Dimensions, Decision Framework, Might Be True (Nice to Have), Must Be True (Dealbreakers) (+3 more)
+
+### Community 211 - "📑 Phase-by-Phase Execution Protocol"
+Cohesion: 0.17
+Nodes (11): 5-Phase Self-Upgrading Execution Loop, 🔗 Inter-Skill Connections, Overview & Tri-Mode Execution, Phase 1: Metadata & Skill Sweep, Phase 2: Un-Mapped Skill & Differential Detection, Phase 3: Playbook & Fallback Skill Synthesis, Phase 4: Multi-File Workspace Context Synchronization, Phase 5: `/roast` Audit Gate & Pre-Flight Health Sweep (+3 more)
+
+### Community 212 - "Source-Driven Development"
+Cohesion: 0.17
+Nodes (11): Common Rationalizations, Overview, Red Flags, Source-Driven Development, Step 1: Detect Stack and Versions, Step 2: Fetch Official Documentation, Step 3: Implement Following Documented Patterns, Step 4: Cite Your Sources (+3 more)
+
+### Community 213 - "wayfinder/SKILL.md"
+Cohesion: 0.17
+Nodes (11): Chart the map, Fog of war, Invocation, Out of scope, Plan, don't do, Refer by name, The Map, The map body (+3 more)
+
+### Community 214 - "Approach"
+Cohesion: 0.18
+Nodes (10): 1. Analyze Before Writing, 2. Test at the Right Level, 3. Follow the Prove-It Pattern for Bugs, 4. Write Descriptive Tests, 5. Cover These Scenarios, Approach, Composition, Output Format (+2 more)
+
+### Community 215 - "The Standing Checklist"
+Cohesion: 0.18
+Nodes (10): Correctness, Definition of Done, Definition of Done vs. Acceptance Criteria, Documentation, How to Apply, Integration, Quality, Red Flags (+2 more)
 
 ### Community 216 - "Hero enrichment — when, what, and how much"
 Cohesion: 0.09
@@ -923,6 +1250,62 @@ Nodes (23): Animation discipline (hero specifically), Common mistakes — and th
 ### Community 217 - "Theme — Carnival"
 Cohesion: 0.09
 Nodes (22): Anti-patterns (theme-specific), Axes (diversification), Build hint, Drop 01 · Cold Snap *(default)*, Drop 02 · Citrus Riot, Drop 03 · Diner Sign, Drop 04 · Studio Night, Drop 05 · Aqua Park (+14 more)
+
+### Community 218 - "Observability Checklist"
+Cohesion: 0.18
+Nodes (10): Alerting, Dashboards, Distributed Tracing, Metrics, Observability Checklist, On-Call Questions (Start Here), Pre-Launch Gate, Structured Logging (+2 more)
+
+### Community 219 - "resemble_detect_runner.py"
+Cohesion: 0.40
+Nodes (10): ask_detect_intelligence(), get_auth_header(), get_detect(), main(), make_request(), poll_detect(), Upload large or private file via secure_uploads endpoint using multipart/form-…, submit_detect() (+2 more)
+
+### Community 220 - "Capabilities & Usage Guide"
+Cohesion: 0.20
+Nodes (9): 1. Search 1000+ App Tools by Natural Language, 2. Connect an Account via Managed OAuth Link, 3. Execute a Tool Action with JSON Data, 4. Verify Authentication & User Context, Capabilities & Usage Guide, Composio Skill (`/composio`), Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
+
+### Community 221 - "YouTube Full Skill (`/youtube-full`)"
+Cohesion: 0.20
+Nodes (9): 1. Extract Video Transcript & Subtitles, 2. Search YouTube Videos by Query, 3. Extract Videos from a Playlist, Architecture & Dual-Backend Fallback Routing, Capabilities & Usage Guide, Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Post-Execution Auto-Evolution & Adversarial `/roast` Gate (+1 more)
+
+### Community 222 - "Ideation Frameworks Reference"
+Cohesion: 0.22
+Nodes (8): Analogous Inspiration, Constraint-Based Ideation, First Principles Thinking, How Might We (HMW), Ideation Frameworks Reference, Jobs to Be Done (JTBD), Pre-mortem, SCAMPER
+
+### Community 223 - "Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`)"
+Cohesion: 0.22
+Nodes (8): 🧭 Capability Decision Tree, ⚡ Core Principle — THE IRON LAW, 🔗 Inter-Skill Connections, 🛡️ Operational Safeguards & Red Flags, 🛠️ Requirements & Setup, Resemble Detect — Deepfake Detection & Media Safety (`/resemble-detect`), 📊 Score & Result Interpretation, 🎯 When to Use
+
+### Community 224 - "to-spec/SKILL.md"
+Cohesion: 0.22
+Nodes (8): Further Notes, Implementation Decisions, Out of Scope, Problem Statement, Process, Solution, Testing Decisions, User Stories
+
+### Community 225 - "SDLC & AIOS Unified Workflows, Skills, Scripts & Automations Integration"
+Cohesion: 0.22
+Nodes (8): Domain Vocabulary & Glossary (CONTEXT.md updates), Executive Summary & Key Decisions, Open Flags & Deferred Decisions, Q1 — Unification Architecture for SDLC Engine & Existing AIOS Skill Vault, Q2 — Execution & Subagent Cascade Discipline in Build & Ship Phases, Q3 — Automated CLI Runners, Script Bridges & Auto-Evolution Integration, Q&A Log, SDLC & AIOS Unified Workflows, Skills, Scripts & Automations Integration
+
+### Community 226 - "👥 5-Persona Adversarial Audit Breakdown"
+Cohesion: 0.22
+Nodes (8): 1. 🥊 The Contrarian (Red Team), 2. 🚀 The Expansionist (Bull), 3. 🧠 The Logician (First Principles), 4. 🔬 The Researcher (Evidence), 👥 5-Persona Adversarial Audit Breakdown, 5-Persona ZORIXEL AIOS Roast Council Audit Report, 5. 💼 The Buyer / Operator (Atinek Maurya), ⚖️ Final Judge Verdict: GO (APPROVED)
+
+### Community 227 - "aios_master_runner.py"
+Cohesion: 0.44
+Nodes (8): clean_scratch(), health_check(), main(), Runs silently in background to auto-sync rules, auto-evolve skills, update AST…, Prunes temporary scratch files while preserving active folders., run_script(), ship_audit(), silent_auto_upgrade()
+
+### Community 228 - "Process"
+Cohesion: 0.25
+Nodes (7): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
+
+### Community 229 - "<Questionnaire title>"
+Cohesion: 0.25
+Nodes (7): Anything else?, Context, Document structure, How to answer, <Questionnaire title>, <Theme heading>, What load is the system expected to handle at launch?
+
+### Community 230 - "Process"
+Cohesion: 0.29
+Nodes (6): 1. Scope the procedure, 2. Map each stage's journey, 3. Author the wizard, 4. Verify and hand off, Process, Wizard
+
+### Community 231 - "Skill Workflow Evolver: Brainstorm / Discovery Notes"
+Cohesion: 0.33
+Nodes (5): Open Flags (Pending Operator Input), Q1 — Skill Implementation & Automation Structure, Q&A Log, Skill Workflow Evolver: Brainstorm / Discovery Notes, Summary / Key Decisions
 
 ### Community 232 - "Style Presets Reference"
 Cohesion: 0.10
@@ -935,6 +1318,38 @@ Nodes (21): Bans, Computation, Contrast discipline, Don't, list, Dropdowns, tool
 ### Community 234 - "Antigravity Skills & Plugins Guide"
 Cohesion: 0.09
 Nodes (21): 🐙 10. GitHub (`github`), 🪄 11. Magic (`magic`), 🛠️ 12. Chrome DevTools (`chrome-devtools-mcp`), 📒 13. Notion (`notion-mcp-server`), 🏛️ 14. GStack Virtual Engineering Team (`gstack`), 🎨 15. Hallmark Anti-AI-Slop Engine (`hallmark`), 🔍 16. OS Audit (`os-audit`), 💻 17. JS Mastery Skills (`jsmastery-skills`) (+13 more)
+
+### Community 235 - "Domain Docs"
+Cohesion: 0.33
+Nodes (5): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary
+
+### Community 236 - "Issue tracker: Local Markdown"
+Cohesion: 0.33
+Nodes (5): Conventions, Issue tracker: Local Markdown, Wayfinding operations, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
+
+### Community 237 - "test_ingested_skills_health.py"
+Cohesion: 0.60
+Nodes (5): check_composio_runner(), check_rules(), check_youtube_runner(), check_ytdlp(), main()
+
+### Community 238 - "Discovery Capture: Ingesting `resemble-ai/detect-skill`"
+Cohesion: 0.40
+Nodes (4): 5-Persona Roast Council Evaluation, Discovery Capture: Ingesting `resemble-ai/detect-skill`, Next Step, Stage 1 Deep Analysis Summary
+
+### Community 239 - "skill_workflow_evolver_runner.py"
+Cohesion: 0.70
+Nodes (4): classify_skill_domain(), parse_skill_yaml(), run_evolver_sweep(), scan_all_skills()
+
+### Community 240 - "hitl-loop.template.sh"
+Cohesion: 0.83
+Nodes (3): capture(), hitl-loop.template.sh script, step()
+
+### Community 241 - "GLOSSARY.md Format"
+Cohesion: 0.50
+Nodes (3): GLOSSARY.md Format, Rules, Structure
+
+### Community 242 - "agent_skills_runner.py"
+Cohesion: 0.83
+Nodes (3): main(), ship_persona_audit(), validate_catalog()
 
 ### Community 244 - "Major (looks AI-generated)"
 Cohesion: 0.10
@@ -1022,7 +1437,7 @@ Nodes (13): Anti-patterns, Axes (diversification), Build hint, How Cobalt differ
 
 ### Community 324 - "🧭 The 8-Phase Ingestion & Deep System Integration Workflow"
 Cohesion: 0.12
-Nodes (15): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Phase 1: Discovery Capture & Setup (`/grill-me` loop), Phase 2: Isolated Repository Clone & Structural Analysis, Phase 3: Web Research & Security Audit (Vibesec & Supply Chain), Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation, Phase 4: AIOS Workspace & Vault Comparison Analysis, Phase 5: Adversarial Roast Council Gate (`/roast`) (+7 more)
+Nodes (15): Inter-Skill Connections & Handoff Pipeline, Invocation & Tri-Mode Routing, Phase 1: Discovery Capture & Setup (`/grill-me` loop), Phase 2: Isolated Repository Clone & Structural Analysis, Phase 3: Web Research & Security Audit (Vibesec & Supply Chain), Phase 4.5: Graphify AST Extraction & Knowledge Graph Generation, Phase 4: AIOS Workspace Comparison & 1-Line 2-Stage Protocol, Phase 5: Adversarial Roast Council Gate (`/roast`) (+7 more)
 
 ### Community 325 - "level-up/SKILL.md"
 Cohesion: 0.13
@@ -1097,8 +1512,8 @@ Cohesion: 0.09
 Nodes (21): 1. The Contrarian (Red Team), 2. The Expansionist (Bull), 3. The Logician (First Principles), 4-Axis Quantitative Risk Matrix, 4. The Researcher (Evidence), 5. The Buyer (Voice of Customer / Target User), 6. The Security Auditor (Code / Architecture / Workflow), 7. The Product Economist (SaaS / Pricing Offer) (+13 more)
 
 ### Community 365 - "Scrape Web Skill (Scrapling Engine)"
-Cohesion: 0.15
-Nodes (12): 1. Basic Web Extraction (Fast Mode), 2. Extract Specific Elements by CSS Selector, 3. Dynamic JavaScript Rendering, 4. Stealth Mode for Protected Sites, Engine Overview, Fetcher Modes:, Integration with AIOS Vaults & Workflows, Inter-Skill Connections & Handoff Pipeline (+4 more)
+Cohesion: 0.14
+Nodes (13): 1. Basic Web Extraction (Fast Mode), 2. Extract Specific Elements by CSS Selector, 3. Dynamic JavaScript Rendering, 4. Stealth Mode for Protected Sites, 5. High-Precision Article & Technical Content Cleaning (Defuddle Standard), Engine Overview, Fetcher Modes:, Integration with AIOS Vaults & Workflows (+5 more)
 
 ### Community 366 - "Q&A log"
 Cohesion: 0.17
@@ -1133,7 +1548,7 @@ Cohesion: 0.18
 Nodes (11): 100vw widths, Anti-patterns — the named tells, Double-hyphen dashes, Every section padded the same, How `hallmark audit` should report, Minor (small taste issues), Placeholder names, Startup-cliché product names (+3 more)
 
 ### Community 386 - "Genre — atmospheric"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (10): Genre — atmospheric, Nav and footer voice, Reference register, Stamp signature, Themes that belong, Voice, Voice fixtures, What this genre allows (+2 more)
 
 ### Community 387 - "Genre — modern-minimal"
@@ -1254,7 +1669,7 @@ Nodes (9): 1. Save Button in Workspace Navbar, 2. Delete Nodes and Edges, 3. Nod
 
 ### Community 445 - "run_scrape"
 Cohesion: 0.27
-Nodes (6): Any, main(), run_scrape(), Test fast HTTP fetching mode on example.com, Test graceful error handling on invalid domain, TestScraplingRunner
+Nodes (6): main(), Any, run_scrape(), Test fast HTTP fetching mode on example.com, Test graceful error handling on invalid domain, TestScraplingRunner
 
 ### Community 446 - "Autoresearch Loop Targets Manager"
 Cohesion: 0.20
@@ -1937,28 +2352,28 @@ Cohesion: 0.67
 Nodes (3): Convert a PowerPoint, Create a New Presentation, Usage
 
 ### Community 1119 - "ZORIXEL AIOS Hot Cache & Handoff State"
-Cohesion: 0.50
-Nodes (3): Active Context & Strategic Baseline, Immediate Next Actions, ZORIXEL AIOS Hot Cache & Handoff State
+Cohesion: 0.40
+Nodes (4): Active Context & Strategic Baseline, Immediate Next Actions, Verified Pre-Flight Health Scripts, ZORIXEL AIOS Hot Cache & Handoff State
 
 ## Knowledge Gaps
-- **3675 isolated node(s):** `{ chromium }`, `fs`, `path`, `OUTPUT_FILE`, `fs` (+3670 more)
+- **4668 isolated node(s):** `idea-refine.sh script`, `{ chromium }`, `fs`, `path`, `OUTPUT_FILE` (+4663 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **38 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Microinteractions` connect `Recipes` to `hallmark/SKILL.md`?**
+- **Why does `Anti-patterns — the named tells` connect `Minor (small taste issues)` to `hallmark/SKILL.md`, `Microinteraction tells`, `Major (looks AI-generated)`, `Critical (ships as slop)`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `Assets — sourcing canon for icons, logos, illustrations, photography, video` connect `Assets — sourcing canon for icons, logos, illustrations, photography, video` to `hallmark/SKILL.md`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `Study — extracting design DNA from a screenshot or URL` connect `Study — extracting design DNA from a screenshot or URL` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `Hero enrichment — when, what, and how much` connect `Hero enrichment — when, what, and how much` to `hallmark/SKILL.md`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **What connects `{ chromium }`, `fs`, `path` to the rest of the system?**
-  _3675 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Hallmark` connect `Hallmark` to `hallmark/SKILL.md`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `idea-refine.sh script`, `{ chromium }`, `fs` to the rest of the system?**
+  _4668 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `FILLER AND HEDGING` be split into smaller, more focused modules?**
   _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
 - **Should `Step-by-Step 8-Phase Pricing Protocol` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `component-cookbook.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.02127659574468085 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.020618556701030927 - nodes in this community are weakly interconnected._

@@ -28,6 +28,7 @@
 - **2026-08-07**: [2026-08-07-permanent-context-architecture-and-self-healing-upgrades.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-07-permanent-context-architecture-and-self-healing-upgrades.md) — Permanent AIOS Context Architecture, System Prompt Truncation Fix (<14KB), 2-Stage Deep Search Engine & Self-Healing Upgrades.
 - **2026-08-08**: [2026-08-08-skill-workflows-engine-and-reusable-agency-architecture.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-08-skill-workflows-engine-and-reusable-agency-architecture.md) — Skill Workflows Engine, Skill Plug-and-Play Protocol, & 7-Stage AI Agency Master Architecture.
 - **2026-08-08**: [2026-08-08-agent-skills-sdlc-unification.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-08-agent-skills-sdlc-unification.md) — Addy Osmani Agent-Skills Ingestion, Unified 6-Phase SDLC Master Engine Integration & Silent Background Auto-Upgrade Engine.
+- **2026-08-08**: [2026-08-08-zero-cost-boundary-and-paid-api-purge.md](file:///d:/AI-OS/brain-aios/wiki/experiences/2026-08-08-zero-cost-boundary-and-paid-api-purge.md) — Zero-Cost Boundary Enforcement, Resemble Detect Purge, Rule 1.23 Zero-Fee Mandate & Pre-Flight Validator.
 
 
 

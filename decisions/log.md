@@ -15,16 +15,15 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 
 **Owner:** who's accountable.
 
-## 2026-08-08 — Resemble AI Detect Deepfake & Media Safety Skill Ingestion (`/resemble-detect`)
+## 2026-08-08 — Zero-Fee & Zero-Subscription Mandate Enforcement (Rule 1.23 & `/session-postmortem-audit`)
 
-**Decision:** Ingested `resemble-ai/detect-skill` repository into AIOS as Tier 1 native skill `.agents/skills/resemble-detect/SKILL.md` supported by Python CLI runner `scripts/resemble_detect_runner.py` and Rule 1.23.
-- **Direct REST API Execution**: Operates via direct HTTP REST calls to Resemble AI v2 API (`https://app.resemble.ai/api/v2`).
-- **Core Capabilities**: Audio, Image, and Video synthetic manipulation detection, Audio Source Tracing (ElevenLabs vs Resemble vs human), Media Intelligence, and natural-language Q&A (Detect Intelligence).
-- **Rule 1.23 Iron Law**: Mandated that AI agents NEVER declare media as real or fake without a completed Resemble Detect job returning label, score (0.0-1.0), and status `"completed"`.
+**Decision:** Enforced **Rule 1.23 (Zero-Fee & Zero-Subscription Mandate)** and established `scripts/test_zero_cost_boundary.py` as an automated pre-flight health check across the workspace.
+- **Rule 1.23 Mandate**: Default all workspace tools, skills, CLI scripts, and agency client deliverables to 100% zero-subscription, zero-paywall tools (Google Workspace, GitHub, Notion, YouTube yt-dlp, Playwright, Graphify, local Python engines). NEVER add any tool, skill, or API requiring per-use paid credits or recurring cloud subscriptions without explicit operator cost clearance.
+- **Automated Verification**: Created `scripts/test_zero_cost_boundary.py` to audit workspace skills and scripts against unauthorized paid API dependencies.
 
-**Why:** Equips ZORIXEL AI Agency with enterprise-grade deepfake detection, content provenance checking, and audio source verification for client media audits without local GPU model overhead.
+**Why:** Guarantees 100% zero-cost operation for Atinek Maurya across all workspace tools, preventing unexpected API usage charges and preserving ZORIXEL's zero-subscription agency delivery moat.
 
-**Alternatives considered:** Heavy local model installation or manual web dashboard checking.
+**Alternatives considered:** Permitting pay-per-use external APIs without explicit pre-flight cost clearance.
 
 **Owner:** Atinek Maurya
 
