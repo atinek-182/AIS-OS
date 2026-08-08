@@ -83,6 +83,7 @@ Match `references/voice.md`. Casual, energetic, conversational. Uses words like 
 | **Rule 1.19** | **PDF Compilation** | Low | **Dark-Mode PDF Background Enforcement**: When compiling dark-mode PDFs using Playwright headless browser, ALWAYS set `print_background=True` in script options and assign dark background styles directly to `body` and root containers to eliminate white margin bleed. |
 | **Rule 1.20** | **Process Execution** | High | **Windows Subprocess CLI Binary Resolution**: On Windows OS, CLI binaries resolved via `subprocess.run` MUST explicitly check `shutil.which` or invoke Node directly (`shell=False`) to prevent `WinError 2` file not found exceptions. |
 | **Rule 1.21** | **Repository Ingestion** | Medium | **Scratch Isolation & Vault Bloat Prevention**: When ingesting external repositories, clone strictly inside `scratch/ingest-[repo-slug]/` and force-delete the scratch folder post-ingestion. NEVER dump full unpruned git repositories into `skills-library/` unless explicitly requested. |
+| **Rule 1.22** | **SDLC & Quality** | High | **Unified SDLC Master Engine Enforcement**: Always route software lifecycle tasks through the 6-Phase SDLC Master Engine (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`). Never skip verification tests or anti-rationalization checks before asserting code completeness. |
 
 ---
 

@@ -100,6 +100,15 @@
   5. **Spec & Ticket Deconstructors (`/mattpocock-to-spec`, `/mattpocock-to-tickets`)**: Compile loose user prompts into sharp technical specs and verifiable, atomic engineering tickets with testable DoD.
   6. **Socratic Teaching & Deep Modules (`/mattpocock-teach`, `/mattpocock-setup-ts-deep-modules`)**: Use before-and-after type mental models for explanations and enforce strict module boundaries.
 
+## Unified 6-Phase SDLC Master Engine Rules
+- **6-Phase SDLC Execution Protocol**: All software engineering tasks MUST follow the 6-Phase SDLC Master Engine (`using-agent-skills`):
+  1. **Phase 1: DEFINE (`/spec`)**: `/interview-me` interrogation, `/idea-refine` concept exploration, and `/spec-driven-development` PRDs with `definition-of-done.md`.
+  2. **Phase 2: PLAN (`/plan`)**: `/planning-and-task-breakdown` and `/mattpocock-to-tickets` into atomic, dependency-ordered tasks.
+  3. **Phase 3: BUILD (`/build`)**: `/incremental-implementation` thin slices, `/test-driven-development` red-green loop, `/source-driven-development` doc verification, `/doubt-driven-development` doubt loop, and optional `/build auto` autonomous multi-task execution.
+  4. **Phase 4: VERIFY (`/test`)**: `/browser-testing-with-devtools` live profiling, `/debugging-and-error-recovery` 5-step triage, and empirical runtime validation.
+  5. **Phase 5: REVIEW (`/review`)**: `/code-review-and-quality` 5-axis review, `/code-simplify` Chesterton's Fence simplification, `/security-and-hardening` + `/vibesec` security audit, and `/performance-optimization` + `/webperf` Core Web Vitals audit.
+  6. **Phase 6: SHIP (`/ship`)**: Launch parallel 4-persona fanout (`code-reviewer`, `test-engineer`, `security-auditor`, `web-performance-auditor`), trunk-based git workflow, OpenTelemetry observability, ADR documentation, and production pre-launch gate.
+
 ## Universal `/grill-me` and `/roast` Integration Mandate
 - **Mandatory Discovery & Roast Gates**: Every new project initialization (`/new-project`), web creation workflow (`/website-design-engine`), repository ingestion (`/ingest-repo`), design direction (`/design-direction`), and viral carousel creation (`/carousel-copy`) MUST execute:
   1. **`/grill-me` Gate**: Socratic discovery with concept explanations BEFORE questions, categorized option evaluation (INFER/ASK/RECOMMEND), and immediate disk checkpointing to `brainstorms/`.

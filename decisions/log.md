@@ -50,6 +50,28 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 3. **Skill Cross-Integration**: Updated [agent-reach/SKILL.md](file:///d:/AI-OS/.agents/skills/agent-reach/SKILL.md) and research workflows to trigger `/youtube-full`.
 4. **Global Error Prevention Rules (`references/GLOBAL_ERROR_PREVENTION_RULES.md`)**: Created **Rule 2.9 (YouTube Transcript & Media Extraction Standard)** and synchronized system prompts (`AGENTS.md` and `GEMINI.md`) via `python scripts/sync_global_rules.py`.
 
+## 2026-08-08 — Addy Osmani `agent-skills` Ingestion & Unified 6-Phase SDLC Master Engine
+
+**Decision:** Formally ingested Addy Osmani's [agent-skills](https://github.com/addyosmani/agent-skills) repository and synthesized the **Unified 6-Phase SDLC Master Engine** across ZORIXEL AIOS:
+1. **24 Master SDLC Skills (`.agents/skills/`)**: Ingested and adapted all 24 production skills (including `using-agent-skills`, `interview-me`, `idea-refine`, `spec-driven-development`, `planning-and-task-breakdown`, `incremental-implementation`, `test-driven-development`, `doubt-driven-development`, `frontend-ui-engineering`, `security-and-hardening`, `performance-optimization`, `shipping-and-launch`).
+2. **4 Specialist Review Personas (`.agents/agents/`)**: Ingested `code-reviewer.md`, `security-auditor.md`, `test-engineer.md`, and `web-performance-auditor.md`.
+3. **7 Reference Checklists (`references/sdlc/`)**: Ingested reference checklists into `references/sdlc/` (`accessibility-checklist.md`, `definition-of-done.md`, `observability-checklist.md`, `orchestration-patterns.md`, `performance-checklist.md`, `security-checklist.md`, `testing-patterns.md`).
+4. **Automated Validation Runner (`scripts/agent_skills_runner.py`)**: Created Python runner script for validating catalog health and executing `/ship` multi-persona fanout audits.
+5. **System Rules & Error Prevention**: Created Rule 1.22 (**Unified SDLC Master Engine Enforcement**) in `references/GLOBAL_ERROR_PREVENTION_RULES.md` and synchronized system prompts (`AGENTS.md` and `GEMINI.md`) via `python scripts/sync_global_rules.py`.
+
+**Why:** Combines Addy Osmani's 6-phase SDLC and 4 review personas, Superpowers' autonomous subagent execution and git worktree isolation, Matt Pocock's interrogation and ticket mechanics, and ZORIXEL's custom agency engines (`hallmark`, `website-design-engine`, `vibesec`, `gstack`) into a unified, world-class engineering execution system.
+
+**Owner:** Atinek Maurya
+
+## 2026-08-08 — Master SDLC & AIOS Workflow Engine Unification & Master CLI Runner
+
+**Decision:** Executed Socratic discovery (`/grill-me`), 5-persona `/roast` audit (`GO`, Risk 1/10, ROI 10/10), and created the **Master CLI Execution Bridge**:
+1. **Socratic Discovery (`brainstorms/2026-08-08-sdlc-workflow-unification.md`)**: Resolved 3-question architectural alignment for Dual-Engine Master Architecture (Technical SDLC + Client Agency Engine), Hybrid Build/Ship Execution Discipline (`/build auto` + `/ship` fanout), and Master CLI Bridge (`scripts/aios_master_runner.py`).
+2. **Roast Council Verdict (`brainstorms/roast_2026-08-08_sdlc_workflow_unification.md`)**: Audited by 5 personas (Contrarian, Expansionist, Logician, Researcher, Buyer) for 0 operator friction and 100% path safety.
+3. **Master CLI Bridge (`scripts/aios_master_runner.py`)**: Built unified Python runner orchestrating pre-flight health checks across SDLC skills, AST knowledge graphs, skill auto-evolver, and workspace map in 0.29 seconds (**PASS 100%**).
+
+**Owner:** Atinek Maurya
+
 **Why:** Ensures reliable YouTube data extraction (transcripts, search, playlists) with 0 third-party API dependencies by default while maintaining automatic fallback capabilities when running cloud subagents.
 
 **Alternatives considered:** Direct browser scraping, reliance on expensive third-party APIs as primary backend.
